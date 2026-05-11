@@ -1,0 +1,3615 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>MLB 27SS TRADE SHOW 샘플 대시보드</title><!-- title updated by switchView() -->
+<style>
+:root {
+  --bg:        #f5f7fc;
+  --card:      #ffffff;
+  --border:    #dde4f4;
+  --primary:   #5b7fd4;
+  --primary2:  #7c5fc0;
+  --accent:    #a78bfa;
+  --info:      #60a5fa;
+  --success:   #34d399;
+  --warning:   #fbbf24;
+  --danger:    #f87171;
+  --text:      #1e2a4a;
+  --muted:     #8893b0;
+  --shadow:    0 2px 12px rgba(91,127,212,0.10);
+  --shadow-lg: 0 6px 24px rgba(91,127,212,0.14);
+}
+
+* { margin:0; padding:0; box-sizing:border-box; }
+
+body {
+  font-family: 'Malgun Gothic','Apple SD Gothic Neo',sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  min-height: 100vh;
+  font-size: 14px;
+}
+
+/* ─── 헤더 ─── */
+.header {
+  background: linear-gradient(120deg, #4f72c8 0%, #7c5fc0 60%, #a78bfa 100%);
+  padding: 20px 36px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 0 3px 16px rgba(91,127,212,0.25);
+}
+.header-title h1 { font-size:20px; font-weight:800; color:#fff; letter-spacing:0.3px; }
+.header-title p  { font-size:12px; color:rgba(255,255,255,0.75); margin-top:3px; }
+.header-meta { text-align:right; }
+.header-meta .today { font-size:13px; color:rgba(255,255,255,0.85); }
+.d-badge {
+  display:inline-block;
+  background:rgba(255,255,255,0.22);
+  border:1px solid rgba(255,255,255,0.4);
+  color:#fff;
+  font-size:12px;
+  font-weight:700;
+  padding:3px 12px;
+  border-radius:20px;
+  margin-top:4px;
+}
+.schedule-pills { display:flex; gap:8px; margin-top:8px; flex-wrap:wrap; justify-content:flex-end; }
+.s-pill {
+  background:rgba(255,255,255,0.15);
+  border:1px solid rgba(255,255,255,0.3);
+  color:rgba(255,255,255,0.9);
+  font-size:11px;
+  padding:2px 10px;
+  border-radius:12px;
+}
+.s-pill.pill-urgent { background:rgba(239,68,68,0.4); border-color:rgba(239,68,68,0.6); }
+.s-pill.pill-soon   { background:rgba(249,115,22,0.35); border-color:rgba(249,115,22,0.55); }
+.tl-dday { font-size:10px; color:var(--muted); font-weight:400; margin-left:6px; }
+
+/* ─── 뷰 스위처 ─── */
+.view-switcher-bar {
+  background:#fff;
+  border-bottom:1px solid var(--border);
+  padding:10px 36px;
+  box-shadow:0 1px 4px rgba(91,127,212,0.07);
+}
+.view-switcher {
+  display:inline-flex;
+  border:1px solid var(--border);
+  border-radius:8px;
+  overflow:hidden;
+  box-shadow:0 1px 4px rgba(91,127,212,0.10);
+}
+.vs-btn {
+  padding:7px 18px;
+  font-size:13px;
+  font-weight:600;
+  font-family:inherit;
+  background:#fff;
+  color:var(--muted);
+  border:none;
+  cursor:pointer;
+  transition:background 0.15s, color 0.15s;
+  white-space:nowrap;
+}
+.vs-btn:hover:not(.vs-active) { background:#f0f4ff; color:var(--primary); }
+.vs-btn.vs-active { background:var(--primary); color:#fff; box-shadow:inset 0 1px 3px rgba(0,0,0,0.15); }
+.vs-btn + .vs-btn { border-left:1px solid var(--border); }
+body.view-cn .vs-btn#btn-view-cn { background:linear-gradient(90deg,#5b7fd4,#7c5fc0); color:#fff; box-shadow:inset 0 1px 3px rgba(0,0,0,0.15); }
+body.view-cn .vs-btn#btn-view-all { background:#fff; color:var(--muted); }
+
+/* ─── 레이아웃 ─── */
+.container { max-width:1640px; margin:0 auto; padding:24px 32px; }
+.grid-5 { display:grid; grid-template-columns:repeat(5,1fr); gap:16px; margin-bottom:24px; }
+.grid-2 { display:grid; grid-template-columns:1fr 1fr; gap:22px; margin-bottom:24px; }
+.grid-3 { display:grid; grid-template-columns:1fr 1fr 1fr; gap:22px; margin-bottom:24px; }
+
+/* ─── 카드 ─── */
+.card {
+  background: var(--card);
+  border-radius:14px;
+  border:1px solid var(--border);
+  padding:20px;
+  box-shadow: var(--shadow);
+}
+
+/* ─── KPI 카드 ─── */
+.kpi-card {
+  background: var(--card);
+  border-radius:14px;
+  border:1px solid var(--border);
+  padding:18px 20px;
+  box-shadow: var(--shadow);
+  position:relative;
+  overflow:hidden;
+  transition: transform 0.18s, box-shadow 0.18s;
+  display:flex;
+  flex-direction:column;
+}
+/* ─── KPI 하단 지연 섹션 ─── */
+.kpi-delay-section {
+  margin-top:auto;
+  padding-top:11px;
+  border-top:1px dashed #e5e7eb;
+}
+.kpi-card:hover { transform:translateY(-2px); box-shadow: var(--shadow-lg); }
+.kpi-card .stripe {
+  position:absolute; top:0; left:0; right:0; height:4px;
+  background: var(--kpi-color, var(--primary));
+  border-radius:14px 14px 0 0;
+}
+.kpi-card .kpi-label { font-size:11px; color:var(--muted); font-weight:600; letter-spacing:0.5px; text-transform:uppercase; margin-bottom:8px; }
+.kpi-card .kpi-val   { font-size:34px; font-weight:800; color:var(--kpi-color, var(--primary)); line-height:1; }
+.kpi-card .kpi-sub   { font-size:12px; color:var(--muted); margin-top:5px; }
+
+/* ─── KPI PCS 분해 테이블 ─── */
+.pcs-tbl { width:100%; border-collapse:collapse; margin-top:10px; font-size:11.5px; }
+.pcs-tbl td { padding:3px 0; vertical-align:middle; }
+.pcs-tbl .pt-label { color:var(--muted); text-align:left; padding-right:6px; }
+.pcs-tbl .pt-val   { color:var(--text); font-weight:700; text-align:right; font-variant-numeric:tabular-nums; white-space:nowrap; }
+.pcs-tbl tr:not(.pt-sep):not(.pt-total) { border-bottom:1px solid var(--border); }
+.pcs-tbl .pt-sep td { padding:0; height:0; border-bottom:2px solid var(--border); line-height:0; font-size:0; }
+.pcs-tbl .pt-total td { padding-top:5px; }
+.pcs-tbl .pt-total .pt-label { font-weight:800; color:var(--text); }
+.pcs-tbl .pt-total .pt-val   { font-weight:900; font-size:13px; color:var(--kpi-color,var(--primary)); }
+.kpi-card .pcs-foot { font-size:11px; color:var(--muted); margin-top:6px; }
+
+/* ─── 섹션 타이틀 ─── */
+.sec-title {
+  font-size:14px; font-weight:700; color:var(--text);
+  margin-bottom:16px;
+  display:flex; align-items:center; gap:8px;
+  padding-bottom:10px;
+  border-bottom:2px solid var(--border);
+}
+.sec-title .tag {
+  font-size:10px; font-weight:700;
+  padding:2px 9px; border-radius:10px;
+  background:linear-gradient(90deg,#e8eeff,#ede8ff);
+  color:var(--primary2);
+  letter-spacing:0.3px;
+}
+
+/* ─── 카테고리 진행률 ─── */
+.cat-item { margin-bottom:18px; }
+.cat-header { display:flex; justify-content:space-between; align-items:center; margin-bottom:7px; }
+.cat-name { font-size:13px; font-weight:700; display:flex; align-items:center; gap:7px; }
+.cat-dot  { width:9px; height:9px; border-radius:50%; display:inline-block; }
+.cat-nums { font-size:12px; color:var(--muted); }
+.cat-nums strong { color:var(--text); font-size:14px; }
+.pbar { height:9px; background:#edf0fc; border-radius:5px; overflow:hidden; }
+.pbar-fill { height:100%; border-radius:5px; transition:width 1.2s cubic-bezier(.4,0,.2,1); }
+.cat-stats { display:flex; gap:14px; margin-top:6px; font-size:11px; color:var(--muted); }
+.cat-stats span { color:var(--text); font-weight:600; }
+
+/* ─── 타임라인 ─── */
+.timeline { padding-left:18px; position:relative; }
+.timeline::before {
+  content:''; position:absolute; left:6px; top:6px; bottom:6px;
+  width:2px; background: linear-gradient(180deg,#c7d5f5,#d4c9f5);
+  border-radius:2px;
+}
+.tl-item { position:relative; margin-bottom:14px; padding-left:16px; }
+.tl-item::before {
+  content:''; position:absolute; left:-13px; top:4px;
+  width:10px; height:10px; border-radius:50%;
+  border:2px solid var(--tl-color, #b0bec5);
+  background: var(--tl-bg, white);
+}
+.tl-item.done::before   { border-color:var(--success); background:var(--success); }
+.tl-item.current::before{ border-color:var(--primary); background:var(--primary); box-shadow:0 0 0 3px rgba(91,127,212,0.2); }
+.tl-item.soon::before   { border-color:var(--warning); background:#fff9e6; }
+.tl-item.key::before    { border-color:var(--danger); background:#fff0f0; }
+.tl-date  { font-size:11px; color:var(--muted); margin-bottom:1px; }
+.tl-label { font-size:13px; font-weight:700; }
+.tl-sub   { font-size:11px; color:var(--muted); margin-top:2px; }
+/* ─── 타임라인 milestone / preview ─── */
+.tl-item.milestone {
+  background:rgba(91,127,212,0.05);
+  border-radius:7px;
+  padding:5px 10px 5px 16px;
+  border-left:3px solid var(--primary);
+  margin-bottom:12px;
+}
+.tl-item.milestone.tl-rev2 { border-left-color:#7c5fc0; background:rgba(124,95,192,0.05); }
+.tl-item.preview { opacity:0.65; margin-bottom:10px; }
+.tl-item.preview .tl-date  { font-size:10px; }
+.tl-item.preview .tl-label { font-size:11px; color:var(--muted); font-weight:600; }
+/* ─── 입고예정 배지 ─── */
+.tl-arrival { font-size:10px; font-weight:700; padding:1px 7px; border-radius:10px;
+              margin-left:5px; vertical-align:middle; display:inline-block; }
+.tl-arrival.ok   { background:#d1fae5; color:#065f46; }
+.tl-arrival.warn { background:#fee2e2; color:#991b1b; }
+.tl-arrival.tbd  { background:#f1f5f9; color:#64748b; }
+/* ─── 예정 입고율 KPI 바 ─── */
+.arr-row { margin-bottom:10px; }
+.arr-row-hd { display:flex; justify-content:space-between; align-items:baseline; margin-bottom:3px; }
+.arr-row-title { font-size:10px; font-weight:700; color:var(--muted); letter-spacing:0.2px; }
+.arr-row-pct { font-size:16px; font-weight:900; line-height:1; }
+.arr-bar { height:8px; background:#edf0fc; border-radius:4px; overflow:hidden; margin-bottom:3px; }
+.arr-fill { height:100%; border-radius:4px; transition:width 0.5s ease; }
+.arr-sub { font-size:10px; color:var(--muted); }
+
+/* ─── ETD/RDD 리스트 ─── */
+.date-row {
+  display:flex; align-items:center; gap:10px;
+  padding:7px 0;
+  border-bottom:1px solid #f0f2fb;
+}
+.date-row:last-child { border-bottom:none; }
+.dr-date   { font-size:12px; font-weight:600; min-width:88px; color:var(--text); }
+.dr-past   { color:var(--muted); }
+.dr-bar    { flex:1; height:6px; background:#edf0fc; border-radius:3px; overflow:hidden; }
+.dr-fill   { height:100%; border-radius:3px; }
+.dr-count  { font-size:12px; color:var(--muted); min-width:30px; text-align:right; font-weight:600; }
+.co-badge  {
+  font-size:10px; padding:1px 6px; border-radius:6px; font-weight:700; margin-left:4px;
+}
+.co-cn { background:#dbeafe; color:#1d4ed8; }
+.co-vn { background:#dcfce7; color:#166534; }
+.co-kr { background:#fae8ff; color:#86198f; }
+
+/* ─── 날짜 리스트 비중/누계 ─── */
+.dr-pct   { font-size:11px; color:var(--muted); min-width:42px; text-align:right; }
+.dr-cum   { font-size:11px; font-weight:700; min-width:72px; text-align:right; }
+
+/* ─── AI 인사이트 ─── */
+.insight-grid {
+  display:grid; grid-template-columns:1fr 1fr;
+  gap:14px; margin-top:4px;
+}
+.insight-block {
+  border-radius:10px; padding:14px 16px;
+  border-left:4px solid transparent;
+}
+.insight-summary { background:#f0f4ff; border-color:#5b7fd4; }
+.insight-danger  { background:#fff5f5; border-color:#f87171; }
+.insight-warning { background:#fffbeb; border-color:#fbbf24; }
+.insight-success { background:#f0fdf4; border-color:#34d399; }
+.insight-block-title {
+  font-size:12px; font-weight:800; margin-bottom:10px;
+  display:flex; align-items:center; gap:6px;
+}
+.insight-summary .insight-block-title { color:#3b5fcb; }
+.insight-danger  .insight-block-title { color:#dc2626; }
+.insight-warning .insight-block-title { color:#d97706; }
+.insight-success .insight-block-title { color:#059669; }
+.insight-item {
+  font-size:12px; line-height:1.6; padding:3px 0;
+  border-bottom:1px solid rgba(0,0,0,0.04);
+  display:flex; gap:7px; align-items:flex-start;
+}
+.insight-item:last-child { border-bottom:none; }
+.insight-bullet { flex-shrink:0; margin-top:2px; font-size:10px; }
+.insight-val    { font-weight:700; }
+.insight-muted  { color:#8893b0; font-size:11px; }
+@media(max-width:768px){ .insight-grid{ grid-template-columns:1fr; } }
+.insight-toggle {
+  cursor:pointer; user-select:none;
+  display:flex; align-items:center; justify-content:space-between;
+  padding-bottom:0; border-bottom:none; margin-bottom:0;
+}
+.insight-toggle:hover { opacity:0.8; }
+.insight-toggle .toggle-arrow {
+  font-size:11px; color:var(--muted);
+  transition: transform 0.3s ease;
+  display:inline-block;
+}
+.insight-body {
+  overflow:hidden;
+  max-height:0;
+  transition: max-height 0.4s cubic-bezier(0.4,0,0.2,1), opacity 0.3s ease, margin-top 0.3s ease;
+  opacity:0;
+  margin-top:0;
+}
+.insight-body.open {
+  max-height:1000px;
+  opacity:1;
+  margin-top:16px;
+}
+
+/* ─── 일별 누적 서머리 ─── */
+.daily-summary-grid {
+  display:grid; grid-template-columns:1fr 1fr; gap:20px; margin-top:4px;
+}
+@media(max-width:900px){ .daily-summary-grid{ grid-template-columns:1fr; } }
+.daily-summary-col { display:flex; flex-direction:column; position:relative; }
+.ds-filter-bar {
+  display:flex; align-items:center; gap:10px; margin-bottom:8px; flex-wrap:wrap;
+}
+.ds-btn-group { display:flex; gap:0; }
+.ds-btn {
+  font-size:11px; padding:4px 12px; border:1px solid var(--border);
+  background:#fff; color:var(--text); cursor:pointer;
+  transition: background 0.15s, color 0.15s;
+}
+.ds-btn:first-child { border-radius:6px 0 0 6px; }
+.ds-btn:last-child  { border-radius:0 6px 6px 0; }
+.ds-btn:not(:first-child) { border-left:none; }
+.ds-btn.active-kr { background:#e8f5e9; color:#2e7d32; font-weight:700; border-color:#a5d6a7; }
+.ds-btn.active-cn { background:#fce4ec; color:#c62828; font-weight:700; border-color:#ef9a9a; }
+.ds-btn.active-cat { background:#e8eaf6; color:#3949ab; font-weight:700; border-color:#9fa8da; }
+.ds-chk-label { font-size:11px; color:var(--muted); display:flex; align-items:center; gap:4px; cursor:pointer; user-select:none; }
+.ds-chk-label input { cursor:pointer; }
+.daily-summary-wrap { overflow-x:auto; border-radius:10px; border:1px solid var(--border); flex:1; }
+.daily-summary-tbl { width:100%; border-collapse:collapse; font-size:12px; }
+.daily-summary-tbl th {
+  padding:8px 10px; font-weight:700; font-size:11px;
+  text-align:center; white-space:nowrap; border:1px solid #edf0fc;
+}
+.daily-summary-tbl td {
+  padding:6px 10px; border:1px solid #edf0fc;
+  text-align:center; white-space:nowrap; font-size:12px;
+}
+.daily-summary-tbl tbody tr:hover { background:#f0f4ff; }
+.daily-summary-tbl tbody tr.ds-row-planned { background:#f9f9f9; }
+.daily-summary-tbl tbody tr.ds-row-planned:hover { background:#f0f4ff; }
+.daily-summary-tbl tbody tr.ds-row-total { background:#e8f5e9; font-weight:700; }
+.daily-summary-tbl tbody tr.ds-row-total:hover { background:#c8e6c9; }
+.daily-summary-tbl tbody tr.ds-row-tbd { background:#f9fafb; color:#6b7280; font-style:italic; }
+.daily-summary-tbl tbody tr.ds-row-tbd:hover { background:#f0f4ff; }
+.ds-header-kr th { background:#e8f5e9; color:#2e7d32; }
+.ds-header-cn th { background:#fce4ec; color:#c62828; }
+.ds-badge {
+  display:inline-block; font-size:10px; padding:1px 7px; border-radius:8px; font-weight:600;
+}
+.ds-badge-done { background:#c8e6c9; color:#2e7d32; }
+.ds-badge-plan { background:#e0e0e0; color:#616161; }
+.ds-date-th { cursor:pointer; position:relative; user-select:none; }
+.ds-date-dropdown {
+  position:fixed; z-index:9999;
+  background:#ffffff !important; opacity:1 !important;
+  border:1px solid var(--border); border-radius:8px;
+  box-shadow:0 2px 8px rgba(0,0,0,0.15);
+  min-width:180px; padding:6px 0; display:none; text-align:left;
+}
+.ds-date-dropdown.open { display:block; }
+.ds-date-dropdown .ds-dd-actions {
+  display:flex; gap:4px; padding:4px 10px 6px; border-bottom:1px solid #eee;
+}
+.ds-dd-act-btn {
+  font-size:10px; padding:2px 8px; border:1px solid var(--border);
+  border-radius:4px; background:#fff; cursor:pointer; color:var(--text);
+}
+.ds-dd-act-btn:hover { background:#f0f4ff; }
+.ds-date-dropdown .ds-dd-list { max-height:200px; overflow-y:auto; padding:4px 0; }
+.ds-date-dropdown label {
+  display:flex; align-items:center; gap:6px; padding:3px 10px; font-size:11px;
+  font-weight:400; color:var(--text); cursor:pointer;
+}
+.ds-date-dropdown label:hover { background:#f0f0f0; opacity:1 !important; }
+.ds-item-wrap { position:relative; }
+.ds-item-btn {
+  font-size:11px; padding:4px 12px; border:1px solid var(--border);
+  border-radius:6px; background:#fff; color:var(--text); cursor:pointer;
+  display:flex; align-items:center; gap:4px; white-space:nowrap;
+}
+.ds-item-btn:hover { border-color:#9fa8da; }
+.ds-item-dropdown {
+  position:fixed; z-index:9999;
+  background:#ffffff !important; opacity:1 !important;
+  border:1px solid var(--border); border-radius:8px;
+  box-shadow:0 2px 8px rgba(0,0,0,0.15);
+  min-width:160px; padding:6px 0; display:none; text-align:left;
+}
+.ds-item-dropdown.open { display:block; }
+.ds-item-dropdown .ds-dd-actions {
+  display:flex; gap:4px; padding:4px 10px 6px; border-bottom:1px solid #eee;
+}
+.ds-item-dropdown .ds-dd-list { max-height:220px; overflow-y:auto; padding:4px 0; }
+.ds-item-dropdown label {
+  display:flex; align-items:center; gap:6px; padding:3px 10px; font-size:11px;
+  font-weight:400; color:var(--text); cursor:pointer;
+  background:#ffffff !important; opacity:1 !important;
+}
+.ds-item-dropdown label:hover { background:#f0f0f0 !important; opacity:1 !important; }
+
+/* ─── 피벗 테이블 ─── */
+.pivot-wrap { overflow-x:auto; border-radius:10px; border:1px solid var(--border); }
+.pivot-tbl { border-collapse:collapse; font-size:12px; }
+.pivot-tbl th, .pivot-tbl td {
+  padding:7px 12px; border:1px solid #edf0fc;
+  text-align:center; white-space:nowrap;
+}
+.pivot-tbl thead th {
+  background:#f0f3fc; color:var(--muted); font-weight:700;
+  font-size:11px; letter-spacing:0.3px; text-transform:uppercase;
+}
+.pivot-tbl thead th.th-due  { background:#dbeafe; color:#1e40af; }
+.pivot-tbl .item-label      { text-align:left; font-weight:700; background:#f8f9fe; min-width:56px; }
+.pivot-tbl .cell-empty      { color:#d1d5e8; font-size:11px; }
+.pivot-tbl .cell-data       { background:#fff; }
+.pivot-tbl .cell-past       { opacity:0.5; }
+.pivot-tbl .cell-due        { background:#eff6ff; }
+.pivot-tbl .cell-delayed    { background:#fff5f5; }
+.pivot-tbl .p-val           { font-weight:700; color:var(--text); }
+.pivot-tbl .p-pct           { font-size:10px; color:var(--muted); }
+.pivot-tbl .col-total-th    { background:#ede8ff; color:var(--primary2); }
+.pivot-tbl .col-total-td    { background:#f3f0fc; font-weight:700; color:var(--primary2); }
+.pivot-tbl tfoot td         { background:#ede8ff; font-weight:700; border-top:2px solid #c4b5fd; }
+.pivot-tbl tfoot .p-pct     { color:var(--primary2); font-size:10px; }
+.pivot-tbl tfoot .grand-td  { background:#c4b5fd; color:#fff; font-weight:800; }
+.pivot-tbl .class-header {
+  background:linear-gradient(90deg,#e8ecf8 0%,#eef0fc 100%);
+  color:var(--primary2); text-align:left; font-size:11px;
+  font-weight:800; letter-spacing:0.6px; text-transform:uppercase;
+  padding:8px 14px; border-top:2px solid #c7d2f0;
+}
+.pivot-tbl .item-indent { padding-left:24px !important; }
+.pivot-tbl .class-subtotal-row td { background:#eef1fb; }
+.pivot-tbl .class-subtotal-label { color:var(--primary); font-weight:700; font-style:italic; font-size:11px; }
+.pivot-tbl .class-subtotal-cell  { font-size:11px; }
+
+/* ─── 카테고리 미니 탭 ─── */
+.cat-tabs { display:flex; gap:4px; margin-bottom:12px; }
+.cat-tab {
+  padding:3px 10px; border-radius:6px; border:1.5px solid var(--border);
+  background:var(--card); color:var(--muted); font-size:11px; font-weight:600;
+  font-family:inherit; cursor:pointer; transition:all 0.15s;
+}
+.cat-tab:hover { border-color:var(--primary); color:var(--primary); }
+.cat-tab.active { background:linear-gradient(90deg,var(--primary),var(--primary2)); border-color:transparent; color:#fff; }
+
+/* ─── 누계 요약 박스 ─── */
+.due-summary {
+  margin-top:14px;
+  background:#f5f7fc;
+  border:1px solid var(--border);
+  border-radius:10px;
+  padding:10px 14px;
+}
+.due-summary-title {
+  font-size:10px; font-weight:700; color:var(--muted);
+  text-transform:uppercase; letter-spacing:0.4px; margin-bottom:8px;
+}
+.due-row {
+  display:flex; justify-content:space-between; align-items:center;
+  padding:4px 0; border-bottom:1px solid #eaedf8; font-size:12px;
+}
+.due-row:last-child { border-bottom:none; }
+.due-label { color:var(--text); font-weight:600; }
+.due-val   { font-weight:800; }
+
+/* ─── 테이블 공통 ─── */
+table { width:100%; border-collapse:collapse; font-size:12.5px; }
+thead th {
+  background:#f0f3fc;
+  color:var(--muted);
+  font-weight:700;
+  padding:9px 13px;
+  text-align:left;
+  font-size:11px;
+  text-transform:uppercase;
+  letter-spacing:0.4px;
+  white-space:nowrap;
+  border-bottom:1px solid var(--border);
+}
+tbody tr { border-bottom:1px solid #f0f3fc; transition:background 0.12s; cursor:default; }
+tbody tr:hover { background:#f6f8ff; }
+tbody td { padding:9px 13px; color:var(--text); }
+tbody td.muted { color:var(--muted); }
+
+/* 미니 진행바 */
+.mini-wrap { display:flex; align-items:center; gap:7px; }
+.mini-bar  { flex:1; height:5px; background:#edf0fc; border-radius:3px; overflow:hidden; min-width:50px; }
+.mini-fill { height:100%; border-radius:3px; }
+.pct-txt   { font-size:11px; font-weight:700; min-width:34px; text-align:right; }
+
+/* 배지 */
+.badge-done    { background:#d1fae5; color:#065f46; padding:2px 8px; border-radius:10px; font-size:11px; font-weight:700; }
+.badge-pending { background:#dbeafe; color:#1e40af; padding:2px 8px; border-radius:10px; font-size:11px; font-weight:700; }
+.badge-delay   { background:#fee2e2; color:#991b1b; padding:2px 8px; border-radius:10px; font-size:11px; font-weight:700; }
+.badge-risk    { background:#fef9c3; color:#92400e; padding:2px 8px; border-radius:10px; font-size:11px; font-weight:700; }
+.badge-na      { background:#e2e8f0; color:#64748b; padding:2px 8px; border-radius:10px; font-size:11px; font-weight:700; }
+
+/* ─── 상세 테이블 ─── */
+.filter-bar { display:flex; gap:10px; margin-bottom:14px; flex-wrap:wrap; align-items:center; }
+.f-btn {
+  padding:6px 14px; border-radius:8px; border:1.5px solid var(--border);
+  background:var(--card); color:var(--muted); font-size:12px; font-weight:600;
+  font-family:inherit; cursor:pointer; transition:all 0.15s;
+}
+.f-btn:hover { border-color:var(--primary); color:var(--primary); }
+.f-btn.active { background:linear-gradient(90deg,var(--primary),var(--primary2)); border-color:transparent; color:#fff; }
+.multi-select { position:relative; display:inline-block; }
+.ms-btn { background:var(--card); border:1.5px solid var(--border); color:var(--text); padding:6px 12px; border-radius:8px; font-size:12px; font-family:inherit; cursor:pointer; display:flex; align-items:center; gap:6px; white-space:nowrap; min-width:100px; transition:border-color 0.15s; }
+.ms-btn:hover,.ms-btn.open { border-color:var(--primary); }
+.ms-btn .ms-arrow { font-size:9px; color:var(--muted); margin-left:auto; }
+.ms-btn .ms-count { background:var(--primary); color:#fff; font-size:10px; font-weight:700; padding:1px 6px; border-radius:8px; }
+.ms-drop { position:absolute; top:calc(100% + 4px); left:0; min-width:200px; max-height:260px; overflow-y:auto; background:var(--card); border:1.5px solid var(--border); border-radius:10px; box-shadow:var(--shadow-lg); z-index:100; display:none; padding:4px 0; }
+.ms-drop.open { display:block; }
+.ms-drop label { display:flex; align-items:center; gap:8px; padding:6px 12px; font-size:12px; cursor:pointer; transition:background 0.1s; }
+.ms-drop label:hover { background:#f5f7fc; }
+.ms-drop input[type=checkbox] { accent-color:var(--primary); width:14px; height:14px; cursor:pointer; }
+.f-reset { background:none; border:1.5px solid var(--border); color:var(--muted); padding:6px 12px; border-radius:8px; font-size:12px; font-family:inherit; cursor:pointer; transition:all 0.15s; }
+.f-reset:hover { border-color:#f87171; color:#f87171; }
+.remark-cell { max-width:150px; white-space:nowrap; overflow:hidden; text-overflow:ellipsis; font-size:11px; cursor:pointer; position:relative; }
+.remark-cell:hover { color:var(--primary); }
+.remark-modal-overlay { display:none; position:fixed; top:0; left:0; right:0; bottom:0; background:rgba(0,0,0,0.35); z-index:9999; align-items:center; justify-content:center; }
+.remark-modal-overlay.open { display:flex; }
+.remark-modal { background:var(--card); border-radius:16px; box-shadow:0 12px 40px rgba(0,0,0,0.2); max-width:480px; width:90%; padding:24px; position:relative; animation:rmFadeIn 0.2s ease; }
+@keyframes rmFadeIn { from{opacity:0;transform:translateY(10px)} to{opacity:1;transform:translateY(0)} }
+.remark-modal .rm-close { position:absolute; top:12px; right:14px; background:none; border:none; font-size:20px; color:var(--muted); cursor:pointer; line-height:1; }
+.remark-modal .rm-close:hover { color:var(--text); }
+.remark-modal .rm-title { font-size:14px; font-weight:800; color:var(--text); margin-bottom:16px; padding-bottom:10px; border-bottom:2px solid var(--border); }
+.remark-modal .rm-field { margin-bottom:12px; }
+.remark-modal .rm-label { font-size:11px; font-weight:700; color:var(--muted); text-transform:uppercase; letter-spacing:0.4px; margin-bottom:4px; }
+.remark-modal .rm-value { font-size:13px; color:var(--text); line-height:1.6; word-break:break-all; }
+.remark-modal .rm-remark { background:#f8f9fe; border:1px solid var(--border); border-radius:8px; padding:12px; font-size:13px; line-height:1.7; color:var(--text); white-space:pre-wrap; word-break:break-all; }
+.f-select, .f-input {
+  background:var(--card); border:1.5px solid var(--border); color:var(--text);
+  padding:6px 11px; border-radius:8px; font-size:12px; outline:none; font-family:inherit;
+}
+.f-select:focus, .f-input:focus { border-color:var(--primary); }
+.detail-wrap { border-radius:14px; border:1px solid var(--border); overflow:hidden; box-shadow:var(--shadow); }
+.detail-scroll { overflow-x:auto; max-height:480px; overflow-y:auto; }
+.detail-tbl { width:100%; border-collapse:collapse; font-size:12px; }
+.detail-tbl thead { position:sticky; top:0; z-index:10; }
+.detail-tbl thead th { background:#f0f3fc; border-bottom:1px solid var(--border); }
+.detail-tbl tbody td { padding:7px 12px; border-bottom:1px solid #f3f5fb; }
+.detail-tbl tbody tr:hover { background:#f6f8ff; }
+.detail-tbl .row-delayed { background:#fff5f5; }
+.detail-tbl .row-delayed:hover { background:#fee2e2 !important; }
+.detail-tbl .row-na       { background:#f8fafc; opacity:0.72; }
+.detail-tbl .row-na:hover  { background:#f1f5f9 !important; opacity:1; }
+.row-cnt { padding:9px 14px; font-size:12px; color:var(--muted); background:#fafbff; border-top:1px solid var(--border); }
+.detail-pager { display:flex; align-items:center; gap:4px; padding:8px 14px; background:#fafbff; border-top:1px solid var(--border); flex-wrap:wrap; }
+.pg-btn { background:#fff; border:1px solid var(--border); color:var(--text); font-size:12px; padding:3px 9px; border-radius:6px; cursor:pointer; }
+.pg-btn:hover:not(:disabled) { background:var(--primary); color:#fff; border-color:var(--primary); }
+.pg-btn:disabled { opacity:0.35; cursor:default; }
+.pg-btn.pg-active { background:var(--primary); color:#fff; border-color:var(--primary); font-weight:700; }
+.pg-info { font-size:11px; color:var(--muted); margin-left:6px; }
+
+/* 스크롤바 */
+::-webkit-scrollbar { width:5px; height:5px; }
+::-webkit-scrollbar-track { background:transparent; }
+::-webkit-scrollbar-thumb { background:#d0d8ee; border-radius:3px; }
+
+/* 탭 */
+.tabs { display:flex; gap:0; margin-bottom:18px; border-bottom:2px solid var(--border); }
+.tab-btn {
+  padding:8px 20px; background:none; border:none;
+  font-size:13px; font-weight:600; color:var(--muted);
+  cursor:pointer; border-bottom:2px solid transparent; margin-bottom:-2px;
+  transition:all 0.15s; font-family:inherit;
+}
+.tab-btn.active { color:var(--primary2); border-bottom-color:var(--primary2); }
+.tab-pane { display:none; }
+.tab-pane.active { display:block; }
+
+/* 반응형 */
+@media(max-width:1200px){
+  .grid-5{grid-template-columns:repeat(3,1fr);}
+  .grid-3{grid-template-columns:1fr 1fr;}
+}
+@media(max-width:768px){
+  .container{padding:14px;}
+  .grid-5,.grid-2,.grid-3{grid-template-columns:1fr;}
+}
+
+/* ─── view-cn 이중언어 ─── */
+.en-label { display:none; }
+body.view-cn .ko-label { display:none; }
+body.view-cn .en-label { display:inline; }
+/* ─── view-cn KPI 토글 ─── */
+.kpi-all-row { display:grid; grid-template-columns:repeat(4,1fr); gap:16px; margin-bottom:24px; align-items:stretch; }
+.kpi-cn-row  { display:none; }
+body.view-cn .kpi-all-row { display:none; }
+body.view-cn .kpi-cn-row  { display:grid; grid-template-columns:repeat(4,1fr); gap:16px; margin-bottom:24px; }
+/* ─── view-cn 섹션 숨김 ─── */
+body.view-cn #section-insight      { display:none; }
+body.view-cn #section-kr-schedule  { display:none; }
+/* 탭 가시성: hide-on-cn / cn-only 로 교체 */
+body.view-cn .ds-col-kr            { display:none; }
+body.view-cn .daily-summary-grid   { grid-template-columns:1fr; }
+body.view-cn .grid-3               { grid-template-columns:1fr 1fr; }
+body.view-cn .pill-kr              { display:none; }
+/* ─── view-cn 상세 테이블 KR 컬럼 숨김 ─── */
+/* 7:담당자  8:디자이너  13:KR입고예정  14:KR실입고 */
+body.view-cn .detail-tbl th:nth-child(7),
+body.view-cn .detail-tbl td:nth-child(7),
+body.view-cn .detail-tbl th:nth-child(8),
+body.view-cn .detail-tbl td:nth-child(8),
+body.view-cn .detail-tbl th:nth-child(13),
+body.view-cn .detail-tbl td:nth-child(13),
+body.view-cn .detail-tbl th:nth-child(14),
+body.view-cn .detail-tbl td:nth-child(14) { display:none; }
+/* ─── view-cn 필터 버튼 숨김 ─── */
+
+/* CN 모드 상세 필터 숨김 */
+body.view-cn #ms-sourcing,
+body.view-cn #ms-designer  { display:none; }
+body.view-cn #btn-filter-pending,
+body.view-cn #btn-filter-arrived,
+body.view-cn #btn-kr-delayed       { display:none; }
+
+/* ─── cat KR section hide in CN mode ─── */
+body.view-cn .cat-kr-col { display:none; }
+/* ─── BY ORIGIN tab toggle ─── */
+body.view-cn .hide-on-cn  { display:none !important; }
+body:not(.view-cn) .cn-only { display:none !important; }
+/* ─── BY ORIGIN tree styles ─── */
+.origin-summary-box {
+  background:#f8faff; border:1px solid var(--border); border-radius:10px;
+  padding:14px 20px; margin-bottom:18px;
+  display:grid; grid-template-columns:1fr 1fr; gap:6px 28px;
+}
+.origin-sum-row { display:flex; justify-content:space-between; align-items:center; font-size:13px; border-bottom:1px solid #eef0f8; padding:5px 0; }
+.origin-sum-row:last-child { border-bottom:none; }
+.origin-sum-key { color:var(--muted); font-weight:500; }
+.origin-sum-val { font-weight:700; }
+.origin-co-card { border:1px solid #c7d2fe; border-radius:12px; margin-bottom:14px; overflow:hidden; }
+.origin-co-header {
+  display:flex; align-items:center; gap:10px; padding:12px 18px;
+  background:linear-gradient(90deg,#ede9fe,#dbeafe); cursor:pointer; font-weight:700;
+}
+.origin-co-header:hover { background:linear-gradient(90deg,#ddd6fe,#c7d2fe); }
+.origin-co-name { font-size:14px; color:#3730a3; }
+.origin-flag { font-size:20px; line-height:1; }
+.origin-arrow { font-size:13px; color:#6366f1; width:16px; text-align:center; flex-shrink:0; }
+.origin-meta { margin-left:auto; font-size:12px; color:var(--muted); font-weight:500; white-space:nowrap; }
+.origin-co-body { padding:8px; }
+.origin-vendor-row { border:1px solid #e8eaf6; border-radius:8px; margin:6px 0; background:#fff; }
+.origin-vendor-header {
+  display:flex; align-items:center; gap:8px; padding:9px 14px;
+  background:#fafbff; cursor:pointer; border-radius:8px;
+}
+.origin-vendor-header:hover { background:#f0f4ff; }
+.origin-vendor-name { font-size:13px; font-weight:600; color:var(--text); flex:1; min-width:0; overflow:hidden; text-overflow:ellipsis; white-space:nowrap; }
+.origin-vendor-body { padding:4px 12px 8px 32px; }
+.origin-etd-row {
+  display:flex; align-items:center; gap:10px;
+  padding:5px 0; border-top:1px dashed #e8eaf6; font-size:12px;
+}
+.origin-etd-date { font-weight:600; color:var(--primary); min-width:120px; }
+.origin-badge { font-size:11px; font-weight:700; padding:2px 8px; border-radius:10px; white-space:nowrap; flex-shrink:0; }
+.origin-badge-safe           { background:#d1fae5; color:#065f46; }
+.origin-badge-caution        { background:#fef3c7; color:#92400e; }
+.origin-badge-split-required { background:#fee2e2; color:#991b1b; }
+/* ─── KPI 팝업 모달 ─── */
+.km-ovl{display:none;position:fixed;inset:0;background:rgba(0,0,0,.5);z-index:9900;align-items:center;justify-content:center;padding:16px;}
+.km-ovl.open{display:flex;}
+.km-box{background:#fff;border-radius:16px;box-shadow:0 8px 40px rgba(0,0,0,.2);width:100%;max-width:920px;max-height:90vh;display:flex;flex-direction:column;overflow:hidden;}
+.km-hd{display:flex;align-items:center;justify-content:space-between;padding:16px 22px;border-bottom:1px solid #e8edf8;flex-shrink:0;}
+.km-title{font-size:16px;font-weight:800;color:#1e2a4a;}
+.km-x{width:30px;height:30px;border-radius:50%;border:none;background:#f3f4f6;font-size:18px;cursor:pointer;color:#6b7280;display:flex;align-items:center;justify-content:center;}
+.km-x:hover{background:#e5e7eb;}
+.km-body{overflow-y:auto;padding:20px;flex:1;}
+/* 팝업1 */
+.km1sum{background:#f5f0ff;border-radius:10px;padding:12px 18px;margin-bottom:18px;font-size:13px;font-weight:700;color:#7c5fc0;text-align:center;}
+.km1charts{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-bottom:18px;}
+.km1cb{background:#f9fafb;border-radius:10px;padding:14px;text-align:center;}
+.km1cl{font-size:11px;font-weight:700;color:#6b7280;text-transform:uppercase;letter-spacing:.5px;margin-bottom:10px;}
+.km1dw{width:120px;height:120px;margin:0 auto 10px;}
+.km1lg{display:flex;flex-wrap:wrap;justify-content:center;gap:5px 12px;}
+.km1li{display:flex;align-items:center;gap:5px;font-size:11px;color:#374151;}
+.km1ld{width:10px;height:10px;border-radius:50%;flex-shrink:0;}
+.m1gh{padding:6px 10px;border-radius:6px;font-size:11px;font-weight:800;text-transform:uppercase;letter-spacing:.5px;margin-bottom:5px;}
+.m1br{display:flex;align-items:center;gap:8px;padding:4px 0;border-bottom:1px solid #f3f4f6;}
+.m1bc{width:38px;font-size:11px;font-weight:700;color:#374151;text-align:right;flex-shrink:0;}
+.m1bt{flex:1;background:#f3f4f6;border-radius:4px;height:20px;overflow:hidden;}
+.m1bf{height:100%;border-radius:4px;}
+.m1bv{width:90px;font-size:11px;color:#374151;text-align:right;white-space:nowrap;flex-shrink:0;}
+/* 팝업2 */
+.m2tabs{display:flex;gap:6px;margin-bottom:16px;flex-wrap:wrap;}
+.m2tb{padding:6px 12px;border-radius:8px;border:2px solid #e5e7eb;background:#f9fafb;font-size:11px;font-weight:700;cursor:pointer;color:#6b7280;transition:all .15s;}
+.m2tb.act{color:#fff;border-color:transparent;}
+.m2tb[data-key="0612"].act,.m2tb[data-key="0616"].act,.m2tb[data-key="0629"].act,.m2tb[data-key="0713"].act{background:#93c5fd;}
+.m2ov{border-radius:10px;padding:14px 18px;margin-bottom:14px;}
+.m2ovt{display:flex;align-items:center;justify-content:space-between;margin-bottom:8px;}
+.m2ovl{font-size:13px;font-weight:800;}.m2ovp{font-size:26px;font-weight:900;}
+.m2gh{padding:6px 10px;border-radius:6px;font-size:11px;font-weight:800;text-transform:uppercase;letter-spacing:.5px;margin-top:12px;margin-bottom:5px;}
+.m2ir{display:flex;align-items:center;gap:7px;padding:5px 0;border-bottom:1px solid #f3f4f6;}
+.m2ic{width:36px;font-size:12px;font-weight:700;color:#374151;flex-shrink:0;}
+.m2ibt{flex:1;background:#f3f4f6;border-radius:4px;height:20px;overflow:hidden;}
+.m2ibf{height:100%;border-radius:4px;}
+.m2is{width:118px;font-size:11px;color:#374151;text-align:right;white-space:nowrap;flex-shrink:0;}
+.m2ib{min-width:58px;font-size:11px;text-align:right;flex-shrink:0;}
+.m2sb{background:#f9fafb;border-radius:10px;padding:12px 16px;margin-top:14px;font-size:12px;}
+.m2sr{margin-bottom:4px;}
+.m1bt{flex:1;background:#f3f4f6;border-radius:4px;height:20px;overflow:hidden;}
+@media(max-width:600px){.km1charts{grid-template-columns:1fr;}.km-box{max-height:95vh;}.m2tb{padding:5px 9px;font-size:10px;}}
+</style>
+</head>
+<body>
+
+<!-- 헤더 -->
+<div class="header">
+  <div class="header-title">
+    <h1><span class="ko-label">(WEAR) MLB 27SS TRADE SHOW — 샘플 입고 대시보드</span><span class="en-label">(WEAR) MLB 27SS TRADE SHOW — Sample Status Dashboard</span></h1>
+    <p><span class="ko-label">COVER 시트 기준 (2026.04.21 업데이트) | 27SS 2차 수주</span><span class="en-label">Based on COVER sheet (Updated 2026.04.21) | 27SS 2nd Order</span></p>
+  </div>
+  <div class="header-meta">
+    <div class="today" id="today-txt"></div>
+    <div class="d-badge" id="d-badge"></div>
+    <div class="schedule-pills" id="schedule-pills"></div>
+  </div>
+</div>
+
+<!-- 뷰 스위처 -->
+<div class="view-switcher-bar">
+  <div class="view-switcher">
+    <button id="btn-view-all" class="vs-btn vs-active" onclick="switchView('all')">🇰🇷+🇨🇳&nbsp; ALL (KR+CN)</button>
+    <button id="btn-view-cn"  class="vs-btn"           onclick="switchView('cn')">🇨🇳&nbsp; CN TRADE SHOW ONLY</button>
+  </div>
+</div>
+
+<div class="container">
+
+  <!-- KPI (ALL 모드) -->
+  <div class="kpi-all-row">
+    <div id="kpi-card-1" class="kpi-card" style="--kpi-color:#7c5fc0;cursor:pointer">
+      <div class="stripe"></div>
+      <div class="kpi-label"><span class="ko-label">총 스타일 / SKU</span><span class="en-label">TOTAL STYLE / SKU</span></div>
+      <div class="kpi-val" id="k-summary" style="font-size:28px"></div>
+      <div style="font-size:12px;color:var(--muted);margin-top:3px"><span id="k-sku-count" style="color:var(--text);font-weight:700"></span> SKU</div>
+      <table class="pcs-tbl">
+        <tr><td class="pt-label">국내(KR)</td><td class="pt-val" id="pb-kr"></td></tr>
+        <tr><td class="pt-label">CN 수주회</td><td class="pt-val" id="pb-cn-show"></td></tr>
+        <tr><td class="pt-label">FOCUS</td><td class="pt-val" id="pb-focus"></td></tr>
+        <tr class="pt-sep"><td colspan="2"></td></tr>
+        <tr class="pt-total"><td class="pt-label">TTL</td><td class="pt-val" id="pb-ttl"></td></tr>
+      </table>
+      <div class="pcs-foot">KNIT + WOVEN + DENIM</div>
+    </div>
+    <div id="kpi-card-2" class="kpi-card" style="--kpi-color:#ef4444;cursor:pointer">
+      <div class="stripe"></div>
+      <div class="kpi-label"><span class="ko-label">예정 입고율</span><span class="en-label">PLANNED ARRIVAL RATE</span></div>
+      <div id="k-arrival-wrap" style="margin-top:8px"></div>
+    </div>
+    <div class="kpi-card" style="--kpi-color:#60a5fa">
+      <div class="stripe"></div>
+      <div class="kpi-label"><span class="ko-label">KR 입고 완료</span><span class="en-label">KR ARRIVALS</span></div>
+      <div class="kpi-val" id="k-arrived" style="font-size:20px"></div>
+      <div class="kpi-sub" id="k-arrived-sub"></div>
+      <div id="k-kr-delay-wrap" class="kpi-delay-section"></div>
+    </div>
+    <div class="kpi-card" style="--kpi-color:#10b981">
+      <div class="stripe"></div>
+      <div class="kpi-label"><span class="ko-label">CN 발송 완료</span><span class="en-label">CN SHIPMENT COMPLETED</span></div>
+      <div class="kpi-val" id="k-cn-sent" style="font-size:20px"></div>
+      <div class="kpi-sub" id="k-cn-sent-sub"></div>
+      <div id="k-cn-delay-wrap" class="kpi-delay-section"></div>
+    </div>
+  </div>
+
+
+  <!-- KPI (CN 모드) -->
+  <div class="kpi-cn-row">
+    <div class="kpi-card" style="--kpi-color:#7c5fc0">
+      <div class="stripe"></div>
+      <div class="kpi-label">TOTAL STYLE / SKU</div>
+      <div class="kpi-val" id="cn-k-styles" style="font-size:28px"></div>
+      <div style="font-size:12px;color:var(--muted);margin-top:3px"><span id="cn-k-sku-count" style="color:var(--text);font-weight:700"></span> SKU</div>
+      <table class="pcs-tbl">
+        <tr><td class="pt-label">CN TRADE SHOW</td><td class="pt-val" id="pb-cn-ts"></td></tr>
+        <tr><td class="pt-label">FOCUS SAMPLE</td><td class="pt-val" id="pb-cn-fs"></td></tr>
+        <tr class="pt-sep"><td colspan="2"></td></tr>
+        <tr class="pt-total"><td class="pt-label">CN TOTAL</td><td class="pt-val" id="pb-cn-total"></td></tr>
+      </table>
+      <div class="pcs-foot">KNIT + WOVEN + DENIM</div>
+    </div>
+    <div class="kpi-card" style="--kpi-color:#3b82f6">
+      <div class="stripe"></div>
+      <div class="kpi-label">CN TRADE SHOW (Regular)</div>
+      <div class="kpi-val" id="cn-k-show" style="font-size:28px"></div>
+      <div class="kpi-sub">Standard CN show samples</div>
+    </div>
+    <div class="kpi-card" id="cn-kpi-focus" style="--kpi-color:#f59e0b">
+      <div class="stripe"></div>
+      <div class="kpi-label">FOCUS SAMPLE (CN Additional)</div>
+      <div class="kpi-val" id="cn-k-focus" style="font-size:28px"></div>
+      <div class="kpi-sub">CN additional request</div>
+    </div>
+    <div class="kpi-card" style="--kpi-color:#1d4ed8;border-color:#bfdbfe;box-shadow:0 4px 16px rgba(29,78,216,0.12)">
+      <div class="stripe"></div>
+      <div class="kpi-label" style="color:#1d4ed8;font-weight:800">CN TOTAL &#9733;</div>
+      <div class="kpi-val" id="cn-k-total-pcs" style="font-size:28px;color:#1d4ed8;font-weight:900"></div>
+      <div class="kpi-sub">&#9733; Total required for CN show</div>
+    </div>
+  </div>
+
+  <!-- AI 인사이트 -->
+  <div class="card" id="section-insight" style="margin-bottom:24px;">
+    <div class="sec-title insight-toggle" onclick="toggleInsight()">
+      <span>📊 AI 인사이트 <span class="tag">자동 분석</span></span>
+      <span class="toggle-arrow" id="insight-arrow">▼ 펼치기</span>
+    </div>
+    <div class="insight-body" id="insight-body">
+      <div class="insight-grid" id="insight-grid"></div>
+    </div>
+  </div>
+
+  <!-- 일별 누적 서머리 -->
+  <div class="card" style="margin-bottom:24px;">
+    <div class="sec-title insight-toggle" onclick="toggleDailySummary()">
+      <span>📊 <span class="ko-label">일별 누적 서머리</span><span class="en-label">DAILY CUMULATIVE SUMMARY</span> <span class="tag"><span class="ko-label">전체 기준</span><span class="en-label">All basis</span></span></span>
+      <span class="toggle-arrow" id="daily-summary-arrow"><span class="ko-label">▲ 접기</span><span class="en-label">▲ Collapse</span></span>
+    </div>
+    <div class="insight-body open" id="daily-summary-body">
+      <div class="daily-summary-grid" id="daily-summary-grid"></div>
+    </div>
+  </div>
+
+  <!-- 카테고리 진행률 + 타임라인 -->
+  <div class="grid-2">
+    <div class="card">
+      <div class="sec-title"><span class="ko-label">카테고리별 진행률</span><span class="en-label">PROGRESS BY CATEGORY</span> <span class="tag">KNIT / WOVEN / DENIM</span></div>
+      <div id="cat-progress"></div>
+    </div>
+    <div class="card">
+      <div class="sec-title"><span class="ko-label">주요 일정 타임라인</span><span class="en-label">KEY SCHEDULE TIMELINE</span></div>
+      <div class="timeline">
+        <div class="tl-item" id="tl-1">
+          <div class="tl-date">2026.06.12</div>
+          <div class="tl-label"><span class="ko-label">신규 DUE (KR 도착)</span><span class="en-label">New Styles Arrival Due</span><span class="tl-dday" id="tl-1-dday"></span><span class="tl-arrival tbd" id="tl-1-arr"></span></div>
+          <div class="tl-sub"><span class="ko-label">목표 40%</span><span class="en-label">Target 40%</span></div>
+        </div>
+        <div class="tl-item preview" id="tl-2">
+          <div class="tl-date">2026.06.15</div>
+          <div class="tl-label"><span class="ko-label">2-1차 프리뷰</span><span class="en-label">2-1 Preview</span><span class="tl-dday" id="tl-2-dday"></span></div>
+        </div>
+        <div class="tl-item milestone" id="tl-3">
+          <div class="tl-date">2026.06.16</div>
+          <div class="tl-label" style="color:var(--primary);font-weight:800"><span class="ko-label">2-1차 품평회</span><span class="en-label">2-1 Review Session</span><span class="tl-dday" id="tl-3-dday"></span><span class="tl-arrival tbd" id="tl-3-arr"></span></div>
+        </div>
+        <div class="tl-item preview" id="tl-4">
+          <div class="tl-date">2026.06.27</div>
+          <div class="tl-label"><span class="ko-label">2-2차 프리뷰</span><span class="en-label">2-2 Preview</span><span class="tl-dday" id="tl-4-dday"></span></div>
+        </div>
+        <div class="tl-item milestone tl-rev2" id="tl-5">
+          <div class="tl-date">2026.06.29</div>
+          <div class="tl-label" style="color:#7c5fc0;font-weight:800"><span class="ko-label">2-2차 품평회</span><span class="en-label">2-2 Review Session</span><span class="tl-dday" id="tl-5-dday"></span><span class="tl-arrival tbd" id="tl-5-arr"></span></div>
+          <div class="tl-sub"><span class="ko-label">목표 60%</span><span class="en-label">Target 60%</span></div>
+        </div>
+        <div class="tl-item" id="tl-6">
+          <div class="tl-date">2026.07.13</div>
+          <div class="tl-label" style="color:#9333ea;font-size:14px">27SS CN TRADE SHOW<span class="tl-dday" id="tl-6-dday"></span><span class="tl-arrival tbd" id="tl-6-arr"></span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- CN ETD / CN RDD / KR 입고예정 -->
+  <div class="grid-3" style="margin-bottom:24px;">
+    <div class="card">
+      <div class="sec-title"><span class="ko-label">CN ETD 일정별</span><span class="en-label">CN ETD SCHEDULE</span> <span class="tag"><span class="ko-label">중국 출발예정</span><span class="en-label">ETD from China</span></span></div>
+      <div style="display:flex;align-items:center;gap:8px;flex-wrap:wrap;margin-bottom:12px;">
+        <div class="cat-tabs" id="etd-cat-tabs" style="margin-bottom:0">
+          <button class="cat-tab active" onclick="switchCatTab('etd','all',this)"><span class="ko-label">전체</span><span class="en-label">All</span></button>
+          <button class="cat-tab" onclick="switchCatTab('etd','KNIT',this)">KNIT</button>
+          <button class="cat-tab" onclick="switchCatTab('etd','WOVEN',this)">WOVEN</button>
+          <button class="cat-tab" onclick="switchCatTab('etd','DENIM',this)">DENIM</button>
+        </div>
+        <div style="display:flex;gap:10px;font-size:10px;color:var(--muted);margin-left:auto">
+          <span><span style="display:inline-block;width:8px;height:8px;border-radius:50%;background:#60a5fa;vertical-align:middle;margin-right:2px"></span><span class="ko-label">ETD 예정</span><span class="en-label">Planned ETD</span></span>
+          <span><span style="display:inline-block;width:8px;height:8px;border-radius:50%;background:#34d399;vertical-align:middle;margin-right:2px"></span><span class="ko-label">실제 발송완료</span><span class="en-label">Actual Shipped</span></span>
+        </div>
+      </div>
+      <div id="cn-etd-list"></div>
+      <div style="margin-top:12px; font-size:11px; color:var(--muted);">
+        <span class="ko-label">CO별:</span><span class="en-label">By Origin:</span> <span id="co-cn-cnt" style="color:#1d4ed8;font-weight:700"></span>CN&nbsp;
+              <span id="co-vn-cnt" style="color:#166534;font-weight:700"></span>VN&nbsp;
+              <span id="co-kr-cnt" style="color:#86198f;font-weight:700"></span>KR
+      </div>
+      <div class="due-summary" id="etd-summary"></div>
+    </div>
+    <div class="card">
+      <div class="sec-title"><span class="ko-label">CN RDD 예상</span><span class="en-label">CN RDD ESTIMATE</span> <span class="tag"><span class="ko-label">예정 vs 실발송 기준</span><span class="en-label">Planned vs Actual</span></span></div>
+      <div style="font-size:11px; color:var(--muted); margin-bottom:10px;">
+        <span class="ko-label">CN출고→CN입고 : CN +2일 / VN·KR +5일 / KR HAND CARRY 당일(0일)</span><span class="en-label">CN ship → CN arrival : CN +2d / VN·KR +5d / KR HAND CARRY same day (0d)</span>
+      </div>
+      <div style="display:flex;align-items:center;gap:8px;flex-wrap:wrap;margin-bottom:12px;">
+        <div class="cat-tabs" id="rdd-cat-tabs" style="margin-bottom:0">
+          <button class="cat-tab active" onclick="switchCatTab('rdd','all',this)"><span class="ko-label">전체</span><span class="en-label">All</span></button>
+          <button class="cat-tab" onclick="switchCatTab('rdd','KNIT',this)">KNIT</button>
+          <button class="cat-tab" onclick="switchCatTab('rdd','WOVEN',this)">WOVEN</button>
+          <button class="cat-tab" onclick="switchCatTab('rdd','DENIM',this)">DENIM</button>
+        </div>
+        <div style="display:flex;gap:10px;font-size:10px;color:var(--muted);margin-left:auto">
+          <span><span style="display:inline-block;width:8px;height:8px;border-radius:50%;background:#a5b4fc;vertical-align:middle;margin-right:2px"></span><span class="ko-label">ETD 기준 예정</span><span class="en-label">Planned (ETD-based)</span></span>
+          <span><span style="display:inline-block;width:8px;height:8px;border-radius:50%;background:#86efac;vertical-align:middle;margin-right:2px"></span><span class="ko-label">실발송 기준 실적 RDD 예상</span><span class="en-label">Actual RDD (ATD-based)</span></span>
+        </div>
+      </div>
+      <div id="cn-rdd-list"></div>
+      <div class="due-summary" id="rdd-summary"></div>
+    </div>
+    <div class="card" id="section-kr-schedule">
+      <div class="sec-title">KR 입고예정일별 <span class="tag">한국 입고예정</span></div>
+      <div style="display:flex;align-items:center;gap:8px;flex-wrap:wrap;margin-bottom:12px;">
+        <div class="cat-tabs" id="kr-cat-tabs" style="margin-bottom:0">
+          <button class="cat-tab active" onclick="switchCatTab('kr','all',this)">전체</button>
+          <button class="cat-tab" onclick="switchCatTab('kr','KNIT',this)">KNIT</button>
+          <button class="cat-tab" onclick="switchCatTab('kr','WOVEN',this)">WOVEN</button>
+          <button class="cat-tab" onclick="switchCatTab('kr','DENIM',this)">DENIM</button>
+        </div>
+        <div style="display:flex;gap:10px;font-size:10px;color:var(--muted);margin-left:auto">
+          <span><span style="display:inline-block;width:8px;height:8px;border-radius:50%;background:#60a5fa;vertical-align:middle;margin-right:2px"></span>입고 예정</span>
+          <span><span style="display:inline-block;width:8px;height:8px;border-radius:50%;background:#34d399;vertical-align:middle;margin-right:2px"></span>실제 입고완료</span>
+        </div>
+      </div>
+      <div id="kr-exp-list"></div>
+      <div class="due-summary" id="kr-summary"></div>
+    </div>
+  </div>
+
+  <!-- 담당자 & 벤더 & 디자이너 & ITEM 탭 -->
+  <div class="card" style="margin-bottom:24px;">
+    <div class="tabs">
+      <button class="tab-btn active" onclick="switchTab('vendor')"><span class="ko-label">벤더별 현황</span><span class="en-label">BY VENDOR</span></button>
+      <button class="tab-btn hide-on-cn" onclick="switchTab('designer')">디자이너별 현황</button>
+      <button class="tab-btn" onclick="switchTab('item')"><span class="ko-label">ITEM별 현황</span><span class="en-label">BY ITEM</span></button>
+      <button class="tab-btn cn-only" onclick="switchTab('origin')">BY ORIGIN</button>
+      <button class="tab-btn hide-on-cn" onclick="switchTab('staff')">담당자별 현황</button>
+      <button class="tab-btn hide-on-cn" onclick="switchTab('fabric')">원단현황</button>
+    </div>
+
+    <!-- 담당자 탭 -->
+    <div class="tab-pane" id="tab-staff">
+      <div class="sec-title">담당자(소싱)별 샘플 입고 현황 <span class="tag" id="staff-badge">9명</span></div>
+      <table>
+        <thead><tr>
+          <th>담당자</th><th>스타일</th><th>SKU</th><th>PCS</th>
+          <th>KR 입고</th><th>CN 발송</th><th>지연</th><th>KR 진행률</th><th>상태</th>
+        </tr></thead>
+        <tbody id="staff-tbody"></tbody>
+      </table>
+    </div>
+
+    <!-- 벤더 탭 -->
+    <div class="tab-pane active" id="tab-vendor">
+      <div class="sec-title"><span class="ko-label">벤더별 샘플 현황</span><span class="en-label">Sample Status by Vendor</span> <span class="tag" id="vendor-badge">전체</span></div>
+      <table>
+        <thead><tr>
+          <th><span class="ko-label">벤더명</span><span class="en-label">Vendor</span></th><th><span class="ko-label">스타일</span><span class="en-label">Style</span></th><th>SKU</th><th><span class="ko-label">분류</span><span class="en-label">Category</span></th>
+          <th><span class="ko-label">KR 입고</span><span class="en-label">KR Arrival</span></th><th><span class="ko-label">CN 발송</span><span class="en-label">CN Shipped</span></th><th><span class="ko-label">지연</span><span class="en-label">Delayed</span></th><th><span class="ko-label">진행률</span><span class="en-label">Progress</span></th><th><span class="ko-label">상태</span><span class="en-label">Status</span></th>
+        </tr></thead>
+        <tbody id="vendor-tbody"></tbody>
+      </table>
+    </div>
+
+    <!-- 디자이너 탭 -->
+    <div class="tab-pane" id="tab-designer">
+      <div class="sec-title">디자이너별 샘플 현황 <span class="tag" id="designer-badge">전체</span></div>
+      <table>
+        <thead><tr>
+          <th>디자이너명</th><th>스타일</th><th>SKU</th><th>분류</th>
+          <th>KR 입고</th><th>CN 발송</th><th>지연</th><th>진행률</th><th>상태</th>
+        </tr></thead>
+        <tbody id="designer-tbody"></tbody>
+      </table>
+    </div>
+
+    <!-- BY ORIGIN 탭 (CN 모드 전용) -->
+    <div class="tab-pane" id="tab-origin">
+      <div class="sec-title">BY ORIGIN <span class="tag">CO · Vendor · ETD</span></div>
+      <div id="origin-content"><div style="color:var(--muted);padding:20px">Loading...</div></div>
+    </div>
+
+    <!-- ITEM 탭 -->
+    <div class="tab-pane" id="tab-item">
+      <div class="sec-title"><span class="ko-label">ITEM별 KR 입고예정 현황</span><span class="en-label">Schedule by Item</span> <span class="tag" id="item-badge">전체</span></div>
+      <div class="pivot-wrap" id="item-pivot"></div>
+      <div class="due-summary" id="item-due-summary" style="margin-top:16px;"></div>
+    </div>
+
+    <!-- 원단현황 탭 -->
+    <div class="tab-pane" id="tab-fabric">
+      <div class="sec-title">원단현황 <span class="tag">원단 ETA 기준 (fabric_etd + 4일)</span></div>
+      <div id="fabric-content"><div style="color:var(--muted);padding:20px">Loading...</div></div>
+    </div>
+  </div>
+
+
+  <!-- 상세 목록 -->
+  <div style="margin-bottom:24px;">
+    <div class="sec-title">
+      <span class="ko-label">전체 샘플 상세 목록</span><span class="en-label">FULL SAMPLE DETAILS</span>
+      <span class="tag" id="detail-badge">0건</span>
+    </div>
+    <div class="filter-bar">
+      <button class="f-btn active" onclick="setStatusFilter('all',this)"><span class="ko-label">전체</span><span class="en-label">ALL</span></button>
+      <button class="f-btn" id="btn-filter-pending" onclick="setStatusFilter('pending',this)"><span class="ko-label">미입고</span><span class="en-label">PENDING</span></button>
+      <button class="f-btn" id="btn-filter-arrived" onclick="setStatusFilter('arrived',this)"><span class="ko-label">입고완료</span><span class="en-label">ARRIVED</span></button>
+      <button class="f-btn" id="btn-kr-delayed" onclick="setStatusFilter('kr_delayed',this)">KR 지연</button>
+      <button class="f-btn" id="btn-cn-delayed" onclick="setStatusFilter('cn_delayed',this)"><span class="ko-label">CN 지연</span><span class="en-label">CN DELAY</span></button>
+      <button class="f-btn" id="btn-na" onclick="setStatusFilter('na',this)">미제작</button>
+      <div class="multi-select" id="ms-sort"><button class="ms-btn" onclick="toggleDrop('ms-sort')"><span class="ms-label">카테고리 전체</span><span class="ms-arrow">&#9660;</span></button><div class="ms-drop" id="ms-sort-drop"></div></div>
+      <div class="multi-select" id="ms-item"><button class="ms-btn" onclick="toggleDrop('ms-item')"><span class="ms-label">ITEM 전체</span><span class="ms-arrow">&#9660;</span></button><div class="ms-drop" id="ms-item-drop"></div></div>
+      <div class="multi-select" id="ms-sourcing"><button class="ms-btn" onclick="toggleDrop('ms-sourcing')"><span class="ms-label">담당자 전체</span><span class="ms-arrow">&#9660;</span></button><div class="ms-drop" id="ms-sourcing-drop"></div></div>
+      <div class="multi-select" id="ms-designer"><button class="ms-btn" onclick="toggleDrop('ms-designer')"><span class="ms-label">디자이너 전체</span><span class="ms-arrow">&#9660;</span></button><div class="ms-drop" id="ms-designer-drop"></div></div>
+      <div class="multi-select" id="ms-vendor"><button class="ms-btn" onclick="toggleDrop('ms-vendor')"><span class="ms-label">벤더 전체</span><span class="ms-arrow">&#9660;</span></button><div class="ms-drop" id="ms-vendor-drop"></div></div>
+      <div class="multi-select" id="ms-co"><button class="ms-btn" onclick="toggleDrop('ms-co')"><span class="ms-label">생산국 전체</span><span class="ms-arrow">&#9660;</span></button><div class="ms-drop" id="ms-co-drop"></div></div>
+      <input class="f-input" id="f-search" placeholder="품번 · 설명 검색..." oninput="renderDetail()" style="min-width:170px;">
+      <button class="f-reset" onclick="resetAllFilters()"><span class="ko-label">전체 초기화</span><span class="en-label">RESET ALL</span></button>
+    </div>
+    <div class="detail-wrap">
+      <div class="detail-scroll">
+        <table class="detail-tbl">
+          <thead><tr>
+            <th>#</th><th>SKU</th><th><span class="ko-label">분류</span><span class="en-label">CATEGORY</span></th><th><span class="ko-label">설명</span><span class="en-label">DESCRIPTION</span></th><th><span class="ko-label">컬러</span><span class="en-label">COLOR</span></th>
+            <th>CO</th><th><span class="ko-label">담당자</span><span class="en-label">SOURCING</span></th><th><span class="ko-label">디자이너</span><span class="en-label">DESIGNER</span></th><th><span class="ko-label">벤더</span><span class="en-label">VENDOR</span></th>
+            <th>CN ETD</th><th>CN RDD</th><th>CN ATD</th>
+            <th><span class="ko-label">KR 입고예정</span><span class="en-label">KR ETA</span></th><th><span class="ko-label">KR 실입고</span><span class="en-label">KR ACTUAL</span></th><th><span class="ko-label">상태</span><span class="en-label">STATUS</span></th><th><span class="ko-label">특이사항</span><span class="en-label">REMARK</span></th>
+          </tr></thead>
+          <tbody id="detail-tbody"></tbody>
+        </table>
+      </div>
+      <div class="row-cnt" id="row-cnt"></div>
+      <div class="detail-pager" id="detail-pager"></div>
+    </div>
+  </div>
+
+</div><!-- /container -->
+
+<script src="embed_data.js"></script>
+<script>
+// ── 데이터 ──────────────────────────────────────────────
+const D  = DASHBOARD;
+const AD = D.all_data;
+const _now = new Date();
+
+// CN ATD 기준 실적 RDD 계산 (KR HAND CARRY: 당일도착 transit 0일 / CN +2일 / VN·KR +5일)
+AD.forEach(d=>{
+  if(d.cn_atd){
+    const isHandCarry = d.co==='KR' && d.courier && d.courier.toUpperCase().indexOf('HAND')>=0;
+    if(isHandCarry){
+      d.cn_rdd_actual = d.cn_atd; // HAND CARRY = 당일 도착
+    } else if(d.transit_days){
+      const atd = new Date(d.cn_atd);
+      atd.setDate(atd.getDate() + d.transit_days);
+      d.cn_rdd_actual = atd.getFullYear()+'-'+String(atd.getMonth()+1).padStart(2,'0')+'-'+String(atd.getDate()).padStart(2,'0');
+    } else {
+      d.cn_rdd_actual = null;
+    }
+  } else {
+    d.cn_rdd_actual = null;
+  }
+});
+// KR HAND CARRY: 예정 RDD도 transit 0일 기준으로 보정 (cn_etd = 곧 도착)
+AD.forEach(d=>{
+  const isHC = d.co==='KR' && d.courier && d.courier.toUpperCase().indexOf('HAND')>=0;
+  if(isHC && d.cn_etd){
+    d.cn_rdd = d.cn_etd; // planned RDD = ETD (당일 도착)
+  }
+});
+const TODAY = _now.getFullYear()+'-'+String(_now.getMonth()+1).padStart(2,'0')+'-'+String(_now.getDate()).padStart(2,'0');
+
+// ── 유틸 ────────────────────────────────────────────────
+function isDelayed(d){
+  return !d.is_na && d.kr_expected && d.kr_expected < TODAY && !d.kr_actual;
+}
+function isCnRisk(d){
+  return !d.is_na && d.cn_etd && d.cn_etd < TODAY && !d.cn_atd;
+}
+function dayDiff(a,b){ return Math.ceil((new Date(a)-new Date(b))/86400000); }
+
+function statusBadge(d){
+  const _b=(cls,ko,en)=>`<span class="${cls}">${bi(ko,en)}</span>`;
+  if(d.is_na)       return _b('badge-na',    '미제작',   'N/A');
+  if(isDelayed(d))  return _b('badge-delay', '지연',     'DELAYED');
+  if(d.kr_actual)   return _b('badge-done',  '입고완료', 'ARRIVED');
+  if(isCnRisk(d))   return _b('badge-risk',  'CN 미확인','CN RISK');
+  return _b('badge-pending', '진행중', 'IN PROGRESS');
+}
+function bi(ko,en){ return '<span class="ko-label">'+ko+'</span><span class="en-label">'+en+'</span>'; }
+
+function barColor(pct, delayed){
+  if(delayed>0) return '#f87171';
+  if(pct>=100)  return '#34d399';
+  return '#7c5fc0';
+}
+
+// ── 일정 상수 ────────────────────────────────────────────
+const SCHED_NEW_DUE = '2026-06-12'; // 신규 DUE (KR 도착)
+const SCHED_PRV1    = '2026-06-15'; // 2-1차 프리뷰
+const SCHED_DUE     = '2026-06-16'; // 2-1차 품평회 / CN/KR 입고 DUE (하위호환)
+const SCHED_PRV2    = '2026-06-27'; // 2-2차 프리뷰
+const SCHED_REV2    = '2026-06-29'; // 2-2차 품평회
+const SCHED_CEO     = '2026-06-22'; // CEO 품평회 (하위호환)
+const SCHED_SHOW    = '2026-07-13'; // CN TRADE SHOW
+
+function _dday(dateStr){
+  return Math.round((new Date(dateStr) - new Date(TODAY)) / 86400000);
+}
+function _ddayTxt(d){
+  return d > 0 ? 'D-'+d : d === 0 ? 'D-0' : 'D+'+ Math.abs(d);
+}
+
+// ── 헤더 pills ───────────────────────────────────────────
+function buildSchedulePills(){
+  const isCn = document.body.classList.contains('view-cn');
+  const pills = [
+    { date:SCHED_NEW_DUE, ko:'신규 DUE',     en:'New Arrival Due', suffix:'06.12' },
+    { date:SCHED_DUE,     ko:'2-1차 품평회', en:'2-1 Review',      suffix:'06.16' },
+    { date:SCHED_REV2,    ko:'2-2차 품평회', en:'2-2 Review',      suffix:'06.29' },
+    { date:SCHED_SHOW,    ko:'CN TRADE SHOW', en:'CN TRADE SHOW',  suffix:'07.13' }
+  ];
+  const el = document.getElementById('schedule-pills');
+  if(!el) return;
+  el.innerHTML = pills.map(p => {
+    const d = _dday(p.date);
+    const urgency = d < 0 ? '' : d <= 7 ? 'pill-urgent' : d <= 30 ? 'pill-soon' : '';
+    const label = isCn ? p.en : p.ko;
+    return `<span class="s-pill ${urgency}">${label} ${p.suffix} <span style="font-size:10px;opacity:0.75">(${_ddayTxt(d)})</span></span>`;
+  }).join('');
+}
+
+// ── 타임라인 D-day + 입고예정 배지 ──────────────────────────
+function buildTimelineDday(){
+  // 스타일당 최조기 kr_expected 계산
+  const styleEarliest = {};
+  AD.forEach(d => {
+    if(d.kr_expected && d.style_code){
+      if(!styleEarliest[d.style_code] || d.kr_expected < styleEarliest[d.style_code])
+        styleEarliest[d.style_code] = d.kr_expected;
+    }
+  });
+  const totalSt = D.total_styles || 1;
+  function arrCnt(limit){ return Object.values(styleEarliest).filter(v=>v<=limit).length; }
+  function setBadge(id, limit, target){
+    const el = document.getElementById(id+'-arr');
+    if(!el) return;
+    const cnt = arrCnt(limit);
+    const pct = Math.round(cnt/totalSt*100);
+    const ok  = pct >= target;
+    el.className = 'tl-arrival ' + (cnt===0?'tbd': ok?'ok':'warn');
+    el.textContent = pct+'% ('+cnt+'/'+totalSt+')';
+  }
+
+  const items = [
+    { id:'tl-1', date:SCHED_NEW_DUE, extraClass:'',          target:40  },
+    { id:'tl-2', date:SCHED_PRV1,    extraClass:'preview',   target:null },
+    { id:'tl-3', date:SCHED_DUE,     extraClass:'milestone', target:40  },
+    { id:'tl-4', date:SCHED_PRV2,    extraClass:'preview',   target:null },
+    { id:'tl-5', date:SCHED_REV2,    extraClass:'milestone tl-rev2', target:60 },
+    { id:'tl-6', date:SCHED_SHOW,    extraClass:'',          target:100 }
+  ];
+  items.forEach(({id, date, extraClass, target}) => {
+    const d = _dday(date);
+    const el = document.getElementById(id);
+    const ddayEl = document.getElementById(id+'-dday');
+    if(ddayEl) ddayEl.textContent = ' ('+_ddayTxt(d)+')';
+    if(target !== null) setBadge(id, date, target);
+    if(!el) return;
+    el.className = 'tl-item' + (extraClass?' '+extraClass:'');
+    if(d < 0)       el.classList.add('done');
+    else if(d <= 7) el.classList.add('key');
+    if(id==='tl-6' && d >= 0) el.classList.add('key');
+  });
+}
+
+// ── 헤더 ────────────────────────────────────────────────
+document.getElementById('today-txt').textContent = 'TODAY: ' + TODAY;
+(function(){
+  const d = _dday(SCHED_SHOW);
+  document.getElementById('d-badge').textContent =
+    d > 0 ? '27SS CN TRADE SHOW D-'+d : d === 0 ? '27SS CN TRADE SHOW TODAY' : '27SS CN TRADE SHOW DONE';
+})();
+buildSchedulePills();
+buildTimelineDday();
+
+// ── KPI ─────────────────────────────────────────────────
+const totalArrived = AD.filter(d=>d.kr_actual).length;
+const arrivedStyleSet = new Set(AD.filter(d=>d.kr_actual).map(d=>d.style_code));
+const totalArrivedM = arrivedStyleSet.size;
+const totalDelayed = AD.filter(d=>isDelayed(d)).length;
+const naSku        = AD.filter(d=>d.is_na).length;
+const naStyleCnt   = (D.na_styles || 0);
+
+// KR / CN 경고·지연 분류 (N/A 제외)
+const KR_WARN_S = '2026-06-13', KR_WARN_E = '2026-06-15', KR_DELAY_S = '2026-06-16';
+const CN_WARN_S = '2026-07-11', CN_WARN_E = '2026-07-12', CN_DELAY_S = '2026-07-13';
+const krWarnCnt  = AD.filter(d=>!d.is_na&&!d.kr_actual&&d.kr_expected&&d.kr_expected>=KR_WARN_S&&d.kr_expected<=KR_WARN_E).length;
+const krDelayCnt = AD.filter(d=>!d.is_na&&!d.kr_actual&&d.kr_expected&&d.kr_expected>=KR_DELAY_S).length;
+const cnWarnCnt  = AD.filter(d=>!d.is_na&&!d.kr_actual&&d.cn_rdd&&d.cn_rdd>=CN_WARN_S&&d.cn_rdd<=CN_WARN_E).length;
+const cnDelayCnt = AD.filter(d=>!d.is_na&&!d.kr_actual&&d.cn_rdd&&d.cn_rdd>=CN_DELAY_S).length;
+
+// 카드1: 총 스타일/SKU + PCS 분해
+document.getElementById('k-summary').textContent     = D.total_styles+'M';
+document.getElementById('k-sku-count').textContent   = D.total_sku.toLocaleString();
+document.getElementById('pb-kr').textContent         = (D.total_kr_keep_pcs||0).toLocaleString();
+document.getElementById('pb-cn-show').textContent    = (D.total_cn_show_pcs||0).toLocaleString();
+document.getElementById('pb-focus').textContent      = (D.total_cn_focus_pcs||0).toLocaleString();
+document.getElementById('pb-ttl').textContent        = (D.total_pcs||0).toLocaleString();
+
+// 카드2: CN 발송 완료
+const cnSentSku = AD.filter(d=>d.cn_atd).length;
+const cnSentStyleSet = new Set(AD.filter(d=>d.cn_atd).map(d=>d.style_code));
+const cnSentM = cnSentStyleSet.size;
+const cnSentPcs = AD.filter(d=>d.cn_atd).reduce((s,d)=>s+d.cn_pcs,0);
+document.getElementById('k-cn-sent').innerHTML = cnSentM+'M / '+cnSentSku+' SKU / '+cnSentPcs.toLocaleString()+' PCS';
+document.getElementById('k-cn-sent-sub').textContent =
+  Math.round(cnSentM/D.total_styles*100)+'% 완료 (M 기준)';
+
+// CN 발송 카드 하단: CN 발송 지연 예상 (cn_etd 컬럼 사용)
+(function(){
+  const setd = {};
+  AD.forEach(d => {
+    if(d.cn_etd && d.style_code){
+      if(!setd[d.style_code] || d.cn_etd < setd[d.style_code]) setd[d.style_code] = d.cn_etd;
+    }
+  });
+  const tot   = D.total_styles || 1;
+  const noEtd = tot - Object.keys(setd).length;
+  const l616  = Object.values(setd).filter(v=>v>'2026-06-16').length + noEtd;
+  const l713  = Object.values(setd).filter(v=>v>'2026-07-13').length + noEtd;
+  const wrap  = document.getElementById('k-cn-delay-wrap');
+  if(!wrap) return;
+  wrap.innerHTML =
+    `<div style="font-size:10px;font-weight:800;color:#f59e0b;margin-bottom:5px">⚠ CN 발송 지연 예상</div>` +
+    `<div style="display:flex;justify-content:space-between;font-size:11px;margin-bottom:3px">` +
+      `<span style="color:var(--muted)">6/16 2-1차 품평 후 발송</span>` +
+      `<span style="color:#f87171;font-weight:800">${l616}M</span>` +
+    `</div>` +
+    `<div style="display:flex;justify-content:space-between;font-size:11px">` +
+      `<span style="color:var(--muted)">7/13 27SS 수주회 후 발송</span>` +
+      `<span style="color:#f87171;font-weight:800">${l713}M</span>` +
+    `</div>`;
+})();
+
+// 카드3: KR 입고 완료
+const krArrivedPcs = AD.filter(d=>d.kr_actual).reduce((s,d)=>s+d.kr_pcs,0);
+document.getElementById('k-arrived').innerHTML = totalArrivedM+'M / '+totalArrived+' SKU / '+krArrivedPcs.toLocaleString()+' PCS';
+document.getElementById('k-arrived-sub').textContent =
+  Math.round(totalArrivedM/D.total_styles*100)+'% 완료 (M 기준)';
+
+// 카드3 하단: KR 입고 지연 예상
+(function(){
+  const searly = {};
+  AD.forEach(d => {
+    if(d.kr_expected && d.style_code){
+      if(!searly[d.style_code] || d.kr_expected < searly[d.style_code]) searly[d.style_code] = d.kr_expected;
+    }
+  });
+  const tot = D.total_styles || 1;
+  const noExp  = tot - Object.keys(searly).length;
+  const l612   = Object.values(searly).filter(v=>v>'2026-06-12').length + noExp;
+  const l616   = Object.values(searly).filter(v=>v>'2026-06-16').length + noExp;
+  const wrap = document.getElementById('k-kr-delay-wrap');
+  if(!wrap) return;
+  wrap.innerHTML =
+    `<div style="font-size:10px;font-weight:800;color:#f59e0b;margin-bottom:5px">⚠ KR 입고 지연 예상</div>` +
+    `<div style="display:flex;justify-content:space-between;font-size:11px;margin-bottom:3px">` +
+      `<span style="color:var(--muted)">6/12 신규 DUE 후 입고</span>` +
+      `<span style="color:#f87171;font-weight:800">${l612}M</span>` +
+    `</div>` +
+    `<div style="display:flex;justify-content:space-between;font-size:11px">` +
+      `<span style="color:var(--muted)">6/16 2-1차 품평 후 입고</span>` +
+      `<span style="color:#f87171;font-weight:800">${l616}M</span>` +
+    `</div>`;
+})();
+
+// 카드4: 예정 입고율
+(function(){
+  const styleEarliest = {};
+  AD.forEach(d => {
+    if(d.kr_expected && d.style_code){
+      if(!styleEarliest[d.style_code] || d.kr_expected < styleEarliest[d.style_code])
+        styleEarliest[d.style_code] = d.kr_expected;
+    }
+  });
+  const total = D.total_styles || 1;
+  function cnt(limit){ return Object.values(styleEarliest).filter(v=>v<=limit).length; }
+
+  const rows = [
+    { label:'6/12 신규 DUE',      limit:'2026-06-12', target:40,  baseColor:'#ef4444' },
+    { label:'6/16 2-1차 품평회',   limit:'2026-06-16', target:100, baseColor:'#3b82f6' },
+    { label:'6/29 2-2차 품평회',   limit:'2026-06-29', target:100, baseColor:'#8b5cf6' },
+    { label:'7/13 27SS 수주회',    limit:'2026-07-13', target:100, baseColor:'#10b981' },
+  ];
+
+  function barColor(pct, target, base){
+    if(pct >= target) return base;
+    // 미달이면 동일 색상에 opacity를 주기 위해 hex → rgba 변환
+    const r = parseInt(base.slice(1,3),16), g = parseInt(base.slice(3,5),16), b = parseInt(base.slice(5,7),16);
+    return `rgba(${r},${g},${b},0.45)`;
+  }
+
+  const wrap = document.getElementById('k-arrival-wrap');
+  if(!wrap) return;
+  wrap.innerHTML = rows.map(({label, limit, target, baseColor}) => {
+    const c = cnt(limit), p = Math.round(c/total*100);
+    const col = barColor(p, target, baseColor);
+    const pctCol = p >= target ? baseColor : '#ef4444';
+    return `<div class="arr-row">` +
+      `<div class="arr-row-hd">` +
+        `<span class="arr-row-title">${label}</span>` +
+        `<span class="arr-row-pct" style="color:${pctCol}">${p}%</span>` +
+      `</div>` +
+      `<div class="arr-bar"><div class="arr-fill" style="width:${Math.min(p,100)}%;background:${col}"></div></div>` +
+      `<div class="arr-sub">${c}/${total} 스타일</div>` +
+    `</div>`;
+  }).join('');
+})();
+
+
+// ── CN KPI 카드 채우기 ──────────────────────────────────
+document.getElementById('cn-k-styles').textContent  = D.total_styles + 'M';
+document.getElementById('cn-k-sku-count').textContent = D.total_sku.toLocaleString();
+document.getElementById('pb-cn-ts').textContent     = (D.total_cn_show_pcs||0).toLocaleString();
+document.getElementById('pb-cn-fs').textContent     = (D.total_cn_focus_pcs||0).toLocaleString();
+document.getElementById('pb-cn-total').textContent  = (D.total_cn_total_pcs||0).toLocaleString();
+document.getElementById('cn-k-show').textContent = (D.total_cn_show_pcs||0).toLocaleString() + ' PCS';
+(function(){
+  var focus = D.total_cn_focus_pcs || 0;
+  document.getElementById('cn-k-focus').textContent = focus.toLocaleString() + ' PCS';
+  if(focus === 0){
+    document.getElementById('cn-kpi-focus').style.setProperty('--kpi-color','#94a3b8');
+    document.getElementById('cn-k-focus').style.color = '#94a3b8';
+  }
+})();
+document.getElementById('cn-k-total-pcs').textContent = (D.total_cn_total_pcs||0).toLocaleString() + ' PCS';
+
+// 필터 버튼 건수 표시 (M수 = 스타일 중복 제거)
+const krDelayM = new Set(AD.filter(d=>!d.is_na&&!d.kr_actual&&d.kr_expected&&d.kr_expected>=KR_DELAY_S).map(d=>d.style_code)).size;
+const cnDelayM = new Set(AD.filter(d=>!d.is_na&&!d.kr_actual&&d.cn_rdd&&d.cn_rdd>=CN_DELAY_S).map(d=>d.style_code)).size;
+const naM = new Set(AD.filter(d=>d.is_na).map(d=>d.style_code)).size;
+document.getElementById('btn-kr-delayed').textContent = `KR 지연 (${krDelayM}M / ${krDelayCnt}건)`;
+document.getElementById('btn-cn-delayed').innerHTML = `<span class="ko-label">CN 지연</span><span class="en-label">CN DELAY</span>`+` (${cnDelayM}M / ${cnDelayCnt}<span class="ko-label">건</span>)`;
+document.getElementById('btn-na').innerHTML = `<span class="ko-label">미제작</span><span class="en-label">N/A</span>`+` (${naM}M / ${naSku}<span class="ko-label">건</span>)`;
+
+// ── AI 인사이트 ──────────────────────────────────────────
+(function renderInsights(){
+  const NEW_DUE = SCHED_NEW_DUE;  // 2026-06-12 신규 DUE
+  const DUE16   = SCHED_DUE;      // 2026-06-16 2-1차 품평
+  const REV2    = SCHED_REV2;     // 2026-06-29 2-2차 품평
+  const SHOW    = SCHED_SHOW;     // 2026-07-13 27SS 수주회
+
+  /* ── 기본 집계 ── */
+  const naStyleSet     = new Set(AD.filter(d=>d.is_na).map(d=>d.style_code));
+  const naStyleCntIns  = naStyleSet.size;
+  const activeAD       = AD.filter(d=>!d.is_na);
+  const totalStyles    = D.total_styles;
+  const totalSku       = AD.length;
+  const totalPcs       = AD.reduce((s,d)=>s+(d.ttl_pcs||0), 0);
+
+  /* ── TBD ── */
+  const tbdStyleSet = new Set(activeAD.filter(d=>!d.kr_expected).map(d=>d.style_code).filter(Boolean));
+  const tbdStyleCnt = tbdStyleSet.size;
+  const tbdStyleList = [...tbdStyleSet].sort().slice(0,5).join(', ')
+    + (tbdStyleSet.size > 5 ? ` 외 ${tbdStyleSet.size-5}건` : '');
+
+  /* ── 달성률: TBD 포함 분모 (KPI 카드와 동일 기준) ── */
+  function calcCumPct(field, targetDate){
+    const dist = buildDist(field, 'all');
+    const allEntries = Object.entries(dist).filter(([k])=>k!=='N/A');
+    const dated = allEntries.filter(([k])=>k!=='TBD').sort((a,b)=>a[0]<b[0]?-1:1);
+    const total  = allEntries.reduce((s,[,v])=>s+v, 0);  // TBD 포함 분모
+    let cumCnt = 0;
+    dated.forEach(([dt,cnt])=>{ if(dt <= targetDate) cumCnt += cnt; });
+    return total > 0 ? (cumCnt / total * 100).toFixed(1) : '0.0';
+  }
+  const krNewDuePct = calcCumPct('kr_expected', NEW_DUE);
+  const krDue16Pct  = calcCumPct('kr_expected', DUE16);
+  const krRev2Pct   = calcCumPct('kr_expected', REV2);
+  const cnShowPct   = calcCumPct('cn_rdd', SHOW);
+  const krNewDueM = new Set(activeAD.filter(d=>d.kr_expected && d.kr_expected <= NEW_DUE).map(d=>d.style_code)).size;
+  const krDue16M  = new Set(activeAD.filter(d=>d.kr_expected && d.kr_expected <= DUE16).map(d=>d.style_code)).size;
+  const krRev2M   = new Set(activeAD.filter(d=>d.kr_expected && d.kr_expected <= REV2).map(d=>d.style_code)).size;
+  const cnShowM   = new Set(activeAD.filter(d=>d.cn_rdd && d.cn_rdd <= SHOW).map(d=>d.style_code)).size;
+
+  /* ── KR 실입고 ── */
+  const arrivedStyleSet = new Set(AD.filter(d=>d.kr_actual).map(d=>d.style_code));
+  const arrivedM    = arrivedStyleSet.size;
+
+  /* ── 6/12 신규 DUE 초과 ITEM 카테고리 (N/A 제외) ── */
+  const overdueItemSet = new Set(
+    activeAD.filter(d=>d.kr_expected && d.kr_expected > NEW_DUE).map(d=>d.item_type||'-')
+  );
+  const overdueItems = [...overdueItemSet].join(', ') || '없음';
+
+  /* ── 6/29 2-2차 품평 이후 입고 예정 M ── */
+  const afterRev2Cnt = new Set(
+    activeAD.filter(d=>d.kr_expected && d.kr_expected > REV2).map(d=>d.style_code)
+  ).size;
+
+  /* ── 7/13 수주회 이후 CN RDD M ── */
+  const afterShowCnt = new Set(
+    activeAD.filter(d=>d.cn_rdd && d.cn_rdd > SHOW).map(d=>d.style_code)
+  ).size;
+
+  /* ── 벤더별 집계 (N/A 제외, M 기준, TBD 포함 분모) ── */
+  const vendStat = {};
+  activeAD.forEach(d=>{
+    const v = d.vendor||'미지정';
+    if(!vendStat[v]) vendStat[v]={styles:new Set(), krNewDue:new Set(), krDue16:new Set(), tbd:new Set()};
+    vendStat[v].styles.add(d.style_code);
+    if(d.kr_expected && d.kr_expected <= NEW_DUE) vendStat[v].krNewDue.add(d.style_code);
+    if(d.kr_expected && d.kr_expected <= DUE16)   vendStat[v].krDue16.add(d.style_code);
+    if(!d.kr_expected) vendStat[v].tbd.add(d.style_code);
+  });
+
+  // 6/12 DUE 50% 미만 벤더 (TBD 포함 분모, TOP5)
+  const lowVend = Object.entries(vendStat)
+    .filter(([,s])=>s.styles.size>0)
+    .map(([name,s])=>({name, pct:Math.round(s.krNewDue.size/s.styles.size*100), due:s.krNewDue.size, total:s.styles.size}))
+    .filter(s=>s.pct < 50)
+    .sort((a,b)=>a.pct-b.pct).slice(0,5);
+
+  // TBD 있는 벤더 TOP3
+  const tbdVendRank = Object.entries(vendStat)
+    .filter(([,s])=>s.tbd.size>0)
+    .map(([name,s])=>({name, cnt:s.tbd.size}))
+    .sort((a,b)=>b.cnt-a.cnt).slice(0,3);
+
+  // 6/12 DUE 100% 달성 벤더 (TBD 포함 분모)
+  const goodVend612 = Object.entries(vendStat)
+    .map(([name,s])=>({name, pct:s.styles.size>0?Math.round(s.krNewDue.size/s.styles.size*100):0, due:s.krNewDue.size, total:s.styles.size}))
+    .filter(s=>s.pct===100 && s.total>0)
+    .sort((a,b)=>b.total-a.total).slice(0,5);
+
+  // 6/16 품평 100% 달성 벤더 (6/12 100% 벤더 제외)
+  const goodVend612Names = new Set(goodVend612.map(s=>s.name));
+  const goodVend616 = Object.entries(vendStat)
+    .map(([name,s])=>({name, pct:s.styles.size>0?Math.round(s.krDue16.size/s.styles.size*100):0, due:s.krDue16.size, total:s.styles.size}))
+    .filter(s=>s.pct===100 && s.total>0 && !goodVend612Names.has(s.name))
+    .sort((a,b)=>b.total-a.total).slice(0,3);
+
+  /* ── HTML 생성 ── */
+  function item(bullet, html){ return `<div class="insight-item"><span class="insight-bullet">${bullet}</span><span>${html}</span></div>`; }
+
+  // 블록 1 — 전체 현황 요약
+  const b1 = `
+  <div class="insight-block insight-summary">
+    <div class="insight-block-title">📋 전체 현황 요약 <span style="font-size:10px;font-weight:400;color:#8893b0">M 기준 · TBD 포함 분모</span></div>
+    ${item('▸', `총 <span class="insight-val">${totalStyles}M</span> / <span class="insight-val">${totalSku}SKU</span> / <span class="insight-val">${totalPcs.toLocaleString()}PCS</span>`)}
+    ${item('▸', `6/12 신규 DUE 누적 — <span class="insight-val" style="color:#3b5fcb">${krNewDueM}M / ${krNewDuePct}%</span>`)}
+    ${item('▸', `6/16 2-1차 품평 누적 — <span class="insight-val" style="color:#3b5fcb">${krDue16M}M / ${krDue16Pct}%</span>`)}
+    ${item('▸', `6/29 2-2차 품평 누적 — <span class="insight-val" style="color:#3b5fcb">${krRev2M}M / ${krRev2Pct}%</span>`)}
+    ${item('▸', `7/13 수주회 CN 누적 — <span class="insight-val" style="color:#7c5fc0">${cnShowM}M / ${cnShowPct}%</span>`)}
+    ${tbdStyleCnt > 0 ? item('▸', `TBD(미정) <span class="insight-val" style="color:#f59e0b">${tbdStyleCnt}M</span> — 별도 확인 필요 <span class="insight-muted">(분모 포함)</span>`) : ''}
+    ${naStyleCntIns > 0 ? item('▸', `미제작 협의 <span class="insight-val" style="color:#64748b">${naStyleCntIns}M</span> 있음`) : ''}
+  </div>`;
+
+  // 블록 2 — 위험 알림
+  const b2 = `
+  <div class="insight-block insight-danger">
+    <div class="insight-block-title">🚨 위험 알림</div>
+    ${item('●', `<span class="insight-val" style="color:#dc2626">6/12 신규 DUE 초과 예정 ITEM</span> — ${overdueItems}`)}
+    ${tbdStyleCnt>0 ? item('●', `<span class="insight-val" style="color:#dc2626">미정(TBD) ${tbdStyleCnt}M</span> — 품번: <span class="insight-muted">${tbdStyleList}</span>`) : item('✓', `미정(TBD) 없음 <span class="insight-muted">— 전체 입고예정일 입력 완료</span>`)}
+    ${afterRev2Cnt>0 ? item('●', `<span style="color:#dc2626;font-weight:700">6/29 2-2차 품평 후 입고 예정 ${afterRev2Cnt}M</span> <span class="insight-muted">— 품평 불가 위험</span>`) : item('✓', `6/29 2-2차 품평 내 전체 입고 예상`)}
+    ${afterShowCnt>0 ? item('●', `<span style="color:#dc2626;font-weight:700">7/13 27SS 수주회 후 입고 예정 ${afterShowCnt}M</span> <span class="insight-muted">— 수주회 불가 위험</span>`) : item('✓', `7/13 수주회 내 전체 CN 입고 예상`)}
+  </div>`;
+
+  // 블록 3 — 벤더 주의 (6/12 DUE 기준 50% 미만, TBD 포함 분모)
+  const lowVendRows = lowVend.map(s=>item('▲', `<span class="insight-val" style="max-width:160px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;display:inline-block;vertical-align:bottom">${s.name}</span> — 6/12 DUE 달성률 <span style="color:#d97706;font-weight:700">${s.pct}%</span> <span class="insight-muted">(${s.due}/${s.total}M)</span>`)).join('');
+  const tbdVendRows = tbdVendRank.map(s=>item('▲', `<span class="insight-val">${s.name}</span> — TBD <span style="color:#d97706;font-weight:700">${s.cnt}M</span> 미정`)).join('');
+  const b3 = `
+  <div class="insight-block insight-warning">
+    <div class="insight-block-title">⚠️ 벤더별 주의 필요</div>
+    ${lowVendRows||item('✓','6/12 DUE 50% 미만 벤더 없음')}
+    ${tbdVendRank.length>0 ? `<div style="margin-top:6px;font-size:11px;color:#d97706;font-weight:700">TBD 보유 벤더</div>${tbdVendRows}` : item('✓','TBD 없음')}
+  </div>`;
+
+  // 블록 4 — 긍정 현황
+  const goodRows612 = goodVend612.map(s=>item('★', `<span class="insight-val">${s.name}</span> — 6/12 DUE <span style="color:#059669;font-weight:700">100%</span> <span class="insight-muted">(${s.due}/${s.total}M)</span>`)).join('');
+  const goodRows616 = goodVend616.map(s=>item('★', `<span class="insight-val">${s.name}</span> — 6/16 품평 <span style="color:#059669;font-weight:700">100%</span> <span class="insight-muted">(${s.due}/${s.total}M)</span>`)).join('');
+  const b4 = `
+  <div class="insight-block insight-success">
+    <div class="insight-block-title">✅ 긍정 현황</div>
+    ${item('✓', `6/12 신규 DUE 누적 달성률 <span class="insight-val" style="color:#059669">${krNewDuePct}%</span> <span class="insight-muted">— KPI 예정 입고율 일치</span>`)}
+    ${item('✓', `7/13 수주회 CN 누적 달성률 <span class="insight-val" style="color:#059669">${cnShowPct}%</span>`)}
+    ${goodRows612||item('—', `6/12 DUE 100% 달성 벤더 없음`)}
+    ${goodRows616}
+  </div>`;
+
+  document.getElementById('insight-grid').innerHTML = b1+b2+b3+b4;
+})();
+
+function toggleInsight(){
+  const body  = document.getElementById('insight-body');
+  const arrow = document.getElementById('insight-arrow');
+  const isOpen = body.classList.contains('open');
+  body.classList.toggle('open', !isOpen);
+  arrow.textContent = isOpen ? '▼ 펼치기' : '▲ 접기';
+}
+
+function toggleDailySummary(){
+  const body  = document.getElementById('daily-summary-body');
+  const arrow = document.getElementById('daily-summary-arrow');
+  const isOpen = body.classList.contains('open');
+  body.classList.toggle('open', !isOpen);
+  arrow.innerHTML = isOpen ? bi('▼ 펼치기','▼ Expand') : bi('▲ 접기','▲ Collapse');
+}
+
+// ── 일별 누적 서머리 ──────────────────────────────────────
+(function(){
+  const allData = DASHBOARD.all_data;
+  const todayStr = new Date().toISOString().slice(0,10);
+
+  // ITEM 종류 자동 수집
+  const allItemTypes = [...new Set(allData.map(d => d.item_type).filter(Boolean))].sort();
+
+  // 필터된 소스 데이터 반환 (카테고리 + ITEM)
+  function getFilteredSrc(cat, itemSet){
+    let src = allData;
+    if(cat !== 'all') src = src.filter(d => d.sort === cat);
+    if(itemSet) src = src.filter(d => itemSet.has(d.item_type));
+    return src;
+  }
+
+  // 필터된 데이터의 모델수/PCS 계산 (누적% 분모용)
+  function getTotals(src, pcsField){
+    const styles = new Set(src.map(d => d.style_code));
+    const pcs = src.reduce((s,d) => s + (d[pcsField||'ttl_pcs']||0), 0);
+    return { totalModels: styles.size, totalPcs: pcs };
+  }
+
+  function addDays(dateStr, days){
+    const d = new Date(dateStr);
+    d.setDate(d.getDate() + days);
+    return d.getFullYear()+'-'+String(d.getMonth()+1).padStart(2,'0')+'-'+String(d.getDate()).padStart(2,'0');
+  }
+
+  // --- KR 데이터 빌드 ---
+  function buildKrRows(cat, itemSet){
+    const src = getFilteredSrc(cat, itemSet);
+    const {totalModels, totalPcs} = getTotals(src, 'kr_pcs');
+    const byDate = {};
+    const tbdList = [];
+    src.forEach(d => {
+      const isDone = !!d.kr_actual;
+      const dt = isDone ? d.kr_actual : d.kr_expected;
+      if(!dt){ tbdList.push(d); return; }
+      const key = dt + (isDone ? '_done' : '_plan');
+      if(!byDate[key]) byDate[key] = {done: isDone, date: dt, styles:new Set(), skus:0, pcs:0};
+      byDate[key].styles.add(d.style_code);
+      byDate[key].skus++;
+      byDate[key].pcs += (d.kr_pcs||0);
+    });
+    const rows = Object.values(byDate);
+    rows.sort((a,b) => a.date < b.date ? -1 : a.date > b.date ? 1 : (a.done===b.done ? 0 : a.done ? -1 : 1));
+    let cumStyles = new Set(), cumSku = 0, cumPcs = 0;
+    rows.forEach(r => {
+      r.styles.forEach(s => cumStyles.add(s));
+      cumSku += r.skus; cumPcs += r.pcs;
+      r.cumModels = cumStyles.size; r.cumSku = cumSku; r.cumPcs = cumPcs;
+      r.modelPct = totalModels ? (cumStyles.size / totalModels * 100).toFixed(1) : '0.0';
+      r.pcsPct = totalPcs ? (cumPcs / totalPcs * 100).toFixed(1) : '0.0';
+      r.statusLabel = r.done ? bi('입고 완료','Done') : bi('입고 예정','Planned');
+    });
+    // TBD 집계
+    const tbdStyles = new Set(tbdList.map(d=>d.style_code));
+    const tbdSku = tbdList.length;
+    const tbdPcs = tbdList.reduce((s,d)=>s+(d.kr_pcs||0),0);
+    const tbd = {
+      models: tbdStyles.size, sku: tbdSku, pcs: tbdPcs,
+      modelPct: totalModels ? (tbdStyles.size / totalModels * 100).toFixed(1) : '0.0',
+      pcsPct:   totalPcs    ? (tbdPcs / totalPcs * 100).toFixed(1) : '0.0'
+    };
+    return { rows, totalSku: cumSku + tbdSku, totalPcs, totalModels, tbd };
+  }
+
+  // --- CN 데이터 빌드 ---
+  function buildCnRows(cat, itemSet){
+    const src = getFilteredSrc(cat, itemSet);
+    const {totalModels, totalPcs} = getTotals(src, 'cn_pcs');
+    const byDate = {};
+    const tbdList = [];
+    src.forEach(d => {
+      const baseDate = d.cn_atd || d.cn_etd;
+      if(!baseDate){ tbdList.push(d); return; }
+      const isHandCarry = d.co==='KR' && d.courier && d.courier.toUpperCase().indexOf('HAND')>=0;
+      const transit = isHandCarry ? 0 : (d.transit_days || 0);
+      const rddDate = transit > 0 ? addDays(baseDate, transit) : baseDate;
+      const isDone = rddDate <= todayStr;
+      const key = rddDate + (isDone ? '_done' : '_plan');
+      if(!byDate[key]) byDate[key] = {done: isDone, date: rddDate, styles:new Set(), skus:0, pcs:0};
+      byDate[key].styles.add(d.style_code);
+      byDate[key].skus++;
+      byDate[key].pcs += (d.cn_pcs||0);
+    });
+    const rows = Object.values(byDate);
+    rows.sort((a,b) => a.date < b.date ? -1 : a.date > b.date ? 1 : (a.done===b.done ? 0 : a.done ? -1 : 1));
+    let cumStyles = new Set(), cumSku = 0, cumPcs = 0;
+    rows.forEach(r => {
+      r.styles.forEach(s => cumStyles.add(s));
+      cumSku += r.skus; cumPcs += r.pcs;
+      r.cumModels = cumStyles.size; r.cumSku = cumSku; r.cumPcs = cumPcs;
+      r.modelPct = totalModels ? (cumStyles.size / totalModels * 100).toFixed(1) : '0.0';
+      r.pcsPct = totalPcs ? (cumPcs / totalPcs * 100).toFixed(1) : '0.0';
+      r.statusLabel = r.done ? bi('입고 완료','Done') : bi('입고 예정','Planned');
+    });
+    // TBD 집계
+    const tbdStyles = new Set(tbdList.map(d=>d.style_code));
+    const tbdSku = tbdList.length;
+    const tbdPcs = tbdList.reduce((s,d)=>s+(d.cn_pcs||0),0);
+    const tbd = {
+      models: tbdStyles.size, sku: tbdSku, pcs: tbdPcs,
+      modelPct: totalModels ? (tbdStyles.size / totalModels * 100).toFixed(1) : '0.0',
+      pcsPct:   totalPcs    ? (tbdPcs / totalPcs * 100).toFixed(1) : '0.0'
+    };
+    return { rows, totalSku: cumSku + tbdSku, totalPcs, totalModels, tbd };
+  }
+
+  // 상태 저장
+  const dateFilterState = { kr: null, cn: null };
+  const catState = { kr: 'all', cn: 'all' };
+  const itemState = { kr: new Set(allItemTypes), cn: new Set(allItemTypes) };
+
+  function buildBody(side, data){
+    let bodyRows = '';
+    const hasTbd = data.tbd && data.tbd.sku > 0;
+    if(data.rows.length === 0 && !hasTbd){
+      bodyRows = `<tr><td colspan="7" style="color:var(--muted);padding:20px">${bi('데이터 없음','No data')}</td></tr>`;
+    } else {
+      data.rows.forEach(r => {
+        const isDone = r.done;
+        const badgeCls = isDone ? 'ds-badge-done' : 'ds-badge-plan';
+        const rowCls = isDone ? '' : 'ds-row-planned';
+        const statusType = isDone ? 'done' : 'plan';
+        bodyRows += `<tr class="${rowCls}" data-ds-type="${statusType}" data-ds-date="${r.date}" data-ds-side="${side}">
+          <td>${r.date}</td>
+          <td><span class="ds-badge ${badgeCls}">${r.statusLabel}</span></td>
+          <td>${r.cumModels}</td>
+          <td>${r.cumSku}</td>
+          <td>${r.cumPcs.toLocaleString()}</td>
+          <td>${r.modelPct}%</td>
+          <td>${r.pcsPct}%</td>
+        </tr>`;
+      });
+      // TBD 행 (날짜 없음 — 누적 흐름 밖, 별도 분류)
+      if(hasTbd){
+        const t = data.tbd;
+        bodyRows += `<tr class="ds-row-tbd" data-ds-type="plan" data-ds-date="TBD" data-ds-side="${side}">
+          <td><span style="color:#6b7280">${bi('미정 (TBD)','N/A (TBD)')}</span></td>
+          <td></td>
+          <td>${t.models}</td>
+          <td>${t.sku}</td>
+          <td>${t.pcs.toLocaleString()}</td>
+          <td>${t.modelPct}%</td>
+          <td>${t.pcsPct}%</td>
+        </tr>`;
+      }
+      bodyRows += `<tr class="ds-row-total">
+        <td colspan="2">${bi('합계','Total')}</td>
+        <td>${data.totalModels}</td>
+        <td>${data.totalSku}</td>
+        <td>${data.totalPcs.toLocaleString()}</td>
+        <td>100.0%</td>
+        <td>100.0%</td>
+      </tr>`;
+    }
+    return bodyRows;
+  }
+
+  function rebuildDateDropdown(side, data){
+    const allDates = data.rows.map(r => r.date).filter((v,i,a) => a.indexOf(v)===i).sort();
+    dateFilterState[side] = new Set(allDates);
+    const ddList = document.querySelector('#ds-dd-' + side + ' .ds-dd-list');
+    if(ddList){
+      ddList.innerHTML = allDates.map(dt => `<label><input type="checkbox" checked data-ds-dd-date="${dt}" data-ds-dd-side="${side}"> ${dt}</label>`).join('');
+      ddList.querySelectorAll('input[data-ds-dd-date]').forEach(chk => {
+        chk.addEventListener('change', function(e){
+          e.stopPropagation();
+          const s = this.dataset.dsDdSide;
+          const dt = this.dataset.dsDdDate;
+          if(this.checked) dateFilterState[s].add(dt);
+          else dateFilterState[s].delete(dt);
+          applyFilter(s);
+        });
+      });
+    }
+  }
+
+  // ITEM 버튼 라벨 업데이트
+  function updateItemBtnLabel(side){
+    const btn = document.getElementById('ds-item-btn-' + side);
+    if(!btn) return;
+    const total = allItemTypes.length;
+    const selected = itemState[side].size;
+    btn.innerHTML = selected === total ? bi('ITEM 전체','All Items')+' ▼' : 'ITEM ' + selected + bi('개 선택',' selected') + ' ▼';
+  }
+
+  // ITEM 드롭다운 내 체크박스 바인딩
+  function bindItemCheckboxes(side){
+    const dd = document.getElementById('ds-item-dd-' + side);
+    if(!dd) return;
+    dd.querySelectorAll('input[data-ds-item]').forEach(chk => {
+      chk.addEventListener('change', function(e){
+        e.stopPropagation();
+        const item = this.dataset.dsItem;
+        if(this.checked) itemState[side].add(item);
+        else itemState[side].delete(item);
+        updateItemBtnLabel(side);
+        rebuildTable(side);
+      });
+    });
+  }
+
+  function rebuildTable(side){
+    const cat = catState[side];
+    const items = itemState[side];
+    const data = side === 'kr' ? buildKrRows(cat, items) : buildCnRows(cat, items);
+    const tbl = document.getElementById('ds-tbl-' + side);
+    if(!tbl) return;
+    tbl.querySelector('tbody').innerHTML = buildBody(side, data);
+    rebuildDateDropdown(side, data);
+    applyFilter(side);
+  }
+
+  // --- 초기 렌더 ---
+  function renderTable(side, data, headerClass, titleLabel, dateLabel){
+    const activeClass = side === 'kr' ? 'active-kr' : 'active-cn';
+    const allDates = data.rows.map(r => r.date).filter((v,i,a) => a.indexOf(v)===i).sort();
+    dateFilterState[side] = new Set(allDates);
+
+    const itemDdItems = allItemTypes.map(it => `<label><input type="checkbox" checked data-ds-item="${it}" data-ds-item-side="${side}"> ${it}</label>`).join('');
+
+    const filterBar = `<div class="ds-filter-bar">
+      <div class="ds-btn-group" data-ds-cat-group="${side}">
+        <button class="ds-btn active-cat" data-ds-cat="${side}" data-val="all">${bi('전체','All')}</button>
+        <button class="ds-btn" data-ds-cat="${side}" data-val="KNIT">KNIT</button>
+        <button class="ds-btn" data-ds-cat="${side}" data-val="WOVEN">WOVEN</button>
+        <button class="ds-btn" data-ds-cat="${side}" data-val="DENIM">DENIM</button>
+      </div>
+      <div class="ds-item-wrap" id="ds-item-wrap-${side}">
+        <button class="ds-item-btn" id="ds-item-btn-${side}">${bi('ITEM 전체','ALL ITEMS')} ▼</button>
+        <div class="ds-item-dropdown" id="ds-item-dd-${side}">
+          <div class="ds-dd-actions">
+            <button class="ds-dd-act-btn" data-ds-item-all="${side}" data-select="true">${bi('전체 선택','Select All')}</button>
+            <button class="ds-dd-act-btn" data-ds-item-all="${side}" data-select="false">${bi('전체 해제','Clear All')}</button>
+          </div>
+          <div class="ds-dd-list">${itemDdItems}</div>
+        </div>
+      </div>
+      <div class="ds-btn-group">
+        <button class="ds-btn ${activeClass}" data-ds-filter="${side}" data-val="all">${bi('전체','All')}</button>
+        <button class="ds-btn" data-ds-filter="${side}" data-val="done">${bi('완료만','Done only')}</button>
+        <button class="ds-btn" data-ds-filter="${side}" data-val="plan">${bi('예정만','Plan only')}</button>
+      </div>
+      <label class="ds-chk-label"><input type="checkbox" id="ds-hide-past-${side}">${bi(' 지난 날짜 숨기기',' Hide past dates')}</label>
+    </div>`;
+
+    const bodyRows = buildBody(side, data);
+    const ddItems = allDates.map(dt => `<label><input type="checkbox" checked data-ds-dd-date="${dt}" data-ds-dd-side="${side}"> ${dt}</label>`).join('');
+
+    return `<div class="daily-summary-col ds-col-${side}">
+      ${filterBar}
+      <div class="daily-summary-wrap">
+        <table class="daily-summary-tbl" id="ds-tbl-${side}">
+          <thead>
+            <tr class="${headerClass}"><th colspan="7">${titleLabel}</th></tr>
+            <tr class="${headerClass}">
+              <th class="ds-date-th" id="ds-date-th-${side}" onclick="dsToggleDateDrop('${side}',event)">
+                ${dateLabel} ▼
+                <div class="ds-date-dropdown" id="ds-dd-${side}">
+                  <div class="ds-dd-actions">
+                    <button class="ds-dd-act-btn" onclick="dsDateSelectAll('${side}',true,event)">${bi('전체 선택','Select All')}</button>
+                    <button class="ds-dd-act-btn" onclick="dsDateSelectAll('${side}',false,event)">${bi('전체 해제','Clear All')}</button>
+                  </div>
+                  <div class="ds-dd-list">${ddItems}</div>
+                </div>
+              </th>
+              <th>STATUS</th><th>${bi('누적 모델','Cum. Model')}</th><th>${bi('누적 SKU','Cum. SKU')}</th><th>${bi('누적 수량','Cum. Qty')}</th><th>${bi('모델 누적%','Model %')}</th><th>${bi('수량 누적%','Qty %')}</th>
+            </tr>
+          </thead>
+          <tbody>${bodyRows}</tbody>
+        </table>
+      </div>
+    </div>`;
+  }
+
+  const kr = buildKrRows('all', itemState.kr);
+  const cn = buildCnRows('all', itemState.cn);
+  const krHtml = renderTable('kr', kr, 'ds-header-kr', bi('KR 입고','KR Arrival'), bi('한국입고일','KR Arrival Date'));
+  const cnHtml = renderTable('cn', cn, 'ds-header-cn', bi('CN RDD 예상','CN RDD Expected'), bi('RDD 예상일','Expected RDD'));
+  document.getElementById('daily-summary-grid').innerHTML = krHtml + cnHtml;
+
+  // --- 필터 로직 (STATUS + 날짜 숨기기 + 날짜 드롭다운 AND 조건) ---
+  function applyFilter(side){
+    const tbl = document.getElementById('ds-tbl-' + side);
+    if(!tbl) return;
+    const activeBtn = document.querySelector(`.ds-btn[data-ds-filter="${side}"].${side==='kr'?'active-kr':'active-cn'}`);
+    const filterVal = activeBtn ? activeBtn.dataset.val : 'all';
+    const hidePast = document.getElementById('ds-hide-past-' + side).checked;
+    const checkedDates = dateFilterState[side];
+    const rows = tbl.querySelectorAll('tbody tr[data-ds-type]');
+    rows.forEach(tr => {
+      let show = true;
+      const type = tr.dataset.dsType;
+      const date = tr.dataset.dsDate;
+      const isTbd = date === 'TBD';
+      if(filterVal === 'done' && type !== 'done') show = false;
+      if(filterVal === 'plan' && type !== 'plan') show = false;
+      if(!isTbd && hidePast && type === 'done' && date < todayStr) show = false;
+      if(!isTbd && checkedDates && !checkedDates.has(date)) show = false;
+      tr.style.display = show ? '' : 'none';
+    });
+  }
+
+  // 카테고리 버튼 토글
+  document.querySelectorAll('.ds-btn[data-ds-cat]').forEach(btn => {
+    btn.addEventListener('click', function(){
+      const side = this.dataset.dsCat;
+      const val = this.dataset.val;
+      document.querySelectorAll(`.ds-btn[data-ds-cat="${side}"]`).forEach(b => b.classList.remove('active-cat'));
+      this.classList.add('active-cat');
+      catState[side] = val;
+      rebuildTable(side);
+    });
+  });
+
+  // STATUS 버튼 토글
+  document.querySelectorAll('.ds-btn[data-ds-filter]').forEach(btn => {
+    btn.addEventListener('click', function(){
+      const side = this.dataset.dsFilter;
+      const activeClass = side === 'kr' ? 'active-kr' : 'active-cn';
+      document.querySelectorAll(`.ds-btn[data-ds-filter="${side}"]`).forEach(b => b.classList.remove(activeClass));
+      this.classList.add(activeClass);
+      applyFilter(side);
+    });
+  });
+
+  // 지난 날짜 숨기기 체크박스
+  ['kr','cn'].forEach(side => {
+    document.getElementById('ds-hide-past-' + side).addEventListener('change', () => applyFilter(side));
+  });
+
+  // 날짜 드롭다운 체크박스 변경 (초기 바인딩)
+  document.querySelectorAll('input[data-ds-dd-date]').forEach(chk => {
+    chk.addEventListener('change', function(e){
+      e.stopPropagation();
+      const side = this.dataset.dsDdSide;
+      const dt = this.dataset.dsDdDate;
+      if(this.checked) dateFilterState[side].add(dt);
+      else dateFilterState[side].delete(dt);
+      applyFilter(side);
+    });
+  });
+
+  // ITEM 드롭다운 체크박스 (초기 바인딩)
+  ['kr','cn'].forEach(side => bindItemCheckboxes(side));
+
+  // ITEM 전체 선택/해제 버튼
+  document.querySelectorAll('.ds-dd-act-btn[data-ds-item-all]').forEach(btn => {
+    btn.addEventListener('click', function(e){
+      e.stopPropagation();
+      const side = this.dataset.dsItemAll;
+      const selectAll = this.dataset.select === 'true';
+      const dd = document.getElementById('ds-item-dd-' + side);
+      dd.querySelectorAll('input[data-ds-item]').forEach(chk => {
+        chk.checked = selectAll;
+        const item = chk.dataset.dsItem;
+        if(selectAll) itemState[side].add(item);
+        else itemState[side].delete(item);
+      });
+      updateItemBtnLabel(side);
+      rebuildTable(side);
+    });
+  });
+
+  // ITEM 드롭다운 토글
+  ['kr','cn'].forEach(side => {
+    const btn = document.getElementById('ds-item-btn-' + side);
+    if(btn) btn.addEventListener('click', function(e){
+      e.stopPropagation();
+      const dd = document.getElementById('ds-item-dd-' + side);
+      // 다른 ITEM 드롭다운 닫기
+      const other = side === 'kr' ? 'cn' : 'kr';
+      const otherDd = document.getElementById('ds-item-dd-' + other);
+      if(otherDd) otherDd.classList.remove('open');
+      // 날짜 드롭다운도 닫기
+      ['kr','cn'].forEach(s => {
+        const dateDd = document.getElementById('ds-dd-' + s);
+        if(dateDd) dateDd.classList.remove('open');
+      });
+      const rect = btn.getBoundingClientRect();
+      dd.style.top = rect.bottom + 2 + 'px';
+      dd.style.left = rect.left + 'px';
+      dd.classList.toggle('open');
+    });
+  });
+
+  // 날짜 드롭다운 토글/닫기 (전역)
+  window.dsToggleDateDrop = function(side, e){
+    e.stopPropagation();
+    const dd = document.getElementById('ds-dd-' + side);
+    const th = document.getElementById('ds-date-th-' + side);
+    const otherSide = side === 'kr' ? 'cn' : 'kr';
+    const otherDd = document.getElementById('ds-dd-' + otherSide);
+    if(otherDd) otherDd.classList.remove('open');
+    // ITEM 드롭다운도 닫기
+    ['kr','cn'].forEach(s => {
+      const itemDd = document.getElementById('ds-item-dd-' + s);
+      if(itemDd) itemDd.classList.remove('open');
+    });
+    const rect = th.getBoundingClientRect();
+    dd.style.top = rect.bottom + 2 + 'px';
+    dd.style.left = rect.left + 'px';
+    dd.classList.toggle('open');
+  };
+
+  window.dsDateSelectAll = function(side, selectAll, e){
+    e.stopPropagation();
+    const checkboxes = document.querySelectorAll(`input[data-ds-dd-side="${side}"]`);
+    checkboxes.forEach(chk => {
+      chk.checked = selectAll;
+      const dt = chk.dataset.dsDdDate;
+      if(selectAll) dateFilterState[side].add(dt);
+      else dateFilterState[side].delete(dt);
+    });
+    applyFilter(side);
+  };
+
+  // 바깥 클릭 시 모든 드롭다운 닫기
+  document.addEventListener('click', function(e){
+    ['kr','cn'].forEach(side => {
+      const dd = document.getElementById('ds-dd-' + side);
+      const th = document.getElementById('ds-date-th-' + side);
+      if(dd && th && !th.contains(e.target)) dd.classList.remove('open');
+      const itemDd = document.getElementById('ds-item-dd-' + side);
+      const itemWrap = document.getElementById('ds-item-wrap-' + side);
+      if(itemDd && itemWrap && !itemWrap.contains(e.target)) itemDd.classList.remove('open');
+    });
+  });
+})();
+
+// ── 카테고리 진행률 ──────────────────────────────────────
+const CAT_COLOR = { KNIT:'#60a5fa', WOVEN:'#a78bfa', DENIM:'#fbbf24' };
+const catStat = {};
+AD.forEach(d=>{
+  const s = d.sort||'기타';
+  if(!catStat[s]) catStat[s]={total:0,arrived:0,delayed:0,pcs:0,cn_sent:0,styles:new Set(),arrivedM:new Set(),cnSentM:new Set()};
+  catStat[s].total++;
+  catStat[s].pcs += d.ttl_pcs||0;
+  catStat[s].styles.add(d.style_code);
+  if(d.kr_actual){ catStat[s].arrived++; catStat[s].arrivedM.add(d.style_code); }
+  if(d.cn_atd)   { catStat[s].cn_sent++; catStat[s].cnSentM.add(d.style_code); }
+  if(isDelayed(d)) catStat[s].delayed++;
+});
+
+const catEl = document.getElementById('cat-progress');
+['KNIT','WOVEN','DENIM'].forEach(c=>{
+  const s = catStat[c]||{total:0,arrived:0,delayed:0,pcs:0,cn_sent:0,styles:new Set(),arrivedM:new Set(),cnSentM:new Set()};
+  const totalM = s.styles.size;
+  const krPct = s.total>0 ? Math.round(s.arrived/s.total*100):0;
+  const cnPct = s.total>0 ? Math.round(s.cn_sent/s.total*100):0;
+  const col = CAT_COLOR[c];
+  const cnCol = '#f59e0b';
+  catEl.innerHTML+=`
+  <div class="cat-item">
+    <div class="cat-header">
+      <div class="cat-name">
+        <span class="cat-dot" style="background:${col}"></span>${c}
+      </div>
+      <div class="cat-nums"><strong>${totalM}</strong>M &nbsp;·&nbsp; ${s.total} SKU &nbsp;·&nbsp; ${s.pcs} PCS</div>
+    </div>
+    <div style="display:flex;gap:16px;margin-top:4px">
+      <div style="flex:1" class="cat-kr-col">
+        <div style="font-size:11px;color:var(--muted);margin-bottom:3px;font-weight:600">${bi('KR 입고','KR Arrival')}</div>
+        <div class="pbar"><div class="pbar-fill" style="width:${krPct}%;background:${col}"></div></div>
+        <div class="cat-stats">
+          ${bi('입고완료','Arrived')} <span style="color:${col}">${s.arrivedM.size}M / ${s.arrived}SKU</span>
+          &nbsp;${bi('미입고','Pending')} <span>${totalM-s.arrivedM.size}M / ${s.total-s.arrived}SKU</span>
+          &nbsp;${bi('진행률','Progress')} <span style="color:${col}">${krPct}%</span>
+          ${s.delayed>0?`&nbsp;지연 <span style="color:#f87171">${s.delayed}</span>`:''}
+        </div>
+      </div>
+      <div style="flex:1">
+        <div style="font-size:11px;color:var(--muted);margin-bottom:3px;font-weight:600">${bi('CN 발송','CN RDD ARRIVAL')}</div>
+        <div class="pbar"><div class="pbar-fill" style="width:${cnPct}%;background:${cnCol}"></div></div>
+        <div class="cat-stats">
+          ${bi('발송완료','RDD Arrived')} <span style="color:${cnCol}">${s.cnSentM.size}M / ${s.cn_sent}SKU</span>
+          &nbsp;${bi('미발송','Pending')} <span>${totalM-s.cnSentM.size}M / ${s.total-s.cn_sent}SKU</span>
+          &nbsp;${bi('진행률','Progress')} <span style="color:${cnCol}">${cnPct}%</span>
+        </div>
+      </div>
+    </div>
+  </div>`;
+});
+
+// ── 날짜 분포 리스트 (예정 vs 실적 비교) ──────────────────
+function renderDateList(elId, dist, color, pastColor, actualDist, actualLabels){
+  const el = document.getElementById(elId);
+  const _isCn = document.body.classList.contains('view-cn');
+  const tbdCnt  = dist['TBD'] || 0;
+  const naCnt   = dist['N/A'] || 0;
+  const hasActual = actualDist !== null && actualDist !== undefined;
+  // 예정 날짜와 실적 날짜를 모두 합쳐서 정렬
+  const allDatesSet = new Set();
+  Object.keys(dist).forEach(k=>{ if(k!=='TBD'&&k!=='N/A') allDatesSet.add(k); });
+  if(hasActual) Object.keys(actualDist).forEach(k=>{ if(k!=='TBD'&&k!=='N/A') allDatesSet.add(k); });
+  const dated = Array.from(allDatesSet).sort().map(dt=>[dt, dist[dt]||0]);
+  const total   = dated.reduce((s,[,v])=>s+v, 0);
+  const maxAll  = Math.max(...dated.map(([,v])=>v), ...(hasActual?Object.entries(actualDist).filter(([k])=>k!=='TBD'&&k!=='N/A').map(([,v])=>v):[]), 1);
+  const actTotal  = hasActual ? Object.entries(actualDist).filter(([k])=>k!=='TBD'&&k!=='N/A').reduce((s,[,v])=>s+v, 0) : 0;
+  // 컬럼 헤더
+  const _hs = 'font-size:10px;color:#94a3b8;font-weight:600;white-space:nowrap;';
+  const _actColLabel = (actualLabels&&((_isCn&&actualLabels.cn_col)||actualLabels.col)) || (_isCn?'Actual Cum.':'실적 누계');
+  const _actLastLabel = (actualLabels&&((_isCn&&actualLabels.cn_lastCol)||actualLabels.lastCol)) || (_isCn?'Achievement':'달성률');
+  if(hasActual){
+    el.innerHTML+=`
+    <div class="date-row" style="border-bottom:1px solid #dde4f4;padding-bottom:6px;margin-bottom:4px">
+      <div class="dr-date" style="${_hs}">${_isCn?'Date':'날짜'}</div>
+      <div style="flex:1;min-width:60px;${_hs}">${_isCn?'Cumulative (Plan / Actual)':'누계 바 (예정 / 실적)'}</div>
+      <div style="${_hs}min-width:72px;text-align:right">${_isCn?'Plan (Cum %)':'예정(누계%)'}</div>
+      <div style="${_hs}min-width:72px;text-align:right">${_actColLabel}</div>
+      <div style="${_hs}min-width:78px;text-align:right">${_actLastLabel}</div>
+    </div>`;
+  } else {
+    el.innerHTML+=`
+    <div class="date-row" style="border-bottom:1px solid #dde4f4;padding-bottom:6px;margin-bottom:4px">
+      <div class="dr-date" style="${_hs}">날짜</div>
+      <div style="flex:1;min-width:60px"></div>
+      <div class="dr-count" style="${_hs}">예정M</div>
+      <div class="dr-pct" style="${_hs}">비중</div>
+      <div class="dr-cum" style="${_hs}">누계%</div>
+    </div>`;
+  }
+  let cumCnt = 0, actCumCnt = 0;
+  dated.forEach(([dt, cnt])=>{
+    cumCnt += cnt;
+    const past     = dt < TODAY;
+    const barPct   = Math.round(cnt / maxAll * 100);
+    const sharePct = total > 0 ? (cnt / total * 100).toFixed(1) : '0.0';
+    const cumPct   = total > 0 ? (cumCnt / total * 100).toFixed(1) : '0.0';
+    const cumBarPct = total > 0 ? Math.round(cumCnt / total * 100) : 0;
+    const cumColor = parseFloat(cumPct) >= 100 ? '#34d399'
+                   : parseFloat(cumPct) >= 80  ? '#60a5fa'
+                   : '#fbbf24';
+    // 실적
+    const actCnt    = hasActual ? (actualDist[dt] || 0) : 0;
+    actCumCnt += actCnt;
+    const actCumBarPct = total > 0 ? Math.round(actCumCnt / total * 100) : 0;
+    const actCumPct = total > 0 ? (actCumCnt / total * 100).toFixed(1) : '0.0';
+    const hitRate   = cumCnt > 0 ? Math.round(actCumCnt / cumCnt * 100) : 0;
+    const gap       = (parseFloat(actCumPct) - parseFloat(cumPct)).toFixed(1);
+    const gapSign   = parseFloat(gap) >= 0 ? '+' : '';
+    const gapColor  = parseFloat(gap) >= 0 ? '#34d399' : '#f87171';
+    el.innerHTML+=`
+    <div class="date-row">
+      <div class="dr-date ${past?'dr-past':''}">${dt}${past?(' <small>('+(_isCn?'past':'경과')+')</small>'):''}</div>
+      ${hasActual?`<div style="flex:1;min-width:60px;display:flex;flex-direction:column;gap:2px;justify-content:center">
+        <div style="height:6px;background:#edf0fc;border-radius:3px;overflow:hidden"><div style="height:100%;width:${cumBarPct}%;background:#a5b4fc;border-radius:3px;transition:width 0.3s"></div></div>
+        <div style="height:6px;background:#edf0fc;border-radius:3px;overflow:hidden"><div style="height:100%;width:${actCumBarPct}%;background:#86efac;border-radius:3px;transition:width 0.3s"></div></div>
+      </div>`
+      :`<div style="flex:1;min-width:60px">
+        <div class="dr-bar"><div class="dr-fill" style="width:${barPct}%;background:${past?pastColor:color};opacity:${past?0.4:1}"></div></div>
+      </div>`}
+      ${hasActual?`<div style="font-size:11px;font-weight:600;min-width:72px;text-align:right;color:var(--text)">${cumCnt}M <span style="font-size:10px;font-weight:400;color:${past?'#94a3b8':cumColor}">(${cumPct}%)</span></div>
+      <div style="font-size:11px;font-weight:700;min-width:72px;text-align:right;color:${actCumCnt>=cumCnt?'#34d399':actCumCnt>0?'#f59e0b':'#cbd5e1'}">${actCumCnt}M <span style="font-size:10px;font-weight:400;color:#94a3b8">(${actCumPct}%)</span></div>
+      <div style="font-size:11px;font-weight:700;min-width:78px;text-align:right;color:${hitRate>=100?'#34d399':hitRate>0?'#f59e0b':'#cbd5e1'}">${hitRate}% <span style="font-size:10px;font-weight:600;color:${gapColor}">(${gapSign}${gap}%)</span></div>`
+      :`<div class="dr-count">${cnt}M</div>
+      <div class="dr-pct">${sharePct}%</div>
+      <div class="dr-cum" style="color:${past?'#94a3b8':cumColor}">누계 ${cumPct}%</div>`}
+    </div>`;
+  });
+  // 전체 달성 요약 (실적 비교 모드일 때)
+  if(hasActual){
+    el.innerHTML+=`
+    <div style="margin-top:8px;font-size:11px;color:#94a3b8;text-align:right;font-weight:600">
+      ${_isCn?'Total Achievement':'전체 달성'} <span style="color:${actTotal>=total?'#34d399':'#f59e0b'}">${actTotal}</span>/${total}M (<span style="color:${actTotal>=total?'#34d399':'#f59e0b'}">${total>0?(actTotal/total*100).toFixed(1):'0.0'}%</span>)
+    </div>`;
+  }
+  // TBD 항목
+  if(tbdCnt > 0){
+    const tbdBar = Math.round(tbdCnt / maxAll * 100);
+    el.innerHTML+=`
+    <div class="date-row" style="border-top:1px dashed #d1d5e8;margin-top:4px;padding-top:8px;opacity:0.75">
+      <div class="dr-date" style="color:#94a3b8">${_isCn?'TBD':'미정(TBD)'}</div>
+      <div class="dr-bar"><div class="dr-fill" style="width:${tbdBar}%;background:#cbd5e1"></div></div>
+      <div class="dr-count" style="color:#94a3b8">${tbdCnt}M</div>
+      <div class="dr-pct" style="color:#94a3b8">제외</div>
+      <div class="dr-cum" style="color:#94a3b8">-</div>
+    </div>`;
+  }
+  // N/A(미제작) 항목
+  if(naCnt > 0){
+    const naBar = Math.round(naCnt / maxAll * 100);
+    el.innerHTML+=`
+    <div class="date-row" style="border-top:1px dashed #d1d5e8;margin-top:4px;padding-top:8px;opacity:0.55">
+      <div class="dr-date" style="color:#94a3b8">${_isCn?'N/A (Not Made)':'N/A(미제작)'}</div>
+      <div class="dr-bar"><div class="dr-fill" style="width:${naBar}%;background:#e2e8f0"></div></div>
+      <div class="dr-count" style="color:#94a3b8">${naCnt}M</div>
+      <div class="dr-pct" style="color:#94a3b8">제외</div>
+      <div class="dr-cum" style="color:#94a3b8">-</div>
+    </div>`;
+  }
+}
+
+// ── DUE DATE 누계 요약 박스 (예정 vs 실적) ────────────────
+function renderDueSummary(summaryId, dist, dues, actualDist, actualLabels){
+  const el = document.getElementById(summaryId);
+  const _isCn = document.body.classList.contains('view-cn');
+  if(!el) return;
+  const tbdCnt = dist['TBD'] || 0;
+  const naCnt  = dist['N/A'] || 0;
+  const sorted = Object.entries(dist).filter(([k])=>k!=='TBD'&&k!=='N/A').sort((a,b)=>a[0]<b[0]?-1:1);
+  const total  = sorted.reduce((s,[,v])=>s+v, 0);
+  const hasActual = actualDist != null;
+  const actSorted = hasActual ? Object.entries(actualDist).filter(([k])=>k!=='TBD'&&k!=='N/A').sort((a,b)=>a[0]<b[0]?-1:1) : [];
+  const _sumLabel = (actualLabels&&((_isCn&&actualLabels.cn_summary)||actualLabels.summary)) || (_isCn?'Actual Achievement':'실적 달성');
+
+  let html = `<div class="due-summary-title">${_isCn?'Cumulative by Due Date':'DUE DATE 기준 누계'} <span style="font-size:10px;color:#94a3b8">(TBD·N/A ${_isCn?'excl.':'제외'})</span></div>`;
+  if(hasActual){
+    html += `<div style="display:flex;align-items:center;margin-bottom:6px;font-size:10px;font-weight:700;color:#94a3b8;border-bottom:1px solid #eaedf8;padding-bottom:4px">
+      <div style="flex:1">${_isCn?'Reference':'기준'}</div>
+      <div style="width:72px;text-align:right">${_isCn?'Planned Cum.':'예정 누계'}</div>
+      <div style="width:72px;text-align:right">${_sumLabel}</div>
+    </div>`;
+  }
+  dues.forEach(({label, cn_label, date})=>{
+    const _lbl = (_isCn && cn_label) ? cn_label : label;
+    let cumCnt = 0;
+    sorted.forEach(([dt, cnt])=>{ if(dt <= date) cumCnt += cnt; });
+    const cumPct = total > 0 ? (cumCnt / total * 100).toFixed(1) : '0.0';
+    const valColor = parseFloat(cumPct) >= 100 ? '#34d399'
+                   : parseFloat(cumPct) >= 80  ? '#60a5fa'
+                   : '#f87171';
+    // 실적 누계
+    let actCum = 0;
+    if(hasActual) actSorted.forEach(([dt, cnt])=>{ if(dt <= date) actCum += cnt; });
+    const actPct = total > 0 ? (actCum / total * 100).toFixed(1) : '0.0';
+    const actColor = parseFloat(actPct) >= parseFloat(cumPct) ? '#34d399'
+                   : parseFloat(actPct) >= parseFloat(cumPct)*0.5 ? '#f59e0b'
+                   : '#f87171';
+    html += `
+    <div class="due-row" style="display:flex;align-items:center">
+      <div class="due-label" style="flex:1">${_lbl} <span style="color:var(--muted);font-weight:400;font-size:11px">(~${date})</span></div>
+      <div class="due-val" style="color:${valColor};width:72px;text-align:right">${cumPct}%</div>
+      ${hasActual?`<div class="due-val" style="color:${actColor};width:72px;text-align:right">${actPct}%</div>`:''}
+    </div>`;
+  });
+  if(tbdCnt > 0){
+    html += `
+    <div class="due-row" style="border-top:1px dashed #d1d5e8;margin-top:4px;padding-top:6px">
+      <div class="due-label" style="color:#94a3b8">${_isCn?'TBD':'미정(TBD)'}</div>
+      <div class="due-val" style="color:#94a3b8">${tbdCnt}M / ${_isCn?'Excluded':'제외'}</div>
+    </div>`;
+  }
+  if(naCnt > 0){
+    html += `
+    <div class="due-row" style="opacity:0.65">
+      <div class="due-label" style="color:#94a3b8">${_isCn?'N/A (Not Made)':'N/A(미제작)'}</div>
+      <div class="due-val" style="color:#94a3b8">${naCnt}M / ${_isCn?'Excluded':'제외'}</div>
+    </div>`;
+  }
+  el.innerHTML = html;
+}
+
+// ── 카테고리 필터 시스템 ──────────────────────────────────
+const SECTION_CFG = {
+  etd: {
+    listId:'cn-etd-list', summaryId:'etd-summary', field:'cn_etd',
+    actualField:'cn_atd',
+    color:'#60a5fa', pastColor:'#94a3b8',
+    dues:[
+      { label:'입고 DUE',   cn_label:'Arrival Due',  date:SCHED_DUE  },
+      { label:'CEO 품평회', cn_label:'CEO Review',   date:SCHED_CEO  }
+    ]
+  },
+  rdd: {
+    listId:'cn-rdd-list', summaryId:'rdd-summary', field:'cn_rdd',
+    actualField:'cn_rdd_actual',
+    color:'#7c5fc0', pastColor:'#94a3b8',
+    actualLabels:{ col:'실적RDD예상M', cn_col:'Actual RDD M', lastCol:'비고', cn_lastCol:'Note', summary:'실적 RDD 예상', cn_summary:'Actual RDD' },
+    dues:[
+      { label:'CN 입고 DUE',    cn_label:'CN Arrival Due',  date:SCHED_DUE  },
+      { label:'CN TRADE SHOW',                               date:SCHED_SHOW }
+    ]
+  },
+  kr: {
+    listId:'kr-exp-list', summaryId:'kr-summary', field:'kr_expected',
+    actualField:'kr_actual',
+    color:'#60a5fa', pastColor:'#94a3b8',
+    dues:[
+      { label:'KR 입고 DUE', cn_label:'KR Arrival Due', date:SCHED_DUE },
+      { label:'CEO 품평회',  cn_label:'CEO Review',     date:SCHED_CEO }
+    ]
+  }
+};
+
+function buildDist(field, cat){
+  // 스타일당 가장 빠른 날짜에만 집계 (중복 방지)
+  const styleDate = {}; // style_code → earliest date
+  const naStyles = new Set();
+  AD.forEach(d=>{
+    if(cat !== 'all' && d.sort !== cat) return;
+    if(!d.style_code) return;
+    if(d.is_na){ naStyles.add(d.style_code); return; }
+    const dt = d[field] || 'TBD';
+    const prev = styleDate[d.style_code];
+    if(!prev || (dt !== 'TBD' && (prev === 'TBD' || dt < prev)))
+      styleDate[d.style_code] = dt;
+  });
+  const dist = {};
+  Object.values(styleDate).forEach(dt=>{
+    dist[dt] = (dist[dt]||0) + 1;
+  });
+  if(naStyles.size > 0) dist['N/A'] = naStyles.size;
+  return dist;
+}
+
+// 실적 분포: 스타일당 가장 빠른 실제 완료일에만 집계
+function buildActualDist(actualField, cat){
+  if(!actualField) return null;
+  const styleDate = {};
+  AD.forEach(d=>{
+    if(cat !== 'all' && d.sort !== cat) return;
+    if(!d.style_code || d.is_na) return;
+    const dt = d[actualField];
+    if(!dt) return;
+    const prev = styleDate[d.style_code];
+    if(!prev || dt < prev) styleDate[d.style_code] = dt;
+  });
+  const dist = {};
+  Object.values(styleDate).forEach(dt=>{
+    dist[dt] = (dist[dt]||0) + 1;
+  });
+  return dist;
+}
+
+function renderSection(section, cat){
+  const cfg = SECTION_CFG[section];
+  const dist = buildDist(cfg.field, cat);
+  const actDist = buildActualDist(cfg.actualField, cat);
+  document.getElementById(cfg.listId).innerHTML = '';
+  renderDateList(cfg.listId, dist, cfg.color, cfg.pastColor, actDist, cfg.actualLabels);
+  renderDueSummary(cfg.summaryId, dist, cfg.dues, actDist, cfg.actualLabels);
+  // ETD 섹션은 CO 카운트도 갱신 (고유 style_code 기준)
+  if(section === 'etd'){
+    const coSets = {CN:new Set(), VN:new Set(), KR:new Set()};
+    AD.forEach(d=>{
+      if(cat !== 'all' && d.sort !== cat) return;
+      if(d.cn_etd && d.style_code && coSets[d.co] !== undefined) coSets[d.co].add(d.style_code);
+    });
+    document.getElementById('co-cn-cnt').textContent = coSets.CN.size + 'M ';
+    document.getElementById('co-vn-cnt').textContent = coSets.VN.size + 'M ';
+    document.getElementById('co-kr-cnt').textContent = coSets.KR.size + 'M ';
+  }
+}
+
+const _catActive = {etd:'all', rdd:'all', kr:'all'};
+function switchCatTab(section, cat, btn){
+  _catActive[section] = cat;
+  btn.closest('.cat-tabs').querySelectorAll('.cat-tab')
+    .forEach(b=>b.classList.remove('active'));
+  btn.classList.add('active');
+  renderSection(section, cat);
+}
+
+// 초기 렌더
+renderSection('etd', 'all');
+renderSection('rdd', 'all');
+renderSection('kr',  'all');
+
+// ── 탭 ──────────────────────────────────────────────────
+function switchTab(name){
+  document.querySelectorAll('.tab-pane').forEach(p=>p.classList.remove('active'));
+  document.querySelectorAll('.tab-btn').forEach(b=>b.classList.remove('active'));
+  document.getElementById('tab-'+name).classList.add('active');
+  event.target.classList.add('active');
+  if(name==='origin') renderOriginTab();
+  if(name==='fabric') renderFabricTab();
+}
+
+// ── 원단현황 탭 ──────────────────────────────────────────
+function renderFabricTab(){
+  var el=document.getElementById('fabric-content');
+  if(el.dataset.rendered) return;
+  el.dataset.rendered='1';
+
+  // ── 날짜 유틸 ─────────────────────────────────────────
+  function _parse(s){ var p=s.split('-').map(Number); return new Date(p[0],p[1]-1,p[2]); }
+  function _fmt(d){ return d.getFullYear()+'-'+String(d.getMonth()+1).padStart(2,'0')+'-'+String(d.getDate()).padStart(2,'0'); }
+  function addDays4(s){
+    if(!s||s==='COCRE') return s;
+    var d=_parse(s); d.setDate(d.getDate()+4); return _fmt(d);
+  }
+  function weekOf(dateStr){
+    if(!dateStr) return null;
+    var d=_parse(dateStr), mo=d.getMonth()+1, dy=d.getDate();
+    var wn=Math.ceil(dy/7);
+    var ws=(wn-1)*7+1, we=Math.min(wn*7, new Date(d.getFullYear(),mo,0).getDate());
+    return {
+      key: d.getFullYear()+'-'+String(mo).padStart(2,'0')+'-'+String(wn).padStart(2,'0'),
+      label: mo+'월 '+wn+'주차 ('+mo+'/'+ws+'~'+mo+'/'+we+')',
+      mo: mo, wn: wn, year: d.getFullYear()
+    };
+  }
+  function labelFromKey(key){
+    if(key==='COCRE') return 'COCRE';
+    if(key==='미정')  return '미정 (TBD)';
+    var p=key.split('-'); var mo=parseInt(p[1]),wn=parseInt(p[2]),yr=parseInt(p[0]);
+    var ws=(wn-1)*7+1, we=Math.min(wn*7, new Date(yr,mo,0).getDate());
+    return mo+'월 '+wn+'주차 ('+mo+'/'+ws+'~'+mo+'/'+we+')';
+  }
+  function grpOf(sort){ return sort==='KNIT'?'KNIT':'WOVEN'; }
+
+  // ── 오늘 주차 키 ──────────────────────────────────────
+  var todayWk=weekOf(TODAY); // TODAY is defined globally
+  var todayKey=todayWk?todayWk.key:null;
+
+  // ── SKU 집계 ──────────────────────────────────────────
+  var skuW={KNIT:{},WOVEN:{}};
+  AD.forEach(function(d){
+    var grp=grpOf(d.sort), fetd=d.fabric_etd||'', key;
+    if(fetd==='COCRE') key='COCRE';
+    else if(!fetd) key='미정';
+    else { var wk=weekOf(addDays4(fetd)); key=wk?wk.key:'미정'; }
+    if(!skuW[grp][key]) skuW[grp][key]={skus:0,styles:new Set()};
+    skuW[grp][key].skus++; skuW[grp][key].styles.add(d.style_code);
+  });
+
+  // ── M 집계 (스타일별 가장 빠른 유효 ETA 기준) ────────
+  var mdlMap={};
+  AD.forEach(function(d){
+    var sc=d.style_code, grp=grpOf(d.sort), fetd=d.fabric_etd||'';
+    if(!mdlMap[sc]) mdlMap[sc]={grp:grp,etas:[],cocre:0,empty:0,tot:0};
+    mdlMap[sc].tot++;
+    if(fetd==='COCRE') mdlMap[sc].cocre++;
+    else if(!fetd) mdlMap[sc].empty++;
+    else mdlMap[sc].etas.push(addDays4(fetd));
+  });
+  var mW={KNIT:{},WOVEN:{}};
+  Object.keys(mdlMap).forEach(function(sc){
+    var info=mdlMap[sc], grp=info.grp, key;
+    if(!info.etas.length) key=(info.cocre===info.tot?'COCRE':'미정');
+    else { var earliest=info.etas.slice().sort()[0]; var wk=weekOf(earliest); key=wk?wk.key:'미정'; }
+    mW[grp][key]=(mW[grp][key]||0)+1;
+  });
+
+  // ── 주차 정렬 ─────────────────────────────────────────
+  function sortedKeys(grp){
+    var all=new Set(Object.keys(skuW[grp]).concat(Object.keys(mW[grp])));
+    return [...all].sort(function(a,b){
+      var ka=a==='COCRE'?'ZCOCRE':a==='미정'?'ZZUND':a;
+      var kb=b==='COCRE'?'ZCOCRE':b==='미정'?'ZZUND':b;
+      return ka<kb?-1:ka>kb?1:0;
+    });
+  }
+
+  // ── 위험 분석 (그룹별) ────────────────────────────────
+  function riskOf(grp){
+    var src=AD.filter(function(d){return grpOf(d.sort)===grp;});
+    var undSku=src.filter(function(d){return !d.fabric_etd;}).length;
+    var undM=new Set(src.filter(function(d){return !d.fabric_etd;}).map(function(d){return d.style_code;})).size;
+    var r612Sku=src.filter(function(d){return d.fabric_etd&&d.fabric_etd!=='COCRE'&&addDays4(d.fabric_etd)>='2026-05-22';}).length;
+    var r612M=new Set(src.filter(function(d){return d.fabric_etd&&d.fabric_etd!=='COCRE'&&addDays4(d.fabric_etd)>='2026-05-22';}).map(function(d){return d.style_code;})).size;
+    var r616Sku=src.filter(function(d){return d.fabric_etd&&d.fabric_etd!=='COCRE'&&addDays4(d.fabric_etd)>='2026-06-01';}).length;
+    var r616M=new Set(src.filter(function(d){return d.fabric_etd&&d.fabric_etd!=='COCRE'&&addDays4(d.fabric_etd)>='2026-06-01';}).map(function(d){return d.style_code;})).size;
+    var cocreSku=src.filter(function(d){return d.fabric_etd==='COCRE';}).length;
+    var cocreM=new Set(src.filter(function(d){return d.fabric_etd==='COCRE';}).map(function(d){return d.style_code;})).size;
+    return {undSku:undSku,undM:undM,r612Sku:r612Sku,r612M:r612M,r616Sku:r616Sku,r616M:r616M,cocreSku:cocreSku,cocreM:cocreM};
+  }
+
+  // ── HTML 빌더 ─────────────────────────────────────────
+  function barRow(key, skuData, mCnt, totalSku, grpColor, isLast){
+    var sku=skuData?skuData.skus:0;
+    var pct=totalSku>0?(sku/totalSku*100).toFixed(1):'0.0';
+    var lbl=labelFromKey(key);
+    var isCur=(key===todayKey), isCocre=(key==='COCRE'), isUnd=(key==='미정');
+    var barClr=isCur?'#fcd34d':isCocre?'#d1d5db':isUnd?'#fca5a5':grpColor;
+    var prefix=isCur?'📍 ':isCocre?'ℹ ':isUnd?'⚠ ':'';
+    var bg=isCur?'background:#fffbeb;':'';
+    var fw=isCur?'font-weight:700;':'';
+    return '<div style="display:flex;align-items:center;gap:8px;padding:5px 0;border-bottom:1px solid #f3f4f6;'+bg+'">'+
+      '<div style="width:175px;font-size:12px;'+fw+'color:#374151;flex-shrink:0">'+prefix+lbl+'</div>'+
+      '<div style="flex:1;background:#f3f4f6;border-radius:4px;height:14px;overflow:hidden">'+
+        '<div style="height:100%;border-radius:4px;width:'+pct+'%;background:'+barClr+'"></div>'+
+      '</div>'+
+      '<div style="width:96px;font-size:11px;color:#374151;text-align:right;white-space:nowrap">'+sku+' SKU / '+mCnt+'M</div>'+
+      '<div style="width:38px;font-size:11px;color:#9ca3af;text-align:right">'+pct+'%</div>'+
+    '</div>';
+  }
+
+  function riskHtml(grp, r){
+    var title=grp+' 지연 위험 분석';
+    var rows='';
+    if(r.undM>0) rows+='<div style="margin-bottom:7px;padding:8px 12px;background:#fee2e2;border-radius:8px">'+
+      '<div style="font-weight:700;color:#991b1b;font-size:12px">🚨 원단 미정 (즉시 푸시)</div>'+
+      '<div style="color:#374151;font-size:11px;margin-top:3px">'+r.undSku+' SKU / '+r.undM+'M — 일정 산정 불가</div></div>';
+    if(r.r612M>0) rows+='<div style="margin-bottom:7px;padding:8px 12px;background:#fef3c7;border-radius:8px">'+
+      '<div style="font-weight:700;color:#92400e;font-size:12px">🚨 6/12 신규 DUE 위험 (ETA 5/22 이후)</div>'+
+      '<div style="color:#374151;font-size:11px;margin-top:3px">'+r.r612Sku+' SKU / '+r.r612M+'M — 원단 도착 후 2주+ 소요</div></div>';
+    if(r.r616M>0) rows+='<div style="margin-bottom:7px;padding:8px 12px;background:#fef9c3;border-radius:8px">'+
+      '<div style="font-weight:700;color:#854d0e;font-size:12px">⚠ 6/16 2-1차 품평 위험 (ETA 6/1 이후)</div>'+
+      '<div style="color:#374151;font-size:11px;margin-top:3px">'+r.r616Sku+' SKU / '+r.r616M+'M</div></div>';
+    if(r.cocreM>0) rows+='<div style="padding:8px 12px;background:#f9fafb;border-radius:8px">'+
+      '<div style="font-weight:700;color:#6b7280;font-size:12px">ℹ COCRE (벤더 자체 진행, 위험도 제외)</div>'+
+      '<div style="color:#374151;font-size:11px;margin-top:3px">'+r.cocreSku+' SKU / '+r.cocreM+'M</div></div>';
+    return '<div style="background:#f9fafb;border-radius:10px;padding:14px 16px;margin-top:12px">'+
+      '<div style="font-weight:800;color:#374151;font-size:12px;margin-bottom:10px">'+title+'</div>'+rows+'</div>';
+  }
+
+  function sectionHtml(grp, grpColor){
+    var keys=sortedKeys(grp);
+    var totalSku=keys.reduce(function(a,k){return a+(skuW[grp][k]?skuW[grp][k].skus:0);},0);
+    var totalM=keys.reduce(function(a,k){return a+(mW[grp][k]||0);},0);
+    var rows=keys.map(function(k){
+      return barRow(k, skuW[grp][k], mW[grp][k]||0, totalSku, grpColor);
+    }).join('');
+    var r=riskOf(grp);
+    var border='border-bottom:2px solid '+grpColor;
+    return '<div>'+
+      '<div style="font-size:12px;font-weight:800;color:#374151;margin-bottom:10px;padding-bottom:6px;'+border+'">'+
+        '📦 '+grp+(grp==='WOVEN'?' (WOVEN + DENIM)':'')+' 원단 ETA 분포'+
+        '<span style="font-size:11px;font-weight:400;color:#6b7280;margin-left:8px">'+totalSku+' SKU / '+totalM+'M</span>'+
+      '</div>'+
+      rows+
+      riskHtml(grp, r)+
+    '</div>';
+  }
+
+  // ── 상단 요약 ─────────────────────────────────────────
+  var knitSku=0,knitM=0,wovenSku=0,wovenM=0;
+  Object.values(skuW.KNIT).forEach(function(v){knitSku+=v.skus;});
+  Object.values(mW.KNIT).forEach(function(v){knitM+=v;});
+  Object.values(skuW.WOVEN).forEach(function(v){wovenSku+=v.skus;});
+  Object.values(mW.WOVEN).forEach(function(v){wovenM+=v;});
+  var sumHtml='<div style="display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-bottom:20px">'+
+    '<div style="background:#eff6ff;border-radius:10px;padding:14px 18px">'+
+      '<div style="font-size:10px;font-weight:700;color:#6b7280;text-transform:uppercase;letter-spacing:.5px;margin-bottom:5px">KNIT</div>'+
+      '<div style="font-size:17px;font-weight:900;color:#2563eb">'+knitSku+' SKU / '+knitM+'M</div>'+
+    '</div>'+
+    '<div style="background:#f5f3ff;border-radius:10px;padding:14px 18px">'+
+      '<div style="font-size:10px;font-weight:700;color:#6b7280;text-transform:uppercase;letter-spacing:.5px;margin-bottom:5px">WOVEN + DENIM</div>'+
+      '<div style="font-size:17px;font-weight:900;color:#7c3aed">'+wovenSku+' SKU / '+wovenM+'M</div>'+
+    '</div>'+
+  '</div>'+
+  '<div style="font-size:11px;color:#9ca3af;text-align:right;margin-top:-12px;margin-bottom:16px">'+
+    '합계 '+(knitSku+wovenSku)+' SKU / '+(knitM+wovenM)+'M  |  ETA = fabric_etd + 4일  |  오늘: '+TODAY+
+  '</div>';
+
+  el.innerHTML = sumHtml +
+    '<div style="display:grid;grid-template-columns:1fr 1fr;gap:20px">'+
+      sectionHtml('KNIT','#93c5fd')+
+      sectionHtml('WOVEN','#c4b5fd')+
+    '</div>';
+
+  // ── 원단↔샘플 매트릭스 ──────────────────────────────────
+  var currentMatFilter = 'ALL';
+
+  function fabricEtaGrp(d){
+    var fetd = d.fabric_etd||'';
+    if(fetd==='COCRE') return 'COCRE';
+    if(!fetd) return '미정';
+    var eta = addDays4(fetd);
+    if(eta<='2026-05-15') return '~5/15';
+    if(eta<='2026-05-22') return '5/15~5/22';
+    if(eta<='2026-06-01') return '5/22~6/1';
+    return '6/1~';
+  }
+
+  function sampleKrGrp(d){
+    var kr = d.kr_expected||'';
+    if(!kr) return '미정';
+    if(kr<='2026-06-12') return '6/12';
+    if(kr<='2026-06-16') return '6/16';
+    if(kr<='2026-06-29') return '6/29';
+    if(kr<='2026-07-13') return '7/13';
+    return '미정';
+  }
+
+  var matRowKeys = ['~5/15','5/15~5/22','5/22~6/1','6/1~','미정','COCRE'];
+  var matColKeys = ['6/12','6/16','6/29','7/13','미정'];
+  var matRowLabels = {'~5/15':'~5/15 ✅','5/15~5/22':'5/15~5/22','5/22~6/1':'5/22~6/1','6/1~':'6/1~ ⚠','미정':'미정 TBD','COCRE':'COCRE ℹ'};
+  var matColLabels = {'6/12':'6/12\n신규DUE','6/16':'6/16\n1차품평','6/29':'6/29\n2차품평','7/13':'7/13\n수주회','미정':'미정'};
+
+  // 위험도 맵: 원단 ETA 늦고 샘플 일정 빠를수록 RED
+  var matRiskMap = {
+    '~5/15':     {'6/12':'green', '6/16':'green', '6/29':'green', '7/13':'green', '미정':'green'},
+    '5/15~5/22': {'6/12':'yellow','6/16':'green', '6/29':'green', '7/13':'green', '미정':'green'},
+    '5/22~6/1':  {'6/12':'red',   '6/16':'yellow','6/29':'green', '7/13':'green', '미정':'green'},
+    '6/1~':      {'6/12':'red',   '6/16':'red',   '6/29':'yellow','7/13':'yellow','미정':'yellow'},
+    '미정':       {'6/12':'red',   '6/16':'red',   '6/29':'red',   '7/13':'red',  '미정':'yellow'},
+    'COCRE':     {'6/12':'cocre', '6/16':'cocre', '6/29':'cocre', '7/13':'cocre','미정':'cocre'}
+  };
+  var matBg  = {green:'#d1fae5', yellow:'#fef3c7', red:'#fee2e2', cocre:'#f9fafb'};
+  var matTxt = {green:'#065f46', yellow:'#78350f', red:'#991b1b', cocre:'#9ca3af'};
+
+  function buildMatrixData(filterGrp){
+    var src = filterGrp==='ALL' ? AD : AD.filter(function(d){ return grpOf(d.sort)===filterGrp; });
+    var skuM={}, mM={};
+    matRowKeys.forEach(function(r){
+      skuM[r]={}; mM[r]={};
+      matColKeys.forEach(function(c){ skuM[r][c]=0; mM[r][c]=new Set(); });
+    });
+    src.forEach(function(d){
+      var r=fabricEtaGrp(d), c=sampleKrGrp(d);
+      skuM[r][c]++; if(d.style_code) mM[r][c].add(d.style_code);
+    });
+    return {skuM:skuM, mM:mM};
+  }
+
+  function buildMatrixHtml(data){
+    var skuM=data.skuM, mM=data.mM;
+    var cs='padding:9px 7px;text-align:center;vertical-align:middle;border:1px solid #e5e7eb;';
+    var hs='padding:7px 6px;text-align:center;font-size:10px;font-weight:700;color:#374151;background:#f3f4f6;border:1px solid #e5e7eb;white-space:pre-line;';
+    var ts='padding:7px 8px;text-align:center;background:#e5e7eb;font-size:11px;font-weight:700;color:#1f2937;border:1px solid #e5e7eb;';
+
+    // 합계 선계산 (% 표기를 위해 grandSku 먼저 확정)
+    var rowSkuTots={}, rowMsets={};
+    matRowKeys.forEach(function(r){
+      var rs=0, rm=new Set();
+      matColKeys.forEach(function(c){ rs+=skuM[r][c]; mM[r][c].forEach(function(s){ rm.add(s); }); });
+      rowSkuTots[r]=rs; rowMsets[r]=rm;
+    });
+    var colSkuTot={}, colMTot={};
+    matColKeys.forEach(function(c){
+      var cs2=0, cm=new Set();
+      matRowKeys.forEach(function(r){ cs2+=skuM[r][c]; mM[r][c].forEach(function(s){ cm.add(s); }); });
+      colSkuTot[c]=cs2; colMTot[c]=cm;
+    });
+    var grandSku=0, grandM=new Set();
+    matRowKeys.forEach(function(r){ grandSku+=rowSkuTots[r]; rowMsets[r].forEach(function(s){ grandM.add(s); }); });
+    function pct(n){ return grandSku>0?(n/grandSku*100).toFixed(1)+'%':'-'; }
+
+    var html='<div style="overflow-x:auto"><table style="width:100%;border-collapse:collapse;font-size:11px;min-width:520px">';
+    html+='<thead><tr>';
+    html+='<th style="'+hs+'width:98px;text-align:left">원단ETA ↓<br>샘플입고 →</th>';
+    matColKeys.forEach(function(c){ html+='<th style="'+hs+'">'+matColLabels[c]+'</th>'; });
+    html+='<th style="'+hs+'background:#c4cdd6">행합계</th>';
+    html+='</tr></thead><tbody>';
+
+    matRowKeys.forEach(function(r){
+      var rowSku=rowSkuTots[r], rowMset=rowMsets[r];
+      html+='<tr>';
+      html+='<td style="'+cs+'font-weight:700;background:#f3f4f6;text-align:left;white-space:nowrap;font-size:10px">'+matRowLabels[r]+'</td>';
+      matColKeys.forEach(function(c){
+        var sku=skuM[r][c], m=mM[r][c].size;
+        var risk=matRiskMap[r][c], bg=matBg[risk], tx=matTxt[risk];
+        var tip=r+' / 샘플 '+c+'\n'+sku+' SKU / '+m+'M';
+        if(sku===0){
+          html+='<td style="'+cs+'background:#f9fafb;color:#9ca3af" title="'+tip+'">–</td>';
+        } else {
+          html+='<td style="'+cs+'background:'+bg+';cursor:default" title="'+tip+'">';
+          html+='<div style="font-size:15px;font-weight:800;color:'+tx+';line-height:1.1">'+sku+'</div>';
+          html+='<div style="font-size:9px;color:#9ca3af;margin-top:1px">'+m+'M</div>';
+          html+='</td>';
+        }
+      });
+      // 행합계 + %
+      html+='<td style="'+ts+'">';
+      if(rowSku>0){
+        html+='<div style="font-size:14px;font-weight:800">'+rowSku+'</div>';
+        html+='<div style="font-size:9px;color:#6b7280">'+rowMset.size+'M</div>';
+        html+='<div style="font-size:9px;color:#9ca3af;margin-top:1px">'+pct(rowSku)+'</div>';
+      } else{ html+='<span style="color:#9ca3af">–</span>'; }
+      html+='</td></tr>';
+    });
+
+    // 열합계 row + %
+    html+='<tr><td style="'+ts+'text-align:left">열합계</td>';
+    matColKeys.forEach(function(c){
+      html+='<td style="'+ts+'">';
+      if(colSkuTot[c]>0){
+        html+='<div style="font-size:14px;font-weight:800">'+colSkuTot[c]+'</div>';
+        html+='<div style="font-size:9px;color:#6b7280">'+colMTot[c].size+'M</div>';
+        html+='<div style="font-size:9px;color:#9ca3af;margin-top:1px">'+pct(colSkuTot[c])+'</div>';
+      } else{ html+='<span style="color:#9ca3af">–</span>'; }
+      html+='</td>';
+    });
+    html+='<td style="'+ts+'background:#c4cdd6"><div style="font-size:14px;font-weight:800">'+grandSku+'</div><div style="font-size:9px;color:#6b7280">'+grandM.size+'M</div></td>';
+    html+='</tr></tbody></table></div>';
+    return {html:html, skuM:skuM, mM:mM, grandSku:grandSku, grandM:grandM};
+  }
+
+  function buildInsightHtml(skuM, mM, grandSku){
+    function ip(n){ return grandSku>0?'('+( n/grandSku*100).toFixed(1)+'%)':''; }
+
+    var r612lateSku=(skuM['5/22~6/1']['6/12']||0)+(skuM['6/1~']['6/12']||0);
+    var r612lateM=new Set();
+    ['5/22~6/1','6/1~'].forEach(function(r){ mM[r]['6/12'].forEach(function(s){ r612lateM.add(s); }); });
+    var r612undSku=skuM['미정']['6/12']||0;
+    var r612undM=new Set(mM['미정']['6/12']);
+    var r612totalSku=r612lateSku+r612undSku;
+    var r612totalM=new Set(); r612lateM.forEach(function(s){ r612totalM.add(s); }); r612undM.forEach(function(s){ r612totalM.add(s); });
+    var r616undSku=skuM['미정']['6/16']||0;
+    var urgentSku=r612undSku+r616undSku;
+
+    var redSku=0, redM=new Set();
+    [['5/22~6/1','6/12'],['6/1~','6/12'],['6/1~','6/16'],['미정','6/12'],['미정','6/16'],['미정','6/29'],['미정','7/13']].forEach(function(rc){
+      redSku+=(skuM[rc[0]][rc[1]]||0); mM[rc[0]][rc[1]].forEach(function(s){ redM.add(s); });
+    });
+    var greenSku=0, greenM=new Set();
+    [['~5/15','6/12'],['~5/15','6/16'],['~5/15','6/29'],['~5/15','7/13'],['~5/15','미정'],
+     ['5/15~5/22','6/16'],['5/15~5/22','6/29'],['5/15~5/22','7/13'],['5/15~5/22','미정'],
+     ['5/22~6/1','6/29'],['5/22~6/1','7/13'],['5/22~6/1','미정']].forEach(function(gc){
+      greenSku+=(skuM[gc[0]][gc[1]]||0); mM[gc[0]][gc[1]].forEach(function(s){ greenM.add(s); });
+    });
+
+    var ps='font-size:9px;color:#9ca3af;margin-left:4px;font-weight:400';
+    return '<div style="display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:14px">'+
+      '<div style="background:#fff1f2;border-radius:10px;padding:12px 14px;border-left:4px solid #ef4444">'+
+        '<div style="font-weight:800;color:#991b1b;font-size:11px;margin-bottom:7px">📌 원단으로 인한 6/12 미달 영향</div>'+
+        '<div style="font-size:10px;color:#374151;margin-bottom:3px">ETA 5/22이후 + 6/12 예정: <b>'+r612lateSku+' SKU / '+r612lateM.size+'M</b><span style="'+ps+'">'+ip(r612lateSku)+'</span></div>'+
+        '<div style="font-size:10px;color:#374151;margin-bottom:3px">원단 미정 + 6/12 예정: <b>'+r612undSku+' SKU / '+r612undM.size+'M</b><span style="'+ps+'">'+ip(r612undSku)+'</span></div>'+
+        '<div style="font-size:11px;color:#991b1b;font-weight:700;margin-top:6px;padding-top:5px;border-top:1px solid #fecaca">합계: '+r612totalSku+' SKU / '+r612totalM.size+'M<span style="'+ps+'">'+ip(r612totalSku)+'</span></div>'+
+      '</div>'+
+      '<div style="background:#fff7ed;border-radius:10px;padding:12px 14px;border-left:4px solid #f97316">'+
+        '<div style="font-weight:800;color:#9a3412;font-size:11px;margin-bottom:7px">📌 가장 시급한 푸시 대상 (원단 미정)</div>'+
+        '<div style="font-size:10px;color:#374151;margin-bottom:3px">원단 미정 + 6/12 예정: <b>'+r612undSku+' SKU</b><span style="'+ps+'">'+ip(r612undSku)+'</span></div>'+
+        '<div style="font-size:10px;color:#374151;margin-bottom:3px">원단 미정 + 6/16 예정: <b>'+r616undSku+' SKU</b><span style="'+ps+'">'+ip(r616undSku)+'</span></div>'+
+        '<div style="font-size:11px;color:#9a3412;font-weight:700;margin-top:6px;padding-top:5px;border-top:1px solid #fed7aa">즉시 확인 필요: '+urgentSku+' SKU<span style="'+ps+'">'+ip(urgentSku)+'</span></div>'+
+      '</div>'+
+    '</div>'+
+    '<div style="display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:10px">'+
+      '<div style="background:#fee2e2;border-radius:8px;padding:10px 14px;display:flex;align-items:center;gap:10px">'+
+        '<span style="font-size:20px">🔴</span>'+
+        '<div><div style="font-size:10px;color:#9ca3af;font-weight:600;margin-bottom:2px">위험 영역 합계</div>'+
+        '<div style="font-size:15px;font-weight:900;color:#991b1b">'+redSku+' SKU / '+redM.size+'M <span style="font-size:11px;font-weight:400;color:#f87171">'+ip(redSku)+'</span></div></div>'+
+      '</div>'+
+      '<div style="background:#d1fae5;border-radius:8px;padding:10px 14px;display:flex;align-items:center;gap:10px">'+
+        '<span style="font-size:20px">🟢</span>'+
+        '<div><div style="font-size:10px;color:#9ca3af;font-weight:600;margin-bottom:2px">양호 영역 합계</div>'+
+        '<div style="font-size:15px;font-weight:900;color:#065f46">'+greenSku+' SKU / '+greenM.size+'M <span style="font-size:11px;font-weight:400;color:#34d399">'+ip(greenSku)+'</span></div></div>'+
+      '</div>'+
+    '</div>';
+  }
+
+  var matrixEl = document.createElement('div');
+  matrixEl.id = 'fabric-matrix-wrap';
+  el.appendChild(matrixEl);
+
+  function renderFabricMatrix(){
+    var toggleBtns = ['ALL','KNIT','WOVEN'].map(function(f){
+      var act=f===currentMatFilter;
+      var lbl={ALL:'전체',KNIT:'KNIT',WOVEN:'WOVEN+DENIM'}[f];
+      return '<button onclick="window._fabricMatFilter(\''+f+'\')" style="padding:5px 14px;border-radius:20px;border:1px solid '+(act?'#3b82f6':'#d1d5db')+';background:'+(act?'#2563eb':'#fff')+';color:'+(act?'#fff':'#374151')+';font-size:11px;font-weight:'+(act?'700':'400')+';cursor:pointer;transition:all .15s">'+lbl+'</button>';
+    }).join('');
+
+    var data=buildMatrixData(currentMatFilter);
+    var mat=buildMatrixHtml(data);
+    var insightHtml=buildInsightHtml(mat.skuM, mat.mM, mat.grandSku);
+
+    matrixEl.innerHTML=
+      '<div style="border-top:2px solid #e5e7eb;margin-top:28px;padding-top:22px">'+
+        '<div style="display:flex;justify-content:space-between;align-items:flex-start;flex-wrap:wrap;gap:8px;margin-bottom:8px">'+
+          '<div>'+
+            '<div style="font-size:13px;font-weight:900;color:#1f2937">🗂 원단 ETA × 샘플 입고예정 매트릭스</div>'+
+            '<div style="font-size:11px;color:#6b7280;margin-top:2px">원단 지연이 샘플 입고에 미치는 영향 분석</div>'+
+          '</div>'+
+          '<div style="font-size:10px;color:#ef4444;white-space:nowrap">🔴 위험 영역 = 원단 도착 전 샘플 입고 불가</div>'+
+        '</div>'+
+        '<div style="display:flex;align-items:center;gap:6px;flex-wrap:wrap;margin-bottom:10px">'+
+          '<div style="display:flex;gap:6px">'+toggleBtns+'</div>'+
+          '<div style="display:flex;gap:8px;margin-left:10px;flex-wrap:wrap">'+
+            '<span style="font-size:10px;display:flex;align-items:center;gap:3px"><span style="display:inline-block;width:10px;height:10px;border-radius:2px;background:#d1fae5;border:1px solid #6ee7b7"></span>양호</span>'+
+            '<span style="font-size:10px;display:flex;align-items:center;gap:3px"><span style="display:inline-block;width:10px;height:10px;border-radius:2px;background:#fef3c7;border:1px solid #fcd34d"></span>적정</span>'+
+            '<span style="font-size:10px;display:flex;align-items:center;gap:3px"><span style="display:inline-block;width:10px;height:10px;border-radius:2px;background:#fee2e2;border:1px solid #fca5a5"></span>위험</span>'+
+            '<span style="font-size:10px;color:#9ca3af">| 셀: SKU수(큰글씨) / 모델수M</span>'+
+          '</div>'+
+        '</div>'+
+        mat.html+
+        '<div style="margin-top:16px">'+
+          '<div style="font-size:11px;font-weight:800;color:#374151;margin-bottom:8px">📊 핵심 인사이트</div>'+
+          insightHtml+
+        '</div>'+
+      '</div>';
+  }
+
+  window._fabricMatFilter = function(f){ currentMatFilter=f; renderFabricMatrix(); };
+  renderFabricMatrix();
+}
+
+// ── 담당자 테이블 ────────────────────────────────────────
+const spStat = {};
+AD.forEach(d=>{
+  const sp = d.sourcing||'미지정';
+  if(!spStat[sp]) spStat[sp]={total:0,arrived:0,cn_sent:0,delayed:0,pcs:0,styles:new Set()};
+  spStat[sp].total++;
+  spStat[sp].pcs += d.ttl_pcs||0;
+  spStat[sp].styles.add(d.style_code);
+  if(d.kr_actual) spStat[sp].arrived++;
+  if(d.cn_atd)   spStat[sp].cn_sent++;
+  if(isDelayed(d)) spStat[sp].delayed++;
+});
+
+const spOrder = Object.entries(spStat).sort((a,b)=>b[1].total-a[1].total);
+const staffTb = document.getElementById('staff-tbody');
+{ let _h=''; spOrder.forEach(([name,s])=>{
+  const pct = s.total>0?Math.round(s.arrived/s.total*100):0;
+  const col = barColor(pct, s.delayed);
+  let badge = s.delayed>0 ? `<span class="badge-delay"><span class="ko-label">지연 ${s.delayed}건</span><span class="en-label">${s.delayed} delayed</span></span>`
+            : pct===100   ? `<span class="badge-done">${bi('완료','Done')}</span>`
+            :               `<span class="badge-pending">${bi('진행중','In Progress')}</span>`;
+  _h+=`
+  <tr onclick="filterByStaff('${name}')">
+    <td style="font-weight:700">${name}</td>
+    <td>${s.styles.size}</td>
+    <td>${s.total}</td>
+    <td>${s.pcs}</td>
+    <td style="color:#065f46;font-weight:600">${s.arrived}</td>
+    <td>${s.cn_sent}</td>
+    <td style="color:${s.delayed>0?'#991b1b':'#8893b0'}">${s.delayed}</td>
+    <td><div class="mini-wrap">
+      <div class="mini-bar"><div class="mini-fill" style="width:${pct}%;background:${col}"></div></div>
+      <span class="pct-txt" style="color:${col}">${pct}%</span>
+    </div></td>
+    <td>${badge}</td>
+  </tr>`;
+}); staffTb.innerHTML=_h; }
+
+// ── 벤더 테이블 ──────────────────────────────────────────
+const vendorEnMap = {};
+AD.forEach(d=>{ if(d.vendor) vendorEnMap[d.vendor] = d.vendor_en || d.vendor; });
+const vStat = {};
+AD.forEach(d=>{
+  const v = d.vendor||'미지정';
+  if(!vStat[v]) vStat[v]={total:0,arrived:0,cn_sent:0,delayed:0,styles:new Set(),sorts:new Set()};
+  vStat[v].total++;
+  vStat[v].styles.add(d.style_code);
+  vStat[v].sorts.add(d.sort);
+  if(d.kr_actual) vStat[v].arrived++;
+  if(d.cn_atd)   vStat[v].cn_sent++;
+  if(isDelayed(d)) vStat[v].delayed++;
+});
+
+const vOrder = Object.entries(vStat).sort((a,b)=>b[1].total-a[1].total);
+document.getElementById('vendor-badge').textContent = document.body.classList.contains('view-cn') ? vOrder.length+' vendors' : vOrder.length+'개 벤더';
+const vendorTb = document.getElementById('vendor-tbody');
+{ let _h=''; vOrder.forEach(([name,s])=>{
+  const pct = s.total>0?Math.round(s.arrived/s.total*100):0;
+  const col = barColor(pct, s.delayed);
+  let badge = s.delayed>0 ? `<span class="badge-delay"><span class="ko-label">지연 ${s.delayed}건</span><span class="en-label">${s.delayed} delayed</span></span>`
+            : pct===100   ? `<span class="badge-done">${bi('완료','Done')}</span>`
+            :               `<span class="badge-pending">${bi('진행중','In Progress')}</span>`;
+  _h+=`
+  <tr>
+    <td style="font-weight:600;max-width:220px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis">${bi(name, vendorEnMap[name]||name)}</td>
+    <td>${s.styles.size}</td>
+    <td>${s.total}</td>
+    <td><small style="color:var(--muted)">${[...s.sorts].join('/')}</small></td>
+    <td style="color:#065f46;font-weight:600">${s.arrived}</td>
+    <td>${s.cn_sent}</td>
+    <td style="color:${s.delayed>0?'#991b1b':'#8893b0'}">${s.delayed}</td>
+    <td><div class="mini-wrap">
+      <div class="mini-bar"><div class="mini-fill" style="width:${pct}%;background:${col}"></div></div>
+      <span class="pct-txt" style="color:${col}">${pct}%</span>
+    </div></td>
+    <td>${badge}</td>
+  </tr>`;
+}); vendorTb.innerHTML=_h; }
+
+// ── 디자이너 테이블 ───────────────────────────────────────
+const dsnStat = {};
+AD.forEach(d=>{
+  const dsn = d.designer||'미지정';
+  if(!dsnStat[dsn]) dsnStat[dsn]={total:0,arrived:0,cn_sent:0,delayed:0,styles:new Set(),sorts:new Set()};
+  dsnStat[dsn].total++;
+  dsnStat[dsn].styles.add(d.style_code);
+  dsnStat[dsn].sorts.add(d.sort);
+  if(d.kr_actual) dsnStat[dsn].arrived++;
+  if(d.cn_atd)    dsnStat[dsn].cn_sent++;
+  if(isDelayed(d)) dsnStat[dsn].delayed++;
+});
+
+const dsnOrder = Object.entries(dsnStat).sort((a,b)=>b[1].total-a[1].total);
+document.getElementById('designer-badge').textContent = dsnOrder.length+'명';
+const designerTb = document.getElementById('designer-tbody');
+{ let _h=''; dsnOrder.forEach(([name,s])=>{
+  const pct = s.total>0?Math.round(s.arrived/s.total*100):0;
+  const col = barColor(pct, s.delayed);
+  let badge = s.delayed>0 ? `<span class="badge-delay"><span class="ko-label">지연 ${s.delayed}건</span><span class="en-label">${s.delayed} delayed</span></span>`
+            : pct===100   ? `<span class="badge-done">${bi('완료','Done')}</span>`
+            :               `<span class="badge-pending">${bi('진행중','In Progress')}</span>`;
+  _h+=`
+  <tr>
+    <td style="font-weight:600">${name}</td>
+    <td>${s.styles.size}</td>
+    <td>${s.total}</td>
+    <td><small style="color:var(--muted)">${[...s.sorts].join('/')}</small></td>
+    <td style="color:#065f46;font-weight:600">${s.arrived}</td>
+    <td>${s.cn_sent}</td>
+    <td style="color:${s.delayed>0?'#991b1b':'#8893b0'}">${s.delayed}</td>
+    <td><div class="mini-wrap">
+      <div class="mini-bar"><div class="mini-fill" style="width:${pct}%;background:${col}"></div></div>
+      <span class="pct-txt" style="color:${col}">${pct}%</span>
+    </div></td>
+    <td>${badge}</td>
+  </tr>`;
+}); designerTb.innerHTML=_h; }
+
+// ── ITEM 피벗 테이블 ──────────────────────────────────────
+const DUE_DATE = SCHED_DUE; // 2026-06-16
+
+// 1. 고유 ITEM 코드 & KR 입고예정일 수집 (날짜 없는 건 → 'TBD')
+const pivotItemSet = new Set();
+const pivotDateSet = new Set();
+AD.forEach(d=>{
+  if(d.item_type) pivotItemSet.add(d.item_type);
+  pivotDateSet.add(d.kr_expected || 'TBD');
+});
+const pivotItems = [...pivotItemSet].sort();
+// 날짜 오름차순 정렬, TBD는 맨 끝
+const pivotDates = [...pivotDateSet].filter(d=>d!=='TBD').sort();
+if(pivotDateSet.has('TBD')) pivotDates.push('TBD');
+
+// 2. 집계: pivot[item][date] = Set<style_code> (중복 제거 스타일수)
+//    rowSet[item]  = 해당 ITEM 전체 고유 스타일 Set
+//    colSet[date]  = 해당 날짜 고유 스타일 Set
+//    delayMap[item] = 지연 SKU 수
+const pivot    = {};
+const rowSet   = {};
+const colSet   = {};
+const delayMap = {};
+const grandSet = new Set();
+pivotItems.forEach(it=>{ pivot[it]={}; rowSet[it]=new Set(); delayMap[it]=0;
+  pivotDates.forEach(dt=>{ pivot[it][dt]=new Set(); }); });
+pivotDates.forEach(dt=>{ colSet[dt]=new Set(); });
+
+AD.forEach(d=>{
+  const it = d.item_type, dt = d.kr_expected || 'TBD', sc = d.style_code;
+  if(!it || !sc) return;
+  pivot[it][dt].add(sc);
+  rowSet[it].add(sc);
+  colSet[dt].add(sc);
+  grandSet.add(sc);
+  if(isDelayed(d)) delayMap[it]++;
+});
+
+// Set → count 헬퍼
+const rowTotal  = Object.fromEntries(pivotItems.map(it=>[it, rowSet[it].size]));
+const colTotal  = Object.fromEntries(pivotDates.map(dt=>[dt, colSet[dt].size]));
+const grandTotal = grandSet.size;
+
+document.getElementById('item-badge').textContent = document.body.classList.contains('view-cn') ? pivotItems.length+' items' : pivotItems.length+'개 ITEM';
+
+// 3. 피벗 테이블 HTML 생성 (Class 그룹 + 소계)
+(function(){
+  const _isCn = document.body.classList.contains('view-cn');
+  // ── Class 매핑 & 소계용 Set 구축 ──
+  const CLASS_ORDER = ['OUTER','INNER','BOTTOM','TOP','DRESS','SET','ACC'];
+  const itemToClass   = {};  // item_type → class_
+  const clsPivot      = {};  // class_ → date → Set<style_code>
+  const clsRowSet     = {};  // class_ → Set<style_code>
+
+  AD.forEach(d=>{
+    const it = d.item_type, cls = d.class_||'기타', sc = d.style_code, dt = d.kr_expected||'TBD';
+    if(!it||!sc) return;
+    if(!itemToClass[it]) itemToClass[it] = cls;
+    if(!clsPivot[cls])   clsPivot[cls]   = {};
+    if(!clsPivot[cls][dt]) clsPivot[cls][dt] = new Set();
+    clsPivot[cls][dt].add(sc);
+    if(!clsRowSet[cls]) clsRowSet[cls] = new Set();
+    clsRowSet[cls].add(sc);
+  });
+
+  // Class 정렬 (정해진 순서 우선, 나머지 알파벳)
+  const allClasses = [...new Set(Object.values(itemToClass))].sort((a,b)=>{
+    const ai=CLASS_ORDER.indexOf(a), bi=CLASS_ORDER.indexOf(b);
+    if(ai>=0&&bi>=0) return ai-bi;
+    if(ai>=0) return -1; if(bi>=0) return 1;
+    return a.localeCompare(b);
+  });
+
+  // Class별 ITEM 목록 (rowTotal 내림차순)
+  const itemsByClass = {};
+  allClasses.forEach(cls=>{ itemsByClass[cls]=[]; });
+  pivotItems.forEach(it=>{
+    const cls = itemToClass[it]||'기타';
+    if(!itemsByClass[cls]) itemsByClass[cls]=[];
+    itemsByClass[cls].push(it);
+  });
+  allClasses.forEach(cls=>{ itemsByClass[cls].sort((a,b)=>rowTotal[b]-rowTotal[a]); });
+
+  const totalCols = pivotDates.length + 2; // ITEM + 날짜들 + 합계
+
+  // ── 헤더 ──
+  let html = `<table class="pivot-tbl"><thead><tr>
+    <th class="item-label">ITEM</th>
+    ${pivotDates.map(dt=>{
+      const isTbd=dt==='TBD', isNa=dt==='N/A', isDue=dt===DUE_DATE;
+      const mm  = isTbd?(_isCn?'TBD':bi('미정(TBD)','TBD')) : isNa?(_isCn?'N/A':bi('N/A(미제작)','N/A')) : dt.slice(5).replace('-','/');
+      const attr= isTbd?'style="background:#f1f5f9;color:#94a3b8"'
+                : isNa?'style="background:#f5f0ff;color:#7c3aed;font-style:italic"'
+                : isDue?'class="th-due"':'';
+      return `<th ${attr}>${mm}${isDue?' ★':''}</th>`;
+    }).join('')}
+    <th class="col-total-th">${bi('합계','Total')}</th>
+  </tr></thead><tbody>`;
+
+  // ── Class 그룹별 행 ──
+  allClasses.forEach(cls=>{
+    const items    = itemsByClass[cls]||[];
+    if(!items.length) return;
+    const clsTotal = clsRowSet[cls]?clsRowSet[cls].size:0;
+
+    // 그룹 헤더
+    html += `<tr><td class="class-header" colspan="${totalCols}">
+      📁 ${cls} <span style="font-weight:400;opacity:0.65;font-size:10px">${clsTotal}M</span>
+    </td></tr>`;
+
+    // ITEM 데이터 행
+    items.forEach(it=>{
+      const total=rowTotal[it], delayed=delayMap[it];
+      let cumSet=new Set();
+      html += `<tr>
+        <td class="item-label item-indent" style="${delayed>0?'color:#991b1b':''}">${it}${delayed>0?` <small style="color:#f87171;font-weight:400">(${_isCn?delayed+' delayed':'지연 '+delayed})</small>`:''}</td>
+        ${pivotDates.map(dt=>{
+          const cnt=pivot[it][dt].size;
+          pivot[it][dt].forEach(sc=>cumSet.add(sc));
+          if(!cnt) return `<td class="cell-empty">-</td>`;
+          const cumPct=total>0?Math.round(cumSet.size/total*100):0;
+          const isTbd=dt==='TBD', isNa=dt==='N/A', past=!isTbd&&!isNa&&dt<TODAY, isDue=dt===DUE_DATE;
+          const cs=['cell-data',past?'cell-past':'',isDue?'cell-due':'',(!isTbd&&!isNa&&delayed>0)?'cell-delayed':''].join(' ');
+          const sy=isNa?' style="background:#f5f0ff"':isTbd?' style="background:#f8fafc"':'';
+          return `<td class="${cs}"${sy}><span class="p-val" style="${isNa?'color:#7c3aed':isTbd?'color:#94a3b8':''}">${cnt}M</span> <span class="p-pct">/ ${cumPct}%</span></td>`;
+        }).join('')}
+        <td class="col-total-td">${total}M</td>
+      </tr>`;
+    });
+
+    // 소계 행
+    let clsCumSet=new Set();
+    html += `<tr class="class-subtotal-row">
+      <td class="item-label class-subtotal-label">▶ ${cls} ${_isCn?'Subtotal':bi('소계','Subtotal')}</td>
+      ${pivotDates.map(dt=>{
+        const cellSet=(clsPivot[cls]&&clsPivot[cls][dt])?clsPivot[cls][dt]:new Set();
+        const cnt=cellSet.size;
+        cellSet.forEach(sc=>clsCumSet.add(sc));
+        if(!cnt) return `<td class="cell-empty class-subtotal-cell">-</td>`;
+        const isTbd=dt==='TBD', isNa=dt==='N/A', isDue=dt===DUE_DATE;
+        const cumPct=clsTotal>0?Math.round(clsCumSet.size/clsTotal*100):0;
+        const sy=isNa?'background:#f5f0ff;color:#7c3aed':isTbd?'background:#f1f5f9;color:#94a3b8':isDue?'background:#dbeafe':'';
+        return `<td class="class-subtotal-cell" style="${sy}"><span class="p-val">${cnt}M</span> <span class="p-pct">/ ${cumPct}%</span></td>`;
+      }).join('')}
+      <td class="col-total-td" style="font-weight:800">${clsTotal}M</td>
+    </tr>`;
+  });
+
+  // ── 합계 행 (누계%) ── 스타일 중복 제거 누계
+  const cumSet = new Set();
+  html += `</tbody><tfoot><tr>
+    <td class="item-label" style="font-weight:800">${bi('합계','Total')}</td>
+    ${pivotDates.map(dt=>{
+      const cnt=colTotal[dt], isTbd=dt==='TBD', isNa=dt==='N/A', isDue=dt===DUE_DATE;
+      if(!isTbd && !isNa) colSet[dt].forEach(sc=>cumSet.add(sc));
+      if(isTbd){
+        const p=grandTotal>0?(cnt/grandTotal*100).toFixed(1):'0.0';
+        return `<td style="background:#f1f5f9"><span class="p-val" style="color:#94a3b8">${cnt}M</span><span class="p-pct" style="color:#94a3b8"> / ${p}%</span></td>`;
+      }
+      if(isNa){
+        const p=grandTotal>0?(cnt/grandTotal*100).toFixed(1):'0.0';
+        return `<td style="background:#f5f0ff"><span class="p-val" style="color:#7c3aed">${cnt}M</span><span class="p-pct" style="color:#7c3aed"> / ${p}%</span></td>`;
+      }
+      const cumPct=grandTotal>0?Math.min(100,(cumSet.size/grandTotal*100)).toFixed(1):'0.0';
+      const cumColor=parseFloat(cumPct)>=80?'#7c5fc0':'#fbbf24';
+      return `<td style="${isDue?'background:#dbeafe':''}"><span class="p-val">${cnt}M</span><span class="p-pct" style="color:${cumColor}"> / ${_isCn?'Cum':'누계'} ${cumPct}%</span></td>`;
+    }).join('')}
+    <td class="grand-td">${grandTotal}M</td>
+  </tr></tfoot></table>`;
+
+  document.getElementById('item-pivot').innerHTML = html;
+})();
+
+// ITEM DUE DATE 요약 박스
+(function(){
+  const totalItems = pivotItems.length;
+  const totalSku   = AD.length;
+  const dueItems   = pivotItems.filter(it=>{
+    const dates = AD.filter(d=>d.item_type===it&&d.kr_expected).map(d=>d.kr_expected);
+    return dates.length>0 && dates.every(dt=>dt<=DUE_DATE);
+  }).length;
+  const delayItems = pivotItems.filter(it=>delayMap[it]>0).length;
+  const dueSku     = AD.filter(d=>d.kr_expected && d.kr_expected<=DUE_DATE).length;
+  const delaySku   = AD.filter(d=>isDelayed(d)).length;
+
+  const duePct    = totalItems>0 ? (dueItems/totalItems*100).toFixed(1) : '0.0';
+  const dlayPct   = totalItems>0 ? (delayItems/totalItems*100).toFixed(1) : '0.0';
+  const dueSkuPct = totalSku>0   ? (dueSku/totalSku*100).toFixed(1) : '0.0';
+
+  const _itemDueCn = document.body.classList.contains('view-cn');
+  document.getElementById('item-due-summary').innerHTML = `
+  <div class="due-summary-title">${_itemDueCn?'Summary by Due Date (6/16)':bi('DUE DATE (6/16) 기준 요약','Summary by Due Date (6/16)')}</div>
+  <div class="due-row">
+    <div class="due-label">${_itemDueCn?'All planned items by 6/16 <span style="color:var(--muted);font-weight:400;font-size:11px">(all SKUs KR ETA &le; 6/16)</span>':bi('6/16 이내 전체 예정 ITEM','All planned items by 6/16')+' <span style="color:var(--muted);font-weight:400;font-size:11px">('+bi('모든 SKU KR 입고예정 ≤ 6/16','all SKUs KR ETA &le; 6/16')+')</span>'}</div>
+    <div class="due-val" style="color:${parseFloat(duePct)>=80?'#34d399':'#f87171'}">${dueItems} / ${totalItems} (${duePct}%)</div>
+  </div>
+  <div class="due-row">
+    <div class="due-label">${_itemDueCn?'SKUs scheduled to arrive by 6/16':bi('전체 SKU 중 6/16 이내 입고 예정','SKUs scheduled to arrive by 6/16')}</div>
+    <div class="due-val" style="color:${parseFloat(dueSkuPct)>=80?'#60a5fa':'#fbbf24'}">${dueSku} / ${totalSku} (${dueSkuPct}%)</div>
+  </div>
+  <div class="due-row">
+    <div class="due-label">${_itemDueCn?'Items with delay':bi('지연 발생 ITEM','Items with delay')}</div>
+    <div class="due-val" style="color:${delayItems>0?'#f87171':'#34d399'}">${delayItems} (${dlayPct}%) · SKU ${delaySku}</div>
+  </div>`;
+})();
+
+
+
+// ── 상세 테이블 ── Multi-select filters ─────────────────
+let statusFilter = 'all';
+const msState = { sort:new Set(), item:new Set(), sourcing:new Set(), designer:new Set(), vendor:new Set(), co:new Set() };
+
+function buildDropdown(id, values) {
+  const drop = document.getElementById('ms-'+id+'-drop');
+  drop.innerHTML = values.map(v =>
+    '<label><input type="checkbox" value="'+v.replace(/"/g,'&quot;')+'" onchange="onMsChange(\''+id+'\')">'+v+'</label>'
+  ).join('');
+}
+
+function toggleDrop(msId) {
+  const drop = document.getElementById(msId+'-drop');
+  const btn = document.querySelector('#'+msId+' .ms-btn');
+  const isOpen = drop.classList.contains('open');
+  closeAllDropdowns();
+  if(!isOpen) { drop.classList.add('open'); btn.classList.add('open'); }
+}
+
+function closeAllDropdowns() {
+  document.querySelectorAll('.ms-drop').forEach(d=>d.classList.remove('open'));
+  document.querySelectorAll('.ms-btn').forEach(b=>b.classList.remove('open'));
+}
+
+document.addEventListener('click', function(e) {
+  if(!e.target.closest('.multi-select')) closeAllDropdowns();
+});
+
+function onMsChange(id) {
+  const drop = document.getElementById('ms-'+id+'-drop');
+  msState[id] = new Set([...drop.querySelectorAll('input:checked')].map(c=>c.value));
+  updateMsLabel(id);
+  renderDetail();
+}
+
+function updateMsLabel(id) {
+  const isCn = document.body.classList.contains('view-cn');
+  const koAll = {sort:'카테고리 전체',item:'ITEM 전체',sourcing:'담당자 전체',designer:'디자이너 전체',vendor:'벤더 전체',co:'생산국 전체'};
+  const enAll = {sort:'ALL CATEGORY',item:'ALL ITEMS',sourcing:'담당자 전체',designer:'디자이너 전체',vendor:'ALL VENDORS',co:'ALL ORIGIN'};
+  const koN   = {sort:'카테고리',item:'ITEM',sourcing:'담당자',designer:'디자이너',vendor:'벤더',co:'생산국'};
+  const enN   = {sort:'CATEGORY',item:'ITEMS',sourcing:'담당자',designer:'디자이너',vendor:'VENDOR',co:'ORIGIN'};
+  const btn = document.querySelector('#ms-'+id+' .ms-label');
+  const cnt = msState[id].size;
+  if(cnt === 0){
+    btn.textContent = isCn ? enAll[id] : koAll[id];
+  } else {
+    const name = isCn ? enN[id] : koN[id];
+    const sfx  = isCn ? ' selected' : '개 선택';
+    btn.innerHTML = name+' <span class="ms-count">'+cnt+sfx+'</span>';
+  }
+}
+
+function resetAllFilters() {
+  Object.keys(msState).forEach(id => {
+    msState[id].clear();
+    document.getElementById('ms-'+id+'-drop').querySelectorAll('input:checked').forEach(c=>{ c.checked=false; });
+    updateMsLabel(id);
+  });
+  statusFilter = 'all';
+  document.querySelectorAll('.f-btn').forEach((b,i)=>b.classList.toggle('active', i===0));
+  document.getElementById('f-search').value = '';
+  renderDetail();
+}
+
+// 필터 옵션 채우기
+buildDropdown('sort', ['KNIT','WOVEN','DENIM']);
+buildDropdown('item', [...new Set(AD.map(d=>d.item_type).filter(Boolean))].sort());
+buildDropdown('sourcing', spOrder.map(([name])=>name));
+buildDropdown('designer', [...new Set(AD.map(d=>d.designer).filter(Boolean))].sort());
+buildDropdown('vendor', vOrder.map(([name])=>name));
+buildDropdown('co', [...new Set(AD.map(d=>d.co).filter(Boolean))].sort());
+
+function setStatusFilter(type, btn){
+  statusFilter = type;
+  document.querySelectorAll('.f-btn').forEach(b=>b.classList.remove('active'));
+  btn.classList.add('active');
+  renderDetail();
+}
+
+function filterByStaff(name){
+  // 기존 필터 초기화 후 해당 담당자만 선택
+  Object.keys(msState).forEach(id => {
+    msState[id].clear();
+    document.getElementById('ms-'+id+'-drop').querySelectorAll('input:checked').forEach(c=>{ c.checked=false; });
+    updateMsLabel(id);
+  });
+  msState.sourcing.add(name);
+  const srcDrop = document.getElementById('ms-sourcing-drop');
+  srcDrop.querySelectorAll('input').forEach(c=>{ if(c.value===name) c.checked=true; });
+  updateMsLabel('sourcing');
+  statusFilter = 'all';
+  document.querySelectorAll('.f-btn').forEach((b,i)=>b.classList.toggle('active', i===0));
+  renderDetail();
+  document.querySelector('.detail-wrap').scrollIntoView({behavior:'smooth'});
+}
+
+// ── 상세 테이블 페이지네이션 ─────────────────────────────
+const ROWS_PER_PAGE = 50;
+let _detailPage = 0;
+let _detailRows = [];
+
+function renderDetail(){
+  const srch = document.getElementById('f-search').value.toLowerCase();
+  _detailRows = AD.filter(d=>{
+    if(statusFilter==='arrived'    && !d.kr_actual) return false;
+    if(statusFilter==='pending'    && (d.kr_actual || d.is_na)) return false;
+    if(statusFilter==='kr_delayed' && !((!d.is_na) && (!d.kr_actual) && d.kr_expected && d.kr_expected >= KR_DELAY_S)) return false;
+    if(statusFilter==='cn_delayed' && !((!d.is_na) && (!d.kr_actual) && d.cn_rdd && d.cn_rdd >= CN_DELAY_S)) return false;
+    if(statusFilter==='na'         && !d.is_na) return false;
+    if(msState.sort.size > 0 && !msState.sort.has(d.sort)) return false;
+    if(msState.item.size > 0 && !msState.item.has(d.item_type)) return false;
+    if(msState.sourcing.size > 0 && !msState.sourcing.has(d.sourcing)) return false;
+    if(msState.designer.size > 0 && !msState.designer.has(d.designer)) return false;
+    if(msState.vendor.size > 0 && !msState.vendor.has(d.vendor)) return false;
+    if(msState.co.size > 0 && !msState.co.has(d.co)) return false;
+    if(srch){
+      const hay=[d.sku,d.style_code,d.description,d.color,d.vendor].join(' ').toLowerCase();
+      if(!hay.includes(srch)) return false;
+    }
+    return true;
+  });
+  _detailPage = 0;
+  _renderDetailPage();
+}
+
+function _renderDetailPage(){
+  const rows = _detailRows;
+  const total = rows.length;
+  const start = _detailPage * ROWS_PER_PAGE;
+  const pageRows = rows.slice(start, start + ROWS_PER_PAGE);
+
+  const _isCn = document.body.classList.contains('view-cn');
+  document.getElementById('detail-badge').textContent = _isCn ? total+' items' : total+'건';
+  const tb = document.getElementById('detail-tbody');
+  let html = '';
+  pageRows.forEach((d, pi)=>{
+    const i = start + pi;
+    const delayed  = isDelayed(d);
+    const rowClass = d.is_na ? 'row-na' : (delayed ? 'row-delayed' : '');
+    const coBadge  = d.co==='CN'?'co-cn':d.co==='VN'?'co-vn':'co-kr';
+    const naStyle  = d.is_na ? 'color:#94a3b8' : '';
+    const cnEtdStr = d.cn_etd === 'N/A' ? `<span style="${naStyle}">N/A</span>`
+                   : (d.cn_etd ? `<span style="color:${d.cn_etd<TODAY?'#94a3b8':'#60a5fa'};font-weight:600">${d.cn_etd}</span>` : '-');
+    const _isHC = d.co==='KR' && d.courier && d.courier.toUpperCase().indexOf('HAND')>=0;
+    const _transitLabel = _isHC ? ' <small style="color:#34d399">(HC)</small>' : (d.transit_days ? ' <small style="color:#94a3b8">(+'+d.transit_days+(_isCn?'d':'일')+')</small>' : '');
+    const cnRddStr = d.cn_rdd === 'N/A' ? `<span style="${naStyle}">N/A</span>`
+                   : (d.cn_rdd ? `<span style="color:${d.cn_rdd<TODAY?'#94a3b8':'#7c5fc0'};font-weight:600">${d.cn_rdd}${_transitLabel}</span>` : '-');
+    const krExpStr = d.kr_expected === 'N/A' ? `<span style="${naStyle}">N/A</span>`
+                   : (d.kr_expected ? `<span style="color:${d.kr_expected<TODAY&&!d.kr_actual?'#f87171':'#1e2a4a'};font-weight:600">${d.kr_expected}${d.kr_expected<TODAY&&!d.kr_actual?' <span style="color:#f87171">!</span>':''}</span>` : '-');
+    html += `
+    <tr class="${rowClass}">
+      <td class="muted">${i+1}</td>
+      <td style="font-weight:700;font-size:11px">${d.sku||'-'}</td>
+      <td>
+        <span style="color:${CAT_COLOR[d.sort]||'#888'};font-weight:700">${d.sort||'-'}</span>
+        <span class="muted" style="font-size:11px"> / ${d.class_||'-'}</span>
+      </td>
+      <td style="max-width:160px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis">${d.description||'-'}</td>
+      <td class="muted">${d.color||'-'}</td>
+      <td><span class="co-badge ${coBadge}">${d.co||'-'}</span></td>
+      <td style="font-weight:600">${d.sourcing||'-'}</td>
+      <td class="muted">${d.designer||'-'}</td>
+      <td class="muted" style="max-width:130px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis">${(_isCn?(d.vendor_en||d.vendor):d.vendor)||'-'}</td>
+      <td>${cnEtdStr}</td>
+      <td>${cnRddStr}</td>
+      <td style="color:#34d399;font-weight:600">${d.cn_atd||'<span style="color:#94a3b8">-</span>'}</td>
+      <td>${krExpStr}</td>
+      <td style="color:#34d399;font-weight:600">${d.kr_actual||'<span style="color:#94a3b8">-</span>'}</td>
+      <td>${statusBadge(d)}</td>
+      <td class="muted remark-cell" title="${(d.remark||'').replace(/"/g,'&quot;')}${d.delay_reason?(' ['+(_isCn?'Delayed':'지연')+'] '+d.delay_reason.replace(/"/g,'&quot;')):''}" onclick="openRemarkModal('${(d.sku||'').replace(/'/g,"\\'")}','${(d.style_code||'').replace(/'/g,"\\'")}','${(d.remark||'').replace(/'/g,"\\'").replace(/\n/g,' ')}','${(d.delay_reason||'').replace(/'/g,"\\'").replace(/\n/g,' ')}')">
+        ${d.remark||(d.delay_reason?`<span style="color:#f59e0b">${d.delay_reason}</span>`:'<span>-</span>')}
+      </td>
+    </tr>`;
+  });
+  tb.innerHTML = html;
+
+  const end = Math.min(start + ROWS_PER_PAGE, total);
+  document.getElementById('row-cnt').textContent =
+    total === 0 ? (_isCn ? 'No data' : '데이터 없음') :
+    _isCn ? `${start+1}–${end} of ${total} items` : `${start+1}–${end} 표시 / 전체 ${total}건 (${AD.length}건 중)`;
+  _renderPager(total);
+}
+
+function _renderPager(total){
+  const el = document.getElementById('detail-pager');
+  if(!el) return;
+  const _isCn = document.body.classList.contains('view-cn');
+  const pages = Math.ceil(total / ROWS_PER_PAGE);
+  if(pages <= 1){ el.innerHTML=''; return; }
+  const s = Math.max(0, Math.min(_detailPage - 2, pages - 5));
+  const e = Math.min(pages, s + 5);
+  let h = `<button class="pg-btn" onclick="_gotoPage(${_detailPage-1})" ${_detailPage===0?'disabled':''}>${bi('◀ 이전','◀ Prev')}</button>`;
+  for(let p=s; p<e; p++)
+    h += `<button class="pg-btn${p===_detailPage?' pg-active':''}" onclick="_gotoPage(${p})">${p+1}</button>`;
+  h += `<button class="pg-btn" onclick="_gotoPage(${_detailPage+1})" ${_detailPage>=pages-1?'disabled':''}>${bi('다음 ▶','Next ▶')}</button>`;
+  h += `<span class="pg-info">${_isCn?'Page '+(_detailPage+1)+' of '+pages+' · 50 rows':(_detailPage+1)+' / '+pages+'페이지 · 50행씩'}</span>`;
+  el.innerHTML = h;
+}
+
+function _gotoPage(p){
+  const pages = Math.ceil(_detailRows.length / ROWS_PER_PAGE);
+  if(p < 0 || p >= pages) return;
+  _detailPage = p;
+  _renderDetailPage();
+  document.querySelector('.detail-wrap').scrollIntoView({behavior:'smooth', block:'start'});
+}
+
+renderDetail();
+
+// 특이사항 모달
+function openRemarkModal(sku, styleCode, remark, delayReason) {
+  const ov = document.getElementById('remark-overlay');
+  document.getElementById('rm-sku').textContent = sku || '-';
+  document.getElementById('rm-style').textContent = styleCode || '-';
+  const content = [];
+  if(remark) content.push(remark);
+  if(delayReason) content.push('[지연사유] ' + delayReason);
+  document.getElementById('rm-content').textContent = content.join('\n') || '-';
+  ov.classList.add('open');
+}
+
+// ── 뷰 스위처 ────────────────────────────────────────────
+function switchView(mode) {
+  document.body.classList.toggle('view-cn', mode === 'cn');
+  document.getElementById('btn-view-all').classList.toggle('vs-active', mode === 'all');
+  document.getElementById('btn-view-cn').classList.toggle('vs-active', mode === 'cn');
+  // 브라우저 탭 타이틀
+  document.title = mode === 'cn' ? 'MLB 27SS TRADE SHOW Sample Dashboard' : 'MLB 27SS TRADE SHOW 샘플 대시보드';
+  // 검색 placeholder
+  const _s = document.getElementById('f-search');
+  if(_s) _s.placeholder = mode === 'cn' ? 'Search SKU · Description...' : '품번 · 설명 검색...';
+  // 드롭다운 라벨 갱신
+  Object.keys(msState).forEach(function(id){ updateMsLabel(id); });
+  // 벤더 드롭다운 - CN 모드에서 영문명
+  (function(){
+    const vDrop = document.getElementById('ms-vendor-drop');
+    if(vDrop) vDrop.innerHTML = vOrder.map(([name])=>{
+      const disp = mode==='cn' ? (vendorEnMap[name]||name) : name;
+      return '<label><input type="checkbox" value="'+name.replace(/"/g,'&quot;')+'" onchange="onMsChange(\'vendor\')">'+disp+'</label>';
+    }).join('');
+  })();
+  // 탭 안전장치: 숨겨지는 탭이 활성이면 vendor로 리셋
+  (function(){
+    var activePane = document.querySelector('.tab-pane.active');
+    var needReset = false;
+    if(mode==='cn' && activePane &&
+       (activePane.id==='tab-designer' || activePane.id==='tab-staff')) needReset=true;
+    if(mode==='all' && activePane && activePane.id==='tab-origin') needReset=true;
+    if(needReset){
+      document.querySelectorAll('.tab-pane').forEach(p=>p.classList.remove('active'));
+      document.querySelectorAll('.tab-btn').forEach(b=>b.classList.remove('active'));
+      document.getElementById('tab-vendor').classList.add('active');
+      var vBtn = document.querySelector('.tab-btn[onclick*="vendor"]');
+      if(vBtn) vBtn.classList.add('active');
+    }
+  })();
+  // 헤더 pills 언어 갱신
+  buildSchedulePills();
+  // ETD/RDD 날짜 리스트 & DUE 요약 재렌더 (모드 변경 시 언어 반영)
+  renderSection('etd', _catActive.etd);
+  renderSection('rdd', _catActive.rdd);
+  // 배지 텍스트 갱신
+  document.getElementById('vendor-badge').textContent = mode === 'cn' ? vOrder.length+' vendors' : vOrder.length+'개 벤더';
+  document.getElementById('item-badge').textContent = mode === 'cn' ? pivotItems.length+' items' : pivotItems.length+'개 ITEM';
+  // 상세 테이블 badge/row-cnt 갱신
+  _renderDetailPage();
+}
+
+// ── BY ORIGIN 탭 ────────────────────────────────────────
+var _originRendered = false;
+function renderOriginTab(){
+  if(_originRendered) return;
+  _originRendered = true;
+
+  var CO_ORDER  = ['CN','VN','KR',''];
+  var CO_FLAG   = {CN:'🇨🇳',VN:'🇻🇳',KR:'🇰🇷'};
+  var CO_LABEL  = {CN:'China',VN:'Vietnam',KR:'Korea (Hand Carry)',''  :'Unspecified'};
+
+  // Group: co → vendor_en → etd
+  var coData = {};
+  AD.forEach(function(d){
+    var co  = (d.co||'').trim();
+    var ven = d.vendor_en || d.vendor || 'Unknown';
+    var etd = d.cn_etd || 'TBD';
+    var inv = Math.max(0, d.cn_invoice_rmb||0);
+
+    if(!coData[co]) coData[co]={styles:new Set(),skus:0,rmb:0,vendors:{}};
+    coData[co].styles.add(d.style_code);
+    coData[co].skus++;
+    coData[co].rmb+=inv;
+
+    var vg=coData[co].vendors;
+    if(!vg[ven]) vg[ven]={styles:new Set(),skus:0,rmb:0,etds:{}};
+    vg[ven].styles.add(d.style_code);
+    vg[ven].skus++;
+    vg[ven].rmb+=inv;
+
+    var eg=vg[ven].etds;
+    if(!eg[etd]) eg[etd]={skus:0,rmb:0};
+    eg[etd].skus++;
+    eg[etd].rmb+=inv;
+  });
+
+  // Summary
+  var activeCos  = Object.keys(coData).filter(function(k){return k!=='';});
+  var totalRmb   = Object.values(coData).reduce(function(s,g){return s+g.rmb;},0);
+  var allVendors = [];
+  Object.values(coData).forEach(function(g){Object.values(g.vendors).forEach(function(v){allVendors.push(v);});});
+  var splitCnt   = allVendors.filter(function(v){return v.rmb>=80000;}).length;
+  var cautionCnt = allVendors.filter(function(v){return v.rmb>=75000&&v.rmb<80000;}).length;
+
+  var html = '<div class="origin-summary-box">';
+  html += '<div class="origin-sum-row"><span class="origin-sum-key">Total Origins</span><span class="origin-sum-val">'+
+          activeCos.length+(activeCos.length===1?' country':' countries')+'</span></div>';
+  html += '<div class="origin-sum-row"><span class="origin-sum-key">Total Invoice</span><span class="origin-sum-val">RMB '+
+          totalRmb.toLocaleString()+'</span></div>';
+  html += '<div class="origin-sum-row"><span class="origin-sum-key">Vendors needing split</span><span class="origin-sum-val" style="color:'+(splitCnt>0?'#dc2626':'#059669')+'">'+
+          splitCnt+' (&ge;80K RMB)</span></div>';
+  html += '<div class="origin-sum-row"><span class="origin-sum-key">Status</span><span class="origin-sum-val" style="color:'+(splitCnt>0?'#dc2626':cautionCnt>0?'#d97706':'#059669')+'">'+
+          (splitCnt>0?'&#9888; Action required':cautionCnt>0?'&#9651; Caution':'&#10003; All clear')+'</span></div>';
+  html += '</div>';
+
+  CO_ORDER.forEach(function(co){
+    if(!coData[co]) return;
+    var g=coData[co];
+    var flag=CO_FLAG[co]||'&#127760;';
+    var label=CO_LABEL[co]||co;
+    var coId='co-'+(co||'unspec');
+    var coTitle=co?(co+' ('+label+')'):'&#127760; Unspecified';
+
+    html += '<div class="origin-co-card">';
+    html += '<div class="origin-co-header" onclick="toggleOriginSection(&#39;'+coId+'&#39;)">';
+    html += '<span class="origin-arrow" id="arr-'+coId+'">&#9660;</span>';
+    html += '<span class="origin-flag">'+flag+'</span>';
+    html += '<span class="origin-co-name">'+coTitle+'</span>';
+    html += '<span class="origin-meta">'+g.styles.size+' styles &middot; '+g.skus+' SKU &middot; RMB '+g.rmb.toLocaleString()+'</span>';
+    html += '</div>';
+    html += '<div class="origin-co-body" id="'+coId+'">';
+
+    // Vendors sorted by RMB desc
+    var vendors=Object.entries(g.vendors).sort(function(a,b){return b[1].rmb-a[1].rmb;});
+    vendors.forEach(function(vEntry,vi){
+      var ven=vEntry[0]; var vd=vEntry[1];
+      var venId=coId+'-v'+vi;
+      var badge=vd.rmb>=80000?'split-required':vd.rmb>=75000?'caution':'safe';
+      var badgeLabel=vd.rmb>=80000?'&#128308; Split Required':vd.rmb>=75000?'&#128993; Caution':'&#128994; Safe';
+
+      html += '<div class="origin-vendor-row">';
+      html += '<div class="origin-vendor-header" onclick="toggleOriginSection(&#39;'+venId+'&#39;)">';
+      html += '<span class="origin-arrow" id="arr-'+venId+'">&#9654;</span>';
+      html += '<span class="origin-vendor-name">'+ven+'</span>';
+      html += '<span class="origin-meta">'+vd.styles.size+' styles &middot; '+vd.skus+' SKU &middot; RMB '+vd.rmb.toLocaleString()+'</span>';
+      html += '<span class="origin-badge origin-badge-'+badge+'">'+badgeLabel+'</span>';
+      html += '</div>';
+      html += '<div class="origin-vendor-body" id="'+venId+'" style="display:none">';
+
+      // ETD sorted (TBD last)
+      var etds=Object.entries(vd.etds).filter(function(e){return e[0]!=='TBD';}).sort();
+      if(vd.etds['TBD']) etds.push(['TBD',vd.etds['TBD']]);
+      etds.forEach(function(eEntry){
+        var etd=eEntry[0]; var ed=eEntry[1];
+        var awbLabel=ed.rmb>=80000?'&#128308; Requires &ge;2 AWB (split needed)':
+                     ed.rmb>=75000?'&#9888; Near limit (still 1 AWB)':
+                     '&#10003; 1 AWB OK';
+        var awbColor=ed.rmb>=80000?'#dc2626':ed.rmb>=75000?'#d97706':'#059669';
+        html += '<div class="origin-etd-row">';
+        html += '<span class="origin-etd-date">ETD '+etd+'</span>';
+        html += '<span class="origin-meta">'+ed.skus+' SKU &middot; RMB '+ed.rmb.toLocaleString()+'</span>';
+        html += '<span style="color:'+awbColor+';font-size:11px;font-weight:600;margin-left:auto">'+awbLabel+'</span>';
+        html += '</div>';
+      });
+      html += '</div></div>';
+    });
+    html += '</div></div>';
+  });
+
+  var el=document.getElementById('origin-content');
+  if(el) el.innerHTML=html;
+}
+
+function toggleOriginSection(id){
+  var body=document.getElementById(id);
+  var arrow=document.getElementById('arr-'+id);
+  if(!body||!arrow) return;
+  var isOpen=body.style.display!=='none';
+  body.style.display=isOpen?'none':'block';
+  arrow.innerHTML=isOpen?'&#9654;':'&#9660;';
+}
+
+function closeRemarkModal() { document.getElementById('remark-overlay').classList.remove('open'); }
+document.addEventListener('keydown', function(e){ if(e.key==='Escape') closeRemarkModal(); });
+</script>
+
+<div class="remark-modal-overlay" id="remark-overlay" onclick="if(event.target===this)closeRemarkModal()">
+  <div class="remark-modal">
+    <button class="rm-close" onclick="closeRemarkModal()">&times;</button>
+    <div class="rm-title"><span class="ko-label">특이사항 상세</span><span class="en-label">Remark Detail</span></div>
+    <div class="rm-field"><div class="rm-label">Style Code</div><div class="rm-value" id="rm-style"></div></div>
+    <div class="rm-field"><div class="rm-label">SKU</div><div class="rm-value" id="rm-sku"></div></div>
+    <div class="rm-field"><div class="rm-label"><span class="ko-label">특이사항</span><span class="en-label">Remark</span></div><div class="rm-remark" id="rm-content"></div></div>
+  </div>
+</div>
+
+<!-- KPI 팝업 모달 1: 총 스타일/SKU -->
+<div class="km-ovl" id="kpi-m1">
+  <div class="km-box">
+    <div class="km-hd" style="border-left:4px solid #7c5fc0">
+      <div class="km-title">📊 총 스타일 / SKU 분포</div>
+      <button class="km-x" id="kpi-m1-x">&times;</button>
+    </div>
+    <div class="km-body" id="kpi-m1-body"></div>
+  </div>
+</div>
+
+<!-- KPI 팝업 모달 2: 예정 입고율 -->
+<div class="km-ovl" id="kpi-m2">
+  <div class="km-box">
+    <div class="km-hd" style="border-left:4px solid #ef4444">
+      <div class="km-title">📈 예정 입고율 상세</div>
+      <button class="km-x" id="kpi-m2-x">&times;</button>
+    </div>
+    <div class="km-body" id="kpi-m2-body"></div>
+  </div>
+</div>
+
+<script>
+(function(){
+  var AD=DASHBOARD.all_data, D=DASHBOARD;
+
+  function oKM(id){document.getElementById(id).classList.add('open');}
+  function cKM(id){document.getElementById(id).classList.remove('open');}
+  ['kpi-m1','kpi-m2'].forEach(function(id){
+    document.getElementById(id).addEventListener('click',function(e){if(e.target===this)cKM(id);});
+  });
+  document.getElementById('kpi-m1-x').onclick=function(){cKM('kpi-m1');};
+  document.getElementById('kpi-m2-x').onclick=function(){cKM('kpi-m2');};
+  document.addEventListener('keydown',function(e){if(e.key==='Escape'){cKM('kpi-m1');cKM('kpi-m2');}});
+
+  /* ── SVG 도넛 (sz 선택 가능) ── */
+  function mkDnt(segs, sz){
+    sz=sz||120;
+    var R=Math.round(sz*0.375),sw=Math.round(sz*0.15),cx=sz/2,cy=sz/2;
+    var C=2*Math.PI*R,T=segs.reduce(function(s,x){return s+x.n;},0);
+    if(!T)return'<svg viewBox="0 0 '+sz+' '+sz+'" width="'+sz+'" height="'+sz+'"><circle cx="'+cx+'" cy="'+cy+'" r="'+R+'" fill="none" stroke="#e8edf8" stroke-width="'+sw+'"/></svg>';
+    var o=0;
+    var arcs=segs.map(function(s){
+      var l=(s.n/T)*C,d=-o;o+=l;
+      return'<circle cx="'+cx+'" cy="'+cy+'" r="'+R+'" fill="none" stroke="'+s.c+'" stroke-width="'+sw+'" stroke-dasharray="'+l.toFixed(2)+' '+C.toFixed(2)+'" stroke-dashoffset="'+d.toFixed(2)+'" transform="rotate(-90 '+cx+' '+cy+')"/>';
+    }).join('');
+    var fs1=Math.round(sz*0.117),fs2=Math.round(sz*0.083);
+    return'<svg viewBox="0 0 '+sz+' '+sz+'" width="'+sz+'" height="'+sz+'"><circle cx="'+cx+'" cy="'+cy+'" r="'+R+'" fill="none" stroke="#e8edf8" stroke-width="'+sw+'"/>'+arcs+'<text x="'+cx+'" y="'+(cy-2)+'" text-anchor="middle" font-size="'+fs1+'" font-weight="800" fill="#374151">'+T+'</text><text x="'+cx+'" y="'+(cy+fs1+2)+'" text-anchor="middle" font-size="'+fs2+'" fill="#9ca3af">M</text></svg>';
+  }
+
+  /* ── 팝업 1 ── */
+  function r1(){
+    var tM=D.total_styles,tS=D.total_sku,tP=D.total_pcs;
+    // SWEATER 스타일 식별: KNIT 중 벤더 매칭
+    var swSet=new Set();
+    AD.forEach(function(d){
+      if(d.sort!=='KNIT')return;
+      var v=(d.vendor||'').toUpperCase();
+      if((d.vendor||'').includes('다인')||v.includes('TONGFA')||v.includes('OUTIN'))swSet.add(d.style_code);
+    });
+    // 4개 그룹별 style_code 집계
+    var gS={KNIT:new Set(),SWEATER:new Set(),WOVEN:new Set(),DENIM:new Set()};
+    AD.forEach(function(d){
+      var sc=d.style_code,s=d.sort||'기타';
+      if(s==='KNIT'){ if(swSet.has(sc))gS.SWEATER.add(sc); else gS.KNIT.add(sc); }
+      else if(gS[s]) gS[s].add(sc);
+    });
+    // 도넛 + 범례
+    var sPal={KNIT:'#93c5fd',SWEATER:'#7dd3c0',WOVEN:'#c4b5fd',DENIM:'#a5b4fc'};
+    var sPalDk={KNIT:'#3b82f6',SWEATER:'#14b8a6',WOVEN:'#8b5cf6',DENIM:'#6366f1'};
+    var SO4=['KNIT','SWEATER','WOVEN','DENIM'];
+    var sSegs=SO4.filter(function(k){return gS[k].size>0;}).map(function(k){return{l:k,n:gS[k].size,c:sPal[k]};});
+    var legHtml=sSegs.map(function(s){
+      var pct=(s.n/tM*100).toFixed(1);
+      return'<div style="display:flex;align-items:center;gap:10px;margin-bottom:10px">'+
+        '<div style="width:14px;height:14px;border-radius:50%;background:'+s.c+';flex-shrink:0"></div>'+
+        '<span style="font-size:14px;font-weight:700;color:#374151;min-width:72px">'+s.l+'</span>'+
+        '<span style="font-size:16px;font-weight:900;color:'+(sPalDk[s.l]||s.c)+'">'+s.n+'M</span>'+
+        '<span style="font-size:11px;color:#9ca3af">('+pct+'%)</span>'+
+      '</div>';
+    }).join('');
+    // ITEM별 bar: 그룹별로 item_type 집계 (SWEATER 분리)
+    var iMG={KNIT:{},SWEATER:{},WOVEN:{},DENIM:{}};
+    AD.forEach(function(d){
+      var sc=d.style_code,i=d.item_type||'-',s=d.sort||'기타';
+      var grp;
+      if(s==='KNIT') grp=swSet.has(sc)?'SWEATER':'KNIT';
+      else if(iMG[s]) grp=s;
+      else return;
+      if(!iMG[grp][i])iMG[grp][i]=new Set();
+      iMG[grp][i].add(sc);
+    });
+    var SC={KNIT:'#93c5fd',SWEATER:'#7dd3c0',WOVEN:'#c4b5fd',DENIM:'#a5b4fc'};
+    var allMs=[];
+    SO4.forEach(function(g){Object.values(iMG[g]).forEach(function(s){allMs.push(s.size);});});
+    var maxM=Math.max.apply(null,[1].concat(allMs));
+    var bars=SO4.map(function(g){
+      var its=Object.entries(iMG[g]).sort(function(a,b){return b[1].size-a[1].size;});
+      if(!its.length)return'';
+      var gTotal=its.reduce(function(a,e){return a+e[1].size;},0);
+      var rows=its.map(function(e){var m=e[1].size,w=(m/maxM*100).toFixed(1),p=(m/tM*100).toFixed(1);return'<div class="m1br"><div class="m1bc">'+e[0]+'</div><div class="m1bt"><div class="m1bf" style="width:'+w+'%;background:'+SC[g]+'"></div></div><div class="m1bv">'+m+'M ('+p+'%)</div></div>';}).join('');
+      return'<div class="m1gh" style="background:#f9fafb;color:#374151">'+g+' — '+gTotal+'M</div>'+rows+'<div style="height:8px"></div>';
+    }).join('');
+    document.getElementById('kpi-m1-body').innerHTML=
+      '<div class="km1sum">전체 <b>'+tM+' M</b> / <b>'+tS.toLocaleString()+' SKU</b> / <b>'+tP.toLocaleString()+' PCS</b></div>'+
+      '<div style="display:flex;align-items:center;gap:28px;background:#f9fafb;border-radius:12px;padding:18px 24px;margin-bottom:20px;flex-wrap:wrap">'+
+        '<div style="flex-shrink:0">'+mkDnt(sSegs,160)+'</div>'+
+        '<div>'+
+          '<div style="font-size:11px;font-weight:700;color:#6b7280;text-transform:uppercase;letter-spacing:.5px;margin-bottom:14px">대분류 분포</div>'+
+          legHtml+
+        '</div>'+
+      '</div>'+
+      '<div>'+bars+'</div>';
+  }
+
+  /* ── 팝업 2 ── */
+  var M2T=[
+    {k:'0612',l:'6/12 신규 DUE',  dt:'2026-06-12',tg:40 },
+    {k:'0616',l:'6/16 2-1차 품평',dt:'2026-06-16',tg:40 },
+    {k:'0629',l:'6/29 2-2차 품평',dt:'2026-06-29',tg:100},
+    {k:'0713',l:'7/13 27SS 수주회',dt:'2026-07-13',tg:100},
+  ];
+  var itSt={},itAll={},itE={};
+  AD.forEach(function(d){
+    if(d.is_na)return;
+    var i=d.item_type||'기타',sc=d.style_code,s=d.sort||'기타';
+    itSt[i]=s;
+    if(!itAll[i])itAll[i]=new Set();
+    itAll[i].add(sc);
+    if(d.kr_expected){
+      if(!itE[i])itE[i]={};
+      if(!itE[i][sc]||d.kr_expected<itE[i][sc])itE[i][sc]=d.kr_expected;
+    }
+  });
+  var totTbd=new Set(AD.filter(function(d){return !d.is_na&&!d.kr_expected;}).map(function(d){return d.style_code;})).size;
+
+  function r2(key){
+    var cf=M2T.find(function(t){return t.k===key;});
+    var l=cf.l,dt=cf.dt,tg=cf.tg;
+    var tM=D.total_styles,ov=D.arrival_summary['by_'+key]||0,ovP=Math.round(ov/tM*100);
+    var pctCol=ovP>=tg?'#10b981':'#dc2626';
+    var SO=['KNIT','WOVEN','DENIM'];
+    var dL=[],wL=[],gL=[],rS={KNIT:[],WOVEN:[],DENIM:[]};
+    Object.keys(itAll).forEach(function(i){
+      var s=itSt[i],dated=itE[i]?Object.keys(itE[i]).length:0,tbd=itAll[i].size-dated;
+      if(!dated)return;
+      var byDt=itE[i]?Object.values(itE[i]).filter(function(v){return v<=dt;}).length:0;
+      var p=Math.round(byDt/dated*100);
+      var fc,bdHtml;
+      if(p>=tg){
+        gL.push(i); fc='#86efac';
+        bdHtml='<span style="background:#d1fae5;color:#065f46;padding:1px 6px;border-radius:4px;font-size:10px;font-weight:700;white-space:nowrap">✓ 양호</span>';
+      } else if(p>=30){
+        wL.push(i); fc='#fcd34d';
+        bdHtml='<span style="background:#fef3c7;color:#92400e;padding:1px 6px;border-radius:4px;font-size:10px;font-weight:700;white-space:nowrap">⚠ 미달</span>';
+      } else {
+        dL.push(i); fc='#fca5a5';
+        bdHtml='<span style="background:#fee2e2;color:#991b1b;padding:1px 6px;border-radius:4px;font-size:10px;font-weight:700;white-space:nowrap">🚨 위험</span>';
+      }
+      var tt=tbd>0?' <span style="color:#9ca3af;font-size:10px">+'+tbd+'TBD</span>':'';
+      var row='<div class="m2ir"><div class="m2ic">'+i+'</div><div class="m2ibt"><div class="m2ibf" style="width:'+Math.min(p,100)+'%;background:'+fc+'"></div></div><div class="m2is">'+p+'% ('+byDt+'/'+dated+'M)'+tt+'</div><div class="m2ib">'+bdHtml+'</div></div>';
+      if(rS[s])rS[s].push(row);
+    });
+    var tbdR=totTbd>0?'<div style="margin-top:10px;border-top:1px dashed #e5e7eb;padding-top:8px"><div class="m2ir"><div class="m2ic" style="width:72px;color:#9ca3af;font-style:italic;font-size:10px">미정(TBD)</div><div class="m2ibt"><div class="m2ibf" style="width:0;background:#d1d5db"></div></div><div class="m2is" style="color:#9ca3af">'+totTbd+'M 미정</div><div class="m2ib"></div></div></div>':'';
+    var grps=SO.map(function(s){var r=rS[s];if(!r||!r.length)return'';return'<div class="m2gh" style="background:#f9fafb;color:#374151">'+s+'</div>'+r.join('');}).join('')+tbdR;
+    var tabs=M2T.map(function(t){return'<button class="m2tb'+(t.k===key?' act':'')+'" data-key="'+t.k+'" onclick="kM2sw(\''+t.k+'\')">'+t.l+'</button>';}).join('');
+    var smL=[
+      dL.length?'<div class="m2sr">🚨 위험 (30% 미만): <b style="color:#dc2626">'+dL.join(', ')+'</b></div>':'',
+      wL.length?'<div class="m2sr">⚠ 미달 (30%~'+tg+'%): <b style="color:#d97706">'+wL.join(', ')+'</b></div>':'',
+      gL.length?'<div class="m2sr">✓ 양호 ('+tg+'% 이상): <b style="color:#059669">'+gL.join(', ')+'</b></div>':'',
+    ].join('');
+    var pbHtml='<div style="position:relative;padding-top:18px;margin-bottom:6px">'+
+      '<div style="background:#f3f4f6;border-radius:6px;height:10px;overflow:hidden">'+
+        '<div style="height:100%;border-radius:6px;width:'+Math.min(ovP,100)+'%;background:#93c5fd"></div>'+
+      '</div>'+
+      '<div style="position:absolute;top:0;bottom:0;left:'+Math.min(tg,100)+'%;width:2px;background:#374151;opacity:.35;border-radius:1px">'+
+        '<div style="position:absolute;bottom:calc(100%+2px);left:50%;transform:translateX(-50%);font-size:9px;font-weight:700;color:#374151;opacity:.7;white-space:nowrap">목표 '+tg+'%</div>'+
+      '</div></div>';
+    document.getElementById('kpi-m2-body').innerHTML=
+      '<div class="m2tabs">'+tabs+'</div>'+
+      '<div class="m2ov" style="background:#eff6ff">'+
+        '<div class="m2ovt"><span class="m2ovl" style="color:#1e2a4a">'+l+'</span><span class="m2ovp" style="color:'+pctCol+'">'+ovP+'%</span></div>'+
+        pbHtml+
+        '<div style="font-size:11px;color:#6b7280;margin-top:2px">'+ov+'/'+tM+' M (TBD 포함 분모 기준)</div>'+
+      '</div>'+
+      '<div>'+grps+'</div>'+
+      '<div class="m2sb">'+(smL||'<span style="color:#9ca3af">분류 없음</span>')+'</div>';
+  }
+
+  window.kM2sw=function(k){r2(k);};
+  document.getElementById('kpi-card-1').addEventListener('click',function(){r1();oKM('kpi-m1');});
+  document.getElementById('kpi-card-2').addEventListener('click',function(){r2('0612');oKM('kpi-m2');});
+})();
+</script>
+</body>
+</html>
