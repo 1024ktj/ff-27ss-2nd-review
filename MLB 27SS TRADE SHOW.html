@@ -809,7 +809,7 @@ body:not(.view-cn) .cn-only { display:none !important; }
     </div>
     <div id="kpi-card-2" class="kpi-card" style="--kpi-color:#ef4444;cursor:pointer">
       <div class="stripe"></div>
-      <div class="kpi-label"><span class="ko-label">예정 입고율</span><span class="en-label">PLANNED ARRIVAL RATE</span></div>
+      <div class="kpi-label"><span class="ko-label">예정 입고율 (KR)</span><span class="en-label">PLANNED ARRIVAL RATE (KR)</span></div>
       <div id="k-arrival-wrap" style="margin-top:8px"></div>
     </div>
     <div class="kpi-card" style="--kpi-color:#60a5fa">
@@ -3628,7 +3628,7 @@ document.addEventListener('keydown', function(e){ if(e.key==='Escape') closeRema
 <div class="km-ovl" id="kpi-m2">
   <div class="km-box">
     <div class="km-hd" style="border-left:4px solid #ef4444">
-      <div class="km-title">📈 예정 입고율 상세</div>
+      <div class="km-title">📈 예정 입고율 상세 (KR)</div>
       <button class="km-x" id="kpi-m2-x">&times;</button>
     </div>
     <div class="km-body" id="kpi-m2-body"></div>
@@ -3791,6 +3791,16 @@ document.addEventListener('keydown', function(e){ if(e.key==='Escape') closeRema
       '<div style="position:absolute;top:0;bottom:0;left:'+Math.min(tg,100)+'%;width:2px;background:#374151;opacity:.35;border-radius:1px">'+
         '<div style="position:absolute;bottom:calc(100%+2px);left:50%;transform:translateX(-50%);font-size:9px;font-weight:700;color:#374151;opacity:.7;white-space:nowrap">목표 '+tg+'%</div>'+
       '</div></div>';
+    // 카테고리별 진척률 (분기 필터 반영: currentPhaseFilter 외부 스코프 참조)
+    var pAD=(typeof currentPhaseFilter!=='undefined'&&currentPhaseFilter!=='ALL')?AD.filter(function(d){return d.phase===currentPhaseFilter;}):AD;
+    var swC=new Set();
+    pAD.forEach(function(d){if(d.sort!=='KNIT')return;var v=(d.vendor||'').toUpperCase();if((d.vendor||'').includes('다인')||v.includes('TONGFA')||v.includes('OUTIN'))swC.add(d.style_code);});
+    var cSt={KNIT:new Set(),SWEATER:new Set(),WOVEN:new Set(),DENIM:new Set()};
+    var cDn={KNIT:new Set(),SWEATER:new Set(),WOVEN:new Set(),DENIM:new Set()};
+    pAD.forEach(function(d){if(d.is_na)return;var sc=d.style_code,s=d.sort,g;if(s==='KNIT')g=swC.has(sc)?'SWEATER':'KNIT';else if(s==='WOVEN')g='WOVEN';else if(s==='DENIM')g='DENIM';else return;cSt[g].add(sc);if(d.kr_expected&&d.kr_expected<=dt)cDn[g].add(sc);});
+    var cPal={KNIT:'#93c5fd',SWEATER:'#7dd3c0',WOVEN:'#c4b5fd',DENIM:'#a5b4fc'};
+    var catRows=['KNIT','SWEATER','WOVEN','DENIM'].map(function(g){var T=cSt[g].size,Dn=cDn[g].size;if(!T)return'';var p=Math.round(Dn/T*100);return'<div style="display:flex;align-items:center;gap:8px;padding:5px 0;border-bottom:1px solid #f3f4f6"><div style="width:60px;font-size:11px;font-weight:700;color:#374151;flex-shrink:0">'+g+'</div><div style="flex:1;background:#f3f4f6;border-radius:4px;height:16px;overflow:hidden"><div style="height:100%;border-radius:4px;width:'+Math.min(p,100)+'%;background:'+cPal[g]+';transition:width 0.3s"></div></div><div style="width:90px;font-size:11px;color:#374151;text-align:right;flex-shrink:0;white-space:nowrap">'+p+'% ('+Dn+'/'+T+'M)</div></div>';}).join('');
+    var catSec='<div style="background:#f9fafb;border-radius:10px;padding:12px 16px;margin-bottom:14px"><div style="font-size:11px;font-weight:800;color:#374151;margin-bottom:8px">카테고리별 진척률</div>'+catRows+'</div>';
     document.getElementById('kpi-m2-body').innerHTML=
       '<div class="m2tabs">'+tabs+'</div>'+
       '<div class="m2ov" style="background:#eff6ff">'+
@@ -3798,6 +3808,7 @@ document.addEventListener('keydown', function(e){ if(e.key==='Escape') closeRema
         pbHtml+
         '<div style="font-size:11px;color:#6b7280;margin-top:2px">'+ov+'/'+tM+' M (TBD 포함 분모 기준)</div>'+
       '</div>'+
+      catSec+
       '<div>'+grps+'</div>'+
       '<div class="m2sb">'+(smL||'<span style="color:#9ca3af">분류 없음</span>')+'</div>';
   }
@@ -4011,6 +4022,15 @@ document.addEventListener('keydown', function(e){ if(e.key==='Escape') closeRema
       '<div style="position:absolute;top:0;bottom:0;left:'+Math.min(tg,100)+'%;width:2px;background:#374151;opacity:.35;border-radius:1px">'+
         '<div style="position:absolute;bottom:calc(100%+2px);left:50%;transform:translateX(-50%);font-size:9px;font-weight:700;color:#374151;opacity:.7;white-space:nowrap">Target '+tg+'%</div>'+
       '</div></div>';
+    // Progress by Category (curAD는 이미 phase-filtered 외부 AD)
+    var swC2=new Set();
+    curAD.forEach(function(d){if(d.sort!=='KNIT')return;var v=(d.vendor||'').toUpperCase();if((d.vendor||'').includes('다인')||v.includes('TONGFA')||v.includes('OUTIN'))swC2.add(d.style_code);});
+    var cSt2={KNIT:new Set(),SWEATER:new Set(),WOVEN:new Set(),DENIM:new Set()};
+    var cDn2={KNIT:new Set(),SWEATER:new Set(),WOVEN:new Set(),DENIM:new Set()};
+    curAD.forEach(function(d){if(d.is_na)return;var sc=d.style_code,s=d.sort,g;if(s==='KNIT')g=swC2.has(sc)?'SWEATER':'KNIT';else if(s==='WOVEN')g='WOVEN';else if(s==='DENIM')g='DENIM';else return;cSt2[g].add(sc);if(d.cn_rdd&&d.cn_rdd<=dt)cDn2[g].add(sc);});
+    var cPal2={KNIT:'#93c5fd',SWEATER:'#7dd3c0',WOVEN:'#c4b5fd',DENIM:'#a5b4fc'};
+    var catRows2=['KNIT','SWEATER','WOVEN','DENIM'].map(function(g){var T=cSt2[g].size,Dn=cDn2[g].size;if(!T)return'';var p=Math.round(Dn/T*100);return'<div style="display:flex;align-items:center;gap:8px;padding:5px 0;border-bottom:1px solid #f3f4f6"><div style="width:60px;font-size:11px;font-weight:700;color:#374151;flex-shrink:0">'+g+'</div><div style="flex:1;background:#f3f4f6;border-radius:4px;height:16px;overflow:hidden"><div style="height:100%;border-radius:4px;width:'+Math.min(p,100)+'%;background:'+cPal2[g]+';transition:width 0.3s"></div></div><div style="width:90px;font-size:11px;color:#374151;text-align:right;flex-shrink:0;white-space:nowrap">'+p+'% ('+Dn+'/'+T+'M)</div></div>';}).join('');
+    var catSec2='<div style="background:#f9fafb;border-radius:10px;padding:12px 16px;margin-bottom:14px"><div style="font-size:11px;font-weight:800;color:#374151;margin-bottom:8px">Progress by Category</div>'+catRows2+'</div>';
 
     document.getElementById('kpi-cn-m2-body').innerHTML=
       '<div class="m2tabs">'+tabs+'</div>'+
@@ -4019,6 +4039,7 @@ document.addEventListener('keydown', function(e){ if(e.key==='Escape') closeRema
         pbHtml+
         '<div style="font-size:11px;color:#6b7280;margin-top:2px">'+ov+'/'+tM+' M Based on CN RDD (TBD included)</div>'+
       '</div>'+
+      catSec2+
       '<div>'+grps+'</div>'+
       '<div class="m2sb">'+(smL||'<span style="color:#9ca3af">No data</span>')+'</div>';
   }
