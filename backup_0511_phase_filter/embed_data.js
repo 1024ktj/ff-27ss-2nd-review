@@ -9,14 +9,14 @@ const DASHBOARD = {
   "total_cn_total_pcs": 6086,
   "arrival_summary": {
     "total_styles": 529,
-    "by_0612": 288,
-    "by_0616": 348,
-    "by_0629": 516,
-    "by_0713": 522,
-    "pct_0612": 54.4,
-    "pct_0616": 65.8,
-    "pct_0629": 97.5,
-    "pct_0713": 98.7
+    "by_0612": 239,
+    "by_0616": 346,
+    "by_0629": 513,
+    "by_0713": 519,
+    "pct_0612": 45.2,
+    "pct_0616": 65.4,
+    "pct_0629": 97.0,
+    "pct_0713": 98.1
   },
   "all_data": [
     {
@@ -56,8 +56,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-04-23",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3AJPS807143RDS",
@@ -96,8 +95,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-29",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3AJPS817109CRS",
@@ -136,8 +134,7 @@ const DASHBOARD = {
       "remark": "CREAM 컬러 4/29 발송 5/5일 컴펌 예정",
       "delay_reason": "",
       "fabric_etd": "2026-04-20",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3AJPS817143RDS",
@@ -176,8 +173,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-04-22",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3AJPS817150BKS",
@@ -216,8 +212,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-04-21",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3AJPA017113BRD",
@@ -256,8 +251,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-29",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3AJPA017150SBS",
@@ -296,8 +290,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-29",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3AJPA017150BKS",
@@ -336,8 +329,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-04-23",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3AJPA027113BRD",
@@ -376,8 +368,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-29",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3AJPA027150BKS",
@@ -416,8 +407,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-04-23",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3AJPA027109CRS",
@@ -456,8 +446,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-29",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3AJPA207143GND",
@@ -496,8 +485,7 @@ const DASHBOARD = {
       "remark": "소매/어깨 배색 원단 6/15 완성, 소량 염색 메인 진행 여부 확인 필요",
       "delay_reason": "원단 지연",
       "fabric_etd": "2026-05-29",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3AJPA207150BKS",
@@ -536,8 +524,7 @@ const DASHBOARD = {
       "remark": "소매/어깨 배색 원단 6/15 완성, 소량 염색 메인 진행 여부 확인 필요",
       "delay_reason": "원단 지연",
       "fabric_etd": "2026-05-29",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3AJPA037150BKS",
@@ -566,18 +553,17 @@ const DASHBOARD = {
       "cn_focus_pcs": 1,
       "kr_keep_pcs": 1,
       "cn_total_pcs": 5,
-      "kr_expected": "2026-06-24",
+      "kr_expected": "2026-06-12",
       "kr_actual": null,
-      "cn_etd": "2026-06-23",
+      "cn_etd": "2026-06-12",
       "cn_atd": null,
-      "cn_rdd": "2026-06-28",
+      "cn_rdd": "2026-06-17",
       "transit_days": 5,
       "courier": "",
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-04-24",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3AJPA037107NYS",
@@ -616,8 +602,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-29",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3AJPA047109CRS",
@@ -656,8 +641,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-29",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3AJPA047107NYL",
@@ -696,8 +680,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-29",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3AJPM017143CRS",
@@ -736,8 +719,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-04-25",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3AJPM017150BKS",
@@ -776,8 +758,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-04-25",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FJPM017143CRS",
@@ -816,8 +797,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-29",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FJPM017150BKS",
@@ -856,8 +836,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-29",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3AJPA057107NYL",
@@ -896,8 +875,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-29",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3AJPA057143SAM",
@@ -936,8 +914,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-29",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FJPA017107INS",
@@ -976,8 +953,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-29",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FJPA017150BKS",
@@ -1016,8 +992,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-04-28",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3AJPA067143GND",
@@ -1056,8 +1031,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-29",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3AJPA067143SAM",
@@ -1096,8 +1070,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-29",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3AJPA067150BKS",
@@ -1136,8 +1109,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-29",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3AJPA077143SAM",
@@ -1176,8 +1148,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-29",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3AJPA077150BKS",
@@ -1216,8 +1187,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-29",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3AJPA087109CRS",
@@ -1256,8 +1226,7 @@ const DASHBOARD = {
       "remark": "에리 배색 레자 수배중 / 지정 퀄리티(중국) 45일 소요",
       "delay_reason": "",
       "fabric_etd": "2026-05-29",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3AJPA087110PKM",
@@ -1296,8 +1265,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-29",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3AJPA087150BKS",
@@ -1336,8 +1304,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-29",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3AJPA097143SAM",
@@ -1376,8 +1343,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-29",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3AJPA097150BKS",
@@ -1416,8 +1382,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-07",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3AJPA127113BRD",
@@ -1456,8 +1421,7 @@ const DASHBOARD = {
       "remark": "원단 6/15 완성",
       "delay_reason": "원단 지연",
       "fabric_etd": "2026-05-29",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3AJPA127143CAL",
@@ -1496,8 +1460,7 @@ const DASHBOARD = {
       "remark": "원단 6/15 완성",
       "delay_reason": "원단 지연",
       "fabric_etd": "",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FJPA177113CAS",
@@ -1536,8 +1499,7 @@ const DASHBOARD = {
       "remark": "원단 6/15 완성",
       "delay_reason": "원단 지연",
       "fabric_etd": "2026-05-29",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FJPA177143SAL",
@@ -1576,8 +1538,7 @@ const DASHBOARD = {
       "remark": "원단 6/15 완성",
       "delay_reason": "원단 지연",
       "fabric_etd": "2026-05-29",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FJPA177150MSS",
@@ -1616,8 +1577,7 @@ const DASHBOARD = {
       "remark": "원단 6/15 완성",
       "delay_reason": "원단 지연",
       "fabric_etd": "2026-05-29",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3AJPA137150WID",
@@ -1656,8 +1616,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-29",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3AJPA137107CRD",
@@ -1696,8 +1655,7 @@ const DASHBOARD = {
       "remark": "원단 입고일 확인 안됨",
       "delay_reason": "",
       "fabric_etd": "2026-05-29",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3AJPA137150OLS",
@@ -1736,8 +1694,7 @@ const DASHBOARD = {
       "remark": "원단 입고일 확인 안됨",
       "delay_reason": "",
       "fabric_etd": "2026-05-29",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3AJPA137150BKS",
@@ -1776,8 +1733,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-29",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FJPA147150YEM",
@@ -1816,8 +1772,7 @@ const DASHBOARD = {
       "remark": "원단 입고일 확인 안됨",
       "delay_reason": "",
       "fabric_etd": "2026-05-29",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FJPA147150BKS",
@@ -1856,8 +1811,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-29",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3AJPA157107NYL",
@@ -1896,8 +1850,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-29",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3AJPA157143CRS",
@@ -1936,8 +1889,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-29",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3AJPA157150BKS",
@@ -1976,8 +1928,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-29",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3AJPA167109CRS",
@@ -2016,8 +1967,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-29",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3AJPA167143BRD",
@@ -2056,8 +2006,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-29",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3AJPA167145SBS",
@@ -2096,8 +2045,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-29",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3AJPA167150BKS",
@@ -2136,8 +2084,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-29",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3AJPA187102WID",
@@ -2176,8 +2123,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-29",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3AJPA187107BLL",
@@ -2216,8 +2162,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-29",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3AJPA187150BKS",
@@ -2256,8 +2201,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-29",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FJPA187109CRS",
@@ -2296,8 +2240,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-29",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FJPA187113BRD",
@@ -2336,8 +2279,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-29",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FJPA187150PKM",
@@ -2376,8 +2318,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-29",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3AJPA217109CRS",
@@ -2416,8 +2357,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-29",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3AJPA217110PKM",
@@ -2456,8 +2396,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-29",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3AJPA217113BRD",
@@ -2496,8 +2435,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-29",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FJPA157110PKM",
@@ -2536,8 +2474,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-29",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FJPA157143SAM",
@@ -2576,8 +2513,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-29",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FJPA157150BKS",
@@ -2616,8 +2552,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-29",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FJPA167109CRS",
@@ -2656,8 +2591,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-29",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FJPA167113BRD",
@@ -2696,8 +2630,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FJPA167150SBS",
@@ -2736,8 +2669,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-29",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FJPA197107IVS",
@@ -2776,8 +2708,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-29",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FJPA197107SBL",
@@ -2816,8 +2747,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FJPA197150YEM",
@@ -2856,8 +2786,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-29",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3AJPA227143SAL",
@@ -2896,8 +2825,7 @@ const DASHBOARD = {
       "remark": "원단 6/15 완성",
       "delay_reason": "원단 지연",
       "fabric_etd": "2026-05-29",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3AJPA227150BKS",
@@ -2936,8 +2864,7 @@ const DASHBOARD = {
       "remark": "원단 6/15 완성",
       "delay_reason": "원단 지연",
       "fabric_etd": "2026-05-29",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3AJPA237113BRD",
@@ -2976,8 +2903,7 @@ const DASHBOARD = {
       "remark": "원단 6/15 완성",
       "delay_reason": "원단 지연",
       "fabric_etd": "2026-05-29",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3AJPA237150BKS",
@@ -3016,8 +2942,7 @@ const DASHBOARD = {
       "remark": "원단 6/15 완성",
       "delay_reason": "원단 지연",
       "fabric_etd": "2026-05-29",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3AJPA247107NYS",
@@ -3056,8 +2981,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-29",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3AJPA247150BKS",
@@ -3096,8 +3020,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-29",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3AJPA247143SAM",
@@ -3136,8 +3059,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-29",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3AJPA257102WID",
@@ -3176,8 +3098,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-29",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3AJPA257109CRS",
@@ -3216,8 +3137,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-29",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3AJPA257150BKS",
@@ -3256,8 +3176,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-29",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3AWJO017107GNM",
@@ -3296,8 +3215,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-04-22",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3AWJO017110PKM",
@@ -3336,8 +3254,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-29",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3AWJO017143PPD",
@@ -3376,8 +3293,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-04-22",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3AWJO017107CRD",
@@ -3416,8 +3332,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-04-22",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3AWJO017150BKS",
@@ -3456,8 +3371,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-04-22",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3AWJO037107PKD",
@@ -3496,8 +3410,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-04-28",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3AWJO037143PPD",
@@ -3536,8 +3449,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-04-28",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3AWJO037107CRD",
@@ -3576,8 +3488,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-04-20",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3AWJO037150BKS",
@@ -3616,8 +3527,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-04-28",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3AWJO047150SBP",
@@ -3656,8 +3566,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-29",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3AWJO047150BKS",
@@ -3696,8 +3605,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-29",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3AWJO057150BKS",
@@ -3736,8 +3644,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-04-22",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3AWJO057143RDS",
@@ -3776,8 +3683,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-29",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3AWJO067107PPS",
@@ -3816,8 +3722,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-29",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3AWJO067107CRD",
@@ -3856,8 +3761,7 @@ const DASHBOARD = {
       "remark": "07CRD 다시  작업 5/28완성",
       "delay_reason": "원단 지연",
       "fabric_etd": "2026-05-07",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3AWJO067150BKS",
@@ -3896,8 +3800,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-07",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3AWJO027310LDL",
@@ -3936,8 +3839,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-29",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3AWJO027350BKS",
@@ -3976,8 +3878,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-29",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3AWJO027343MTL",
@@ -4016,8 +3917,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-29",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3AWJO027344GRL",
@@ -4056,8 +3956,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-29",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3AWJO047307IVS",
@@ -4096,8 +3995,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-08",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3AWJO047343MTL",
@@ -4136,8 +4034,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-29",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3AWJO047344GRL",
@@ -4176,8 +4073,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3AWJO047350BKS",
@@ -4216,8 +4112,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-08",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FWJO017107PPS",
@@ -4256,8 +4151,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-29",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FWJO017110PKM",
@@ -4296,8 +4190,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-15",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FWJO017107CRD",
@@ -4336,8 +4229,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-15",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FWJO017150BKS",
@@ -4376,8 +4268,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-15",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FWJO017143GNL",
@@ -4416,8 +4307,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-29",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FWJO037107CRD",
@@ -4456,8 +4346,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-07",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FWJO037150BKS",
@@ -4496,8 +4385,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-07",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FWJO037143SAS",
@@ -4536,8 +4424,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-29",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FWJO047107CRD",
@@ -4576,8 +4463,7 @@ const DASHBOARD = {
       "remark": "원단 다시  제작 2-2차 원단 5/28 일  완성될 예정",
       "delay_reason": "원단 지연",
       "fabric_etd": "2026-05-07",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FWJO047150BKS",
@@ -4616,8 +4502,7 @@ const DASHBOARD = {
       "remark": "원단 다시  제작 2-2차 원단 5/28 일  완성될 예정",
       "delay_reason": "원단 지연",
       "fabric_etd": "2026-05-07",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FWJO047150SBS",
@@ -4656,8 +4541,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-29",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FWJO027307IVS",
@@ -4696,8 +4580,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-15",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FWJO027313BRD",
@@ -4736,8 +4619,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-29",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FWJO027307SBL",
@@ -4776,8 +4658,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-08",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3AWJM017343CRS",
@@ -4816,8 +4697,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-12",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3AWJM017350BKS",
@@ -4856,8 +4736,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-04-23",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3AWJM017307NYL",
@@ -4896,8 +4775,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-29",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3AWJM027307SBS",
@@ -4936,8 +4814,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-08",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3AWJM027350CRS",
@@ -4976,8 +4853,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-08",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FWJM017307NYL",
@@ -5016,8 +4892,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-29",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FWJM017350BKS",
@@ -5056,8 +4931,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-04-23",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FWJM017343CRS",
@@ -5096,8 +4970,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-12",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3AWJA017307SBL",
@@ -5136,8 +5009,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-29",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3AWJA017350YEM",
@@ -5176,8 +5048,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-29",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3AWJA017350BKS",
@@ -5216,8 +5087,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-29",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3AWJA017307IVS",
@@ -5256,8 +5126,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-29",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3AWJA027307IVS",
@@ -5296,8 +5165,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-07",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3AWJA027307SBL",
@@ -5336,8 +5204,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-07",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FWJA017307IVS",
@@ -5376,8 +5243,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-29",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FWJA017343MTL",
@@ -5416,8 +5282,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-29",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FWJA017307INS",
@@ -5456,8 +5321,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-29",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FWJA037307SBL",
@@ -5496,8 +5360,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-08",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FWJA037314BRS",
@@ -5536,8 +5399,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-29",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FWJA037350BKS",
@@ -5576,8 +5438,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-08",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FWJA037309CRS",
@@ -5616,8 +5477,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-08",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FWJA047309GRS",
@@ -5656,8 +5516,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-29",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FWJA047350BKS",
@@ -5696,8 +5555,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-04-30",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FWJA047307SBL",
@@ -5736,8 +5594,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-08",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FWJA047350YEM",
@@ -5776,8 +5633,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-29",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FWJA057310LDL",
@@ -5816,8 +5672,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-29",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FWJA057344GRL",
@@ -5856,8 +5711,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-29",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FWJA057307IVS",
@@ -5896,8 +5750,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-29",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FWJA067307IVS",
@@ -5936,8 +5789,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-08",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FWJA067310LDL",
@@ -5976,8 +5828,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-29",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FWJA067307SBL",
@@ -6016,8 +5867,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-08",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FWJA067343MTL",
@@ -6056,8 +5906,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-29",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FWJA077313BRD",
@@ -6096,8 +5945,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FWJA077350BKS",
@@ -6136,8 +5984,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-08",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FWJA077307IVS",
@@ -6176,8 +6023,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-08",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FWJA077350YEM",
@@ -6216,8 +6062,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-29",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FWJA087307IVS",
@@ -6256,8 +6101,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-10",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FWJA087307INS",
@@ -6296,8 +6140,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-29",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FWJA087350YEM",
@@ -6336,8 +6179,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-29",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3AWJA027107IVS",
@@ -6376,8 +6218,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-04-30",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3AWJA027113BRD",
@@ -6416,8 +6257,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-29",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3AWJA027107NYS",
@@ -6456,8 +6296,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-15",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3AWJA027150BKS",
@@ -6496,8 +6335,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-04-22",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3AWJA027150SBS",
@@ -6536,8 +6374,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-29",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FWJA027110PKM",
@@ -6576,8 +6413,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-08",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FWJA027113BRD",
@@ -6616,8 +6452,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-29",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FWJA027150BKS",
@@ -6656,8 +6491,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-04-23",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FWJA027107IVS",
@@ -6696,8 +6530,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-08",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3AWJA127307INS",
@@ -6736,8 +6569,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-29",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3AWJA127309GRS",
@@ -6776,8 +6608,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-04-30",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3AWJA127350BKS",
@@ -6816,8 +6647,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-04-30",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3AWJA137343MTL",
@@ -6856,8 +6686,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-29",
-      "is_na": false,
-      "phase": "2ND TS"
+      "is_na": false
     },
     {
       "sku": "3AWJA137346CGM",
@@ -6896,8 +6725,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-29",
-      "is_na": false,
-      "phase": "2ND TS"
+      "is_na": false
     },
     {
       "sku": "3AWJA137344GRL",
@@ -6936,8 +6764,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-29",
-      "is_na": false,
-      "phase": "2ND TS"
+      "is_na": false
     },
     {
       "sku": "3AWJA157307ABS",
@@ -6976,8 +6803,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-29",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3AWJA157307OLL",
@@ -7016,8 +6842,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-29",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3AWJA157307IVS",
@@ -7056,8 +6881,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-29",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3AWJA157350BKS",
@@ -7096,8 +6920,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-04-22",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3AWJA167307OLL",
@@ -7136,8 +6959,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-29",
-      "is_na": false,
-      "phase": "2ND TS"
+      "is_na": false
     },
     {
       "sku": "3AWJA167344GRL",
@@ -7176,8 +6998,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-29",
-      "is_na": false,
-      "phase": "2ND TS"
+      "is_na": false
     },
     {
       "sku": "3AWJA167350SBP",
@@ -7216,8 +7037,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-29",
-      "is_na": false,
-      "phase": "2ND TS"
+      "is_na": false
     },
     {
       "sku": "3AWJA177343SAL",
@@ -7256,8 +7076,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-29",
-      "is_na": false,
-      "phase": "2ND TS"
+      "is_na": false
     },
     {
       "sku": "3AWJA177346CGM",
@@ -7296,8 +7115,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-29",
-      "is_na": false,
-      "phase": "2ND TS"
+      "is_na": false
     },
     {
       "sku": "3AWJA177350SBP",
@@ -7336,8 +7154,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-29",
-      "is_na": false,
-      "phase": "2ND TS"
+      "is_na": false
     },
     {
       "sku": "3FWJA127307IVS",
@@ -7376,8 +7193,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-04-30",
-      "is_na": false,
-      "phase": "2ND TS"
+      "is_na": false
     },
     {
       "sku": "3FWJA127310LDL",
@@ -7416,8 +7232,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-29",
-      "is_na": false,
-      "phase": "2ND TS"
+      "is_na": false
     },
     {
       "sku": "3FWJA127343MTL",
@@ -7456,8 +7271,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-29",
-      "is_na": false,
-      "phase": "2ND TS"
+      "is_na": false
     },
     {
       "sku": "3FWJA157307ABS",
@@ -7496,8 +7310,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-29",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FWJA157310LDL",
@@ -7536,8 +7349,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-29",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FWJA157307IVS",
@@ -7576,8 +7388,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-29",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3AWJO107107CRD",
@@ -7616,8 +7427,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-29",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3AWJO107107PPS",
@@ -7656,8 +7466,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-29",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3AWJO107143GNL",
@@ -7696,8 +7505,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-29",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3AWJO117107INS",
@@ -7736,8 +7544,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-29",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3AWJO117150BKS",
@@ -7776,8 +7583,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3AWJO107343MTL",
@@ -7816,8 +7622,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-29",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3AWJO107343SAM",
@@ -7856,8 +7661,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-29",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3AWJO107350BKS",
@@ -7896,8 +7700,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-29",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FWJM027107CRD",
@@ -7936,8 +7739,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-29",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FWJM027110PKM",
@@ -7976,8 +7778,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-29",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FWJM027150SBS",
@@ -8016,8 +7817,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-29",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FWJA037107CRD",
@@ -8056,8 +7856,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-29",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FWJA037110PKM",
@@ -8096,8 +7895,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-29",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FWJA037146CGS",
@@ -8136,8 +7934,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-29",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FWJA047107CRD",
@@ -8176,8 +7973,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-29",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FWJA047107INS",
@@ -8216,8 +8012,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-29",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FWJA047143GNL",
@@ -8256,8 +8051,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-29",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FWJA167310LDL",
@@ -8296,8 +8090,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-29",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FWJA167350BKS",
@@ -8336,8 +8129,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-04-30",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FWJA167350YEM",
@@ -8376,8 +8168,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-29",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FWJA177307ABS",
@@ -8416,8 +8207,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-29",
-      "is_na": false,
-      "phase": "2ND TS"
+      "is_na": false
     },
     {
       "sku": "3FWJA177310LDP",
@@ -8456,8 +8246,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-29",
-      "is_na": false,
-      "phase": "2ND TS"
+      "is_na": false
     },
     {
       "sku": "3FWJA177343SAL",
@@ -8496,8 +8285,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-29",
-      "is_na": false,
-      "phase": "2ND TS"
+      "is_na": false
     },
     {
       "sku": "3AKCM017107NYS",
@@ -8536,8 +8324,7 @@ const DASHBOARD = {
       "remark": "핏변경 가봉 재진행",
       "delay_reason": "",
       "fabric_etd": "2026-05-20",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3AKCM017150PKM",
@@ -8576,8 +8363,7 @@ const DASHBOARD = {
       "remark": "핏변경 가봉 재진행",
       "delay_reason": "",
       "fabric_etd": "2026-05-20",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3AKCM017143CRS",
@@ -8616,8 +8402,7 @@ const DASHBOARD = {
       "remark": "핏변경 가봉 재진행",
       "delay_reason": "",
       "fabric_etd": "2026-05-20",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FKCM017107NYS",
@@ -8656,8 +8441,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-20",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FKCM017150PKM",
@@ -8696,8 +8480,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-20",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FKCM017143CRS",
@@ -8736,8 +8519,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-20",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3AKCM027150BKS",
@@ -8776,8 +8558,7 @@ const DASHBOARD = {
       "remark": "핏변경 가봉 재진행",
       "delay_reason": "",
       "fabric_etd": "2026-05-20",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3AKCM027150SBS",
@@ -8816,8 +8597,7 @@ const DASHBOARD = {
       "remark": "핏변경 가봉 재진행",
       "delay_reason": "",
       "fabric_etd": "2026-05-20",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3AKCM027143CRS",
@@ -8856,8 +8636,7 @@ const DASHBOARD = {
       "remark": "핏변경 가봉 재진행",
       "delay_reason": "",
       "fabric_etd": "2026-05-20",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FKCM027143CRS",
@@ -8896,8 +8675,7 @@ const DASHBOARD = {
       "remark": "품평 이후 추가건 - 신규가봉진행",
       "delay_reason": "",
       "fabric_etd": "2026-05-20",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FKCM027150PKM",
@@ -8936,8 +8714,7 @@ const DASHBOARD = {
       "remark": "품평 이후 추가건 - 신규가봉진행",
       "delay_reason": "",
       "fabric_etd": "2026-05-20",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FKCM027143MGM",
@@ -8976,8 +8753,7 @@ const DASHBOARD = {
       "remark": "품평 이후 추가건 - 신규가봉진행",
       "delay_reason": "",
       "fabric_etd": "2026-05-20",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FKCA017143GNL",
@@ -9016,8 +8792,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-20",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FKCA017150BKS",
@@ -9056,8 +8831,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-20",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FKCA017109CRS",
@@ -9096,8 +8870,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-20",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FKCA017150SBS",
@@ -9136,8 +8909,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-20",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FKCA017113BRD",
@@ -9176,8 +8948,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-20",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FKCA027150BKS",
@@ -9216,8 +8987,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-20",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FKCA027109CRS",
@@ -9256,8 +9026,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-20",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FKCA027150SBS",
@@ -9296,8 +9065,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-20",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FKCA027113BRD",
@@ -9336,8 +9104,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-20",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FKCA047109MGM",
@@ -9376,8 +9143,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-20",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FKCA047143GNL",
@@ -9416,8 +9182,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-20",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FKCA047107CRS",
@@ -9456,8 +9221,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-20",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3AKCA017109MGM",
@@ -9496,8 +9260,7 @@ const DASHBOARD = {
       "remark": "5/8기준 아트웍 미수취",
       "delay_reason": "아트웍 미수취",
       "fabric_etd": "2026-05-20",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3AKCA017109CRS",
@@ -9536,8 +9299,7 @@ const DASHBOARD = {
       "remark": "5/8기준 아트웍 미수취",
       "delay_reason": "아트웍 미수취",
       "fabric_etd": "2026-05-20",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3AKCA017107NYS",
@@ -9576,8 +9338,7 @@ const DASHBOARD = {
       "remark": "5/8기준 아트웍 미수취",
       "delay_reason": "아트웍 미수취",
       "fabric_etd": "2026-05-20",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FKCA037109CRS",
@@ -9616,8 +9377,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-20",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FKCA037107NYS",
@@ -9656,8 +9416,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-20",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FKCA057109CRS",
@@ -9696,8 +9455,7 @@ const DASHBOARD = {
       "remark": "원사/조직 TEST중 (염색투입못함),5/7 TEST 전달 -> 컨펌지연",
       "delay_reason": "원단 지연",
       "fabric_etd": "",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FKCA057150SBS",
@@ -9736,8 +9494,7 @@ const DASHBOARD = {
       "remark": "원사/조직 TEST중 (염색투입못함),5/7 TEST 전달 -> 컨펌지연",
       "delay_reason": "원단 지연",
       "fabric_etd": "",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FKCA057107BRD",
@@ -9776,8 +9533,7 @@ const DASHBOARD = {
       "remark": "원사/조직 TEST중 (염색투입못함),5/7 TEST 전달 -> 컨펌지연",
       "delay_reason": "원단 지연",
       "fabric_etd": "",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FKCM017307IVS",
@@ -9816,8 +9572,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-20",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FKCM017307SBL",
@@ -9856,8 +9611,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-20",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FKCM017307NYL",
@@ -9896,8 +9650,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-20",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FKCA017310LDL",
@@ -9936,8 +9689,7 @@ const DASHBOARD = {
       "remark": "조직 TEST 진행중 -> 여러원사 옵션 RE-TEST중 (5/8 현재 미정)",
       "delay_reason": "원단 지연",
       "fabric_etd": "",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FKCA017309CRS",
@@ -9976,8 +9728,7 @@ const DASHBOARD = {
       "remark": "조직 TEST 진행중 -> 여러원사 옵션 RE-TEST중 (5/8 현재 미정)",
       "delay_reason": "원단 지연",
       "fabric_etd": "",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FKCA017307SBL",
@@ -10016,8 +9767,7 @@ const DASHBOARD = {
       "remark": "조직 TEST 진행중 -> 여러원사 옵션 RE-TEST중 (5/8 현재 미정)",
       "delay_reason": "원단 지연",
       "fabric_etd": "",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FKCA017307NYL",
@@ -10056,8 +9806,7 @@ const DASHBOARD = {
       "remark": "조직 TEST 진행중 -> 여러원사 옵션 RE-TEST중 (5/8 현재 미정)",
       "delay_reason": "원단 지연",
       "fabric_etd": "",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3AKCS017143RDS",
@@ -10096,8 +9845,7 @@ const DASHBOARD = {
       "remark": "원사 변경 및 조직 RETEST (5/8 기준 원사 확정 안됨, 염색 진행 펜딩) 7GG 가 문제로 판단되어 14GG 원사로 RE-TEST 중",
       "delay_reason": "원단 변경",
       "fabric_etd": "",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FKPA017109MGM",
@@ -10136,8 +9884,7 @@ const DASHBOARD = {
       "remark": "재가봉 진행",
       "delay_reason": "",
       "fabric_etd": "2026-05-20",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FKPA017150BKS",
@@ -10176,8 +9923,7 @@ const DASHBOARD = {
       "remark": "재가봉 진행",
       "delay_reason": "",
       "fabric_etd": "2026-05-20",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FKPA017109CRS",
@@ -10216,8 +9962,7 @@ const DASHBOARD = {
       "remark": "재가봉 진행",
       "delay_reason": "",
       "fabric_etd": "2026-05-20",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FKPA017110PKM",
@@ -10256,8 +10001,7 @@ const DASHBOARD = {
       "remark": "재가봉 진행",
       "delay_reason": "",
       "fabric_etd": "2026-05-20",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FKPA037150SBS",
@@ -10296,8 +10040,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-20",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FKPA037109CRS",
@@ -10336,8 +10079,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-20",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FKPA037150BKS",
@@ -10376,8 +10118,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-20",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3AKPA027109CRS",
@@ -10416,8 +10157,7 @@ const DASHBOARD = {
       "remark": "품평이후 추가건 - 조직/원사 TEST 진행중",
       "delay_reason": "원단 지연",
       "fabric_etd": "",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3AKPA027109MGM",
@@ -10456,8 +10196,7 @@ const DASHBOARD = {
       "remark": "품평이후 추가건 - 조직/원사 TEST 진행중",
       "delay_reason": "원단 지연",
       "fabric_etd": "",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3AKPA027107NYS",
@@ -10496,8 +10235,7 @@ const DASHBOARD = {
       "remark": "품평이후 추가건 - 조직/원사 TEST 진행중",
       "delay_reason": "원단 지연",
       "fabric_etd": "",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FKPA057109CRS",
@@ -10536,8 +10274,7 @@ const DASHBOARD = {
       "remark": "품평이후 추가건 - 원사2개중 TEST 중 (5/7 수취하였으나 원사확정 지연)",
       "delay_reason": "원단 지연",
       "fabric_etd": "",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FKPA057110PKM",
@@ -10576,8 +10313,7 @@ const DASHBOARD = {
       "remark": "품평이후 추가건 - 원사2개중 TEST 중 (5/7 수취하였으나 원사확정 지연)",
       "delay_reason": "원단 지연",
       "fabric_etd": "",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FKPA057150SBS",
@@ -10616,8 +10352,7 @@ const DASHBOARD = {
       "remark": "품평이후 추가건 - 원사2개중 TEST 중 (5/7 수취하였으나 원사확정 지연)",
       "delay_reason": "원단 지연",
       "fabric_etd": "",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FKPA057109MGM",
@@ -10656,8 +10391,7 @@ const DASHBOARD = {
       "remark": "품평이후 추가건 - 원사2개중 TEST 중 (5/7 수취하였으나 원사확정 지연)",
       "delay_reason": "원단 지연",
       "fabric_etd": "",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FKPA057150BKS",
@@ -10696,8 +10430,7 @@ const DASHBOARD = {
       "remark": "품평이후 추가건 - 원사2개중 TEST 중 (5/7 수취하였으나 원사확정 지연)",
       "delay_reason": "원단 지연",
       "fabric_etd": "",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FKPA067109CRS",
@@ -10736,8 +10469,7 @@ const DASHBOARD = {
       "remark": "품평 이후 추가건 - 신규가봉진행",
       "delay_reason": "",
       "fabric_etd": "2026-05-20",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FKPA067143GNL",
@@ -10776,8 +10508,7 @@ const DASHBOARD = {
       "remark": "품평 이후 추가건 - 신규가봉진행",
       "delay_reason": "",
       "fabric_etd": "2026-05-20",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FKPA067107PPS",
@@ -10816,8 +10547,7 @@ const DASHBOARD = {
       "remark": "품평 이후 추가건 - 신규가봉진행",
       "delay_reason": "",
       "fabric_etd": "2026-05-20",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FKPA067109MGM",
@@ -10856,8 +10586,7 @@ const DASHBOARD = {
       "remark": "품평 이후 추가건 - 신규가봉진행",
       "delay_reason": "",
       "fabric_etd": "2026-05-20",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FKPA077107NYL",
@@ -10896,8 +10625,7 @@ const DASHBOARD = {
       "remark": "품평이후 추가건 - 원사 2개 옵션에 대한 가봉 5/4 수취하였으나 코멘트 지연중",
       "delay_reason": "원단 지연",
       "fabric_etd": "",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FKPA077109CRS",
@@ -10936,8 +10664,7 @@ const DASHBOARD = {
       "remark": "품평이후 추가건 - 원사 2개 옵션에 대한 가봉 5/4 수취하였으나 코멘트 지연중",
       "delay_reason": "원단 지연",
       "fabric_etd": "",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FKPA077109MGM",
@@ -10976,8 +10703,7 @@ const DASHBOARD = {
       "remark": "품평이후 추가건 - 원사 2개 옵션에 대한 가봉 5/4 수취하였으나 코멘트 지연중",
       "delay_reason": "원단 지연",
       "fabric_etd": "",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FKPA077150SBS",
@@ -11016,8 +10742,7 @@ const DASHBOARD = {
       "remark": "품평이후 추가건 - 원사 2개 옵션에 대한 가봉 5/4 수취하였으나 코멘트 지연중",
       "delay_reason": "원단 지연",
       "fabric_etd": "",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FKPM017307NYL",
@@ -11056,8 +10781,7 @@ const DASHBOARD = {
       "remark": "재가봉 진행",
       "delay_reason": "",
       "fabric_etd": "2026-05-20",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FKPM017343CRS",
@@ -11096,8 +10820,7 @@ const DASHBOARD = {
       "remark": "재가봉 진행",
       "delay_reason": "",
       "fabric_etd": "2026-05-20",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FKPM017350LDL",
@@ -11136,8 +10859,7 @@ const DASHBOARD = {
       "remark": "재가봉 진행",
       "delay_reason": "",
       "fabric_etd": "2026-05-20",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FKPM017307SBL",
@@ -11176,8 +10898,7 @@ const DASHBOARD = {
       "remark": "재가봉 진행",
       "delay_reason": "",
       "fabric_etd": "2026-05-20",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FKPM027307NYL",
@@ -11216,8 +10937,7 @@ const DASHBOARD = {
       "remark": "재가봉 진행",
       "delay_reason": "",
       "fabric_etd": "2026-05-20",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FKPM027307IVS",
@@ -11256,8 +10976,7 @@ const DASHBOARD = {
       "remark": "재가봉 진행",
       "delay_reason": "",
       "fabric_etd": "2026-05-20",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FKPM027350LDL",
@@ -11296,8 +11015,7 @@ const DASHBOARD = {
       "remark": "재가봉 진행",
       "delay_reason": "",
       "fabric_etd": "2026-05-20",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FKPM027307SBL",
@@ -11336,8 +11054,7 @@ const DASHBOARD = {
       "remark": "재가봉 진행",
       "delay_reason": "",
       "fabric_etd": "2026-05-20",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FKPM017143CRS",
@@ -11376,8 +11093,7 @@ const DASHBOARD = {
       "remark": "품평 이후 추가건 - 신규가봉진행",
       "delay_reason": "",
       "fabric_etd": "2026-05-20",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FKPM017150SBS",
@@ -11416,8 +11132,7 @@ const DASHBOARD = {
       "remark": "품평 이후 추가건 - 신규가봉진행",
       "delay_reason": "",
       "fabric_etd": "2026-05-20",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FKPM017150BKS",
@@ -11456,8 +11171,7 @@ const DASHBOARD = {
       "remark": "품평 이후 추가건 - 신규가봉진행",
       "delay_reason": "",
       "fabric_etd": "2026-05-20",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FKPA017313BRD",
@@ -11496,8 +11210,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "원단 지연",
       "fabric_etd": "2026-05-20",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FKPA017309CRS",
@@ -11536,8 +11249,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "원단 지연",
       "fabric_etd": "2026-05-20",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FKPA017350SBS",
@@ -11576,8 +11288,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "원단 지연",
       "fabric_etd": "",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FKPA017307NYL",
@@ -11616,8 +11327,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "원단 지연",
       "fabric_etd": "2026-05-20",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FKPA057310LDL",
@@ -11656,8 +11366,7 @@ const DASHBOARD = {
       "remark": "조직 TEST 진행중 -> 여러원사 옵션 RE-TEST중 (5/8 현재 미정)",
       "delay_reason": "원단 지연",
       "fabric_etd": "",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FKPA057307NYL",
@@ -11696,8 +11405,7 @@ const DASHBOARD = {
       "remark": "조직 TEST 진행중 -> 여러원사 옵션 RE-TEST중 (5/8 현재 미정)",
       "delay_reason": "원단 지연",
       "fabric_etd": "",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FKPA057309CRS",
@@ -11736,8 +11444,7 @@ const DASHBOARD = {
       "remark": "조직 TEST 진행중 -> 여러원사 옵션 RE-TEST중 (5/8 현재 미정)",
       "delay_reason": "원단 지연",
       "fabric_etd": "",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FKPA067307IVS",
@@ -11776,8 +11483,7 @@ const DASHBOARD = {
       "remark": "재가봉 진행",
       "delay_reason": "",
       "fabric_etd": "2026-05-20",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FKPA067307SBL",
@@ -11816,8 +11522,7 @@ const DASHBOARD = {
       "remark": "재가봉 진행",
       "delay_reason": "",
       "fabric_etd": "2026-05-20",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FKPA067307NYL",
@@ -11856,8 +11561,7 @@ const DASHBOARD = {
       "remark": "재가봉 진행",
       "delay_reason": "",
       "fabric_etd": "2026-05-20",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FKPA077307IVS",
@@ -11896,8 +11600,7 @@ const DASHBOARD = {
       "remark": "재가봉 진행",
       "delay_reason": "",
       "fabric_etd": "2026-05-20",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FKPA077307INS",
@@ -11936,8 +11639,7 @@ const DASHBOARD = {
       "remark": "재가봉 진행",
       "delay_reason": "",
       "fabric_etd": "2026-05-20",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FKPA077350YEM",
@@ -11976,8 +11678,7 @@ const DASHBOARD = {
       "remark": "재가봉 진행",
       "delay_reason": "",
       "fabric_etd": "2026-05-20",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FKPA077350BKS",
@@ -12016,8 +11717,7 @@ const DASHBOARD = {
       "remark": "재가봉 진행",
       "delay_reason": "",
       "fabric_etd": "2026-05-20",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FKPA097307IVS",
@@ -12056,8 +11756,7 @@ const DASHBOARD = {
       "remark": "품평 이후 추가건 - 조직 TEST 및 신규가봉 진행 필요 (조직 확정 안됨) / PLM 4/30 발행",
       "delay_reason": "원단 지연",
       "fabric_etd": "",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FKPA097350SBS",
@@ -12096,8 +11795,7 @@ const DASHBOARD = {
       "remark": "품평 이후 추가건 - 조직 TEST 및 신규가봉 진행 필요 (조직 확정 안됨) / PLM 4/30 발행",
       "delay_reason": "원단 지연",
       "fabric_etd": "",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FKPA107307IVS",
@@ -12136,8 +11834,7 @@ const DASHBOARD = {
       "remark": "품평 이후 추가건 - 조직 TEST 및 신규가봉 진행 필요 (조직 확정 안됨)/ PLM 5/6 발행",
       "delay_reason": "원단 지연",
       "fabric_etd": "",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FKPA107307SBL",
@@ -12176,8 +11873,7 @@ const DASHBOARD = {
       "remark": "품평 이후 추가건 - 조직 TEST 및 신규가봉 진행 필요 (조직 확정 안됨)/ PLM 5/6 발행",
       "delay_reason": "원단 지연",
       "fabric_etd": "",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FKPS017307SBL",
@@ -12216,8 +11912,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-20",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FKPS017310LDL",
@@ -12256,8 +11951,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-20",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FKPS017307IVS",
@@ -12296,8 +11990,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-20",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FKPS037350YEM",
@@ -12336,8 +12029,7 @@ const DASHBOARD = {
       "remark": "재가봉 진행",
       "delay_reason": "",
       "fabric_etd": "2026-05-20",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FKPS037307IVS",
@@ -12376,8 +12068,7 @@ const DASHBOARD = {
       "remark": "재가봉 진행",
       "delay_reason": "",
       "fabric_etd": "2026-05-20",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3AWSS017107BLD",
@@ -12416,8 +12107,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-08",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3AWSS017150GND",
@@ -12456,8 +12146,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-08",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3AWSM017150IVS",
@@ -12496,8 +12185,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-29",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3AWSS027107IVS",
@@ -12536,8 +12224,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-29",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3AWSS027150SBS",
@@ -12576,8 +12263,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-29",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3AWSM027307BLS",
@@ -12616,8 +12302,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-08",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3AWSM027350IVS",
@@ -12656,8 +12341,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-08",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3AWSS027307BLS",
@@ -12686,18 +12370,17 @@ const DASHBOARD = {
       "cn_focus_pcs": 1,
       "kr_keep_pcs": 1,
       "cn_total_pcs": 5,
-      "kr_expected": "2026-06-12",
+      "kr_expected": "2026-06-15",
       "kr_actual": null,
-      "cn_etd": "2026-06-12",
+      "cn_etd": "2026-06-15",
       "cn_atd": null,
-      "cn_rdd": "2026-06-17",
+      "cn_rdd": "2026-06-20",
       "transit_days": 5,
       "courier": "",
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-08",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3AWSS027350RDS",
@@ -12726,18 +12409,17 @@ const DASHBOARD = {
       "cn_focus_pcs": 1,
       "kr_keep_pcs": 1,
       "cn_total_pcs": 5,
-      "kr_expected": "2026-06-12",
+      "kr_expected": "2026-06-15",
       "kr_actual": null,
-      "cn_etd": "2026-06-12",
+      "cn_etd": "2026-06-15",
       "cn_atd": null,
-      "cn_rdd": "2026-06-17",
+      "cn_rdd": "2026-06-20",
       "transit_days": 5,
       "courier": "",
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-08",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FWSA027310PKL",
@@ -12766,18 +12448,17 @@ const DASHBOARD = {
       "cn_focus_pcs": 1,
       "kr_keep_pcs": 1,
       "cn_total_pcs": 4,
-      "kr_expected": "2026-06-24",
+      "kr_expected": "2026-06-12",
       "kr_actual": null,
-      "cn_etd": "2026-06-23",
+      "cn_etd": "2026-06-12",
       "cn_atd": null,
-      "cn_rdd": "2026-06-28",
+      "cn_rdd": "2026-06-17",
       "transit_days": 5,
       "courier": "",
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-04-24",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FWSA027307SBL",
@@ -12816,8 +12497,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-29",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FWSA037343SAL",
@@ -12856,8 +12536,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-29",
-      "is_na": false,
-      "phase": "2ND TS"
+      "is_na": false
     },
     {
       "sku": "3FWSA037310PKM",
@@ -12896,8 +12575,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-04-24",
-      "is_na": false,
-      "phase": "2ND TS"
+      "is_na": false
     },
     {
       "sku": "3AWSA0473A",
@@ -12926,7 +12604,7 @@ const DASHBOARD = {
       "cn_focus_pcs": 0,
       "kr_keep_pcs": 1,
       "cn_total_pcs": 4,
-      "kr_expected": "2026-06-24",
+      "kr_expected": "2026-06-28",
       "kr_actual": null,
       "cn_etd": "2026-06-23",
       "cn_atd": null,
@@ -12936,8 +12614,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "",
-      "is_na": false,
-      "phase": "2ND TS"
+      "is_na": false
     },
     {
       "sku": "3AWSA0473B",
@@ -12966,7 +12643,7 @@ const DASHBOARD = {
       "cn_focus_pcs": 0,
       "kr_keep_pcs": 1,
       "cn_total_pcs": 4,
-      "kr_expected": "2026-06-24",
+      "kr_expected": "2026-06-28",
       "kr_actual": null,
       "cn_etd": "2026-06-23",
       "cn_atd": null,
@@ -12976,8 +12653,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "",
-      "is_na": false,
-      "phase": "2ND TS"
+      "is_na": false
     },
     {
       "sku": "3AWSA0473C",
@@ -13006,7 +12682,7 @@ const DASHBOARD = {
       "cn_focus_pcs": 0,
       "kr_keep_pcs": 1,
       "cn_total_pcs": 4,
-      "kr_expected": "2026-06-24",
+      "kr_expected": "2026-06-28",
       "kr_actual": null,
       "cn_etd": "2026-06-23",
       "cn_atd": null,
@@ -13016,8 +12692,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "",
-      "is_na": false,
-      "phase": "2ND TS"
+      "is_na": false
     },
     {
       "sku": "3AWSA057143SAL",
@@ -13056,8 +12731,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-29",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3AWSA057110PKM",
@@ -13096,8 +12770,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-29",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3AWSA057107BLD",
@@ -13136,8 +12809,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-29",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FWSS017110PKL",
@@ -13176,8 +12848,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-29",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FWSS017150CRS",
@@ -13216,8 +12887,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-29",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FWSS027307NYL",
@@ -13256,8 +12926,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-29",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FWSS027307BLD",
@@ -13296,8 +12965,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-29",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FWSS027350YEM",
@@ -13336,8 +13004,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-29",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FTSM017350BKS",
@@ -13376,8 +13043,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-27",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FTSM017350PKM",
@@ -13416,8 +13082,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-27",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FTSM017307IVS",
@@ -13456,8 +13121,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-27",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FTSM027350BKS",
@@ -13496,8 +13160,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-27",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FTSM027350LDL",
@@ -13536,8 +13199,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-27",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FTSM027350YEM",
@@ -13576,8 +13238,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-27",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FTSM027307IVS",
@@ -13616,8 +13277,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-27",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FTSM037350BKS",
@@ -13656,8 +13316,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-27",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FTSM037350LDL",
@@ -13696,8 +13355,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-27",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FTSM037350YEM",
@@ -13736,8 +13394,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-04-26",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FTSM037307IVS",
@@ -13776,8 +13433,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-27",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3ATSM017343BKS",
@@ -13816,8 +13472,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-27",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3ATSM017307PKM",
@@ -13856,8 +13511,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-04-28",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3ATSM017350WHS",
@@ -13896,8 +13550,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-04-28",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3ATSM027343BKS",
@@ -13936,8 +13589,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-27",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3ATSM027307SBS",
@@ -13976,8 +13628,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-27",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3ATSM027350WHS",
@@ -14016,8 +13667,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-27",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3ATSM037350BKS",
@@ -14056,8 +13706,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-27",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3ATSM037350SBS",
@@ -14096,8 +13745,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-27",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3ATSM037307IVS",
@@ -14136,8 +13784,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-27",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3ATSM047307NYS",
@@ -14176,8 +13823,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-06-05",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3ATSM047350YEM",
@@ -14216,8 +13862,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-06-05",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3ATSM047343CRS",
@@ -14256,8 +13901,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-06-05",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FTSD017350SBS",
@@ -14296,8 +13940,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "COCRE",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FTSD017350BKS",
@@ -14326,7 +13969,7 @@ const DASHBOARD = {
       "cn_focus_pcs": 0,
       "kr_keep_pcs": 1,
       "cn_total_pcs": 3,
-      "kr_expected": "2026-06-12",
+      "kr_expected": "2026-06-16",
       "kr_actual": null,
       "cn_etd": "2026-06-11",
       "cn_atd": null,
@@ -14336,8 +13979,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "COCRE",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FTSD017313WHS",
@@ -14366,7 +14008,7 @@ const DASHBOARD = {
       "cn_focus_pcs": 0,
       "kr_keep_pcs": 1,
       "cn_total_pcs": 3,
-      "kr_expected": "2026-06-12",
+      "kr_expected": "2026-06-16",
       "kr_actual": null,
       "cn_etd": "2026-06-11",
       "cn_atd": null,
@@ -14376,8 +14018,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "COCRE",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FTSD017309MGM",
@@ -14416,8 +14057,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "COCRE",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FTSD017313BRD",
@@ -14446,7 +14086,7 @@ const DASHBOARD = {
       "cn_focus_pcs": 0,
       "kr_keep_pcs": 1,
       "cn_total_pcs": 3,
-      "kr_expected": "2026-06-12",
+      "kr_expected": "2026-06-16",
       "kr_actual": null,
       "cn_etd": "2026-06-11",
       "cn_atd": null,
@@ -14456,8 +14096,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "COCRE",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FTSD027350SBS",
@@ -14496,8 +14135,7 @@ const DASHBOARD = {
       "remark": "(5/7) 아트웍 미정",
       "delay_reason": "",
       "fabric_etd": "2026-05-27",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FTSD027310PKM",
@@ -14536,8 +14174,7 @@ const DASHBOARD = {
       "remark": "(5/7) 아트웍 미정",
       "delay_reason": "",
       "fabric_etd": "2026-05-27",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FTSD027313BRD",
@@ -14576,8 +14213,7 @@ const DASHBOARD = {
       "remark": "(5/7) 아트웍 미정",
       "delay_reason": "",
       "fabric_etd": "2026-05-27",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FTSD027309CRS",
@@ -14616,8 +14252,7 @@ const DASHBOARD = {
       "remark": "(5/7) 아트웍 미정",
       "delay_reason": "",
       "fabric_etd": "2026-04-24",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FTSD027350BKS",
@@ -14656,8 +14291,7 @@ const DASHBOARD = {
       "remark": "(5/7) 아트웍 미정",
       "delay_reason": "",
       "fabric_etd": "2026-04-24",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FTSD027350CRS",
@@ -14696,8 +14330,7 @@ const DASHBOARD = {
       "remark": "(5/7) 아트웍 미정",
       "delay_reason": "",
       "fabric_etd": "2026-04-24",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3ATSD017150BKS",
@@ -14736,8 +14369,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "COCRE",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3ATSD017113BRD",
@@ -14776,8 +14408,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "COCRE",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3ATSD017113WHS",
@@ -14816,8 +14447,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "COCRE",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3ATSD017109MGM",
@@ -14856,8 +14486,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "COCRE",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3ATSD017143GNL",
@@ -14896,8 +14525,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "COCRE",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3ATSD017150SBS",
@@ -14936,8 +14564,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "COCRE",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3ATSD017350BKS",
@@ -14966,7 +14593,7 @@ const DASHBOARD = {
       "cn_focus_pcs": 0,
       "kr_keep_pcs": 1,
       "cn_total_pcs": 4,
-      "kr_expected": "2026-06-12",
+      "kr_expected": "2026-06-16",
       "kr_actual": null,
       "cn_etd": "2026-06-11",
       "cn_atd": null,
@@ -14976,8 +14603,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "COCRE",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3ATSD017313BRD",
@@ -15006,7 +14632,7 @@ const DASHBOARD = {
       "cn_focus_pcs": 0,
       "kr_keep_pcs": 1,
       "cn_total_pcs": 4,
-      "kr_expected": "2026-06-12",
+      "kr_expected": "2026-06-16",
       "kr_actual": null,
       "cn_etd": "2026-06-11",
       "cn_atd": null,
@@ -15016,8 +14642,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "COCRE",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3ATSD017310PKM",
@@ -15046,18 +14671,17 @@ const DASHBOARD = {
       "cn_focus_pcs": 0,
       "kr_keep_pcs": 1,
       "cn_total_pcs": 4,
-      "kr_expected": "2026-06-16",
+      "kr_expected": "2026-06-22",
       "kr_actual": null,
-      "cn_etd": "2026-06-16",
+      "cn_etd": "2026-06-22",
       "cn_atd": null,
-      "cn_rdd": "2026-06-21",
+      "cn_rdd": "2026-06-27",
       "transit_days": 0,
       "courier": "",
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "COCRE",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3ATSD017350SBS",
@@ -15086,18 +14710,17 @@ const DASHBOARD = {
       "cn_focus_pcs": 0,
       "kr_keep_pcs": 1,
       "cn_total_pcs": 4,
-      "kr_expected": "2026-06-16",
+      "kr_expected": "2026-06-22",
       "kr_actual": null,
-      "cn_etd": "2026-06-16",
+      "cn_etd": "2026-06-22",
       "cn_atd": null,
-      "cn_rdd": "2026-06-21",
+      "cn_rdd": "2026-06-27",
       "transit_days": 0,
       "courier": "",
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "COCRE",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3ATSD017309MGM",
@@ -15136,8 +14759,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "COCRE",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3ATSD017313WHS",
@@ -15166,7 +14788,7 @@ const DASHBOARD = {
       "cn_focus_pcs": 0,
       "kr_keep_pcs": 1,
       "cn_total_pcs": 4,
-      "kr_expected": "2026-06-12",
+      "kr_expected": "2026-06-16",
       "kr_actual": null,
       "cn_etd": "2026-06-11",
       "cn_atd": null,
@@ -15176,8 +14798,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "COCRE",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3ATSD027350BKS",
@@ -15206,7 +14827,7 @@ const DASHBOARD = {
       "cn_focus_pcs": 0,
       "kr_keep_pcs": 1,
       "cn_total_pcs": 4,
-      "kr_expected": "2026-06-12",
+      "kr_expected": "2026-06-16",
       "kr_actual": null,
       "cn_etd": "2026-06-11",
       "cn_atd": null,
@@ -15216,8 +14837,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "COCRE",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3ATSD027307NYS",
@@ -15246,18 +14866,17 @@ const DASHBOARD = {
       "cn_focus_pcs": 0,
       "kr_keep_pcs": 1,
       "cn_total_pcs": 4,
-      "kr_expected": "2026-06-16",
+      "kr_expected": "2026-06-22",
       "kr_actual": null,
-      "cn_etd": "2026-06-16",
+      "cn_etd": "2026-06-22",
       "cn_atd": null,
-      "cn_rdd": "2026-06-21",
+      "cn_rdd": "2026-06-27",
       "transit_days": 0,
       "courier": "",
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "COCRE",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3ATSD027343SAM",
@@ -15286,18 +14905,17 @@ const DASHBOARD = {
       "cn_focus_pcs": 0,
       "kr_keep_pcs": 1,
       "cn_total_pcs": 4,
-      "kr_expected": "2026-06-16",
+      "kr_expected": "2026-06-22",
       "kr_actual": null,
-      "cn_etd": "2026-06-16",
+      "cn_etd": "2026-06-22",
       "cn_atd": null,
-      "cn_rdd": "2026-06-21",
+      "cn_rdd": "2026-06-27",
       "transit_days": 0,
       "courier": "",
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "COCRE",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3ATSD027302WID",
@@ -15326,18 +14944,17 @@ const DASHBOARD = {
       "cn_focus_pcs": 0,
       "kr_keep_pcs": 1,
       "cn_total_pcs": 4,
-      "kr_expected": "2026-06-16",
+      "kr_expected": "2026-06-22",
       "kr_actual": null,
-      "cn_etd": "2026-06-16",
+      "cn_etd": "2026-06-22",
       "cn_atd": null,
-      "cn_rdd": "2026-06-21",
+      "cn_rdd": "2026-06-27",
       "transit_days": 0,
       "courier": "",
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "COCRE",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3ATSD027350WHS",
@@ -15366,7 +14983,7 @@ const DASHBOARD = {
       "cn_focus_pcs": 0,
       "kr_keep_pcs": 1,
       "cn_total_pcs": 4,
-      "kr_expected": "2026-06-12",
+      "kr_expected": "2026-06-16",
       "kr_actual": null,
       "cn_etd": "2026-06-11",
       "cn_atd": null,
@@ -15376,8 +14993,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "COCRE",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3ATSD037350BKS",
@@ -15406,7 +15022,7 @@ const DASHBOARD = {
       "cn_focus_pcs": 0,
       "kr_keep_pcs": 1,
       "cn_total_pcs": 4,
-      "kr_expected": "2026-06-12",
+      "kr_expected": "2026-06-16",
       "kr_actual": null,
       "cn_etd": "2026-06-11",
       "cn_atd": null,
@@ -15416,8 +15032,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "COCRE",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3ATSD037350SBS",
@@ -15446,7 +15061,7 @@ const DASHBOARD = {
       "cn_focus_pcs": 0,
       "kr_keep_pcs": 1,
       "cn_total_pcs": 4,
-      "kr_expected": "2026-06-12",
+      "kr_expected": "2026-06-16",
       "kr_actual": null,
       "cn_etd": "2026-06-11",
       "cn_atd": null,
@@ -15456,8 +15071,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "COCRE",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3ATSD037343GND",
@@ -15486,7 +15100,7 @@ const DASHBOARD = {
       "cn_focus_pcs": 0,
       "kr_keep_pcs": 1,
       "cn_total_pcs": 4,
-      "kr_expected": "2026-06-12",
+      "kr_expected": "2026-06-16",
       "kr_actual": null,
       "cn_etd": "2026-06-11",
       "cn_atd": null,
@@ -15496,8 +15110,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "COCRE",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3ATSD037309CRS",
@@ -15526,7 +15139,7 @@ const DASHBOARD = {
       "cn_focus_pcs": 0,
       "kr_keep_pcs": 1,
       "cn_total_pcs": 4,
-      "kr_expected": "2026-06-12",
+      "kr_expected": "2026-06-16",
       "kr_actual": null,
       "cn_etd": "2026-06-11",
       "cn_atd": null,
@@ -15536,8 +15149,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "COCRE",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3ATSD047350BKS",
@@ -15576,8 +15188,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "COCRE",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3ATSD047307INS",
@@ -15616,8 +15227,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "COCRE",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3ATSD047313WHS",
@@ -15656,8 +15266,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "COCRE",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3ATSD047350YEM",
@@ -15696,8 +15305,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "COCRE",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3ATSD047343SAM",
@@ -15736,8 +15344,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "COCRE",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FTSA017150SBS",
@@ -15776,8 +15383,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-27",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FTSA017150BKS",
@@ -15816,8 +15422,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-04-27",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FTSA017107CRS",
@@ -15856,8 +15461,7 @@ const DASHBOARD = {
       "remark": "it s/b 09CRS",
       "delay_reason": "",
       "fabric_etd": "2026-04-27",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FTSA027110PKM",
@@ -15896,8 +15500,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-27",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FTSA027150BKS",
@@ -15936,8 +15539,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-04-27",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FTSA027107CRS",
@@ -15976,8 +15578,7 @@ const DASHBOARD = {
       "remark": "it s/b 09CRS",
       "delay_reason": "",
       "fabric_etd": "2026-04-27",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FTSA037109CRS",
@@ -16016,8 +15617,7 @@ const DASHBOARD = {
       "remark": "(5/7) 아트웍 미정",
       "delay_reason": "",
       "fabric_etd": "2026-04-27",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FTSA037150BKS",
@@ -16056,8 +15656,7 @@ const DASHBOARD = {
       "remark": "(5/7) 아트웍 미정",
       "delay_reason": "",
       "fabric_etd": "2026-04-27",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FTSA037150SBS",
@@ -16096,8 +15695,7 @@ const DASHBOARD = {
       "remark": "(5/7) 아트웍 미정",
       "delay_reason": "",
       "fabric_etd": "2026-05-27",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FTSA047113BRD",
@@ -16136,8 +15734,7 @@ const DASHBOARD = {
       "remark": "원단: 6/15 원단생산완료 예정. 6/19 수취 예상",
       "delay_reason": "",
       "fabric_etd": "2026-06-08",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FTSA047150BKS",
@@ -16176,8 +15773,7 @@ const DASHBOARD = {
       "remark": "원단: 5/15 수취 예정",
       "delay_reason": "",
       "fabric_etd": "2026-04-28",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FTSA047107IVS",
@@ -16216,8 +15812,7 @@ const DASHBOARD = {
       "remark": "원단: 5/15 수취 예정",
       "delay_reason": "",
       "fabric_etd": "2026-04-28",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FTSA047143GNL",
@@ -16256,8 +15851,7 @@ const DASHBOARD = {
       "remark": "원단: 6/15 원단생산완료 예정. 6/19 수취 예상",
       "delay_reason": "",
       "fabric_etd": "2026-06-08",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FTSA057107PPS",
@@ -16296,8 +15890,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-27",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FTSA057150SBS",
@@ -16336,8 +15929,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-27",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FTSA057150BKS",
@@ -16376,8 +15968,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-27",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FTSA057107IVS",
@@ -16416,8 +16007,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-27",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FTSA057113BRD",
@@ -16456,8 +16046,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-27",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FTSA067107IVS",
@@ -16496,8 +16085,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-27",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FTSA067109MGM",
@@ -16536,8 +16124,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-27",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FTSA067110PKM",
@@ -16576,8 +16163,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-27",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FTSA067143GNL",
@@ -16616,8 +16202,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-27",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FTSA067150BKS",
@@ -16656,8 +16241,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-27",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FTSA077107IVS",
@@ -16696,8 +16280,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-06-08",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FTSA077107PPS",
@@ -16736,8 +16319,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-06-08",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FTSA077113BRD",
@@ -16776,8 +16358,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-06-08",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FTSA077143GNL",
@@ -16816,8 +16397,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-06-08",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FTSA087109MGM",
@@ -16856,8 +16436,7 @@ const DASHBOARD = {
       "remark": "(5/7) 아트웍 미정",
       "delay_reason": "",
       "fabric_etd": "2026-05-27",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FTSA087110PKM",
@@ -16896,8 +16475,7 @@ const DASHBOARD = {
       "remark": "(5/7) 아트웍 미정",
       "delay_reason": "",
       "fabric_etd": "2026-05-27",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FTSA087113BRD",
@@ -16936,8 +16514,7 @@ const DASHBOARD = {
       "remark": "(5/7) 아트웍 미정",
       "delay_reason": "",
       "fabric_etd": "2026-05-27",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FTSA087150BKS",
@@ -16976,8 +16553,7 @@ const DASHBOARD = {
       "remark": "(5/7) 아트웍 미정",
       "delay_reason": "",
       "fabric_etd": "2026-05-27",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FTSA097109MGM",
@@ -17016,8 +16592,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-27",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FTSA097113BRD",
@@ -17056,8 +16631,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-27",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FTSA097110PKM",
@@ -17096,8 +16670,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-27",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FTSA097150SBS",
@@ -17136,8 +16709,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-27",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FTSA107107IVS",
@@ -17176,8 +16748,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-27",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FTSA107113BRD",
@@ -17216,8 +16787,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-27",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FTSA107143GNL",
@@ -17256,8 +16826,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-27",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FTSA107150BKS",
@@ -17296,8 +16865,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-27",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FTSA107150SBS",
@@ -17336,8 +16904,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-27",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FTSA017307PPS",
@@ -17376,8 +16943,7 @@ const DASHBOARD = {
       "remark": "원단: 6/15 원단생산완료 예정. 6/19 수취 예상, RIB: 6/1 수취 예정",
       "delay_reason": "",
       "fabric_etd": "2026-06-08",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FTSA017310PKM",
@@ -17416,8 +16982,7 @@ const DASHBOARD = {
       "remark": "원단: 6/15 원단생산완료 예정. 6/19 수취 예상, RIB: 6/1 수취 예정",
       "delay_reason": "",
       "fabric_etd": "2026-06-08",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FTSA017313BRD",
@@ -17456,8 +17021,7 @@ const DASHBOARD = {
       "remark": "원단: 6/15 원단생산완료 예정. 6/19 수취 예상, RIB: 6/1 수취 예정",
       "delay_reason": "",
       "fabric_etd": "2026-06-08",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FTSA017307IVS",
@@ -17496,8 +17060,7 @@ const DASHBOARD = {
       "remark": "원단: 5/15 수취 예정",
       "delay_reason": "",
       "fabric_etd": "2026-04-28",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FTSA017343GNL",
@@ -17536,8 +17099,7 @@ const DASHBOARD = {
       "remark": "원단: 6/15 원단생산완료 예정. 6/19 수취 예상, RIB: 6/1 수취 예정",
       "delay_reason": "",
       "fabric_etd": "2026-06-08",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FTSA027307PPS",
@@ -17576,8 +17138,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-04-24",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FTSA027343GNL",
@@ -17616,8 +17177,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-27",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FTSA027350SBS",
@@ -17656,8 +17216,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-27",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FTSA027350BKS",
@@ -17696,8 +17255,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-04-24",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FTSA027307IVS",
@@ -17736,8 +17294,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-04-24",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FTSA037313BRD",
@@ -17776,8 +17333,7 @@ const DASHBOARD = {
       "remark": "원단: 6/15 원단생산완료 예정. 6/19 수취 예상, RIB: 6/1 수취 예정",
       "delay_reason": "",
       "fabric_etd": "2026-06-08",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FTSA037310LDL",
@@ -17816,8 +17372,7 @@ const DASHBOARD = {
       "remark": "원단: 5/15 수취 예정 (총발주량의 50% 먼저 수취 예정)",
       "delay_reason": "",
       "fabric_etd": "2026-06-08",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FTSA037350BKS",
@@ -17856,8 +17411,7 @@ const DASHBOARD = {
       "remark": "원단: 5/15 수취 예정",
       "delay_reason": "",
       "fabric_etd": "2026-04-28",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FTSA037307IVS",
@@ -17896,8 +17450,7 @@ const DASHBOARD = {
       "remark": "원단: 5/15 수취 예정",
       "delay_reason": "",
       "fabric_etd": "2026-04-28",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FTSA047307IVS",
@@ -17936,8 +17489,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-27",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FTSA047350BKS",
@@ -17976,8 +17528,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-27",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FTSA047350SBS",
@@ -18016,8 +17567,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-27",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FTSA057350YEM",
@@ -18056,8 +17606,7 @@ const DASHBOARD = {
       "remark": "원단: 6/15 원단생산완료 예정. 6/19 수취 예상, RIB: 6/1 수취 예정",
       "delay_reason": "",
       "fabric_etd": "2026-05-27",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FTSA057350BKS",
@@ -18096,8 +17645,7 @@ const DASHBOARD = {
       "remark": "원단: 5/15 수취 예정, RIB: 6/1 수취 예정",
       "delay_reason": "",
       "fabric_etd": "2026-04-28",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FTSA057307IVS",
@@ -18136,8 +17684,7 @@ const DASHBOARD = {
       "remark": "원단: 5/15 수취 예정, RIB: 6/1 수취 예정",
       "delay_reason": "",
       "fabric_etd": "2026-04-28",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FTSA067307SBL",
@@ -18176,8 +17723,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-27",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FTSA067350BKS",
@@ -18216,8 +17762,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-04-27",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FTSA067307IVS",
@@ -18256,8 +17801,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FTSA067343SAL",
@@ -18296,8 +17840,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-27",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FTSA077343SAL",
@@ -18336,8 +17879,7 @@ const DASHBOARD = {
       "remark": "원단: 6/15 원단생산완료 예정. 6/19 수취 예상",
       "delay_reason": "",
       "fabric_etd": "2026-05-27",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FTSA077350BKS",
@@ -18376,8 +17918,7 @@ const DASHBOARD = {
       "remark": "원단: 5/15 수취 예정",
       "delay_reason": "",
       "fabric_etd": "2026-04-28",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FTSA077307IVS",
@@ -18416,8 +17957,7 @@ const DASHBOARD = {
       "remark": "원단: 5/15 수취 예정",
       "delay_reason": "",
       "fabric_etd": "2026-04-28",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FTSA087307IVS",
@@ -18456,8 +17996,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-27",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FTSA087313BRD",
@@ -18496,8 +18035,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-27",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FTSA087350BKS",
@@ -18536,8 +18074,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-27",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FTSA087310PKM",
@@ -18576,8 +18113,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-27",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FTSA097350BKS",
@@ -18616,8 +18152,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-27",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FTSA097313WHS",
@@ -18646,18 +18181,17 @@ const DASHBOARD = {
       "cn_focus_pcs": 0,
       "kr_keep_pcs": 1,
       "cn_total_pcs": 3,
-      "kr_expected": "2026-06-16",
+      "kr_expected": "2026-06-22",
       "kr_actual": null,
-      "cn_etd": "2026-06-16",
+      "cn_etd": "2026-06-22",
       "cn_atd": null,
-      "cn_rdd": "2026-06-21",
+      "cn_rdd": "2026-06-27",
       "transit_days": 0,
       "courier": "",
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-04-28",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FTSA097350YEM",
@@ -18696,8 +18230,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-27",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FTSA107307INS",
@@ -18736,8 +18269,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-27",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FTSA107350BKS",
@@ -18766,7 +18298,7 @@ const DASHBOARD = {
       "cn_focus_pcs": 0,
       "kr_keep_pcs": 1,
       "cn_total_pcs": 3,
-      "kr_expected": "2026-06-12",
+      "kr_expected": "2026-06-16",
       "kr_actual": null,
       "cn_etd": "2026-06-11",
       "cn_atd": null,
@@ -18776,8 +18308,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-04-20",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FTSA107307IVS",
@@ -18806,7 +18337,7 @@ const DASHBOARD = {
       "cn_focus_pcs": 0,
       "kr_keep_pcs": 1,
       "cn_total_pcs": 3,
-      "kr_expected": "2026-06-12",
+      "kr_expected": "2026-06-16",
       "kr_actual": null,
       "cn_etd": "2026-06-11",
       "cn_atd": null,
@@ -18816,8 +18347,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-04-20",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FTSA107350YEM",
@@ -18856,8 +18386,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-27",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FTSA117310LDL",
@@ -18896,8 +18425,7 @@ const DASHBOARD = {
       "remark": "원단: 5/15 수취 예정 (총발주량의 50% 먼저 수취 예정)",
       "delay_reason": "",
       "fabric_etd": "2026-06-08",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FTSA117350BKS",
@@ -18936,8 +18464,7 @@ const DASHBOARD = {
       "remark": "원단: 5/15 수취 예정",
       "delay_reason": "",
       "fabric_etd": "2026-04-28",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FTSA117307IVS",
@@ -18976,8 +18503,7 @@ const DASHBOARD = {
       "remark": "원단: 5/15 수취 예정",
       "delay_reason": "",
       "fabric_etd": "2026-04-28",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FTSA127310LDL",
@@ -19016,8 +18542,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-27",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FTSA127350BKS",
@@ -19056,8 +18581,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-04-27",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FTSA127309CRS",
@@ -19096,8 +18620,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-04-27",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FTSA137309MGM",
@@ -19136,8 +18659,7 @@ const DASHBOARD = {
       "remark": "(5/7) 아트웍 미정",
       "delay_reason": "",
       "fabric_etd": "2026-04-24",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FTSA137343RDL",
@@ -19176,8 +18698,7 @@ const DASHBOARD = {
       "remark": "(5/7) 아트웍 미정",
       "delay_reason": "",
       "fabric_etd": "2026-04-24",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FTSA137350BKS",
@@ -19216,8 +18737,7 @@ const DASHBOARD = {
       "remark": "(5/7) 아트웍 미정",
       "delay_reason": "",
       "fabric_etd": "2026-04-24",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FTSA137307IVS",
@@ -19256,8 +18776,7 @@ const DASHBOARD = {
       "remark": "(5/7) 아트웍 미정",
       "delay_reason": "",
       "fabric_etd": "2026-04-24",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FTSA137343GNL",
@@ -19296,8 +18815,7 @@ const DASHBOARD = {
       "remark": "(5/7) 아트웍 미정",
       "delay_reason": "",
       "fabric_etd": "2026-05-27",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FTSA137350SBS",
@@ -19336,8 +18854,7 @@ const DASHBOARD = {
       "remark": "(5/7) 아트웍 미정",
       "delay_reason": "",
       "fabric_etd": "2026-05-27",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FTSA147307SBL",
@@ -19376,8 +18893,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-06-05",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FTSA147309MGS",
@@ -19416,8 +18932,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-06-05",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FTSA147350LDL",
@@ -19456,8 +18971,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-06-05",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FTSA157307IVS",
@@ -19496,8 +19010,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-27",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FTSA157343GNL",
@@ -19536,8 +19049,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-27",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FTSA157350BKS",
@@ -19576,8 +19088,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-27",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FTSA157350SBS",
@@ -19616,8 +19127,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-27",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FTSA167307NYS",
@@ -19656,8 +19166,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-06-08",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FTSA167313IVS",
@@ -19696,8 +19205,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FTSA167313WHS",
@@ -19736,8 +19244,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-06-08",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FTSA167343MTL",
@@ -19776,8 +19283,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-06-08",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FTSA167350YEM",
@@ -19816,8 +19322,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-06-08",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FTSA177307IVS",
@@ -19856,8 +19361,7 @@ const DASHBOARD = {
       "remark": "원단: 5/15 수취 예정",
       "delay_reason": "",
       "fabric_etd": "2026-04-28",
-      "is_na": false,
-      "phase": "2ND TS"
+      "is_na": false
     },
     {
       "sku": "3FTSA177307SBL",
@@ -19896,8 +19400,7 @@ const DASHBOARD = {
       "remark": "원단: 6/15 원단생산완료 예정. 6/19 수취 예상",
       "delay_reason": "",
       "fabric_etd": "2026-06-08",
-      "is_na": false,
-      "phase": "2ND TS"
+      "is_na": false
     },
     {
       "sku": "3FTSA177350BKS",
@@ -19936,8 +19439,7 @@ const DASHBOARD = {
       "remark": "원단: 5/15 수취 예정",
       "delay_reason": "",
       "fabric_etd": "2026-04-28",
-      "is_na": false,
-      "phase": "2ND TS"
+      "is_na": false
     },
     {
       "sku": "3FTSA317307IVS",
@@ -19976,8 +19478,7 @@ const DASHBOARD = {
       "remark": "(5/7) 아트웍 미정",
       "delay_reason": "",
       "fabric_etd": "2026-05-27",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FTSA317343MTL",
@@ -20016,8 +19517,7 @@ const DASHBOARD = {
       "remark": "(5/7) 아트웍 미정",
       "delay_reason": "",
       "fabric_etd": "2026-05-27",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FTSA317313BRD",
@@ -20056,8 +19556,7 @@ const DASHBOARD = {
       "remark": "(5/7) 아트웍 미정",
       "delay_reason": "",
       "fabric_etd": "2026-05-27",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FTSA317350BKS",
@@ -20096,8 +19595,7 @@ const DASHBOARD = {
       "remark": "(5/7) 아트웍 미정",
       "delay_reason": "",
       "fabric_etd": "2026-04-24",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FTSA327307IVS",
@@ -20136,8 +19634,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-27",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FTSA327350BKS",
@@ -20176,8 +19673,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-04-24",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FTSA327310LDL",
@@ -20216,8 +19712,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-27",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FTSA327350YEM",
@@ -20256,8 +19751,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-27",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FTSA337307IVS",
@@ -20296,8 +19790,7 @@ const DASHBOARD = {
       "remark": "(5/7) 아트웍 미정",
       "delay_reason": "",
       "fabric_etd": "2026-06-05",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FTSA337310LDL",
@@ -20336,8 +19829,7 @@ const DASHBOARD = {
       "remark": "(5/7) 아트웍 미정",
       "delay_reason": "",
       "fabric_etd": "2026-06-05",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FTSA337307NYL",
@@ -20376,8 +19868,7 @@ const DASHBOARD = {
       "remark": "(5/7) 아트웍 미정",
       "delay_reason": "",
       "fabric_etd": "2026-06-05",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FTSA347313WHS",
@@ -20416,8 +19907,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-04-27",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FTSA347350BKS",
@@ -20456,8 +19946,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-04-27",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FTSA347307SBL",
@@ -20496,8 +19985,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-04-27",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FTSA367307SBL",
@@ -20536,8 +20024,7 @@ const DASHBOARD = {
       "remark": "원단: 6/15 원단생산완료 예정. 6/19 수취 예상, RIB: 6/1 수취 예정",
       "delay_reason": "",
       "fabric_etd": "2026-06-08",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FTSA367350BKS",
@@ -20576,8 +20063,7 @@ const DASHBOARD = {
       "remark": "원단: 5/15 수취 예정, RIB: 6/1 수취 예정",
       "delay_reason": "",
       "fabric_etd": "2026-04-28",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FTSA367313WHS",
@@ -20616,8 +20102,7 @@ const DASHBOARD = {
       "remark": "원단: 5/15 수취 예정, RIB: 6/1 수취 예정",
       "delay_reason": "",
       "fabric_etd": "2026-04-28",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FTSA377313WHS",
@@ -20656,8 +20141,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-04-24",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FTSA377350YEM",
@@ -20696,8 +20180,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-27",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FTSA377307SBL",
@@ -20736,8 +20219,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-04-24",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3ATSA707107CRS",
@@ -20776,8 +20258,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-27",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3ATSA707143NYS",
@@ -20816,8 +20297,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-27",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3ATSA707150SBS",
@@ -20856,8 +20336,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-27",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3ATSA717107IVS",
@@ -20896,8 +20375,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-04-28",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3ATSA717107INS",
@@ -20936,8 +20414,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-27",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3ATSA717150BKS",
@@ -20976,8 +20453,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-27",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3ATSA727107NYS",
@@ -21016,8 +20492,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-27",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3ATSA727109MGM",
@@ -21056,8 +20531,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-27",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3ATSA727113BRD",
@@ -21096,8 +20570,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-27",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3ATSA707307NYS",
@@ -21136,8 +20609,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3ATSA707343GND",
@@ -21176,8 +20648,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-27",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3ATSA707310PKM",
@@ -21216,8 +20687,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-27",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3ATSA707343RDS",
@@ -21256,8 +20726,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-27",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3ATSA717350YED",
@@ -21296,8 +20765,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-27",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3ATSA717350WHS",
@@ -21336,8 +20804,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-04-28",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3ATSA717307NYL",
@@ -21376,8 +20843,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-27",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3ATSA717307SBL",
@@ -21416,8 +20882,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-27",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3ATSA727313WHS",
@@ -21446,18 +20911,17 @@ const DASHBOARD = {
       "cn_focus_pcs": 0,
       "kr_keep_pcs": 1,
       "cn_total_pcs": 4,
-      "kr_expected": "2026-06-16",
+      "kr_expected": "2026-06-22",
       "kr_actual": null,
-      "cn_etd": "2026-06-16",
+      "cn_etd": "2026-06-22",
       "cn_atd": null,
-      "cn_rdd": "2026-06-21",
+      "cn_rdd": "2026-06-27",
       "transit_days": 0,
       "courier": "",
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-04-28",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3ATSA727343GND",
@@ -21486,18 +20950,17 @@ const DASHBOARD = {
       "cn_focus_pcs": 0,
       "kr_keep_pcs": 1,
       "cn_total_pcs": 4,
-      "kr_expected": "2026-06-22",
+      "kr_expected": "2026-06-16",
       "kr_actual": null,
-      "cn_etd": "2026-06-22",
+      "cn_etd": "2026-06-11",
       "cn_atd": null,
-      "cn_rdd": "2026-06-27",
+      "cn_rdd": "2026-06-16",
       "transit_days": 0,
       "courier": "",
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-27",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3ATSA727307NYL",
@@ -21536,8 +20999,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-27",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3ATSA747313WHS",
@@ -21576,8 +21038,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-27",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3ATSA747307INS",
@@ -21616,8 +21077,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-27",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3ATSA747350BKS",
@@ -21646,7 +21106,7 @@ const DASHBOARD = {
       "cn_focus_pcs": 0,
       "kr_keep_pcs": 1,
       "cn_total_pcs": 4,
-      "kr_expected": "2026-06-12",
+      "kr_expected": "2026-06-16",
       "kr_actual": null,
       "cn_etd": "2026-06-11",
       "cn_atd": null,
@@ -21656,8 +21116,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-04-20",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3ATSA747343SAM",
@@ -21696,8 +21155,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-27",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3ATSA757307IVS",
@@ -21726,7 +21184,7 @@ const DASHBOARD = {
       "cn_focus_pcs": 1,
       "kr_keep_pcs": 1,
       "cn_total_pcs": 5,
-      "kr_expected": "2026-06-12",
+      "kr_expected": "2026-06-16",
       "kr_actual": null,
       "cn_etd": "2026-06-11",
       "cn_atd": null,
@@ -21736,8 +21194,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-04-20",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3ATSA757307INS",
@@ -21776,8 +21233,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-27",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3ATSA757307NYL",
@@ -21816,8 +21272,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-27",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3ATSA757350YEM",
@@ -21856,8 +21311,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-27",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3ATSA767307SBL",
@@ -21896,8 +21350,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-27",
-      "is_na": false,
-      "phase": "2ND TS"
+      "is_na": false
     },
     {
       "sku": "3ATSA767313BRD",
@@ -21926,18 +21379,17 @@ const DASHBOARD = {
       "cn_focus_pcs": 0,
       "kr_keep_pcs": 1,
       "cn_total_pcs": 4,
-      "kr_expected": "2026-06-16",
+      "kr_expected": "2026-06-22",
       "kr_actual": null,
-      "cn_etd": "2026-06-16",
+      "cn_etd": "2026-06-22",
       "cn_atd": null,
-      "cn_rdd": "2026-06-21",
+      "cn_rdd": "2026-06-27",
       "transit_days": 0,
       "courier": "",
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-04-28",
-      "is_na": false,
-      "phase": "2ND TS"
+      "is_na": false
     },
     {
       "sku": "3ATSA767350BKS",
@@ -21976,8 +21428,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-27",
-      "is_na": false,
-      "phase": "2ND TS"
+      "is_na": false
     },
     {
       "sku": "3ATSA767313WHS",
@@ -22016,8 +21467,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-04-28",
-      "is_na": false,
-      "phase": "2ND TS"
+      "is_na": false
     },
     {
       "sku": "3ATSA787307IVS",
@@ -22056,8 +21506,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-04-28",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3ATSA787307NYS",
@@ -22096,8 +21545,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-27",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3ATSA787309MGM",
@@ -22136,8 +21584,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-27",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3ATSA787313BRD",
@@ -22176,8 +21623,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-27",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3ATSA787307INS",
@@ -22216,8 +21662,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-27",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3ATSA797307IVS",
@@ -22256,8 +21701,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-27",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3ATSA797307NYS",
@@ -22296,8 +21740,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-27",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3ATSA797313BRD",
@@ -22336,8 +21779,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-27",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3ATSA797343GND",
@@ -22376,8 +21818,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-27",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3ATSA807307IVS",
@@ -22416,8 +21857,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-27",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3ATSA807313BRD",
@@ -22456,8 +21896,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3ATSA807350SBS",
@@ -22496,8 +21935,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3ATSA817309GRS",
@@ -22536,8 +21974,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-27",
-      "is_na": false,
-      "phase": "2ND TS"
+      "is_na": false
     },
     {
       "sku": "3ATSA817350BKS",
@@ -22576,8 +22013,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-27",
-      "is_na": false,
-      "phase": "2ND TS"
+      "is_na": false
     },
     {
       "sku": "3ATSA817313WHS",
@@ -22606,18 +22042,17 @@ const DASHBOARD = {
       "cn_focus_pcs": 0,
       "kr_keep_pcs": 1,
       "cn_total_pcs": 4,
-      "kr_expected": "2026-06-16",
+      "kr_expected": "2026-06-22",
       "kr_actual": null,
-      "cn_etd": "2026-06-16",
+      "cn_etd": "2026-06-22",
       "cn_atd": null,
-      "cn_rdd": "2026-06-21",
+      "cn_rdd": "2026-06-27",
       "transit_days": 0,
       "courier": "",
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-04-28",
-      "is_na": false,
-      "phase": "2ND TS"
+      "is_na": false
     },
     {
       "sku": "3ATSO017150SBS",
@@ -22656,8 +22091,7 @@ const DASHBOARD = {
       "remark": "MILL에서 아직 정확한 일정을 받지 못함. 일정 확인 후 업데이트 예정",
       "delay_reason": "",
       "fabric_etd": "2026-05-27",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3ATSO017146CGS",
@@ -22696,8 +22130,7 @@ const DASHBOARD = {
       "remark": "MILL에서 아직 정확한 일정을 받지 못함. 일정 확인 후 업데이트 예정",
       "delay_reason": "",
       "fabric_etd": "2026-05-27",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3ATSO017107IVS",
@@ -22736,8 +22169,7 @@ const DASHBOARD = {
       "remark": "MILL에서 아직 정확한 일정을 받지 못함. 일정 확인 후 업데이트 예정",
       "delay_reason": "",
       "fabric_etd": "2026-04-20",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3ATSO027343GNL",
@@ -22776,8 +22208,7 @@ const DASHBOARD = {
       "remark": "MILL에서 아직 정확한 일정을 받지 못함. 일정 확인 후 업데이트 예정",
       "delay_reason": "",
       "fabric_etd": "2026-05-27",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3ATSO027346CGS",
@@ -22816,8 +22247,7 @@ const DASHBOARD = {
       "remark": "MILL에서 아직 정확한 일정을 받지 못함. 일정 확인 후 업데이트 예정",
       "delay_reason": "",
       "fabric_etd": "2026-05-27",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3ATSO027350SBS",
@@ -22856,8 +22286,7 @@ const DASHBOARD = {
       "remark": "MILL에서 아직 정확한 일정을 받지 못함. 일정 확인 후 업데이트 예정",
       "delay_reason": "",
       "fabric_etd": "2026-05-27",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3ATSO027307IVS",
@@ -22896,8 +22325,7 @@ const DASHBOARD = {
       "remark": "MILL에서 아직 정확한 일정을 받지 못함. 일정 확인 후 업데이트 예정",
       "delay_reason": "",
       "fabric_etd": "2026-04-20",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3ATSO107313BRD",
@@ -22936,8 +22364,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-27",
-      "is_na": false,
-      "phase": "2ND TS"
+      "is_na": false
     },
     {
       "sku": "3ATSO107350BKS",
@@ -22976,8 +22403,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-27",
-      "is_na": false,
-      "phase": "2ND TS"
+      "is_na": false
     },
     {
       "sku": "3ATSO107313WHS",
@@ -23016,8 +22442,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-27",
-      "is_na": false,
-      "phase": "2ND TS"
+      "is_na": false
     },
     {
       "sku": "3ATSO107350YEM",
@@ -23056,8 +22481,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-27",
-      "is_na": false,
-      "phase": "2ND TS"
+      "is_na": false
     },
     {
       "sku": "3ATSO117307NYL",
@@ -23096,8 +22520,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-27",
-      "is_na": false,
-      "phase": "2ND TS"
+      "is_na": false
     },
     {
       "sku": "3ATSO117313WHS",
@@ -23136,8 +22559,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-27",
-      "is_na": false,
-      "phase": "2ND TS"
+      "is_na": false
     },
     {
       "sku": "3ATSO117350YEM",
@@ -23176,8 +22598,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-27",
-      "is_na": false,
-      "phase": "2ND TS"
+      "is_na": false
     },
     {
       "sku": "3ATSO1173",
@@ -23216,8 +22637,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "",
-      "is_na": false,
-      "phase": "2ND TS"
+      "is_na": false
     },
     {
       "sku": "3FTSS017150SBS",
@@ -23256,8 +22676,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-27",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FTSS017150BKS",
@@ -23296,8 +22715,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-27",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FTSS017107IVS",
@@ -23326,7 +22744,7 @@ const DASHBOARD = {
       "cn_focus_pcs": 1,
       "kr_keep_pcs": 1,
       "cn_total_pcs": 4,
-      "kr_expected": "2026-06-12",
+      "kr_expected": "2026-06-16",
       "kr_actual": null,
       "cn_etd": "2026-06-11",
       "cn_atd": null,
@@ -23336,8 +22754,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-27",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FTSS027107SBL",
@@ -23376,8 +22793,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FTSS027150BKS",
@@ -23416,8 +22832,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-04-27",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FTSS027143SAL",
@@ -23456,8 +22871,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-27",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FTSS017307SBL",
@@ -23496,8 +22910,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-15",
-      "is_na": false,
-      "phase": "2ND TS"
+      "is_na": false
     },
     {
       "sku": "3FTSS017350BKS",
@@ -23536,8 +22949,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-15",
-      "is_na": false,
-      "phase": "2ND TS"
+      "is_na": false
     },
     {
       "sku": "3FTSS017307IVS",
@@ -23576,8 +22988,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-15",
-      "is_na": false,
-      "phase": "2ND TS"
+      "is_na": false
     },
     {
       "sku": "3FTSS017310LDL",
@@ -23616,8 +23027,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-27",
-      "is_na": false,
-      "phase": "2ND TS"
+      "is_na": false
     },
     {
       "sku": "3FTSS027350BKS",
@@ -23656,8 +23066,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-04-24",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FTSS027307IVS",
@@ -23696,8 +23105,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-04-24",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FTSS027310LDL",
@@ -23736,8 +23144,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-27",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FTSS037307SBS",
@@ -23776,8 +23183,7 @@ const DASHBOARD = {
       "remark": "it s/b 07 SBL",
       "delay_reason": "",
       "fabric_etd": "",
-      "is_na": false,
-      "phase": "2ND TS"
+      "is_na": false
     },
     {
       "sku": "3FTSS037313WHS",
@@ -23816,8 +23222,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-27",
-      "is_na": false,
-      "phase": "2ND TS"
+      "is_na": false
     },
     {
       "sku": "3FTSS037350YEM",
@@ -23856,8 +23261,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-27",
-      "is_na": false,
-      "phase": "2ND TS"
+      "is_na": false
     },
     {
       "sku": "3FTSS047307NYL",
@@ -23896,8 +23300,7 @@ const DASHBOARD = {
       "remark": "(5/7) 아트웍 미정",
       "delay_reason": "",
       "fabric_etd": "2026-05-27",
-      "is_na": false,
-      "phase": "2ND TS"
+      "is_na": false
     },
     {
       "sku": "3FTSS047310LDL",
@@ -23936,8 +23339,7 @@ const DASHBOARD = {
       "remark": "(5/7) 아트웍 미정",
       "delay_reason": "",
       "fabric_etd": "2026-05-27",
-      "is_na": false,
-      "phase": "2ND TS"
+      "is_na": false
     },
     {
       "sku": "3FTSS047313WHS",
@@ -23976,8 +23378,7 @@ const DASHBOARD = {
       "remark": "(5/7) 아트웍 미정",
       "delay_reason": "",
       "fabric_etd": "2026-05-27",
-      "is_na": false,
-      "phase": "2ND TS"
+      "is_na": false
     },
     {
       "sku": "3ATSS017150BKS",
@@ -24006,7 +23407,7 @@ const DASHBOARD = {
       "cn_focus_pcs": 0,
       "kr_keep_pcs": 1,
       "cn_total_pcs": 4,
-      "kr_expected": "2026-06-12",
+      "kr_expected": "2026-06-16",
       "kr_actual": null,
       "cn_etd": "2026-06-11",
       "cn_atd": null,
@@ -24016,8 +23417,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-04-20",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3ATSS017107PPS",
@@ -24056,8 +23456,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-27",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3ATSS017107IVS",
@@ -24086,7 +23485,7 @@ const DASHBOARD = {
       "cn_focus_pcs": 0,
       "kr_keep_pcs": 1,
       "cn_total_pcs": 4,
-      "kr_expected": "2026-06-12",
+      "kr_expected": "2026-06-16",
       "kr_actual": null,
       "cn_etd": "2026-06-11",
       "cn_atd": null,
@@ -24096,8 +23495,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-04-20",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3ATSS017143GNL",
@@ -24136,8 +23534,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-27",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3ATSS037107INS",
@@ -24176,8 +23573,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-27",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3ATSS037113BRD",
@@ -24216,8 +23612,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-27",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3ATSS037107IVS",
@@ -24256,8 +23651,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-04-20",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3ATSS207150SBS",
@@ -24296,8 +23690,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-27",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3ATSS207150BKS",
@@ -24336,8 +23729,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-04-28",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3ATSS207143SAM",
@@ -24376,8 +23768,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-27",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3ATSS207107IVS",
@@ -24416,8 +23807,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-04-28",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3ATSS217150BKS",
@@ -24456,8 +23846,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-04-28",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3ATSS217107IVS",
@@ -24496,8 +23885,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-04-28",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3ATSS217143RDS",
@@ -24536,8 +23924,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-27",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3ATSS227150BKS",
@@ -24576,8 +23963,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-04-28",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3ATSS227143RDS",
@@ -24616,8 +24002,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-27",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3ATSS227107IVS",
@@ -24656,8 +24041,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-04-28",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FTSS237150BKS",
@@ -24696,8 +24080,7 @@ const DASHBOARD = {
       "remark": "(5/7) 아트웍 미정",
       "delay_reason": "",
       "fabric_etd": "2026-04-24",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FTSS237107IVS",
@@ -24736,8 +24119,7 @@ const DASHBOARD = {
       "remark": "(5/7) 아트웍 미정",
       "delay_reason": "",
       "fabric_etd": "2026-04-24",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FTSS237143RDS",
@@ -24776,8 +24158,7 @@ const DASHBOARD = {
       "remark": "(5/7) 아트웍 미정",
       "delay_reason": "",
       "fabric_etd": "2026-05-27",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3ATSS2371",
@@ -24816,8 +24197,7 @@ const DASHBOARD = {
       "remark": "(5/7) 아트웍 미정",
       "delay_reason": "",
       "fabric_etd": "",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3ATSS2371",
@@ -24856,8 +24236,7 @@ const DASHBOARD = {
       "remark": "(5/7) 아트웍 미정",
       "delay_reason": "",
       "fabric_etd": "",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3ATSS2371",
@@ -24896,8 +24275,7 @@ const DASHBOARD = {
       "remark": "(5/7) 아트웍 미정",
       "delay_reason": "",
       "fabric_etd": "",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3ATSS2371",
@@ -24936,8 +24314,7 @@ const DASHBOARD = {
       "remark": "(5/7) 아트웍 미정",
       "delay_reason": "",
       "fabric_etd": "",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3ATSS2471",
@@ -24976,8 +24353,7 @@ const DASHBOARD = {
       "remark": "(5/7) 아트웍 미정",
       "delay_reason": "",
       "fabric_etd": "",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3ATSS2471",
@@ -25016,8 +24392,7 @@ const DASHBOARD = {
       "remark": "(5/7) 아트웍 미정",
       "delay_reason": "",
       "fabric_etd": "",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3ATSS2471",
@@ -25056,8 +24431,7 @@ const DASHBOARD = {
       "remark": "(5/7) 아트웍 미정",
       "delay_reason": "",
       "fabric_etd": "",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3ATSS2471",
@@ -25096,8 +24470,7 @@ const DASHBOARD = {
       "remark": "(5/7) 아트웍 미정",
       "delay_reason": "",
       "fabric_etd": "",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3ATSS017307PPS",
@@ -25126,18 +24499,17 @@ const DASHBOARD = {
       "cn_focus_pcs": 0,
       "kr_keep_pcs": 1,
       "cn_total_pcs": 4,
-      "kr_expected": "2026-06-16",
+      "kr_expected": "2026-06-22",
       "kr_actual": null,
-      "cn_etd": "2026-06-16",
+      "cn_etd": "2026-06-22",
       "cn_atd": null,
-      "cn_rdd": "2026-06-21",
+      "cn_rdd": "2026-06-27",
       "transit_days": 0,
       "courier": "",
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-15",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3ATSS017350BKS",
@@ -25168,16 +24540,15 @@ const DASHBOARD = {
       "cn_total_pcs": 4,
       "kr_expected": "2026-06-16",
       "kr_actual": null,
-      "cn_etd": "2026-06-16",
+      "cn_etd": "2026-06-11",
       "cn_atd": null,
-      "cn_rdd": "2026-06-21",
+      "cn_rdd": "2026-06-16",
       "transit_days": 0,
       "courier": "",
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-15",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3ATSS017343SAM",
@@ -25216,8 +24587,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-27",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3ATSS017307IVS",
@@ -25246,18 +24616,17 @@ const DASHBOARD = {
       "cn_focus_pcs": 0,
       "kr_keep_pcs": 1,
       "cn_total_pcs": 4,
-      "kr_expected": "2026-06-16",
+      "kr_expected": "2026-06-22",
       "kr_actual": null,
-      "cn_etd": "2026-06-16",
+      "cn_etd": "2026-06-22",
       "cn_atd": null,
-      "cn_rdd": "2026-06-21",
+      "cn_rdd": "2026-06-27",
       "transit_days": 0,
       "courier": "",
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-15",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3ATSS027310LDL",
@@ -25296,8 +24665,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-27",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3ATSS027343MTL",
@@ -25336,8 +24704,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-27",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3ATSS027343SAL",
@@ -25376,8 +24743,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-27",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3ATSS027350BKS",
@@ -25416,8 +24782,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-04-28",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3ATSS027313WHS",
@@ -25456,8 +24821,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-04-28",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3ATSS037313WHS",
@@ -25496,8 +24860,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-04-28",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3ATSS037307SBL",
@@ -25536,8 +24899,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-15",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3ATSS037350BKS",
@@ -25576,8 +24938,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-04-28",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3ATSS037346CGM",
@@ -25616,8 +24977,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-27",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3ATSS037350YEM",
@@ -25656,8 +25016,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-27",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3ATSS077350BKS",
@@ -25696,8 +25055,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-08",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3ATSS077313WHS",
@@ -25736,8 +25094,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-27",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3ATSS077307SBL",
@@ -25776,8 +25133,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-27",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3ATSS087310PKM",
@@ -25816,8 +25172,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-27",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3ATSS087350SBS",
@@ -25856,8 +25211,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-27",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3ATSS087350BKS",
@@ -25896,8 +25250,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-04-28",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3ATSS087307IVS",
@@ -25936,8 +25289,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-04-28",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3ATSS097346CGM",
@@ -25976,8 +25328,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-15",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3ATSS097350BKS",
@@ -26016,8 +25367,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-04-28",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3ATSS097307SBL",
@@ -26056,8 +25406,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-27",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3ATSS097307IVS",
@@ -26096,8 +25445,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-04-28",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3ATSS097310LDL",
@@ -26136,8 +25484,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-27",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3ATSS207350BKS",
@@ -26176,8 +25523,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-04-28",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3ATSS207307PPS",
@@ -26216,8 +25562,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-27",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3ATSS207343MGM",
@@ -26256,8 +25601,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-15",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3ATSS207343SAM",
@@ -26296,8 +25640,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-27",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3ATSS207350WHS",
@@ -26336,8 +25679,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-04-28",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3ATSS217343GNL",
@@ -26376,8 +25718,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-27",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3ATSS217350SBS",
@@ -26416,8 +25757,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-27",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3ATSS217307PPS",
@@ -26456,8 +25796,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-27",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3ATSS217350BKS",
@@ -26496,8 +25835,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-04-28",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3ATSS217350WHS",
@@ -26536,8 +25874,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-04-28",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3ATSS307307SBL",
@@ -26566,18 +25903,17 @@ const DASHBOARD = {
       "cn_focus_pcs": 1,
       "kr_keep_pcs": 1,
       "cn_total_pcs": 5,
-      "kr_expected": "2026-06-12",
+      "kr_expected": "2026-06-22",
       "kr_actual": null,
-      "cn_etd": "2026-06-11",
+      "cn_etd": "2026-06-22",
       "cn_atd": null,
-      "cn_rdd": "2026-06-16",
+      "cn_rdd": "2026-06-27",
       "transit_days": 0,
       "courier": "",
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-04-28",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3ATSS307350BKS",
@@ -26606,7 +25942,7 @@ const DASHBOARD = {
       "cn_focus_pcs": 1,
       "kr_keep_pcs": 1,
       "cn_total_pcs": 5,
-      "kr_expected": "2026-06-12",
+      "kr_expected": "2026-06-16",
       "kr_actual": null,
       "cn_etd": "2026-06-11",
       "cn_atd": null,
@@ -26616,8 +25952,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-04-28",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3ATSS307313WHS",
@@ -26646,7 +25981,7 @@ const DASHBOARD = {
       "cn_focus_pcs": 1,
       "kr_keep_pcs": 1,
       "cn_total_pcs": 5,
-      "kr_expected": "2026-06-12",
+      "kr_expected": "2026-06-16",
       "kr_actual": null,
       "cn_etd": "2026-06-11",
       "cn_atd": null,
@@ -26656,8 +25991,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-04-28",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3ATSS317310LDL",
@@ -26686,18 +26020,17 @@ const DASHBOARD = {
       "cn_focus_pcs": 1,
       "kr_keep_pcs": 1,
       "cn_total_pcs": 5,
-      "kr_expected": "2026-06-16",
+      "kr_expected": "2026-06-22",
       "kr_actual": null,
-      "cn_etd": "2026-06-16",
+      "cn_etd": "2026-06-22",
       "cn_atd": null,
-      "cn_rdd": "2026-06-21",
+      "cn_rdd": "2026-06-27",
       "transit_days": 0,
       "courier": "",
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-27",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3ATSS317346CGS",
@@ -26726,7 +26059,7 @@ const DASHBOARD = {
       "cn_focus_pcs": 1,
       "kr_keep_pcs": 1,
       "cn_total_pcs": 5,
-      "kr_expected": "2026-06-12",
+      "kr_expected": "2026-06-16",
       "kr_actual": null,
       "cn_etd": "2026-06-11",
       "cn_atd": null,
@@ -26736,8 +26069,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-04-28",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3ATSS317313WHS",
@@ -26766,7 +26098,7 @@ const DASHBOARD = {
       "cn_focus_pcs": 0,
       "kr_keep_pcs": 1,
       "cn_total_pcs": 4,
-      "kr_expected": "2026-06-12",
+      "kr_expected": "2026-06-16",
       "kr_actual": null,
       "cn_etd": "2026-06-11",
       "cn_atd": null,
@@ -26776,8 +26108,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-04-28",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3ATSS327350BKS",
@@ -26806,7 +26137,7 @@ const DASHBOARD = {
       "cn_focus_pcs": 1,
       "kr_keep_pcs": 1,
       "cn_total_pcs": 5,
-      "kr_expected": "2026-06-12",
+      "kr_expected": "2026-06-16",
       "kr_actual": null,
       "cn_etd": "2026-06-11",
       "cn_atd": null,
@@ -26816,8 +26147,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-04-28",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3ATSS327307SBL",
@@ -26846,7 +26176,7 @@ const DASHBOARD = {
       "cn_focus_pcs": 1,
       "kr_keep_pcs": 1,
       "cn_total_pcs": 5,
-      "kr_expected": "2026-06-12",
+      "kr_expected": "2026-06-16",
       "kr_actual": null,
       "cn_etd": "2026-06-11",
       "cn_atd": null,
@@ -26856,8 +26186,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-04-28",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3ATSS327313WHS",
@@ -26886,7 +26215,7 @@ const DASHBOARD = {
       "cn_focus_pcs": 0,
       "kr_keep_pcs": 1,
       "cn_total_pcs": 4,
-      "kr_expected": "2026-06-12",
+      "kr_expected": "2026-06-16",
       "kr_actual": null,
       "cn_etd": "2026-06-11",
       "cn_atd": null,
@@ -26896,8 +26225,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-04-28",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3ATSS337307SBL",
@@ -26936,8 +26264,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-04-28",
-      "is_na": false,
-      "phase": "2ND TS"
+      "is_na": false
     },
     {
       "sku": "3ATSS337310LDL",
@@ -26976,8 +26303,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-27",
-      "is_na": false,
-      "phase": "2ND TS"
+      "is_na": false
     },
     {
       "sku": "3ATSS337350BKS",
@@ -27016,8 +26342,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-27",
-      "is_na": false,
-      "phase": "2ND TS"
+      "is_na": false
     },
     {
       "sku": "3ATSS337313WHS",
@@ -27056,8 +26381,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-27",
-      "is_na": false,
-      "phase": "2ND TS"
+      "is_na": false
     },
     {
       "sku": "3ATSS347313WHS",
@@ -27086,18 +26410,17 @@ const DASHBOARD = {
       "cn_focus_pcs": 0,
       "kr_keep_pcs": 1,
       "cn_total_pcs": 4,
-      "kr_expected": "2026-06-12",
+      "kr_expected": null,
       "kr_actual": null,
-      "cn_etd": "2026-06-11",
+      "cn_etd": null,
       "cn_atd": null,
-      "cn_rdd": "2026-06-16",
+      "cn_rdd": null,
       "transit_days": 0,
       "courier": "",
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-27",
-      "is_na": false,
-      "phase": "2ND TS"
+      "is_na": false
     },
     {
       "sku": "3ATSS347343SAL",
@@ -27126,18 +26449,17 @@ const DASHBOARD = {
       "cn_focus_pcs": 0,
       "kr_keep_pcs": 1,
       "cn_total_pcs": 4,
-      "kr_expected": "2026-06-22",
+      "kr_expected": null,
       "kr_actual": null,
-      "cn_etd": "2026-06-22",
+      "cn_etd": null,
       "cn_atd": null,
-      "cn_rdd": "2026-06-27",
+      "cn_rdd": null,
       "transit_days": 0,
       "courier": "",
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-27",
-      "is_na": false,
-      "phase": "2ND TS"
+      "is_na": false
     },
     {
       "sku": "3ATSS347310LDL",
@@ -27166,18 +26488,17 @@ const DASHBOARD = {
       "cn_focus_pcs": 1,
       "kr_keep_pcs": 1,
       "cn_total_pcs": 5,
-      "kr_expected": "2026-06-22",
+      "kr_expected": null,
       "kr_actual": null,
-      "cn_etd": "2026-06-22",
+      "cn_etd": null,
       "cn_atd": null,
-      "cn_rdd": "2026-06-27",
+      "cn_rdd": null,
       "transit_days": 0,
       "courier": "",
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-27",
-      "is_na": false,
-      "phase": "2ND TS"
+      "is_na": false
     },
     {
       "sku": "3ATSS347350BKS",
@@ -27206,18 +26527,17 @@ const DASHBOARD = {
       "cn_focus_pcs": 1,
       "kr_keep_pcs": 1,
       "cn_total_pcs": 5,
-      "kr_expected": "2026-06-12",
+      "kr_expected": null,
       "kr_actual": null,
-      "cn_etd": "2026-06-11",
+      "cn_etd": null,
       "cn_atd": null,
-      "cn_rdd": "2026-06-16",
+      "cn_rdd": null,
       "transit_days": 0,
       "courier": "",
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-27",
-      "is_na": false,
-      "phase": "2ND TS"
+      "is_na": false
     },
     {
       "sku": "3FTSS507146CGS",
@@ -27256,8 +26576,7 @@ const DASHBOARD = {
       "remark": "(5/7) 아트웍 미정",
       "delay_reason": "",
       "fabric_etd": "2026-05-27",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FTSS507107CRS",
@@ -27296,8 +26615,7 @@ const DASHBOARD = {
       "remark": "(5/7) 아트웍 미정",
       "delay_reason": "",
       "fabric_etd": "2026-04-24",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FTSS507150SBS",
@@ -27336,8 +26654,7 @@ const DASHBOARD = {
       "remark": "(5/7) 아트웍 미정",
       "delay_reason": "",
       "fabric_etd": "2026-05-27",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FTSS517307SBL",
@@ -27376,8 +26693,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-04-24",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FTSS517307NYL",
@@ -27416,8 +26732,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-27",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FTSS517313WHS",
@@ -27456,8 +26771,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-04-24",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3ATSS507150SBS",
@@ -27496,8 +26810,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-27",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3ATSS507109MGM",
@@ -27536,8 +26849,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-15",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3ATSS507109CRS",
@@ -27576,8 +26888,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-15",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3ATSS507313WHS",
@@ -27606,7 +26917,7 @@ const DASHBOARD = {
       "cn_focus_pcs": 1,
       "kr_keep_pcs": 1,
       "cn_total_pcs": 5,
-      "kr_expected": "2026-06-12",
+      "kr_expected": "2026-06-16",
       "kr_actual": null,
       "cn_etd": "2026-06-11",
       "cn_atd": null,
@@ -27616,8 +26927,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-04-28",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3ATSS507350BKS",
@@ -27646,7 +26956,7 @@ const DASHBOARD = {
       "cn_focus_pcs": 1,
       "kr_keep_pcs": 1,
       "cn_total_pcs": 5,
-      "kr_expected": "2026-06-12",
+      "kr_expected": "2026-06-16",
       "kr_actual": null,
       "cn_etd": "2026-06-11",
       "cn_atd": null,
@@ -27656,8 +26966,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-04-28",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3ATSS507313BRD",
@@ -27696,8 +27005,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-27",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3ATSS507350SBS",
@@ -27736,8 +27044,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-27",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3ATSS517350BKS",
@@ -27766,7 +27073,7 @@ const DASHBOARD = {
       "cn_focus_pcs": 0,
       "kr_keep_pcs": 1,
       "cn_total_pcs": 4,
-      "kr_expected": "2026-06-12",
+      "kr_expected": "2026-06-16",
       "kr_actual": null,
       "cn_etd": "2026-06-11",
       "cn_atd": null,
@@ -27776,8 +27083,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-04-28",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3ATSS517307SBL",
@@ -27806,7 +27112,7 @@ const DASHBOARD = {
       "cn_focus_pcs": 0,
       "kr_keep_pcs": 1,
       "cn_total_pcs": 4,
-      "kr_expected": "2026-06-12",
+      "kr_expected": "2026-06-16",
       "kr_actual": null,
       "cn_etd": "2026-06-11",
       "cn_atd": null,
@@ -27816,8 +27122,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-04-28",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3ATSS517350WHS",
@@ -27846,7 +27151,7 @@ const DASHBOARD = {
       "cn_focus_pcs": 0,
       "kr_keep_pcs": 1,
       "cn_total_pcs": 4,
-      "kr_expected": "2026-06-12",
+      "kr_expected": "2026-06-16",
       "kr_actual": null,
       "cn_etd": "2026-06-11",
       "cn_atd": null,
@@ -27856,8 +27161,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-04-28",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3ATSS527307NYL",
@@ -27896,8 +27200,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-27",
-      "is_na": false,
-      "phase": "2ND TS"
+      "is_na": false
     },
     {
       "sku": "3ATSS527313WHS",
@@ -27926,7 +27229,7 @@ const DASHBOARD = {
       "cn_focus_pcs": 0,
       "kr_keep_pcs": 1,
       "cn_total_pcs": 4,
-      "kr_expected": "2026-06-12",
+      "kr_expected": "2026-06-16",
       "kr_actual": null,
       "cn_etd": "2026-06-11",
       "cn_atd": null,
@@ -27936,8 +27239,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-04-28",
-      "is_na": false,
-      "phase": "2ND TS"
+      "is_na": false
     },
     {
       "sku": "3ATSS527343MTL",
@@ -27976,8 +27278,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-27",
-      "is_na": false,
-      "phase": "2ND TS"
+      "is_na": false
     },
     {
       "sku": "3ATSS527350YEM",
@@ -28016,8 +27317,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-27",
-      "is_na": false,
-      "phase": "2ND TS"
+      "is_na": false
     },
     {
       "sku": "3ATSS547307NYS",
@@ -28056,8 +27356,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-27",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3ATSS547307INS",
@@ -28096,8 +27395,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-27",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3ATSS547313WHS",
@@ -28136,8 +27434,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-04-28",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3ATSS547343GND",
@@ -28176,8 +27473,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-27",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3ATSS547350YED",
@@ -28216,8 +27512,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-27",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3ATSS607350SBS",
@@ -28256,8 +27551,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-27",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3ATSS607350BKS",
@@ -28286,7 +27580,7 @@ const DASHBOARD = {
       "cn_focus_pcs": 0,
       "kr_keep_pcs": 1,
       "cn_total_pcs": 4,
-      "kr_expected": "2026-06-12",
+      "kr_expected": "2026-06-16",
       "kr_actual": null,
       "cn_etd": "2026-06-11",
       "cn_atd": null,
@@ -28296,8 +27590,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-04-20",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3ATSS607343CGS",
@@ -28336,8 +27629,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-27",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3ATSS607350WHS",
@@ -28366,7 +27658,7 @@ const DASHBOARD = {
       "cn_focus_pcs": 0,
       "kr_keep_pcs": 1,
       "cn_total_pcs": 4,
-      "kr_expected": "2026-06-12",
+      "kr_expected": "2026-06-16",
       "kr_actual": null,
       "cn_etd": "2026-06-11",
       "cn_atd": null,
@@ -28376,8 +27668,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-04-20",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3ATSS617350SBS",
@@ -28416,8 +27707,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-27",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3ATSS617350BKS",
@@ -28446,7 +27736,7 @@ const DASHBOARD = {
       "cn_focus_pcs": 0,
       "kr_keep_pcs": 1,
       "cn_total_pcs": 4,
-      "kr_expected": "2026-06-12",
+      "kr_expected": "2026-06-16",
       "kr_actual": null,
       "cn_etd": "2026-06-11",
       "cn_atd": null,
@@ -28456,8 +27746,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-04-20",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3ATSS617343BRD",
@@ -28496,8 +27785,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-27",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3ATSS617350WHS",
@@ -28526,7 +27814,7 @@ const DASHBOARD = {
       "cn_focus_pcs": 0,
       "kr_keep_pcs": 1,
       "cn_total_pcs": 4,
-      "kr_expected": "2026-06-12",
+      "kr_expected": "2026-06-16",
       "kr_actual": null,
       "cn_etd": "2026-06-11",
       "cn_atd": null,
@@ -28536,8 +27824,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-04-20",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3ATSS617350PKM",
@@ -28566,7 +27853,7 @@ const DASHBOARD = {
       "cn_focus_pcs": 0,
       "kr_keep_pcs": 1,
       "cn_total_pcs": 4,
-      "kr_expected": "2026-06-12",
+      "kr_expected": "2026-06-16",
       "kr_actual": null,
       "cn_etd": "2026-06-11",
       "cn_atd": null,
@@ -28576,8 +27863,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-04-20",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FPQM017350BKS",
@@ -28616,8 +27902,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-27",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FPQM017350LDL",
@@ -28656,8 +27941,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-27",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FPQM017307IVS",
@@ -28696,8 +27980,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-27",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FPQM027350BKS",
@@ -28736,8 +28019,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-27",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FPQM027307IVS",
@@ -28776,8 +28058,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-27",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FPQM027307SBL",
@@ -28816,8 +28097,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-04-28",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3APQM017350BKS",
@@ -28856,8 +28136,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-27",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3APQM017307IVS",
@@ -28896,8 +28175,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-27",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3APQM017307SBL",
@@ -28936,8 +28214,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3APQM017307NYL",
@@ -28976,8 +28253,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-27",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3APQM027307NYL",
@@ -29016,8 +28292,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-27",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3APQM027343SAS",
@@ -29056,8 +28331,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-27",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3APQM027350WHS",
@@ -29096,8 +28370,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-27",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FPQD017350BKS",
@@ -29136,8 +28409,7 @@ const DASHBOARD = {
       "remark": "(5/7) 아트웍 미정",
       "delay_reason": "",
       "fabric_etd": "2026-04-27",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FPQD017310LDL",
@@ -29176,8 +28448,7 @@ const DASHBOARD = {
       "remark": "(5/7) 아트웍 미정",
       "delay_reason": "",
       "fabric_etd": "2026-05-27",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FPQD017307IVS",
@@ -29216,8 +28487,7 @@ const DASHBOARD = {
       "remark": "(5/7) 아트웍 미정",
       "delay_reason": "",
       "fabric_etd": "2026-04-27",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FPQD017350SBS",
@@ -29256,8 +28526,7 @@ const DASHBOARD = {
       "remark": "(5/7) 아트웍 미정",
       "delay_reason": "",
       "fabric_etd": "2026-05-27",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FPQD027307SBL",
@@ -29296,8 +28565,7 @@ const DASHBOARD = {
       "remark": "(5/7) 아트웍 미정",
       "delay_reason": "",
       "fabric_etd": "2026-05-27",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FPQD027350YEM",
@@ -29336,8 +28604,7 @@ const DASHBOARD = {
       "remark": "(5/7) 아트웍 미정",
       "delay_reason": "",
       "fabric_etd": "2026-05-27",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FPQD027307NYL",
@@ -29376,8 +28643,7 @@ const DASHBOARD = {
       "remark": "(5/7) 아트웍 미정",
       "delay_reason": "",
       "fabric_etd": "2026-05-27",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FPQD027307IVS",
@@ -29416,8 +28682,7 @@ const DASHBOARD = {
       "remark": "(5/7) 아트웍 미정",
       "delay_reason": "",
       "fabric_etd": "2026-04-27",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3APQD017350BKS",
@@ -29456,8 +28721,7 @@ const DASHBOARD = {
       "remark": "(5/7) 아트웍 미정",
       "delay_reason": "",
       "fabric_etd": "2026-04-27",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3APQD017307SBL",
@@ -29496,8 +28760,7 @@ const DASHBOARD = {
       "remark": "(5/7) 아트웍 미정",
       "delay_reason": "",
       "fabric_etd": "2026-05-27",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3APQD017307IVS",
@@ -29536,8 +28799,7 @@ const DASHBOARD = {
       "remark": "(5/7) 아트웍 미정",
       "delay_reason": "",
       "fabric_etd": "2026-04-27",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FPQD037307NYL",
@@ -29576,8 +28838,7 @@ const DASHBOARD = {
       "remark": "(5/7) 아트웍 미정",
       "delay_reason": "",
       "fabric_etd": "2026-05-27",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FPQD037307IVS",
@@ -29616,8 +28877,7 @@ const DASHBOARD = {
       "remark": "(5/7) 아트웍 미정",
       "delay_reason": "",
       "fabric_etd": "2026-04-27",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FPQD037310LDL",
@@ -29656,8 +28916,7 @@ const DASHBOARD = {
       "remark": "(5/7) 아트웍 미정",
       "delay_reason": "",
       "fabric_etd": "2026-05-27",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FPQA017350YEM",
@@ -29696,8 +28955,7 @@ const DASHBOARD = {
       "remark": "원단: 6/15 원단생산완료 예정. 6/19 수취 예상",
       "delay_reason": "",
       "fabric_etd": "2026-05-27",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FPQA017313BRD",
@@ -29736,8 +28994,7 @@ const DASHBOARD = {
       "remark": "원단: 6/15 원단생산완료 예정. 6/19 수취 예상",
       "delay_reason": "",
       "fabric_etd": "2026-06-08",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FPQA017307IVS",
@@ -29776,8 +29033,7 @@ const DASHBOARD = {
       "remark": "원단: 5/15 수취 예정",
       "delay_reason": "",
       "fabric_etd": "2026-04-28",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FPQA027310LDL",
@@ -29816,8 +29072,7 @@ const DASHBOARD = {
       "remark": "(5/7) 아트웍 미정",
       "delay_reason": "",
       "fabric_etd": "2026-06-05",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FPQA027350YEM",
@@ -29856,8 +29111,7 @@ const DASHBOARD = {
       "remark": "(5/7) 아트웍 미정",
       "delay_reason": "",
       "fabric_etd": "2026-06-05",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FPQA027307NYL",
@@ -29896,8 +29150,7 @@ const DASHBOARD = {
       "remark": "(5/7) 아트웍 미정",
       "delay_reason": "",
       "fabric_etd": "2026-06-05",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FPQA027350SBS",
@@ -29936,8 +29189,7 @@ const DASHBOARD = {
       "remark": "(5/7) 아트웍 미정",
       "delay_reason": "",
       "fabric_etd": "2026-06-05",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FPQA037307IVS",
@@ -29976,8 +29228,7 @@ const DASHBOARD = {
       "remark": "원단: 5/15 수취 예정",
       "delay_reason": "",
       "fabric_etd": "2026-04-28",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FPQA037307NYL",
@@ -30016,8 +29267,7 @@ const DASHBOARD = {
       "remark": "원단: 6/15 원단생산완료 예정. 6/19 수취 예상",
       "delay_reason": "",
       "fabric_etd": "2026-06-08",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FPQA037350YEM",
@@ -30056,8 +29306,7 @@ const DASHBOARD = {
       "remark": "원단: 6/15 원단생산완료 예정. 6/19 수취 예상",
       "delay_reason": "",
       "fabric_etd": "2026-05-27",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FPQA037310LDL",
@@ -30096,8 +29345,7 @@ const DASHBOARD = {
       "remark": "원단: 6/15 원단생산완료 예정. 6/19 수취 예상 (총 발주량의 나머지 50%)",
       "delay_reason": "",
       "fabric_etd": "2026-06-08",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FPQA057350YEM",
@@ -30136,8 +29384,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-27",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FPQA057307IVS",
@@ -30176,8 +29423,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-04-28",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FPQA057307SBL",
@@ -30216,8 +29462,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-27",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FPQA057307NYL",
@@ -30256,8 +29501,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-27",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3APQA017307IVS",
@@ -30286,7 +29530,7 @@ const DASHBOARD = {
       "cn_focus_pcs": 1,
       "kr_keep_pcs": 1,
       "cn_total_pcs": 5,
-      "kr_expected": "2026-06-12",
+      "kr_expected": "2026-06-16",
       "kr_actual": null,
       "cn_etd": "2026-06-11",
       "cn_atd": null,
@@ -30296,8 +29540,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-04-20",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3APQA017343GND",
@@ -30336,8 +29579,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-27",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3APQA017350YED",
@@ -30376,8 +29618,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-27",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3APQA017307NYS",
@@ -30416,8 +29657,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-27",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3APQA027313WHS",
@@ -30446,18 +29686,17 @@ const DASHBOARD = {
       "cn_focus_pcs": 0,
       "kr_keep_pcs": 1,
       "cn_total_pcs": 4,
-      "kr_expected": "2026-06-16",
+      "kr_expected": "2026-06-22",
       "kr_actual": null,
-      "cn_etd": "2026-06-16",
+      "cn_etd": "2026-06-22",
       "cn_atd": null,
-      "cn_rdd": "2026-06-21",
+      "cn_rdd": "2026-06-27",
       "transit_days": 0,
       "courier": "",
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-27",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3APQA027307NYL",
@@ -30496,8 +29735,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-27",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3APQA027343GND",
@@ -30526,18 +29764,17 @@ const DASHBOARD = {
       "cn_focus_pcs": 0,
       "kr_keep_pcs": 1,
       "cn_total_pcs": 4,
-      "kr_expected": "2026-06-22",
+      "kr_expected": "2026-06-16",
       "kr_actual": null,
-      "cn_etd": "2026-06-22",
+      "cn_etd": "2026-06-11",
       "cn_atd": null,
-      "cn_rdd": "2026-06-27",
+      "cn_rdd": "2026-06-16",
       "transit_days": 0,
       "courier": "",
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-27",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3APQA037350BKS",
@@ -30576,8 +29813,7 @@ const DASHBOARD = {
       "remark": "(5/7)\n1) 컬러코드 07CRD 되어야 함\n2) 아트웍 미정",
       "delay_reason": "",
       "fabric_etd": "2026-06-05",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3APQA037310LDL",
@@ -30616,8 +29852,7 @@ const DASHBOARD = {
       "remark": "(5/7) 아트웍 미정",
       "delay_reason": "",
       "fabric_etd": "2026-06-05",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3APQA037307NYL",
@@ -30656,8 +29891,7 @@ const DASHBOARD = {
       "remark": "(5/7) 아트웍 미정",
       "delay_reason": "",
       "fabric_etd": "2026-06-05",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3APQA047307IVS",
@@ -30696,8 +29930,7 @@ const DASHBOARD = {
       "remark": "(5/7) 아트웍 미정",
       "delay_reason": "",
       "fabric_etd": "2026-04-27",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3APQA047350YEM",
@@ -30736,8 +29969,7 @@ const DASHBOARD = {
       "remark": "(5/7) 아트웍 미정",
       "delay_reason": "",
       "fabric_etd": "2026-05-27",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3APQA047307INS",
@@ -30776,8 +30008,7 @@ const DASHBOARD = {
       "remark": "(5/7) 아트웍 미정",
       "delay_reason": "",
       "fabric_etd": "2026-05-27",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3APQA047313BRD",
@@ -30816,8 +30047,7 @@ const DASHBOARD = {
       "remark": "(5/7) 아트웍 미정",
       "delay_reason": "",
       "fabric_etd": "2026-05-27",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FPQA087310LDL",
@@ -30856,8 +30086,7 @@ const DASHBOARD = {
       "remark": "(5/7) 아트웍 미정",
       "delay_reason": "",
       "fabric_etd": "2026-06-05",
-      "is_na": false,
-      "phase": "2ND TS"
+      "is_na": false
     },
     {
       "sku": "3FPQA087350SBS",
@@ -30896,8 +30125,7 @@ const DASHBOARD = {
       "remark": "(5/7) 아트웍 미정",
       "delay_reason": "",
       "fabric_etd": "2026-06-05",
-      "is_na": false,
-      "phase": "2ND TS"
+      "is_na": false
     },
     {
       "sku": "3FPQA087307NYL",
@@ -30936,8 +30164,7 @@ const DASHBOARD = {
       "remark": "(5/7) 아트웍 미정",
       "delay_reason": "",
       "fabric_etd": "2026-06-05",
-      "is_na": false,
-      "phase": "2ND TS"
+      "is_na": false
     },
     {
       "sku": "3FPQA077307IVS",
@@ -30976,8 +30203,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-27",
-      "is_na": false,
-      "phase": "2ND TS"
+      "is_na": false
     },
     {
       "sku": "3FPQA077350YEM",
@@ -31016,8 +30242,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-27",
-      "is_na": false,
-      "phase": "2ND TS"
+      "is_na": false
     },
     {
       "sku": "3FPQA077307NYS",
@@ -31056,8 +30281,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-27",
-      "is_na": false,
-      "phase": "2ND TS"
+      "is_na": false
     },
     {
       "sku": "3APQS017107IVS",
@@ -31096,8 +30320,7 @@ const DASHBOARD = {
       "remark": "(5/7) 아트웍 미정",
       "delay_reason": "",
       "fabric_etd": "2026-05-27",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3APQS017150BKS",
@@ -31136,8 +30359,7 @@ const DASHBOARD = {
       "remark": "(5/7) 아트웍 미정",
       "delay_reason": "",
       "fabric_etd": "2026-04-27",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3APQS017110PKM",
@@ -31176,8 +30398,7 @@ const DASHBOARD = {
       "remark": "(5/7) 아트웍 미정",
       "delay_reason": "",
       "fabric_etd": "2026-04-27",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3APQS017350BKS",
@@ -31216,8 +30437,7 @@ const DASHBOARD = {
       "remark": "(5/7) 아트웍 미정",
       "delay_reason": "",
       "fabric_etd": "2026-04-27",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3APQS017307SBL",
@@ -31256,8 +30476,7 @@ const DASHBOARD = {
       "remark": "(5/7) 아트웍 미정",
       "delay_reason": "",
       "fabric_etd": "2026-05-27",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3APQS017307IVS",
@@ -31296,8 +30515,7 @@ const DASHBOARD = {
       "remark": "(5/7) 아트웍 미정",
       "delay_reason": "",
       "fabric_etd": "2026-04-27",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FOPM017307NYL",
@@ -31336,8 +30554,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-27",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FOPM017307SBL",
@@ -31376,8 +30593,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-04-28",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FOPM017307IVS",
@@ -31416,8 +30632,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-27",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FOPM017343MGS",
@@ -31456,8 +30671,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-04-28",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FOPM027350BKS",
@@ -31496,8 +30710,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-27",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FOPM027350LDL",
@@ -31536,8 +30749,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-27",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FOPM027343SAL",
@@ -31576,8 +30788,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-27",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FOPM027307IVS",
@@ -31616,8 +30827,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-27",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FOPM037350BKS",
@@ -31656,8 +30866,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-20",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FOPM037307SBL",
@@ -31696,8 +30905,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-20",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FOPM037343CRS",
@@ -31736,8 +30944,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-20",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FOPM037350YEM",
@@ -31776,8 +30983,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-20",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FOPD017307NYL",
@@ -31816,8 +31022,7 @@ const DASHBOARD = {
       "remark": "(5/7) 아트웍 미정",
       "delay_reason": "",
       "fabric_etd": "2026-05-27",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FOPD017310LDL",
@@ -31856,8 +31061,7 @@ const DASHBOARD = {
       "remark": "(5/7) 아트웍 미정",
       "delay_reason": "",
       "fabric_etd": "2026-05-27",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FOPD017343SAL",
@@ -31896,8 +31100,7 @@ const DASHBOARD = {
       "remark": "(5/7) 아트웍 미정",
       "delay_reason": "",
       "fabric_etd": "2026-05-27",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FOPD017307IVS",
@@ -31936,8 +31139,7 @@ const DASHBOARD = {
       "remark": "(5/7) 아트웍 미정",
       "delay_reason": "",
       "fabric_etd": "2026-04-27",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FOPD027350BKS",
@@ -31966,7 +31168,7 @@ const DASHBOARD = {
       "cn_focus_pcs": 0,
       "kr_keep_pcs": 1,
       "cn_total_pcs": 3,
-      "kr_expected": "2026-06-12",
+      "kr_expected": "2026-06-16",
       "kr_actual": null,
       "cn_etd": "2026-06-11",
       "cn_atd": null,
@@ -31976,8 +31178,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-04-28",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FOPD027310LDL",
@@ -32016,8 +31217,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-27",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FOPA017307INS",
@@ -32056,8 +31256,7 @@ const DASHBOARD = {
       "remark": "(5/7) 아트웍 미정",
       "delay_reason": "",
       "fabric_etd": "2026-05-27",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FOPA017310LDL",
@@ -32096,8 +31295,7 @@ const DASHBOARD = {
       "remark": "(5/7) 아트웍 미정",
       "delay_reason": "",
       "fabric_etd": "2026-05-27",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FOPA017350BKS",
@@ -32136,8 +31334,7 @@ const DASHBOARD = {
       "remark": "(5/7) 아트웍 미정",
       "delay_reason": "",
       "fabric_etd": "2026-04-27",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FOPA017307IVS",
@@ -32176,8 +31373,7 @@ const DASHBOARD = {
       "remark": "(5/7) 아트웍 미정",
       "delay_reason": "",
       "fabric_etd": "2026-04-27",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FOPA017350YEM",
@@ -32216,8 +31412,7 @@ const DASHBOARD = {
       "remark": "(5/7) 아트웍 미정",
       "delay_reason": "",
       "fabric_etd": "2026-05-27",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FOPA027309MGS",
@@ -32256,8 +31451,7 @@ const DASHBOARD = {
       "remark": "(5/7) 아트웍 미정",
       "delay_reason": "",
       "fabric_etd": "2026-04-27",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FOPA027313BRD",
@@ -32296,8 +31490,7 @@ const DASHBOARD = {
       "remark": "(5/7) 아트웍 미정",
       "delay_reason": "",
       "fabric_etd": "2026-05-27",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FOPA027350BKS",
@@ -32336,8 +31529,7 @@ const DASHBOARD = {
       "remark": "(5/7) 아트웍 미정",
       "delay_reason": "",
       "fabric_etd": "2026-04-27",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FOPA027307SBL",
@@ -32376,8 +31568,7 @@ const DASHBOARD = {
       "remark": "(5/7) 아트웍 미정",
       "delay_reason": "",
       "fabric_etd": "2026-05-27",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FOPA037310LDL",
@@ -32416,8 +31607,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-27",
-      "is_na": false,
-      "phase": "2ND TS"
+      "is_na": false
     },
     {
       "sku": "3FOPA037350BKS",
@@ -32456,8 +31646,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-27",
-      "is_na": false,
-      "phase": "2ND TS"
+      "is_na": false
     },
     {
       "sku": "3FOPA037307IVS",
@@ -32496,8 +31685,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-27",
-      "is_na": false,
-      "phase": "2ND TS"
+      "is_na": false
     },
     {
       "sku": "3FOPA047343SAL",
@@ -32526,18 +31714,17 @@ const DASHBOARD = {
       "cn_focus_pcs": 0,
       "kr_keep_pcs": 1,
       "cn_total_pcs": 3,
-      "kr_expected": "2026-06-22",
+      "kr_expected": "2026-06-16",
       "kr_actual": null,
-      "cn_etd": "2026-06-22",
+      "cn_etd": "2026-06-11",
       "cn_atd": null,
-      "cn_rdd": "2026-06-27",
+      "cn_rdd": "2026-06-16",
       "transit_days": 0,
       "courier": "",
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-27",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FOPA047350BKS",
@@ -32566,7 +31753,7 @@ const DASHBOARD = {
       "cn_focus_pcs": 0,
       "kr_keep_pcs": 1,
       "cn_total_pcs": 3,
-      "kr_expected": "2026-06-12",
+      "kr_expected": "2026-06-16",
       "kr_actual": null,
       "cn_etd": "2026-06-11",
       "cn_atd": null,
@@ -32576,8 +31763,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-04-20",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FOPA057350BKS",
@@ -32616,8 +31802,7 @@ const DASHBOARD = {
       "remark": "(5/7) 아트웍 미정",
       "delay_reason": "",
       "fabric_etd": "2026-04-27",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FOPA057307SBL",
@@ -32656,8 +31841,7 @@ const DASHBOARD = {
       "remark": "(5/7) 아트웍 미정",
       "delay_reason": "",
       "fabric_etd": "2026-04-27",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FOPA067307IVS",
@@ -32686,7 +31870,7 @@ const DASHBOARD = {
       "cn_focus_pcs": 1,
       "kr_keep_pcs": 1,
       "cn_total_pcs": 4,
-      "kr_expected": "2026-06-12",
+      "kr_expected": "2026-06-16",
       "kr_actual": null,
       "cn_etd": "2026-06-11",
       "cn_atd": null,
@@ -32696,8 +31880,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-04-20",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FOPA067350BKS",
@@ -32726,7 +31909,7 @@ const DASHBOARD = {
       "cn_focus_pcs": 1,
       "kr_keep_pcs": 1,
       "cn_total_pcs": 4,
-      "kr_expected": "2026-06-12",
+      "kr_expected": "2026-06-16",
       "kr_actual": null,
       "cn_etd": "2026-06-11",
       "cn_atd": null,
@@ -32736,8 +31919,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-04-20",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FOPA067307SBL",
@@ -32766,7 +31948,7 @@ const DASHBOARD = {
       "cn_focus_pcs": 1,
       "kr_keep_pcs": 1,
       "cn_total_pcs": 4,
-      "kr_expected": "2026-06-12",
+      "kr_expected": "2026-06-16",
       "kr_actual": null,
       "cn_etd": "2026-06-11",
       "cn_atd": null,
@@ -32776,8 +31958,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-04-20",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FOPA077307IVS",
@@ -32816,8 +31997,7 @@ const DASHBOARD = {
       "remark": "(5/7) 아트웍 미정",
       "delay_reason": "",
       "fabric_etd": "2026-04-27",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FOPA077350BKS",
@@ -32856,8 +32036,7 @@ const DASHBOARD = {
       "remark": "(5/7) 아트웍 미정",
       "delay_reason": "",
       "fabric_etd": "2026-04-27",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FOPA077307SBL",
@@ -32896,8 +32075,7 @@ const DASHBOARD = {
       "remark": "(5/7) 아트웍 미정",
       "delay_reason": "",
       "fabric_etd": "2026-04-27",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FOPA097307IVS",
@@ -32936,8 +32114,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-04-28",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FOPA097350BKS",
@@ -32976,8 +32153,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-04-28",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FOPA097307SBL",
@@ -33016,8 +32192,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-27",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FOPA097307NYL",
@@ -33056,8 +32231,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-27",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FOPA097350YEM",
@@ -33096,8 +32270,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-27",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FOPA107307IVS",
@@ -33126,7 +32299,7 @@ const DASHBOARD = {
       "cn_focus_pcs": 1,
       "kr_keep_pcs": 1,
       "cn_total_pcs": 4,
-      "kr_expected": "2026-06-12",
+      "kr_expected": "2026-06-16",
       "kr_actual": null,
       "cn_etd": "2026-06-11",
       "cn_atd": null,
@@ -33136,8 +32309,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-04-20",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FOPA107307SBL",
@@ -33176,8 +32348,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-27",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FOPA107307NYL",
@@ -33216,8 +32387,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-27",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FOPA117307IVS",
@@ -33256,8 +32426,7 @@ const DASHBOARD = {
       "remark": "(5/7) 아트웍 미정",
       "delay_reason": "",
       "fabric_etd": "2026-04-27",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FOPA117350YEM",
@@ -33296,8 +32465,7 @@ const DASHBOARD = {
       "remark": "(5/7) 아트웍 미정",
       "delay_reason": "",
       "fabric_etd": "2026-05-27",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FOPA117307SBL",
@@ -33336,8 +32504,7 @@ const DASHBOARD = {
       "remark": "(5/7) 아트웍 미정",
       "delay_reason": "",
       "fabric_etd": "2026-05-27",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FOPA117307NYL",
@@ -33376,8 +32543,7 @@ const DASHBOARD = {
       "remark": "(5/7) 아트웍 미정",
       "delay_reason": "",
       "fabric_etd": "2026-05-27",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FOPA127307IVS",
@@ -33416,8 +32582,7 @@ const DASHBOARD = {
       "remark": "(5/7) 아트웍 미정",
       "delay_reason": "",
       "fabric_etd": "2026-06-05",
-      "is_na": false,
-      "phase": "2ND TS"
+      "is_na": false
     },
     {
       "sku": "3FOPA127307SBL",
@@ -33456,8 +32621,7 @@ const DASHBOARD = {
       "remark": "(5/7) 아트웍 미정",
       "delay_reason": "",
       "fabric_etd": "2026-06-05",
-      "is_na": false,
-      "phase": "2ND TS"
+      "is_na": false
     },
     {
       "sku": "3FOPA127307NYL",
@@ -33496,8 +32660,7 @@ const DASHBOARD = {
       "remark": "(5/7) 아트웍 미정",
       "delay_reason": "",
       "fabric_etd": "2026-06-05",
-      "is_na": false,
-      "phase": "2ND TS"
+      "is_na": false
     },
     {
       "sku": "3ATOD017350BKS",
@@ -33526,7 +32689,7 @@ const DASHBOARD = {
       "cn_focus_pcs": 0,
       "kr_keep_pcs": 1,
       "cn_total_pcs": 4,
-      "kr_expected": "2026-06-12",
+      "kr_expected": "2026-06-16",
       "kr_actual": null,
       "cn_etd": "2026-06-11",
       "cn_atd": null,
@@ -33536,8 +32699,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-04-28",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3ATOD017346CGM",
@@ -33566,7 +32728,7 @@ const DASHBOARD = {
       "cn_focus_pcs": 0,
       "kr_keep_pcs": 1,
       "cn_total_pcs": 4,
-      "kr_expected": "2026-06-12",
+      "kr_expected": "2026-06-16",
       "kr_actual": null,
       "cn_etd": "2026-06-11",
       "cn_atd": null,
@@ -33576,8 +32738,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-04-28",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3ATOD017313WHS",
@@ -33606,7 +32767,7 @@ const DASHBOARD = {
       "cn_focus_pcs": 0,
       "kr_keep_pcs": 1,
       "cn_total_pcs": 4,
-      "kr_expected": "2026-06-12",
+      "kr_expected": "2026-06-16",
       "kr_actual": null,
       "cn_etd": "2026-06-11",
       "cn_atd": null,
@@ -33616,8 +32777,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-04-28",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3ATOD017343SAS",
@@ -33646,18 +32806,17 @@ const DASHBOARD = {
       "cn_focus_pcs": 0,
       "kr_keep_pcs": 1,
       "cn_total_pcs": 4,
-      "kr_expected": "2026-06-22",
+      "kr_expected": null,
       "kr_actual": null,
-      "cn_etd": "2026-06-22",
+      "cn_etd": null,
       "cn_atd": null,
-      "cn_rdd": "2026-06-27",
+      "cn_rdd": null,
       "transit_days": 0,
       "courier": "",
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-27",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3ATOD017307INS",
@@ -33686,18 +32845,17 @@ const DASHBOARD = {
       "cn_focus_pcs": 0,
       "kr_keep_pcs": 1,
       "cn_total_pcs": 4,
-      "kr_expected": "2026-06-22",
+      "kr_expected": null,
       "kr_actual": null,
-      "cn_etd": "2026-06-22",
+      "cn_etd": null,
       "cn_atd": null,
-      "cn_rdd": "2026-06-27",
+      "cn_rdd": null,
       "transit_days": 0,
       "courier": "",
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-27",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FTOA017307INS",
@@ -33736,8 +32894,7 @@ const DASHBOARD = {
       "remark": "(5/7) 아트웍 미정",
       "delay_reason": "",
       "fabric_etd": "2026-05-27",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FTOA017313BRD",
@@ -33776,8 +32933,7 @@ const DASHBOARD = {
       "remark": "(5/7) 아트웍 미정",
       "delay_reason": "",
       "fabric_etd": "2026-05-27",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FTOA017350BKS",
@@ -33816,8 +32972,7 @@ const DASHBOARD = {
       "remark": "(5/7) 아트웍 미정",
       "delay_reason": "",
       "fabric_etd": "2026-04-24",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FTOA017343SAS",
@@ -33856,8 +33011,7 @@ const DASHBOARD = {
       "remark": "(5/7) 아트웍 미정",
       "delay_reason": "",
       "fabric_etd": "2026-05-27",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FTOA017307IVS",
@@ -33896,8 +33050,7 @@ const DASHBOARD = {
       "remark": "(5/7) 아트웍 미정",
       "delay_reason": "",
       "fabric_etd": "2026-04-24",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FTOA037310LDL",
@@ -33936,8 +33089,7 @@ const DASHBOARD = {
       "remark": "(5/7) 아트웍 미정",
       "delay_reason": "",
       "fabric_etd": "2026-05-27",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FTOA037313BRD",
@@ -33976,8 +33128,7 @@ const DASHBOARD = {
       "remark": "(5/7) 아트웍 미정",
       "delay_reason": "",
       "fabric_etd": "2026-05-27",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FTOA037350BKS",
@@ -34016,8 +33167,7 @@ const DASHBOARD = {
       "remark": "(5/7) 아트웍 미정",
       "delay_reason": "",
       "fabric_etd": "2026-04-27",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FTOA037309CRS",
@@ -34056,8 +33206,7 @@ const DASHBOARD = {
       "remark": "(5/7) 아트웍 미정",
       "delay_reason": "",
       "fabric_etd": "2026-04-27",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FTOA047343SAS",
@@ -34096,8 +33245,7 @@ const DASHBOARD = {
       "remark": "(5/7) 아트웍 미정",
       "delay_reason": "",
       "fabric_etd": "2026-05-27",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FTOA047350BKS",
@@ -34136,8 +33284,7 @@ const DASHBOARD = {
       "remark": "(5/7) 아트웍 미정",
       "delay_reason": "",
       "fabric_etd": "2026-04-27",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FTOA047307IVS",
@@ -34176,8 +33323,7 @@ const DASHBOARD = {
       "remark": "(5/7) 아트웍 미정",
       "delay_reason": "",
       "fabric_etd": "2026-04-27",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FTOA047310LDL",
@@ -34216,8 +33362,7 @@ const DASHBOARD = {
       "remark": "(5/7) 아트웍 미정",
       "delay_reason": "",
       "fabric_etd": "2026-05-27",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FTOA047307SBL",
@@ -34256,8 +33401,7 @@ const DASHBOARD = {
       "remark": "(5/7) 아트웍 미정",
       "delay_reason": "",
       "fabric_etd": "2026-05-27",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FTOA057307IVS",
@@ -34296,8 +33440,7 @@ const DASHBOARD = {
       "remark": "(5/7) 아트웍 미정",
       "delay_reason": "",
       "fabric_etd": "2026-04-27",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FTOA057350YEM",
@@ -34336,8 +33479,7 @@ const DASHBOARD = {
       "remark": "(5/7) 아트웍 미정",
       "delay_reason": "",
       "fabric_etd": "2026-05-27",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FTOA057350BKS",
@@ -34376,8 +33518,7 @@ const DASHBOARD = {
       "remark": "(5/7) 아트웍 미정",
       "delay_reason": "",
       "fabric_etd": "2026-04-27",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FTOA057307NYL",
@@ -34416,8 +33557,7 @@ const DASHBOARD = {
       "remark": "(5/7) 아트웍 미정",
       "delay_reason": "",
       "fabric_etd": "2026-04-27",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FTOA097307IVS",
@@ -34456,8 +33596,7 @@ const DASHBOARD = {
       "remark": "Fabric quality pending.",
       "delay_reason": "소재미정",
       "fabric_etd": "",
-      "is_na": false,
-      "phase": "2ND TS"
+      "is_na": false
     },
     {
       "sku": "3FTOA097350YEM",
@@ -34496,8 +33635,7 @@ const DASHBOARD = {
       "remark": "Fabric quality pending.",
       "delay_reason": "소재미정",
       "fabric_etd": "",
-      "is_na": false,
-      "phase": "2ND TS"
+      "is_na": false
     },
     {
       "sku": "3FTOA097307SBL",
@@ -34536,8 +33674,7 @@ const DASHBOARD = {
       "remark": "Fabric quality pending.",
       "delay_reason": "소재미정",
       "fabric_etd": "",
-      "is_na": false,
-      "phase": "2ND TS"
+      "is_na": false
     },
     {
       "sku": "3FTOA107307IVS",
@@ -34576,8 +33713,7 @@ const DASHBOARD = {
       "remark": "(5/7) 아트웍 미정",
       "delay_reason": "",
       "fabric_etd": "2026-06-05",
-      "is_na": false,
-      "phase": "2ND TS"
+      "is_na": false
     },
     {
       "sku": "3FTOA107310LDL",
@@ -34616,8 +33752,7 @@ const DASHBOARD = {
       "remark": "(5/7) 아트웍 미정",
       "delay_reason": "",
       "fabric_etd": "2026-06-05",
-      "is_na": false,
-      "phase": "2ND TS"
+      "is_na": false
     },
     {
       "sku": "3FTOA107307SBL",
@@ -34656,8 +33791,7 @@ const DASHBOARD = {
       "remark": "(5/7) 아트웍 미정",
       "delay_reason": "",
       "fabric_etd": "2026-06-05",
-      "is_na": false,
-      "phase": "2ND TS"
+      "is_na": false
     },
     {
       "sku": "3FTOA107307NYL",
@@ -34696,8 +33830,7 @@ const DASHBOARD = {
       "remark": "(5/7) 아트웍 미정",
       "delay_reason": "",
       "fabric_etd": "2026-06-05",
-      "is_na": false,
-      "phase": "2ND TS"
+      "is_na": false
     },
     {
       "sku": "3ATOS017350BKS",
@@ -34726,7 +33859,7 @@ const DASHBOARD = {
       "cn_focus_pcs": 0,
       "kr_keep_pcs": 1,
       "cn_total_pcs": 4,
-      "kr_expected": "2026-06-12",
+      "kr_expected": "2026-06-16",
       "kr_actual": null,
       "cn_etd": "2026-06-11",
       "cn_atd": null,
@@ -34736,8 +33869,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-04-28",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3ATOS017346CGM",
@@ -34766,7 +33898,7 @@ const DASHBOARD = {
       "cn_focus_pcs": 0,
       "kr_keep_pcs": 1,
       "cn_total_pcs": 4,
-      "kr_expected": "2026-06-12",
+      "kr_expected": "2026-06-16",
       "kr_actual": null,
       "cn_etd": "2026-06-11",
       "cn_atd": null,
@@ -34776,8 +33908,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-04-28",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3ATOS017307SBL",
@@ -34806,18 +33937,17 @@ const DASHBOARD = {
       "cn_focus_pcs": 0,
       "kr_keep_pcs": 1,
       "cn_total_pcs": 4,
-      "kr_expected": "2026-06-12",
+      "kr_expected": null,
       "kr_actual": null,
-      "cn_etd": "2026-06-11",
+      "cn_etd": null,
       "cn_atd": null,
-      "cn_rdd": "2026-06-16",
+      "cn_rdd": null,
       "transit_days": 0,
       "courier": "",
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-04-28",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3ATOS017307NYL",
@@ -34846,18 +33976,17 @@ const DASHBOARD = {
       "cn_focus_pcs": 0,
       "kr_keep_pcs": 1,
       "cn_total_pcs": 4,
-      "kr_expected": "2026-06-22",
+      "kr_expected": null,
       "kr_actual": null,
-      "cn_etd": "2026-06-22",
+      "cn_etd": null,
       "cn_atd": null,
-      "cn_rdd": "2026-06-27",
+      "cn_rdd": null,
       "transit_days": 0,
       "courier": "",
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-27",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3ATOS017313WHS",
@@ -34886,7 +34015,7 @@ const DASHBOARD = {
       "cn_focus_pcs": 0,
       "kr_keep_pcs": 1,
       "cn_total_pcs": 4,
-      "kr_expected": "2026-06-12",
+      "kr_expected": "2026-06-16",
       "kr_actual": null,
       "cn_etd": "2026-06-11",
       "cn_atd": null,
@@ -34896,8 +34025,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-04-28",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FTKA017343SAS",
@@ -34936,8 +34064,7 @@ const DASHBOARD = {
       "remark": "원단: 5/28 수취 예상, MESH: 6/15 생산완료 예정 & 6/19 수취 예정",
       "delay_reason": "",
       "fabric_etd": "2026-05-27",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FTKA017307INS",
@@ -34976,8 +34103,7 @@ const DASHBOARD = {
       "remark": "원단: 5/28 수취 예상, MESH: 6/15 생산완료 예정 & 6/19 수취 예정",
       "delay_reason": "",
       "fabric_etd": "2026-05-27",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FTKA017350BKS",
@@ -35016,8 +34142,7 @@ const DASHBOARD = {
       "remark": "원단: 5/14 수취 예정, MESH: 6/15 생산완료 예정 & 6/19 수취 예정",
       "delay_reason": "",
       "fabric_etd": "2026-04-28",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FTKA017307IVS",
@@ -35056,8 +34181,7 @@ const DASHBOARD = {
       "remark": "원단: 5/14 수취 예정, MESH: 6/15 생산완료 예정 & 6/19 수취 예정",
       "delay_reason": "",
       "fabric_etd": "2026-04-28",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FTKA017313BRD",
@@ -35096,8 +34220,7 @@ const DASHBOARD = {
       "remark": "원단: 5/28 수취 예상, MESH: 6/15 생산완료 예정 & 6/19 수취 예정",
       "delay_reason": "",
       "fabric_etd": "2026-05-27",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FTKA027343GNL",
@@ -35136,8 +34259,7 @@ const DASHBOARD = {
       "remark": "(5/7) 아트웍 미정",
       "delay_reason": "",
       "fabric_etd": "2026-05-27",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FTKA027350SBS",
@@ -35176,8 +34298,7 @@ const DASHBOARD = {
       "remark": "(5/7) 아트웍 미정",
       "delay_reason": "",
       "fabric_etd": "2026-05-27",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FTKA027313BRD",
@@ -35216,8 +34337,7 @@ const DASHBOARD = {
       "remark": "(5/7) 아트웍 미정",
       "delay_reason": "",
       "fabric_etd": "2026-04-27",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FTKA027350BKS",
@@ -35256,8 +34376,7 @@ const DASHBOARD = {
       "remark": "(5/7) 아트웍 미정",
       "delay_reason": "",
       "fabric_etd": "2026-04-27",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FTKA027307IVS",
@@ -35296,8 +34415,7 @@ const DASHBOARD = {
       "remark": "(5/7) 아트웍 미정",
       "delay_reason": "",
       "fabric_etd": "2026-04-27",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FTKA077307SBL",
@@ -35336,8 +34454,7 @@ const DASHBOARD = {
       "remark": "원단: 6/15 원단생산완료 예정. 6/19 수취 예상, MESH: 6/15로 인폼 받음",
       "delay_reason": "",
       "fabric_etd": "2026-06-08",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FTKA077343SAS",
@@ -35376,8 +34493,7 @@ const DASHBOARD = {
       "remark": "원단: 6/15 원단생산완료 예정. 6/19 수취 예상, MESH: 6/15로 인폼 받음",
       "delay_reason": "",
       "fabric_etd": "2026-06-08",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FTKA077350BKS",
@@ -35416,8 +34532,7 @@ const DASHBOARD = {
       "remark": "원단: 5/15 수취 예정, MESH: 6/15로 인폼 받음",
       "delay_reason": "",
       "fabric_etd": "2026-04-28",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FTKA077307IVS",
@@ -35456,8 +34571,7 @@ const DASHBOARD = {
       "remark": "원단: 5/15 수취 예정, MESH: 6/15로 인폼 받음",
       "delay_reason": "",
       "fabric_etd": "2026-04-28",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FTKA067307NYL",
@@ -35496,8 +34610,7 @@ const DASHBOARD = {
       "remark": "(5/7) 아트웍 미정",
       "delay_reason": "",
       "fabric_etd": "2026-05-27",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FTKA067350BKS",
@@ -35536,8 +34649,7 @@ const DASHBOARD = {
       "remark": "(5/7) 아트웍 미정",
       "delay_reason": "",
       "fabric_etd": "2026-04-27",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FTKA067343SAL",
@@ -35576,8 +34688,7 @@ const DASHBOARD = {
       "remark": "(5/7) 아트웍 미정",
       "delay_reason": "",
       "fabric_etd": "2026-05-27",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FTKA067350YEM",
@@ -35616,8 +34727,7 @@ const DASHBOARD = {
       "remark": "(5/7) 아트웍 미정",
       "delay_reason": "",
       "fabric_etd": "2026-05-27",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FTKA087307IVS",
@@ -35656,8 +34766,7 @@ const DASHBOARD = {
       "remark": "(5/7) 아트웍 미정",
       "delay_reason": "",
       "fabric_etd": "2026-05-27",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FTKA087350YEM",
@@ -35696,8 +34805,7 @@ const DASHBOARD = {
       "remark": "(5/7) 아트웍 미정",
       "delay_reason": "",
       "fabric_etd": "2026-05-27",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FTKA087307SBL",
@@ -35736,8 +34844,7 @@ const DASHBOARD = {
       "remark": "(5/7) 아트웍 미정",
       "delay_reason": "",
       "fabric_etd": "2026-05-27",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FTKA087350BKS",
@@ -35776,8 +34883,7 @@ const DASHBOARD = {
       "remark": "(5/7) 아트웍 미정",
       "delay_reason": "",
       "fabric_etd": "2026-05-27",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FLGA017343SAS",
@@ -35816,8 +34922,7 @@ const DASHBOARD = {
       "remark": "원단: 5/28 수취 예상, E-BAND: 5/27 수취 예정",
       "delay_reason": "",
       "fabric_etd": "",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FLGA017307INS",
@@ -35856,8 +34961,7 @@ const DASHBOARD = {
       "remark": "원단: 5/28 수취 예상, E-BAND: 6/1 수취 예정",
       "delay_reason": "",
       "fabric_etd": "",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FLGA017313BRD",
@@ -35896,8 +35000,7 @@ const DASHBOARD = {
       "remark": "원단: 5/28 수취 예상, E-BAND: 5/27 수취 예정",
       "delay_reason": "",
       "fabric_etd": "",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FLGA017350BKS",
@@ -35936,8 +35039,7 @@ const DASHBOARD = {
       "remark": "원단: 5/14 수취 예정, E-BAND: 5/27 수취 예정",
       "delay_reason": "",
       "fabric_etd": "2026-04-28",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FLGA017143SAS",
@@ -35976,8 +35078,7 @@ const DASHBOARD = {
       "remark": "원단: 5/28 수취 예상, MESH: 6/15 생산완료 예정 & 6/19 수취 예정",
       "delay_reason": "",
       "fabric_etd": "",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FLGA017150BKS",
@@ -36016,8 +35117,7 @@ const DASHBOARD = {
       "remark": "원단: 5/14 수취 예정, MESH: 6/15 생산완료 예정 & 6/19 수취 예정",
       "delay_reason": "",
       "fabric_etd": "2026-04-28",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FLGA017107INS",
@@ -36056,8 +35156,7 @@ const DASHBOARD = {
       "remark": "원단: 5/28 수취 예상, MESH: 6/15 생산완료 예정 & 6/19 수취 예정",
       "delay_reason": "",
       "fabric_etd": "",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FLGA017113BRD",
@@ -36096,8 +35195,7 @@ const DASHBOARD = {
       "remark": "원단: 5/28 수취 예상, MESH: 6/15 생산완료 예정 & 6/19 수취 예정",
       "delay_reason": "",
       "fabric_etd": "",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FLGA027143GNL",
@@ -36136,8 +35234,7 @@ const DASHBOARD = {
       "remark": "(5/7) 아트웍 미정",
       "delay_reason": "",
       "fabric_etd": "",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FLGA027150SBS",
@@ -36176,8 +35273,7 @@ const DASHBOARD = {
       "remark": "(5/7) 아트웍 미정",
       "delay_reason": "",
       "fabric_etd": "",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FLGA027113BRD",
@@ -36216,8 +35312,7 @@ const DASHBOARD = {
       "remark": "(5/7) 아트웍 미정",
       "delay_reason": "",
       "fabric_etd": "2026-04-27",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FLGA027150BKS",
@@ -36256,8 +35351,7 @@ const DASHBOARD = {
       "remark": "(5/7) 아트웍 미정",
       "delay_reason": "",
       "fabric_etd": "2026-04-27",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3AMTD017150SBS",
@@ -36296,8 +35390,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-27",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3AMTD017150BKS",
@@ -36326,7 +35419,7 @@ const DASHBOARD = {
       "cn_focus_pcs": 0,
       "kr_keep_pcs": 1,
       "cn_total_pcs": 4,
-      "kr_expected": "2026-06-12",
+      "kr_expected": "2026-06-16",
       "kr_actual": null,
       "cn_etd": "2026-06-11",
       "cn_atd": null,
@@ -36336,8 +35429,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-04-28",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3AMTD017109CRS",
@@ -36366,7 +35458,7 @@ const DASHBOARD = {
       "cn_focus_pcs": 0,
       "kr_keep_pcs": 1,
       "cn_total_pcs": 4,
-      "kr_expected": "2026-06-12",
+      "kr_expected": "2026-06-16",
       "kr_actual": null,
       "cn_etd": "2026-06-11",
       "cn_atd": null,
@@ -36376,8 +35468,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-04-28",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3AMTD017102WID",
@@ -36416,8 +35507,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-27",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3AMTD017109MGM",
@@ -36446,7 +35536,7 @@ const DASHBOARD = {
       "cn_focus_pcs": 0,
       "kr_keep_pcs": 1,
       "cn_total_pcs": 4,
-      "kr_expected": "2026-06-12",
+      "kr_expected": "2026-06-16",
       "kr_actual": null,
       "cn_etd": "2026-06-11",
       "cn_atd": null,
@@ -36456,8 +35546,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-04-28",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3AMTD037107IVS",
@@ -36486,18 +35575,17 @@ const DASHBOARD = {
       "cn_focus_pcs": 0,
       "kr_keep_pcs": 1,
       "cn_total_pcs": 4,
-      "kr_expected": "2026-06-12",
+      "kr_expected": "2026-06-22",
       "kr_actual": null,
-      "cn_etd": "2026-06-11",
+      "cn_etd": "2026-06-22",
       "cn_atd": null,
-      "cn_rdd": "2026-06-16",
+      "cn_rdd": "2026-06-27",
       "transit_days": 0,
       "courier": "",
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-04-28",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3AMTD037110PKM",
@@ -36526,7 +35614,7 @@ const DASHBOARD = {
       "cn_focus_pcs": 0,
       "kr_keep_pcs": 1,
       "cn_total_pcs": 4,
-      "kr_expected": "2026-06-12",
+      "kr_expected": "2026-06-16",
       "kr_actual": null,
       "cn_etd": "2026-06-11",
       "cn_atd": null,
@@ -36536,8 +35624,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-04-28",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3AMTO017150BKS",
@@ -36566,7 +35653,7 @@ const DASHBOARD = {
       "cn_focus_pcs": 0,
       "kr_keep_pcs": 1,
       "cn_total_pcs": 4,
-      "kr_expected": "2026-06-12",
+      "kr_expected": "2026-06-16",
       "kr_actual": null,
       "cn_etd": "2026-06-11",
       "cn_atd": null,
@@ -36576,8 +35663,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-04-18",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3AMTA027109CRS",
@@ -36616,8 +35702,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-04-30",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3AMTA027150BKS",
@@ -36656,8 +35741,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-04-30",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3AMTA047107CRS",
@@ -36696,8 +35780,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-27",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3AMTA047143GND",
@@ -36736,8 +35819,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-27",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3AMTA047150SBS",
@@ -36776,8 +35858,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-27",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3AMTA047109MGM",
@@ -36816,8 +35897,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-27",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3AMTA047150BKS",
@@ -36856,8 +35936,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-27",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3AMTA057109CRS",
@@ -36896,8 +35975,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-27",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3AMTA057143GND",
@@ -36936,8 +36014,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-27",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3AMTA057107NYS",
@@ -36976,8 +36053,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-27",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3AMTA057150BKS",
@@ -37016,8 +36092,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-27",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3AMTA057143SAM",
@@ -37046,18 +36121,17 @@ const DASHBOARD = {
       "cn_focus_pcs": 0,
       "kr_keep_pcs": 1,
       "cn_total_pcs": 4,
-      "kr_expected": "2026-06-22",
+      "kr_expected": null,
       "kr_actual": null,
-      "cn_etd": "2026-06-22",
+      "cn_etd": null,
       "cn_atd": null,
-      "cn_rdd": "2026-06-27",
+      "cn_rdd": null,
       "transit_days": 0,
       "courier": "",
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-27",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3AMTS037150BKS",
@@ -37086,7 +36160,7 @@ const DASHBOARD = {
       "cn_focus_pcs": 1,
       "kr_keep_pcs": 1,
       "cn_total_pcs": 5,
-      "kr_expected": "2026-06-12",
+      "kr_expected": "2026-06-16",
       "kr_actual": null,
       "cn_etd": "2026-06-11",
       "cn_atd": null,
@@ -37096,8 +36170,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-04-28",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3AMTS037109MGM",
@@ -37126,18 +36199,17 @@ const DASHBOARD = {
       "cn_focus_pcs": 1,
       "kr_keep_pcs": 1,
       "cn_total_pcs": 5,
-      "kr_expected": "2026-06-22",
+      "kr_expected": "2026-06-16",
       "kr_actual": null,
-      "cn_etd": "2026-06-22",
+      "cn_etd": "2026-06-11",
       "cn_atd": null,
-      "cn_rdd": "2026-06-27",
+      "cn_rdd": "2026-06-16",
       "transit_days": 0,
       "courier": "",
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-04-28",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3AMTS037109CRS",
@@ -37166,7 +36238,7 @@ const DASHBOARD = {
       "cn_focus_pcs": 1,
       "kr_keep_pcs": 1,
       "cn_total_pcs": 5,
-      "kr_expected": "2026-06-12",
+      "kr_expected": "2026-06-16",
       "kr_actual": null,
       "cn_etd": "2026-06-11",
       "cn_atd": null,
@@ -37176,8 +36248,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-04-28",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3AMTS037143RDS",
@@ -37216,8 +36287,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-27",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3AMTS047109CRS",
@@ -37256,8 +36326,7 @@ const DASHBOARD = {
       "remark": "(5/7) 아트웍 미정",
       "delay_reason": "",
       "fabric_etd": "",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3AMTS047150BKS",
@@ -37296,8 +36365,7 @@ const DASHBOARD = {
       "remark": "(5/7) 아트웍 미정",
       "delay_reason": "",
       "fabric_etd": "",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3AMTS047143RDS",
@@ -37336,8 +36404,7 @@ const DASHBOARD = {
       "remark": "(5/7)\n1) 컬러코드 50SBS 되어야 함\n2) 아트웍 미정",
       "delay_reason": "",
       "fabric_etd": "",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3AMTS057107IVS",
@@ -37376,8 +36443,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-04-25",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3AMTS057150BKS",
@@ -37416,8 +36482,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-04-25",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3AMTS057143GNL",
@@ -37456,8 +36521,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-04-25",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3AMTS067109CRS",
@@ -37486,7 +36550,7 @@ const DASHBOARD = {
       "cn_focus_pcs": 0,
       "kr_keep_pcs": 1,
       "cn_total_pcs": 4,
-      "kr_expected": "2026-06-12",
+      "kr_expected": "2026-06-16",
       "kr_actual": null,
       "cn_etd": "2026-06-11",
       "cn_atd": null,
@@ -37496,8 +36560,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-04-28",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3AMTS067150BKS",
@@ -37526,18 +36589,17 @@ const DASHBOARD = {
       "cn_focus_pcs": 0,
       "kr_keep_pcs": 1,
       "cn_total_pcs": 4,
-      "kr_expected": "2026-06-12",
+      "kr_expected": "2026-06-22",
       "kr_actual": null,
-      "cn_etd": "2026-06-11",
+      "cn_etd": "2026-06-22",
       "cn_atd": null,
-      "cn_rdd": "2026-06-16",
+      "cn_rdd": "2026-06-27",
       "transit_days": 0,
       "courier": "",
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-27",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3AMTS067150SBS",
@@ -37566,7 +36628,7 @@ const DASHBOARD = {
       "cn_focus_pcs": 0,
       "kr_keep_pcs": 1,
       "cn_total_pcs": 4,
-      "kr_expected": "2026-06-12",
+      "kr_expected": "2026-06-16",
       "kr_actual": null,
       "cn_etd": "2026-06-11",
       "cn_atd": null,
@@ -37576,8 +36638,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-27",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3AMTS077150BKS",
@@ -37606,7 +36667,7 @@ const DASHBOARD = {
       "cn_focus_pcs": 0,
       "kr_keep_pcs": 1,
       "cn_total_pcs": 4,
-      "kr_expected": "2026-06-12",
+      "kr_expected": "2026-06-16",
       "kr_actual": null,
       "cn_etd": "2026-06-11",
       "cn_atd": null,
@@ -37616,8 +36677,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-04-28",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3AMTS077143CRS",
@@ -37646,7 +36706,7 @@ const DASHBOARD = {
       "cn_focus_pcs": 1,
       "kr_keep_pcs": 1,
       "cn_total_pcs": 5,
-      "kr_expected": "2026-06-12",
+      "kr_expected": "2026-06-16",
       "kr_actual": null,
       "cn_etd": "2026-06-11",
       "cn_atd": null,
@@ -37656,8 +36716,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-04-28",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3AMTS077143SAM",
@@ -37686,7 +36745,7 @@ const DASHBOARD = {
       "cn_focus_pcs": 0,
       "kr_keep_pcs": 1,
       "cn_total_pcs": 4,
-      "kr_expected": "2026-06-12",
+      "kr_expected": "2026-06-16",
       "kr_actual": null,
       "cn_etd": "2026-06-11",
       "cn_atd": null,
@@ -37696,8 +36755,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-27",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3AMTS077107PPS",
@@ -37736,8 +36794,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-27",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3AMTS087150SBS",
@@ -37776,8 +36833,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-04-25",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3AMTS087150BKS",
@@ -37816,8 +36872,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-04-25",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3AMTS087143CRS",
@@ -37856,8 +36911,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-04-25",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3AMTS097110PKM",
@@ -37886,7 +36940,7 @@ const DASHBOARD = {
       "cn_focus_pcs": 0,
       "kr_keep_pcs": 1,
       "cn_total_pcs": 4,
-      "kr_expected": "2026-06-12",
+      "kr_expected": "2026-06-16",
       "kr_actual": null,
       "cn_etd": "2026-06-11",
       "cn_atd": null,
@@ -37896,8 +36950,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-04-28",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3AMTS097150BKS",
@@ -37926,7 +36979,7 @@ const DASHBOARD = {
       "cn_focus_pcs": 0,
       "kr_keep_pcs": 1,
       "cn_total_pcs": 4,
-      "kr_expected": "2026-06-12",
+      "kr_expected": "2026-06-16",
       "kr_actual": null,
       "cn_etd": "2026-06-11",
       "cn_atd": null,
@@ -37936,8 +36989,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-04-28",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3AMTS097113BRD",
@@ -37976,8 +37028,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-27",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3AMTS097107IVS",
@@ -38006,7 +37057,7 @@ const DASHBOARD = {
       "cn_focus_pcs": 0,
       "kr_keep_pcs": 1,
       "cn_total_pcs": 4,
-      "kr_expected": "2026-06-12",
+      "kr_expected": "2026-06-16",
       "kr_actual": null,
       "cn_etd": "2026-06-11",
       "cn_atd": null,
@@ -38016,8 +37067,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-04-28",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3AMTS097143GNL",
@@ -38056,8 +37106,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-27",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3AMTS107109CRS",
@@ -38096,8 +37145,7 @@ const DASHBOARD = {
       "remark": "(5/7) 아트웍 미정",
       "delay_reason": "",
       "fabric_etd": "",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3AMTS107143RDS",
@@ -38136,8 +37184,7 @@ const DASHBOARD = {
       "remark": "(5/7) 아트웍 미정",
       "delay_reason": "",
       "fabric_etd": "",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3AMTM037150BKS",
@@ -38176,8 +37223,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-28",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3AMTM037150PKM",
@@ -38216,8 +37262,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-28",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3AMTM037107IVS",
@@ -38256,8 +37301,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-28",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3AMTM047150BKS",
@@ -38296,8 +37340,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-28",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3AMTM047107IVS",
@@ -38336,8 +37379,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-28",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3AMTM057143CRS",
@@ -38376,8 +37418,7 @@ const DASHBOARD = {
       "remark": "(5/7) 아트웍 미정",
       "delay_reason": "",
       "fabric_etd": "2026-05-27",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3AMTM057150BKS",
@@ -38416,8 +37457,7 @@ const DASHBOARD = {
       "remark": "(5/7) 아트웍 미정",
       "delay_reason": "",
       "fabric_etd": "2026-05-27",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FMTM017107IVS",
@@ -38456,8 +37496,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-28",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FMTM017150PKM",
@@ -38496,8 +37535,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-28",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FMTA017109CRS",
@@ -38536,8 +37574,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-04-24",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FMTA017150SBS",
@@ -38576,8 +37613,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-27",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FMTA017113BRD",
@@ -38616,8 +37652,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FMTA037150BKS",
@@ -38656,8 +37691,7 @@ const DASHBOARD = {
       "remark": "MILL에서 아직 정확한 일정을 받지 못함. 일정 확인 후 업데이트 예정",
       "delay_reason": "",
       "fabric_etd": "2026-04-30",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FMTA037109CRS",
@@ -38696,8 +37730,7 @@ const DASHBOARD = {
       "remark": "MILL에서 아직 정확한 일정을 받지 못함. 일정 확인 후 업데이트 예정",
       "delay_reason": "",
       "fabric_etd": "2026-04-30",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FMTA037143RDL",
@@ -38736,8 +37769,7 @@ const DASHBOARD = {
       "remark": "MILL에서 아직 정확한 일정을 받지 못함. 일정 확인 후 업데이트 예정",
       "delay_reason": "",
       "fabric_etd": "2026-04-30",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FMTA037113BRD",
@@ -38776,8 +37808,7 @@ const DASHBOARD = {
       "remark": "MILL에서 아직 정확한 일정을 받지 못함. 일정 확인 후 업데이트 예정",
       "delay_reason": "",
       "fabric_etd": "2026-05-28",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FMTA037150SBS",
@@ -38816,8 +37847,7 @@ const DASHBOARD = {
       "remark": "MILL에서 아직 정확한 일정을 받지 못함. 일정 확인 후 업데이트 예정",
       "delay_reason": "",
       "fabric_etd": "2026-05-28",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FMTA057150BKS",
@@ -38856,8 +37886,7 @@ const DASHBOARD = {
       "remark": "MILL에서 아직 정확한 일정을 받지 못함. 일정 확인 후 업데이트 예정",
       "delay_reason": "",
       "fabric_etd": "2026-04-30",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FMTA057109CRS",
@@ -38896,8 +37925,7 @@ const DASHBOARD = {
       "remark": "MILL에서 아직 정확한 일정을 받지 못함. 일정 확인 후 업데이트 예정",
       "delay_reason": "",
       "fabric_etd": "2026-04-30",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FMTA087109CRS",
@@ -38936,8 +37964,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-28",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FMTA087107PPS",
@@ -38976,8 +38003,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-28",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FMTA087109MGM",
@@ -39016,8 +38042,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-28",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FMTA087143GNL",
@@ -39056,8 +38081,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-28",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FMTA087150BKS",
@@ -39096,8 +38120,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-28",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FMTA087150SBS",
@@ -39136,8 +38159,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-28",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FMTA097109CRS",
@@ -39176,8 +38198,7 @@ const DASHBOARD = {
       "remark": "MILL에서 아직 정확한 일정을 받지 못함. 일정 확인 후 업데이트 예정",
       "delay_reason": "",
       "fabric_etd": "2026-05-28",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FMTA097110PKM",
@@ -39216,8 +38237,7 @@ const DASHBOARD = {
       "remark": "MILL에서 아직 정확한 일정을 받지 못함. 일정 확인 후 업데이트 예정",
       "delay_reason": "",
       "fabric_etd": "2026-05-28",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FMTA097113BRD",
@@ -39256,8 +38276,7 @@ const DASHBOARD = {
       "remark": "MILL에서 아직 정확한 일정을 받지 못함. 일정 확인 후 업데이트 예정",
       "delay_reason": "",
       "fabric_etd": "2026-05-28",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FMTA107109CRS",
@@ -39286,18 +38305,17 @@ const DASHBOARD = {
       "cn_focus_pcs": 0,
       "kr_keep_pcs": 1,
       "cn_total_pcs": 3,
-      "kr_expected": "2026-06-22",
+      "kr_expected": null,
       "kr_actual": null,
-      "cn_etd": "2026-06-22",
+      "cn_etd": null,
       "cn_atd": null,
-      "cn_rdd": "2026-06-27",
+      "cn_rdd": null,
       "transit_days": 0,
       "courier": "",
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-27",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FMTA107107INS",
@@ -39326,18 +38344,17 @@ const DASHBOARD = {
       "cn_focus_pcs": 0,
       "kr_keep_pcs": 1,
       "cn_total_pcs": 3,
-      "kr_expected": "2026-06-22",
+      "kr_expected": null,
       "kr_actual": null,
-      "cn_etd": "2026-06-22",
+      "cn_etd": null,
       "cn_atd": null,
-      "cn_rdd": "2026-06-27",
+      "cn_rdd": null,
       "transit_days": 0,
       "courier": "",
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-27",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FMTA107150BKS",
@@ -39366,18 +38383,17 @@ const DASHBOARD = {
       "cn_focus_pcs": 0,
       "kr_keep_pcs": 1,
       "cn_total_pcs": 3,
-      "kr_expected": "2026-06-22",
+      "kr_expected": null,
       "kr_actual": null,
-      "cn_etd": "2026-06-22",
+      "cn_etd": null,
       "cn_atd": null,
-      "cn_rdd": "2026-06-27",
+      "cn_rdd": null,
       "transit_days": 0,
       "courier": "",
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-27",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FMTA117109CRS",
@@ -39416,8 +38432,7 @@ const DASHBOARD = {
       "remark": "MILL에서 아직 정확한 일정을 받지 못함. 일정 확인 후 업데이트 예정",
       "delay_reason": "",
       "fabric_etd": "2026-05-28",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FMTA117110PKM",
@@ -39456,8 +38471,7 @@ const DASHBOARD = {
       "remark": "MILL에서 아직 정확한 일정을 받지 못함. 일정 확인 후 업데이트 예정",
       "delay_reason": "",
       "fabric_etd": "2026-05-28",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FMTA117150SBS",
@@ -39496,8 +38510,7 @@ const DASHBOARD = {
       "remark": "MILL에서 아직 정확한 일정을 받지 못함. 일정 확인 후 업데이트 예정",
       "delay_reason": "",
       "fabric_etd": "2026-05-28",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FMTS037107IVS",
@@ -39526,18 +38539,17 @@ const DASHBOARD = {
       "cn_focus_pcs": 1,
       "kr_keep_pcs": 1,
       "cn_total_pcs": 4,
-      "kr_expected": "2026-06-22",
+      "kr_expected": null,
       "kr_actual": null,
-      "cn_etd": "2026-06-22",
+      "cn_etd": null,
       "cn_atd": null,
-      "cn_rdd": "2026-06-27",
+      "cn_rdd": null,
       "transit_days": 0,
       "courier": "",
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FMTS037110PKM",
@@ -39566,18 +38578,17 @@ const DASHBOARD = {
       "cn_focus_pcs": 1,
       "kr_keep_pcs": 1,
       "cn_total_pcs": 4,
-      "kr_expected": "2026-06-22",
+      "kr_expected": null,
       "kr_actual": null,
-      "cn_etd": "2026-06-22",
+      "cn_etd": null,
       "cn_atd": null,
-      "cn_rdd": "2026-06-27",
+      "cn_rdd": null,
       "transit_days": 0,
       "courier": "",
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FMTS037150BKS",
@@ -39606,18 +38617,17 @@ const DASHBOARD = {
       "cn_focus_pcs": 1,
       "kr_keep_pcs": 1,
       "cn_total_pcs": 4,
-      "kr_expected": "2026-06-22",
+      "kr_expected": null,
       "kr_actual": null,
-      "cn_etd": "2026-06-22",
+      "cn_etd": null,
       "cn_atd": null,
-      "cn_rdd": "2026-06-27",
+      "cn_rdd": null,
       "transit_days": 0,
       "courier": "",
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3AHDD017150BKS",
@@ -39646,7 +38656,7 @@ const DASHBOARD = {
       "cn_focus_pcs": 0,
       "kr_keep_pcs": 1,
       "cn_total_pcs": 4,
-      "kr_expected": "2026-06-12",
+      "kr_expected": "2026-06-16",
       "kr_actual": null,
       "cn_etd": "2026-06-11",
       "cn_atd": null,
@@ -39656,8 +38666,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-27",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3AHDD017109MGM",
@@ -39686,18 +38695,17 @@ const DASHBOARD = {
       "cn_focus_pcs": 0,
       "kr_keep_pcs": 1,
       "cn_total_pcs": 4,
-      "kr_expected": "2026-06-22",
+      "kr_expected": "2026-06-16",
       "kr_actual": null,
-      "cn_etd": "2026-06-22",
+      "cn_etd": "2026-06-11",
       "cn_atd": null,
-      "cn_rdd": "2026-06-27",
+      "cn_rdd": "2026-06-16",
       "transit_days": 0,
       "courier": "",
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-04-28",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3AHDD017109CRS",
@@ -39726,7 +38734,7 @@ const DASHBOARD = {
       "cn_focus_pcs": 0,
       "kr_keep_pcs": 1,
       "cn_total_pcs": 4,
-      "kr_expected": "2026-06-12",
+      "kr_expected": "2026-06-16",
       "kr_actual": null,
       "cn_etd": "2026-06-11",
       "cn_atd": null,
@@ -39736,8 +38744,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-04-28",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3AHDD017150SBS",
@@ -39776,8 +38783,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-27",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3AHDD017113BRD",
@@ -39816,8 +38822,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-27",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3AHDA017309CRS",
@@ -39856,8 +38861,7 @@ const DASHBOARD = {
       "remark": "MILL에서 아직 정확한 일정을 받지 못함. 일정 확인 후 업데이트 예정",
       "delay_reason": "",
       "fabric_etd": "2026-04-25",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3AHDA017307NYL",
@@ -39896,8 +38900,7 @@ const DASHBOARD = {
       "remark": "MILL에서 아직 정확한 일정을 받지 못함. 일정 확인 후 업데이트 예정",
       "delay_reason": "",
       "fabric_etd": "",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3AHDA027109CRS",
@@ -39936,8 +38939,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-27",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3AHDA027150SBS",
@@ -39976,8 +38978,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-27",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3AHDA027102WID",
@@ -40016,8 +39017,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-27",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3AHDA027109MGM",
@@ -40056,8 +39056,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-27",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3AHDA027150BKS",
@@ -40096,8 +39095,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-27",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3AHDM0171",
@@ -40136,8 +39134,7 @@ const DASHBOARD = {
       "remark": "원단: 6/4 수취 예상. RIB: 6/12 수취 예상",
       "delay_reason": "",
       "fabric_etd": "2026-05-28",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3AHDM0171",
@@ -40176,8 +39173,7 @@ const DASHBOARD = {
       "remark": "원단: 6/4 수취 예상. RIB: 6/12 수취 예상",
       "delay_reason": "",
       "fabric_etd": "2026-05-28",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3AHDS017150SBS",
@@ -40216,8 +39212,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-04-24",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3AHDS017150BKS",
@@ -40256,8 +39251,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-04-24",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3AHDS017107IVS",
@@ -40296,8 +39290,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3AHDS017143RDS",
@@ -40336,8 +39329,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-27",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3AHDS057150BKS",
@@ -40366,7 +39358,7 @@ const DASHBOARD = {
       "cn_focus_pcs": 1,
       "kr_keep_pcs": 1,
       "cn_total_pcs": 5,
-      "kr_expected": "2026-06-12",
+      "kr_expected": "2026-06-16",
       "kr_actual": null,
       "cn_etd": "2026-06-11",
       "cn_atd": null,
@@ -40376,8 +39368,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-04-28",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3AHDS057143CRS",
@@ -40406,7 +39397,7 @@ const DASHBOARD = {
       "cn_focus_pcs": 1,
       "kr_keep_pcs": 1,
       "cn_total_pcs": 5,
-      "kr_expected": "2026-06-12",
+      "kr_expected": "2026-06-16",
       "kr_actual": null,
       "cn_etd": "2026-06-11",
       "cn_atd": null,
@@ -40416,8 +39407,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-04-28",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3AHDS057143SAS",
@@ -40456,8 +39446,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-04-28",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3AHDS057107PKM",
@@ -40486,18 +39475,17 @@ const DASHBOARD = {
       "cn_focus_pcs": 1,
       "kr_keep_pcs": 1,
       "cn_total_pcs": 5,
-      "kr_expected": "2026-06-12",
+      "kr_expected": "2026-06-22",
       "kr_actual": null,
-      "cn_etd": "2026-06-11",
+      "cn_etd": "2026-06-22",
       "cn_atd": null,
-      "cn_rdd": "2026-06-16",
+      "cn_rdd": "2026-06-27",
       "transit_days": 0,
       "courier": "",
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3AHDS067150BKS",
@@ -40536,8 +39524,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-04-25",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3AHDS067143SAS",
@@ -40576,8 +39563,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3AHDS077150BKS",
@@ -40606,7 +39592,7 @@ const DASHBOARD = {
       "cn_focus_pcs": 0,
       "kr_keep_pcs": 1,
       "cn_total_pcs": 4,
-      "kr_expected": "2026-06-12",
+      "kr_expected": "2026-06-16",
       "kr_actual": null,
       "cn_etd": "2026-06-11",
       "cn_atd": null,
@@ -40616,8 +39602,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-04-28",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3AHDS077107IVS",
@@ -40646,7 +39631,7 @@ const DASHBOARD = {
       "cn_focus_pcs": 0,
       "kr_keep_pcs": 1,
       "cn_total_pcs": 4,
-      "kr_expected": "2026-06-12",
+      "kr_expected": "2026-06-16",
       "kr_actual": null,
       "cn_etd": "2026-06-11",
       "cn_atd": null,
@@ -40656,8 +39641,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-27",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3AHDS077107PPS",
@@ -40696,8 +39680,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-27",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3AHDS077143GNL",
@@ -40736,8 +39719,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-04-28",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3AHDS087143CRS",
@@ -40776,8 +39758,7 @@ const DASHBOARD = {
       "remark": "(5/7) 아트웍 미정",
       "delay_reason": "",
       "fabric_etd": "",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3AHDS087150BKS",
@@ -40816,8 +39797,7 @@ const DASHBOARD = {
       "remark": "(5/7) 아트웍 미정",
       "delay_reason": "",
       "fabric_etd": "",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FHDM017150BKS",
@@ -40856,8 +39836,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-28",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FHDM017107IVS",
@@ -40896,8 +39875,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-28",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FHDA017150BKS",
@@ -40936,8 +39914,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-04-30",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FHDA017109CRS",
@@ -40976,8 +39953,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-04-30",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FHDA017150SBS",
@@ -41016,8 +39992,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-28",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FHDA027150BKS",
@@ -41056,8 +40031,7 @@ const DASHBOARD = {
       "remark": "MILL에서 아직 정확한 일정을 받지 못함. 일정 확인 후 업데이트 예정",
       "delay_reason": "",
       "fabric_etd": "2026-04-30",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FHDA027109CRS",
@@ -41096,8 +40070,7 @@ const DASHBOARD = {
       "remark": "MILL에서 아직 정확한 일정을 받지 못함. 일정 확인 후 업데이트 예정",
       "delay_reason": "",
       "fabric_etd": "2026-04-30",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FHDA027113BRD",
@@ -41136,8 +40109,7 @@ const DASHBOARD = {
       "remark": "MILL에서 아직 정확한 일정을 받지 못함. 일정 확인 후 업데이트 예정",
       "delay_reason": "",
       "fabric_etd": "2026-05-28",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FHDA027150SBS",
@@ -41176,8 +40148,7 @@ const DASHBOARD = {
       "remark": "MILL에서 아직 정확한 일정을 받지 못함. 일정 확인 후 업데이트 예정",
       "delay_reason": "",
       "fabric_etd": "2026-05-28",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FHDA027143RDL",
@@ -41216,8 +40187,7 @@ const DASHBOARD = {
       "remark": "MILL에서 아직 정확한 일정을 받지 못함. 일정 확인 후 업데이트 예정",
       "delay_reason": "",
       "fabric_etd": "2026-04-30",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FHDA027350BKS",
@@ -41256,8 +40226,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-04-30",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FHDA027309CRS",
@@ -41296,8 +40265,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-04-30",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3ATRD017109CRS",
@@ -41326,7 +40294,7 @@ const DASHBOARD = {
       "cn_focus_pcs": 1,
       "kr_keep_pcs": 1,
       "cn_total_pcs": 5,
-      "kr_expected": "2026-06-12",
+      "kr_expected": "2026-06-16",
       "kr_actual": null,
       "cn_etd": "2026-06-11",
       "cn_atd": null,
@@ -41336,8 +40304,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-04-28",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3ATRD017109MGM",
@@ -41366,18 +40333,17 @@ const DASHBOARD = {
       "cn_focus_pcs": 0,
       "kr_keep_pcs": 1,
       "cn_total_pcs": 4,
-      "kr_expected": "2026-06-22",
+      "kr_expected": "2026-06-16",
       "kr_actual": null,
-      "cn_etd": "2026-06-22",
+      "cn_etd": "2026-06-11",
       "cn_atd": null,
-      "cn_rdd": "2026-06-27",
+      "cn_rdd": "2026-06-16",
       "transit_days": 0,
       "courier": "",
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-04-28",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3ATRD017150SBS",
@@ -41416,8 +40382,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-27",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3ATRD017102WID",
@@ -41456,8 +40421,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-27",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3ATRD017150BKS",
@@ -41486,7 +40450,7 @@ const DASHBOARD = {
       "cn_focus_pcs": 0,
       "kr_keep_pcs": 1,
       "cn_total_pcs": 4,
-      "kr_expected": "2026-06-12",
+      "kr_expected": "2026-06-16",
       "kr_actual": null,
       "cn_etd": "2026-06-11",
       "cn_atd": null,
@@ -41496,8 +40460,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-04-28",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3ATRA017107IVS",
@@ -41536,8 +40499,7 @@ const DASHBOARD = {
       "remark": "원단: 6/4 수취 예상. RIB: 6/12 수취 예상",
       "delay_reason": "",
       "fabric_etd": "2026-05-28",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3ATRA017150BKS",
@@ -41576,8 +40538,7 @@ const DASHBOARD = {
       "remark": "원단: 6/4 수취 예상. RIB: 6/12 수취 예상",
       "delay_reason": "",
       "fabric_etd": "2026-05-28",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3ATRA027109CRS",
@@ -41616,8 +40577,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-27",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3ATRA027110PKM",
@@ -41656,8 +40616,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-27",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3ATRA027109MGM",
@@ -41696,8 +40655,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-27",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3ATRA027113BRD",
@@ -41736,8 +40694,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-27",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3ATRA027150BKS",
@@ -41776,8 +40733,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-27",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3ATRS017150BKS",
@@ -41806,7 +40762,7 @@ const DASHBOARD = {
       "cn_focus_pcs": 1,
       "kr_keep_pcs": 1,
       "cn_total_pcs": 5,
-      "kr_expected": "2026-06-12",
+      "kr_expected": "2026-06-16",
       "kr_actual": null,
       "cn_etd": "2026-06-11",
       "cn_atd": null,
@@ -41816,8 +40772,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-04-28",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3ATRS017107PPS",
@@ -41856,8 +40811,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-27",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3ATRS017143SAM",
@@ -41886,7 +40840,7 @@ const DASHBOARD = {
       "cn_focus_pcs": 1,
       "kr_keep_pcs": 1,
       "cn_total_pcs": 5,
-      "kr_expected": "2026-06-12",
+      "kr_expected": "2026-06-16",
       "kr_actual": null,
       "cn_etd": "2026-06-11",
       "cn_atd": null,
@@ -41896,8 +40850,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-27",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3ATRS017143CRS",
@@ -41926,7 +40879,7 @@ const DASHBOARD = {
       "cn_focus_pcs": 1,
       "kr_keep_pcs": 1,
       "cn_total_pcs": 5,
-      "kr_expected": "2026-06-12",
+      "kr_expected": "2026-06-16",
       "kr_actual": null,
       "cn_etd": "2026-06-11",
       "cn_atd": null,
@@ -41936,8 +40889,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-04-28",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3ATRS027150SBS",
@@ -41976,8 +40928,7 @@ const DASHBOARD = {
       "remark": "(5/7) 아트웍 미정",
       "delay_reason": "",
       "fabric_etd": "2026-04-24",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3ATRS027150BKS",
@@ -42016,8 +40967,7 @@ const DASHBOARD = {
       "remark": "(5/7) 아트웍 미정",
       "delay_reason": "",
       "fabric_etd": "2026-04-24",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3ATRS027109CRS",
@@ -42056,8 +41006,7 @@ const DASHBOARD = {
       "remark": "(5/7) 아트웍 미정",
       "delay_reason": "",
       "fabric_etd": "2026-04-24",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3ATRM027150BKS",
@@ -42096,8 +41045,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-28",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3ATRM027107IVS",
@@ -42136,8 +41084,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-28",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FTRM017107IVS",
@@ -42176,8 +41123,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-28",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FTRM017150BKS",
@@ -42216,8 +41162,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-28",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FTRM017150PKM",
@@ -42256,8 +41201,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-28",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FTRM027107IVS",
@@ -42296,8 +41240,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-28",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FTRM027150PKM",
@@ -42336,8 +41279,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-28",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FTRA017150BKS",
@@ -42376,8 +41318,7 @@ const DASHBOARD = {
       "remark": "(5/7) 아트웍 미정",
       "delay_reason": "",
       "fabric_etd": "2026-04-24",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FTRA017109CRS",
@@ -42416,8 +41357,7 @@ const DASHBOARD = {
       "remark": "(5/7) 아트웍 미정",
       "delay_reason": "",
       "fabric_etd": "2026-04-24",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FTRA017110PKM",
@@ -42456,8 +41396,7 @@ const DASHBOARD = {
       "remark": "(5/7) 아트웍 미정",
       "delay_reason": "",
       "fabric_etd": "2026-05-27",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FTRA017143RDL",
@@ -42496,8 +41435,7 @@ const DASHBOARD = {
       "remark": "(5/7) 아트웍 미정",
       "delay_reason": "",
       "fabric_etd": "2026-05-27",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FTRA017113BRD",
@@ -42536,8 +41474,7 @@ const DASHBOARD = {
       "remark": "(5/7) 아트웍 미정",
       "delay_reason": "",
       "fabric_etd": "2026-05-27",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FTRA017150SBS",
@@ -42576,8 +41513,7 @@ const DASHBOARD = {
       "remark": "(5/7) 아트웍 미정",
       "delay_reason": "",
       "fabric_etd": "2026-05-27",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FTRA027107INS",
@@ -42616,8 +41552,7 @@ const DASHBOARD = {
       "remark": "MILL에서 아직 정확한 일정을 받지 못함. 일정 확인 후 업데이트 예정",
       "delay_reason": "",
       "fabric_etd": "2026-04-30",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FTRA027150BKS",
@@ -42656,8 +41591,7 @@ const DASHBOARD = {
       "remark": "MILL에서 아직 정확한 일정을 받지 못함. 일정 확인 후 업데이트 예정",
       "delay_reason": "",
       "fabric_etd": "2026-04-30",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FTRA027109CRS",
@@ -42696,8 +41630,7 @@ const DASHBOARD = {
       "remark": "MILL에서 아직 정확한 일정을 받지 못함. 일정 확인 후 업데이트 예정",
       "delay_reason": "",
       "fabric_etd": "2026-04-30",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FTRA027143GNL",
@@ -42736,8 +41669,7 @@ const DASHBOARD = {
       "remark": "MILL에서 아직 정확한 일정을 받지 못함. 일정 확인 후 업데이트 예정",
       "delay_reason": "",
       "fabric_etd": "2026-04-30",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FTRA037107IVS",
@@ -42776,8 +41708,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-04-30",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FTRA037150SBS",
@@ -42816,8 +41747,7 @@ const DASHBOARD = {
       "remark": "원단 5/20 수취 예정",
       "delay_reason": "",
       "fabric_etd": "2026-05-11",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FTRA037150BKS",
@@ -42856,8 +41786,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-04-30",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FTRA047150BKS",
@@ -42896,8 +41825,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-04-30",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FTRA047150SBS",
@@ -42936,8 +41864,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-28",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FTRA057150BKS",
@@ -42976,8 +41903,7 @@ const DASHBOARD = {
       "remark": "(5/7) 아트웍 미정",
       "delay_reason": "",
       "fabric_etd": "",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FTRA057109CRS",
@@ -43016,8 +41942,7 @@ const DASHBOARD = {
       "remark": "(5/7) 아트웍 미정",
       "delay_reason": "",
       "fabric_etd": "2026-04-24",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FTRA057150SBS",
@@ -43056,8 +41981,7 @@ const DASHBOARD = {
       "remark": "(5/7) 아트웍 미정",
       "delay_reason": "",
       "fabric_etd": "2026-05-27",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FTRA077109MGM",
@@ -43096,8 +42020,7 @@ const DASHBOARD = {
       "remark": "원단 5/21 수취예정",
       "delay_reason": "",
       "fabric_etd": "2026-05-20",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FTRA077109CRS",
@@ -43136,8 +42059,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-04-30",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FTRA077113BRD",
@@ -43176,8 +42098,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-28",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FTRA077150SBS",
@@ -43216,8 +42137,7 @@ const DASHBOARD = {
       "remark": "원단 5/21 수취예정",
       "delay_reason": "",
       "fabric_etd": "2026-05-28",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FTRA077143RDL",
@@ -43256,8 +42176,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-04-30",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FTRA107150SBS",
@@ -43296,8 +42215,7 @@ const DASHBOARD = {
       "remark": "원단 5/30 도착예정",
       "delay_reason": "",
       "fabric_etd": "2026-05-28",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FTRA107113BRD",
@@ -43336,8 +42254,7 @@ const DASHBOARD = {
       "remark": "원단 5/30 도착예정",
       "delay_reason": "",
       "fabric_etd": "2026-05-28",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FTRA107150BKS",
@@ -43376,8 +42293,7 @@ const DASHBOARD = {
       "remark": "원단 5/30 도착예정",
       "delay_reason": "",
       "fabric_etd": "2026-05-28",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FTRA107110PKM",
@@ -43416,8 +42332,7 @@ const DASHBOARD = {
       "remark": "원단 5/30 도착예정",
       "delay_reason": "",
       "fabric_etd": "2026-05-28",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FTRA117109CRS",
@@ -43456,8 +42371,7 @@ const DASHBOARD = {
       "remark": "(5/7) 아트웍 미정",
       "delay_reason": "",
       "fabric_etd": "2026-05-27",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FTRA117113BRD",
@@ -43496,8 +42410,7 @@ const DASHBOARD = {
       "remark": "(5/7) 아트웍 미정",
       "delay_reason": "",
       "fabric_etd": "2026-05-27",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FTRA117110PKM",
@@ -43536,8 +42449,7 @@ const DASHBOARD = {
       "remark": "(5/7) 아트웍 미정",
       "delay_reason": "",
       "fabric_etd": "2026-05-27",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FTRA117109MGM",
@@ -43576,8 +42488,7 @@ const DASHBOARD = {
       "remark": "(5/7) 아트웍 미정",
       "delay_reason": "",
       "fabric_etd": "2026-05-27",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FTRA117143GNL",
@@ -43616,8 +42527,7 @@ const DASHBOARD = {
       "remark": "(5/7) 아트웍 미정",
       "delay_reason": "",
       "fabric_etd": "2026-05-27",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FTRA127109CRS",
@@ -43656,8 +42566,7 @@ const DASHBOARD = {
       "remark": "MILL에서 아직 정확한 일정을 받지 못함. 일정 확인 후 업데이트 예정",
       "delay_reason": "",
       "fabric_etd": "2026-05-28",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FTRA127109MGM",
@@ -43696,8 +42605,7 @@ const DASHBOARD = {
       "remark": "MILL에서 아직 정확한 일정을 받지 못함. 일정 확인 후 업데이트 예정",
       "delay_reason": "",
       "fabric_etd": "2026-05-28",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FTRA127143GNL",
@@ -43736,8 +42644,7 @@ const DASHBOARD = {
       "remark": "MILL에서 아직 정확한 일정을 받지 못함. 일정 확인 후 업데이트 예정",
       "delay_reason": "",
       "fabric_etd": "2026-05-28",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FTRA127150SBS",
@@ -43776,8 +42683,7 @@ const DASHBOARD = {
       "remark": "MILL에서 아직 정확한 일정을 받지 못함. 일정 확인 후 업데이트 예정",
       "delay_reason": "",
       "fabric_etd": "2026-05-28",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FTRA137109CRS",
@@ -43816,8 +42722,7 @@ const DASHBOARD = {
       "remark": "원단 5/30 도착예정",
       "delay_reason": "",
       "fabric_etd": "2026-05-28",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FTRA137143GNL",
@@ -43856,8 +42761,7 @@ const DASHBOARD = {
       "remark": "원단 5/30 도착예정",
       "delay_reason": "",
       "fabric_etd": "2026-05-28",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FTRA137107INS",
@@ -43896,8 +42800,7 @@ const DASHBOARD = {
       "remark": "원단 5/30 도착예정",
       "delay_reason": "",
       "fabric_etd": "2026-05-28",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3ARSD017350BKS",
@@ -43936,8 +42839,7 @@ const DASHBOARD = {
       "remark": "MILL에서 아직 정확한 일정을 받지 못함. 일정 확인 후 업데이트 예정",
       "delay_reason": "",
       "fabric_etd": "2026-04-25",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3ARSD017309MGM",
@@ -43976,8 +42878,7 @@ const DASHBOARD = {
       "remark": "MILL에서 아직 정확한 일정을 받지 못함. 일정 확인 후 업데이트 예정",
       "delay_reason": "",
       "fabric_etd": "2026-05-28",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FRSA017309CRS",
@@ -44016,8 +42917,7 @@ const DASHBOARD = {
       "remark": "MILL에서 아직 정확한 일정을 받지 못함. 일정 확인 후 업데이트 예정",
       "delay_reason": "",
       "fabric_etd": "2026-04-30",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FRSA017343MTL",
@@ -44056,8 +42956,7 @@ const DASHBOARD = {
       "remark": "MILL에서 아직 정확한 일정을 받지 못함. 일정 확인 후 업데이트 예정",
       "delay_reason": "",
       "fabric_etd": "",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3ARSO017344GRL",
@@ -44086,7 +42985,7 @@ const DASHBOARD = {
       "cn_focus_pcs": 0,
       "kr_keep_pcs": 1,
       "cn_total_pcs": 4,
-      "kr_expected": "2026-06-12",
+      "kr_expected": "2026-06-16",
       "kr_actual": null,
       "cn_etd": "2026-06-11",
       "cn_atd": null,
@@ -44096,8 +42995,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-04-25",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3ARSO017350BKS",
@@ -44126,7 +43024,7 @@ const DASHBOARD = {
       "cn_focus_pcs": 0,
       "kr_keep_pcs": 1,
       "cn_total_pcs": 4,
-      "kr_expected": "2026-06-12",
+      "kr_expected": "2026-06-16",
       "kr_actual": null,
       "cn_etd": "2026-06-11",
       "cn_atd": null,
@@ -44136,8 +43034,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-04-18",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3ARSO017307NYL",
@@ -44176,8 +43073,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-28",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3ARSO017307SBL",
@@ -44206,18 +43102,17 @@ const DASHBOARD = {
       "cn_focus_pcs": 0,
       "kr_keep_pcs": 1,
       "cn_total_pcs": 4,
-      "kr_expected": "2026-06-22",
+      "kr_expected": null,
       "kr_actual": null,
-      "cn_etd": "2026-06-22",
+      "cn_etd": null,
       "cn_atd": null,
-      "cn_rdd": "2026-06-27",
+      "cn_rdd": null,
       "transit_days": 0,
       "courier": "",
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3APTD017109CRS",
@@ -44246,7 +43141,7 @@ const DASHBOARD = {
       "cn_focus_pcs": 1,
       "kr_keep_pcs": 1,
       "cn_total_pcs": 5,
-      "kr_expected": "2026-06-12",
+      "kr_expected": "2026-06-16",
       "kr_actual": null,
       "cn_etd": "2026-06-11",
       "cn_atd": null,
@@ -44256,8 +43151,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-04-28",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3APTD017150BKS",
@@ -44286,7 +43180,7 @@ const DASHBOARD = {
       "cn_focus_pcs": 1,
       "kr_keep_pcs": 1,
       "cn_total_pcs": 5,
-      "kr_expected": "2026-06-12",
+      "kr_expected": "2026-06-16",
       "kr_actual": null,
       "cn_etd": "2026-06-11",
       "cn_atd": null,
@@ -44296,8 +43190,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-04-28",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3APTD027150BKS",
@@ -44326,7 +43219,7 @@ const DASHBOARD = {
       "cn_focus_pcs": 0,
       "kr_keep_pcs": 1,
       "cn_total_pcs": 4,
-      "kr_expected": "2026-06-12",
+      "kr_expected": "2026-06-16",
       "kr_actual": null,
       "cn_etd": "2026-06-11",
       "cn_atd": null,
@@ -44336,8 +43229,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-04-28",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3APTD027109CRS",
@@ -44366,7 +43258,7 @@ const DASHBOARD = {
       "cn_focus_pcs": 1,
       "kr_keep_pcs": 1,
       "cn_total_pcs": 5,
-      "kr_expected": "2026-06-12",
+      "kr_expected": "2026-06-16",
       "kr_actual": null,
       "cn_etd": "2026-06-11",
       "cn_atd": null,
@@ -44376,8 +43268,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-04-28",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3APTD027102WID",
@@ -44416,8 +43307,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-27",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3APTD027109MGM",
@@ -44446,18 +43336,17 @@ const DASHBOARD = {
       "cn_focus_pcs": 1,
       "kr_keep_pcs": 1,
       "cn_total_pcs": 5,
-      "kr_expected": "2026-06-22",
+      "kr_expected": "2026-06-16",
       "kr_actual": null,
-      "cn_etd": "2026-06-22",
+      "cn_etd": "2026-06-11",
       "cn_atd": null,
-      "cn_rdd": "2026-06-27",
+      "cn_rdd": "2026-06-16",
       "transit_days": 0,
       "courier": "",
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-04-28",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3APTD027113BRD",
@@ -44496,8 +43385,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-27",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3APTD027150SBS",
@@ -44536,8 +43424,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-27",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3APTD037150BKS",
@@ -44566,7 +43453,7 @@ const DASHBOARD = {
       "cn_focus_pcs": 0,
       "kr_keep_pcs": 1,
       "cn_total_pcs": 4,
-      "kr_expected": "2026-06-12",
+      "kr_expected": "2026-06-16",
       "kr_actual": null,
       "cn_etd": "2026-06-11",
       "cn_atd": null,
@@ -44576,8 +43463,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-04-28",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3APTD037109MGM",
@@ -44608,16 +43494,15 @@ const DASHBOARD = {
       "cn_total_pcs": 4,
       "kr_expected": "2026-06-16",
       "kr_actual": null,
-      "cn_etd": "2026-06-16",
+      "cn_etd": "2026-06-12",
       "cn_atd": null,
-      "cn_rdd": "2026-06-21",
+      "cn_rdd": "2026-06-17",
       "transit_days": 0,
       "courier": "",
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-17",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3APTD017346CGS",
@@ -44656,8 +43541,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-04-20",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3APTD017350BKS",
@@ -44696,8 +43580,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-04-17",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3APTD027346CGS",
@@ -44736,8 +43619,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-04-20",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3APTD027350BKS",
@@ -44776,8 +43658,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-04-17",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3APTS047150BKS",
@@ -44816,8 +43697,7 @@ const DASHBOARD = {
       "remark": "(5/7) 아트웍 미정",
       "delay_reason": "",
       "fabric_etd": "2026-04-24",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3APTS047109CRS",
@@ -44856,8 +43736,7 @@ const DASHBOARD = {
       "remark": "(5/7) 아트웍 미정",
       "delay_reason": "",
       "fabric_etd": "2026-05-27",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3APTA017150BKS",
@@ -44886,7 +43765,7 @@ const DASHBOARD = {
       "cn_focus_pcs": 1,
       "kr_keep_pcs": 1,
       "cn_total_pcs": 5,
-      "kr_expected": "2026-06-12",
+      "kr_expected": "2026-06-16",
       "kr_actual": null,
       "cn_etd": "2026-06-11",
       "cn_atd": null,
@@ -44896,8 +43775,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-04-28",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3APTA017109CRS",
@@ -44926,7 +43804,7 @@ const DASHBOARD = {
       "cn_focus_pcs": 1,
       "kr_keep_pcs": 1,
       "cn_total_pcs": 5,
-      "kr_expected": "2026-06-12",
+      "kr_expected": "2026-06-16",
       "kr_actual": null,
       "cn_etd": "2026-06-11",
       "cn_atd": null,
@@ -44936,8 +43814,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-04-28",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3APTA037350BKS",
@@ -44966,7 +43843,7 @@ const DASHBOARD = {
       "cn_focus_pcs": 0,
       "kr_keep_pcs": 1,
       "cn_total_pcs": 4,
-      "kr_expected": "2026-06-12",
+      "kr_expected": "2026-06-16",
       "kr_actual": null,
       "cn_etd": "2026-06-11",
       "cn_atd": null,
@@ -44976,8 +43853,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-04-18",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3APTA037343SAS",
@@ -45006,7 +43882,7 @@ const DASHBOARD = {
       "cn_focus_pcs": 0,
       "kr_keep_pcs": 1,
       "cn_total_pcs": 4,
-      "kr_expected": "2026-06-12",
+      "kr_expected": "2026-06-16",
       "kr_actual": null,
       "cn_etd": "2026-06-11",
       "cn_atd": null,
@@ -45016,8 +43892,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-04-25",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3APTA037150BKS",
@@ -45046,7 +43921,7 @@ const DASHBOARD = {
       "cn_focus_pcs": 1,
       "kr_keep_pcs": 1,
       "cn_total_pcs": 5,
-      "kr_expected": "2026-06-12",
+      "kr_expected": "2026-06-16",
       "kr_actual": null,
       "cn_etd": "2026-06-11",
       "cn_atd": null,
@@ -45056,8 +43931,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-04-28",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3APTA037109CRS",
@@ -45086,7 +43960,7 @@ const DASHBOARD = {
       "cn_focus_pcs": 1,
       "kr_keep_pcs": 1,
       "cn_total_pcs": 5,
-      "kr_expected": "2026-06-12",
+      "kr_expected": "2026-06-16",
       "kr_actual": null,
       "cn_etd": "2026-06-11",
       "cn_atd": null,
@@ -45096,8 +43970,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-04-28",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3APTS057143CRS",
@@ -45136,8 +44009,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-04-25",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3APTS057150BKS",
@@ -45176,8 +44048,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-04-25",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3APTM017150BKS",
@@ -45216,8 +44087,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-28",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3APTM017107IVS",
@@ -45256,8 +44126,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-28",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3APTD037307IVS",
@@ -45296,8 +44165,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-28",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3APTD037313BRD",
@@ -45336,8 +44204,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-28",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3APTD037350BKS",
@@ -45376,8 +44243,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-28",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3APTD047309MGM",
@@ -45416,8 +44282,7 @@ const DASHBOARD = {
       "remark": "MILL에서 아직 정확한 일정을 받지 못함. 일정 확인 후 업데이트 예정",
       "delay_reason": "",
       "fabric_etd": "2026-05-28",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3APTD047350BKS",
@@ -45456,8 +44321,7 @@ const DASHBOARD = {
       "remark": "MILL에서 아직 정확한 일정을 받지 못함. 일정 확인 후 업데이트 예정",
       "delay_reason": "",
       "fabric_etd": "2026-05-28",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FPTD017109CRS",
@@ -45496,8 +44360,7 @@ const DASHBOARD = {
       "remark": "(5/7) 아트웍 미정",
       "delay_reason": "",
       "fabric_etd": "2026-05-27",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FPTD017109MGM",
@@ -45536,8 +44399,7 @@ const DASHBOARD = {
       "remark": "(5/7) 아트웍 미정",
       "delay_reason": "",
       "fabric_etd": "2026-05-27",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FPTD017110PKM",
@@ -45576,8 +44438,7 @@ const DASHBOARD = {
       "remark": "(5/7) 아트웍 미정",
       "delay_reason": "",
       "fabric_etd": "2026-05-27",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FPTD017113BRD",
@@ -45616,8 +44477,7 @@ const DASHBOARD = {
       "remark": "(5/7) 아트웍 미정",
       "delay_reason": "",
       "fabric_etd": "2026-05-27",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FPTA067109MGM",
@@ -45656,8 +44516,7 @@ const DASHBOARD = {
       "remark": "품평 이후 추가건 - 신규가봉진행",
       "delay_reason": "",
       "fabric_etd": "2026-05-20",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FPTA067110PKM",
@@ -45696,8 +44555,7 @@ const DASHBOARD = {
       "remark": "품평 이후 추가건 - 신규가봉진행",
       "delay_reason": "",
       "fabric_etd": "2026-05-20",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FPTA067150BKS",
@@ -45736,8 +44594,7 @@ const DASHBOARD = {
       "remark": "품평 이후 추가건 - 신규가봉진행",
       "delay_reason": "",
       "fabric_etd": "2026-05-20",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FPTA077109CRS",
@@ -45776,8 +44633,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-04-30",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FPTA077109MGM",
@@ -45816,8 +44672,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-20",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FPTA077113BRD",
@@ -45856,8 +44711,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-28",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FPTA077143RDL",
@@ -45896,8 +44750,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-04-30",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FPTA077150BKS",
@@ -45936,8 +44789,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-04-30",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FPTA077150SBS",
@@ -45976,8 +44828,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-28",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FPTA087109CRS",
@@ -46016,8 +44867,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-27",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FPTA087150BKS",
@@ -46056,8 +44906,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-27",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FPTA087150SBS",
@@ -46096,8 +44945,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-27",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FPTA027150BKS",
@@ -46136,8 +44984,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-04-30",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FPTA027150SBS",
@@ -46176,8 +45023,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-11",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FPTA047150BKS",
@@ -46216,8 +45062,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-04-30",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FPTA047150SBS",
@@ -46256,8 +45101,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-28",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FPTA027313BRD",
@@ -46296,8 +45140,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FPTA027350BKS",
@@ -46336,8 +45179,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-04-18",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FPTA027346CGS",
@@ -46376,8 +45218,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-04-18",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FPTA047307IVS",
@@ -46416,8 +45257,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-04-28",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FPTA047307NYL",
@@ -46456,8 +45296,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-28",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FPTA047309MGS",
@@ -46496,8 +45335,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-04-25",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FPTA047350BKS",
@@ -46536,8 +45374,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-04-28",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FPTA047350YEM",
@@ -46576,8 +45413,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-28",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FPTA067350BKS",
@@ -46606,7 +45442,7 @@ const DASHBOARD = {
       "cn_focus_pcs": 1,
       "kr_keep_pcs": 1,
       "cn_total_pcs": 4,
-      "kr_expected": "2026-06-12",
+      "kr_expected": "2026-06-16",
       "kr_actual": null,
       "cn_etd": "2026-06-11",
       "cn_atd": null,
@@ -46616,8 +45452,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-04-17",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FPTA067343SAL",
@@ -46648,16 +45483,15 @@ const DASHBOARD = {
       "cn_total_pcs": 4,
       "kr_expected": "2026-06-16",
       "kr_actual": null,
-      "cn_etd": "2026-06-16",
+      "cn_etd": "2026-06-12",
       "cn_atd": null,
-      "cn_rdd": "2026-06-21",
+      "cn_rdd": "2026-06-17",
       "transit_days": 0,
       "courier": "",
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-20",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FPTS027109CRS",
@@ -46696,8 +45530,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-04-27",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FPTS027107PPS",
@@ -46736,8 +45569,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-28",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FPTS027109MGM",
@@ -46776,8 +45608,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-04-27",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FPTS027150BKS",
@@ -46816,8 +45647,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-04-27",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FPTA037150BKS",
@@ -46856,8 +45686,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-04-24",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FPTA037109CRS",
@@ -46896,8 +45725,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-04-24",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FPTA037110PKM",
@@ -46936,8 +45764,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-27",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FPTA037113BRD",
@@ -46976,8 +45803,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-27",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FPTA037150SBS",
@@ -47016,8 +45842,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-27",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FPTA057109MGM",
@@ -47056,8 +45881,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FPTA057150BKS",
@@ -47096,8 +45920,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-28",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FPTA057113BRD",
@@ -47136,8 +45959,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-28",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FPTA057150SBS",
@@ -47176,8 +45998,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-28",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FPTA097109CRS",
@@ -47216,8 +46037,7 @@ const DASHBOARD = {
       "remark": "MILL에서 아직 정확한 일정을 받지 못함. 일정 확인 후 업데이트 예정",
       "delay_reason": "",
       "fabric_etd": "2026-05-28",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FPTA097109MGM",
@@ -47256,8 +46076,7 @@ const DASHBOARD = {
       "remark": "MILL에서 아직 정확한 일정을 받지 못함. 일정 확인 후 업데이트 예정",
       "delay_reason": "",
       "fabric_etd": "2026-05-28",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FPTA097143GNL",
@@ -47296,8 +46115,7 @@ const DASHBOARD = {
       "remark": "MILL에서 아직 정확한 일정을 받지 못함. 일정 확인 후 업데이트 예정",
       "delay_reason": "",
       "fabric_etd": "2026-05-28",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FPTA097150SBS",
@@ -47336,8 +46154,7 @@ const DASHBOARD = {
       "remark": "MILL에서 아직 정확한 일정을 받지 못함. 일정 확인 후 업데이트 예정",
       "delay_reason": "",
       "fabric_etd": "2026-05-28",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FPTM017107IVS",
@@ -47376,8 +46193,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-28",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FPTM017150PKM",
@@ -47416,8 +46232,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-28",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FPTM027107IVS",
@@ -47456,8 +46271,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-28",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FPTM027150BKS",
@@ -47496,8 +46310,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-28",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FPTA107107CRS",
@@ -47536,8 +46349,7 @@ const DASHBOARD = {
       "remark": "원단 5/30 도착예정",
       "delay_reason": "",
       "fabric_etd": "2026-05-28",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FPTA107143GNL",
@@ -47576,8 +46388,7 @@ const DASHBOARD = {
       "remark": "원단 5/30 도착예정",
       "delay_reason": "",
       "fabric_etd": "2026-05-28",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FPTA107107INS",
@@ -47616,8 +46427,7 @@ const DASHBOARD = {
       "remark": "원단 5/30 도착예정",
       "delay_reason": "",
       "fabric_etd": "2026-05-28",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FPTA077310LDL",
@@ -47656,8 +46466,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-04-30",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FPTA077313BRD",
@@ -47696,8 +46505,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-28",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FPTA077350BKS",
@@ -47736,8 +46544,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-28",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3ASPD017350BKS",
@@ -47766,7 +46573,7 @@ const DASHBOARD = {
       "cn_focus_pcs": 1,
       "kr_keep_pcs": 1,
       "cn_total_pcs": 5,
-      "kr_expected": "2026-06-12",
+      "kr_expected": "2026-06-16",
       "kr_actual": null,
       "cn_etd": "2026-06-11",
       "cn_atd": null,
@@ -47776,8 +46583,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-04-28",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3ASPD017309MGM",
@@ -47816,8 +46622,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-04-28",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3ASPD017309CRS",
@@ -47846,7 +46651,7 @@ const DASHBOARD = {
       "cn_focus_pcs": 1,
       "kr_keep_pcs": 1,
       "cn_total_pcs": 5,
-      "kr_expected": "2026-06-12",
+      "kr_expected": "2026-06-16",
       "kr_actual": null,
       "cn_etd": "2026-06-11",
       "cn_atd": null,
@@ -47856,8 +46661,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-04-28",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3ASPD027309MGM",
@@ -47886,7 +46690,7 @@ const DASHBOARD = {
       "cn_focus_pcs": 0,
       "kr_keep_pcs": 1,
       "cn_total_pcs": 4,
-      "kr_expected": "2026-06-12",
+      "kr_expected": "2026-06-16",
       "kr_actual": null,
       "cn_etd": "2026-06-12",
       "cn_atd": null,
@@ -47896,8 +46700,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-17",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3ASPD027313BRD",
@@ -47936,8 +46739,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-28",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3ASPD027350BKS",
@@ -47966,7 +46768,7 @@ const DASHBOARD = {
       "cn_focus_pcs": 0,
       "kr_keep_pcs": 1,
       "cn_total_pcs": 4,
-      "kr_expected": "2026-06-12",
+      "kr_expected": "2026-06-16",
       "kr_actual": null,
       "cn_etd": "2026-06-11",
       "cn_atd": null,
@@ -47976,8 +46778,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-04-28",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3ASPD317346CGS",
@@ -48016,8 +46817,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-04-20",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3ASPD317350BKS",
@@ -48056,8 +46856,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-04-17",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3ASPD327350BKS",
@@ -48096,8 +46895,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-04-17",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3ASPD337350BKS",
@@ -48136,8 +46934,7 @@ const DASHBOARD = {
       "remark": "MILL에서 아직 정확한 일정을 받지 못함. 일정 확인 후 업데이트 예정",
       "delay_reason": "",
       "fabric_etd": "2026-04-30",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3ASPD337343SAS",
@@ -48176,8 +46973,7 @@ const DASHBOARD = {
       "remark": "MILL에서 아직 정확한 일정을 받지 못함. 일정 확인 후 업데이트 예정",
       "delay_reason": "",
       "fabric_etd": "2026-04-30",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3ASPD347309MGS",
@@ -48216,8 +47012,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-04-25",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3ASPD347350BKS",
@@ -48256,8 +47051,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-04-25",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3ASPM017350BKS",
@@ -48296,8 +47090,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-28",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3ASPM017307IVS",
@@ -48336,8 +47129,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-28",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3ASPS017350BKS",
@@ -48376,8 +47168,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-04-25",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3ASPS017350SBS",
@@ -48416,8 +47207,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-28",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3ASPS017343CRS",
@@ -48456,8 +47246,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-04-25",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3ASPS027350BKS",
@@ -48496,8 +47285,7 @@ const DASHBOARD = {
       "remark": "MILL에서 아직 정확한 일정을 받지 못함. 일정 확인 후 업데이트 예정",
       "delay_reason": "",
       "fabric_etd": "2026-04-25",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3ASPS027309CRS",
@@ -48536,8 +47324,7 @@ const DASHBOARD = {
       "remark": "MILL에서 아직 정확한 일정을 받지 못함. 일정 확인 후 업데이트 예정",
       "delay_reason": "",
       "fabric_etd": "2026-04-25",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3ASPA017313BRD",
@@ -48576,8 +47363,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-27",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3ASPA017307IVS",
@@ -48616,8 +47402,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-27",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FSPA317307IVS",
@@ -48656,8 +47441,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-04-28",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FSPA317350BKS",
@@ -48696,8 +47480,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-04-28",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FSPA317310LDL",
@@ -48736,8 +47519,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-28",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3ASPS047350BKS",
@@ -48776,8 +47558,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-04-25",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3ASPS047309MGS",
@@ -48816,8 +47597,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3ASPS317313BRD",
@@ -48846,7 +47626,7 @@ const DASHBOARD = {
       "cn_focus_pcs": 0,
       "kr_keep_pcs": 1,
       "cn_total_pcs": 4,
-      "kr_expected": "2026-06-12",
+      "kr_expected": "2026-06-16",
       "kr_actual": null,
       "cn_etd": "2026-06-11",
       "cn_atd": null,
@@ -48856,8 +47636,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-27",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3ASPS317350BKS",
@@ -48896,8 +47675,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-04-28",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3ASPA327307NYL",
@@ -48936,8 +47714,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3ASPA327350BKS",
@@ -48976,8 +47753,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-04-25",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FSPA037350BKS",
@@ -49016,8 +47792,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "",
-      "is_na": false,
-      "phase": "2ND TS"
+      "is_na": false
     },
     {
       "sku": "3FSPA037309MGS",
@@ -49056,8 +47831,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-06-05",
-      "is_na": false,
-      "phase": "2ND TS"
+      "is_na": false
     },
     {
       "sku": "3ASPA317346CGS",
@@ -49086,7 +47860,7 @@ const DASHBOARD = {
       "cn_focus_pcs": 0,
       "kr_keep_pcs": 1,
       "cn_total_pcs": 4,
-      "kr_expected": "2026-06-12",
+      "kr_expected": "2026-06-16",
       "kr_actual": null,
       "cn_etd": "2026-06-11",
       "cn_atd": null,
@@ -49096,8 +47870,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-04-25",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3ASPA317350BKS",
@@ -49126,7 +47899,7 @@ const DASHBOARD = {
       "cn_focus_pcs": 0,
       "kr_keep_pcs": 1,
       "cn_total_pcs": 4,
-      "kr_expected": "2026-06-12",
+      "kr_expected": "2026-06-16",
       "kr_actual": null,
       "cn_etd": "2026-06-11",
       "cn_atd": null,
@@ -49136,8 +47909,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-04-18",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FSPA017350BKS",
@@ -49176,8 +47948,7 @@ const DASHBOARD = {
       "remark": "재가봉 진행",
       "delay_reason": "",
       "fabric_etd": "2026-05-20",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FSPA017309CRS",
@@ -49216,8 +47987,7 @@ const DASHBOARD = {
       "remark": "재가봉 진행",
       "delay_reason": "",
       "fabric_etd": "2026-05-20",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FSPA017313BRD",
@@ -49256,8 +48026,7 @@ const DASHBOARD = {
       "remark": "재가봉 진행",
       "delay_reason": "",
       "fabric_etd": "2026-05-20",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FSPA017343GNL",
@@ -49296,8 +48065,7 @@ const DASHBOARD = {
       "remark": "재가봉 진행",
       "delay_reason": "",
       "fabric_etd": "2026-05-20",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FSPA017350SBS",
@@ -49336,8 +48104,7 @@ const DASHBOARD = {
       "remark": "재가봉 진행",
       "delay_reason": "",
       "fabric_etd": "2026-05-20",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FSPA027307IVS",
@@ -49376,8 +48143,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-04-30",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FSPA027350SBS",
@@ -49416,8 +48182,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-11",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FSPS017350BKS",
@@ -49446,7 +48211,7 @@ const DASHBOARD = {
       "cn_focus_pcs": 0,
       "kr_keep_pcs": 1,
       "cn_total_pcs": 3,
-      "kr_expected": "2026-06-12",
+      "kr_expected": "2026-06-16",
       "kr_actual": null,
       "cn_etd": "2026-06-11",
       "cn_atd": null,
@@ -49456,8 +48221,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-04-28",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FSPS017313BRD",
@@ -49496,8 +48260,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-27",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FSPS017310PKM",
@@ -49526,7 +48289,7 @@ const DASHBOARD = {
       "cn_focus_pcs": 1,
       "kr_keep_pcs": 1,
       "cn_total_pcs": 4,
-      "kr_expected": "2026-06-12",
+      "kr_expected": "2026-06-16",
       "kr_actual": null,
       "cn_etd": "2026-06-11",
       "cn_atd": null,
@@ -49536,8 +48299,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-04-28",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FSPS017309CRS",
@@ -49566,7 +48328,7 @@ const DASHBOARD = {
       "cn_focus_pcs": 1,
       "kr_keep_pcs": 1,
       "cn_total_pcs": 4,
-      "kr_expected": "2026-06-12",
+      "kr_expected": "2026-06-16",
       "kr_actual": null,
       "cn_etd": "2026-06-11",
       "cn_atd": null,
@@ -49576,8 +48338,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-04-28",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FSPA327309MGM",
@@ -49616,8 +48377,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FSPA327350BKS",
@@ -49656,8 +48416,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-04-30",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FSPA327309CRS",
@@ -49696,8 +48455,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-04-30",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FSPA337310LDL",
@@ -49736,8 +48494,7 @@ const DASHBOARD = {
       "remark": "5/15 수취예정, 부속원단: 6/10 수취 예정",
       "delay_reason": "",
       "fabric_etd": "2026-04-30",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FSPA337313BRD",
@@ -49776,8 +48533,7 @@ const DASHBOARD = {
       "remark": "5/15 수취예정, 부속원단: 6/10 수취 예정",
       "delay_reason": "",
       "fabric_etd": "2026-05-28",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FSPA337350BKS",
@@ -49816,8 +48572,7 @@ const DASHBOARD = {
       "remark": "5/15 수취예정, 부속원단: 6/10 수취 예정",
       "delay_reason": "",
       "fabric_etd": "2026-04-30",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FSPA347350BKS",
@@ -49856,8 +48611,7 @@ const DASHBOARD = {
       "remark": "MILL에서 아직 정확한 일정을 받지 못함. 일정 확인 후 업데이트 예정",
       "delay_reason": "",
       "fabric_etd": "2026-04-30",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FSPA347307IVS",
@@ -49896,8 +48650,7 @@ const DASHBOARD = {
       "remark": "MILL에서 아직 정확한 일정을 받지 못함. 일정 확인 후 업데이트 예정",
       "delay_reason": "",
       "fabric_etd": "2026-04-30",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FSPA347307NYL",
@@ -49936,8 +48689,7 @@ const DASHBOARD = {
       "remark": "MILL에서 아직 정확한 일정을 받지 못함. 일정 확인 후 업데이트 예정",
       "delay_reason": "",
       "fabric_etd": "2026-05-28",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FSPA357350BKS",
@@ -49976,8 +48728,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-04-28",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FSPA357310LDL",
@@ -50016,8 +48767,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-28",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FSPA047309CRS",
@@ -50056,8 +48806,7 @@ const DASHBOARD = {
       "remark": "MILL에서 아직 정확한 일정을 받지 못함. 일정 확인 후 업데이트 예정",
       "delay_reason": "",
       "fabric_etd": "2026-05-28",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FSPA047343GNL",
@@ -50096,8 +48845,7 @@ const DASHBOARD = {
       "remark": "MILL에서 아직 정확한 일정을 받지 못함. 일정 확인 후 업데이트 예정",
       "delay_reason": "",
       "fabric_etd": "2026-05-28",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FSPA047350SBS",
@@ -50136,8 +48884,7 @@ const DASHBOARD = {
       "remark": "MILL에서 아직 정확한 일정을 받지 못함. 일정 확인 후 업데이트 예정",
       "delay_reason": "",
       "fabric_etd": "2026-05-28",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3AWPO017113BGD",
@@ -50176,8 +48923,7 @@ const DASHBOARD = {
       "remark": "5/7: The sample fabric has not been received yet, and the color of the sample fabric has not been finally confirmed",
       "delay_reason": "원단 지연",
       "fabric_etd": "2026-05-29",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3AWPO017150BKS",
@@ -50216,8 +48962,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-04-30",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3AWPO027113BGD",
@@ -50256,8 +49001,7 @@ const DASHBOARD = {
       "remark": "실제 원단 입고 예정일 : 5/30일",
       "delay_reason": "",
       "fabric_etd": "2026-05-29",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3AWPO027150BKS",
@@ -50296,8 +49040,7 @@ const DASHBOARD = {
       "remark": "실제 원단 입고 예정일 : 5/8일",
       "delay_reason": "",
       "fabric_etd": "2026-04-23",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3AWPO037113BRD",
@@ -50336,8 +49079,7 @@ const DASHBOARD = {
       "remark": "5/7: The sample fabric has not been received yet, and the color of the sample fabric has not been finally confirmed",
       "delay_reason": "원단 지연",
       "fabric_etd": "2026-05-29",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3AWPO037107CRD",
@@ -50376,8 +49118,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-15",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3AWPO037150BKS",
@@ -50416,8 +49157,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-04-30",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FWPO027109CRS",
@@ -50456,8 +49196,7 @@ const DASHBOARD = {
       "remark": "실제 원단 입고 예정일 : 5/8일",
       "delay_reason": "",
       "fabric_etd": "2026-04-30",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FWPO027150BKS",
@@ -50496,8 +49235,7 @@ const DASHBOARD = {
       "remark": "실제 원단 입고 예정일 : 5/8일",
       "delay_reason": "",
       "fabric_etd": "2026-05-07",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FWPO027150SBS",
@@ -50536,8 +49274,7 @@ const DASHBOARD = {
       "remark": "실제 원단 입고 예정일 : 5/30일",
       "delay_reason": "",
       "fabric_etd": "2026-05-29",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3AWPS047114BRS",
@@ -50576,8 +49313,7 @@ const DASHBOARD = {
       "remark": "실제 원단 입고 예정일 : 5/30일",
       "delay_reason": "",
       "fabric_etd": "2026-05-29",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3AWPS047143SAL",
@@ -50616,8 +49352,7 @@ const DASHBOARD = {
       "remark": "실제 원단 입고 예정일 : 5/30일",
       "delay_reason": "",
       "fabric_etd": "2026-05-29",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3AWPS047150BKS",
@@ -50656,8 +49391,7 @@ const DASHBOARD = {
       "remark": "실제 원단 입고 예정일 : 5/30일",
       "delay_reason": "",
       "fabric_etd": "2026-04-30",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3AWPS057150BKS",
@@ -50696,8 +49430,7 @@ const DASHBOARD = {
       "remark": "실제 원단 입고 예정일 : 5/8일",
       "delay_reason": "",
       "fabric_etd": "2026-04-30",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3AWPS057109CRS",
@@ -50736,8 +49469,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-29",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FWPS067150GRL",
@@ -50776,8 +49508,7 @@ const DASHBOARD = {
       "remark": "5/7: The sample fabric has not been received yet, and the color of the sample fabric has not been finally confirmed ,Will received on 5/22",
       "delay_reason": "원단 지연",
       "fabric_etd": "2026-05-29",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FWPS067150SAL",
@@ -50816,8 +49547,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-04-23",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FWPS027143SAM",
@@ -50856,8 +49586,7 @@ const DASHBOARD = {
       "remark": "실제 원단 입고 예정일 : 5/30일",
       "delay_reason": "",
       "fabric_etd": "2026-05-29",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FWPS027150BKS",
@@ -50896,8 +49625,7 @@ const DASHBOARD = {
       "remark": "실제 원단 입고 예정일 : 5/15일",
       "delay_reason": "",
       "fabric_etd": "2026-05-08",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FWPS027109CRS",
@@ -50936,8 +49664,7 @@ const DASHBOARD = {
       "remark": "실제 원단 입고 예정일 : 5/8일",
       "delay_reason": "",
       "fabric_etd": "2026-04-23",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FWPS027107PPS",
@@ -50976,8 +49703,7 @@ const DASHBOARD = {
       "remark": "실제 원단 입고 예정일 : 5/30일",
       "delay_reason": "",
       "fabric_etd": "2026-05-29",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3AWPS077113BRD",
@@ -51016,8 +49742,7 @@ const DASHBOARD = {
       "remark": "실제 원단 입고 예정일 : 5/30일",
       "delay_reason": "",
       "fabric_etd": "2026-05-29",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3AWPS077150BKS",
@@ -51056,8 +49781,7 @@ const DASHBOARD = {
       "remark": "실제 원단 입고 예정일 : 5/8일",
       "delay_reason": "",
       "fabric_etd": "2026-04-30",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3AWPS077143SAL",
@@ -51096,8 +49820,7 @@ const DASHBOARD = {
       "remark": "실제 원단 입고 예정일 : 5/30일",
       "delay_reason": "",
       "fabric_etd": "2026-04-30",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3AWPS087150BKS",
@@ -51136,8 +49859,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-08",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3AWPS087109CRS",
@@ -51176,8 +49898,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-08",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FWPA037150BKS",
@@ -51216,8 +49937,7 @@ const DASHBOARD = {
       "remark": "The fabric has not been confirmed yet, and the final T/P has not been received.\"",
       "delay_reason": "원단 지연",
       "fabric_etd": "2026-05-29",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FWPA037143SAS",
@@ -51256,8 +49976,7 @@ const DASHBOARD = {
       "remark": "The fabric has not been confirmed yet, and the final T/P has not been received.\"",
       "delay_reason": "",
       "fabric_etd": "",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3AWPD117344GRL",
@@ -51296,8 +50015,7 @@ const DASHBOARD = {
       "remark": "실제 원단 입고 예정일 : 5/30일",
       "delay_reason": "",
       "fabric_etd": "2026-05-29",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3AWPD117350BKS",
@@ -51336,8 +50054,7 @@ const DASHBOARD = {
       "remark": "실제 원단 입고 예정일 : 5/8일",
       "delay_reason": "",
       "fabric_etd": "2026-04-22",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3AWPD127346CGM",
@@ -51376,8 +50093,7 @@ const DASHBOARD = {
       "remark": "실제 원단 입고 예정일 : 5/30일",
       "delay_reason": "",
       "fabric_etd": "2026-05-29",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3AWPD127350BKS",
@@ -51416,8 +50132,7 @@ const DASHBOARD = {
       "remark": "실제 원단 입고 예정일 : 5/8일",
       "delay_reason": "",
       "fabric_etd": "2026-04-22",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3AWPD127344GRL",
@@ -51456,8 +50171,7 @@ const DASHBOARD = {
       "remark": "실제 원단 입고 예정일 : 5/30일",
       "delay_reason": "",
       "fabric_etd": "2026-05-29",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3AWPO137314BRS",
@@ -51496,8 +50210,7 @@ const DASHBOARD = {
       "remark": "실제 원단 입고 예정일 : 5/30일",
       "delay_reason": "",
       "fabric_etd": "2026-05-29",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3AWPO137350BKS",
@@ -51536,8 +50249,7 @@ const DASHBOARD = {
       "remark": "실제 원단 입고 예정일 : 5/30일",
       "delay_reason": "",
       "fabric_etd": "2026-04-28",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3AWPO137307CRD",
@@ -51576,8 +50288,7 @@ const DASHBOARD = {
       "remark": "실제 원단 입고 예정일 : 5/30일",
       "delay_reason": "",
       "fabric_etd": "2026-05-29",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FWPO117307CRD",
@@ -51616,8 +50327,7 @@ const DASHBOARD = {
       "remark": "실제 원단 입고 예정일 : 5/10일",
       "delay_reason": "",
       "fabric_etd": "2026-04-30",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FWPO117350BKS",
@@ -51656,8 +50366,7 @@ const DASHBOARD = {
       "remark": "실제 원단 입고 예정일 : 5/10일",
       "delay_reason": "",
       "fabric_etd": "2026-04-30",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3AWPO147314BRS",
@@ -51696,8 +50405,7 @@ const DASHBOARD = {
       "remark": "실제 원단 입고 예정일 : 5/30일",
       "delay_reason": "",
       "fabric_etd": "2026-05-29",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3AWPO147346CGS",
@@ -51736,8 +50444,7 @@ const DASHBOARD = {
       "remark": "실제 진행 컬러 : CGS 5/30일 입고 예정",
       "delay_reason": "",
       "fabric_etd": "2026-05-29",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3AWPO147307CRD",
@@ -51776,8 +50483,7 @@ const DASHBOARD = {
       "remark": "원단처에서 해당 컬러 자료를 받은 것이 없다고 하여 입고 예정일 확인 불가",
       "delay_reason": "",
       "fabric_etd": "2026-05-29",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3AWPO147350BKS",
@@ -51816,8 +50522,7 @@ const DASHBOARD = {
       "remark": "실제 원단 입고 예정일 : 5/8일",
       "delay_reason": "",
       "fabric_etd": "2026-05-07",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FWPO127346CGM",
@@ -51856,8 +50561,7 @@ const DASHBOARD = {
       "remark": "실제 원단 입고 예정일 : 5/30일",
       "delay_reason": "",
       "fabric_etd": "2026-05-29",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FWPO127350BKS",
@@ -51896,8 +50600,7 @@ const DASHBOARD = {
       "remark": "실제 원단 입고 예정일 : 5/10일",
       "delay_reason": "",
       "fabric_etd": "2026-04-30",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FWPO127307SBL",
@@ -51936,8 +50639,7 @@ const DASHBOARD = {
       "remark": "실제 원단 입고 예정일 : 5/30일",
       "delay_reason": "",
       "fabric_etd": "2026-05-29",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3AWPS157310LDL",
@@ -51976,8 +50678,7 @@ const DASHBOARD = {
       "remark": "실제 원단 입고 예정일 : 5/30일",
       "delay_reason": "",
       "fabric_etd": "2026-05-29",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3AWPS157350BKS",
@@ -52016,8 +50717,7 @@ const DASHBOARD = {
       "remark": "실제 원단 입고 예정일 : 5/30일",
       "delay_reason": "",
       "fabric_etd": "2026-05-07",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3AWPS157307CRD",
@@ -52056,8 +50756,7 @@ const DASHBOARD = {
       "remark": "실제 원단 입고 예정일 : 5/8일",
       "delay_reason": "",
       "fabric_etd": "2026-04-23",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3AWPS157344GRL",
@@ -52096,8 +50795,7 @@ const DASHBOARD = {
       "remark": "실제 원단 입고 예정일 : 5/30일",
       "delay_reason": "",
       "fabric_etd": "2026-04-22",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FWPS177350BKS",
@@ -52136,8 +50834,7 @@ const DASHBOARD = {
       "remark": "실제 원단 입고 예정일 : 5/10일",
       "delay_reason": "",
       "fabric_etd": "2026-04-30",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FWPS177307CRD",
@@ -52176,8 +50873,7 @@ const DASHBOARD = {
       "remark": "실제 원단 입고 예정일 : 5/10일",
       "delay_reason": "",
       "fabric_etd": "2026-04-30",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FWPA147309CRS",
@@ -52216,8 +50912,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-29",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FWPA147307SBL",
@@ -52256,8 +50951,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-29",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FWPA147307NYL",
@@ -52296,8 +50990,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-29",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FWPA147350BKS",
@@ -52336,8 +51029,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-04-22",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3AWPS197343SAL",
@@ -52376,8 +51068,7 @@ const DASHBOARD = {
       "remark": "실제 원단 입고 예정일 : 5/30일",
       "delay_reason": "",
       "fabric_etd": "2026-05-29",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3AWPS197307NYL",
@@ -52416,8 +51107,7 @@ const DASHBOARD = {
       "remark": "실제 원단 입고 예정일 : 5/30일",
       "delay_reason": "",
       "fabric_etd": "2026-05-29",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3AWPS197350BKS",
@@ -52456,8 +51146,7 @@ const DASHBOARD = {
       "remark": "실제 원단 입고 예정일 : 5/30일",
       "delay_reason": "",
       "fabric_etd": "2026-05-07",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FWPS207343SAM",
@@ -52496,8 +51185,7 @@ const DASHBOARD = {
       "remark": "컬러변경 확인완료(SAS > SAM)",
       "delay_reason": "",
       "fabric_etd": "2026-05-29",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FWPS207307CRD",
@@ -52536,8 +51224,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-04-23",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FWPS157307PPS",
@@ -52576,8 +51263,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-29",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FWPS157350BKS",
@@ -52616,8 +51302,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-04-22",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FWPS157307CRD",
@@ -52656,8 +51341,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-04-23",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FWPA167350BKS",
@@ -52696,8 +51380,7 @@ const DASHBOARD = {
       "remark": "5/7: The sample fabric has not been received yet, and the color of the sample fabric has not been finally confirmed.",
       "delay_reason": "",
       "fabric_etd": "2026-05-08",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FWPA167343SAL",
@@ -52736,8 +51419,7 @@ const DASHBOARD = {
       "remark": "5/7: The sample fabric has not been received yet, and the color of the sample fabric has not been finally confirmed.",
       "delay_reason": "원단 지연",
       "fabric_etd": "2026-05-08",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FWPA167307INS",
@@ -52776,8 +51458,7 @@ const DASHBOARD = {
       "remark": "5/7: The sample fabric has not been received yet, and the color of the sample fabric has not been finally confirmed",
       "delay_reason": "원단 지연",
       "fabric_etd": "2026-05-29",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3AWPA217350BKS",
@@ -52816,8 +51497,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-04-23",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3AWPA217307IVS",
@@ -52856,8 +51536,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-04-24",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3AWPA217307NYL",
@@ -52896,8 +51575,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-29",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FWPA177314BRS",
@@ -52936,8 +51614,7 @@ const DASHBOARD = {
       "remark": "실제 원단 입고 예정일 : 5/30일",
       "delay_reason": "",
       "fabric_etd": "2026-05-29",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FWPA177350BKS",
@@ -52976,8 +51653,7 @@ const DASHBOARD = {
       "remark": "실제 원단 입고 예정일 : 5/30일",
       "delay_reason": "",
       "fabric_etd": "2026-05-08",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3AWPO317307SBP",
@@ -53016,8 +51692,7 @@ const DASHBOARD = {
       "remark": "실제 원단 입고 예정일 : 5/30일",
       "delay_reason": "",
       "fabric_etd": "2026-05-29",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3AWPO317344GRL",
@@ -53056,8 +51731,7 @@ const DASHBOARD = {
       "remark": "실제 원단 입고 예정일 : 5/30일",
       "delay_reason": "",
       "fabric_etd": "2026-05-29",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3AWPO317350BKS",
@@ -53096,8 +51770,7 @@ const DASHBOARD = {
       "remark": "실제 원단 입고 예정일 : 5/8일",
       "delay_reason": "",
       "fabric_etd": "2026-05-07",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FWPO317307PPS",
@@ -53136,8 +51809,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-29",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FWPO317346CGM",
@@ -53176,8 +51848,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-29",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3AWPO327344GRL",
@@ -53216,8 +51887,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-07",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3AWPO327350BKS",
@@ -53256,8 +51926,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-04-22",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3AWPS337350YEM",
@@ -53296,8 +51965,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-04-28",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3AWPS337344GRL",
@@ -53336,8 +52004,7 @@ const DASHBOARD = {
       "remark": "원단 입고일 확인 안됨",
       "delay_reason": "",
       "fabric_etd": "2026-05-29",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3AWPS337307PPS",
@@ -53376,8 +52043,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-29",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3AWPS337350BKS",
@@ -53416,8 +52082,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-08",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3AWPS347350BKS",
@@ -53456,8 +52121,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-04-23",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3AWPS347309CRS",
@@ -53496,8 +52160,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-29",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3AWPS347350SBP",
@@ -53536,8 +52199,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-29",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FWPA327307CRS",
@@ -53576,8 +52238,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-15",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FWPA327350BKS",
@@ -53616,8 +52277,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-08",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FWPA327307SBL",
@@ -53656,8 +52316,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-08",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FWPA337346CGM",
@@ -53696,8 +52355,7 @@ const DASHBOARD = {
       "remark": "실제 원단 입고 예정일 : 5/8일",
       "delay_reason": "",
       "fabric_etd": "2026-04-22",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FWPA337310LDL",
@@ -53736,8 +52394,7 @@ const DASHBOARD = {
       "remark": "실제 원단 입고 예정일 : 5/8일",
       "delay_reason": "",
       "fabric_etd": "2026-04-27",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FWPA347350SBP",
@@ -53776,8 +52433,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-29",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FWPA347350YEM",
@@ -53816,8 +52472,7 @@ const DASHBOARD = {
       "remark": "4/29: 소재 입고예정일 미정",
       "delay_reason": "기타",
       "fabric_etd": "2026-05-29",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FWPA357307IVS",
@@ -53856,8 +52511,7 @@ const DASHBOARD = {
       "remark": "실제 원단 입고 예정일 : 5/30일",
       "delay_reason": "",
       "fabric_etd": "2026-05-29",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FWPA357307SBL",
@@ -53896,8 +52550,7 @@ const DASHBOARD = {
       "remark": "실제 원단 입고 예정일 : 5/30일",
       "delay_reason": "",
       "fabric_etd": "2026-05-29",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FWPA357350BKS",
@@ -53936,8 +52589,7 @@ const DASHBOARD = {
       "remark": "실제 원단 입고 예정일 : 5/30일",
       "delay_reason": "",
       "fabric_etd": "2026-05-29",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3AWPA357344GRL",
@@ -53976,8 +52628,7 @@ const DASHBOARD = {
       "remark": "5/7: The sample fabric has not been received yet, and the color of the sample fabric has not been finally confirmed",
       "delay_reason": "",
       "fabric_etd": "2026-05-08",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3AWPA357350BKS",
@@ -54016,8 +52667,7 @@ const DASHBOARD = {
       "remark": "5/7: The sample fabric has not been received yet, and the color of the sample fabric has not been finally confirmed",
       "delay_reason": "",
       "fabric_etd": "2026-05-08",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FWPA367343SAL",
@@ -54056,8 +52706,7 @@ const DASHBOARD = {
       "remark": "5/7: The sample fabric has not been received yet, and the color of the sample fabric has not been finally confirmed",
       "delay_reason": "원단 지연",
       "fabric_etd": "2026-05-29",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FWPA367350BKS",
@@ -54096,8 +52745,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-04-22",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FWPA377350YEM",
@@ -54136,8 +52784,7 @@ const DASHBOARD = {
       "remark": "실제 원단 입고 예정일 : 5/30일",
       "delay_reason": "",
       "fabric_etd": "2026-05-29",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FWPA377310LDL",
@@ -54176,8 +52823,7 @@ const DASHBOARD = {
       "remark": "실제 원단 입고 예정일 : 5/30일",
       "delay_reason": "",
       "fabric_etd": "2026-05-29",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FWPA377350BKS",
@@ -54216,8 +52862,7 @@ const DASHBOARD = {
       "remark": "실제 원단 입고 예정일 : 5/8일",
       "delay_reason": "",
       "fabric_etd": "2026-04-23",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FWPS327150BKS",
@@ -54256,8 +52901,7 @@ const DASHBOARD = {
       "remark": "실제 원단 입고 예정일 : 5/14일",
       "delay_reason": "",
       "fabric_etd": "2026-05-08",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FWPS327143SAL",
@@ -54296,8 +52940,7 @@ const DASHBOARD = {
       "remark": "실제 원단 입고 예정일 : 5/8일",
       "delay_reason": "",
       "fabric_etd": "2026-04-23",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3AWPO337313BRD",
@@ -54336,8 +52979,7 @@ const DASHBOARD = {
       "remark": "실제 원단 입고 예정일 : 5/30일",
       "delay_reason": "",
       "fabric_etd": "2026-05-29",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3AWPO337350BKS",
@@ -54376,8 +53018,7 @@ const DASHBOARD = {
       "remark": "실제 원단 입고 예정일 : 5/8일",
       "delay_reason": "",
       "fabric_etd": "2026-04-23",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FWPS337350SBS",
@@ -54416,8 +53057,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-29",
-      "is_na": false,
-      "phase": "2ND TS"
+      "is_na": false
     },
     {
       "sku": "3FWPS337343SAL",
@@ -54456,8 +53096,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-29",
-      "is_na": false,
-      "phase": "2ND TS"
+      "is_na": false
     },
     {
       "sku": "3AWPA437107CRD",
@@ -54496,8 +53135,7 @@ const DASHBOARD = {
       "remark": "실제 원단 입고 예정일 : 5/30일",
       "delay_reason": "",
       "fabric_etd": "2026-05-29",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3AWPA437113BGD",
@@ -54536,8 +53174,7 @@ const DASHBOARD = {
       "remark": "실제 원단 입고 예정일 : 5/30일",
       "delay_reason": "",
       "fabric_etd": "2026-05-29",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3AWPA437150BKS",
@@ -54576,8 +53213,7 @@ const DASHBOARD = {
       "remark": "실제 원단 입고 예정일 : 5/30일",
       "delay_reason": "",
       "fabric_etd": "2026-05-29",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3AWPA507113BGD",
@@ -54616,8 +53252,7 @@ const DASHBOARD = {
       "remark": "실제 원단 입고 예정일 : 5/30일",
       "delay_reason": "",
       "fabric_etd": "2026-05-29",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3AWPA507107NYS",
@@ -54656,8 +53291,7 @@ const DASHBOARD = {
       "remark": "실제 원단 입고 예정일 : 5/30일",
       "delay_reason": "",
       "fabric_etd": "2026-05-29",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3AWPA517343SAL",
@@ -54696,8 +53330,7 @@ const DASHBOARD = {
       "remark": "not yet received the T/P",
       "delay_reason": "원단 지연",
       "fabric_etd": "2026-05-29",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3AWPA517314BRS",
@@ -54736,8 +53369,7 @@ const DASHBOARD = {
       "remark": "not yet received the T/P",
       "delay_reason": "원단 지연",
       "fabric_etd": "2026-05-29",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3AWPA517350BKS",
@@ -54776,8 +53408,7 @@ const DASHBOARD = {
       "remark": "not yet received the T/P",
       "delay_reason": "원단 지연",
       "fabric_etd": "2026-05-29",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FWPA527310LDL",
@@ -54816,8 +53447,7 @@ const DASHBOARD = {
       "remark": "작지 미분출, 원단 입고일 확인 안됨",
       "delay_reason": "",
       "fabric_etd": "",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FWPA527346CGD",
@@ -54856,8 +53486,7 @@ const DASHBOARD = {
       "remark": "작지 미분출, 원단 입고일 확인 안됨",
       "delay_reason": "",
       "fabric_etd": "",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FWPO517344GRL",
@@ -54896,8 +53525,7 @@ const DASHBOARD = {
       "remark": "실제 원단 입고 예정일 : 5/30일",
       "delay_reason": "",
       "fabric_etd": "2026-05-29",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FWPO517350BKS",
@@ -54936,8 +53564,7 @@ const DASHBOARD = {
       "remark": "실제 원단 입고 예정일 : 5/30일",
       "delay_reason": "",
       "fabric_etd": "2026-04-28",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FWPO517310LDP",
@@ -54976,8 +53603,7 @@ const DASHBOARD = {
       "remark": "실제 원단 입고 예정일 : 5/30일",
       "delay_reason": "",
       "fabric_etd": "2026-05-29",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FWPA537343SAL",
@@ -55016,8 +53642,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-29",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FWPA537350BKS",
@@ -55056,8 +53681,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-04-23",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FWPA187107CRD",
@@ -55096,8 +53720,7 @@ const DASHBOARD = {
       "remark": "5/11) 원단 재수배 필요하여 발송일 미정",
       "delay_reason": "",
       "fabric_etd": "2026-05-29",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FWPA187150BKS",
@@ -55136,8 +53759,7 @@ const DASHBOARD = {
       "remark": "5/11) 원단 재수배 필요하여 발송일 미정",
       "delay_reason": "",
       "fabric_etd": "2026-05-29",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FWPA187107SBS",
@@ -55176,8 +53798,7 @@ const DASHBOARD = {
       "remark": "5/11) 원단 재수배 필요하여 발송일 미정",
       "delay_reason": "",
       "fabric_etd": "2026-05-29",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3ASMD017350BKS",
@@ -55216,8 +53837,7 @@ const DASHBOARD = {
       "remark": "실제 원단 입고 예정일 : 5/8일",
       "delay_reason": "",
       "fabric_etd": "2026-04-30",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3ASMD017307INS",
@@ -55256,8 +53876,7 @@ const DASHBOARD = {
       "remark": "실제 원단 입고 예정일 : 5/30일",
       "delay_reason": "",
       "fabric_etd": "2026-05-29",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3ASMD017343MTL",
@@ -55296,8 +53915,7 @@ const DASHBOARD = {
       "remark": "실제 원단 입고 예정일 : 5/30일",
       "delay_reason": "",
       "fabric_etd": "2026-05-29",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3ASMD017350YEM",
@@ -55336,8 +53954,7 @@ const DASHBOARD = {
       "remark": "실제 원단 입고 예정일 : 5/30일",
       "delay_reason": "",
       "fabric_etd": "2026-05-29",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3ASMD027346CGM",
@@ -55376,8 +53993,7 @@ const DASHBOARD = {
       "remark": "실제 원단 입고 예정일 : 5/8일",
       "delay_reason": "",
       "fabric_etd": "2026-04-20",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3ASMD027313BGD",
@@ -55416,8 +54032,7 @@ const DASHBOARD = {
       "remark": "실제 원단 입고 예정일 : 5/30일",
       "delay_reason": "",
       "fabric_etd": "2026-05-29",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3ASMD027350BKS",
@@ -55456,8 +54071,7 @@ const DASHBOARD = {
       "remark": "실제 원단 입고 예정일 : 5/14일",
       "delay_reason": "",
       "fabric_etd": "2026-05-08",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3ASMD027343SAL",
@@ -55496,8 +54110,7 @@ const DASHBOARD = {
       "remark": "실제 원단 입고 예정일 : 5/8일",
       "delay_reason": "",
       "fabric_etd": "2026-04-20",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3ASMD037344GRL",
@@ -55536,8 +54149,7 @@ const DASHBOARD = {
       "remark": "44GRL  다시 작업  5/28일완성",
       "delay_reason": "원단 지연",
       "fabric_etd": "2026-05-15",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3ASMD037350SBS",
@@ -55576,8 +54188,7 @@ const DASHBOARD = {
       "remark": "4/29: 소재 입고예정일 미정",
       "delay_reason": "기타",
       "fabric_etd": "2026-05-29",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3ASMD037307PPM",
@@ -55616,8 +54227,7 @@ const DASHBOARD = {
       "remark": "4/29: 소재 입고예정일 미정",
       "delay_reason": "기타",
       "fabric_etd": "2026-05-29",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3ASMD037350BKS",
@@ -55656,8 +54266,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-04-22",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3ASMD047307CRD",
@@ -55696,8 +54305,7 @@ const DASHBOARD = {
       "remark": "실제 원단 입고 예정일 : 5/8일",
       "delay_reason": "",
       "fabric_etd": "2026-04-23",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3ASMD047346CGS",
@@ -55736,8 +54344,7 @@ const DASHBOARD = {
       "remark": "실제 원단 입고 예정일 : 5/30일",
       "delay_reason": "",
       "fabric_etd": "2026-05-29",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3ASMD047350BKS",
@@ -55776,8 +54383,7 @@ const DASHBOARD = {
       "remark": "실제 원단 입고 예정일 : 5/30일",
       "delay_reason": "",
       "fabric_etd": "2026-05-07",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3ASMM017343CRS",
@@ -55816,8 +54422,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-12",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3ASMM017307NYL",
@@ -55856,8 +54461,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-29",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3ASMM017350BKS",
@@ -55896,8 +54500,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-04-23",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FSMA017344GRL",
@@ -55936,8 +54539,7 @@ const DASHBOARD = {
       "remark": "44GRL 다시  작업 5/28일 원단 완성",
       "delay_reason": "원단 지연",
       "fabric_etd": "2026-04-30",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FSMA017343MTL",
@@ -55976,8 +54578,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-29",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FSMA017310LDL",
@@ -56016,8 +54617,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-29",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FSMA017350BKS",
@@ -56056,8 +54656,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-04-22",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FSMA027307IVS",
@@ -56096,8 +54695,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-04-30",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FSMA027350YEM",
@@ -56136,8 +54734,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-29",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FSMA027307INS",
@@ -56176,8 +54773,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-29",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FSMA027350BKS",
@@ -56216,8 +54812,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-04-30",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FSMA037309CRS",
@@ -56256,8 +54851,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-29",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FSMA037307SBL",
@@ -56296,8 +54890,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-29",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FSMA037307NYL",
@@ -56336,8 +54929,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-29",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FSMA037350BKS",
@@ -56376,8 +54968,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-04-22",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FSMA047350BKS",
@@ -56416,8 +55007,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-07",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3ASMO017344GRL",
@@ -56456,8 +55046,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-29",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3ASMO017307SBP",
@@ -56496,8 +55085,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-29",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3ASMO017350BKS",
@@ -56536,8 +55124,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-04-28",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3ASMO027307CRS",
@@ -56576,8 +55163,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-07",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3ASMO027313BGD",
@@ -56616,8 +55202,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-29",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3ASMO027350BKS",
@@ -56656,8 +55241,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-04-23",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3ASMO037343SAM",
@@ -56696,8 +55280,7 @@ const DASHBOARD = {
       "remark": "4/29: 소재 입고예정일 미정",
       "delay_reason": "기타",
       "fabric_etd": "2026-05-29",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3ASMO037350BKS",
@@ -56736,8 +55319,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-07",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3ASMO047346CGM",
@@ -56776,8 +55358,7 @@ const DASHBOARD = {
       "remark": "원단 입고일 확인 안됨",
       "delay_reason": "",
       "fabric_etd": "2026-05-15",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3ASMO047350BKS",
@@ -56816,8 +55397,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-07",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3ASMO047307PPS",
@@ -56856,8 +55436,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-29",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3ASMO057350SBP",
@@ -56896,8 +55475,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-29",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3ASMO057346CGM",
@@ -56936,8 +55514,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-29",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3ASMO057350BKS",
@@ -56976,8 +55553,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-08",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3ASMO067344GRL",
@@ -57016,8 +55592,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-29",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3ASMO067307SBP",
@@ -57056,8 +55631,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-29",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3ASMO067350BKS",
@@ -57096,8 +55670,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-07",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FSMO077307CRD",
@@ -57136,8 +55709,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-04-30",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FSMO077310LDL",
@@ -57176,8 +55748,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-04-23",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FSMO077350BKS",
@@ -57216,8 +55787,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-04-30",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3ASMS017307CRD",
@@ -57256,8 +55826,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-29",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3ASMS017313BGD",
@@ -57296,8 +55865,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-29",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3ASMS017350BKS",
@@ -57336,8 +55904,7 @@ const DASHBOARD = {
       "remark": "원단 5/28일 완성",
       "delay_reason": "원단 지연",
       "fabric_etd": "2026-05-08",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3ASMS027343SAL",
@@ -57376,8 +55943,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-04-23",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3ASMS027307SBP",
@@ -57416,8 +55982,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-29",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3ASMS027346CGS",
@@ -57456,8 +56021,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-29",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3ASMS037314BRS",
@@ -57496,8 +56060,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-29",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3ASMS037350BKS",
@@ -57536,8 +56099,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-07",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FSMS047307CRD",
@@ -57576,8 +56138,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-04-27",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FSMS047310LDL",
@@ -57616,8 +56177,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-29",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FSMS047346CGM",
@@ -57656,8 +56216,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-29",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3ASMS057307CRD",
@@ -57696,8 +56255,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-04-23",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3ASMS057343SAM",
@@ -57736,8 +56294,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-29",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3ASMS057350BKS",
@@ -57776,8 +56333,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-07",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3ASMS067314BRS",
@@ -57816,8 +56372,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-29",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3ASMS067350BKS",
@@ -57856,8 +56411,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-29",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FSMS067350GRL",
@@ -57896,8 +56450,7 @@ const DASHBOARD = {
       "remark": "5/7: The sample fabric has not been received yet, and the color of the sample fabric has not been finally confirmed ,Will received on 5/22",
       "delay_reason": "원단 지연",
       "fabric_etd": "2026-05-29",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FSMS067350SAL",
@@ -57936,8 +56489,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-04-23",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FSMA127344GRL",
@@ -57976,8 +56528,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-15",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FSMA127310LDL",
@@ -58016,8 +56567,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-29",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FSMA127350BKS",
@@ -58056,8 +56606,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-08",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FSMA137307SBL",
@@ -58096,8 +56645,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-04-22",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FSMA137314BRS",
@@ -58136,8 +56684,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-04-22",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FSMA137350BKS",
@@ -58176,8 +56723,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-04-30",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FSMA147307IVS",
@@ -58216,8 +56762,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-04-28",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FSMA147310LDL",
@@ -58256,8 +56801,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-29",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FSMA147350BKS",
@@ -58296,8 +56840,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-04-28",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FSMA157314BRS",
@@ -58336,8 +56879,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-29",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FSMA157350BKS",
@@ -58376,8 +56918,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-04-30",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3ASMA117307IVS",
@@ -58416,8 +56957,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-04-24",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3ASMA117307NYL",
@@ -58456,8 +56996,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-29",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3ASMA117350BKS",
@@ -58496,8 +57035,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-04-23",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3ASMO117343SAL",
@@ -58536,8 +57074,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-29",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3ASMO117302WID",
@@ -58576,8 +57113,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-29",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3ASMO117350BKS",
@@ -58616,8 +57152,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-04-27",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3ASMO127344GRL",
@@ -58656,8 +57191,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-29",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3ASMO127307PPS",
@@ -58696,8 +57230,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-29",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3ASMO127350BKS",
@@ -58736,8 +57269,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-08",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3ASMS077346CGM",
@@ -58776,8 +57308,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-29",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3ASMS077350BKS",
@@ -58816,8 +57347,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-04-23",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FSMS337343SAL",
@@ -58856,8 +57386,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-29",
-      "is_na": false,
-      "phase": "2ND TS"
+      "is_na": false
     },
     {
       "sku": "3FSMS337310PKM",
@@ -58896,8 +57425,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-04-24",
-      "is_na": false,
-      "phase": "2ND TS"
+      "is_na": false
     },
     {
       "sku": "3FSMS347307IVS",
@@ -58936,8 +57464,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-29",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FSMS347350SBS",
@@ -58976,8 +57503,7 @@ const DASHBOARD = {
       "remark": "4/29: 소재 입고예정일 미정",
       "delay_reason": "기타",
       "fabric_etd": "2026-05-29",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3ASMA437307CRD",
@@ -59016,8 +57542,7 @@ const DASHBOARD = {
       "remark": "not yet received the T/P",
       "delay_reason": "원단 지연",
       "fabric_etd": "2026-05-29",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3ASMA437313BGD",
@@ -59056,8 +57581,7 @@ const DASHBOARD = {
       "remark": "not yet received the T/P",
       "delay_reason": "원단 지연",
       "fabric_etd": "2026-05-29",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3ASMA437350BKS",
@@ -59096,8 +57620,7 @@ const DASHBOARD = {
       "remark": "not yet received the T/P",
       "delay_reason": "",
       "fabric_etd": "2026-04-30",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3ASMA517307IVS",
@@ -59136,8 +57659,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-29",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3ASMA517307ABS",
@@ -59176,8 +57698,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-29",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3ASMA517310LDL",
@@ -59216,8 +57737,7 @@ const DASHBOARD = {
       "remark": "작지 미분출, 원단 입고일 확인 안됨",
       "delay_reason": "",
       "fabric_etd": "2026-05-29",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3ASMA517350BKS",
@@ -59256,8 +57776,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-29",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FSMA517310LDL",
@@ -59296,8 +57815,7 @@ const DASHBOARD = {
       "remark": "작지 미분출, 원단 입고일 확인 안됨",
       "delay_reason": "",
       "fabric_etd": "",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FSMA517344GRL",
@@ -59336,8 +57854,7 @@ const DASHBOARD = {
       "remark": "작지 미분출, 원단 입고일 확인 안됨",
       "delay_reason": "",
       "fabric_etd": "",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FSKO017143SAL",
@@ -59376,8 +57893,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-29",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FSKO017114BRS",
@@ -59416,8 +57932,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-29",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FSKO017150BKS",
@@ -59456,8 +57971,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-04-24",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FSKO027344GRL",
@@ -59496,8 +58010,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-04-22",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FSKO027350BKS",
@@ -59536,8 +58049,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-04-30",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FSKO037309CRS",
@@ -59576,8 +58088,7 @@ const DASHBOARD = {
       "remark": "실제 원단 입고 예정일 : 5/8일",
       "delay_reason": "",
       "fabric_etd": "2026-04-24",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FSKO037343SAM",
@@ -59616,8 +58127,7 @@ const DASHBOARD = {
       "remark": "실제 원단 입고 예정일 : 5/30일",
       "delay_reason": "",
       "fabric_etd": "2026-05-29",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FSKO037350BKS",
@@ -59656,8 +58166,7 @@ const DASHBOARD = {
       "remark": "실제 원단 입고 예정일 : 5/10일",
       "delay_reason": "",
       "fabric_etd": "2026-04-24",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FSKO047310LDL",
@@ -59696,8 +58205,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-04-27",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FSKO047346CGM",
@@ -59736,8 +58244,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-04-22",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FSKO047350BKS",
@@ -59776,8 +58283,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-04-30",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FSKA077309CRS",
@@ -59816,8 +58322,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-04-23",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FSKA077307SBL",
@@ -59856,8 +58361,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-04-23",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FSKA077350BKS",
@@ -59896,8 +58400,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-08",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FSKS037343SAL",
@@ -59936,8 +58439,7 @@ const DASHBOARD = {
       "remark": "실제 원단 입고 예정일 : 5/30일",
       "delay_reason": "",
       "fabric_etd": "2026-05-29",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FSKS037346CGS",
@@ -59976,8 +58478,7 @@ const DASHBOARD = {
       "remark": "실제 원단 입고 예정일 : 5/30일",
       "delay_reason": "",
       "fabric_etd": "2026-05-29",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FSKA017344GRL",
@@ -60016,8 +58517,7 @@ const DASHBOARD = {
       "remark": "44GRL 컬러 원단 5/28일 완성",
       "delay_reason": "원단 지연",
       "fabric_etd": "2026-04-30",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FSKA017313BRD",
@@ -60056,8 +58556,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-29",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FSKA017350BKS",
@@ -60096,8 +58595,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-04-22",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FSKA027313WHS",
@@ -60136,8 +58634,7 @@ const DASHBOARD = {
       "remark": "4/30 입고 완료",
       "delay_reason": "",
       "fabric_etd": "2026-04-27",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FSKA027350BKS",
@@ -60176,8 +58673,7 @@ const DASHBOARD = {
       "remark": "4/30 입고 완료",
       "delay_reason": "",
       "fabric_etd": "2026-04-27",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FSKA047309CRS",
@@ -60216,8 +58712,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-04-30",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FSKA047307NYL",
@@ -60256,8 +58751,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-29",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FSKA047350BKS",
@@ -60296,8 +58790,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-04-22",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FSKA057343SAL",
@@ -60336,8 +58829,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-29",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FSKA057307INS",
@@ -60376,8 +58868,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-29",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FSKA057350BKS",
@@ -60416,8 +58907,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-10",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FSKA067307IVS",
@@ -60456,8 +58946,7 @@ const DASHBOARD = {
       "remark": "실제 원단 입고 예정일 : 5/8일",
       "delay_reason": "",
       "fabric_etd": "2026-04-28",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FSKA067350BKS",
@@ -60496,8 +58985,7 @@ const DASHBOARD = {
       "remark": "실제 원단 입고 예정일 : 5/8일",
       "delay_reason": "",
       "fabric_etd": "2026-04-28",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FSKS057313BGD",
@@ -60536,8 +59024,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-29",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FSKS057350BKS",
@@ -60576,13 +59063,12 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-07",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FSKA017109CRS",
       "style_code": "3FSKA0171",
-      "sort": "KNIT",
+      "sort": "WOVEN",
       "class_": "BOTTOM",
       "item_type": "SK",
       "description": "여성 스포티브 케이블 스웨터 미니 스커트",
@@ -60616,13 +59102,12 @@ const DASHBOARD = {
       "remark": "원사/조직 TEST중 (염색투입못함),5/7 TEST 전달 -> 컨펌지연",
       "delay_reason": "",
       "fabric_etd": "",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FSKA017150SBS",
       "style_code": "3FSKA0171",
-      "sort": "KNIT",
+      "sort": "WOVEN",
       "class_": "BOTTOM",
       "item_type": "SK",
       "description": "여성 스포티브 케이블 스웨터 미니 스커트",
@@ -60656,8 +59141,7 @@ const DASHBOARD = {
       "remark": "원사/조직 TEST중 (염색투입못함),5/7 TEST 전달 -> 컨펌지연",
       "delay_reason": "",
       "fabric_etd": "",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FSKA217307IVS",
@@ -60696,8 +59180,7 @@ const DASHBOARD = {
       "remark": "작지 미분출, 원단 입고일 확인 안됨",
       "delay_reason": "",
       "fabric_etd": "2026-05-29",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FSKA217350SBS",
@@ -60736,8 +59219,7 @@ const DASHBOARD = {
       "remark": "작지 미분출, 원단 입고일 확인 안됨",
       "delay_reason": "",
       "fabric_etd": "2026-05-29",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3ADKS017150IND",
@@ -60776,8 +59258,7 @@ const DASHBOARD = {
       "remark": "4/28: order fabric 5/5:fabric in warehouse",
       "delay_reason": "",
       "fabric_etd": "2026-05-20",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3ADKM017150IND",
@@ -60816,8 +59297,7 @@ const DASHBOARD = {
       "remark": "4/28: order fabric 5/5:fabric in warehouse",
       "delay_reason": "",
       "fabric_etd": "2026-05-20",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FDKS027150BLD",
@@ -60856,8 +59336,7 @@ const DASHBOARD = {
       "remark": "4/28: order fabric 5/5:fabric in warehouse",
       "delay_reason": "",
       "fabric_etd": "2026-05-20",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3ADKS317150GRD",
@@ -60896,8 +59375,7 @@ const DASHBOARD = {
       "remark": "4/28: order fabric 4/30:change fabric to QA358D5-55 5/5:re-order fabric",
       "delay_reason": "",
       "fabric_etd": "2026-05-30",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3ADRS217350IND",
@@ -60936,8 +59414,7 @@ const DASHBOARD = {
       "remark": "4/28: order fabric 5/5:fabric in warehouse",
       "delay_reason": "",
       "fabric_etd": "2026-05-20",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FDRS017150IND",
@@ -60976,8 +59453,7 @@ const DASHBOARD = {
       "remark": "4/28: order fabric 5/5:fabric in warehouse",
       "delay_reason": "",
       "fabric_etd": "",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3ADRS037150BLL",
@@ -61016,8 +59492,7 @@ const DASHBOARD = {
       "remark": "4/28: order fabric,5/5:fabric in warehouse",
       "delay_reason": "원단 지연",
       "fabric_etd": "",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3ADRS037107CRS",
@@ -61056,8 +59531,7 @@ const DASHBOARD = {
       "remark": "4/28: order fabric,5/5:fabric in warehouse",
       "delay_reason": "원단 지연",
       "fabric_etd": "2026-05-30",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3ADRS037107PKL",
@@ -61096,8 +59570,7 @@ const DASHBOARD = {
       "remark": "4/28: order fabric,5/5:fabric in warehouse",
       "delay_reason": "원단 지연",
       "fabric_etd": "2026-05-30",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3ADRS037150NYD",
@@ -61136,8 +59609,7 @@ const DASHBOARD = {
       "remark": "4/28: order fabric,5/5:fabric in warehouse",
       "delay_reason": "",
       "fabric_etd": "2026-05-30",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FDRS047150NYD",
@@ -61176,8 +59648,7 @@ const DASHBOARD = {
       "remark": "PLM, 소재미정, 수주타겟 입고일정협의완료",
       "delay_reason": "",
       "fabric_etd": "2026-05-30",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3ADRS237350BLL",
@@ -61216,8 +59687,7 @@ const DASHBOARD = {
       "remark": "4/28: order fabric,5/5:fabric in warehouse",
       "delay_reason": "",
       "fabric_etd": "2026-05-20",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3ADRS237307CRS",
@@ -61256,8 +59726,7 @@ const DASHBOARD = {
       "remark": "4/28: order fabric,5/5:fabric in warehouse",
       "delay_reason": "",
       "fabric_etd": "2026-05-20",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3ADRM017150BLS",
@@ -61296,8 +59765,7 @@ const DASHBOARD = {
       "remark": "4/28: order fabric. will be ready on around 5/9",
       "delay_reason": "",
       "fabric_etd": "2026-05-20",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3ADRM027150INS",
@@ -61336,8 +59804,7 @@ const DASHBOARD = {
       "remark": "4/27: order fabric, will be ready on around 5/8",
       "delay_reason": "",
       "fabric_etd": "2026-05-20",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FDRM017150BLL",
@@ -61376,8 +59843,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3ADRM217350BLD",
@@ -61416,8 +59882,7 @@ const DASHBOARD = {
       "remark": "4/28: order fabric 5/5:fabric in warehouse;5/4:NEED FIT MOCK-UP",
       "delay_reason": "",
       "fabric_etd": "2026-05-20",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3ADRS057150BLL",
@@ -61456,8 +59921,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FDRS027150BLS",
@@ -61496,8 +59960,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-20",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FDRS217350BLL",
@@ -61536,8 +59999,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3ADRS317150BLL",
@@ -61576,8 +60038,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3ADRS317150SAL",
@@ -61616,8 +60077,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-20",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FDRS327150BLS",
@@ -61656,8 +60116,7 @@ const DASHBOARD = {
       "remark": "4/28: order fabric 5/5:fabric in warehouse",
       "delay_reason": "",
       "fabric_etd": "",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3ADRS337350SBS",
@@ -61696,8 +60155,7 @@ const DASHBOARD = {
       "remark": "PLM미수취, 2차Q2예정",
       "delay_reason": "",
       "fabric_etd": "2026-05-30",
-      "is_na": false,
-      "phase": "2ND TS"
+      "is_na": false
     },
     {
       "sku": "3FDPS017150GRS",
@@ -61736,8 +60194,7 @@ const DASHBOARD = {
       "remark": "4/28: order fabric 4/30:change fabric to QA747D9-95 5/5:re-order fabric",
       "delay_reason": "",
       "fabric_etd": "2026-05-20",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FDPS017150BLM",
@@ -61776,8 +60233,7 @@ const DASHBOARD = {
       "remark": "4/28: order fabric 5/5:fabric in warehouse",
       "delay_reason": "",
       "fabric_etd": "2026-05-20",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FDPS037150BLM",
@@ -61816,8 +60272,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-20",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FDPS037107CRD",
@@ -61856,8 +60311,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-20",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FDPS047150BLM",
@@ -61896,8 +60350,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-20",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FDPA057150BLM",
@@ -61936,8 +60389,7 @@ const DASHBOARD = {
       "remark": "4/28: order fabric 5/5:fabric in warehouse; NEED SIDE SEAM MOCK-UP",
       "delay_reason": "",
       "fabric_etd": "2026-05-20",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FDPS067150NYD",
@@ -61976,8 +60428,7 @@ const DASHBOARD = {
       "remark": "PLM, 소재미정, 수주타겟 입고일정협의완료",
       "delay_reason": "",
       "fabric_etd": "2026-05-30",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FDPS097150SBS",
@@ -62016,8 +60467,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-20",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FDPS217350SBS",
@@ -62056,8 +60506,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-20",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FDPS227350BLM",
@@ -62096,8 +60545,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-20",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3LDPS017150GRS",
@@ -62136,8 +60584,7 @@ const DASHBOARD = {
       "remark": "4/28: order fabric 4/30:change fabric to QA747D9-95 5/5:re-order fabric;NEED FIT MOCK-UP",
       "delay_reason": "",
       "fabric_etd": "2026-05-20",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3LDPS017150BLM",
@@ -62176,8 +60623,7 @@ const DASHBOARD = {
       "remark": "4/28: order fabric 5/5:fabric in warehouse, NEED FIT MOCK-UP",
       "delay_reason": "",
       "fabric_etd": "2026-05-20",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3LDPM217350BLS",
@@ -62216,8 +60662,7 @@ const DASHBOARD = {
       "remark": "4/28: order fabric. will be ready on around 5/9",
       "delay_reason": "",
       "fabric_etd": "2026-05-20",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FDPS317107CRD",
@@ -62256,8 +60701,7 @@ const DASHBOARD = {
       "remark": "4/28: order fabric,5/5:fabric in warehouse",
       "delay_reason": "",
       "fabric_etd": "2026-05-20",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FDPS317150BLD",
@@ -62296,8 +60740,7 @@ const DASHBOARD = {
       "remark": "4/28: order fabric,5/5:fabric in warehouse",
       "delay_reason": "",
       "fabric_etd": "2026-05-20",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FDPS317150GRD",
@@ -62336,8 +60779,7 @@ const DASHBOARD = {
       "remark": "4/28: order fabric.,5/5:fabric in warehouse",
       "delay_reason": "",
       "fabric_etd": "2026-05-20",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3LDPS327150BLL",
@@ -62376,8 +60818,7 @@ const DASHBOARD = {
       "remark": "4/28: order fabric,5/5:fabric in warehouse",
       "delay_reason": "",
       "fabric_etd": "2026-05-20",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FDPS327350IND",
@@ -62416,8 +60857,7 @@ const DASHBOARD = {
       "remark": "4/28: order fabric 5/5:fabric in warehouse",
       "delay_reason": "",
       "fabric_etd": "2026-05-20",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FDPA337150BLL",
@@ -62456,8 +60896,7 @@ const DASHBOARD = {
       "remark": "4/28: order fabric 5/5:fabric in warehouse",
       "delay_reason": "",
       "fabric_etd": "2026-05-20",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FDPS417150BLS",
@@ -62496,8 +60935,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-20",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FDPS427350BLL",
@@ -62536,8 +60974,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FDPS437150BLS",
@@ -62576,8 +61013,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-30",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FDPD107150BLD",
@@ -62616,8 +61052,7 @@ const DASHBOARD = {
       "remark": "4/28: order fabric,5/5:fabric in warehouse",
       "delay_reason": "",
       "fabric_etd": "2026-05-20",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FDPD107150NYS",
@@ -62656,8 +61091,7 @@ const DASHBOARD = {
       "remark": "4/28: order fabric,5/5:fabric in warehouse",
       "delay_reason": "",
       "fabric_etd": "2026-05-20",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FDPM227150BLS",
@@ -62696,8 +61130,7 @@ const DASHBOARD = {
       "remark": "4/28: order fabric. will be ready on around 5/9",
       "delay_reason": "",
       "fabric_etd": "2026-05-20",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FDPM327150BLL",
@@ -62736,8 +61169,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FDPS107150IND",
@@ -62776,8 +61208,7 @@ const DASHBOARD = {
       "remark": "4/28: order fabric,5/5:fabric in warehouse",
       "delay_reason": "",
       "fabric_etd": "2026-05-20",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FDPS107150GRS",
@@ -62816,8 +61247,7 @@ const DASHBOARD = {
       "remark": "4/28: order fabric 4/30:change fabric to QA358D5-55 5/5:re-order fabric",
       "delay_reason": "",
       "fabric_etd": "2026-05-30",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FDPS447150BLL",
@@ -62856,8 +61286,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-20",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FDPS447150SAL",
@@ -62896,8 +61325,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-20",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FDPS117150GRD",
@@ -62936,8 +61364,7 @@ const DASHBOARD = {
       "remark": "4/28: order fabric 4/30:change fabric to QA358D5-55 5/5:re-order fabric",
       "delay_reason": "원단 지연",
       "fabric_etd": "2026-05-30",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FDPS117107CRS",
@@ -62976,8 +61403,7 @@ const DASHBOARD = {
       "remark": "4/28: order fabric,5/5:fabric in warehouse",
       "delay_reason": "원단 지연",
       "fabric_etd": "2026-05-30",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FDPS117107PKL",
@@ -63016,8 +61442,7 @@ const DASHBOARD = {
       "remark": "4/28: order fabric,5/5:fabric in warehouse",
       "delay_reason": "원단 지연",
       "fabric_etd": "2026-05-30",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FDPS517150BLS",
@@ -63056,8 +61481,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-20",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FDPS527150BLS",
@@ -63096,8 +61520,7 @@ const DASHBOARD = {
       "remark": "4/28: order fabric 5/5:fabric in warehouse",
       "delay_reason": "",
       "fabric_etd": "2026-05-30",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FDPS537350BLS",
@@ -63136,8 +61559,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-20",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3ADPS547150SBS",
@@ -63176,8 +61598,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-30",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3ADPS557350SBS",
@@ -63216,8 +61637,7 @@ const DASHBOARD = {
       "remark": "PLM미수취, 2차Q2예정",
       "delay_reason": "",
       "fabric_etd": "2026-05-30",
-      "is_na": false,
-      "phase": "2ND TS"
+      "is_na": false
     },
     {
       "sku": "3FDSS017350GRD",
@@ -63256,8 +61676,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-20",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FDSS017350BLM",
@@ -63296,8 +61715,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-20",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FDSS017307CRD",
@@ -63336,8 +61754,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-20",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FDSS027350SBS",
@@ -63376,8 +61793,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-20",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FDSS037307CRD",
@@ -63416,8 +61832,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-20",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FDSS037350BLM",
@@ -63456,8 +61871,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-20",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FDSM017350BLL",
@@ -63496,8 +61910,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FDSS067350NYD",
@@ -63536,8 +61949,7 @@ const DASHBOARD = {
       "remark": "PLM, 소재미정, 수주타겟 입고일정협의완료",
       "delay_reason": "",
       "fabric_etd": "2026-05-20",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     },
     {
       "sku": "3FDSS537350BLS",
@@ -63576,8 +61988,7 @@ const DASHBOARD = {
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-20",
-      "is_na": false,
-      "phase": "MAIN TS"
+      "is_na": false
     }
   ]
 };

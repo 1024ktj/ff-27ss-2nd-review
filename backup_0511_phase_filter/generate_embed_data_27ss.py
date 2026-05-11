@@ -53,7 +53,6 @@ TRANSIT_BY_CO = {'CN': 2, 'VN': 5, 'KR': 0}
 #  8      H       7         style_code
 #  9      I       8         color
 #  10     J       9         description
-#  11     K       10        phase         ← 분기 (MAIN TS / 2ND TS)
 #  12     L       11        go_drop
 #  15     O       14        designer
 #  16     P       15        sourcing
@@ -90,7 +89,6 @@ COL = {
     'style_code':     7,
     'color':          8,
     'description':    9,
-    'phase':          10,
     'go_drop':        11,
     'designer':       14,
     'sourcing':       15,
@@ -237,16 +235,6 @@ def fmt_fabric_etd(v):
 def _has_korean(s):
     return any('가' <= c <= '힣' for c in s)
 
-def normalize_phase(v):
-    if v is None:
-        return 'UNKNOWN'
-    s = str(v).strip().upper()
-    if 'MAIN' in s:
-        return 'MAIN TS'
-    if '2ND' in s:
-        return '2ND TS'
-    return 'UNKNOWN'
-
 # ─── Main ─────────────────────────────────────────────────────────────────────
 def load_wb():
     try:
@@ -333,7 +321,6 @@ def main():
             'delay_reason':   safe_str(g('delay_reason')),
             'fabric_etd':     fmt_fabric_etd(g('fabric_etd')),
             'is_na':          is_na,
-            'phase':          normalize_phase(g('phase')),
         }
         all_data.append(record)
 
@@ -425,13 +412,6 @@ def main():
         print(f"    {k}: {v:,} SKU")
     if empty:
         print(f"    (빈값): {empty:,} SKU")
-    print()
-
-    phase_dist = Counter(d['phase'] for d in all_data)
-    print("  분기 분포:")
-    for key in ('MAIN TS', '2ND TS', 'UNKNOWN'):
-        cnt = phase_dist.get(key, 0)
-        print(f"    {key:<10}: {cnt:>6,} SKU")
     print()
 
     total_rmb = sum(d['cn_invoice_rmb'] for d in all_data)

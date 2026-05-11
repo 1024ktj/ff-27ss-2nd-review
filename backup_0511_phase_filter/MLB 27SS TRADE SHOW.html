@@ -101,48 +101,6 @@ body {
 body.view-cn .vs-btn#btn-view-cn { background:linear-gradient(90deg,#5b7fd4,#7c5fc0); color:#fff; box-shadow:inset 0 1px 3px rgba(0,0,0,0.15); }
 body.view-cn .vs-btn#btn-view-all { background:#fff; color:var(--muted); }
 
-/* ─── 분기 필터 ─── */
-.phase-filter-bar {
-  background:#fff;
-  border-bottom:1px solid var(--border);
-  padding:8px 36px;
-  display:flex;
-  align-items:center;
-  gap:12px;
-  box-shadow:0 1px 4px rgba(91,127,212,0.05);
-}
-.pf-label {
-  font-size:12px;
-  font-weight:700;
-  color:#6b7280;
-  letter-spacing:0.3px;
-}
-.pf-btn-group { display:inline-flex; gap:8px; }
-.pf-btn {
-  padding:6px 16px;
-  font-size:13px;
-  font-weight:600;
-  font-family:inherit;
-  background:#fff;
-  color:#6b7280;
-  border:1.5px solid #d1d5db;
-  border-radius:8px;
-  cursor:pointer;
-  transition:background 0.15s, color 0.15s, border-color 0.15s;
-  white-space:nowrap;
-}
-.pf-btn:hover:not(.pf-active) {
-  background:#eff6ff;
-  border-color:#93c5fd;
-  color:#2563eb;
-}
-.pf-btn.pf-active {
-  background:#2563eb;
-  color:#fff;
-  border-color:#2563eb;
-  font-weight:700;
-}
-
 /* ─── 레이아웃 ─── */
 .container { max-width:1640px; margin:0 auto; padding:24px 32px; }
 .grid-5 { display:grid; grid-template-columns:repeat(5,1fr); gap:16px; margin-bottom:24px; }
@@ -779,16 +737,6 @@ body:not(.view-cn) .cn-only { display:none !important; }
   </div>
 </div>
 
-<!-- 분기 필터 -->
-<div class="phase-filter-bar">
-  <span class="pf-label">분기:</span>
-  <div class="pf-btn-group">
-    <button class="pf-btn pf-active" data-phase="ALL"     onclick="setPhaseFilter('ALL')">● ALL</button>
-    <button class="pf-btn"           data-phase="MAIN TS" onclick="setPhaseFilter('MAIN TS')">○ MAIN TS</button>
-    <button class="pf-btn"           data-phase="2ND TS"  onclick="setPhaseFilter('2ND TS')">○ 2ND TS</button>
-  </div>
-</div>
-
 <div class="container">
 
   <!-- KPI (ALL 모드) -->
@@ -831,7 +779,7 @@ body:not(.view-cn) .cn-only { display:none !important; }
 
   <!-- KPI (CN 모드) -->
   <div class="kpi-cn-row">
-    <div id="cn-kpi-card-1" class="kpi-card" style="--kpi-color:#7c5fc0;cursor:pointer">
+    <div class="kpi-card" style="--kpi-color:#7c5fc0">
       <div class="stripe"></div>
       <div class="kpi-label">TOTAL STYLE / SKU</div>
       <div class="kpi-val" id="cn-k-styles" style="font-size:28px"></div>
@@ -844,10 +792,11 @@ body:not(.view-cn) .cn-only { display:none !important; }
       </table>
       <div class="pcs-foot">KNIT + WOVEN + DENIM</div>
     </div>
-    <div id="cn-kpi-card-2" class="kpi-card" style="--kpi-color:#ef4444;cursor:pointer">
+    <div class="kpi-card" style="--kpi-color:#3b82f6">
       <div class="stripe"></div>
-      <div class="kpi-label">Expected Arrival Rate (CN RDD)</div>
-      <div id="cn-k-arrival-wrap" style="margin-top:8px"></div>
+      <div class="kpi-label">CN TRADE SHOW (Regular)</div>
+      <div class="kpi-val" id="cn-k-show" style="font-size:28px"></div>
+      <div class="kpi-sub">Standard CN show samples</div>
     </div>
     <div class="kpi-card" id="cn-kpi-focus" style="--kpi-color:#f59e0b">
       <div class="stripe"></div>
@@ -1065,8 +1014,8 @@ body:not(.view-cn) .cn-only { display:none !important; }
       <button class="f-btn active" onclick="setStatusFilter('all',this)"><span class="ko-label">전체</span><span class="en-label">ALL</span></button>
       <button class="f-btn" id="btn-filter-pending" onclick="setStatusFilter('pending',this)"><span class="ko-label">미입고</span><span class="en-label">PENDING</span></button>
       <button class="f-btn" id="btn-filter-arrived" onclick="setStatusFilter('arrived',this)"><span class="ko-label">입고완료</span><span class="en-label">ARRIVED</span></button>
-      <button class="f-btn" id="btn-kr-delayed" onclick="setStatusFilter('kr_delayed',this)" title="6/16 2-1차 품평 이후 KR 입고예정인 아이템 (kr_expected >= 6/16)">KR 지연</button>
-      <button class="f-btn" id="btn-cn-delayed" onclick="setStatusFilter('cn_delayed',this)" title="7/13 CN TRADE SHOW 당일 이후 CN 도착예정인 아이템 (cn_rdd >= 7/13)"><span class="ko-label">CN 지연</span><span class="en-label">CN DELAY</span></button>
+      <button class="f-btn" id="btn-kr-delayed" onclick="setStatusFilter('kr_delayed',this)">KR 지연</button>
+      <button class="f-btn" id="btn-cn-delayed" onclick="setStatusFilter('cn_delayed',this)"><span class="ko-label">CN 지연</span><span class="en-label">CN DELAY</span></button>
       <button class="f-btn" id="btn-na" onclick="setStatusFilter('na',this)">미제작</button>
       <div class="multi-select" id="ms-sort"><button class="ms-btn" onclick="toggleDrop('ms-sort')"><span class="ms-label">카테고리 전체</span><span class="ms-arrow">&#9660;</span></button><div class="ms-drop" id="ms-sort-drop"></div></div>
       <div class="multi-select" id="ms-item"><button class="ms-btn" onclick="toggleDrop('ms-item')"><span class="ms-label">ITEM 전체</span><span class="ms-arrow">&#9660;</span></button><div class="ms-drop" id="ms-item-drop"></div></div>
@@ -1099,31 +1048,9 @@ body:not(.view-cn) .cn-only { display:none !important; }
 <script src="embed_data.js"></script>
 <script>
 // ── 데이터 ──────────────────────────────────────────────
-const D       = DASHBOARD;
-const _AD_ALL = D.all_data;
-let   AD      = _AD_ALL;
+const D  = DASHBOARD;
+const AD = D.all_data;
 const _now = new Date();
-
-// ── 분기 필터 ──────────────────────────────────────────────
-let currentPhaseFilter = 'ALL';
-
-function filterByPhase(data) {
-  if (currentPhaseFilter === 'ALL') return data;
-  return data.filter(d => d.phase === currentPhaseFilter);
-}
-
-function setPhaseFilter(phase) {
-  currentPhaseFilter = phase;
-  AD = filterByPhase(_AD_ALL);
-  document.querySelectorAll('.pf-btn').forEach(function(btn) {
-    const btnPhase = btn.getAttribute('data-phase');
-    const active = btnPhase === phase;
-    btn.classList.toggle('pf-active', active);
-    btn.textContent = (active ? '● ' : '○ ') + btnPhase;
-  });
-  console.log('[분기 필터] currentPhaseFilter =', currentPhaseFilter, '/ SKU:', AD.length);
-  renderAll();
-}
 
 // CN ATD 기준 실적 RDD 계산 (KR HAND CARRY: 당일도착 transit 0일 / CN +2일 / VN·KR +5일)
 AD.forEach(d=>{
@@ -1221,7 +1148,7 @@ function buildTimelineDday(){
         styleEarliest[d.style_code] = d.kr_expected;
     }
   });
-  const totalSt = Object.keys(styleEarliest).length || new Set(AD.map(d=>d.style_code).filter(Boolean)).size || 1;
+  const totalSt = D.total_styles || 1;
   function arrCnt(limit){ return Object.values(styleEarliest).filter(v=>v<=limit).length; }
   function setBadge(id, limit, target){
     const el = document.getElementById(id+'-arr');
@@ -1265,24 +1192,7 @@ document.getElementById('today-txt').textContent = 'TODAY: ' + TODAY;
 buildSchedulePills();
 buildTimelineDday();
 
-// ── KR/CN 지연 기준 상수 (외부 스코프: _renderDetailPage 등에서도 참조) ──
-const KR_WARN_S = '2026-06-13', KR_WARN_E = '2026-06-15', KR_DELAY_S = '2026-06-16';
-const CN_WARN_S = '2026-07-11', CN_WARN_E = '2026-07-12', CN_DELAY_S = '2026-07-13';
-
 // ── KPI ─────────────────────────────────────────────────
-function renderKPICards() {
-  // 분기 필터 기반 가상 D 생성 (D.total_* 를 필터된 AD 기준으로 재계산)
-  const _active = AD.filter(d=>!d.is_na);
-  const D = Object.assign({}, DASHBOARD, {
-    total_styles:       new Set(AD.map(d=>d.style_code).filter(Boolean)).size,
-    total_sku:          AD.length,
-    total_kr_keep_pcs:  AD.reduce((s,d)=>s+(d.kr_keep_pcs||0), 0),
-    total_cn_show_pcs:  _active.reduce((s,d)=>s+(d.cn_show_pcs||0), 0),
-    total_cn_focus_pcs: _active.reduce((s,d)=>s+(d.cn_focus_pcs||0), 0),
-    total_cn_total_pcs: _active.reduce((s,d)=>s+(d.cn_show_pcs||0)+(d.cn_focus_pcs||0), 0),
-    total_pcs:          AD.reduce((s,d)=>s+(d.ttl_pcs||0), 0),
-    na_styles:          new Set(AD.filter(d=>d.is_na).map(d=>d.style_code)).size,
-  });
 const totalArrived = AD.filter(d=>d.kr_actual).length;
 const arrivedStyleSet = new Set(AD.filter(d=>d.kr_actual).map(d=>d.style_code));
 const totalArrivedM = arrivedStyleSet.size;
@@ -1290,7 +1200,9 @@ const totalDelayed = AD.filter(d=>isDelayed(d)).length;
 const naSku        = AD.filter(d=>d.is_na).length;
 const naStyleCnt   = (D.na_styles || 0);
 
-// KR / CN 경고·지연 분류 (N/A 제외) — 기준 상수는 외부 스코프
+// KR / CN 경고·지연 분류 (N/A 제외)
+const KR_WARN_S = '2026-06-13', KR_WARN_E = '2026-06-15', KR_DELAY_S = '2026-06-16';
+const CN_WARN_S = '2026-07-11', CN_WARN_E = '2026-07-12', CN_DELAY_S = '2026-07-13';
 const krWarnCnt  = AD.filter(d=>!d.is_na&&!d.kr_actual&&d.kr_expected&&d.kr_expected>=KR_WARN_S&&d.kr_expected<=KR_WARN_E).length;
 const krDelayCnt = AD.filter(d=>!d.is_na&&!d.kr_actual&&d.kr_expected&&d.kr_expected>=KR_DELAY_S).length;
 const cnWarnCnt  = AD.filter(d=>!d.is_na&&!d.kr_actual&&d.cn_rdd&&d.cn_rdd>=CN_WARN_S&&d.cn_rdd<=CN_WARN_E).length;
@@ -1421,6 +1333,7 @@ document.getElementById('cn-k-sku-count').textContent = D.total_sku.toLocaleStri
 document.getElementById('pb-cn-ts').textContent     = (D.total_cn_show_pcs||0).toLocaleString();
 document.getElementById('pb-cn-fs').textContent     = (D.total_cn_focus_pcs||0).toLocaleString();
 document.getElementById('pb-cn-total').textContent  = (D.total_cn_total_pcs||0).toLocaleString();
+document.getElementById('cn-k-show').textContent = (D.total_cn_show_pcs||0).toLocaleString() + ' PCS';
 (function(){
   var focus = D.total_cn_focus_pcs || 0;
   document.getElementById('cn-k-focus').textContent = focus.toLocaleString() + ' PCS';
@@ -1431,44 +1344,6 @@ document.getElementById('pb-cn-total').textContent  = (D.total_cn_total_pcs||0).
 })();
 document.getElementById('cn-k-total-pcs').textContent = (D.total_cn_total_pcs||0).toLocaleString() + ' PCS';
 
-// CN 카드2: 예정 입고율 (cn_rdd 기준) — KR 카드2와 동일 구조
-(function(){
-  var styleRdd = {};
-  AD.forEach(function(d){
-    if(d.cn_rdd && d.style_code){
-      if(!styleRdd[d.style_code] || d.cn_rdd < styleRdd[d.style_code]) styleRdd[d.style_code] = d.cn_rdd;
-    }
-  });
-  var total = new Set(AD.map(function(d){return d.style_code;}).filter(Boolean)).size || 1;
-  function cnt(limit){ return Object.values(styleRdd).filter(function(v){return v<=limit;}).length; }
-  var rows = [
-    {label:'6/12 New DUE',        limit:'2026-06-12', target:40,  baseColor:'#ef4444'},
-    {label:'6/16 1st Review',     limit:'2026-06-16', target:100, baseColor:'#3b82f6'},
-    {label:'6/29 2nd Review',     limit:'2026-06-29', target:100, baseColor:'#8b5cf6'},
-    {label:'7/13 27SS Trade Show',limit:'2026-07-13', target:100, baseColor:'#10b981'},
-  ];
-  function barColor(pct, target, base){
-    if(pct >= target) return base;
-    var r=parseInt(base.slice(1,3),16), g=parseInt(base.slice(3,5),16), b=parseInt(base.slice(5,7),16);
-    return 'rgba('+r+','+g+','+b+',0.45)';
-  }
-  var wrap = document.getElementById('cn-k-arrival-wrap');
-  if(!wrap) return;
-  wrap.innerHTML = rows.map(function(row){
-    var c = cnt(row.limit), p = Math.round(c/total*100);
-    var col = barColor(p, row.target, row.baseColor);
-    var pctCol = p >= row.target ? row.baseColor : '#ef4444';
-    return '<div class="arr-row">' +
-      '<div class="arr-row-hd">' +
-        '<span class="arr-row-title">' + row.label + '</span>' +
-        '<span class="arr-row-pct" style="color:' + pctCol + '">' + p + '%</span>' +
-      '</div>' +
-      '<div class="arr-bar"><div class="arr-fill" style="width:' + Math.min(p,100) + '%;background:' + col + '"></div></div>' +
-      '<div class="arr-sub">' + c + '/' + total + ' Styles</div>' +
-    '</div>';
-  }).join('');
-})();
-
 // 필터 버튼 건수 표시 (M수 = 스타일 중복 제거)
 const krDelayM = new Set(AD.filter(d=>!d.is_na&&!d.kr_actual&&d.kr_expected&&d.kr_expected>=KR_DELAY_S).map(d=>d.style_code)).size;
 const cnDelayM = new Set(AD.filter(d=>!d.is_na&&!d.kr_actual&&d.cn_rdd&&d.cn_rdd>=CN_DELAY_S).map(d=>d.style_code)).size;
@@ -1476,16 +1351,8 @@ const naM = new Set(AD.filter(d=>d.is_na).map(d=>d.style_code)).size;
 document.getElementById('btn-kr-delayed').textContent = `KR 지연 (${krDelayM}M / ${krDelayCnt}건)`;
 document.getElementById('btn-cn-delayed').innerHTML = `<span class="ko-label">CN 지연</span><span class="en-label">CN DELAY</span>`+` (${cnDelayM}M / ${cnDelayCnt}<span class="ko-label">건</span>)`;
 document.getElementById('btn-na').innerHTML = `<span class="ko-label">미제작</span><span class="en-label">N/A</span>`+` (${naM}M / ${naSku}<span class="ko-label">건</span>)`;
-} // end renderKPICards
-renderKPICards();
 
 // ── AI 인사이트 ──────────────────────────────────────────
-function renderInsightsSection(){
-  const D = Object.assign({}, DASHBOARD, {
-    total_styles: new Set(AD.map(d=>d.style_code).filter(Boolean)).size,
-    total_sku:    AD.length,
-    total_pcs:    AD.reduce((s,d)=>s+(d.ttl_pcs||0), 0),
-  });
 (function renderInsights(){
   const NEW_DUE = SCHED_NEW_DUE;  // 2026-06-12 신규 DUE
   const DUE16   = SCHED_DUE;      // 2026-06-16 2-1차 품평
@@ -1632,8 +1499,6 @@ function renderInsightsSection(){
 
   document.getElementById('insight-grid').innerHTML = b1+b2+b3+b4;
 })();
-} // end renderInsightsSection
-renderInsightsSection();
 
 function toggleInsight(){
   const body  = document.getElementById('insight-body');
@@ -1653,14 +1518,15 @@ function toggleDailySummary(){
 
 // ── 일별 누적 서머리 ──────────────────────────────────────
 (function(){
+  const allData = DASHBOARD.all_data;
   const todayStr = new Date().toISOString().slice(0,10);
 
-  // ITEM 종류 자동 수집 (전체 데이터 기준 — 필터 전)
-  const allItemTypes = [...new Set(_AD_ALL.map(d => d.item_type).filter(Boolean))].sort();
+  // ITEM 종류 자동 수집
+  const allItemTypes = [...new Set(allData.map(d => d.item_type).filter(Boolean))].sort();
 
-  // 필터된 소스 데이터 반환 (카테고리 + ITEM) — AD는 현재 분기 필터 반영
+  // 필터된 소스 데이터 반환 (카테고리 + ITEM)
   function getFilteredSrc(cat, itemSet){
-    let src = AD;
+    let src = allData;
     if(cat !== 'all') src = src.filter(d => d.sort === cat);
     if(itemSet) src = src.filter(d => itemSet.has(d.item_type));
     return src;
@@ -1706,10 +1572,8 @@ function toggleDailySummary(){
       r.pcsPct = totalPcs ? (cumPcs / totalPcs * 100).toFixed(1) : '0.0';
       r.statusLabel = r.done ? bi('입고 완료','Done') : bi('입고 예정','Planned');
     });
-    // TBD 집계 — 날짜 버킷에 이미 있는 스타일은 제외 (일부 SKU만 TBD인 경우 모델 중복 방지)
-    const _krDatedStyles = new Set();
-    Object.values(byDate).forEach(b => b.styles.forEach(s => _krDatedStyles.add(s)));
-    const tbdStyles = new Set(tbdList.map(d=>d.style_code).filter(s => !_krDatedStyles.has(s)));
+    // TBD 집계
+    const tbdStyles = new Set(tbdList.map(d=>d.style_code));
     const tbdSku = tbdList.length;
     const tbdPcs = tbdList.reduce((s,d)=>s+(d.kr_pcs||0),0);
     const tbd = {
@@ -1750,10 +1614,8 @@ function toggleDailySummary(){
       r.pcsPct = totalPcs ? (cumPcs / totalPcs * 100).toFixed(1) : '0.0';
       r.statusLabel = r.done ? bi('입고 완료','Done') : bi('입고 예정','Planned');
     });
-    // TBD 집계 — 날짜 버킷에 이미 있는 스타일은 제외 (일부 SKU만 TBD인 경우 모델 중복 방지)
-    const _cnDatedStyles = new Set();
-    Object.values(byDate).forEach(b => b.styles.forEach(s => _cnDatedStyles.add(s)));
-    const tbdStyles = new Set(tbdList.map(d=>d.style_code).filter(s => !_cnDatedStyles.has(s)));
+    // TBD 집계
+    const tbdStyles = new Set(tbdList.map(d=>d.style_code));
     const tbdSku = tbdList.length;
     const tbdPcs = tbdList.reduce((s,d)=>s+(d.cn_pcs||0),0);
     const tbd = {
@@ -1938,9 +1800,6 @@ function toggleDailySummary(){
   const cnHtml = renderTable('cn', cn, 'ds-header-cn', bi('CN RDD 예상','CN RDD Expected'), bi('RDD 예상일','Expected RDD'));
   document.getElementById('daily-summary-grid').innerHTML = krHtml + cnHtml;
 
-  // 분기 필터 재렌더용 전역 노출
-  window._dsRebuildTable = rebuildTable;
-
   // --- 필터 로직 (STATUS + 날짜 숨기기 + 날짜 드롭다운 AND 조건) ---
   function applyFilter(side){
     const tbl = document.getElementById('ds-tbl-' + side);
@@ -2092,8 +1951,7 @@ function toggleDailySummary(){
 
 // ── 카테고리 진행률 ──────────────────────────────────────
 const CAT_COLOR = { KNIT:'#60a5fa', WOVEN:'#a78bfa', DENIM:'#fbbf24' };
-function renderCatProgress() {
-  const catStat = {};
+const catStat = {};
 AD.forEach(d=>{
   const s = d.sort||'기타';
   if(!catStat[s]) catStat[s]={total:0,arrived:0,delayed:0,pcs:0,cn_sent:0,styles:new Set(),arrivedM:new Set(),cnSentM:new Set()};
@@ -2105,8 +1963,7 @@ AD.forEach(d=>{
   if(isDelayed(d)) catStat[s].delayed++;
 });
 
-  const catEl = document.getElementById('cat-progress');
-  catEl.innerHTML = '';
+const catEl = document.getElementById('cat-progress');
 ['KNIT','WOVEN','DENIM'].forEach(c=>{
   const s = catStat[c]||{total:0,arrived:0,delayed:0,pcs:0,cn_sent:0,styles:new Set(),arrivedM:new Set(),cnSentM:new Set()};
   const totalM = s.styles.size;
@@ -2144,9 +2001,7 @@ AD.forEach(d=>{
       </div>
     </div>
   </div>`;
-  });
-} // end renderCatProgress
-renderCatProgress();
+});
 
 // ── 날짜 분포 리스트 (예정 vs 실적 비교) ──────────────────
 function renderDateList(elId, dist, color, pastColor, actualDist, actualLabels){
@@ -2422,40 +2277,6 @@ function switchCatTab(section, cat, btn){
 renderSection('etd', 'all');
 renderSection('rdd', 'all');
 renderSection('kr',  'all');
-
-// ── renderAll: 분기 필터 변경 시 전체 재렌더 ────────────────
-function renderAll() {
-  renderKPICards();
-  renderInsightsSection();
-  renderCatProgress();
-  renderSection('etd', _catActive.etd || 'all');
-  renderSection('rdd', _catActive.rdd || 'all');
-  renderSection('kr',  _catActive.kr  || 'all');
-  buildTimelineDday();
-  if (window._dsRebuildTable) {
-    window._dsRebuildTable('kr');
-    window._dsRebuildTable('cn');
-  }
-  // 원단/Origin 탭: 분기 변경 시 강제 재렌더
-  var fabricEl = document.getElementById('fabric-content');
-  if (fabricEl) delete fabricEl.dataset.rendered;
-  var originEl = document.getElementById('origin-content');
-  if (originEl) { originEl.innerHTML = ''; _originRendered = false; }
-  // 현재 탭이 Fabric/Origin이면 즉시 재렌더
-  var activePane = document.querySelector('.tab-pane.active');
-  if (activePane && activePane.id === 'tab-fabric') renderFabricTab();
-  if (activePane && activePane.id === 'tab-origin') renderOriginTab();
-  // 매트릭스 탭 재렌더
-  renderMatrixTab();
-  // 벤더/디자이너/담당자 탭 재렌더 (분기 필터 반영)
-  if (typeof renderVendorTab === 'function')   renderVendorTab();
-  if (typeof renderDesignerTab === 'function') renderDesignerTab();
-  if (typeof renderStaffTab === 'function')    renderStaffTab();
-  // 상세 테이블 재렌더 (분기 필터 반영을 위해 renderDetail() 사용)
-  if (typeof renderDetail === 'function') renderDetail();
-  // CN 팝업이 열려 있으면 분기 필터 반영하여 갱신
-  if (typeof window._cnPopupRefresh === 'function') window._cnPopupRefresh();
-}
 
 // ── 탭 ──────────────────────────────────────────────────
 function switchTab(name){
@@ -2867,32 +2688,28 @@ function renderFabricTab(){
   renderFabricMatrix();
 }
 
-// ── 담당자/벤더/디자이너 테이블 (분기 필터 재렌더 지원) ──────
-let spOrder = [];
-let vOrder = [];
-let vendorEnMap = {};
+// ── 담당자 테이블 ────────────────────────────────────────
+const spStat = {};
+AD.forEach(d=>{
+  const sp = d.sourcing||'미지정';
+  if(!spStat[sp]) spStat[sp]={total:0,arrived:0,cn_sent:0,delayed:0,pcs:0,styles:new Set()};
+  spStat[sp].total++;
+  spStat[sp].pcs += d.ttl_pcs||0;
+  spStat[sp].styles.add(d.style_code);
+  if(d.kr_actual) spStat[sp].arrived++;
+  if(d.cn_atd)   spStat[sp].cn_sent++;
+  if(isDelayed(d)) spStat[sp].delayed++;
+});
 
-function renderStaffTab() {
-  const spStat = {};
-  AD.forEach(d=>{
-    const sp = d.sourcing||'미지정';
-    if(!spStat[sp]) spStat[sp]={total:0,arrived:0,cn_sent:0,delayed:0,pcs:0,styles:new Set()};
-    spStat[sp].total++;
-    spStat[sp].pcs += d.ttl_pcs||0;
-    spStat[sp].styles.add(d.style_code);
-    if(d.kr_actual) spStat[sp].arrived++;
-    if(d.cn_atd)   spStat[sp].cn_sent++;
-    if(isDelayed(d)) spStat[sp].delayed++;
-  });
-  spOrder = Object.entries(spStat).sort((a,b)=>b[1].total-a[1].total);
-  const staffTb = document.getElementById('staff-tbody');
-  let _h=''; spOrder.forEach(([name,s])=>{
-    const pct = s.total>0?Math.round(s.arrived/s.total*100):0;
-    const col = barColor(pct, s.delayed);
-    let badge = s.delayed>0 ? `<span class="badge-delay"><span class="ko-label">지연 ${s.delayed}건</span><span class="en-label">${s.delayed} delayed</span></span>`
-              : pct===100   ? `<span class="badge-done">${bi('완료','Done')}</span>`
-              :               `<span class="badge-pending">${bi('진행중','In Progress')}</span>`;
-    _h+=`
+const spOrder = Object.entries(spStat).sort((a,b)=>b[1].total-a[1].total);
+const staffTb = document.getElementById('staff-tbody');
+{ let _h=''; spOrder.forEach(([name,s])=>{
+  const pct = s.total>0?Math.round(s.arrived/s.total*100):0;
+  const col = barColor(pct, s.delayed);
+  let badge = s.delayed>0 ? `<span class="badge-delay"><span class="ko-label">지연 ${s.delayed}건</span><span class="en-label">${s.delayed} delayed</span></span>`
+            : pct===100   ? `<span class="badge-done">${bi('완료','Done')}</span>`
+            :               `<span class="badge-pending">${bi('진행중','In Progress')}</span>`;
+  _h+=`
   <tr onclick="filterByStaff('${name}')">
     <td style="font-weight:700">${name}</td>
     <td>${s.styles.size}</td>
@@ -2907,33 +2724,33 @@ function renderStaffTab() {
     </div></td>
     <td>${badge}</td>
   </tr>`;
-  }); staffTb.innerHTML=_h;
-}
+}); staffTb.innerHTML=_h; }
 
-function renderVendorTab() {
-  vendorEnMap = {};
-  AD.forEach(d=>{ if(d.vendor) vendorEnMap[d.vendor] = d.vendor_en || d.vendor; });
-  const vStat = {};
-  AD.forEach(d=>{
-    const v = d.vendor||'미지정';
-    if(!vStat[v]) vStat[v]={total:0,arrived:0,cn_sent:0,delayed:0,styles:new Set(),sorts:new Set()};
-    vStat[v].total++;
-    vStat[v].styles.add(d.style_code);
-    vStat[v].sorts.add(d.sort);
-    if(d.kr_actual) vStat[v].arrived++;
-    if(d.cn_atd)   vStat[v].cn_sent++;
-    if(isDelayed(d)) vStat[v].delayed++;
-  });
-  vOrder = Object.entries(vStat).sort((a,b)=>b[1].total-a[1].total);
-  document.getElementById('vendor-badge').textContent = document.body.classList.contains('view-cn') ? vOrder.length+' vendors' : vOrder.length+'개 벤더';
-  const vendorTb = document.getElementById('vendor-tbody');
-  let _h=''; vOrder.forEach(([name,s])=>{
-    const pct = s.total>0?Math.round(s.arrived/s.total*100):0;
-    const col = barColor(pct, s.delayed);
-    let badge = s.delayed>0 ? `<span class="badge-delay"><span class="ko-label">지연 ${s.delayed}건</span><span class="en-label">${s.delayed} delayed</span></span>`
-              : pct===100   ? `<span class="badge-done">${bi('완료','Done')}</span>`
-              :               `<span class="badge-pending">${bi('진행중','In Progress')}</span>`;
-    _h+=`
+// ── 벤더 테이블 ──────────────────────────────────────────
+const vendorEnMap = {};
+AD.forEach(d=>{ if(d.vendor) vendorEnMap[d.vendor] = d.vendor_en || d.vendor; });
+const vStat = {};
+AD.forEach(d=>{
+  const v = d.vendor||'미지정';
+  if(!vStat[v]) vStat[v]={total:0,arrived:0,cn_sent:0,delayed:0,styles:new Set(),sorts:new Set()};
+  vStat[v].total++;
+  vStat[v].styles.add(d.style_code);
+  vStat[v].sorts.add(d.sort);
+  if(d.kr_actual) vStat[v].arrived++;
+  if(d.cn_atd)   vStat[v].cn_sent++;
+  if(isDelayed(d)) vStat[v].delayed++;
+});
+
+const vOrder = Object.entries(vStat).sort((a,b)=>b[1].total-a[1].total);
+document.getElementById('vendor-badge').textContent = document.body.classList.contains('view-cn') ? vOrder.length+' vendors' : vOrder.length+'개 벤더';
+const vendorTb = document.getElementById('vendor-tbody');
+{ let _h=''; vOrder.forEach(([name,s])=>{
+  const pct = s.total>0?Math.round(s.arrived/s.total*100):0;
+  const col = barColor(pct, s.delayed);
+  let badge = s.delayed>0 ? `<span class="badge-delay"><span class="ko-label">지연 ${s.delayed}건</span><span class="en-label">${s.delayed} delayed</span></span>`
+            : pct===100   ? `<span class="badge-done">${bi('완료','Done')}</span>`
+            :               `<span class="badge-pending">${bi('진행중','In Progress')}</span>`;
+  _h+=`
   <tr>
     <td style="font-weight:600;max-width:220px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis">${bi(name, vendorEnMap[name]||name)}</td>
     <td>${s.styles.size}</td>
@@ -2948,31 +2765,31 @@ function renderVendorTab() {
     </div></td>
     <td>${badge}</td>
   </tr>`;
-  }); vendorTb.innerHTML=_h;
-}
+}); vendorTb.innerHTML=_h; }
 
-function renderDesignerTab() {
-  const dsnStat = {};
-  AD.forEach(d=>{
-    const dsn = d.designer||'미지정';
-    if(!dsnStat[dsn]) dsnStat[dsn]={total:0,arrived:0,cn_sent:0,delayed:0,styles:new Set(),sorts:new Set()};
-    dsnStat[dsn].total++;
-    dsnStat[dsn].styles.add(d.style_code);
-    dsnStat[dsn].sorts.add(d.sort);
-    if(d.kr_actual) dsnStat[dsn].arrived++;
-    if(d.cn_atd)    dsnStat[dsn].cn_sent++;
-    if(isDelayed(d)) dsnStat[dsn].delayed++;
-  });
-  const dsnOrder = Object.entries(dsnStat).sort((a,b)=>b[1].total-a[1].total);
-  document.getElementById('designer-badge').textContent = dsnOrder.length+'명';
-  const designerTb = document.getElementById('designer-tbody');
-  let _h=''; dsnOrder.forEach(([name,s])=>{
-    const pct = s.total>0?Math.round(s.arrived/s.total*100):0;
-    const col = barColor(pct, s.delayed);
-    let badge = s.delayed>0 ? `<span class="badge-delay"><span class="ko-label">지연 ${s.delayed}건</span><span class="en-label">${s.delayed} delayed</span></span>`
-              : pct===100   ? `<span class="badge-done">${bi('완료','Done')}</span>`
-              :               `<span class="badge-pending">${bi('진행중','In Progress')}</span>`;
-    _h+=`
+// ── 디자이너 테이블 ───────────────────────────────────────
+const dsnStat = {};
+AD.forEach(d=>{
+  const dsn = d.designer||'미지정';
+  if(!dsnStat[dsn]) dsnStat[dsn]={total:0,arrived:0,cn_sent:0,delayed:0,styles:new Set(),sorts:new Set()};
+  dsnStat[dsn].total++;
+  dsnStat[dsn].styles.add(d.style_code);
+  dsnStat[dsn].sorts.add(d.sort);
+  if(d.kr_actual) dsnStat[dsn].arrived++;
+  if(d.cn_atd)    dsnStat[dsn].cn_sent++;
+  if(isDelayed(d)) dsnStat[dsn].delayed++;
+});
+
+const dsnOrder = Object.entries(dsnStat).sort((a,b)=>b[1].total-a[1].total);
+document.getElementById('designer-badge').textContent = dsnOrder.length+'명';
+const designerTb = document.getElementById('designer-tbody');
+{ let _h=''; dsnOrder.forEach(([name,s])=>{
+  const pct = s.total>0?Math.round(s.arrived/s.total*100):0;
+  const col = barColor(pct, s.delayed);
+  let badge = s.delayed>0 ? `<span class="badge-delay"><span class="ko-label">지연 ${s.delayed}건</span><span class="en-label">${s.delayed} delayed</span></span>`
+            : pct===100   ? `<span class="badge-done">${bi('완료','Done')}</span>`
+            :               `<span class="badge-pending">${bi('진행중','In Progress')}</span>`;
+  _h+=`
   <tr>
     <td style="font-weight:600">${name}</td>
     <td>${s.styles.size}</td>
@@ -2987,23 +2804,10 @@ function renderDesignerTab() {
     </div></td>
     <td>${badge}</td>
   </tr>`;
-  }); designerTb.innerHTML=_h;
-}
-
-// 초기 렌더
-renderStaffTab();
-renderVendorTab();
-renderDesignerTab();
+}); designerTb.innerHTML=_h; }
 
 // ── ITEM 피벗 테이블 ──────────────────────────────────────
 const DUE_DATE = SCHED_DUE; // 2026-06-16
-let pivotItems = []; // switchView 에서도 참조하므로 모듈 레벨 선언
-
-function renderMatrixTab() {
-  const pivotEl = document.getElementById('item-due-summary');
-  const pivotTblEl = document.getElementById('item-pivot');
-  if (pivotEl) pivotEl.innerHTML = '';
-  if (pivotTblEl) pivotTblEl.innerHTML = '';
 
 // 1. 고유 ITEM 코드 & KR 입고예정일 수집 (날짜 없는 건 → 'TBD')
 const pivotItemSet = new Set();
@@ -3012,7 +2816,7 @@ AD.forEach(d=>{
   if(d.item_type) pivotItemSet.add(d.item_type);
   pivotDateSet.add(d.kr_expected || 'TBD');
 });
-pivotItems = [...pivotItemSet].sort();
+const pivotItems = [...pivotItemSet].sort();
 // 날짜 오름차순 정렬, TBD는 맨 끝
 const pivotDates = [...pivotDateSet].filter(d=>d!=='TBD').sort();
 if(pivotDateSet.has('TBD')) pivotDates.push('TBD');
@@ -3207,8 +3011,8 @@ document.getElementById('item-badge').textContent = document.body.classList.cont
     <div class="due-val" style="color:${delayItems>0?'#f87171':'#34d399'}">${delayItems} (${dlayPct}%) · SKU ${delaySku}</div>
   </div>`;
 })();
-} // end renderMatrixTab
-renderMatrixTab();
+
+
 
 // ── 상세 테이블 ── Multi-select filters ─────────────────
 let statusFilter = 'all';
@@ -3805,239 +3609,6 @@ document.addEventListener('keydown', function(e){ if(e.key==='Escape') closeRema
   window.kM2sw=function(k){r2(k);};
   document.getElementById('kpi-card-1').addEventListener('click',function(){r1();oKM('kpi-m1');});
   document.getElementById('kpi-card-2').addEventListener('click',function(){r2('0612');oKM('kpi-m2');});
-})();
-</script>
-
-<!-- ── CN 전용 KPI 팝업 모달 ──────────────────────────────── -->
-<!-- CN 팝업 1: 카테고리 분포 -->
-<div class="km-ovl" id="kpi-cn-m1">
-  <div class="km-box">
-    <div class="km-hd" style="border-left:4px solid #7c5fc0">
-      <div class="km-title">📊 CN TOTAL STYLE / SKU 분포</div>
-      <button class="km-x" id="kpi-cn-m1-x">&times;</button>
-    </div>
-    <div class="km-body" id="kpi-cn-m1-body"></div>
-  </div>
-</div>
-<!-- CN 팝업 2: CN RDD 기준 일정별 발송율 -->
-<div class="km-ovl" id="kpi-cn-m2">
-  <div class="km-box">
-    <div class="km-hd" style="border-left:4px solid #3b82f6">
-      <div class="km-title">📈 Expected Arrival Rate Detail (Based on CN RDD)</div>
-      <button class="km-x" id="kpi-cn-m2-x">&times;</button>
-    </div>
-    <div class="km-body" id="kpi-cn-m2-body"></div>
-  </div>
-</div>
-
-<script>
-(function(){
-  /* ── 열기/닫기 ── */
-  function oCN(id){ document.getElementById(id).classList.add('open'); }
-  function cCN(id){ document.getElementById(id).classList.remove('open'); }
-  ['kpi-cn-m1','kpi-cn-m2'].forEach(function(id){
-    document.getElementById(id).addEventListener('click',function(e){ if(e.target===this) cCN(id); });
-  });
-  document.getElementById('kpi-cn-m1-x').onclick=function(){ cCN('kpi-cn-m1'); };
-  document.getElementById('kpi-cn-m2-x').onclick=function(){ cCN('kpi-cn-m2'); };
-  document.addEventListener('keydown',function(e){ if(e.key==='Escape'){ cCN('kpi-cn-m1'); cCN('kpi-cn-m2'); } });
-
-  /* ── SVG 도넛 (ALL 버전 mkDnt와 동일 로직) ── */
-  function mkDntCN(segs,sz){
-    sz=sz||120;
-    var R=Math.round(sz*0.375),sw=Math.round(sz*0.15),cx=sz/2,cy=sz/2;
-    var C=2*Math.PI*R,T=segs.reduce(function(s,x){return s+x.n;},0);
-    if(!T)return'<svg viewBox="0 0 '+sz+' '+sz+'" width="'+sz+'" height="'+sz+'"><circle cx="'+cx+'" cy="'+cy+'" r="'+R+'" fill="none" stroke="#e8edf8" stroke-width="'+sw+'"/></svg>';
-    var o=0;
-    var arcs=segs.map(function(s){
-      var l=(s.n/T)*C,d=-o; o+=l;
-      return'<circle cx="'+cx+'" cy="'+cy+'" r="'+R+'" fill="none" stroke="'+s.c+'" stroke-width="'+sw+'" stroke-dasharray="'+l.toFixed(2)+' '+C.toFixed(2)+'" stroke-dashoffset="'+d.toFixed(2)+'" transform="rotate(-90 '+cx+' '+cy+')"/>';
-    }).join('');
-    var fs1=Math.round(sz*0.117),fs2=Math.round(sz*0.083);
-    return'<svg viewBox="0 0 '+sz+' '+sz+'" width="'+sz+'" height="'+sz+'"><circle cx="'+cx+'" cy="'+cy+'" r="'+R+'" fill="none" stroke="#e8edf8" stroke-width="'+sw+'"/>'+arcs+'<text x="'+cx+'" y="'+(cy-2)+'" text-anchor="middle" font-size="'+fs1+'" font-weight="800" fill="#374151">'+T+'</text><text x="'+cx+'" y="'+(cy+fs1+2)+'" text-anchor="middle" font-size="'+fs2+'" fill="#9ca3af">M</text></svg>';
-  }
-
-  /* ── CN 팝업 1: 카테고리 분포 도넛 + ITEM 막대 ──
-     데이터: 현재 phase 필터 반영된 외부 스코프 AD 사용 (DASHBOARD.all_data 아님) */
-  function rCN1(){
-    var curAD=AD; // 외부 스코프의 phase-filtered AD
-    var tM=new Set(curAD.map(function(d){return d.style_code;}).filter(Boolean)).size;
-    var tS=curAD.length;
-    var tP=curAD.reduce(function(s,d){return s+(d.ttl_pcs||0);},0);
-
-    // SWEATER 식별 (KNIT 중 벤더 매칭, ALL 버전과 동일)
-    var swSet=new Set();
-    curAD.forEach(function(d){
-      if(d.sort!=='KNIT')return;
-      var v=(d.vendor||'').toUpperCase();
-      if((d.vendor||'').includes('다인')||v.includes('TONGFA')||v.includes('OUTIN'))swSet.add(d.style_code);
-    });
-
-    // 그룹별 style_code 집계
-    var gS={KNIT:new Set(),SWEATER:new Set(),WOVEN:new Set(),DENIM:new Set()};
-    curAD.forEach(function(d){
-      var sc=d.style_code,s=d.sort||'기타';
-      if(s==='KNIT'){if(swSet.has(sc))gS.SWEATER.add(sc);else gS.KNIT.add(sc);}
-      else if(gS[s])gS[s].add(sc);
-    });
-
-    var sPal={KNIT:'#93c5fd',SWEATER:'#7dd3c0',WOVEN:'#c4b5fd',DENIM:'#a5b4fc'};
-    var sPalDk={KNIT:'#3b82f6',SWEATER:'#14b8a6',WOVEN:'#8b5cf6',DENIM:'#6366f1'};
-    var SO4=['KNIT','SWEATER','WOVEN','DENIM'];
-    var sSegs=SO4.filter(function(k){return gS[k].size>0;}).map(function(k){return{l:k,n:gS[k].size,c:sPal[k]};});
-
-    var legHtml=sSegs.map(function(s){
-      var pct=(s.n/tM*100).toFixed(1);
-      return'<div style="display:flex;align-items:center;gap:10px;margin-bottom:10px">'+
-        '<div style="width:14px;height:14px;border-radius:50%;background:'+s.c+';flex-shrink:0"></div>'+
-        '<span style="font-size:14px;font-weight:700;color:#374151;min-width:72px">'+s.l+'</span>'+
-        '<span style="font-size:16px;font-weight:900;color:'+(sPalDk[s.l]||s.c)+'">'+s.n+'M</span>'+
-        '<span style="font-size:11px;color:#9ca3af">('+pct+'%)</span>'+
-      '</div>';
-    }).join('');
-
-    // ITEM별 막대 (그룹별 집계)
-    var iMG={KNIT:{},SWEATER:{},WOVEN:{},DENIM:{}};
-    curAD.forEach(function(d){
-      var sc=d.style_code,i=d.item_type||'-',s=d.sort||'기타';
-      var grp;
-      if(s==='KNIT') grp=swSet.has(sc)?'SWEATER':'KNIT';
-      else if(iMG[s]) grp=s;
-      else return;
-      if(!iMG[grp][i])iMG[grp][i]=new Set();
-      iMG[grp][i].add(sc);
-    });
-    var SC={KNIT:'#93c5fd',SWEATER:'#7dd3c0',WOVEN:'#c4b5fd',DENIM:'#a5b4fc'};
-    var allMs=[];
-    SO4.forEach(function(g){Object.values(iMG[g]).forEach(function(s){allMs.push(s.size);});});
-    var maxM=Math.max.apply(null,[1].concat(allMs));
-    var bars=SO4.map(function(g){
-      var its=Object.entries(iMG[g]).sort(function(a,b){return b[1].size-a[1].size;});
-      if(!its.length)return'';
-      var gTotal=its.reduce(function(a,e){return a+e[1].size;},0);
-      var rows=its.map(function(e){
-        var m=e[1].size,w=(m/maxM*100).toFixed(1),p=(m/tM*100).toFixed(1);
-        return'<div class="m1br"><div class="m1bc">'+e[0]+'</div><div class="m1bt"><div class="m1bf" style="width:'+w+'%;background:'+SC[g]+'"></div></div><div class="m1bv">'+m+'M ('+p+'%)</div></div>';
-      }).join('');
-      return'<div class="m1gh" style="background:#f9fafb;color:#374151">'+g+' — '+gTotal+'M</div>'+rows+'<div style="height:8px"></div>';
-    }).join('');
-
-    document.getElementById('kpi-cn-m1-body').innerHTML=
-      '<div class="km1sum">CN 전체 <b>'+tM+' M</b> / <b>'+tS.toLocaleString()+' SKU</b> / <b>'+tP.toLocaleString()+' PCS</b></div>'+
-      '<div style="display:flex;align-items:center;gap:28px;background:#f9fafb;border-radius:12px;padding:18px 24px;margin-bottom:20px;flex-wrap:wrap">'+
-        '<div style="flex-shrink:0">'+mkDntCN(sSegs,160)+'</div>'+
-        '<div>'+
-          '<div style="font-size:11px;font-weight:700;color:#6b7280;text-transform:uppercase;letter-spacing:.5px;margin-bottom:14px">대분류 분포</div>'+
-          legHtml+
-        '</div>'+
-      '</div>'+
-      '<div>'+bars+'</div>';
-  }
-
-  /* ── CN 팝업 2: KR r2()와 동일 구조, cn_rdd 기준 ── */
-  var CM2T=[
-    {k:'0612',l:'6/12 New DUE',        dt:'2026-06-12',tg:40 },
-    {k:'0616',l:'6/16 1st Review',     dt:'2026-06-16',tg:40 },
-    {k:'0629',l:'6/29 2nd Review',     dt:'2026-06-29',tg:100},
-    {k:'0713',l:'7/13 27SS Trade Show',dt:'2026-07-13',tg:100},
-  ];
-
-  function rCN2(key){
-    var curAD=AD;
-    var cf=CM2T.find(function(t){return t.k===key;});
-    var l=cf.l,dt=cf.dt,tg=cf.tg;
-
-    // ITEM별 cn_rdd 집계 (r2의 itSt/itAll/itE와 동일 구조)
-    var cnItSt={},cnItAll={},cnItE={};
-    curAD.forEach(function(d){
-      if(d.is_na)return;
-      var i=d.item_type||'기타',sc=d.style_code,s=d.sort||'기타';
-      cnItSt[i]=s;
-      if(!cnItAll[i])cnItAll[i]=new Set();
-      cnItAll[i].add(sc);
-      if(d.cn_rdd){
-        if(!cnItE[i])cnItE[i]={};
-        if(!cnItE[i][sc]||d.cn_rdd<cnItE[i][sc])cnItE[i][sc]=d.cn_rdd;
-      }
-    });
-    var cnTotTbd=new Set(curAD.filter(function(d){return !d.is_na&&!d.cn_rdd;}).map(function(d){return d.style_code;})).size;
-
-    // 전체 M / 전체 cn_rdd <= dt 스타일 수
-    var tM=new Set(curAD.map(function(d){return d.style_code;}).filter(Boolean)).size;
-    var styleRdd={};
-    curAD.forEach(function(d){
-      if(d.is_na||!d.cn_rdd||!d.style_code)return;
-      if(!styleRdd[d.style_code]||d.cn_rdd<styleRdd[d.style_code])styleRdd[d.style_code]=d.cn_rdd;
-    });
-    var ov=Object.values(styleRdd).filter(function(v){return v<=dt;}).length;
-    var ovP=Math.round(ov/tM*100);
-    var pctCol=ovP>=tg?'#10b981':'#dc2626';
-
-    var SO=['KNIT','WOVEN','DENIM'];
-    var dL=[],wL=[],gL=[],rS={KNIT:[],WOVEN:[],DENIM:[]};
-    Object.keys(cnItAll).forEach(function(i){
-      var s=cnItSt[i],dated=cnItE[i]?Object.keys(cnItE[i]).length:0,tbd=cnItAll[i].size-dated;
-      if(!dated)return;
-      var byDt=cnItE[i]?Object.values(cnItE[i]).filter(function(v){return v<=dt;}).length:0;
-      var p=Math.round(byDt/dated*100);
-      var fc,bdHtml;
-      if(p>=tg){
-        gL.push(i);fc='#86efac';
-        bdHtml='<span style="background:#d1fae5;color:#065f46;padding:1px 6px;border-radius:4px;font-size:10px;font-weight:700;white-space:nowrap">✓ On Track</span>';
-      }else if(p>=30){
-        wL.push(i);fc='#fcd34d';
-        bdHtml='<span style="background:#fef3c7;color:#92400e;padding:1px 6px;border-radius:4px;font-size:10px;font-weight:700;white-space:nowrap">⚠ Behind</span>';
-      }else{
-        dL.push(i);fc='#fca5a5';
-        bdHtml='<span style="background:#fee2e2;color:#991b1b;padding:1px 6px;border-radius:4px;font-size:10px;font-weight:700;white-space:nowrap">🚨 Risk</span>';
-      }
-      var tt=tbd>0?' <span style="color:#9ca3af;font-size:10px">+'+tbd+'TBD</span>':'';
-      var row='<div class="m2ir"><div class="m2ic">'+i+'</div><div class="m2ibt"><div class="m2ibf" style="width:'+Math.min(p,100)+'%;background:'+fc+'"></div></div><div class="m2is">'+p+'% ('+byDt+'/'+dated+'M)'+tt+'</div><div class="m2ib">'+bdHtml+'</div></div>';
-      if(rS[s])rS[s].push(row);
-    });
-
-    var tbdR=cnTotTbd>0?'<div style="margin-top:10px;border-top:1px dashed #e5e7eb;padding-top:8px"><div class="m2ir"><div class="m2ic" style="width:72px;color:#9ca3af;font-style:italic;font-size:10px">TBD</div><div class="m2ibt"><div class="m2ibf" style="width:0;background:#d1d5db"></div></div><div class="m2is" style="color:#9ca3af">'+cnTotTbd+'M TBD (CN RDD)</div><div class="m2ib"></div></div></div>':'';
-    var grps=SO.map(function(s){var r=rS[s];if(!r||!r.length)return'';return'<div class="m2gh" style="background:#f9fafb;color:#374151">'+s+'</div>'+r.join('');}).join('')+tbdR;
-    var tabs=CM2T.map(function(t){return'<button class="m2tb'+(t.k===key?' act':'')+'" data-key="'+t.k+'" onclick="kCnM2sw(\''+t.k+'\')">'+t.l+'</button>';}).join('');
-    var smL=[
-      dL.length?'<div class="m2sr">🚨 Risk (below 30%): <b style="color:#dc2626">'+dL.join(', ')+'</b></div>':'',
-      wL.length?'<div class="m2sr">⚠ Behind (30%~'+tg+'%): <b style="color:#d97706">'+wL.join(', ')+'</b></div>':'',
-      gL.length?'<div class="m2sr">✓ On Track ('+tg+'% or above): <b style="color:#059669">'+gL.join(', ')+'</b></div>':'',
-    ].join('');
-    var pbHtml='<div style="position:relative;padding-top:18px;margin-bottom:6px">'+
-      '<div style="background:#f3f4f6;border-radius:6px;height:10px;overflow:hidden">'+
-        '<div style="height:100%;border-radius:6px;width:'+Math.min(ovP,100)+'%;background:#93c5fd"></div>'+
-      '</div>'+
-      '<div style="position:absolute;top:0;bottom:0;left:'+Math.min(tg,100)+'%;width:2px;background:#374151;opacity:.35;border-radius:1px">'+
-        '<div style="position:absolute;bottom:calc(100%+2px);left:50%;transform:translateX(-50%);font-size:9px;font-weight:700;color:#374151;opacity:.7;white-space:nowrap">Target '+tg+'%</div>'+
-      '</div></div>';
-
-    document.getElementById('kpi-cn-m2-body').innerHTML=
-      '<div class="m2tabs">'+tabs+'</div>'+
-      '<div class="m2ov" style="background:#eff6ff">'+
-        '<div class="m2ovt"><span class="m2ovl" style="color:#1e2a4a">'+l+'</span><span class="m2ovp" style="color:'+pctCol+'">'+ovP+'%</span></div>'+
-        pbHtml+
-        '<div style="font-size:11px;color:#6b7280;margin-top:2px">'+ov+'/'+tM+' M Based on CN RDD (TBD included)</div>'+
-      '</div>'+
-      '<div>'+grps+'</div>'+
-      '<div class="m2sb">'+(smL||'<span style="color:#9ca3af">No data</span>')+'</div>';
-  }
-
-  /* ── CN 탭 전환 ── */
-  window.kCnM2sw=function(k){ rCN2(k); };
-
-  /* ── 분기 필터 변경 시 열린 팝업 자동 갱신 ── */
-  window._cnPopupRefresh=function(){
-    if(document.getElementById('kpi-cn-m1').classList.contains('open')) rCN1();
-    if(document.getElementById('kpi-cn-m2').classList.contains('open')){
-      var activeTab=document.querySelector('#kpi-cn-m2-body .m2tb.act');
-      rCN2(activeTab?activeTab.getAttribute('data-key'):'0612');
-    }
-  };
-
-  /* ── 클릭 이벤트 ── */
-  document.getElementById('cn-kpi-card-1').addEventListener('click',function(){ rCN1(); oCN('kpi-cn-m1'); });
-  document.getElementById('cn-kpi-card-2').addEventListener('click',function(){ rCN2('0612'); oCN('kpi-cn-m2'); });
 })();
 </script>
 </body>
