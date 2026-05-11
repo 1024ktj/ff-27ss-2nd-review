@@ -17,7 +17,7 @@ if errorlevel 1 (
 echo.
 
 echo [2/3] Pushing changes to GitHub...
-git add embed_data.js
+git add .
 git diff --cached --quiet
 if errorlevel 1 (
     git commit -m "Auto update dashboard"
