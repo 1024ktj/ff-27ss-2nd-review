@@ -762,7 +762,7 @@ body:not(.view-cn) .cn-only { display:none !important; }
 <div class="header">
   <div class="header-title">
     <h1><span class="ko-label">(WEAR) MLB 27SS TRADE SHOW — 샘플 입고 대시보드</span><span class="en-label">(WEAR) MLB 27SS TRADE SHOW — Sample Status Dashboard</span></h1>
-    <p><span class="ko-label">COVER 시트 기준 (2026.04.21 업데이트) | 27SS 2차 수주</span><span class="en-label">Based on COVER sheet (Updated 2026.04.21) | 27SS 2nd Order</span></p>
+    <p><span class="ko-label">COVER 시트 기준 (2026.04.30) | <span id="last-updated-ko"></span> 27SS 2차 수주</span><span class="en-label">Based on COVER sheet (Updated 2026.04.30) | <span id="last-updated-en"></span> 27SS 2nd Order</span></p>
   </div>
   <div class="header-meta">
     <div class="today" id="today-txt"></div>
@@ -1257,6 +1257,15 @@ function buildTimelineDday(){
 
 // ── 헤더 ────────────────────────────────────────────────
 document.getElementById('today-txt').textContent = 'TODAY: ' + TODAY;
+(function(){
+  const lu = (typeof window.LAST_UPDATED !== 'undefined' && window.LAST_UPDATED)
+    ? window.LAST_UPDATED
+    : null;
+  const koTxt = lu ? '대시보드 최종 업데이트: ' + lu + ' |' : '업데이트 시각 미확인 |';
+  const enTxt = lu ? 'Dashboard updated: ' + lu + ' |' : 'Update time unknown |';
+  document.getElementById('last-updated-ko').textContent = koTxt;
+  document.getElementById('last-updated-en').textContent = enTxt;
+})();
 (function(){
   const d = _dday(SCHED_SHOW);
   document.getElementById('d-badge').textContent =

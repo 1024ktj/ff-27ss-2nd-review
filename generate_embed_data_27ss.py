@@ -393,7 +393,11 @@ def main():
         'all_data':            all_data,
     }
 
-    js = 'const DASHBOARD = ' + json.dumps(dashboard, ensure_ascii=False, indent=2) + ';'
+    last_updated = datetime.now().strftime('%Y-%m-%d %H:%M')
+    js = (
+        f'window.LAST_UPDATED = "{last_updated}";\n'
+        'const DASHBOARD = ' + json.dumps(dashboard, ensure_ascii=False, indent=2) + ';'
+    )
     with open(OUTPUT_PATH, 'w', encoding='utf-8') as f:
         f.write(js)
 
