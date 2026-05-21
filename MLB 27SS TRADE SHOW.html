@@ -597,6 +597,10 @@ tbody td.muted { color:var(--muted); }
 .detail-tbl .row-delayed:hover { background:#fee2e2 !important; }
 .detail-tbl .row-na       { background:#f8fafc; opacity:0.72; }
 .detail-tbl .row-na:hover  { background:#f1f5f9 !important; opacity:1; }
+.detail-tbl .row-drop      { background:#f4f5f7; color:#9ca3af; }
+.detail-tbl .row-drop:hover{ background:#ececef !important; }
+.detail-tbl .row-drop td   { color:#9ca3af; }
+.badge-drop { background:#e5e7eb; color:#6b7280; padding:2px 8px; border-radius:10px; font-size:11px; font-weight:700; }
 .row-cnt { padding:9px 14px; font-size:12px; color:var(--muted); background:#fafbff; border-top:1px solid var(--border); }
 .detail-pager { display:flex; align-items:center; gap:4px; padding:8px 14px; background:#fafbff; border-top:1px solid var(--border); flex-wrap:wrap; }
 .pg-btn { background:#fff; border:1px solid var(--border); color:var(--text); font-size:12px; padding:3px 9px; border-radius:6px; cursor:pointer; }
@@ -1100,8 +1104,9 @@ body:not(.view-cn) .cn-only { display:none !important; }
 <script>
 // ── 데이터 ──────────────────────────────────────────────
 const D       = DASHBOARD;
-const _AD_ALL = D.all_data;
-let   AD      = _AD_ALL;
+const _AD_ALL    = D.all_data;
+const _AD_NODROP = _AD_ALL.filter(d => !d.is_drop);
+let   AD         = _AD_NODROP;   // 집계·KPI는 DROP 제외, 상세 목록만 _AD_ALL 사용
 const _now = new Date();
 
 // ── 분기 필터 ──────────────────────────────────────────────
@@ -1114,7 +1119,7 @@ function filterByPhase(data) {
 
 function setPhaseFilter(phase) {
   currentPhaseFilter = phase;
-  AD = filterByPhase(_AD_ALL);
+  AD = filterByPhase(_AD_NODROP);
   document.querySelectorAll('.pf-btn').forEach(function(btn) {
     const btnPhase = btn.getAttribute('data-phase');
     const active = btnPhase === phase;
@@ -1125,8 +1130,8 @@ function setPhaseFilter(phase) {
   renderAll();
 }
 
-// CN ATD 기준 실적 RDD 계산 (KR HAND CARRY: 당일도착 transit 0일 / CN +2일 / VN·KR +5일)
-AD.forEach(d=>{
+// CN ATD 기준 실적 RDD 계산 (_AD_ALL: DROP 행도 상세 목록 표시에 필요)
+_AD_ALL.forEach(d=>{
   if(d.cn_atd){
     const isHandCarry = d.co==='KR' && d.courier && d.courier.toUpperCase().indexOf('HAND')>=0;
     if(isHandCarry){
@@ -1142,8 +1147,8 @@ AD.forEach(d=>{
     d.cn_rdd_actual = null;
   }
 });
-// KR HAND CARRY: 예정 RDD도 transit 0일 기준으로 보정 (cn_etd = 곧 도착)
-AD.forEach(d=>{
+// KR HAND CARRY: 예정 RDD도 transit 0일 기준으로 보정
+_AD_ALL.forEach(d=>{
   const isHC = d.co==='KR' && d.courier && d.courier.toUpperCase().indexOf('HAND')>=0;
   if(isHC && d.cn_etd){
     d.cn_rdd = d.cn_etd; // planned RDD = ETD (당일 도착)
@@ -1153,15 +1158,16 @@ const TODAY = _now.getFullYear()+'-'+String(_now.getMonth()+1).padStart(2,'0')+'
 
 // ── 유틸 ────────────────────────────────────────────────
 function isDelayed(d){
-  return !d.is_na && d.kr_expected && d.kr_expected < TODAY && !d.kr_actual;
+  return !d.is_na && !d.is_drop && d.kr_expected && d.kr_expected < TODAY && !d.kr_actual;
 }
 function isCnRisk(d){
-  return !d.is_na && d.cn_etd && d.cn_etd < TODAY && !d.cn_atd;
+  return !d.is_na && !d.is_drop && d.cn_etd && d.cn_etd < TODAY && !d.cn_atd;
 }
 function dayDiff(a,b){ return Math.ceil((new Date(a)-new Date(b))/86400000); }
 
 function statusBadge(d){
   const _b=(cls,ko,en)=>`<span class="${cls}">${bi(ko,en)}</span>`;
+  if(d.is_drop)     return _b('badge-drop',  'DROP',    'DROP');
   if(d.is_na)       return _b('badge-na',    '미제작',   'N/A');
   if(isDelayed(d))  return _b('badge-delay', '지연',     'DELAYED');
   if(d.kr_actual)   return _b('badge-done',  '입고완료', 'ARRIVED');
@@ -3322,7 +3328,17 @@ let _detailRows = [];
 
 function renderDetail(){
   const srch = document.getElementById('f-search').value.toLowerCase();
-  _detailRows = AD.filter(d=>{
+  // 상세 목록은 DROP 포함 전체 소스에서 phase 필터만 적용
+  const fullSrc = currentPhaseFilter === 'ALL'
+    ? _AD_ALL
+    : _AD_ALL.filter(d => d.phase === currentPhaseFilter);
+  _detailRows = fullSrc.filter(d=>{
+    // DROP 행: 전체(all) 필터 + 검색어에만 표시, 상태 필터에서는 숨김
+    if(d.is_drop){
+      if(statusFilter !== 'all') return false;
+      if(srch){ const hay=[d.sku,d.style_code,d.description,d.color,d.vendor].join(' ').toLowerCase(); if(!hay.includes(srch)) return false; }
+      return true;
+    }
     if(statusFilter==='arrived'    && !d.kr_actual) return false;
     if(statusFilter==='pending'    && (d.kr_actual || d.is_na)) return false;
     if(statusFilter==='kr_delayed' && !((!d.is_na) && (!d.kr_actual) && d.kr_expected && d.kr_expected >= KR_DELAY_S)) return false;
@@ -3339,6 +3355,12 @@ function renderDetail(){
       if(!hay.includes(srch)) return false;
     }
     return true;
+  });
+  // DROP 행을 항상 맨 아래로
+  _detailRows.sort((a,b)=>{
+    if(a.is_drop && !b.is_drop) return 1;
+    if(!a.is_drop && b.is_drop) return -1;
+    return 0;
   });
   _detailPage = 0;
   _renderDetailPage();
@@ -3357,9 +3379,9 @@ function _renderDetailPage(){
   pageRows.forEach((d, pi)=>{
     const i = start + pi;
     const delayed  = isDelayed(d);
-    const rowClass = d.is_na ? 'row-na' : (delayed ? 'row-delayed' : '');
+    const rowClass = d.is_drop ? 'row-drop' : (d.is_na ? 'row-na' : (delayed ? 'row-delayed' : ''));
     const coBadge  = d.co==='CN'?'co-cn':d.co==='VN'?'co-vn':'co-kr';
-    const naStyle  = d.is_na ? 'color:#94a3b8' : '';
+    const naStyle  = (d.is_na || d.is_drop) ? 'color:#9ca3af' : '';
     const cnEtdStr = d.cn_etd === 'N/A' ? `<span style="${naStyle}">N/A</span>`
                    : (d.cn_etd ? `<span style="color:${d.cn_etd<TODAY?'#94a3b8':'#60a5fa'};font-weight:600">${d.cn_etd}</span>` : '-');
     const _isHC = d.co==='KR' && d.courier && d.courier.toUpperCase().indexOf('HAND')>=0;
@@ -3646,7 +3668,7 @@ document.addEventListener('keydown', function(e){ if(e.key==='Escape') closeRema
 
 <script>
 (function(){
-  var AD=DASHBOARD.all_data, D=DASHBOARD;
+  var AD=DASHBOARD.all_data.filter(function(d){return !d.is_drop;}), D=DASHBOARD;
 
   function oKM(id){document.getElementById(id).classList.add('open');}
   function cKM(id){document.getElementById(id).classList.remove('open');}

@@ -4,7 +4,6 @@ sys.stdout.reconfigure(encoding='utf-8')
 import openpyxl
 import json
 import os
-import glob
 import shutil
 from datetime import datetime, date
 from collections import Counter
@@ -12,11 +11,8 @@ from collections import Counter
 # ─── Paths ────────────────────────────────────────────────────────────────────
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 
-# 가장 최근 수정일자의 엑셀 파일 자동 선택 (OneDrive 원본 직접 참조)
-_candidates = glob.glob(r"C:\Users\AD1082\OneDrive - F&F\바탕 화면\(WEAR)27SS TRADE SHOW LIST*.xlsx")
-if not _candidates:
-    raise FileNotFoundError("(WEAR)27SS TRADE SHOW LIST*.xlsx 파일을 찾을 수 없습니다.")
-EXCEL_PATH = max(_candidates, key=os.path.getmtime)
+# ↓ 파일 위치가 바뀌면 이 한 줄만 수정
+EXCEL_PATH = r"C:\Users\AD1082\OneDrive - F&F\F_SO_ MLB 소싱팀 - 27SS\(WEAR)27SS TRADE SHOW LIST _2026.04.27.xlsx"
 print(f"📂 사용 엑셀: {os.path.basename(EXCEL_PATH)}")
 
 OUTPUT_PATH = os.path.join(BASE_DIR, "embed_data.js")

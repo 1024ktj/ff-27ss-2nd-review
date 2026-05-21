@@ -1,23 +1,23 @@
-window.LAST_UPDATED = "2026-05-15 09:58";
+window.LAST_UPDATED = "2026-05-21 13:31";
 const DASHBOARD = {
-  "total_sku": 1589,
-  "total_styles": 529,
+  "total_sku": 1586,
+  "total_styles": 528,
   "na_styles": 0,
-  "total_pcs": 7678,
-  "total_kr_keep_pcs": 1592,
-  "total_cn_show_pcs": 5483,
-  "total_cn_focus_pcs": 603,
-  "total_cn_total_pcs": 6086,
+  "total_pcs": 7664,
+  "total_kr_keep_pcs": 1589,
+  "total_cn_show_pcs": 5474,
+  "total_cn_focus_pcs": 601,
+  "total_cn_total_pcs": 6075,
   "arrival_summary": {
-    "total_styles": 529,
-    "by_0612": 288,
-    "by_0616": 348,
-    "by_0629": 514,
-    "by_0713": 522,
-    "pct_0612": 54.4,
-    "pct_0616": 65.8,
-    "pct_0629": 97.2,
-    "pct_0713": 98.7
+    "total_styles": 528,
+    "by_0612": 299,
+    "by_0616": 341,
+    "by_0629": 518,
+    "by_0713": 524,
+    "pct_0612": 56.6,
+    "pct_0616": 64.6,
+    "pct_0629": 98.1,
+    "pct_0713": 99.2
   },
   "all_data": [
     {
@@ -58,6 +58,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-04-23",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -98,6 +99,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-05-29",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -138,6 +140,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-04-20",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -178,6 +181,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-04-22",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -218,6 +222,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-04-21",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -258,6 +263,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-05-29",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -298,6 +304,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-05-29",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -338,6 +345,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-04-23",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -378,6 +386,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-05-29",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -418,6 +427,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-04-23",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -458,6 +468,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-05-29",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -498,6 +509,7 @@ const DASHBOARD = {
       "delay_reason": "원단 지연",
       "fabric_etd": "2026-05-29",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -538,6 +550,7 @@ const DASHBOARD = {
       "delay_reason": "원단 지연",
       "fabric_etd": "2026-05-29",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -578,6 +591,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-04-24",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -618,6 +632,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-05-29",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -658,6 +673,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-05-29",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -698,6 +714,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-05-29",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -738,6 +755,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-04-25",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -778,6 +796,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-04-25",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -818,6 +837,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-05-29",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -858,6 +878,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-05-29",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -898,6 +919,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-05-29",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -938,6 +960,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-05-29",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -974,10 +997,11 @@ const DASHBOARD = {
       "cn_rdd": "2026-06-28",
       "transit_days": 0,
       "courier": "",
-      "remark": "",
+      "remark": "원단 예정 발송일 5/25, 신규스타일 가봉 진행으로 2차 품평회 입고",
       "delay_reason": "",
       "fabric_etd": "2026-05-29",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -1014,10 +1038,11 @@ const DASHBOARD = {
       "cn_rdd": "2026-06-28",
       "transit_days": 0,
       "courier": "",
-      "remark": "",
+      "remark": "원단 예정 발송일 5/25, 신규스타일 가봉 진행으로 2차 품평회 입고",
       "delay_reason": "",
       "fabric_etd": "2026-04-28",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -1054,10 +1079,11 @@ const DASHBOARD = {
       "cn_rdd": "2026-06-28",
       "transit_days": 0,
       "courier": "",
-      "remark": "",
+      "remark": "앞.뒤 몸판 아트웍 직프린트 진행으로",
       "delay_reason": "",
       "fabric_etd": "2026-05-29",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -1094,10 +1120,11 @@ const DASHBOARD = {
       "cn_rdd": "2026-06-28",
       "transit_days": 0,
       "courier": "",
-      "remark": "",
+      "remark": "공장작업 필수 건",
       "delay_reason": "",
       "fabric_etd": "2026-05-29",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -1138,6 +1165,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-05-29",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -1178,6 +1206,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-05-29",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -1218,6 +1247,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-05-29",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -1258,6 +1288,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-05-29",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -1294,10 +1325,11 @@ const DASHBOARD = {
       "cn_rdd": "2026-06-28",
       "transit_days": 0,
       "courier": "",
-      "remark": "",
+      "remark": "5/20 2차 가봉 진행",
       "delay_reason": "",
       "fabric_etd": "2026-05-29",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -1327,17 +1359,18 @@ const DASHBOARD = {
       "cn_focus_pcs": 0,
       "kr_keep_pcs": 1,
       "cn_total_pcs": 4,
-      "kr_expected": "2026-06-12",
+      "kr_expected": "2026-06-24",
       "kr_actual": null,
-      "cn_etd": "2026-06-12",
+      "cn_etd": "2026-06-23",
       "cn_atd": null,
-      "cn_rdd": "2026-06-17",
+      "cn_rdd": "2026-06-28",
       "transit_days": 0,
       "courier": "",
-      "remark": "",
+      "remark": "에리 배색 가죽 6/16 도착 예정, 앞가슴자수 : 가죽 자수",
       "delay_reason": "",
       "fabric_etd": "2026-05-29",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -1378,6 +1411,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-05-29",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -1418,6 +1452,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-05-07",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -1447,17 +1482,18 @@ const DASHBOARD = {
       "cn_focus_pcs": 0,
       "kr_keep_pcs": 1,
       "cn_total_pcs": 4,
-      "kr_expected": "2026-07-05",
+      "kr_expected": "2026-06-26",
       "kr_actual": null,
       "cn_etd": "2026-07-05",
       "cn_atd": null,
       "cn_rdd": "2026-07-07",
       "transit_days": 2,
       "courier": "",
-      "remark": "원단 6/15 완성",
+      "remark": "5/20) 원단 완성 납기: 5/29 -> 스타일 별 1PCS 는 사전 입고 가능",
       "delay_reason": "원단 지연",
       "fabric_etd": "2026-05-29",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -1487,17 +1523,18 @@ const DASHBOARD = {
       "cn_focus_pcs": 0,
       "kr_keep_pcs": 1,
       "cn_total_pcs": 4,
-      "kr_expected": "2026-07-05",
+      "kr_expected": "2026-06-26",
       "kr_actual": null,
       "cn_etd": "2026-07-05",
       "cn_atd": null,
       "cn_rdd": "2026-07-07",
       "transit_days": 2,
       "courier": "",
-      "remark": "원단 6/15 완성",
+      "remark": "5/20) 원단 완성 납기: 5/29 -> 스타일 별 1PCS 는 사전 입고 가능",
       "delay_reason": "원단 지연",
       "fabric_etd": "",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -1527,17 +1564,18 @@ const DASHBOARD = {
       "cn_focus_pcs": 0,
       "kr_keep_pcs": 1,
       "cn_total_pcs": 3,
-      "kr_expected": "2026-07-05",
+      "kr_expected": "2026-06-26",
       "kr_actual": null,
       "cn_etd": "2026-07-05",
       "cn_atd": null,
       "cn_rdd": "2026-07-07",
       "transit_days": 2,
       "courier": "",
-      "remark": "원단 6/15 완성",
+      "remark": "5/20) 원단 완성 납기: 5/29 -> 스타일 별 1PCS 는 사전 입고 가능",
       "delay_reason": "원단 지연",
       "fabric_etd": "2026-05-29",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -1567,17 +1605,18 @@ const DASHBOARD = {
       "cn_focus_pcs": 0,
       "kr_keep_pcs": 1,
       "cn_total_pcs": 3,
-      "kr_expected": "2026-07-05",
+      "kr_expected": "2026-06-26",
       "kr_actual": null,
       "cn_etd": "2026-07-05",
       "cn_atd": null,
       "cn_rdd": "2026-07-07",
       "transit_days": 2,
       "courier": "",
-      "remark": "원단 6/15 완성",
+      "remark": "5/20) 원단 완성 납기: 5/29 -> 스타일 별 1PCS 는 사전 입고 가능",
       "delay_reason": "원단 지연",
       "fabric_etd": "2026-05-29",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -1607,17 +1646,18 @@ const DASHBOARD = {
       "cn_focus_pcs": 0,
       "kr_keep_pcs": 1,
       "cn_total_pcs": 3,
-      "kr_expected": "2026-07-05",
+      "kr_expected": "2026-06-26",
       "kr_actual": null,
       "cn_etd": "2026-07-05",
       "cn_atd": null,
       "cn_rdd": "2026-07-07",
       "transit_days": 2,
       "courier": "",
-      "remark": "원단 6/15 완성",
+      "remark": "5/20) 원단 완성 납기: 5/29 -> 스타일 별 1PCS 는 사전 입고 가능",
       "delay_reason": "원단 지연",
       "fabric_etd": "2026-05-29",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -1658,6 +1698,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-05-29",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -1698,6 +1739,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-05-29",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -1738,6 +1780,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-05-29",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -1778,6 +1821,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-05-29",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -1818,6 +1862,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-05-29",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -1858,6 +1903,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-05-29",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -1898,6 +1944,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-05-29",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -1938,6 +1985,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-05-29",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -1978,6 +2026,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-05-29",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -2007,17 +2056,18 @@ const DASHBOARD = {
       "cn_focus_pcs": 1,
       "kr_keep_pcs": 1,
       "cn_total_pcs": 5,
-      "kr_expected": "2026-06-20",
+      "kr_expected": "2026-06-24",
       "kr_actual": null,
       "cn_etd": "2026-06-23",
       "cn_atd": null,
       "cn_rdd": "2026-06-28",
       "transit_days": 0,
       "courier": "",
-      "remark": "",
+      "remark": "신규 스타일 가봉 진행, 2차 품평회 입고",
       "delay_reason": "",
       "fabric_etd": "2026-05-29",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -2047,17 +2097,18 @@ const DASHBOARD = {
       "cn_focus_pcs": 0,
       "kr_keep_pcs": 1,
       "cn_total_pcs": 4,
-      "kr_expected": "2026-06-20",
+      "kr_expected": "2026-06-24",
       "kr_actual": null,
       "cn_etd": "2026-06-23",
       "cn_atd": null,
       "cn_rdd": "2026-06-28",
       "transit_days": 0,
       "courier": "",
-      "remark": "",
+      "remark": "신규 스타일 가봉 진행, 2차 품평회 입고",
       "delay_reason": "",
       "fabric_etd": "2026-05-29",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -2087,17 +2138,18 @@ const DASHBOARD = {
       "cn_focus_pcs": 1,
       "kr_keep_pcs": 1,
       "cn_total_pcs": 5,
-      "kr_expected": "2026-06-20",
+      "kr_expected": "2026-06-24",
       "kr_actual": null,
       "cn_etd": "2026-06-23",
       "cn_atd": null,
       "cn_rdd": "2026-06-28",
       "transit_days": 0,
       "courier": "",
-      "remark": "",
+      "remark": "신규 스타일 가봉 진행, 2차 품평회 입고",
       "delay_reason": "",
       "fabric_etd": "2026-05-29",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -2127,17 +2179,18 @@ const DASHBOARD = {
       "cn_focus_pcs": 0,
       "kr_keep_pcs": 1,
       "cn_total_pcs": 4,
-      "kr_expected": "2026-06-20",
+      "kr_expected": "2026-06-24",
       "kr_actual": null,
       "cn_etd": "2026-06-23",
       "cn_atd": null,
       "cn_rdd": "2026-06-28",
       "transit_days": 0,
       "courier": "",
-      "remark": "",
+      "remark": "신규 스타일 가봉 진행, 2차 품평회 입고",
       "delay_reason": "",
       "fabric_etd": "2026-05-29",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -2167,17 +2220,18 @@ const DASHBOARD = {
       "cn_focus_pcs": 0,
       "kr_keep_pcs": 1,
       "cn_total_pcs": 4,
-      "kr_expected": "2026-06-20",
+      "kr_expected": "2026-06-24",
       "kr_actual": null,
       "cn_etd": "2026-06-23",
       "cn_atd": null,
       "cn_rdd": "2026-06-28",
       "transit_days": 0,
       "courier": "",
-      "remark": "",
+      "remark": "신규 스타일 가봉 진행, 2차 품평회 입고",
       "delay_reason": "",
       "fabric_etd": "2026-05-29",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -2207,17 +2261,18 @@ const DASHBOARD = {
       "cn_focus_pcs": 0,
       "kr_keep_pcs": 1,
       "cn_total_pcs": 4,
-      "kr_expected": "2026-06-20",
+      "kr_expected": "2026-06-24",
       "kr_actual": null,
       "cn_etd": "2026-06-23",
       "cn_atd": null,
       "cn_rdd": "2026-06-28",
       "transit_days": 0,
       "courier": "",
-      "remark": "",
+      "remark": "신규 스타일 가봉 진행, 2차 품평회 입고",
       "delay_reason": "",
       "fabric_etd": "2026-05-29",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -2247,17 +2302,18 @@ const DASHBOARD = {
       "cn_focus_pcs": 0,
       "kr_keep_pcs": 1,
       "cn_total_pcs": 4,
-      "kr_expected": "2026-06-20",
+      "kr_expected": "2026-06-24",
       "kr_actual": null,
       "cn_etd": "2026-06-23",
       "cn_atd": null,
       "cn_rdd": "2026-06-28",
       "transit_days": 0,
       "courier": "",
-      "remark": "",
+      "remark": "신규 스타일 가봉 진행, 2차 품평회 입고",
       "delay_reason": "",
       "fabric_etd": "2026-05-29",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -2287,17 +2343,18 @@ const DASHBOARD = {
       "cn_focus_pcs": 0,
       "kr_keep_pcs": 1,
       "cn_total_pcs": 3,
-      "kr_expected": "2026-06-20",
+      "kr_expected": "2026-06-24",
       "kr_actual": null,
       "cn_etd": "2026-06-23",
       "cn_atd": null,
       "cn_rdd": "2026-06-28",
       "transit_days": 0,
       "courier": "",
-      "remark": "",
+      "remark": "신규 스타일 가봉 진행, 2차 품평회 입고",
       "delay_reason": "",
       "fabric_etd": "2026-05-29",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -2327,17 +2384,18 @@ const DASHBOARD = {
       "cn_focus_pcs": 0,
       "kr_keep_pcs": 1,
       "cn_total_pcs": 3,
-      "kr_expected": "2026-06-20",
+      "kr_expected": "2026-06-24",
       "kr_actual": null,
       "cn_etd": "2026-06-23",
       "cn_atd": null,
       "cn_rdd": "2026-06-28",
       "transit_days": 0,
       "courier": "",
-      "remark": "",
+      "remark": "신규 스타일 가봉 진행, 2차 품평회 입고",
       "delay_reason": "",
       "fabric_etd": "2026-05-29",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -2367,17 +2425,18 @@ const DASHBOARD = {
       "cn_focus_pcs": 0,
       "kr_keep_pcs": 1,
       "cn_total_pcs": 3,
-      "kr_expected": "2026-06-20",
+      "kr_expected": "2026-06-24",
       "kr_actual": null,
       "cn_etd": "2026-06-23",
       "cn_atd": null,
       "cn_rdd": "2026-06-28",
       "transit_days": 0,
       "courier": "",
-      "remark": "",
+      "remark": "신규 스타일 가봉 진행, 2차 품평회 입고",
       "delay_reason": "",
       "fabric_etd": "2026-05-29",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -2407,17 +2466,18 @@ const DASHBOARD = {
       "cn_focus_pcs": 0,
       "kr_keep_pcs": 1,
       "cn_total_pcs": 4,
-      "kr_expected": "2026-06-20",
+      "kr_expected": "2026-06-24",
       "kr_actual": null,
       "cn_etd": "2026-06-23",
       "cn_atd": null,
       "cn_rdd": "2026-06-28",
       "transit_days": 0,
       "courier": "",
-      "remark": "",
+      "remark": "신규 스타일 가봉 진행, 2차 품평회 입고",
       "delay_reason": "",
       "fabric_etd": "2026-05-29",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -2447,17 +2507,18 @@ const DASHBOARD = {
       "cn_focus_pcs": 0,
       "kr_keep_pcs": 1,
       "cn_total_pcs": 4,
-      "kr_expected": "2026-06-20",
+      "kr_expected": "2026-06-24",
       "kr_actual": null,
       "cn_etd": "2026-06-23",
       "cn_atd": null,
       "cn_rdd": "2026-06-28",
       "transit_days": 0,
       "courier": "",
-      "remark": "",
+      "remark": "신규 스타일 가봉 진행, 2차 품평회 입고",
       "delay_reason": "",
       "fabric_etd": "2026-05-29",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -2487,17 +2548,18 @@ const DASHBOARD = {
       "cn_focus_pcs": 0,
       "kr_keep_pcs": 1,
       "cn_total_pcs": 4,
-      "kr_expected": "2026-06-20",
+      "kr_expected": "2026-06-24",
       "kr_actual": null,
       "cn_etd": "2026-06-23",
       "cn_atd": null,
       "cn_rdd": "2026-06-28",
       "transit_days": 0,
       "courier": "",
-      "remark": "",
+      "remark": "신규 스타일 가봉 진행, 2차 품평회 입고",
       "delay_reason": "",
       "fabric_etd": "2026-05-29",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -2534,10 +2596,11 @@ const DASHBOARD = {
       "cn_rdd": "2026-06-28",
       "transit_days": 0,
       "courier": "",
-      "remark": "",
+      "remark": "* 가봉 코멘트 수령 대기중",
       "delay_reason": "",
       "fabric_etd": "2026-05-29",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -2578,6 +2641,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-05-29",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -2618,6 +2682,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-05-29",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -2647,17 +2712,18 @@ const DASHBOARD = {
       "cn_focus_pcs": 1,
       "kr_keep_pcs": 1,
       "cn_total_pcs": 4,
-      "kr_expected": "2026-06-24",
+      "kr_expected": null,
       "kr_actual": null,
-      "cn_etd": "2026-06-23",
+      "cn_etd": null,
       "cn_atd": null,
-      "cn_rdd": "2026-06-28",
+      "cn_rdd": null,
       "transit_days": 0,
       "courier": "",
-      "remark": "",
+      "remark": "* 가봉 코멘트 수령 대기중",
       "delay_reason": "",
       "fabric_etd": "2026-05-29",
       "is_na": false,
+      "is_drop": true,
       "phase": "MAIN TS"
     },
     {
@@ -2687,17 +2753,18 @@ const DASHBOARD = {
       "cn_focus_pcs": 0,
       "kr_keep_pcs": 1,
       "cn_total_pcs": 3,
-      "kr_expected": "2026-06-24",
+      "kr_expected": null,
       "kr_actual": null,
-      "cn_etd": "2026-06-23",
+      "cn_etd": null,
       "cn_atd": null,
-      "cn_rdd": "2026-06-28",
+      "cn_rdd": null,
       "transit_days": 0,
       "courier": "",
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "",
       "is_na": false,
+      "is_drop": true,
       "phase": "MAIN TS"
     },
     {
@@ -2727,17 +2794,18 @@ const DASHBOARD = {
       "cn_focus_pcs": 1,
       "kr_keep_pcs": 1,
       "cn_total_pcs": 4,
-      "kr_expected": "2026-06-24",
+      "kr_expected": null,
       "kr_actual": null,
-      "cn_etd": "2026-06-23",
+      "cn_etd": null,
       "cn_atd": null,
-      "cn_rdd": "2026-06-28",
+      "cn_rdd": null,
       "transit_days": 0,
       "courier": "",
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-29",
       "is_na": false,
+      "is_drop": true,
       "phase": "MAIN TS"
     },
     {
@@ -2774,10 +2842,11 @@ const DASHBOARD = {
       "cn_rdd": "2026-06-28",
       "transit_days": 0,
       "courier": "",
-      "remark": "",
+      "remark": "* 가봉 코멘트 수령 대기중",
       "delay_reason": "",
       "fabric_etd": "2026-05-29",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -2818,6 +2887,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -2858,6 +2928,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-05-29",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -2887,17 +2958,18 @@ const DASHBOARD = {
       "cn_focus_pcs": 0,
       "kr_keep_pcs": 1,
       "cn_total_pcs": 4,
-      "kr_expected": "2026-07-05",
+      "kr_expected": "2026-06-26",
       "kr_actual": null,
       "cn_etd": "2026-07-05",
       "cn_atd": null,
       "cn_rdd": "2026-07-07",
       "transit_days": 2,
       "courier": "",
-      "remark": "원단 6/15 완성",
+      "remark": "5/20) 원단 완성 납기: 5/29 -> 스타일 별 1PCS 는 사전 입고 가능",
       "delay_reason": "원단 지연",
       "fabric_etd": "2026-05-29",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -2927,17 +2999,18 @@ const DASHBOARD = {
       "cn_focus_pcs": 0,
       "kr_keep_pcs": 1,
       "cn_total_pcs": 4,
-      "kr_expected": "2026-07-05",
+      "kr_expected": "2026-06-26",
       "kr_actual": null,
       "cn_etd": "2026-07-05",
       "cn_atd": null,
       "cn_rdd": "2026-07-07",
       "transit_days": 2,
       "courier": "",
-      "remark": "원단 6/15 완성",
+      "remark": "5/20) 원단 완성 납기: 5/29 -> 스타일 별 1PCS 는 사전 입고 가능",
       "delay_reason": "원단 지연",
       "fabric_etd": "2026-05-29",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -2978,6 +3051,7 @@ const DASHBOARD = {
       "delay_reason": "원단 지연",
       "fabric_etd": "2026-05-29",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -3018,6 +3092,7 @@ const DASHBOARD = {
       "delay_reason": "원단 지연",
       "fabric_etd": "2026-05-29",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -3054,10 +3129,11 @@ const DASHBOARD = {
       "cn_rdd": "2026-06-28",
       "transit_days": 0,
       "courier": "",
-      "remark": "",
+      "remark": "안쪽 다이아몬드 퀼팅 작업",
       "delay_reason": "",
       "fabric_etd": "2026-05-29",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -3094,10 +3170,11 @@ const DASHBOARD = {
       "cn_rdd": "2026-06-28",
       "transit_days": 0,
       "courier": "",
-      "remark": "",
+      "remark": "안쪽 다이아몬드 퀼팅 작업",
       "delay_reason": "",
       "fabric_etd": "2026-05-29",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -3134,10 +3211,11 @@ const DASHBOARD = {
       "cn_rdd": "2026-06-28",
       "transit_days": 0,
       "courier": "",
-      "remark": "",
+      "remark": "안쪽 다이아몬드 퀼팅 작업",
       "delay_reason": "",
       "fabric_etd": "2026-05-29",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -3174,10 +3252,11 @@ const DASHBOARD = {
       "cn_rdd": "2026-06-28",
       "transit_days": 0,
       "courier": "",
-      "remark": "",
+      "remark": "등팍 메가 직자수 작업 / 안쪽 다이아몬드 퀼팅 작업",
       "delay_reason": "",
       "fabric_etd": "2026-05-29",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -3214,10 +3293,11 @@ const DASHBOARD = {
       "cn_rdd": "2026-06-28",
       "transit_days": 0,
       "courier": "",
-      "remark": "",
+      "remark": "등팍 메가 직자수 작업 / 안쪽 다이아몬드 퀼팅 작업",
       "delay_reason": "",
       "fabric_etd": "2026-05-29",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -3254,10 +3334,11 @@ const DASHBOARD = {
       "cn_rdd": "2026-06-28",
       "transit_days": 0,
       "courier": "",
-      "remark": "",
+      "remark": "등팍 메가 직자수 작업 / 안쪽 다이아몬드 퀼팅 작업",
       "delay_reason": "",
       "fabric_etd": "2026-05-29",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -3272,7 +3353,7 @@ const DASHBOARD = {
       "sourcing": "양태영",
       "vendor": "티피나디아㈜",
       "vendor_en": "TP Nadia Co.,Ltd",
-      "co": "KR",
+      "co": "VN",
       "cn_invoice_rmb": 1998,
       "ttl_pcs": 6,
       "kr_pcs": 1,
@@ -3287,17 +3368,18 @@ const DASHBOARD = {
       "cn_focus_pcs": 1,
       "kr_keep_pcs": 1,
       "cn_total_pcs": 5,
-      "kr_expected": "2026-06-16",
+      "kr_expected": "2026-06-12",
       "kr_actual": null,
-      "cn_etd": "2026-06-10",
+      "cn_etd": "2026-06-12",
       "cn_atd": null,
-      "cn_rdd": "2026-06-15",
-      "transit_days": 0,
+      "cn_rdd": "2026-06-17",
+      "transit_days": 5,
       "courier": "",
-      "remark": "",
+      "remark": "1차 품평회 입고",
       "delay_reason": "",
       "fabric_etd": "2026-04-22",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -3312,7 +3394,7 @@ const DASHBOARD = {
       "sourcing": "양태영",
       "vendor": "티피나디아㈜",
       "vendor_en": "TP Nadia Co.,Ltd",
-      "co": "KR",
+      "co": "VN",
       "cn_invoice_rmb": 1998,
       "ttl_pcs": 6,
       "kr_pcs": 1,
@@ -3327,17 +3409,18 @@ const DASHBOARD = {
       "cn_focus_pcs": 1,
       "kr_keep_pcs": 1,
       "cn_total_pcs": 5,
-      "kr_expected": "2026-06-20",
+      "kr_expected": "2026-06-24",
       "kr_actual": null,
       "cn_etd": "2026-06-23",
       "cn_atd": null,
       "cn_rdd": "2026-06-28",
-      "transit_days": 0,
+      "transit_days": 5,
       "courier": "",
-      "remark": "",
+      "remark": "추가 색상으로 2차 품평회 입고",
       "delay_reason": "",
       "fabric_etd": "2026-05-29",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -3352,7 +3435,7 @@ const DASHBOARD = {
       "sourcing": "양태영",
       "vendor": "티피나디아㈜",
       "vendor_en": "TP Nadia Co.,Ltd",
-      "co": "KR",
+      "co": "VN",
       "cn_invoice_rmb": 1998,
       "ttl_pcs": 6,
       "kr_pcs": 1,
@@ -3367,17 +3450,18 @@ const DASHBOARD = {
       "cn_focus_pcs": 1,
       "kr_keep_pcs": 1,
       "cn_total_pcs": 5,
-      "kr_expected": "2026-06-16",
+      "kr_expected": "2026-06-12",
       "kr_actual": null,
-      "cn_etd": "2026-06-10",
+      "cn_etd": "2026-06-12",
       "cn_atd": null,
-      "cn_rdd": "2026-06-15",
-      "transit_days": 0,
+      "cn_rdd": "2026-06-17",
+      "transit_days": 5,
       "courier": "",
-      "remark": "",
+      "remark": "1차 품평회 입고",
       "delay_reason": "",
       "fabric_etd": "2026-04-22",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -3392,7 +3476,7 @@ const DASHBOARD = {
       "sourcing": "양태영",
       "vendor": "티피나디아㈜",
       "vendor_en": "TP Nadia Co.,Ltd",
-      "co": "KR",
+      "co": "VN",
       "cn_invoice_rmb": 1998,
       "ttl_pcs": 6,
       "kr_pcs": 1,
@@ -3407,17 +3491,18 @@ const DASHBOARD = {
       "cn_focus_pcs": 1,
       "kr_keep_pcs": 1,
       "cn_total_pcs": 5,
-      "kr_expected": "2026-06-16",
+      "kr_expected": "2026-06-12",
       "kr_actual": null,
-      "cn_etd": "2026-06-10",
+      "cn_etd": "2026-06-12",
       "cn_atd": null,
-      "cn_rdd": "2026-06-15",
-      "transit_days": 0,
+      "cn_rdd": "2026-06-17",
+      "transit_days": 5,
       "courier": "",
-      "remark": "",
+      "remark": "1차 품평회 입고",
       "delay_reason": "",
       "fabric_etd": "2026-04-22",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -3432,7 +3517,7 @@ const DASHBOARD = {
       "sourcing": "양태영",
       "vendor": "티피나디아㈜",
       "vendor_en": "TP Nadia Co.,Ltd",
-      "co": "KR",
+      "co": "VN",
       "cn_invoice_rmb": 1998,
       "ttl_pcs": 6,
       "kr_pcs": 1,
@@ -3447,17 +3532,18 @@ const DASHBOARD = {
       "cn_focus_pcs": 1,
       "kr_keep_pcs": 1,
       "cn_total_pcs": 5,
-      "kr_expected": "2026-06-16",
+      "kr_expected": "2026-06-12",
       "kr_actual": null,
-      "cn_etd": "2026-06-10",
+      "cn_etd": "2026-06-12",
       "cn_atd": null,
-      "cn_rdd": "2026-06-15",
-      "transit_days": 0,
+      "cn_rdd": "2026-06-17",
+      "transit_days": 5,
       "courier": "",
-      "remark": "",
+      "remark": "1차 품평회 입고",
       "delay_reason": "",
       "fabric_etd": "2026-04-22",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -3494,10 +3580,11 @@ const DASHBOARD = {
       "cn_rdd": "2026-06-28",
       "transit_days": 0,
       "courier": "",
-      "remark": "",
+      "remark": "등판 직프린트 작업",
       "delay_reason": "",
       "fabric_etd": "2026-04-28",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -3534,10 +3621,11 @@ const DASHBOARD = {
       "cn_rdd": "2026-06-28",
       "transit_days": 0,
       "courier": "",
-      "remark": "",
+      "remark": "등판 직프린트 작업",
       "delay_reason": "",
       "fabric_etd": "2026-04-28",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -3574,10 +3662,11 @@ const DASHBOARD = {
       "cn_rdd": "2026-06-28",
       "transit_days": 0,
       "courier": "",
-      "remark": "",
+      "remark": "등판 직프린트 작업",
       "delay_reason": "",
       "fabric_etd": "2026-04-20",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -3614,10 +3703,11 @@ const DASHBOARD = {
       "cn_rdd": "2026-06-28",
       "transit_days": 0,
       "courier": "",
-      "remark": "",
+      "remark": "등판 직프린트 작업",
       "delay_reason": "",
       "fabric_etd": "2026-04-28",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -3658,6 +3748,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-05-29",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -3698,6 +3789,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-05-29",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -3712,7 +3804,7 @@ const DASHBOARD = {
       "sourcing": "양태영",
       "vendor": "티피나디아㈜",
       "vendor_en": "TP Nadia Co.,Ltd",
-      "co": "KR",
+      "co": "VN",
       "cn_invoice_rmb": 2498,
       "ttl_pcs": 6,
       "kr_pcs": 1,
@@ -3727,17 +3819,18 @@ const DASHBOARD = {
       "cn_focus_pcs": 1,
       "kr_keep_pcs": 1,
       "cn_total_pcs": 5,
-      "kr_expected": "2026-06-16",
+      "kr_expected": "2026-06-24",
       "kr_actual": null,
-      "cn_etd": "2026-06-10",
+      "cn_etd": "2026-06-23",
       "cn_atd": null,
-      "cn_rdd": "2026-06-15",
-      "transit_days": 0,
+      "cn_rdd": "2026-06-28",
+      "transit_days": 5,
       "courier": "",
-      "remark": "",
+      "remark": "방수지퍼+로고 프린팅 지퍼로 2차 품평회 입고 / 방수지퍼 ETD 5/21일로 ETA 5/23",
       "delay_reason": "",
       "fabric_etd": "2026-04-22",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -3752,7 +3845,7 @@ const DASHBOARD = {
       "sourcing": "양태영",
       "vendor": "티피나디아㈜",
       "vendor_en": "TP Nadia Co.,Ltd",
-      "co": "KR",
+      "co": "VN",
       "cn_invoice_rmb": 2498,
       "ttl_pcs": 6,
       "kr_pcs": 1,
@@ -3767,17 +3860,18 @@ const DASHBOARD = {
       "cn_focus_pcs": 1,
       "kr_keep_pcs": 1,
       "cn_total_pcs": 5,
-      "kr_expected": "2026-06-20",
+      "kr_expected": "2026-06-24",
       "kr_actual": null,
       "cn_etd": "2026-06-23",
       "cn_atd": null,
       "cn_rdd": "2026-06-28",
-      "transit_days": 0,
+      "transit_days": 5,
       "courier": "",
-      "remark": "",
+      "remark": "방수지퍼+로고 프린팅 지퍼로 2차 품평회 입고 / 방수지퍼 ETD 5/21일로 ETA 5/23",
       "delay_reason": "",
       "fabric_etd": "2026-05-29",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -3818,6 +3912,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-05-29",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -3858,6 +3953,7 @@ const DASHBOARD = {
       "delay_reason": "원단 지연",
       "fabric_etd": "2026-05-07",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -3898,6 +3994,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-05-07",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -3934,10 +4031,11 @@ const DASHBOARD = {
       "cn_rdd": "2026-06-28",
       "transit_days": 0,
       "courier": "",
-      "remark": "",
+      "remark": "등판 직프린트 작업",
       "delay_reason": "",
       "fabric_etd": "2026-05-29",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -3974,10 +4072,11 @@ const DASHBOARD = {
       "cn_rdd": "2026-06-28",
       "transit_days": 0,
       "courier": "",
-      "remark": "",
+      "remark": "등판 직프린트 작업",
       "delay_reason": "",
       "fabric_etd": "2026-05-29",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -4014,10 +4113,11 @@ const DASHBOARD = {
       "cn_rdd": "2026-06-28",
       "transit_days": 0,
       "courier": "",
-      "remark": "",
+      "remark": "등판 직프린트 작업",
       "delay_reason": "",
       "fabric_etd": "2026-05-29",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -4054,10 +4154,11 @@ const DASHBOARD = {
       "cn_rdd": "2026-06-28",
       "transit_days": 0,
       "courier": "",
-      "remark": "",
+      "remark": "등판 직프린트 작업",
       "delay_reason": "",
       "fabric_etd": "2026-05-29",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -4094,10 +4195,11 @@ const DASHBOARD = {
       "cn_rdd": "2026-06-17",
       "transit_days": 0,
       "courier": "",
-      "remark": "",
+      "remark": "* 가봉 진행 X",
       "delay_reason": "",
       "fabric_etd": "2026-05-08",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -4127,17 +4229,18 @@ const DASHBOARD = {
       "cn_focus_pcs": 1,
       "kr_keep_pcs": 1,
       "cn_total_pcs": 5,
-      "kr_expected": "2026-06-24",
+      "kr_expected": "2026-06-12",
       "kr_actual": null,
-      "cn_etd": "2026-06-23",
+      "cn_etd": "2026-06-12",
       "cn_atd": null,
-      "cn_rdd": "2026-06-28",
+      "cn_rdd": "2026-06-17",
       "transit_days": 0,
       "courier": "",
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-29",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -4178,6 +4281,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -4218,6 +4322,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-05-08",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -4258,6 +4363,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-05-29",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -4298,6 +4404,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-05-15",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -4338,6 +4445,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-05-15",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -4378,6 +4486,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-05-15",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -4418,6 +4527,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-05-29",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -4458,6 +4568,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-05-07",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -4498,6 +4609,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-05-07",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -4538,6 +4650,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-05-29",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -4578,6 +4691,7 @@ const DASHBOARD = {
       "delay_reason": "원단 지연",
       "fabric_etd": "2026-05-07",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -4618,6 +4732,7 @@ const DASHBOARD = {
       "delay_reason": "원단 지연",
       "fabric_etd": "2026-05-07",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -4658,6 +4773,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-05-29",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -4698,6 +4814,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-05-15",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -4738,6 +4855,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-05-29",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -4778,6 +4896,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-05-08",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -4792,7 +4911,7 @@ const DASHBOARD = {
       "sourcing": "양태영",
       "vendor": "티피나디아㈜",
       "vendor_en": "TP Nadia Co.,Ltd",
-      "co": "KR",
+      "co": "VN",
       "cn_invoice_rmb": 2132,
       "ttl_pcs": 5,
       "kr_pcs": 1,
@@ -4807,17 +4926,18 @@ const DASHBOARD = {
       "cn_focus_pcs": 0,
       "kr_keep_pcs": 1,
       "cn_total_pcs": 4,
-      "kr_expected": "2026-06-16",
+      "kr_expected": "2026-06-24",
       "kr_actual": null,
-      "cn_etd": "2026-06-10",
+      "cn_etd": "2026-06-23",
       "cn_atd": null,
-      "cn_rdd": "2026-06-15",
-      "transit_days": 0,
+      "cn_rdd": "2026-06-28",
+      "transit_days": 5,
       "courier": "",
-      "remark": "",
+      "remark": "재 샘플 진행 후 수주샘플 진행으로 2차 품평회 입고",
       "delay_reason": "",
       "fabric_etd": "2026-05-12",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -4832,7 +4952,7 @@ const DASHBOARD = {
       "sourcing": "양태영",
       "vendor": "티피나디아㈜",
       "vendor_en": "TP Nadia Co.,Ltd",
-      "co": "KR",
+      "co": "VN",
       "cn_invoice_rmb": 2132,
       "ttl_pcs": 5,
       "kr_pcs": 1,
@@ -4847,17 +4967,18 @@ const DASHBOARD = {
       "cn_focus_pcs": 0,
       "kr_keep_pcs": 1,
       "cn_total_pcs": 4,
-      "kr_expected": "2026-06-16",
+      "kr_expected": "2026-06-24",
       "kr_actual": null,
-      "cn_etd": "2026-06-10",
+      "cn_etd": "2026-06-23",
       "cn_atd": null,
-      "cn_rdd": "2026-06-15",
-      "transit_days": 0,
+      "cn_rdd": "2026-06-28",
+      "transit_days": 5,
       "courier": "",
-      "remark": "",
+      "remark": "재 샘플 진행 후 수주샘플 진행으로 2차 품평회 입고",
       "delay_reason": "",
       "fabric_etd": "2026-04-23",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -4872,7 +4993,7 @@ const DASHBOARD = {
       "sourcing": "양태영",
       "vendor": "티피나디아㈜",
       "vendor_en": "TP Nadia Co.,Ltd",
-      "co": "KR",
+      "co": "VN",
       "cn_invoice_rmb": 2132,
       "ttl_pcs": 5,
       "kr_pcs": 1,
@@ -4887,17 +5008,18 @@ const DASHBOARD = {
       "cn_focus_pcs": 0,
       "kr_keep_pcs": 1,
       "cn_total_pcs": 4,
-      "kr_expected": "2026-06-20",
+      "kr_expected": "2026-06-24",
       "kr_actual": null,
       "cn_etd": "2026-06-23",
       "cn_atd": null,
       "cn_rdd": "2026-06-28",
-      "transit_days": 0,
+      "transit_days": 5,
       "courier": "",
-      "remark": "",
+      "remark": "재 샘플 진행 후 수주샘플 진행으로 2차 품평회 입고 / 원단 ETD 5/28",
       "delay_reason": "",
       "fabric_etd": "2026-05-29",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -4938,6 +5060,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-05-08",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -4978,6 +5101,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-05-08",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -5018,6 +5142,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-05-29",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -5058,6 +5183,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-04-23",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -5098,6 +5224,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-05-12",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -5134,10 +5261,11 @@ const DASHBOARD = {
       "cn_rdd": "2026-06-28",
       "transit_days": 0,
       "courier": "",
-      "remark": "",
+      "remark": "* 가봉 코멘트 수령 대기중",
       "delay_reason": "",
       "fabric_etd": "2026-05-29",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -5178,6 +5306,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-05-29",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -5218,6 +5347,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-05-29",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -5258,6 +5388,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-05-29",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -5294,10 +5425,11 @@ const DASHBOARD = {
       "cn_rdd": "2026-06-17",
       "transit_days": 0,
       "courier": "",
-      "remark": "",
+      "remark": "* 가봉 진행 X",
       "delay_reason": "",
       "fabric_etd": "2026-05-07",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -5338,6 +5470,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-05-07",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -5374,10 +5507,11 @@ const DASHBOARD = {
       "cn_rdd": "2026-06-28",
       "transit_days": 0,
       "courier": "",
-      "remark": "",
+      "remark": "5/19 가봉 코멘트 수령 완료 / 에리 목업 CFM 후 진행 예정",
       "delay_reason": "",
       "fabric_etd": "2026-05-29",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -5414,10 +5548,11 @@ const DASHBOARD = {
       "cn_rdd": "2026-06-28",
       "transit_days": 0,
       "courier": "",
-      "remark": "",
+      "remark": "소매 배색 파워넷 변경- 세은 퀄리티 목업 진행 후 투입 가능",
       "delay_reason": "",
       "fabric_etd": "2026-05-29",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -5458,6 +5593,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-05-29",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -5498,6 +5634,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-05-08",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -5538,6 +5675,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-05-29",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -5578,6 +5716,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-05-08",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -5618,6 +5757,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-05-08",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -5654,10 +5794,11 @@ const DASHBOARD = {
       "cn_rdd": "2026-06-28",
       "transit_days": 0,
       "courier": "",
-      "remark": "",
+      "remark": "* 가봉 코멘트 수령 대기중",
       "delay_reason": "",
       "fabric_etd": "2026-05-29",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -5687,17 +5828,18 @@ const DASHBOARD = {
       "cn_focus_pcs": 1,
       "kr_keep_pcs": 1,
       "cn_total_pcs": 4,
-      "kr_expected": "2026-06-12",
+      "kr_expected": "2026-06-24",
       "kr_actual": null,
-      "cn_etd": "2026-06-12",
+      "cn_etd": "2026-06-23",
       "cn_atd": null,
-      "cn_rdd": "2026-06-17",
+      "cn_rdd": "2026-06-28",
       "transit_days": 0,
       "courier": "",
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-04-30",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -5727,17 +5869,18 @@ const DASHBOARD = {
       "cn_focus_pcs": 1,
       "kr_keep_pcs": 1,
       "cn_total_pcs": 4,
-      "kr_expected": "2026-06-15",
+      "kr_expected": "2026-06-24",
       "kr_actual": null,
-      "cn_etd": "2026-06-12",
+      "cn_etd": "2026-06-23",
       "cn_atd": null,
-      "cn_rdd": "2026-06-17",
+      "cn_rdd": "2026-06-28",
       "transit_days": 0,
       "courier": "",
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-08",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -5778,6 +5921,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-05-29",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -5792,7 +5936,7 @@ const DASHBOARD = {
       "sourcing": "양태영",
       "vendor": "티피나디아㈜",
       "vendor_en": "TP Nadia Co.,Ltd",
-      "co": "KR",
+      "co": "VN",
       "cn_invoice_rmb": 799,
       "ttl_pcs": 4,
       "kr_pcs": 1,
@@ -5807,17 +5951,18 @@ const DASHBOARD = {
       "cn_focus_pcs": 0,
       "kr_keep_pcs": 1,
       "cn_total_pcs": 3,
-      "kr_expected": "2026-06-20",
+      "kr_expected": "2026-06-24",
       "kr_actual": null,
       "cn_etd": "2026-06-23",
       "cn_atd": null,
       "cn_rdd": "2026-06-28",
-      "transit_days": 0,
+      "transit_days": 5,
       "courier": "",
-      "remark": "",
+      "remark": "재 샘플 진행 후 수주샘플 진행으로 2차 품평회 입고",
       "delay_reason": "",
       "fabric_etd": "2026-05-29",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -5832,7 +5977,7 @@ const DASHBOARD = {
       "sourcing": "양태영",
       "vendor": "티피나디아㈜",
       "vendor_en": "TP Nadia Co.,Ltd",
-      "co": "KR",
+      "co": "VN",
       "cn_invoice_rmb": 799,
       "ttl_pcs": 4,
       "kr_pcs": 1,
@@ -5847,17 +5992,18 @@ const DASHBOARD = {
       "cn_focus_pcs": 0,
       "kr_keep_pcs": 1,
       "cn_total_pcs": 3,
-      "kr_expected": "2026-06-20",
+      "kr_expected": "2026-06-24",
       "kr_actual": null,
       "cn_etd": "2026-06-23",
       "cn_atd": null,
       "cn_rdd": "2026-06-28",
-      "transit_days": 0,
+      "transit_days": 5,
       "courier": "",
-      "remark": "",
+      "remark": "재 샘플 진행 후 수주샘플 진행으로 2차 품평회 입고",
       "delay_reason": "",
       "fabric_etd": "2026-05-29",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -5872,7 +6018,7 @@ const DASHBOARD = {
       "sourcing": "양태영",
       "vendor": "티피나디아㈜",
       "vendor_en": "TP Nadia Co.,Ltd",
-      "co": "KR",
+      "co": "VN",
       "cn_invoice_rmb": 799,
       "ttl_pcs": 4,
       "kr_pcs": 1,
@@ -5887,17 +6033,18 @@ const DASHBOARD = {
       "cn_focus_pcs": 0,
       "kr_keep_pcs": 1,
       "cn_total_pcs": 3,
-      "kr_expected": "2026-06-20",
+      "kr_expected": "2026-06-24",
       "kr_actual": null,
       "cn_etd": "2026-06-23",
       "cn_atd": null,
       "cn_rdd": "2026-06-28",
-      "transit_days": 0,
+      "transit_days": 5,
       "courier": "",
-      "remark": "",
+      "remark": "재 샘플 진행 후 수주샘플 진행으로 2차 품평회 입고",
       "delay_reason": "",
       "fabric_etd": "2026-05-29",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -5938,6 +6085,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-05-08",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -5978,6 +6126,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-05-29",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -6018,6 +6167,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-05-08",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -6058,6 +6208,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-05-29",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -6094,10 +6245,11 @@ const DASHBOARD = {
       "cn_rdd": "2026-06-28",
       "transit_days": 0,
       "courier": "",
-      "remark": "",
+      "remark": "중국 개발 자재 납기 지연",
       "delay_reason": "",
       "fabric_etd": "",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -6134,10 +6286,11 @@ const DASHBOARD = {
       "cn_rdd": "2026-06-28",
       "transit_days": 0,
       "courier": "",
-      "remark": "",
+      "remark": "매직 원단으로 국내 샘플실에서 봉제 퀄리티 잡히지 않아",
       "delay_reason": "",
       "fabric_etd": "2026-05-08",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -6174,10 +6327,11 @@ const DASHBOARD = {
       "cn_rdd": "2026-06-28",
       "transit_days": 0,
       "courier": "",
-      "remark": "",
+      "remark": "전체 공작작업진행 예정, 공장작업 진행시",
       "delay_reason": "",
       "fabric_etd": "2026-05-08",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -6214,10 +6368,11 @@ const DASHBOARD = {
       "cn_rdd": "2026-06-28",
       "transit_days": 0,
       "courier": "",
-      "remark": "",
+      "remark": "납기 지연 발생 가능성있음, 현재 공장과 납기 확인 중",
       "delay_reason": "",
       "fabric_etd": "2026-05-29",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -6247,17 +6402,18 @@ const DASHBOARD = {
       "cn_focus_pcs": 0,
       "kr_keep_pcs": 1,
       "cn_total_pcs": 3,
-      "kr_expected": "2026-06-16",
+      "kr_expected": "2026-06-24",
       "kr_actual": null,
-      "cn_etd": "2026-06-10",
+      "cn_etd": "2026-06-23",
       "cn_atd": null,
-      "cn_rdd": "2026-06-15",
+      "cn_rdd": "2026-06-28",
       "transit_days": 0,
       "courier": "",
-      "remark": "",
+      "remark": "원단 예정 발송일 5/25, 재 샘플 진행 후 수주샘플 진행으로 2차 품평회 입고",
       "delay_reason": "",
       "fabric_etd": "2026-05-10",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -6287,17 +6443,18 @@ const DASHBOARD = {
       "cn_focus_pcs": 0,
       "kr_keep_pcs": 1,
       "cn_total_pcs": 3,
-      "kr_expected": "2026-06-20",
+      "kr_expected": "2026-06-24",
       "kr_actual": null,
       "cn_etd": "2026-06-23",
       "cn_atd": null,
       "cn_rdd": "2026-06-28",
       "transit_days": 0,
       "courier": "",
-      "remark": "",
+      "remark": "원단 예정 발송일 5/25, 재 샘플 진행 후 수주샘플 진행으로 2차 품평회 입고",
       "delay_reason": "",
       "fabric_etd": "2026-05-29",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -6327,17 +6484,18 @@ const DASHBOARD = {
       "cn_focus_pcs": 0,
       "kr_keep_pcs": 1,
       "cn_total_pcs": 3,
-      "kr_expected": "2026-06-20",
+      "kr_expected": "2026-06-24",
       "kr_actual": null,
       "cn_etd": "2026-06-23",
       "cn_atd": null,
       "cn_rdd": "2026-06-28",
       "transit_days": 0,
       "courier": "",
-      "remark": "",
+      "remark": "원단 예정 발송일 5/25, 재 샘플 진행 후 수주샘플 진행으로 2차 품평회 입고",
       "delay_reason": "",
       "fabric_etd": "2026-05-29",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -6374,10 +6532,11 @@ const DASHBOARD = {
       "cn_rdd": "2026-06-17",
       "transit_days": 0,
       "courier": "",
-      "remark": "",
+      "remark": "* 목업 CFM 완료",
       "delay_reason": "",
       "fabric_etd": "2026-04-30",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -6418,6 +6577,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-05-29",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -6458,6 +6618,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-05-15",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -6487,17 +6648,18 @@ const DASHBOARD = {
       "cn_focus_pcs": 1,
       "kr_keep_pcs": 1,
       "cn_total_pcs": 5,
-      "kr_expected": "2026-06-15",
+      "kr_expected": "2026-06-24",
       "kr_actual": null,
-      "cn_etd": "2026-06-12",
+      "cn_etd": "2026-06-23",
       "cn_atd": null,
-      "cn_rdd": "2026-06-17",
+      "cn_rdd": "2026-06-28",
       "transit_days": 0,
       "courier": "",
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-04-22",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -6538,6 +6700,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-05-29",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -6574,10 +6737,11 @@ const DASHBOARD = {
       "cn_rdd": "2026-06-17",
       "transit_days": 0,
       "courier": "",
-      "remark": "",
+      "remark": "* 가봉 코멘트 수령 대기중",
       "delay_reason": "",
       "fabric_etd": "2026-05-08",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -6607,17 +6771,18 @@ const DASHBOARD = {
       "cn_focus_pcs": 1,
       "kr_keep_pcs": 1,
       "cn_total_pcs": 4,
-      "kr_expected": "2026-06-24",
+      "kr_expected": "2026-06-12",
       "kr_actual": null,
-      "cn_etd": "2026-06-23",
+      "cn_etd": "2026-06-12",
       "cn_atd": null,
-      "cn_rdd": "2026-06-28",
+      "cn_rdd": "2026-06-17",
       "transit_days": 0,
       "courier": "",
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-29",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -6658,6 +6823,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-04-23",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -6698,6 +6864,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-05-08",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -6734,10 +6901,11 @@ const DASHBOARD = {
       "cn_rdd": "2026-06-28",
       "transit_days": 0,
       "courier": "",
-      "remark": "",
+      "remark": "* 가봉 코멘트 수령 대기중",
       "delay_reason": "",
       "fabric_etd": "2026-05-29",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -6767,7 +6935,7 @@ const DASHBOARD = {
       "cn_focus_pcs": 0,
       "kr_keep_pcs": 1,
       "cn_total_pcs": 4,
-      "kr_expected": "2026-06-15",
+      "kr_expected": "2026-06-12",
       "kr_actual": null,
       "cn_etd": "2026-06-12",
       "cn_atd": null,
@@ -6778,6 +6946,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-04-30",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -6807,7 +6976,7 @@ const DASHBOARD = {
       "cn_focus_pcs": 0,
       "kr_keep_pcs": 1,
       "cn_total_pcs": 4,
-      "kr_expected": "2026-06-15",
+      "kr_expected": "2026-06-12",
       "kr_actual": null,
       "cn_etd": "2026-06-12",
       "cn_atd": null,
@@ -6818,6 +6987,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-04-30",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -6847,17 +7017,18 @@ const DASHBOARD = {
       "cn_focus_pcs": 0,
       "kr_keep_pcs": 1,
       "cn_total_pcs": 4,
-      "kr_expected": null,
+      "kr_expected": "2026-06-24",
       "kr_actual": null,
-      "cn_etd": null,
+      "cn_etd": "2026-06-23",
       "cn_atd": null,
-      "cn_rdd": null,
+      "cn_rdd": "2026-06-28",
       "transit_days": 0,
       "courier": "",
       "remark": "Q2 진행건",
       "delay_reason": "",
       "fabric_etd": "2026-05-29",
       "is_na": false,
+      "is_drop": false,
       "phase": "2ND TS"
     },
     {
@@ -6887,17 +7058,18 @@ const DASHBOARD = {
       "cn_focus_pcs": 0,
       "kr_keep_pcs": 1,
       "cn_total_pcs": 4,
-      "kr_expected": null,
+      "kr_expected": "2026-06-24",
       "kr_actual": null,
-      "cn_etd": null,
+      "cn_etd": "2026-06-23",
       "cn_atd": null,
-      "cn_rdd": null,
+      "cn_rdd": "2026-06-28",
       "transit_days": 0,
       "courier": "",
       "remark": "Q2 진행건",
       "delay_reason": "",
       "fabric_etd": "2026-05-29",
       "is_na": false,
+      "is_drop": false,
       "phase": "2ND TS"
     },
     {
@@ -6927,17 +7099,18 @@ const DASHBOARD = {
       "cn_focus_pcs": 0,
       "kr_keep_pcs": 1,
       "cn_total_pcs": 4,
-      "kr_expected": null,
+      "kr_expected": "2026-06-24",
       "kr_actual": null,
-      "cn_etd": null,
+      "cn_etd": "2026-06-23",
       "cn_atd": null,
-      "cn_rdd": null,
+      "cn_rdd": "2026-06-28",
       "transit_days": 0,
       "courier": "",
       "remark": "Q2 진행건",
       "delay_reason": "",
       "fabric_etd": "2026-05-29",
       "is_na": false,
+      "is_drop": false,
       "phase": "2ND TS"
     },
     {
@@ -6978,6 +7151,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-05-29",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -7018,6 +7192,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-05-29",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -7058,6 +7233,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-05-29",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -7098,6 +7274,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-04-22",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -7127,17 +7304,18 @@ const DASHBOARD = {
       "cn_focus_pcs": 1,
       "kr_keep_pcs": 1,
       "cn_total_pcs": 5,
-      "kr_expected": null,
+      "kr_expected": "2026-06-24",
       "kr_actual": null,
-      "cn_etd": null,
+      "cn_etd": "2026-06-23",
       "cn_atd": null,
-      "cn_rdd": null,
+      "cn_rdd": "2026-06-28",
       "transit_days": 0,
       "courier": "",
       "remark": "Q2 진행건",
       "delay_reason": "",
       "fabric_etd": "2026-05-29",
       "is_na": false,
+      "is_drop": false,
       "phase": "2ND TS"
     },
     {
@@ -7167,17 +7345,18 @@ const DASHBOARD = {
       "cn_focus_pcs": 1,
       "kr_keep_pcs": 1,
       "cn_total_pcs": 5,
-      "kr_expected": null,
+      "kr_expected": "2026-06-24",
       "kr_actual": null,
-      "cn_etd": null,
+      "cn_etd": "2026-06-23",
       "cn_atd": null,
-      "cn_rdd": null,
+      "cn_rdd": "2026-06-28",
       "transit_days": 0,
       "courier": "",
       "remark": "Q2 진행건",
       "delay_reason": "",
       "fabric_etd": "2026-05-29",
       "is_na": false,
+      "is_drop": false,
       "phase": "2ND TS"
     },
     {
@@ -7207,17 +7386,18 @@ const DASHBOARD = {
       "cn_focus_pcs": 1,
       "kr_keep_pcs": 1,
       "cn_total_pcs": 5,
-      "kr_expected": null,
+      "kr_expected": "2026-06-24",
       "kr_actual": null,
-      "cn_etd": null,
+      "cn_etd": "2026-06-23",
       "cn_atd": null,
-      "cn_rdd": null,
+      "cn_rdd": "2026-06-28",
       "transit_days": 0,
       "courier": "",
       "remark": "Q2 진행건",
       "delay_reason": "",
       "fabric_etd": "2026-05-29",
       "is_na": false,
+      "is_drop": false,
       "phase": "2ND TS"
     },
     {
@@ -7254,10 +7434,11 @@ const DASHBOARD = {
       "cn_rdd": "2026-06-28",
       "transit_days": 0,
       "courier": "",
-      "remark": "",
+      "remark": "* 가봉 코멘트 수령 대기중",
       "delay_reason": "",
       "fabric_etd": "2026-05-29",
       "is_na": false,
+      "is_drop": false,
       "phase": "2ND TS"
     },
     {
@@ -7298,6 +7479,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-05-29",
       "is_na": false,
+      "is_drop": false,
       "phase": "2ND TS"
     },
     {
@@ -7338,6 +7520,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-05-29",
       "is_na": false,
+      "is_drop": false,
       "phase": "2ND TS"
     },
     {
@@ -7367,17 +7550,18 @@ const DASHBOARD = {
       "cn_focus_pcs": 1,
       "kr_keep_pcs": 1,
       "cn_total_pcs": 4,
-      "kr_expected": "2026-06-12",
+      "kr_expected": "2026-06-24",
       "kr_actual": null,
-      "cn_etd": "2026-06-12",
+      "cn_etd": "2026-06-23",
       "cn_atd": null,
-      "cn_rdd": "2026-06-17",
+      "cn_rdd": "2026-06-28",
       "transit_days": 0,
       "courier": "",
-      "remark": "",
+      "remark": "파워넷메쉬 퀄리티 5/19 확정.",
       "delay_reason": "",
       "fabric_etd": "2026-04-30",
       "is_na": false,
+      "is_drop": false,
       "phase": "2ND TS"
     },
     {
@@ -7407,17 +7591,18 @@ const DASHBOARD = {
       "cn_focus_pcs": 1,
       "kr_keep_pcs": 1,
       "cn_total_pcs": 4,
-      "kr_expected": "2026-06-12",
+      "kr_expected": "2026-06-24",
       "kr_actual": null,
-      "cn_etd": "2026-06-12",
+      "cn_etd": "2026-06-23",
       "cn_atd": null,
-      "cn_rdd": "2026-06-17",
+      "cn_rdd": "2026-06-28",
       "transit_days": 0,
       "courier": "",
-      "remark": "",
+      "remark": "작업 또는 동일컬러 찾는데 시간소요되서",
       "delay_reason": "",
       "fabric_etd": "2026-05-29",
       "is_na": false,
+      "is_drop": false,
       "phase": "2ND TS"
     },
     {
@@ -7447,17 +7632,18 @@ const DASHBOARD = {
       "cn_focus_pcs": 1,
       "kr_keep_pcs": 1,
       "cn_total_pcs": 4,
-      "kr_expected": "2026-06-12",
+      "kr_expected": "2026-06-24",
       "kr_actual": null,
-      "cn_etd": "2026-06-12",
+      "cn_etd": "2026-06-23",
       "cn_atd": null,
-      "cn_rdd": "2026-06-17",
+      "cn_rdd": "2026-06-28",
       "transit_days": 0,
       "courier": "",
-      "remark": "",
+      "remark": "납기 지연 발생 가능성 있음.",
       "delay_reason": "",
       "fabric_etd": "2026-05-29",
       "is_na": false,
+      "is_drop": false,
       "phase": "2ND TS"
     },
     {
@@ -7498,6 +7684,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-05-29",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -7538,6 +7725,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-05-29",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -7578,6 +7766,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-05-29",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -7618,6 +7807,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-05-29",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -7658,6 +7848,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-05-29",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -7698,6 +7889,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-05-29",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -7712,7 +7904,7 @@ const DASHBOARD = {
       "sourcing": "양태영",
       "vendor": "티피나디아㈜",
       "vendor_en": "TP Nadia Co.,Ltd",
-      "co": "KR",
+      "co": "VN",
       "cn_invoice_rmb": 2665,
       "ttl_pcs": 5,
       "kr_pcs": 1,
@@ -7732,12 +7924,13 @@ const DASHBOARD = {
       "cn_etd": "2026-06-23",
       "cn_atd": null,
       "cn_rdd": "2026-06-28",
-      "transit_days": 0,
+      "transit_days": 5,
       "courier": "",
-      "remark": "",
+      "remark": "가봉 진행 후 수주샘플 진행으로 2차 품평회 입고",
       "delay_reason": "",
       "fabric_etd": "2026-05-29",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -7752,7 +7945,7 @@ const DASHBOARD = {
       "sourcing": "양태영",
       "vendor": "티피나디아㈜",
       "vendor_en": "TP Nadia Co.,Ltd",
-      "co": "KR",
+      "co": "VN",
       "cn_invoice_rmb": 2665,
       "ttl_pcs": 5,
       "kr_pcs": 1,
@@ -7772,12 +7965,13 @@ const DASHBOARD = {
       "cn_etd": "2026-06-23",
       "cn_atd": null,
       "cn_rdd": "2026-06-28",
-      "transit_days": 0,
+      "transit_days": 5,
       "courier": "",
-      "remark": "",
+      "remark": "가봉 진행 후 수주샘플 진행으로 2차 품평회 입고",
       "delay_reason": "",
       "fabric_etd": "",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -7814,10 +8008,11 @@ const DASHBOARD = {
       "cn_rdd": "2026-06-28",
       "transit_days": 0,
       "courier": "",
-      "remark": "",
+      "remark": "앞.뒤 몸판 아트웍 직프린트 진행으로",
       "delay_reason": "",
       "fabric_etd": "2026-05-29",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -7854,10 +8049,11 @@ const DASHBOARD = {
       "cn_rdd": "2026-06-28",
       "transit_days": 0,
       "courier": "",
-      "remark": "",
+      "remark": "공장작업 필수 건",
       "delay_reason": "",
       "fabric_etd": "2026-05-29",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -7898,6 +8094,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-05-29",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -7934,10 +8131,11 @@ const DASHBOARD = {
       "cn_rdd": "2026-06-28",
       "transit_days": 0,
       "courier": "",
-      "remark": "",
+      "remark": "원단 발송 예정일자 : 5/25 /& 직프린트",
       "delay_reason": "",
       "fabric_etd": "2026-05-29",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -7974,10 +8172,11 @@ const DASHBOARD = {
       "cn_rdd": "2026-06-28",
       "transit_days": 0,
       "courier": "",
-      "remark": "",
+      "remark": "원단 발송 예정일자 : 5/25 /& 직프린트",
       "delay_reason": "",
       "fabric_etd": "2026-05-29",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -8014,10 +8213,11 @@ const DASHBOARD = {
       "cn_rdd": "2026-06-28",
       "transit_days": 0,
       "courier": "",
-      "remark": "",
+      "remark": "원단 발송 예정일자 : 5/25 /& 직프린트",
       "delay_reason": "",
       "fabric_etd": "2026-05-29",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -8047,17 +8247,18 @@ const DASHBOARD = {
       "cn_focus_pcs": 1,
       "kr_keep_pcs": 1,
       "cn_total_pcs": 4,
-      "kr_expected": "2026-06-24",
+      "kr_expected": "2026-06-26",
       "kr_actual": null,
-      "cn_etd": "2026-06-23",
+      "cn_etd": "2026-07-04",
       "cn_atd": null,
-      "cn_rdd": "2026-06-28",
+      "cn_rdd": "2026-07-09",
       "transit_days": 0,
       "courier": "",
-      "remark": "",
+      "remark": "원단 5/15 지정, 소재입고일 6월 예상",
       "delay_reason": "",
       "fabric_etd": "2026-05-29",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -8087,17 +8288,18 @@ const DASHBOARD = {
       "cn_focus_pcs": 1,
       "kr_keep_pcs": 1,
       "cn_total_pcs": 4,
-      "kr_expected": "2026-06-24",
+      "kr_expected": "2026-06-26",
       "kr_actual": null,
-      "cn_etd": "2026-06-23",
+      "cn_etd": "2026-07-04",
       "cn_atd": null,
-      "cn_rdd": "2026-06-28",
+      "cn_rdd": "2026-07-09",
       "transit_days": 0,
       "courier": "",
-      "remark": "",
+      "remark": "원단 5/15 지정, 소재입고일 6월 예상",
       "delay_reason": "",
       "fabric_etd": "2026-05-29",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -8127,17 +8329,18 @@ const DASHBOARD = {
       "cn_focus_pcs": 1,
       "kr_keep_pcs": 1,
       "cn_total_pcs": 4,
-      "kr_expected": "2026-06-24",
+      "kr_expected": "2026-06-29",
       "kr_actual": null,
-      "cn_etd": "2026-06-23",
+      "cn_etd": "2026-07-04",
       "cn_atd": null,
-      "cn_rdd": "2026-06-28",
+      "cn_rdd": "2026-07-09",
       "transit_days": 0,
       "courier": "",
-      "remark": "",
+      "remark": "원단 5/15 지정, 소재입고일 6월 예상",
       "delay_reason": "",
       "fabric_etd": "2026-05-29",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -8174,10 +8377,11 @@ const DASHBOARD = {
       "cn_rdd": "2026-06-28",
       "transit_days": 0,
       "courier": "",
-      "remark": "",
+      "remark": "뒷 허리 프레스 작업건으로 공장에서 작업",
       "delay_reason": "",
       "fabric_etd": "2026-05-29",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -8214,10 +8418,11 @@ const DASHBOARD = {
       "cn_rdd": "2026-06-28",
       "transit_days": 0,
       "courier": "",
-      "remark": "",
+      "remark": "뒷 허리 프레스 작업건으로 공장에서 작업",
       "delay_reason": "",
       "fabric_etd": "2026-05-29",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -8254,10 +8459,11 @@ const DASHBOARD = {
       "cn_rdd": "2026-06-28",
       "transit_days": 0,
       "courier": "",
-      "remark": "",
+      "remark": "뒷 허리 프레스 작업건으로 공장에서 작업",
       "delay_reason": "",
       "fabric_etd": "2026-05-29",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -8294,10 +8500,11 @@ const DASHBOARD = {
       "cn_rdd": "2026-06-28",
       "transit_days": 0,
       "courier": "",
-      "remark": "",
+      "remark": "* 가봉 코멘트 수령 대기중",
       "delay_reason": "",
       "fabric_etd": "2026-05-29",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -8338,6 +8545,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-04-30",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -8378,6 +8586,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-05-29",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -8414,10 +8623,11 @@ const DASHBOARD = {
       "cn_rdd": "2026-06-28",
       "transit_days": 0,
       "courier": "",
-      "remark": "",
+      "remark": "중국 개발 자재 납기 지연",
       "delay_reason": "",
       "fabric_etd": "2026-05-29",
       "is_na": false,
+      "is_drop": false,
       "phase": "2ND TS"
     },
     {
@@ -8458,6 +8668,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-05-29",
       "is_na": false,
+      "is_drop": false,
       "phase": "2ND TS"
     },
     {
@@ -8498,6 +8709,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-05-29",
       "is_na": false,
+      "is_drop": false,
       "phase": "2ND TS"
     },
     {
@@ -8538,6 +8750,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-05-20",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -8578,6 +8791,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-05-20",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -8618,6 +8832,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-05-20",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -8658,6 +8873,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-05-20",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -8698,6 +8914,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-05-20",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -8738,6 +8955,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-05-20",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -8778,6 +8996,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-05-20",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -8818,6 +9037,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-05-20",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -8858,6 +9078,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-05-20",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -8898,6 +9119,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-05-20",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -8938,6 +9160,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-05-20",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -8978,6 +9201,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-05-20",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -9018,6 +9242,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-05-20",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -9058,6 +9283,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-05-20",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -9098,6 +9324,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-05-20",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -9138,6 +9365,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-05-20",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -9178,6 +9406,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-05-20",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -9218,6 +9447,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-05-20",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -9258,6 +9488,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-05-20",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -9298,6 +9529,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-05-20",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -9338,6 +9570,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-05-20",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -9378,6 +9611,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-05-20",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -9418,6 +9652,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-05-20",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -9458,6 +9693,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-05-20",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -9498,6 +9734,7 @@ const DASHBOARD = {
       "delay_reason": "아트웍 미수취",
       "fabric_etd": "2026-05-20",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -9538,6 +9775,7 @@ const DASHBOARD = {
       "delay_reason": "아트웍 미수취",
       "fabric_etd": "2026-05-20",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -9578,6 +9816,7 @@ const DASHBOARD = {
       "delay_reason": "아트웍 미수취",
       "fabric_etd": "2026-05-20",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -9618,6 +9857,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-05-20",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -9658,6 +9898,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-05-20",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -9698,6 +9939,7 @@ const DASHBOARD = {
       "delay_reason": "원단 지연",
       "fabric_etd": "",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -9738,6 +9980,7 @@ const DASHBOARD = {
       "delay_reason": "원단 지연",
       "fabric_etd": "",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -9778,6 +10021,7 @@ const DASHBOARD = {
       "delay_reason": "원단 지연",
       "fabric_etd": "",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -9818,6 +10062,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-05-20",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -9858,6 +10103,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-05-20",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -9898,6 +10144,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-05-20",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -9938,6 +10185,7 @@ const DASHBOARD = {
       "delay_reason": "원단 지연",
       "fabric_etd": "",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -9978,6 +10226,7 @@ const DASHBOARD = {
       "delay_reason": "원단 지연",
       "fabric_etd": "",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -10018,6 +10267,7 @@ const DASHBOARD = {
       "delay_reason": "원단 지연",
       "fabric_etd": "",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -10058,6 +10308,7 @@ const DASHBOARD = {
       "delay_reason": "원단 지연",
       "fabric_etd": "",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -10098,6 +10349,7 @@ const DASHBOARD = {
       "delay_reason": "원단 변경",
       "fabric_etd": "",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -10138,6 +10390,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-05-20",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -10178,6 +10431,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-05-20",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -10218,6 +10472,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-05-20",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -10258,6 +10513,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-05-20",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -10298,6 +10554,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-05-20",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -10338,6 +10595,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-05-20",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -10378,6 +10636,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-05-20",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -10418,6 +10677,7 @@ const DASHBOARD = {
       "delay_reason": "원단 지연",
       "fabric_etd": "",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -10458,6 +10718,7 @@ const DASHBOARD = {
       "delay_reason": "원단 지연",
       "fabric_etd": "",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -10498,6 +10759,7 @@ const DASHBOARD = {
       "delay_reason": "원단 지연",
       "fabric_etd": "",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -10538,6 +10800,7 @@ const DASHBOARD = {
       "delay_reason": "원단 지연",
       "fabric_etd": "",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -10578,6 +10841,7 @@ const DASHBOARD = {
       "delay_reason": "원단 지연",
       "fabric_etd": "",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -10618,6 +10882,7 @@ const DASHBOARD = {
       "delay_reason": "원단 지연",
       "fabric_etd": "",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -10658,6 +10923,7 @@ const DASHBOARD = {
       "delay_reason": "원단 지연",
       "fabric_etd": "",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -10698,6 +10964,7 @@ const DASHBOARD = {
       "delay_reason": "원단 지연",
       "fabric_etd": "",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -10738,6 +11005,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-05-20",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -10778,6 +11046,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-05-20",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -10818,6 +11087,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-05-20",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -10858,6 +11128,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-05-20",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -10898,6 +11169,7 @@ const DASHBOARD = {
       "delay_reason": "원단 지연",
       "fabric_etd": "",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -10938,6 +11210,7 @@ const DASHBOARD = {
       "delay_reason": "원단 지연",
       "fabric_etd": "",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -10978,6 +11251,7 @@ const DASHBOARD = {
       "delay_reason": "원단 지연",
       "fabric_etd": "",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -11018,6 +11292,7 @@ const DASHBOARD = {
       "delay_reason": "원단 지연",
       "fabric_etd": "",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -11058,6 +11333,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-05-20",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -11098,6 +11374,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-05-20",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -11138,6 +11415,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-05-20",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -11178,6 +11456,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-05-20",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -11218,6 +11497,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-05-20",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -11258,6 +11538,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-05-20",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -11298,6 +11579,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-05-20",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -11338,6 +11620,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-05-20",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -11378,6 +11661,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-05-20",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -11418,6 +11702,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-05-20",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -11458,6 +11743,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-05-20",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -11498,6 +11784,7 @@ const DASHBOARD = {
       "delay_reason": "원단 지연",
       "fabric_etd": "2026-05-20",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -11538,6 +11825,7 @@ const DASHBOARD = {
       "delay_reason": "원단 지연",
       "fabric_etd": "2026-05-20",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -11578,6 +11866,7 @@ const DASHBOARD = {
       "delay_reason": "원단 지연",
       "fabric_etd": "",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -11618,6 +11907,7 @@ const DASHBOARD = {
       "delay_reason": "원단 지연",
       "fabric_etd": "2026-05-20",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -11658,6 +11948,7 @@ const DASHBOARD = {
       "delay_reason": "원단 지연",
       "fabric_etd": "",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -11698,6 +11989,7 @@ const DASHBOARD = {
       "delay_reason": "원단 지연",
       "fabric_etd": "",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -11738,6 +12030,7 @@ const DASHBOARD = {
       "delay_reason": "원단 지연",
       "fabric_etd": "",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -11778,6 +12071,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-05-20",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -11818,6 +12112,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-05-20",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -11858,6 +12153,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-05-20",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -11898,6 +12194,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-05-20",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -11938,6 +12235,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-05-20",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -11978,6 +12276,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-05-20",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -12018,6 +12317,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-05-20",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -12058,6 +12358,7 @@ const DASHBOARD = {
       "delay_reason": "원단 지연",
       "fabric_etd": "",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -12098,6 +12399,7 @@ const DASHBOARD = {
       "delay_reason": "원단 지연",
       "fabric_etd": "",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -12138,6 +12440,7 @@ const DASHBOARD = {
       "delay_reason": "원단 지연",
       "fabric_etd": "",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -12178,6 +12481,7 @@ const DASHBOARD = {
       "delay_reason": "원단 지연",
       "fabric_etd": "",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -12218,6 +12522,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-05-20",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -12258,6 +12563,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-05-20",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -12298,6 +12604,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-05-20",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -12338,6 +12645,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-05-20",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -12378,6 +12686,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-05-20",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -12418,6 +12727,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-05-08",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -12458,6 +12768,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-05-08",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -12498,6 +12809,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-05-29",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -12538,6 +12850,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-05-29",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -12578,6 +12891,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-05-29",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -12618,6 +12932,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-05-08",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -12658,6 +12973,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-05-08",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -12698,6 +13014,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-05-08",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -12738,6 +13055,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-05-08",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -12778,6 +13096,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-04-24",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -12818,6 +13137,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-05-29",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -12829,10 +13149,10 @@ const DASHBOARD = {
       "description": "여성 린넨블렌드 긴팔셔츠",
       "color": "43SAL",
       "designer": "유재연",
-      "sourcing": "양태영",
-      "vendor": "티피나디아㈜",
-      "vendor_en": "TP Nadia Co.,Ltd",
-      "co": "KR",
+      "sourcing": "심승호",
+      "vendor": "㈜노브랜드(우븐)",
+      "vendor_en": "NOBLAND INTERNATIONAL INC",
+      "co": "VN",
       "cn_invoice_rmb": 869,
       "ttl_pcs": 4,
       "kr_pcs": 1,
@@ -12852,12 +13172,13 @@ const DASHBOARD = {
       "cn_etd": null,
       "cn_atd": null,
       "cn_rdd": null,
-      "transit_days": 0,
+      "transit_days": 5,
       "courier": "",
-      "remark": "Q2 진행건",
+      "remark": "Q2",
       "delay_reason": "",
       "fabric_etd": "2026-05-29",
       "is_na": false,
+      "is_drop": false,
       "phase": "2ND TS"
     },
     {
@@ -12869,10 +13190,10 @@ const DASHBOARD = {
       "description": "여성 린넨블렌드 긴팔셔츠",
       "color": "10PKM",
       "designer": "유재연",
-      "sourcing": "양태영",
-      "vendor": "티피나디아㈜",
-      "vendor_en": "TP Nadia Co.,Ltd",
-      "co": "KR",
+      "sourcing": "심승호",
+      "vendor": "㈜노브랜드(우븐)",
+      "vendor_en": "NOBLAND INTERNATIONAL INC",
+      "co": "VN",
       "cn_invoice_rmb": 869,
       "ttl_pcs": 4,
       "kr_pcs": 1,
@@ -12892,12 +13213,13 @@ const DASHBOARD = {
       "cn_etd": null,
       "cn_atd": null,
       "cn_rdd": null,
-      "transit_days": 0,
+      "transit_days": 5,
       "courier": "",
-      "remark": "Q2 진행건",
+      "remark": "Q2",
       "delay_reason": "",
       "fabric_etd": "2026-04-24",
       "is_na": false,
+      "is_drop": false,
       "phase": "2ND TS"
     },
     {
@@ -12927,17 +13249,18 @@ const DASHBOARD = {
       "cn_focus_pcs": 0,
       "kr_keep_pcs": 1,
       "cn_total_pcs": 4,
-      "kr_expected": "2026-06-24",
+      "kr_expected": null,
       "kr_actual": null,
-      "cn_etd": "2026-06-23",
+      "cn_etd": null,
       "cn_atd": null,
-      "cn_rdd": "2026-06-28",
+      "cn_rdd": null,
       "transit_days": 5,
       "courier": "",
-      "remark": "",
+      "remark": "Q2",
       "delay_reason": "",
       "fabric_etd": "",
       "is_na": false,
+      "is_drop": false,
       "phase": "2ND TS"
     },
     {
@@ -12967,27 +13290,28 @@ const DASHBOARD = {
       "cn_focus_pcs": 0,
       "kr_keep_pcs": 1,
       "cn_total_pcs": 4,
-      "kr_expected": "2026-06-24",
+      "kr_expected": null,
       "kr_actual": null,
-      "cn_etd": "2026-06-23",
+      "cn_etd": null,
       "cn_atd": null,
-      "cn_rdd": "2026-06-28",
+      "cn_rdd": null,
       "transit_days": 5,
       "courier": "",
-      "remark": "",
+      "remark": "Q2",
       "delay_reason": "",
       "fabric_etd": "",
       "is_na": false,
+      "is_drop": false,
       "phase": "2ND TS"
     },
     {
-      "sku": "3AWSA0473C",
+      "sku": "3AWSA047310PKM",
       "style_code": "3AWSA0473",
       "sort": "WOVEN",
       "class_": "INNER",
       "item_type": "WS",
       "description": "린넨블렌드 반팔셔츠",
-      "color": "C",
+      "color": "10PKM",
       "designer": "유재연",
       "sourcing": "심승호",
       "vendor": "㈜노브랜드(우븐)",
@@ -13007,17 +13331,18 @@ const DASHBOARD = {
       "cn_focus_pcs": 0,
       "kr_keep_pcs": 1,
       "cn_total_pcs": 4,
-      "kr_expected": "2026-06-24",
+      "kr_expected": null,
       "kr_actual": null,
-      "cn_etd": "2026-06-23",
+      "cn_etd": null,
       "cn_atd": null,
-      "cn_rdd": "2026-06-28",
+      "cn_rdd": null,
       "transit_days": 5,
       "courier": "",
-      "remark": "",
+      "remark": "Q2",
       "delay_reason": "",
       "fabric_etd": "",
       "is_na": false,
+      "is_drop": false,
       "phase": "2ND TS"
     },
     {
@@ -13058,6 +13383,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-05-29",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -13098,6 +13424,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-05-29",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -13138,6 +13465,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-05-29",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -13178,6 +13506,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-05-29",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -13218,6 +13547,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-05-29",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -13258,6 +13588,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-05-29",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -13298,6 +13629,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-05-29",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -13338,6 +13670,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-05-29",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -13378,6 +13711,7 @@ const DASHBOARD = {
       "delay_reason": "원단 지연",
       "fabric_etd": "2026-05-27",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -13418,6 +13752,7 @@ const DASHBOARD = {
       "delay_reason": "원단 지연",
       "fabric_etd": "2026-05-27",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -13458,6 +13793,7 @@ const DASHBOARD = {
       "delay_reason": "원단 지연",
       "fabric_etd": "2026-05-27",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -13498,6 +13834,7 @@ const DASHBOARD = {
       "delay_reason": "원단 지연",
       "fabric_etd": "2026-05-27",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -13538,6 +13875,7 @@ const DASHBOARD = {
       "delay_reason": "원단 지연",
       "fabric_etd": "2026-05-27",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -13578,6 +13916,7 @@ const DASHBOARD = {
       "delay_reason": "원단 지연",
       "fabric_etd": "2026-05-27",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -13618,6 +13957,7 @@ const DASHBOARD = {
       "delay_reason": "원단 지연",
       "fabric_etd": "2026-05-27",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -13658,6 +13998,7 @@ const DASHBOARD = {
       "delay_reason": "원단 지연",
       "fabric_etd": "2026-05-27",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -13698,6 +14039,7 @@ const DASHBOARD = {
       "delay_reason": "원단 지연",
       "fabric_etd": "2026-05-27",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -13738,6 +14080,7 @@ const DASHBOARD = {
       "delay_reason": "원단 지연",
       "fabric_etd": "2026-04-26",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -13778,6 +14121,7 @@ const DASHBOARD = {
       "delay_reason": "원단 지연",
       "fabric_etd": "2026-05-27",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -13818,6 +14162,7 @@ const DASHBOARD = {
       "delay_reason": "원단 지연",
       "fabric_etd": "2026-05-27",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -13858,6 +14203,7 @@ const DASHBOARD = {
       "delay_reason": "원단 지연",
       "fabric_etd": "2026-04-28",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -13898,6 +14244,7 @@ const DASHBOARD = {
       "delay_reason": "원단 지연",
       "fabric_etd": "2026-04-28",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -13927,17 +14274,18 @@ const DASHBOARD = {
       "cn_focus_pcs": 1,
       "kr_keep_pcs": 1,
       "cn_total_pcs": 5,
-      "kr_expected": "2026-06-12",
+      "kr_expected": "2026-06-19",
       "kr_actual": null,
-      "cn_etd": "2026-06-12",
+      "cn_etd": "2026-06-18",
       "cn_atd": null,
-      "cn_rdd": "2026-06-17",
+      "cn_rdd": "2026-06-23",
       "transit_days": 0,
       "courier": "",
-      "remark": "",
+      "remark": "바디편직이슈 몸판6/9 리쁘 6/12 ETD 예상",
       "delay_reason": "",
       "fabric_etd": "2026-05-27",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -13967,17 +14315,18 @@ const DASHBOARD = {
       "cn_focus_pcs": 1,
       "kr_keep_pcs": 1,
       "cn_total_pcs": 5,
-      "kr_expected": "2026-06-12",
+      "kr_expected": "2026-06-19",
       "kr_actual": null,
-      "cn_etd": "2026-06-12",
+      "cn_etd": "2026-06-18",
       "cn_atd": null,
-      "cn_rdd": "2026-06-17",
+      "cn_rdd": "2026-06-23",
       "transit_days": 0,
       "courier": "",
-      "remark": "",
+      "remark": "바디편직이슈 몸판6/9 리쁘 6/12 ETD 예상",
       "delay_reason": "",
       "fabric_etd": "2026-05-27",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -14007,17 +14356,18 @@ const DASHBOARD = {
       "cn_focus_pcs": 1,
       "kr_keep_pcs": 1,
       "cn_total_pcs": 5,
-      "kr_expected": "2026-06-12",
+      "kr_expected": "2026-06-19",
       "kr_actual": null,
-      "cn_etd": "2026-06-12",
+      "cn_etd": "2026-06-18",
       "cn_atd": null,
-      "cn_rdd": "2026-06-17",
+      "cn_rdd": "2026-06-23",
       "transit_days": 0,
       "courier": "",
-      "remark": "",
+      "remark": "바디편직이슈 몸판6/9 리쁘 6/12 ETD 예상",
       "delay_reason": "",
       "fabric_etd": "2026-05-27",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -14058,6 +14408,7 @@ const DASHBOARD = {
       "delay_reason": "원단 지연",
       "fabric_etd": "2026-05-27",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -14098,6 +14449,7 @@ const DASHBOARD = {
       "delay_reason": "원단 지연",
       "fabric_etd": "2026-05-27",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -14138,6 +14490,7 @@ const DASHBOARD = {
       "delay_reason": "원단 지연",
       "fabric_etd": "2026-05-27",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -14178,6 +14531,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-06-05",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -14218,6 +14572,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-06-05",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -14258,6 +14613,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-06-05",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -14298,6 +14654,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "COCRE",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -14338,6 +14695,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "COCRE",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -14378,6 +14736,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "COCRE",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -14418,6 +14777,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "COCRE",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -14458,6 +14818,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "COCRE",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -14494,10 +14855,11 @@ const DASHBOARD = {
       "cn_rdd": "2026-06-14",
       "transit_days": 2,
       "courier": "",
-      "remark": "(5/7) 아트웍 미정",
+      "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-27",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -14534,10 +14896,11 @@ const DASHBOARD = {
       "cn_rdd": "2026-06-14",
       "transit_days": 2,
       "courier": "",
-      "remark": "(5/7) 아트웍 미정",
+      "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-27",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -14574,10 +14937,11 @@ const DASHBOARD = {
       "cn_rdd": "2026-06-14",
       "transit_days": 2,
       "courier": "",
-      "remark": "(5/7) 아트웍 미정",
+      "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-27",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -14614,10 +14978,11 @@ const DASHBOARD = {
       "cn_rdd": "2026-06-14",
       "transit_days": 2,
       "courier": "",
-      "remark": "(5/7) 아트웍 미정",
+      "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-04-24",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -14654,10 +15019,11 @@ const DASHBOARD = {
       "cn_rdd": "2026-06-14",
       "transit_days": 2,
       "courier": "",
-      "remark": "(5/7) 아트웍 미정",
+      "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-04-24",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -14694,10 +15060,11 @@ const DASHBOARD = {
       "cn_rdd": "2026-06-14",
       "transit_days": 2,
       "courier": "",
-      "remark": "(5/7) 아트웍 미정",
+      "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-04-24",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -14738,6 +15105,7 @@ const DASHBOARD = {
       "delay_reason": "원단 지연",
       "fabric_etd": "COCRE",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -14778,6 +15146,7 @@ const DASHBOARD = {
       "delay_reason": "원단 지연",
       "fabric_etd": "COCRE",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -14818,6 +15187,7 @@ const DASHBOARD = {
       "delay_reason": "원단 지연",
       "fabric_etd": "COCRE",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -14858,6 +15228,7 @@ const DASHBOARD = {
       "delay_reason": "원단 지연",
       "fabric_etd": "COCRE",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -14898,6 +15269,7 @@ const DASHBOARD = {
       "delay_reason": "원단 지연",
       "fabric_etd": "COCRE",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -14938,6 +15310,7 @@ const DASHBOARD = {
       "delay_reason": "원단 지연",
       "fabric_etd": "COCRE",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -14978,6 +15351,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "COCRE",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -15018,6 +15392,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "COCRE",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -15058,6 +15433,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "COCRE",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -15098,6 +15474,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "COCRE",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -15138,6 +15515,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "COCRE",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -15178,6 +15556,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "COCRE",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -15218,6 +15597,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "COCRE",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -15258,6 +15638,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "COCRE",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -15298,6 +15679,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "COCRE",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -15338,16 +15720,17 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "COCRE",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
-      "sku": "3ATSD027350WHS",
+      "sku": "3ATSD027313WHS",
       "style_code": "3ATSD0273",
       "sort": "KNIT",
       "class_": "INNER",
       "item_type": "TS",
       "description": "베이직 스몰로고 세미오버핏 반팔 티셔츠",
-      "color": "50WHS",
+      "color": "13WHS",
       "designer": "정예지",
       "sourcing": "고은아",
       "vendor": "(주)팬코",
@@ -15374,10 +15757,11 @@ const DASHBOARD = {
       "cn_rdd": "2026-06-16",
       "transit_days": 0,
       "courier": "",
-      "remark": "",
+      "remark": "5/20, 팀코드 50에서 13으로 변경",
       "delay_reason": "",
       "fabric_etd": "COCRE",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -15418,6 +15802,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "COCRE",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -15458,6 +15843,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "COCRE",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -15498,6 +15884,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "COCRE",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -15538,6 +15925,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "COCRE",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -15578,6 +15966,7 @@ const DASHBOARD = {
       "delay_reason": "원단 지연",
       "fabric_etd": "COCRE",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -15618,6 +16007,7 @@ const DASHBOARD = {
       "delay_reason": "원단 지연",
       "fabric_etd": "COCRE",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -15658,6 +16048,7 @@ const DASHBOARD = {
       "delay_reason": "원단 지연",
       "fabric_etd": "COCRE",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -15698,6 +16089,7 @@ const DASHBOARD = {
       "delay_reason": "원단 지연",
       "fabric_etd": "COCRE",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -15738,6 +16130,7 @@ const DASHBOARD = {
       "delay_reason": "원단 지연",
       "fabric_etd": "COCRE",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -15778,6 +16171,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-05-27",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -15818,16 +16212,17 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-04-27",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
-      "sku": "3FTSA017107CRS",
+      "sku": "3FTSA017109CRS",
       "style_code": "3FTSA0171",
       "sort": "KNIT",
       "class_": "INNER",
       "item_type": "TS",
       "description": "여성 슬림 세미크롭 골지 긴팔 티셔츠",
-      "color": "07CRS",
+      "color": "09CRS",
       "designer": "황상희",
       "sourcing": "임규빈",
       "vendor": "ESQUEL ENTERPRISES LIMITED",
@@ -15854,10 +16249,11 @@ const DASHBOARD = {
       "cn_rdd": "2026-06-14",
       "transit_days": 2,
       "courier": "",
-      "remark": "it s/b 09CRS",
+      "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-04-27",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -15898,6 +16294,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-05-27",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -15938,16 +16335,17 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-04-27",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
-      "sku": "3FTSA027107CRS",
+      "sku": "3FTSA027109CRS",
       "style_code": "3FTSA0271",
       "sort": "KNIT",
       "class_": "INNER",
       "item_type": "TS",
       "description": "여성 슬림핏 헨리넥 오프숄더 긴팔 티셔츠",
-      "color": "07CRS",
+      "color": "09CRS",
       "designer": "황상희",
       "sourcing": "임규빈",
       "vendor": "ESQUEL ENTERPRISES LIMITED",
@@ -15974,10 +16372,11 @@ const DASHBOARD = {
       "cn_rdd": "2026-06-14",
       "transit_days": 2,
       "courier": "",
-      "remark": "it s/b 09CRS",
+      "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-04-27",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -16014,10 +16413,11 @@ const DASHBOARD = {
       "cn_rdd": "2026-06-14",
       "transit_days": 2,
       "courier": "",
-      "remark": "(5/7) 아트웍 미정",
+      "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-04-27",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -16054,10 +16454,11 @@ const DASHBOARD = {
       "cn_rdd": "2026-06-14",
       "transit_days": 2,
       "courier": "",
-      "remark": "(5/7) 아트웍 미정",
+      "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-04-27",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -16094,10 +16495,11 @@ const DASHBOARD = {
       "cn_rdd": "2026-06-14",
       "transit_days": 2,
       "courier": "",
-      "remark": "(5/7) 아트웍 미정",
+      "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-27",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -16138,6 +16540,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-06-08",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -16178,6 +16581,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-04-28",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -16218,6 +16622,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-04-28",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -16258,6 +16663,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-06-08",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -16298,6 +16704,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-05-27",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -16338,6 +16745,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-05-27",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -16378,6 +16786,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-05-27",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -16418,6 +16827,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-05-27",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -16458,6 +16868,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-05-27",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -16498,6 +16909,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-05-27",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -16538,6 +16950,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-05-27",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -16578,6 +16991,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-05-27",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -16618,6 +17032,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-05-27",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -16658,6 +17073,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-05-27",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -16698,6 +17114,7 @@ const DASHBOARD = {
       "delay_reason": "원단 지연",
       "fabric_etd": "2026-06-08",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -16738,6 +17155,7 @@ const DASHBOARD = {
       "delay_reason": "원단 지연",
       "fabric_etd": "2026-06-08",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -16778,6 +17196,7 @@ const DASHBOARD = {
       "delay_reason": "원단 지연",
       "fabric_etd": "2026-06-08",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -16818,6 +17237,7 @@ const DASHBOARD = {
       "delay_reason": "원단 지연",
       "fabric_etd": "2026-06-08",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -16854,10 +17274,11 @@ const DASHBOARD = {
       "cn_rdd": "2026-06-14",
       "transit_days": 2,
       "courier": "",
-      "remark": "(5/7) 아트웍 미정",
+      "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-27",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -16894,10 +17315,11 @@ const DASHBOARD = {
       "cn_rdd": "2026-06-14",
       "transit_days": 2,
       "courier": "",
-      "remark": "(5/7) 아트웍 미정",
+      "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-27",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -16934,10 +17356,11 @@ const DASHBOARD = {
       "cn_rdd": "2026-06-14",
       "transit_days": 2,
       "courier": "",
-      "remark": "(5/7) 아트웍 미정",
+      "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-27",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -16974,10 +17397,11 @@ const DASHBOARD = {
       "cn_rdd": "2026-06-14",
       "transit_days": 2,
       "courier": "",
-      "remark": "(5/7) 아트웍 미정",
+      "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-27",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -17018,6 +17442,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-05-27",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -17058,6 +17483,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-05-27",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -17098,6 +17524,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-05-27",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -17138,6 +17565,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-05-27",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -17178,6 +17606,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-05-27",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -17218,6 +17647,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-05-27",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -17258,6 +17688,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-05-27",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -17298,6 +17729,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-05-27",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -17338,6 +17770,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-05-27",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -17378,6 +17811,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-06-08",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -17418,6 +17852,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-06-08",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -17458,6 +17893,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-06-08",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -17498,6 +17934,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-04-28",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -17538,6 +17975,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-06-08",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -17578,6 +18016,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-04-24",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -17618,6 +18057,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-05-27",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -17658,6 +18098,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-05-27",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -17698,6 +18139,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-04-24",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -17738,6 +18180,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-04-24",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -17778,6 +18221,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-06-08",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -17818,6 +18262,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-06-08",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -17858,6 +18303,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-04-28",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -17898,6 +18344,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-04-28",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -17938,6 +18385,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-05-27",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -17978,6 +18426,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-05-27",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -18018,6 +18467,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-05-27",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -18058,6 +18508,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-05-27",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -18098,6 +18549,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-04-28",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -18138,6 +18590,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-04-28",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -18178,6 +18631,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-05-27",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -18218,6 +18672,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-04-27",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -18258,6 +18713,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -18298,6 +18754,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-05-27",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -18338,6 +18795,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-05-27",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -18378,6 +18836,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-04-28",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -18418,6 +18877,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-04-28",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -18458,6 +18918,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-05-27",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -18498,6 +18959,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-05-27",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -18538,6 +19000,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-05-27",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -18578,6 +19041,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-05-27",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -18618,6 +19082,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-05-27",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -18658,6 +19123,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-04-28",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -18698,6 +19164,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-05-27",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -18738,6 +19205,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-05-27",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -18778,6 +19246,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-04-20",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -18818,6 +19287,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-04-20",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -18858,6 +19328,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-05-27",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -18898,6 +19369,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-06-08",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -18938,6 +19410,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-04-28",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -18978,6 +19451,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-04-28",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -19018,6 +19492,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-05-27",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -19058,6 +19533,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-04-27",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -19098,6 +19574,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-04-27",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -19134,10 +19611,11 @@ const DASHBOARD = {
       "cn_rdd": "2026-06-14",
       "transit_days": 2,
       "courier": "",
-      "remark": "(5/7) 아트웍 미정",
+      "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-04-24",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -19174,10 +19652,11 @@ const DASHBOARD = {
       "cn_rdd": "2026-06-14",
       "transit_days": 2,
       "courier": "",
-      "remark": "(5/7) 아트웍 미정",
+      "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-04-24",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -19214,10 +19693,11 @@ const DASHBOARD = {
       "cn_rdd": "2026-06-14",
       "transit_days": 2,
       "courier": "",
-      "remark": "(5/7) 아트웍 미정",
+      "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-04-24",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -19254,10 +19734,11 @@ const DASHBOARD = {
       "cn_rdd": "2026-06-14",
       "transit_days": 2,
       "courier": "",
-      "remark": "(5/7) 아트웍 미정",
+      "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-04-24",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -19294,10 +19775,11 @@ const DASHBOARD = {
       "cn_rdd": "2026-06-14",
       "transit_days": 2,
       "courier": "",
-      "remark": "(5/7) 아트웍 미정",
+      "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-27",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -19334,10 +19816,11 @@ const DASHBOARD = {
       "cn_rdd": "2026-06-14",
       "transit_days": 2,
       "courier": "",
-      "remark": "(5/7) 아트웍 미정",
+      "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-27",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -19378,6 +19861,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-06-05",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -19418,16 +19902,17 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-06-05",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
-      "sku": "3FTSA147350LDL",
+      "sku": "3FTSA147310LDL",
       "style_code": "3FTSA1473",
       "sort": "KNIT",
       "class_": "INNER",
       "item_type": "TS",
       "description": "여성 스트라이프 슬림 세미크롭 골지 헨리넥 반팔 티셔츠",
-      "color": "50LDL",
+      "color": "10LDL",
       "designer": "황상희",
       "sourcing": "임규빈",
       "vendor": "ESQUEL ENTERPRISES LIMITED",
@@ -19458,6 +19943,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-06-05",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -19498,6 +19984,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-05-27",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -19538,6 +20025,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-05-27",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -19578,6 +20066,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-05-27",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -19618,6 +20107,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-05-27",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -19658,6 +20148,7 @@ const DASHBOARD = {
       "delay_reason": "원단 지연",
       "fabric_etd": "2026-06-08",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -19698,6 +20189,7 @@ const DASHBOARD = {
       "delay_reason": "원단 지연",
       "fabric_etd": "",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -19738,6 +20230,7 @@ const DASHBOARD = {
       "delay_reason": "원단 지연",
       "fabric_etd": "2026-06-08",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -19778,6 +20271,7 @@ const DASHBOARD = {
       "delay_reason": "원단 지연",
       "fabric_etd": "2026-06-08",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -19818,6 +20312,7 @@ const DASHBOARD = {
       "delay_reason": "원단 지연",
       "fabric_etd": "2026-06-08",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -19858,6 +20353,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-04-28",
       "is_na": false,
+      "is_drop": false,
       "phase": "2ND TS"
     },
     {
@@ -19898,6 +20394,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-06-08",
       "is_na": false,
+      "is_drop": false,
       "phase": "2ND TS"
     },
     {
@@ -19938,6 +20435,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-04-28",
       "is_na": false,
+      "is_drop": false,
       "phase": "2ND TS"
     },
     {
@@ -19974,10 +20472,11 @@ const DASHBOARD = {
       "cn_rdd": "2026-06-14",
       "transit_days": 2,
       "courier": "",
-      "remark": "(5/7) 아트웍 미정",
+      "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-27",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -20014,10 +20513,11 @@ const DASHBOARD = {
       "cn_rdd": "2026-06-14",
       "transit_days": 2,
       "courier": "",
-      "remark": "(5/7) 아트웍 미정",
+      "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-27",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -20054,10 +20554,11 @@ const DASHBOARD = {
       "cn_rdd": "2026-06-14",
       "transit_days": 2,
       "courier": "",
-      "remark": "(5/7) 아트웍 미정",
+      "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-27",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -20094,10 +20595,11 @@ const DASHBOARD = {
       "cn_rdd": "2026-06-14",
       "transit_days": 2,
       "courier": "",
-      "remark": "(5/7) 아트웍 미정",
+      "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-04-24",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -20138,6 +20640,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-05-27",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -20178,6 +20681,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-04-24",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -20218,6 +20722,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-05-27",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -20258,6 +20763,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-05-27",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -20294,10 +20800,11 @@ const DASHBOARD = {
       "cn_rdd": "2026-06-14",
       "transit_days": 2,
       "courier": "",
-      "remark": "(5/7) 아트웍 미정",
+      "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-06-05",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -20334,10 +20841,11 @@ const DASHBOARD = {
       "cn_rdd": "2026-06-14",
       "transit_days": 2,
       "courier": "",
-      "remark": "(5/7) 아트웍 미정",
+      "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-06-05",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -20374,10 +20882,11 @@ const DASHBOARD = {
       "cn_rdd": "2026-06-14",
       "transit_days": 2,
       "courier": "",
-      "remark": "(5/7) 아트웍 미정",
+      "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-06-05",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -20418,6 +20927,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-04-27",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -20458,6 +20968,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-04-27",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -20498,6 +21009,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-04-27",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -20538,6 +21050,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-06-08",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -20578,6 +21091,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-04-28",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -20618,6 +21132,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-04-28",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -20658,6 +21173,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-04-24",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -20698,6 +21214,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-05-27",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -20738,6 +21255,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-04-24",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -20778,6 +21296,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-05-27",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -20818,6 +21337,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-05-27",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -20858,6 +21378,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-05-27",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -20898,6 +21419,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-04-28",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -20938,6 +21460,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-05-27",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -20978,6 +21501,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-05-27",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -21018,6 +21542,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-05-27",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -21058,6 +21583,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-05-27",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -21098,6 +21624,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-05-27",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -21138,6 +21665,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -21178,6 +21706,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-05-27",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -21218,6 +21747,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-05-27",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -21258,6 +21788,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-05-27",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -21298,6 +21829,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-05-27",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -21338,6 +21870,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-04-28",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -21378,6 +21911,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-05-27",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -21418,6 +21952,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-05-27",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -21458,6 +21993,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-04-28",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -21498,6 +22034,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-05-27",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -21538,6 +22075,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-05-27",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -21578,6 +22116,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-05-27",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -21618,6 +22157,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-05-27",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -21658,6 +22198,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-04-20",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -21698,6 +22239,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-05-27",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -21738,6 +22280,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-04-20",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -21778,6 +22321,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-05-27",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -21818,6 +22362,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-05-27",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -21858,6 +22403,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-05-27",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -21898,6 +22444,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-05-27",
       "is_na": false,
+      "is_drop": false,
       "phase": "2ND TS"
     },
     {
@@ -21938,6 +22485,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-04-28",
       "is_na": false,
+      "is_drop": false,
       "phase": "2ND TS"
     },
     {
@@ -21978,6 +22526,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-05-27",
       "is_na": false,
+      "is_drop": false,
       "phase": "2ND TS"
     },
     {
@@ -22018,6 +22567,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-04-28",
       "is_na": false,
+      "is_drop": false,
       "phase": "2ND TS"
     },
     {
@@ -22058,6 +22608,7 @@ const DASHBOARD = {
       "delay_reason": "원단 지연",
       "fabric_etd": "2026-04-28",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -22098,6 +22649,7 @@ const DASHBOARD = {
       "delay_reason": "원단 지연",
       "fabric_etd": "2026-05-27",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -22138,6 +22690,7 @@ const DASHBOARD = {
       "delay_reason": "원단 지연",
       "fabric_etd": "2026-05-27",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -22178,6 +22731,7 @@ const DASHBOARD = {
       "delay_reason": "원단 지연",
       "fabric_etd": "2026-05-27",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -22218,6 +22772,7 @@ const DASHBOARD = {
       "delay_reason": "원단 지연",
       "fabric_etd": "2026-05-27",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -22258,6 +22813,7 @@ const DASHBOARD = {
       "delay_reason": "원단 지연",
       "fabric_etd": "2026-05-27",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -22298,6 +22854,7 @@ const DASHBOARD = {
       "delay_reason": "원단 지연",
       "fabric_etd": "2026-05-27",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -22338,6 +22895,7 @@ const DASHBOARD = {
       "delay_reason": "원단 지연",
       "fabric_etd": "2026-05-27",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -22378,6 +22936,7 @@ const DASHBOARD = {
       "delay_reason": "원단 지연",
       "fabric_etd": "2026-05-27",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -22418,6 +22977,7 @@ const DASHBOARD = {
       "delay_reason": "원단 지연",
       "fabric_etd": "2026-05-27",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -22458,6 +23018,7 @@ const DASHBOARD = {
       "delay_reason": "원단 지연",
       "fabric_etd": "",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -22498,6 +23059,7 @@ const DASHBOARD = {
       "delay_reason": "원단 지연",
       "fabric_etd": "",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -22538,6 +23100,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-05-27",
       "is_na": false,
+      "is_drop": false,
       "phase": "2ND TS"
     },
     {
@@ -22578,6 +23141,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-05-27",
       "is_na": false,
+      "is_drop": false,
       "phase": "2ND TS"
     },
     {
@@ -22618,6 +23182,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-04-28",
       "is_na": false,
+      "is_drop": false,
       "phase": "2ND TS"
     },
     {
@@ -22658,6 +23223,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-05-27",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -22698,6 +23264,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-05-27",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -22738,6 +23305,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-04-20",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -22778,6 +23346,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-05-27",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -22818,6 +23387,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-05-27",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -22858,6 +23428,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-05-27",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -22898,6 +23469,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-04-20",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -22938,6 +23510,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-05-27",
       "is_na": false,
+      "is_drop": false,
       "phase": "2ND TS"
     },
     {
@@ -22978,6 +23551,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-05-27",
       "is_na": false,
+      "is_drop": false,
       "phase": "2ND TS"
     },
     {
@@ -23018,6 +23592,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-05-27",
       "is_na": false,
+      "is_drop": false,
       "phase": "2ND TS"
     },
     {
@@ -23058,6 +23633,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-05-27",
       "is_na": false,
+      "is_drop": false,
       "phase": "2ND TS"
     },
     {
@@ -23098,6 +23674,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-05-27",
       "is_na": false,
+      "is_drop": false,
       "phase": "2ND TS"
     },
     {
@@ -23138,6 +23715,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-05-27",
       "is_na": false,
+      "is_drop": false,
       "phase": "2ND TS"
     },
     {
@@ -23178,6 +23756,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-05-27",
       "is_na": false,
+      "is_drop": false,
       "phase": "2ND TS"
     },
     {
@@ -23218,6 +23797,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "",
       "is_na": false,
+      "is_drop": false,
       "phase": "2ND TS"
     },
     {
@@ -23258,6 +23838,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-05-27",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -23298,6 +23879,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-05-27",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -23338,6 +23920,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-05-27",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -23378,6 +23961,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -23418,6 +24002,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-04-27",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -23458,6 +24043,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-05-27",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -23498,6 +24084,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-05-15",
       "is_na": false,
+      "is_drop": false,
       "phase": "2ND TS"
     },
     {
@@ -23538,6 +24125,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-05-15",
       "is_na": false,
+      "is_drop": false,
       "phase": "2ND TS"
     },
     {
@@ -23578,6 +24166,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-05-15",
       "is_na": false,
+      "is_drop": false,
       "phase": "2ND TS"
     },
     {
@@ -23618,6 +24207,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-05-27",
       "is_na": false,
+      "is_drop": false,
       "phase": "2ND TS"
     },
     {
@@ -23658,6 +24248,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-04-24",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -23698,6 +24289,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-04-24",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -23738,6 +24330,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-05-27",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -23774,10 +24367,11 @@ const DASHBOARD = {
       "cn_rdd": "2026-06-14",
       "transit_days": 2,
       "courier": "",
-      "remark": "it s/b 07 SBL",
+      "remark": "",
       "delay_reason": "",
       "fabric_etd": "",
       "is_na": false,
+      "is_drop": false,
       "phase": "2ND TS"
     },
     {
@@ -23818,6 +24412,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-05-27",
       "is_na": false,
+      "is_drop": false,
       "phase": "2ND TS"
     },
     {
@@ -23858,6 +24453,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-05-27",
       "is_na": false,
+      "is_drop": false,
       "phase": "2ND TS"
     },
     {
@@ -23894,10 +24490,11 @@ const DASHBOARD = {
       "cn_rdd": "2026-06-14",
       "transit_days": 2,
       "courier": "",
-      "remark": "(5/7) 아트웍 미정",
+      "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-27",
       "is_na": false,
+      "is_drop": false,
       "phase": "2ND TS"
     },
     {
@@ -23934,10 +24531,11 @@ const DASHBOARD = {
       "cn_rdd": "2026-06-14",
       "transit_days": 2,
       "courier": "",
-      "remark": "(5/7) 아트웍 미정",
+      "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-27",
       "is_na": false,
+      "is_drop": false,
       "phase": "2ND TS"
     },
     {
@@ -23974,10 +24572,11 @@ const DASHBOARD = {
       "cn_rdd": "2026-06-14",
       "transit_days": 2,
       "courier": "",
-      "remark": "(5/7) 아트웍 미정",
+      "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-27",
       "is_na": false,
+      "is_drop": false,
       "phase": "2ND TS"
     },
     {
@@ -24018,6 +24617,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-04-20",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -24058,6 +24658,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-05-27",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -24098,6 +24699,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-04-20",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -24138,6 +24740,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-05-27",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -24178,6 +24781,7 @@ const DASHBOARD = {
       "delay_reason": "원단 지연",
       "fabric_etd": "2026-05-27",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -24218,6 +24822,7 @@ const DASHBOARD = {
       "delay_reason": "원단 지연",
       "fabric_etd": "2026-05-27",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -24258,6 +24863,7 @@ const DASHBOARD = {
       "delay_reason": "원단 지연",
       "fabric_etd": "2026-04-20",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -24298,6 +24904,7 @@ const DASHBOARD = {
       "delay_reason": "원단 지연",
       "fabric_etd": "2026-05-27",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -24338,6 +24945,7 @@ const DASHBOARD = {
       "delay_reason": "원단 지연",
       "fabric_etd": "2026-04-28",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -24378,6 +24986,7 @@ const DASHBOARD = {
       "delay_reason": "원단 지연",
       "fabric_etd": "2026-05-27",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -24418,6 +25027,7 @@ const DASHBOARD = {
       "delay_reason": "원단 지연",
       "fabric_etd": "2026-04-28",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -24458,6 +25068,7 @@ const DASHBOARD = {
       "delay_reason": "원단 지연",
       "fabric_etd": "2026-04-28",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -24498,6 +25109,7 @@ const DASHBOARD = {
       "delay_reason": "원단 지연",
       "fabric_etd": "2026-04-28",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -24538,6 +25150,7 @@ const DASHBOARD = {
       "delay_reason": "원단 지연",
       "fabric_etd": "2026-05-27",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -24578,6 +25191,7 @@ const DASHBOARD = {
       "delay_reason": "원단 지연",
       "fabric_etd": "2026-04-28",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -24618,6 +25232,7 @@ const DASHBOARD = {
       "delay_reason": "원단 지연",
       "fabric_etd": "2026-05-27",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -24658,6 +25273,7 @@ const DASHBOARD = {
       "delay_reason": "원단 지연",
       "fabric_etd": "2026-04-28",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -24694,10 +25310,11 @@ const DASHBOARD = {
       "cn_rdd": "2026-06-14",
       "transit_days": 2,
       "courier": "",
-      "remark": "(5/7) 아트웍 미정",
+      "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-04-24",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -24734,10 +25351,11 @@ const DASHBOARD = {
       "cn_rdd": "2026-06-14",
       "transit_days": 2,
       "courier": "",
-      "remark": "(5/7) 아트웍 미정",
+      "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-04-24",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -24774,10 +25392,11 @@ const DASHBOARD = {
       "cn_rdd": "2026-06-14",
       "transit_days": 2,
       "courier": "",
-      "remark": "(5/7) 아트웍 미정",
+      "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-27",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -24814,10 +25433,11 @@ const DASHBOARD = {
       "cn_rdd": "2026-06-14",
       "transit_days": 2,
       "courier": "",
-      "remark": "(5/7) 아트웍 미정",
+      "remark": "",
       "delay_reason": "",
       "fabric_etd": "",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -24854,10 +25474,11 @@ const DASHBOARD = {
       "cn_rdd": "2026-06-14",
       "transit_days": 2,
       "courier": "",
-      "remark": "(5/7) 아트웍 미정",
+      "remark": "",
       "delay_reason": "",
       "fabric_etd": "",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -24894,10 +25515,11 @@ const DASHBOARD = {
       "cn_rdd": "2026-06-14",
       "transit_days": 2,
       "courier": "",
-      "remark": "(5/7) 아트웍 미정",
+      "remark": "",
       "delay_reason": "",
       "fabric_etd": "",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -24934,10 +25556,11 @@ const DASHBOARD = {
       "cn_rdd": "2026-06-14",
       "transit_days": 2,
       "courier": "",
-      "remark": "(5/7) 아트웍 미정",
+      "remark": "",
       "delay_reason": "",
       "fabric_etd": "",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -24974,10 +25597,11 @@ const DASHBOARD = {
       "cn_rdd": "2026-06-14",
       "transit_days": 2,
       "courier": "",
-      "remark": "(5/7) 아트웍 미정",
+      "remark": "",
       "delay_reason": "",
       "fabric_etd": "",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -25014,10 +25638,11 @@ const DASHBOARD = {
       "cn_rdd": "2026-06-14",
       "transit_days": 2,
       "courier": "",
-      "remark": "(5/7) 아트웍 미정",
+      "remark": "",
       "delay_reason": "",
       "fabric_etd": "",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -25054,10 +25679,11 @@ const DASHBOARD = {
       "cn_rdd": "2026-06-14",
       "transit_days": 2,
       "courier": "",
-      "remark": "(5/7) 아트웍 미정",
+      "remark": "",
       "delay_reason": "",
       "fabric_etd": "",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -25094,10 +25720,11 @@ const DASHBOARD = {
       "cn_rdd": "2026-06-14",
       "transit_days": 2,
       "courier": "",
-      "remark": "(5/7) 아트웍 미정",
+      "remark": "",
       "delay_reason": "",
       "fabric_etd": "",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -25138,6 +25765,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-05-15",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -25178,6 +25806,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-05-15",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -25218,6 +25847,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-05-27",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -25258,6 +25888,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-05-15",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -25298,6 +25929,7 @@ const DASHBOARD = {
       "delay_reason": "원단 지연",
       "fabric_etd": "2026-05-27",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -25338,6 +25970,7 @@ const DASHBOARD = {
       "delay_reason": "원단 지연",
       "fabric_etd": "2026-05-27",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -25378,6 +26011,7 @@ const DASHBOARD = {
       "delay_reason": "원단 지연",
       "fabric_etd": "2026-05-27",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -25418,6 +26052,7 @@ const DASHBOARD = {
       "delay_reason": "원단 지연",
       "fabric_etd": "2026-04-28",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -25458,6 +26093,7 @@ const DASHBOARD = {
       "delay_reason": "원단 지연",
       "fabric_etd": "2026-04-28",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -25498,6 +26134,7 @@ const DASHBOARD = {
       "delay_reason": "원단 지연",
       "fabric_etd": "2026-04-28",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -25538,6 +26175,7 @@ const DASHBOARD = {
       "delay_reason": "원단 지연",
       "fabric_etd": "2026-05-15",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -25578,6 +26216,7 @@ const DASHBOARD = {
       "delay_reason": "원단 지연",
       "fabric_etd": "2026-04-28",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -25618,6 +26257,7 @@ const DASHBOARD = {
       "delay_reason": "원단 지연",
       "fabric_etd": "2026-05-27",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -25658,6 +26298,7 @@ const DASHBOARD = {
       "delay_reason": "원단 지연",
       "fabric_etd": "2026-05-27",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -25698,6 +26339,7 @@ const DASHBOARD = {
       "delay_reason": "원단 지연",
       "fabric_etd": "2026-05-08",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -25738,6 +26380,7 @@ const DASHBOARD = {
       "delay_reason": "원단 지연",
       "fabric_etd": "2026-05-27",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -25778,6 +26421,7 @@ const DASHBOARD = {
       "delay_reason": "원단 지연",
       "fabric_etd": "2026-05-27",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -25818,6 +26462,7 @@ const DASHBOARD = {
       "delay_reason": "원단 지연",
       "fabric_etd": "2026-05-27",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -25858,6 +26503,7 @@ const DASHBOARD = {
       "delay_reason": "원단 지연",
       "fabric_etd": "2026-05-27",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -25898,6 +26544,7 @@ const DASHBOARD = {
       "delay_reason": "원단 지연",
       "fabric_etd": "2026-04-28",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -25938,6 +26585,7 @@ const DASHBOARD = {
       "delay_reason": "원단 지연",
       "fabric_etd": "2026-04-28",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -25978,6 +26626,7 @@ const DASHBOARD = {
       "delay_reason": "원단 지연",
       "fabric_etd": "2026-05-15",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -26018,6 +26667,7 @@ const DASHBOARD = {
       "delay_reason": "원단 지연",
       "fabric_etd": "2026-04-28",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -26058,6 +26708,7 @@ const DASHBOARD = {
       "delay_reason": "원단 지연",
       "fabric_etd": "2026-05-27",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -26098,6 +26749,7 @@ const DASHBOARD = {
       "delay_reason": "원단 지연",
       "fabric_etd": "2026-04-28",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -26138,6 +26790,7 @@ const DASHBOARD = {
       "delay_reason": "원단 지연",
       "fabric_etd": "2026-05-27",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -26178,6 +26831,7 @@ const DASHBOARD = {
       "delay_reason": "원단 지연",
       "fabric_etd": "2026-04-28",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -26218,6 +26872,7 @@ const DASHBOARD = {
       "delay_reason": "원단 지연",
       "fabric_etd": "2026-05-27",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -26258,6 +26913,7 @@ const DASHBOARD = {
       "delay_reason": "원단 지연",
       "fabric_etd": "2026-05-15",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -26298,6 +26954,7 @@ const DASHBOARD = {
       "delay_reason": "원단 지연",
       "fabric_etd": "2026-05-27",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -26338,6 +26995,7 @@ const DASHBOARD = {
       "delay_reason": "원단 지연",
       "fabric_etd": "2026-04-28",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -26378,6 +27036,7 @@ const DASHBOARD = {
       "delay_reason": "원단 지연",
       "fabric_etd": "2026-05-27",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -26418,6 +27077,7 @@ const DASHBOARD = {
       "delay_reason": "원단 지연",
       "fabric_etd": "2026-05-27",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -26458,6 +27118,7 @@ const DASHBOARD = {
       "delay_reason": "원단 지연",
       "fabric_etd": "2026-05-27",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -26498,6 +27159,7 @@ const DASHBOARD = {
       "delay_reason": "원단 지연",
       "fabric_etd": "2026-04-28",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -26538,6 +27200,7 @@ const DASHBOARD = {
       "delay_reason": "원단 지연",
       "fabric_etd": "2026-04-28",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -26578,6 +27241,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-04-28",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -26618,6 +27282,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-04-28",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -26658,6 +27323,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-04-28",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -26698,6 +27364,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-05-27",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -26738,6 +27405,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-04-28",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -26778,6 +27446,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-04-28",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -26818,6 +27487,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-04-28",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -26858,6 +27528,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-04-28",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -26898,6 +27569,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-04-28",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -26938,6 +27610,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-04-28",
       "is_na": false,
+      "is_drop": false,
       "phase": "2ND TS"
     },
     {
@@ -26978,6 +27651,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-05-27",
       "is_na": false,
+      "is_drop": false,
       "phase": "2ND TS"
     },
     {
@@ -27018,6 +27692,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-05-27",
       "is_na": false,
+      "is_drop": false,
       "phase": "2ND TS"
     },
     {
@@ -27058,6 +27733,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-05-27",
       "is_na": false,
+      "is_drop": false,
       "phase": "2ND TS"
     },
     {
@@ -27098,6 +27774,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-05-27",
       "is_na": false,
+      "is_drop": false,
       "phase": "2ND TS"
     },
     {
@@ -27138,6 +27815,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-05-27",
       "is_na": false,
+      "is_drop": false,
       "phase": "2ND TS"
     },
     {
@@ -27178,6 +27856,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-05-27",
       "is_na": false,
+      "is_drop": false,
       "phase": "2ND TS"
     },
     {
@@ -27218,6 +27897,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-05-27",
       "is_na": false,
+      "is_drop": false,
       "phase": "2ND TS"
     },
     {
@@ -27254,20 +27934,21 @@ const DASHBOARD = {
       "cn_rdd": "2026-06-14",
       "transit_days": 2,
       "courier": "",
-      "remark": "(5/7) 아트웍 미정",
+      "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-27",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
-      "sku": "3FTSS507107CRS",
+      "sku": "3FTSS507109CRS",
       "style_code": "3FTSS5071",
       "sort": "KNIT",
       "class_": "INNER",
       "item_type": "TS",
       "description": "여성 슬림 세미크롭 나그랑 긴팔 티셔츠",
-      "color": "07CRS",
+      "color": "09CRS",
       "designer": "황상희",
       "sourcing": "임규빈",
       "vendor": "ESQUEL ENTERPRISES LIMITED",
@@ -27294,10 +27975,11 @@ const DASHBOARD = {
       "cn_rdd": "2026-06-14",
       "transit_days": 2,
       "courier": "",
-      "remark": "(5/7) 아트웍 미정",
+      "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-04-24",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -27334,10 +28016,11 @@ const DASHBOARD = {
       "cn_rdd": "2026-06-14",
       "transit_days": 2,
       "courier": "",
-      "remark": "(5/7) 아트웍 미정",
+      "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-27",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -27378,6 +28061,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-04-24",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -27418,6 +28102,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-05-27",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -27458,6 +28143,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-04-24",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -27498,6 +28184,7 @@ const DASHBOARD = {
       "delay_reason": "원단 지연",
       "fabric_etd": "2026-05-27",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -27538,6 +28225,7 @@ const DASHBOARD = {
       "delay_reason": "원단 지연",
       "fabric_etd": "2026-05-15",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -27578,6 +28266,7 @@ const DASHBOARD = {
       "delay_reason": "원단 지연",
       "fabric_etd": "2026-05-15",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -27618,6 +28307,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-04-28",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -27658,6 +28348,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-04-28",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -27698,6 +28389,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-05-27",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -27738,6 +28430,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-05-27",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -27778,6 +28471,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-04-28",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -27818,6 +28512,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-04-28",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -27858,6 +28553,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-04-28",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -27898,6 +28594,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-05-27",
       "is_na": false,
+      "is_drop": false,
       "phase": "2ND TS"
     },
     {
@@ -27938,6 +28635,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-04-28",
       "is_na": false,
+      "is_drop": false,
       "phase": "2ND TS"
     },
     {
@@ -27978,6 +28676,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-05-27",
       "is_na": false,
+      "is_drop": false,
       "phase": "2ND TS"
     },
     {
@@ -28018,6 +28717,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-05-27",
       "is_na": false,
+      "is_drop": false,
       "phase": "2ND TS"
     },
     {
@@ -28058,6 +28758,7 @@ const DASHBOARD = {
       "delay_reason": "원단 지연",
       "fabric_etd": "2026-05-27",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -28098,6 +28799,7 @@ const DASHBOARD = {
       "delay_reason": "원단 지연",
       "fabric_etd": "2026-05-27",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -28138,6 +28840,7 @@ const DASHBOARD = {
       "delay_reason": "원단 지연",
       "fabric_etd": "2026-04-28",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -28178,6 +28881,7 @@ const DASHBOARD = {
       "delay_reason": "원단 지연",
       "fabric_etd": "2026-05-27",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -28218,6 +28922,7 @@ const DASHBOARD = {
       "delay_reason": "원단 지연",
       "fabric_etd": "2026-05-27",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -28258,6 +28963,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-05-27",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -28298,6 +29004,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-04-20",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -28338,6 +29045,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-05-27",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -28378,6 +29086,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-04-20",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -28418,6 +29127,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-05-27",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -28458,6 +29168,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-04-20",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -28498,6 +29209,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-05-27",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -28538,6 +29250,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-04-20",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -28578,6 +29291,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-04-20",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -28618,6 +29332,7 @@ const DASHBOARD = {
       "delay_reason": "원단 지연",
       "fabric_etd": "2026-05-27",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -28658,6 +29373,7 @@ const DASHBOARD = {
       "delay_reason": "원단 지연",
       "fabric_etd": "2026-05-27",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -28698,6 +29414,7 @@ const DASHBOARD = {
       "delay_reason": "원단 지연",
       "fabric_etd": "2026-05-27",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -28738,6 +29455,7 @@ const DASHBOARD = {
       "delay_reason": "원단 지연",
       "fabric_etd": "2026-05-27",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -28778,6 +29496,7 @@ const DASHBOARD = {
       "delay_reason": "원단 지연",
       "fabric_etd": "2026-05-27",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -28818,6 +29537,7 @@ const DASHBOARD = {
       "delay_reason": "원단 지연",
       "fabric_etd": "2026-04-28",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -28847,17 +29567,18 @@ const DASHBOARD = {
       "cn_focus_pcs": 1,
       "kr_keep_pcs": 1,
       "cn_total_pcs": 5,
-      "kr_expected": "2026-06-12",
+      "kr_expected": "2026-06-19",
       "kr_actual": null,
-      "cn_etd": "2026-06-12",
+      "cn_etd": "2026-06-18",
       "cn_atd": null,
-      "cn_rdd": "2026-06-17",
+      "cn_rdd": "2026-06-23",
       "transit_days": 0,
       "courier": "",
-      "remark": "",
+      "remark": "바디편직이슈 몸판6/9 리쁘 6/12 ETD 예상",
       "delay_reason": "",
       "fabric_etd": "2026-05-27",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -28887,17 +29608,18 @@ const DASHBOARD = {
       "cn_focus_pcs": 1,
       "kr_keep_pcs": 1,
       "cn_total_pcs": 5,
-      "kr_expected": "2026-06-12",
+      "kr_expected": "2026-06-19",
       "kr_actual": null,
-      "cn_etd": "2026-06-12",
+      "cn_etd": "2026-06-18",
       "cn_atd": null,
-      "cn_rdd": "2026-06-17",
+      "cn_rdd": "2026-06-23",
       "transit_days": 0,
       "courier": "",
-      "remark": "",
+      "remark": "바디편직이슈 몸판6/9 리쁘 6/12 ETD 예상",
       "delay_reason": "",
       "fabric_etd": "2026-05-27",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -28927,17 +29649,18 @@ const DASHBOARD = {
       "cn_focus_pcs": 1,
       "kr_keep_pcs": 1,
       "cn_total_pcs": 5,
-      "kr_expected": "2026-06-12",
+      "kr_expected": "2026-06-19",
       "kr_actual": null,
-      "cn_etd": "2026-06-12",
+      "cn_etd": "2026-06-18",
       "cn_atd": null,
-      "cn_rdd": "2026-06-17",
+      "cn_rdd": "2026-06-23",
       "transit_days": 0,
       "courier": "",
-      "remark": "",
+      "remark": "바디편직이슈 몸판6/9 리쁘 6/12 ETD 예상",
       "delay_reason": "",
       "fabric_etd": "",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -28967,17 +29690,18 @@ const DASHBOARD = {
       "cn_focus_pcs": 0,
       "kr_keep_pcs": 1,
       "cn_total_pcs": 4,
-      "kr_expected": "2026-06-12",
+      "kr_expected": "2026-06-19",
       "kr_actual": null,
-      "cn_etd": "2026-06-12",
+      "cn_etd": "2026-06-18",
       "cn_atd": null,
-      "cn_rdd": "2026-06-17",
+      "cn_rdd": "2026-06-23",
       "transit_days": 0,
       "courier": "",
-      "remark": "",
+      "remark": "바디편직이슈 몸판6/9 리쁘 6/12 ETD 예상",
       "delay_reason": "",
       "fabric_etd": "2026-05-27",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -29018,6 +29742,7 @@ const DASHBOARD = {
       "delay_reason": "원단 지연",
       "fabric_etd": "2026-05-27",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -29058,6 +29783,7 @@ const DASHBOARD = {
       "delay_reason": "원단 지연",
       "fabric_etd": "2026-05-27",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -29098,6 +29824,7 @@ const DASHBOARD = {
       "delay_reason": "원단 지연",
       "fabric_etd": "2026-05-27",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -29134,10 +29861,11 @@ const DASHBOARD = {
       "cn_rdd": "2026-06-14",
       "transit_days": 2,
       "courier": "",
-      "remark": "(5/7) 아트웍 미정",
+      "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-04-27",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -29174,10 +29902,11 @@ const DASHBOARD = {
       "cn_rdd": "2026-06-14",
       "transit_days": 2,
       "courier": "",
-      "remark": "(5/7) 아트웍 미정",
+      "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-27",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -29214,10 +29943,11 @@ const DASHBOARD = {
       "cn_rdd": "2026-06-14",
       "transit_days": 2,
       "courier": "",
-      "remark": "(5/7) 아트웍 미정",
+      "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-04-27",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -29254,10 +29984,11 @@ const DASHBOARD = {
       "cn_rdd": "2026-06-14",
       "transit_days": 2,
       "courier": "",
-      "remark": "(5/7) 아트웍 미정",
+      "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-27",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -29294,10 +30025,11 @@ const DASHBOARD = {
       "cn_rdd": "2026-06-14",
       "transit_days": 2,
       "courier": "",
-      "remark": "(5/7) 아트웍 미정",
+      "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-27",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -29334,10 +30066,11 @@ const DASHBOARD = {
       "cn_rdd": "2026-06-14",
       "transit_days": 2,
       "courier": "",
-      "remark": "(5/7) 아트웍 미정",
+      "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-27",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -29374,10 +30107,11 @@ const DASHBOARD = {
       "cn_rdd": "2026-06-14",
       "transit_days": 2,
       "courier": "",
-      "remark": "(5/7) 아트웍 미정",
+      "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-27",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -29414,10 +30148,11 @@ const DASHBOARD = {
       "cn_rdd": "2026-06-14",
       "transit_days": 2,
       "courier": "",
-      "remark": "(5/7) 아트웍 미정",
+      "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-04-27",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -29454,10 +30189,11 @@ const DASHBOARD = {
       "cn_rdd": "2026-06-14",
       "transit_days": 2,
       "courier": "",
-      "remark": "(5/7) 아트웍 미정",
+      "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-04-27",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -29494,10 +30230,11 @@ const DASHBOARD = {
       "cn_rdd": "2026-06-14",
       "transit_days": 2,
       "courier": "",
-      "remark": "(5/7) 아트웍 미정",
+      "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-27",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -29534,10 +30271,11 @@ const DASHBOARD = {
       "cn_rdd": "2026-06-14",
       "transit_days": 2,
       "courier": "",
-      "remark": "(5/7) 아트웍 미정",
+      "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-04-27",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -29574,10 +30312,11 @@ const DASHBOARD = {
       "cn_rdd": "2026-06-14",
       "transit_days": 2,
       "courier": "",
-      "remark": "(5/7) 아트웍 미정",
+      "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-27",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -29614,10 +30353,11 @@ const DASHBOARD = {
       "cn_rdd": "2026-06-14",
       "transit_days": 2,
       "courier": "",
-      "remark": "(5/7) 아트웍 미정",
+      "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-04-27",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -29654,10 +30394,11 @@ const DASHBOARD = {
       "cn_rdd": "2026-06-14",
       "transit_days": 2,
       "courier": "",
-      "remark": "(5/7) 아트웍 미정",
+      "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-27",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -29698,6 +30439,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-05-27",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -29738,6 +30480,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-06-08",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -29778,6 +30521,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-04-28",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -29814,10 +30558,11 @@ const DASHBOARD = {
       "cn_rdd": "2026-06-14",
       "transit_days": 2,
       "courier": "",
-      "remark": "(5/7) 아트웍 미정",
+      "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-06-05",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -29854,10 +30599,11 @@ const DASHBOARD = {
       "cn_rdd": "2026-06-14",
       "transit_days": 2,
       "courier": "",
-      "remark": "(5/7) 아트웍 미정",
+      "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-06-05",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -29894,10 +30640,11 @@ const DASHBOARD = {
       "cn_rdd": "2026-06-14",
       "transit_days": 2,
       "courier": "",
-      "remark": "(5/7) 아트웍 미정",
+      "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-06-05",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -29934,10 +30681,11 @@ const DASHBOARD = {
       "cn_rdd": "2026-06-14",
       "transit_days": 2,
       "courier": "",
-      "remark": "(5/7) 아트웍 미정",
+      "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-06-05",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -29978,6 +30726,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-04-28",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -30018,6 +30767,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-06-08",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -30058,6 +30808,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-05-27",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -30098,6 +30849,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-06-08",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -30138,6 +30890,7 @@ const DASHBOARD = {
       "delay_reason": "원단 지연",
       "fabric_etd": "2026-05-27",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -30178,6 +30931,7 @@ const DASHBOARD = {
       "delay_reason": "원단 지연",
       "fabric_etd": "2026-04-28",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -30218,6 +30972,7 @@ const DASHBOARD = {
       "delay_reason": "원단 지연",
       "fabric_etd": "2026-05-27",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -30258,6 +31013,7 @@ const DASHBOARD = {
       "delay_reason": "원단 지연",
       "fabric_etd": "2026-05-27",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -30298,6 +31054,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-04-20",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -30338,6 +31095,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-05-27",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -30378,6 +31136,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-05-27",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -30418,6 +31177,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-05-27",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -30458,6 +31218,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-05-27",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -30498,6 +31259,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-05-27",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -30538,6 +31300,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-05-27",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -30574,10 +31337,11 @@ const DASHBOARD = {
       "cn_rdd": "2026-06-14",
       "transit_days": 2,
       "courier": "",
-      "remark": "(5/7)\n1) 컬러코드 07CRD 되어야 함\n2) 아트웍 미정",
+      "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-06-05",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -30614,10 +31378,11 @@ const DASHBOARD = {
       "cn_rdd": "2026-06-14",
       "transit_days": 2,
       "courier": "",
-      "remark": "(5/7) 아트웍 미정",
+      "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-06-05",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -30654,10 +31419,11 @@ const DASHBOARD = {
       "cn_rdd": "2026-06-14",
       "transit_days": 2,
       "courier": "",
-      "remark": "(5/7) 아트웍 미정",
+      "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-06-05",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -30694,10 +31460,11 @@ const DASHBOARD = {
       "cn_rdd": "2026-06-14",
       "transit_days": 2,
       "courier": "",
-      "remark": "(5/7) 아트웍 미정",
+      "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-04-27",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -30734,10 +31501,11 @@ const DASHBOARD = {
       "cn_rdd": "2026-06-14",
       "transit_days": 2,
       "courier": "",
-      "remark": "(5/7) 아트웍 미정",
+      "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-27",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -30774,10 +31542,11 @@ const DASHBOARD = {
       "cn_rdd": "2026-06-14",
       "transit_days": 2,
       "courier": "",
-      "remark": "(5/7) 아트웍 미정",
+      "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-27",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -30814,10 +31583,11 @@ const DASHBOARD = {
       "cn_rdd": "2026-06-14",
       "transit_days": 2,
       "courier": "",
-      "remark": "(5/7) 아트웍 미정",
+      "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-27",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -30854,10 +31624,11 @@ const DASHBOARD = {
       "cn_rdd": "2026-06-14",
       "transit_days": 2,
       "courier": "",
-      "remark": "(5/7) 아트웍 미정",
+      "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-06-05",
       "is_na": false,
+      "is_drop": false,
       "phase": "2ND TS"
     },
     {
@@ -30894,10 +31665,11 @@ const DASHBOARD = {
       "cn_rdd": "2026-06-14",
       "transit_days": 2,
       "courier": "",
-      "remark": "(5/7) 아트웍 미정",
+      "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-06-05",
       "is_na": false,
+      "is_drop": false,
       "phase": "2ND TS"
     },
     {
@@ -30934,10 +31706,11 @@ const DASHBOARD = {
       "cn_rdd": "2026-06-14",
       "transit_days": 2,
       "courier": "",
-      "remark": "(5/7) 아트웍 미정",
+      "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-06-05",
       "is_na": false,
+      "is_drop": false,
       "phase": "2ND TS"
     },
     {
@@ -30974,10 +31747,11 @@ const DASHBOARD = {
       "cn_rdd": "2026-06-14",
       "transit_days": 2,
       "courier": "",
-      "remark": "",
+      "remark": "우븐감 퀄리티 미정, 확정 후 일정 업데이트 예정",
       "delay_reason": "",
       "fabric_etd": "2026-05-27",
       "is_na": false,
+      "is_drop": false,
       "phase": "2ND TS"
     },
     {
@@ -31014,10 +31788,11 @@ const DASHBOARD = {
       "cn_rdd": "2026-06-14",
       "transit_days": 2,
       "courier": "",
-      "remark": "",
+      "remark": "우븐감 퀄리티 미정, 확정 후 일정 업데이트 예정",
       "delay_reason": "",
       "fabric_etd": "2026-05-27",
       "is_na": false,
+      "is_drop": false,
       "phase": "2ND TS"
     },
     {
@@ -31054,10 +31829,11 @@ const DASHBOARD = {
       "cn_rdd": "2026-06-14",
       "transit_days": 2,
       "courier": "",
-      "remark": "",
+      "remark": "우븐감 퀄리티 미정, 확정 후 일정 업데이트 예정",
       "delay_reason": "",
       "fabric_etd": "2026-05-27",
       "is_na": false,
+      "is_drop": false,
       "phase": "2ND TS"
     },
     {
@@ -31087,17 +31863,18 @@ const DASHBOARD = {
       "cn_focus_pcs": 1,
       "kr_keep_pcs": 1,
       "cn_total_pcs": 5,
-      "kr_expected": "2026-06-12",
+      "kr_expected": "2026-07-08",
       "kr_actual": null,
-      "cn_etd": "2026-06-12",
+      "cn_etd": "2026-07-06",
       "cn_atd": null,
-      "cn_rdd": "2026-06-14",
+      "cn_rdd": "2026-07-08",
       "transit_days": 2,
       "courier": "",
-      "remark": "(5/7) 아트웍 미정",
-      "delay_reason": "",
+      "remark": "원단퀄리티 변경(소매감), 스트라이프 CAD 수취(5/20 예정) 후 일정 업데이트 예정",
+      "delay_reason": "원단 변경",
       "fabric_etd": "2026-05-27",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -31127,17 +31904,18 @@ const DASHBOARD = {
       "cn_focus_pcs": 1,
       "kr_keep_pcs": 1,
       "cn_total_pcs": 5,
-      "kr_expected": "2026-06-12",
+      "kr_expected": "2026-07-08",
       "kr_actual": null,
-      "cn_etd": "2026-06-12",
+      "cn_etd": "2026-07-06",
       "cn_atd": null,
-      "cn_rdd": "2026-06-14",
+      "cn_rdd": "2026-07-08",
       "transit_days": 2,
       "courier": "",
-      "remark": "(5/7) 아트웍 미정",
-      "delay_reason": "",
+      "remark": "원단퀄리티 변경(소매감), 스트라이프 CAD 수취(5/20 예정) 후 일정 업데이트 예정",
+      "delay_reason": "원단 변경",
       "fabric_etd": "2026-04-27",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -31167,17 +31945,18 @@ const DASHBOARD = {
       "cn_focus_pcs": 1,
       "kr_keep_pcs": 1,
       "cn_total_pcs": 5,
-      "kr_expected": "2026-06-12",
+      "kr_expected": "2026-07-08",
       "kr_actual": null,
-      "cn_etd": "2026-06-12",
+      "cn_etd": "2026-07-06",
       "cn_atd": null,
-      "cn_rdd": "2026-06-14",
+      "cn_rdd": "2026-07-08",
       "transit_days": 2,
       "courier": "",
-      "remark": "(5/7) 아트웍 미정",
-      "delay_reason": "",
+      "remark": "원단퀄리티 변경(소매감), 스트라이프 CAD 수취(5/20 예정) 후 일정 업데이트 예정",
+      "delay_reason": "원단 변경",
       "fabric_etd": "2026-04-27",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -31214,10 +31993,11 @@ const DASHBOARD = {
       "cn_rdd": "2026-06-14",
       "transit_days": 2,
       "courier": "",
-      "remark": "(5/7) 아트웍 미정",
+      "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-04-27",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -31254,10 +32034,11 @@ const DASHBOARD = {
       "cn_rdd": "2026-06-14",
       "transit_days": 2,
       "courier": "",
-      "remark": "(5/7) 아트웍 미정",
+      "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-27",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -31294,10 +32075,11 @@ const DASHBOARD = {
       "cn_rdd": "2026-06-14",
       "transit_days": 2,
       "courier": "",
-      "remark": "(5/7) 아트웍 미정",
+      "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-04-27",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -31338,6 +32120,7 @@ const DASHBOARD = {
       "delay_reason": "원단 지연",
       "fabric_etd": "2026-05-27",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -31378,6 +32161,7 @@ const DASHBOARD = {
       "delay_reason": "원단 지연",
       "fabric_etd": "2026-04-28",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -31418,6 +32202,7 @@ const DASHBOARD = {
       "delay_reason": "원단 지연",
       "fabric_etd": "2026-05-27",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -31458,6 +32243,7 @@ const DASHBOARD = {
       "delay_reason": "원단 지연",
       "fabric_etd": "2026-04-28",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -31498,6 +32284,7 @@ const DASHBOARD = {
       "delay_reason": "원단 지연",
       "fabric_etd": "2026-05-27",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -31538,6 +32325,7 @@ const DASHBOARD = {
       "delay_reason": "원단 지연",
       "fabric_etd": "2026-05-27",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -31578,6 +32366,7 @@ const DASHBOARD = {
       "delay_reason": "원단 지연",
       "fabric_etd": "2026-05-27",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -31618,6 +32407,7 @@ const DASHBOARD = {
       "delay_reason": "원단 지연",
       "fabric_etd": "2026-05-27",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -31658,6 +32448,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-05-20",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -31698,6 +32489,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-05-20",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -31738,6 +32530,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-05-20",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -31778,6 +32571,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-05-20",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -31814,10 +32608,11 @@ const DASHBOARD = {
       "cn_rdd": "2026-06-14",
       "transit_days": 2,
       "courier": "",
-      "remark": "(5/7) 아트웍 미정",
+      "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-27",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -31854,10 +32649,11 @@ const DASHBOARD = {
       "cn_rdd": "2026-06-14",
       "transit_days": 2,
       "courier": "",
-      "remark": "(5/7) 아트웍 미정",
+      "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-27",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -31894,10 +32690,11 @@ const DASHBOARD = {
       "cn_rdd": "2026-06-14",
       "transit_days": 2,
       "courier": "",
-      "remark": "(5/7) 아트웍 미정",
+      "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-27",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -31934,10 +32731,11 @@ const DASHBOARD = {
       "cn_rdd": "2026-06-14",
       "transit_days": 2,
       "courier": "",
-      "remark": "(5/7) 아트웍 미정",
+      "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-04-27",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -31978,6 +32776,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-04-28",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -32018,6 +32817,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-05-27",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -32054,10 +32854,11 @@ const DASHBOARD = {
       "cn_rdd": "2026-06-14",
       "transit_days": 2,
       "courier": "",
-      "remark": "(5/7) 아트웍 미정",
+      "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-27",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -32094,10 +32895,11 @@ const DASHBOARD = {
       "cn_rdd": "2026-06-14",
       "transit_days": 2,
       "courier": "",
-      "remark": "(5/7) 아트웍 미정",
+      "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-27",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -32134,10 +32936,11 @@ const DASHBOARD = {
       "cn_rdd": "2026-06-14",
       "transit_days": 2,
       "courier": "",
-      "remark": "(5/7) 아트웍 미정",
+      "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-04-27",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -32174,10 +32977,11 @@ const DASHBOARD = {
       "cn_rdd": "2026-06-14",
       "transit_days": 2,
       "courier": "",
-      "remark": "(5/7) 아트웍 미정",
+      "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-04-27",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -32214,10 +33018,11 @@ const DASHBOARD = {
       "cn_rdd": "2026-06-14",
       "transit_days": 2,
       "courier": "",
-      "remark": "(5/7) 아트웍 미정",
+      "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-27",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -32254,10 +33059,11 @@ const DASHBOARD = {
       "cn_rdd": "2026-06-14",
       "transit_days": 2,
       "courier": "",
-      "remark": "(5/7) 아트웍 미정",
+      "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-04-27",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -32294,10 +33100,11 @@ const DASHBOARD = {
       "cn_rdd": "2026-06-14",
       "transit_days": 2,
       "courier": "",
-      "remark": "(5/7) 아트웍 미정",
+      "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-27",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -32334,10 +33141,11 @@ const DASHBOARD = {
       "cn_rdd": "2026-06-14",
       "transit_days": 2,
       "courier": "",
-      "remark": "(5/7) 아트웍 미정",
+      "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-04-27",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -32374,10 +33182,11 @@ const DASHBOARD = {
       "cn_rdd": "2026-06-14",
       "transit_days": 2,
       "courier": "",
-      "remark": "(5/7) 아트웍 미정",
+      "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-27",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -32418,6 +33227,7 @@ const DASHBOARD = {
       "delay_reason": "원단 지연",
       "fabric_etd": "2026-05-27",
       "is_na": false,
+      "is_drop": false,
       "phase": "2ND TS"
     },
     {
@@ -32458,6 +33268,7 @@ const DASHBOARD = {
       "delay_reason": "원단 지연",
       "fabric_etd": "2026-05-27",
       "is_na": false,
+      "is_drop": false,
       "phase": "2ND TS"
     },
     {
@@ -32498,6 +33309,7 @@ const DASHBOARD = {
       "delay_reason": "원단 지연",
       "fabric_etd": "2026-05-27",
       "is_na": false,
+      "is_drop": false,
       "phase": "2ND TS"
     },
     {
@@ -32538,6 +33350,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-05-27",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -32578,6 +33391,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-04-20",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -32614,10 +33428,11 @@ const DASHBOARD = {
       "cn_rdd": "2026-06-14",
       "transit_days": 2,
       "courier": "",
-      "remark": "(5/7) 아트웍 미정",
+      "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-04-27",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -32654,10 +33469,11 @@ const DASHBOARD = {
       "cn_rdd": "2026-06-14",
       "transit_days": 2,
       "courier": "",
-      "remark": "(5/7) 아트웍 미정",
+      "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-04-27",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -32698,6 +33514,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-04-20",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -32738,6 +33555,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-04-20",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -32778,6 +33596,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-04-20",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -32814,10 +33633,11 @@ const DASHBOARD = {
       "cn_rdd": "2026-06-14",
       "transit_days": 2,
       "courier": "",
-      "remark": "(5/7) 아트웍 미정",
+      "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-04-27",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -32854,10 +33674,11 @@ const DASHBOARD = {
       "cn_rdd": "2026-06-14",
       "transit_days": 2,
       "courier": "",
-      "remark": "(5/7) 아트웍 미정",
+      "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-04-27",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -32894,10 +33715,11 @@ const DASHBOARD = {
       "cn_rdd": "2026-06-14",
       "transit_days": 2,
       "courier": "",
-      "remark": "(5/7) 아트웍 미정",
+      "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-04-27",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -32938,6 +33760,7 @@ const DASHBOARD = {
       "delay_reason": "원단 지연",
       "fabric_etd": "2026-04-28",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -32978,6 +33801,7 @@ const DASHBOARD = {
       "delay_reason": "원단 지연",
       "fabric_etd": "2026-04-28",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -33018,6 +33842,7 @@ const DASHBOARD = {
       "delay_reason": "원단 지연",
       "fabric_etd": "2026-05-27",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -33058,6 +33883,7 @@ const DASHBOARD = {
       "delay_reason": "원단 지연",
       "fabric_etd": "2026-05-27",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -33098,6 +33924,7 @@ const DASHBOARD = {
       "delay_reason": "원단 지연",
       "fabric_etd": "2026-05-27",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -33138,6 +33965,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-04-20",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -33178,6 +34006,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-05-27",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -33218,6 +34047,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-05-27",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -33254,10 +34084,11 @@ const DASHBOARD = {
       "cn_rdd": "2026-06-14",
       "transit_days": 2,
       "courier": "",
-      "remark": "(5/7) 아트웍 미정",
+      "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-04-27",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -33294,10 +34125,11 @@ const DASHBOARD = {
       "cn_rdd": "2026-06-14",
       "transit_days": 2,
       "courier": "",
-      "remark": "(5/7) 아트웍 미정",
+      "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-27",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -33334,10 +34166,11 @@ const DASHBOARD = {
       "cn_rdd": "2026-06-14",
       "transit_days": 2,
       "courier": "",
-      "remark": "(5/7) 아트웍 미정",
+      "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-27",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -33374,10 +34207,11 @@ const DASHBOARD = {
       "cn_rdd": "2026-06-14",
       "transit_days": 2,
       "courier": "",
-      "remark": "(5/7) 아트웍 미정",
+      "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-27",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -33414,10 +34248,11 @@ const DASHBOARD = {
       "cn_rdd": "2026-06-14",
       "transit_days": 2,
       "courier": "",
-      "remark": "(5/7) 아트웍 미정",
+      "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-06-05",
       "is_na": false,
+      "is_drop": false,
       "phase": "2ND TS"
     },
     {
@@ -33454,10 +34289,11 @@ const DASHBOARD = {
       "cn_rdd": "2026-06-14",
       "transit_days": 2,
       "courier": "",
-      "remark": "(5/7) 아트웍 미정",
+      "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-06-05",
       "is_na": false,
+      "is_drop": false,
       "phase": "2ND TS"
     },
     {
@@ -33494,10 +34330,11 @@ const DASHBOARD = {
       "cn_rdd": "2026-06-14",
       "transit_days": 2,
       "courier": "",
-      "remark": "(5/7) 아트웍 미정",
+      "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-06-05",
       "is_na": false,
+      "is_drop": false,
       "phase": "2ND TS"
     },
     {
@@ -33538,6 +34375,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-04-28",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -33578,6 +34416,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-04-28",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -33618,6 +34457,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-04-28",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -33658,6 +34498,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-05-27",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -33698,6 +34539,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-05-27",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -33734,10 +34576,11 @@ const DASHBOARD = {
       "cn_rdd": "2026-06-14",
       "transit_days": 2,
       "courier": "",
-      "remark": "(5/7) 아트웍 미정",
+      "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-27",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -33774,10 +34617,11 @@ const DASHBOARD = {
       "cn_rdd": "2026-06-14",
       "transit_days": 2,
       "courier": "",
-      "remark": "(5/7) 아트웍 미정",
+      "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-27",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -33814,10 +34658,11 @@ const DASHBOARD = {
       "cn_rdd": "2026-06-14",
       "transit_days": 2,
       "courier": "",
-      "remark": "(5/7) 아트웍 미정",
+      "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-04-24",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -33854,10 +34699,11 @@ const DASHBOARD = {
       "cn_rdd": "2026-06-14",
       "transit_days": 2,
       "courier": "",
-      "remark": "(5/7) 아트웍 미정",
+      "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-27",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -33894,10 +34740,11 @@ const DASHBOARD = {
       "cn_rdd": "2026-06-14",
       "transit_days": 2,
       "courier": "",
-      "remark": "(5/7) 아트웍 미정",
+      "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-04-24",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -33934,10 +34781,11 @@ const DASHBOARD = {
       "cn_rdd": "2026-06-14",
       "transit_days": 2,
       "courier": "",
-      "remark": "(5/7) 아트웍 미정",
+      "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-27",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -33974,10 +34822,11 @@ const DASHBOARD = {
       "cn_rdd": "2026-06-14",
       "transit_days": 2,
       "courier": "",
-      "remark": "(5/7) 아트웍 미정",
+      "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-27",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -34014,10 +34863,11 @@ const DASHBOARD = {
       "cn_rdd": "2026-06-14",
       "transit_days": 2,
       "courier": "",
-      "remark": "(5/7) 아트웍 미정",
+      "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-04-27",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -34054,10 +34904,11 @@ const DASHBOARD = {
       "cn_rdd": "2026-06-14",
       "transit_days": 2,
       "courier": "",
-      "remark": "(5/7) 아트웍 미정",
+      "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-04-27",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -34094,10 +34945,11 @@ const DASHBOARD = {
       "cn_rdd": "2026-06-14",
       "transit_days": 2,
       "courier": "",
-      "remark": "(5/7) 아트웍 미정",
+      "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-27",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -34134,10 +34986,11 @@ const DASHBOARD = {
       "cn_rdd": "2026-06-14",
       "transit_days": 2,
       "courier": "",
-      "remark": "(5/7) 아트웍 미정",
+      "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-04-27",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -34174,10 +35027,11 @@ const DASHBOARD = {
       "cn_rdd": "2026-06-14",
       "transit_days": 2,
       "courier": "",
-      "remark": "(5/7) 아트웍 미정",
+      "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-04-27",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -34214,10 +35068,11 @@ const DASHBOARD = {
       "cn_rdd": "2026-06-14",
       "transit_days": 2,
       "courier": "",
-      "remark": "(5/7) 아트웍 미정",
+      "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-27",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -34254,10 +35109,11 @@ const DASHBOARD = {
       "cn_rdd": "2026-06-14",
       "transit_days": 2,
       "courier": "",
-      "remark": "(5/7) 아트웍 미정",
+      "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-27",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -34294,10 +35150,11 @@ const DASHBOARD = {
       "cn_rdd": "2026-06-14",
       "transit_days": 2,
       "courier": "",
-      "remark": "(5/7) 아트웍 미정",
+      "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-04-27",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -34334,10 +35191,11 @@ const DASHBOARD = {
       "cn_rdd": "2026-06-14",
       "transit_days": 2,
       "courier": "",
-      "remark": "(5/7) 아트웍 미정",
+      "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-27",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -34374,10 +35232,11 @@ const DASHBOARD = {
       "cn_rdd": "2026-06-14",
       "transit_days": 2,
       "courier": "",
-      "remark": "(5/7) 아트웍 미정",
+      "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-04-27",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -34414,10 +35273,11 @@ const DASHBOARD = {
       "cn_rdd": "2026-06-14",
       "transit_days": 2,
       "courier": "",
-      "remark": "(5/7) 아트웍 미정",
+      "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-04-27",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -34447,17 +35307,18 @@ const DASHBOARD = {
       "cn_focus_pcs": 0,
       "kr_keep_pcs": 1,
       "cn_total_pcs": 3,
-      "kr_expected": "2026-06-15",
+      "kr_expected": "2026-07-08",
       "kr_actual": null,
-      "cn_etd": "2026-06-15",
+      "cn_etd": "2026-07-06",
       "cn_atd": null,
-      "cn_rdd": "2026-06-17",
+      "cn_rdd": "2026-07-08",
       "transit_days": 2,
       "courier": "",
-      "remark": "Fabric quality pending.",
-      "delay_reason": "소재미정",
+      "remark": "5/20 원단퀄리티 변경(확정 후 일정 업데이트 예정)",
+      "delay_reason": "원단 변경",
       "fabric_etd": "",
       "is_na": false,
+      "is_drop": false,
       "phase": "2ND TS"
     },
     {
@@ -34487,17 +35348,18 @@ const DASHBOARD = {
       "cn_focus_pcs": 0,
       "kr_keep_pcs": 1,
       "cn_total_pcs": 3,
-      "kr_expected": "2026-06-15",
+      "kr_expected": "2026-07-08",
       "kr_actual": null,
-      "cn_etd": "2026-06-15",
+      "cn_etd": "2026-07-06",
       "cn_atd": null,
-      "cn_rdd": "2026-06-17",
+      "cn_rdd": "2026-07-08",
       "transit_days": 2,
       "courier": "",
-      "remark": "Fabric quality pending.",
-      "delay_reason": "소재미정",
+      "remark": "5/20 원단퀄리티 변경(확정 후 일정 업데이트 예정)",
+      "delay_reason": "원단 변경",
       "fabric_etd": "",
       "is_na": false,
+      "is_drop": false,
       "phase": "2ND TS"
     },
     {
@@ -34527,17 +35389,18 @@ const DASHBOARD = {
       "cn_focus_pcs": 0,
       "kr_keep_pcs": 1,
       "cn_total_pcs": 3,
-      "kr_expected": "2026-06-15",
+      "kr_expected": "2026-07-08",
       "kr_actual": null,
-      "cn_etd": "2026-06-15",
+      "cn_etd": "2026-07-06",
       "cn_atd": null,
-      "cn_rdd": "2026-06-17",
+      "cn_rdd": "2026-07-08",
       "transit_days": 2,
       "courier": "",
-      "remark": "Fabric quality pending.",
-      "delay_reason": "소재미정",
+      "remark": "5/20 원단퀄리티 변경(확정 후 일정 업데이트 예정)",
+      "delay_reason": "원단 변경",
       "fabric_etd": "",
       "is_na": false,
+      "is_drop": false,
       "phase": "2ND TS"
     },
     {
@@ -34574,10 +35437,11 @@ const DASHBOARD = {
       "cn_rdd": "2026-06-14",
       "transit_days": 2,
       "courier": "",
-      "remark": "(5/7) 아트웍 미정",
+      "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-06-05",
       "is_na": false,
+      "is_drop": false,
       "phase": "2ND TS"
     },
     {
@@ -34614,10 +35478,11 @@ const DASHBOARD = {
       "cn_rdd": "2026-06-14",
       "transit_days": 2,
       "courier": "",
-      "remark": "(5/7) 아트웍 미정",
+      "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-06-05",
       "is_na": false,
+      "is_drop": false,
       "phase": "2ND TS"
     },
     {
@@ -34654,10 +35519,11 @@ const DASHBOARD = {
       "cn_rdd": "2026-06-14",
       "transit_days": 2,
       "courier": "",
-      "remark": "(5/7) 아트웍 미정",
+      "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-06-05",
       "is_na": false,
+      "is_drop": false,
       "phase": "2ND TS"
     },
     {
@@ -34694,10 +35560,11 @@ const DASHBOARD = {
       "cn_rdd": "2026-06-14",
       "transit_days": 2,
       "courier": "",
-      "remark": "(5/7) 아트웍 미정",
+      "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-06-05",
       "is_na": false,
+      "is_drop": false,
       "phase": "2ND TS"
     },
     {
@@ -34738,6 +35605,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-04-28",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -34778,6 +35646,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-04-28",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -34818,6 +35687,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-04-28",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -34858,6 +35728,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-05-27",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -34898,6 +35769,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-04-28",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -34938,6 +35810,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-05-27",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -34978,6 +35851,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-05-27",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -35018,6 +35892,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-04-28",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -35058,6 +35933,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-04-28",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -35098,6 +35974,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-05-27",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -35134,10 +36011,11 @@ const DASHBOARD = {
       "cn_rdd": "2026-06-14",
       "transit_days": 2,
       "courier": "",
-      "remark": "(5/7) 아트웍 미정",
+      "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-27",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -35174,10 +36052,11 @@ const DASHBOARD = {
       "cn_rdd": "2026-06-14",
       "transit_days": 2,
       "courier": "",
-      "remark": "(5/7) 아트웍 미정",
+      "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-27",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -35214,10 +36093,11 @@ const DASHBOARD = {
       "cn_rdd": "2026-06-14",
       "transit_days": 2,
       "courier": "",
-      "remark": "(5/7) 아트웍 미정",
+      "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-04-27",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -35254,10 +36134,11 @@ const DASHBOARD = {
       "cn_rdd": "2026-06-14",
       "transit_days": 2,
       "courier": "",
-      "remark": "(5/7) 아트웍 미정",
+      "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-04-27",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -35294,10 +36175,11 @@ const DASHBOARD = {
       "cn_rdd": "2026-06-14",
       "transit_days": 2,
       "courier": "",
-      "remark": "(5/7) 아트웍 미정",
+      "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-04-27",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -35338,6 +36220,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-06-08",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -35378,6 +36261,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-06-08",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -35418,6 +36302,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-04-28",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -35458,6 +36343,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-04-28",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -35494,10 +36380,11 @@ const DASHBOARD = {
       "cn_rdd": "2026-06-14",
       "transit_days": 2,
       "courier": "",
-      "remark": "(5/7) 아트웍 미정",
+      "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-27",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -35534,10 +36421,11 @@ const DASHBOARD = {
       "cn_rdd": "2026-06-14",
       "transit_days": 2,
       "courier": "",
-      "remark": "(5/7) 아트웍 미정",
+      "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-04-27",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -35574,10 +36462,11 @@ const DASHBOARD = {
       "cn_rdd": "2026-06-14",
       "transit_days": 2,
       "courier": "",
-      "remark": "(5/7) 아트웍 미정",
+      "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-27",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -35614,10 +36503,11 @@ const DASHBOARD = {
       "cn_rdd": "2026-06-14",
       "transit_days": 2,
       "courier": "",
-      "remark": "(5/7) 아트웍 미정",
+      "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-27",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -35654,10 +36544,11 @@ const DASHBOARD = {
       "cn_rdd": "2026-06-14",
       "transit_days": 2,
       "courier": "",
-      "remark": "(5/7) 아트웍 미정",
+      "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-27",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -35694,10 +36585,11 @@ const DASHBOARD = {
       "cn_rdd": "2026-06-14",
       "transit_days": 2,
       "courier": "",
-      "remark": "(5/7) 아트웍 미정",
+      "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-27",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -35734,10 +36626,11 @@ const DASHBOARD = {
       "cn_rdd": "2026-06-14",
       "transit_days": 2,
       "courier": "",
-      "remark": "(5/7) 아트웍 미정",
+      "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-27",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -35774,10 +36667,11 @@ const DASHBOARD = {
       "cn_rdd": "2026-06-14",
       "transit_days": 2,
       "courier": "",
-      "remark": "(5/7) 아트웍 미정",
+      "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-27",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -35818,6 +36712,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -35858,6 +36753,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -35898,6 +36794,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -35938,6 +36835,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-04-28",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -35978,6 +36876,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -36018,6 +36917,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-04-28",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -36058,6 +36958,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -36098,6 +36999,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -36134,10 +37036,11 @@ const DASHBOARD = {
       "cn_rdd": "2026-06-14",
       "transit_days": 2,
       "courier": "",
-      "remark": "(5/7) 아트웍 미정",
+      "remark": "",
       "delay_reason": "",
       "fabric_etd": "",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -36174,10 +37077,11 @@ const DASHBOARD = {
       "cn_rdd": "2026-06-14",
       "transit_days": 2,
       "courier": "",
-      "remark": "(5/7) 아트웍 미정",
+      "remark": "",
       "delay_reason": "",
       "fabric_etd": "",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -36214,10 +37118,11 @@ const DASHBOARD = {
       "cn_rdd": "2026-06-14",
       "transit_days": 2,
       "courier": "",
-      "remark": "(5/7) 아트웍 미정",
+      "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-04-27",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -36254,10 +37159,11 @@ const DASHBOARD = {
       "cn_rdd": "2026-06-14",
       "transit_days": 2,
       "courier": "",
-      "remark": "(5/7) 아트웍 미정",
+      "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-04-27",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -36298,6 +37204,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-05-27",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -36338,6 +37245,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-04-28",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -36378,6 +37286,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-04-28",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -36418,6 +37327,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-05-27",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -36458,6 +37368,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-04-28",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -36498,6 +37409,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-04-28",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -36538,6 +37450,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-04-28",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -36578,6 +37491,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-04-18",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -36618,6 +37532,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-04-30",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -36658,6 +37573,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-04-30",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -36698,6 +37614,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-05-27",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -36738,6 +37655,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-05-27",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -36778,6 +37696,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-05-27",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -36818,6 +37737,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-05-27",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -36858,6 +37778,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-05-27",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -36898,6 +37819,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-05-27",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -36938,6 +37860,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-05-27",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -36978,6 +37901,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-05-27",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -37018,6 +37942,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-05-27",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -37058,6 +37983,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-05-27",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -37098,6 +38024,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-04-28",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -37138,6 +38065,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-04-28",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -37178,6 +38106,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-04-28",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -37218,6 +38147,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-05-27",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -37254,10 +38184,11 @@ const DASHBOARD = {
       "cn_rdd": "2026-06-14",
       "transit_days": 2,
       "courier": "",
-      "remark": "(5/7) 아트웍 미정",
+      "remark": "",
       "delay_reason": "",
       "fabric_etd": "",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -37294,10 +38225,11 @@ const DASHBOARD = {
       "cn_rdd": "2026-06-14",
       "transit_days": 2,
       "courier": "",
-      "remark": "(5/7) 아트웍 미정",
+      "remark": "",
       "delay_reason": "",
       "fabric_etd": "",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -37334,10 +38266,11 @@ const DASHBOARD = {
       "cn_rdd": "2026-06-14",
       "transit_days": 2,
       "courier": "",
-      "remark": "(5/7)\n1) 컬러코드 50SBS 되어야 함\n2) 아트웍 미정",
+      "remark": "",
       "delay_reason": "",
       "fabric_etd": "",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -37378,6 +38311,7 @@ const DASHBOARD = {
       "delay_reason": "원단 지연",
       "fabric_etd": "2026-04-25",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -37418,6 +38352,7 @@ const DASHBOARD = {
       "delay_reason": "원단 지연",
       "fabric_etd": "2026-04-25",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -37458,6 +38393,7 @@ const DASHBOARD = {
       "delay_reason": "원단 지연",
       "fabric_etd": "2026-04-25",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -37498,6 +38434,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-04-28",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -37538,6 +38475,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-05-27",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -37578,6 +38516,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-05-27",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -37618,6 +38557,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-04-28",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -37658,6 +38598,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-04-28",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -37698,6 +38639,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-05-27",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -37738,6 +38680,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-05-27",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -37778,6 +38721,7 @@ const DASHBOARD = {
       "delay_reason": "원단 지연",
       "fabric_etd": "2026-04-25",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -37818,6 +38762,7 @@ const DASHBOARD = {
       "delay_reason": "원단 지연",
       "fabric_etd": "2026-04-25",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -37858,6 +38803,7 @@ const DASHBOARD = {
       "delay_reason": "원단 지연",
       "fabric_etd": "2026-04-25",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -37898,6 +38844,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-04-28",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -37938,6 +38885,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-04-28",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -37978,6 +38926,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-05-27",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -38018,6 +38967,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-04-28",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -38058,6 +39008,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-05-27",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -38094,10 +39045,11 @@ const DASHBOARD = {
       "cn_rdd": "2026-06-14",
       "transit_days": 2,
       "courier": "",
-      "remark": "(5/7) 아트웍 미정",
+      "remark": "",
       "delay_reason": "",
       "fabric_etd": "",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -38134,10 +39086,11 @@ const DASHBOARD = {
       "cn_rdd": "2026-06-14",
       "transit_days": 2,
       "courier": "",
-      "remark": "(5/7) 아트웍 미정",
+      "remark": "",
       "delay_reason": "",
       "fabric_etd": "",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -38167,17 +39120,18 @@ const DASHBOARD = {
       "cn_focus_pcs": 0,
       "kr_keep_pcs": 1,
       "cn_total_pcs": 4,
-      "kr_expected": "2026-06-12",
+      "kr_expected": "2026-06-19",
       "kr_actual": null,
-      "cn_etd": "2026-06-12",
+      "cn_etd": "2026-06-18",
       "cn_atd": null,
-      "cn_rdd": "2026-06-17",
+      "cn_rdd": "2026-06-23",
       "transit_days": 0,
       "courier": "",
-      "remark": "",
+      "remark": "바디편직이슈 몸판6/9 리쁘 6/12 ETD 예상",
       "delay_reason": "",
       "fabric_etd": "2026-05-28",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -38207,17 +39161,18 @@ const DASHBOARD = {
       "cn_focus_pcs": 1,
       "kr_keep_pcs": 1,
       "cn_total_pcs": 5,
-      "kr_expected": "2026-06-12",
+      "kr_expected": "2026-06-19",
       "kr_actual": null,
-      "cn_etd": "2026-06-12",
+      "cn_etd": "2026-06-18",
       "cn_atd": null,
-      "cn_rdd": "2026-06-17",
+      "cn_rdd": "2026-06-23",
       "transit_days": 0,
       "courier": "",
-      "remark": "",
+      "remark": "바디편직이슈 몸판6/9 리쁘 6/12 ETD 예상",
       "delay_reason": "",
       "fabric_etd": "2026-05-28",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -38247,17 +39202,18 @@ const DASHBOARD = {
       "cn_focus_pcs": 1,
       "kr_keep_pcs": 1,
       "cn_total_pcs": 5,
-      "kr_expected": "2026-06-12",
+      "kr_expected": "2026-06-19",
       "kr_actual": null,
-      "cn_etd": "2026-06-12",
+      "cn_etd": "2026-06-18",
       "cn_atd": null,
-      "cn_rdd": "2026-06-17",
+      "cn_rdd": "2026-06-23",
       "transit_days": 0,
       "courier": "",
-      "remark": "",
+      "remark": "바디편직이슈 몸판6/9 리쁘 6/12 ETD 예상",
       "delay_reason": "",
       "fabric_etd": "2026-05-28",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -38298,6 +39254,7 @@ const DASHBOARD = {
       "delay_reason": "원단 지연",
       "fabric_etd": "2026-05-28",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -38338,6 +39295,7 @@ const DASHBOARD = {
       "delay_reason": "원단 지연",
       "fabric_etd": "2026-05-28",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -38374,10 +39332,11 @@ const DASHBOARD = {
       "cn_rdd": "2026-06-14",
       "transit_days": 2,
       "courier": "",
-      "remark": "(5/7) 아트웍 미정",
+      "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-27",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -38414,10 +39373,11 @@ const DASHBOARD = {
       "cn_rdd": "2026-06-14",
       "transit_days": 2,
       "courier": "",
-      "remark": "(5/7) 아트웍 미정",
+      "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-27",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -38458,6 +39418,7 @@ const DASHBOARD = {
       "delay_reason": "원단 지연",
       "fabric_etd": "2026-05-28",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -38498,6 +39459,7 @@ const DASHBOARD = {
       "delay_reason": "원단 지연",
       "fabric_etd": "2026-05-28",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -38538,6 +39500,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-04-24",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -38578,6 +39541,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-05-27",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -38618,6 +39582,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -38658,6 +39623,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-04-30",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -38698,6 +39664,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-04-30",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -38738,6 +39705,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-04-30",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -38778,6 +39746,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-05-28",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -38818,6 +39787,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-05-28",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -38858,6 +39828,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-04-30",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -38898,6 +39869,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-04-30",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -38938,6 +39910,7 @@ const DASHBOARD = {
       "delay_reason": "원단 지연",
       "fabric_etd": "2026-05-28",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -38978,6 +39951,7 @@ const DASHBOARD = {
       "delay_reason": "원단 지연",
       "fabric_etd": "2026-05-28",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -39018,6 +39992,7 @@ const DASHBOARD = {
       "delay_reason": "원단 지연",
       "fabric_etd": "2026-05-28",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -39058,6 +40033,7 @@ const DASHBOARD = {
       "delay_reason": "원단 지연",
       "fabric_etd": "2026-05-28",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -39098,6 +40074,7 @@ const DASHBOARD = {
       "delay_reason": "원단 지연",
       "fabric_etd": "2026-05-28",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -39138,6 +40115,7 @@ const DASHBOARD = {
       "delay_reason": "원단 지연",
       "fabric_etd": "2026-05-28",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -39178,6 +40156,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-05-28",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -39218,6 +40197,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-05-28",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -39258,6 +40238,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-05-28",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -39298,6 +40279,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-05-27",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -39338,6 +40320,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-05-27",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -39378,6 +40361,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-05-27",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -39418,6 +40402,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-05-28",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -39458,6 +40443,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-05-28",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -39498,6 +40484,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-05-28",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -39538,6 +40525,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -39578,6 +40566,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -39618,6 +40607,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -39658,6 +40648,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-05-27",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -39698,6 +40689,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-04-28",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -39738,6 +40730,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-04-28",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -39778,6 +40771,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-05-27",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -39818,6 +40812,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-05-27",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -39858,6 +40853,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-04-25",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -39898,6 +40894,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -39938,6 +40935,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-05-27",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -39978,6 +40976,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-05-27",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -40018,6 +41017,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-05-27",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -40058,6 +41058,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-05-27",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -40098,6 +41099,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-05-27",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -40138,6 +41140,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-05-28",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -40178,6 +41181,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-05-28",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -40218,6 +41222,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-04-24",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -40258,6 +41263,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-04-24",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -40298,6 +41304,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -40338,6 +41345,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-05-27",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -40378,6 +41386,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-04-28",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -40418,6 +41427,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-04-28",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -40458,6 +41468,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-04-28",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -40498,6 +41509,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -40538,6 +41550,7 @@ const DASHBOARD = {
       "delay_reason": "원단 지연",
       "fabric_etd": "2026-04-25",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -40578,6 +41591,7 @@ const DASHBOARD = {
       "delay_reason": "원단 지연",
       "fabric_etd": "",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -40618,6 +41632,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-04-28",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -40658,6 +41673,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-05-27",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -40698,6 +41714,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-05-27",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -40738,6 +41755,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-04-28",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -40774,10 +41792,11 @@ const DASHBOARD = {
       "cn_rdd": "2026-06-14",
       "transit_days": 2,
       "courier": "",
-      "remark": "(5/7) 아트웍 미정",
+      "remark": "",
       "delay_reason": "",
       "fabric_etd": "",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -40814,10 +41833,11 @@ const DASHBOARD = {
       "cn_rdd": "2026-06-14",
       "transit_days": 2,
       "courier": "",
-      "remark": "(5/7) 아트웍 미정",
+      "remark": "",
       "delay_reason": "",
       "fabric_etd": "",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -40858,6 +41878,7 @@ const DASHBOARD = {
       "delay_reason": "원단 지연",
       "fabric_etd": "2026-05-28",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -40898,6 +41919,7 @@ const DASHBOARD = {
       "delay_reason": "원단 지연",
       "fabric_etd": "2026-05-28",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -40938,6 +41960,7 @@ const DASHBOARD = {
       "delay_reason": "원단 지연",
       "fabric_etd": "2026-04-30",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -40978,6 +42001,7 @@ const DASHBOARD = {
       "delay_reason": "원단 지연",
       "fabric_etd": "2026-04-30",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -41018,6 +42042,7 @@ const DASHBOARD = {
       "delay_reason": "원단 지연",
       "fabric_etd": "2026-05-28",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -41058,6 +42083,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-04-30",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -41098,6 +42124,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-04-30",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -41138,6 +42165,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-05-28",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -41178,6 +42206,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-05-28",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -41218,6 +42247,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-04-30",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -41258,6 +42288,7 @@ const DASHBOARD = {
       "delay_reason": "원단 지연",
       "fabric_etd": "2026-04-30",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -41298,6 +42329,7 @@ const DASHBOARD = {
       "delay_reason": "원단 지연",
       "fabric_etd": "2026-04-30",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -41338,6 +42370,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-04-28",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -41378,6 +42411,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-04-28",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -41418,6 +42452,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-05-27",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -41458,6 +42493,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-05-27",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -41498,6 +42534,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-04-28",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -41538,6 +42575,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-05-28",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -41578,6 +42616,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-05-28",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -41618,6 +42657,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-05-27",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -41658,6 +42698,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-05-27",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -41698,6 +42739,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-05-27",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -41738,6 +42780,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-05-27",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -41778,6 +42821,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-05-27",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -41818,6 +42862,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-04-28",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -41858,6 +42903,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-05-27",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -41898,6 +42944,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-05-27",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -41938,6 +42985,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-04-28",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -41974,10 +43022,11 @@ const DASHBOARD = {
       "cn_rdd": "2026-06-14",
       "transit_days": 2,
       "courier": "",
-      "remark": "(5/7) 아트웍 미정",
+      "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-04-24",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -42014,10 +43063,11 @@ const DASHBOARD = {
       "cn_rdd": "2026-06-14",
       "transit_days": 2,
       "courier": "",
-      "remark": "(5/7) 아트웍 미정",
+      "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-04-24",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -42054,10 +43104,11 @@ const DASHBOARD = {
       "cn_rdd": "2026-06-14",
       "transit_days": 2,
       "courier": "",
-      "remark": "(5/7) 아트웍 미정",
+      "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-04-24",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -42098,6 +43149,7 @@ const DASHBOARD = {
       "delay_reason": "원단 지연",
       "fabric_etd": "2026-05-28",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -42138,6 +43190,7 @@ const DASHBOARD = {
       "delay_reason": "원단 지연",
       "fabric_etd": "2026-05-28",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -42178,6 +43231,7 @@ const DASHBOARD = {
       "delay_reason": "원단 지연",
       "fabric_etd": "2026-05-28",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -42218,6 +43272,7 @@ const DASHBOARD = {
       "delay_reason": "원단 지연",
       "fabric_etd": "2026-05-28",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -42258,6 +43313,7 @@ const DASHBOARD = {
       "delay_reason": "원단 지연",
       "fabric_etd": "2026-05-28",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -42298,6 +43354,7 @@ const DASHBOARD = {
       "delay_reason": "원단 지연",
       "fabric_etd": "2026-05-28",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -42338,6 +43395,7 @@ const DASHBOARD = {
       "delay_reason": "원단 지연",
       "fabric_etd": "2026-05-28",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -42374,10 +43432,11 @@ const DASHBOARD = {
       "cn_rdd": "2026-06-14",
       "transit_days": 2,
       "courier": "",
-      "remark": "(5/7) 아트웍 미정",
+      "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-04-24",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -42414,10 +43473,11 @@ const DASHBOARD = {
       "cn_rdd": "2026-06-14",
       "transit_days": 2,
       "courier": "",
-      "remark": "(5/7) 아트웍 미정",
+      "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-04-24",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -42454,10 +43514,11 @@ const DASHBOARD = {
       "cn_rdd": "2026-06-14",
       "transit_days": 2,
       "courier": "",
-      "remark": "(5/7) 아트웍 미정",
+      "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-27",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -42494,10 +43555,11 @@ const DASHBOARD = {
       "cn_rdd": "2026-06-14",
       "transit_days": 2,
       "courier": "",
-      "remark": "(5/7) 아트웍 미정",
+      "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-27",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -42534,10 +43596,11 @@ const DASHBOARD = {
       "cn_rdd": "2026-06-14",
       "transit_days": 2,
       "courier": "",
-      "remark": "(5/7) 아트웍 미정",
+      "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-27",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -42574,10 +43637,11 @@ const DASHBOARD = {
       "cn_rdd": "2026-06-14",
       "transit_days": 2,
       "courier": "",
-      "remark": "(5/7) 아트웍 미정",
+      "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-27",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -42618,6 +43682,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-04-30",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -42658,6 +43723,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-04-30",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -42698,6 +43764,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-04-30",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -42738,6 +43805,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-04-30",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -42778,6 +43846,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-04-30",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -42818,6 +43887,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-05-11",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -42858,6 +43928,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-04-30",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -42898,6 +43969,7 @@ const DASHBOARD = {
       "delay_reason": "원단 지연",
       "fabric_etd": "2026-04-30",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -42938,6 +44010,7 @@ const DASHBOARD = {
       "delay_reason": "원단 지연",
       "fabric_etd": "2026-05-28",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -42974,10 +44047,11 @@ const DASHBOARD = {
       "cn_rdd": "2026-06-14",
       "transit_days": 2,
       "courier": "",
-      "remark": "(5/7) 아트웍 미정",
+      "remark": "",
       "delay_reason": "",
       "fabric_etd": "",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -43014,10 +44088,11 @@ const DASHBOARD = {
       "cn_rdd": "2026-06-14",
       "transit_days": 2,
       "courier": "",
-      "remark": "(5/7) 아트웍 미정",
+      "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-04-24",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -43054,10 +44129,11 @@ const DASHBOARD = {
       "cn_rdd": "2026-06-14",
       "transit_days": 2,
       "courier": "",
-      "remark": "(5/7) 아트웍 미정",
+      "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-27",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -43098,6 +44174,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-05-20",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -43138,6 +44215,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-04-30",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -43178,6 +44256,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-05-28",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -43218,6 +44297,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-05-28",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -43258,6 +44338,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-04-30",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -43298,6 +44379,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-05-28",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -43338,6 +44420,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-05-28",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -43378,6 +44461,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-05-28",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -43418,6 +44502,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-05-28",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -43454,10 +44539,11 @@ const DASHBOARD = {
       "cn_rdd": "2026-06-14",
       "transit_days": 2,
       "courier": "",
-      "remark": "(5/7) 아트웍 미정",
+      "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-27",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -43494,10 +44580,11 @@ const DASHBOARD = {
       "cn_rdd": "2026-06-14",
       "transit_days": 2,
       "courier": "",
-      "remark": "(5/7) 아트웍 미정",
+      "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-27",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -43534,10 +44621,11 @@ const DASHBOARD = {
       "cn_rdd": "2026-06-14",
       "transit_days": 2,
       "courier": "",
-      "remark": "(5/7) 아트웍 미정",
+      "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-27",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -43574,10 +44662,11 @@ const DASHBOARD = {
       "cn_rdd": "2026-06-14",
       "transit_days": 2,
       "courier": "",
-      "remark": "(5/7) 아트웍 미정",
+      "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-27",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -43614,10 +44703,11 @@ const DASHBOARD = {
       "cn_rdd": "2026-06-14",
       "transit_days": 2,
       "courier": "",
-      "remark": "(5/7) 아트웍 미정",
+      "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-27",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -43658,6 +44748,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-05-28",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -43698,6 +44789,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-05-28",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -43738,6 +44830,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-05-28",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -43778,6 +44871,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-05-28",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -43818,6 +44912,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-05-28",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -43858,6 +44953,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-05-28",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -43898,6 +44994,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-05-28",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -43938,6 +45035,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-04-25",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -43978,6 +45076,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-05-28",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -44018,6 +45117,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-04-30",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -44058,6 +45158,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -44098,6 +45199,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-04-25",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -44138,6 +45240,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-04-18",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -44178,6 +45281,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-05-28",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -44218,6 +45322,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -44258,6 +45363,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-04-28",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -44298,6 +45404,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-04-28",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -44338,6 +45445,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-04-28",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -44378,6 +45486,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-04-28",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -44418,6 +45527,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-05-27",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -44458,6 +45568,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-04-28",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -44498,6 +45609,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-05-27",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -44538,6 +45650,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-05-27",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -44578,6 +45691,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-04-28",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -44618,6 +45732,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-05-17",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -44658,6 +45773,7 @@ const DASHBOARD = {
       "delay_reason": "원단 지연",
       "fabric_etd": "2026-04-20",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -44698,6 +45814,7 @@ const DASHBOARD = {
       "delay_reason": "원단 지연",
       "fabric_etd": "2026-04-17",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -44738,6 +45855,7 @@ const DASHBOARD = {
       "delay_reason": "원단 지연",
       "fabric_etd": "2026-04-20",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -44778,6 +45896,7 @@ const DASHBOARD = {
       "delay_reason": "원단 지연",
       "fabric_etd": "2026-04-17",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -44814,10 +45933,11 @@ const DASHBOARD = {
       "cn_rdd": "2026-06-14",
       "transit_days": 2,
       "courier": "",
-      "remark": "(5/7) 아트웍 미정",
+      "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-04-24",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -44854,10 +45974,11 @@ const DASHBOARD = {
       "cn_rdd": "2026-06-14",
       "transit_days": 2,
       "courier": "",
-      "remark": "(5/7) 아트웍 미정",
+      "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-27",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -44898,6 +46019,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-04-28",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -44938,6 +46060,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-04-28",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -44978,6 +46101,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-04-18",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -45018,6 +46142,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-04-25",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -45058,6 +46183,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-04-28",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -45098,6 +46224,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-04-28",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -45138,6 +46265,7 @@ const DASHBOARD = {
       "delay_reason": "원단 지연",
       "fabric_etd": "2026-04-25",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -45178,6 +46306,7 @@ const DASHBOARD = {
       "delay_reason": "원단 지연",
       "fabric_etd": "2026-04-25",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -45218,6 +46347,7 @@ const DASHBOARD = {
       "delay_reason": "원단 지연",
       "fabric_etd": "2026-05-28",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -45258,6 +46388,7 @@ const DASHBOARD = {
       "delay_reason": "원단 지연",
       "fabric_etd": "2026-05-28",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -45298,6 +46429,7 @@ const DASHBOARD = {
       "delay_reason": "원단 지연",
       "fabric_etd": "2026-05-28",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -45338,6 +46470,7 @@ const DASHBOARD = {
       "delay_reason": "원단 지연",
       "fabric_etd": "2026-05-28",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -45378,6 +46511,7 @@ const DASHBOARD = {
       "delay_reason": "원단 지연",
       "fabric_etd": "2026-05-28",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -45418,6 +46552,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-05-28",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -45458,6 +46593,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-05-28",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -45494,10 +46630,11 @@ const DASHBOARD = {
       "cn_rdd": "2026-06-14",
       "transit_days": 2,
       "courier": "",
-      "remark": "(5/7) 아트웍 미정",
+      "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-27",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -45534,10 +46671,11 @@ const DASHBOARD = {
       "cn_rdd": "2026-06-14",
       "transit_days": 2,
       "courier": "",
-      "remark": "(5/7) 아트웍 미정",
+      "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-27",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -45574,10 +46712,11 @@ const DASHBOARD = {
       "cn_rdd": "2026-06-14",
       "transit_days": 2,
       "courier": "",
-      "remark": "(5/7) 아트웍 미정",
+      "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-27",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -45614,10 +46753,11 @@ const DASHBOARD = {
       "cn_rdd": "2026-06-14",
       "transit_days": 2,
       "courier": "",
-      "remark": "(5/7) 아트웍 미정",
+      "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-27",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -45658,6 +46798,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-05-20",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -45698,6 +46839,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-05-20",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -45738,6 +46880,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-05-20",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -45778,6 +46921,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-04-30",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -45818,6 +46962,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-05-20",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -45858,6 +47003,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-05-28",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -45898,6 +47044,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-04-30",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -45938,6 +47085,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-04-30",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -45978,6 +47126,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-05-28",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -46018,6 +47167,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-05-27",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -46058,6 +47208,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-05-27",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -46098,6 +47249,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-05-27",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -46138,6 +47290,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-04-30",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -46178,6 +47331,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-05-11",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -46218,6 +47372,7 @@ const DASHBOARD = {
       "delay_reason": "원단 지연",
       "fabric_etd": "2026-04-30",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -46258,6 +47413,7 @@ const DASHBOARD = {
       "delay_reason": "원단 지연",
       "fabric_etd": "2026-05-28",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -46298,6 +47454,7 @@ const DASHBOARD = {
       "delay_reason": "원단 지연",
       "fabric_etd": "",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -46338,6 +47495,7 @@ const DASHBOARD = {
       "delay_reason": "원단 지연",
       "fabric_etd": "2026-04-18",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -46378,6 +47536,7 @@ const DASHBOARD = {
       "delay_reason": "원단 지연",
       "fabric_etd": "2026-04-18",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -46418,6 +47577,7 @@ const DASHBOARD = {
       "delay_reason": "원단 지연",
       "fabric_etd": "2026-04-28",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -46458,6 +47618,7 @@ const DASHBOARD = {
       "delay_reason": "원단 지연",
       "fabric_etd": "2026-05-28",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -46498,6 +47659,7 @@ const DASHBOARD = {
       "delay_reason": "원단 지연",
       "fabric_etd": "2026-04-25",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -46538,6 +47700,7 @@ const DASHBOARD = {
       "delay_reason": "원단 지연",
       "fabric_etd": "2026-04-28",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -46578,6 +47741,7 @@ const DASHBOARD = {
       "delay_reason": "원단 지연",
       "fabric_etd": "2026-05-28",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -46618,6 +47782,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-04-17",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -46658,6 +47823,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-05-20",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -46698,6 +47864,7 @@ const DASHBOARD = {
       "delay_reason": "원단 지연",
       "fabric_etd": "2026-04-27",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -46738,6 +47905,7 @@ const DASHBOARD = {
       "delay_reason": "원단 지연",
       "fabric_etd": "2026-05-28",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -46778,6 +47946,7 @@ const DASHBOARD = {
       "delay_reason": "원단 지연",
       "fabric_etd": "2026-04-27",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -46818,6 +47987,7 @@ const DASHBOARD = {
       "delay_reason": "원단 지연",
       "fabric_etd": "2026-04-27",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -46858,6 +48028,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-04-24",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -46898,6 +48069,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-04-24",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -46938,6 +48110,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-05-27",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -46978,6 +48151,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-05-27",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -47018,6 +48192,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-05-27",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -47058,6 +48233,7 @@ const DASHBOARD = {
       "delay_reason": "원단 지연",
       "fabric_etd": "",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -47098,6 +48274,7 @@ const DASHBOARD = {
       "delay_reason": "원단 지연",
       "fabric_etd": "2026-05-28",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -47138,6 +48315,7 @@ const DASHBOARD = {
       "delay_reason": "원단 지연",
       "fabric_etd": "2026-05-28",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -47178,6 +48356,7 @@ const DASHBOARD = {
       "delay_reason": "원단 지연",
       "fabric_etd": "2026-05-28",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -47218,6 +48397,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-05-28",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -47258,6 +48438,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-05-28",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -47298,6 +48479,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-05-28",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -47338,6 +48520,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-05-28",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -47378,6 +48561,7 @@ const DASHBOARD = {
       "delay_reason": "원단 지연",
       "fabric_etd": "2026-05-28",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -47418,6 +48602,7 @@ const DASHBOARD = {
       "delay_reason": "원단 지연",
       "fabric_etd": "2026-05-28",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -47458,6 +48643,7 @@ const DASHBOARD = {
       "delay_reason": "원단 지연",
       "fabric_etd": "2026-05-28",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -47498,6 +48684,7 @@ const DASHBOARD = {
       "delay_reason": "원단 지연",
       "fabric_etd": "2026-05-28",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -47538,6 +48725,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-05-28",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -47578,6 +48766,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-05-28",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -47618,6 +48807,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-05-28",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -47658,6 +48848,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-04-30",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -47698,6 +48889,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-05-28",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -47738,6 +48930,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-05-28",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -47778,6 +48971,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-04-28",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -47818,6 +49012,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-04-28",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -47858,6 +49053,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-04-28",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -47898,6 +49094,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-05-17",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -47938,6 +49135,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-05-28",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -47978,6 +49176,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-04-28",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -48018,6 +49217,7 @@ const DASHBOARD = {
       "delay_reason": "원단 지연",
       "fabric_etd": "2026-04-20",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -48058,6 +49258,7 @@ const DASHBOARD = {
       "delay_reason": "원단 지연",
       "fabric_etd": "2026-04-17",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -48098,6 +49299,7 @@ const DASHBOARD = {
       "delay_reason": "원단 지연",
       "fabric_etd": "2026-04-17",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -48138,6 +49340,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-04-30",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -48178,6 +49381,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-04-30",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -48218,6 +49422,7 @@ const DASHBOARD = {
       "delay_reason": "원단 지연",
       "fabric_etd": "2026-04-25",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -48258,6 +49463,7 @@ const DASHBOARD = {
       "delay_reason": "원단 지연",
       "fabric_etd": "2026-04-25",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -48298,6 +49504,7 @@ const DASHBOARD = {
       "delay_reason": "원단 지연",
       "fabric_etd": "2026-05-28",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -48338,6 +49545,7 @@ const DASHBOARD = {
       "delay_reason": "원단 지연",
       "fabric_etd": "2026-05-28",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -48378,6 +49586,7 @@ const DASHBOARD = {
       "delay_reason": "원단 지연",
       "fabric_etd": "2026-04-25",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -48418,6 +49627,7 @@ const DASHBOARD = {
       "delay_reason": "원단 지연",
       "fabric_etd": "2026-05-28",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -48458,6 +49668,7 @@ const DASHBOARD = {
       "delay_reason": "원단 지연",
       "fabric_etd": "2026-04-25",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -48498,6 +49709,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-04-25",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -48538,6 +49750,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-04-25",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -48578,6 +49791,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-05-27",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -48618,6 +49832,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-05-27",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -48658,6 +49873,7 @@ const DASHBOARD = {
       "delay_reason": "원단 지연",
       "fabric_etd": "2026-04-28",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -48698,6 +49914,7 @@ const DASHBOARD = {
       "delay_reason": "원단 지연",
       "fabric_etd": "2026-04-28",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -48738,6 +49955,7 @@ const DASHBOARD = {
       "delay_reason": "원단 지연",
       "fabric_etd": "2026-05-28",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -48778,6 +49996,7 @@ const DASHBOARD = {
       "delay_reason": "원단 지연",
       "fabric_etd": "2026-04-25",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -48818,6 +50037,7 @@ const DASHBOARD = {
       "delay_reason": "원단 지연",
       "fabric_etd": "",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -48858,6 +50078,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-05-27",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -48898,6 +50119,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-04-28",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -48938,6 +50160,7 @@ const DASHBOARD = {
       "delay_reason": "원단 지연",
       "fabric_etd": "",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -48978,6 +50201,7 @@ const DASHBOARD = {
       "delay_reason": "원단 지연",
       "fabric_etd": "2026-04-25",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -49018,6 +50242,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "",
       "is_na": false,
+      "is_drop": false,
       "phase": "2ND TS"
     },
     {
@@ -49058,6 +50283,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-06-05",
       "is_na": false,
+      "is_drop": false,
       "phase": "2ND TS"
     },
     {
@@ -49098,6 +50324,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-04-25",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -49138,6 +50365,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-04-18",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -49178,6 +50406,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-05-20",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -49218,6 +50447,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-05-20",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -49258,6 +50488,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-05-20",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -49298,6 +50529,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-05-20",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -49338,6 +50570,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-05-20",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -49378,6 +50611,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-04-30",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -49418,6 +50652,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-05-11",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -49458,6 +50693,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-04-28",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -49498,6 +50734,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-05-27",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -49538,6 +50775,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-04-28",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -49578,6 +50816,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-04-28",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -49618,6 +50857,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -49658,6 +50898,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-04-30",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -49698,6 +50939,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-04-30",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -49738,6 +50980,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-04-30",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -49778,6 +51021,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-05-28",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -49818,6 +51062,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-04-30",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -49858,6 +51103,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-04-30",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -49898,6 +51144,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-04-30",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -49938,6 +51185,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-05-28",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -49978,6 +51226,7 @@ const DASHBOARD = {
       "delay_reason": "원단 지연",
       "fabric_etd": "2026-04-28",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -50018,6 +51267,7 @@ const DASHBOARD = {
       "delay_reason": "원단 지연",
       "fabric_etd": "2026-05-28",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -50058,6 +51308,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-05-28",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -50098,6 +51349,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-05-28",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -50138,6 +51390,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-05-28",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -50167,17 +51420,18 @@ const DASHBOARD = {
       "cn_focus_pcs": 0,
       "kr_keep_pcs": 1,
       "cn_total_pcs": 4,
-      "kr_expected": "2026-06-12",
+      "kr_expected": "2026-06-15",
       "kr_actual": null,
-      "cn_etd": "2026-06-12",
+      "cn_etd": "2026-06-15",
       "cn_atd": null,
-      "cn_rdd": "2026-06-14",
+      "cn_rdd": "2026-06-17",
       "transit_days": 2,
       "courier": "",
-      "remark": "5/7: The sample fabric has not been received yet, and the color of the sample fabric has not been finally confirmed",
+      "remark": "5/11: The sample fabric has not been received yet, and the color of the sample fabric has not been finally confirmed",
       "delay_reason": "원단 지연",
       "fabric_etd": "2026-05-29",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -50218,6 +51472,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-04-30",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -50258,6 +51513,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-05-29",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -50298,6 +51554,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-04-23",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -50327,17 +51584,18 @@ const DASHBOARD = {
       "cn_focus_pcs": 1,
       "kr_keep_pcs": 1,
       "cn_total_pcs": 5,
-      "kr_expected": "2026-06-12",
+      "kr_expected": "2026-06-15",
       "kr_actual": null,
-      "cn_etd": "2026-06-12",
+      "cn_etd": "2026-06-15",
       "cn_atd": null,
-      "cn_rdd": "2026-06-14",
+      "cn_rdd": "2026-06-17",
       "transit_days": 2,
       "courier": "",
-      "remark": "5/7: The sample fabric has not been received yet, and the color of the sample fabric has not been finally confirmed",
+      "remark": "5/11: The sample fabric has not been received yet, and the color of the sample fabric has not been finally confirmed",
       "delay_reason": "원단 지연",
       "fabric_etd": "2026-05-29",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -50378,6 +51636,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-05-15",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -50418,6 +51677,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-04-30",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -50458,6 +51718,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-04-30",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -50498,6 +51759,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-05-07",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -50538,6 +51800,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-05-29",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -50578,6 +51841,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-05-29",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -50618,6 +51882,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-05-29",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -50658,6 +51923,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-04-30",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -50698,6 +51964,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-04-30",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -50738,6 +52005,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-05-29",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -50767,17 +52035,18 @@ const DASHBOARD = {
       "cn_focus_pcs": 0,
       "kr_keep_pcs": 1,
       "cn_total_pcs": 3,
-      "kr_expected": "2026-06-12",
+      "kr_expected": "2026-06-15",
       "kr_actual": null,
-      "cn_etd": "2026-06-12",
+      "cn_etd": "2026-06-15",
       "cn_atd": null,
-      "cn_rdd": "2026-06-14",
+      "cn_rdd": "2026-06-17",
       "transit_days": 2,
       "courier": "",
-      "remark": "5/7: The sample fabric has not been received yet, and the color of the sample fabric has not been finally confirmed ,Will received on 5/22",
+      "remark": "5/11: The sample fabric has not been received yet, and the color of the sample fabric has not been finally confirmed ,",
       "delay_reason": "원단 지연",
       "fabric_etd": "2026-05-29",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -50818,6 +52087,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-04-23",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -50858,6 +52128,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-05-29",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -50898,6 +52169,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-05-08",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -50938,6 +52210,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-04-23",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -50978,6 +52251,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-05-29",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -51018,6 +52292,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-05-29",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -51058,6 +52333,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-04-30",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -51098,6 +52374,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-04-30",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -51134,10 +52411,11 @@ const DASHBOARD = {
       "cn_rdd": "2026-06-17",
       "transit_days": 0,
       "courier": "",
-      "remark": "",
+      "remark": ">5/22 가봉 전달 예정",
       "delay_reason": "",
       "fabric_etd": "2026-05-08",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -51178,6 +52456,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-05-08",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -51207,17 +52486,18 @@ const DASHBOARD = {
       "cn_focus_pcs": 0,
       "kr_keep_pcs": 1,
       "cn_total_pcs": 3,
-      "kr_expected": "2026-06-19",
+      "kr_expected": "2026-06-15",
       "kr_actual": null,
-      "cn_etd": "2026-06-19",
+      "cn_etd": "2026-06-15",
       "cn_atd": null,
-      "cn_rdd": "2026-06-21",
+      "cn_rdd": "2026-06-17",
       "transit_days": 2,
       "courier": "",
-      "remark": "The fabric has not been confirmed yet, and the final T/P has not been received.\"",
+      "remark": "",
       "delay_reason": "원단 지연",
       "fabric_etd": "2026-05-29",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -51247,17 +52527,18 @@ const DASHBOARD = {
       "cn_focus_pcs": 0,
       "kr_keep_pcs": 1,
       "cn_total_pcs": 3,
-      "kr_expected": "2026-06-19",
+      "kr_expected": "2026-06-12",
       "kr_actual": null,
-      "cn_etd": "2026-06-19",
+      "cn_etd": "2026-06-12",
       "cn_atd": null,
-      "cn_rdd": "2026-06-21",
+      "cn_rdd": "2026-06-14",
       "transit_days": 2,
       "courier": "",
-      "remark": "The fabric has not been confirmed yet, and the final T/P has not been received.\"",
+      "remark": "5/11: The sample fabric has not been received yet, and the color of the sample fabric has not been finally confirmed ,",
       "delay_reason": "",
       "fabric_etd": "",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -51298,6 +52579,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-05-29",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -51338,6 +52620,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-04-22",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -51378,6 +52661,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-05-29",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -51418,6 +52702,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-04-22",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -51458,6 +52743,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-05-29",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -51498,6 +52784,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-05-29",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -51538,6 +52825,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-04-28",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -51578,6 +52866,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-05-29",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -51618,6 +52907,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-04-30",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -51658,6 +52948,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-04-30",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -51698,6 +52989,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-05-29",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -51738,6 +53030,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-05-29",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -51778,6 +53071,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-05-29",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -51818,6 +53112,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-05-07",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -51858,6 +53153,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-05-29",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -51898,6 +53194,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-04-30",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -51938,6 +53235,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-05-29",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -51978,6 +53276,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-05-29",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -52018,6 +53317,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-05-07",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -52058,6 +53358,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-04-23",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -52098,6 +53399,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-04-22",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -52138,6 +53440,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-04-30",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -52178,6 +53481,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-04-30",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -52192,7 +53496,7 @@ const DASHBOARD = {
       "sourcing": "양태영",
       "vendor": "티피나디아㈜",
       "vendor_en": "TP Nadia Co.,Ltd",
-      "co": "KR",
+      "co": "VN",
       "cn_invoice_rmb": 1065,
       "ttl_pcs": 5,
       "kr_pcs": 1,
@@ -52207,17 +53511,18 @@ const DASHBOARD = {
       "cn_focus_pcs": 1,
       "kr_keep_pcs": 1,
       "cn_total_pcs": 4,
-      "kr_expected": "2026-06-20",
+      "kr_expected": "2026-06-24",
       "kr_actual": null,
       "cn_etd": "2026-06-23",
       "cn_atd": null,
       "cn_rdd": "2026-06-28",
-      "transit_days": 0,
+      "transit_days": 5,
       "courier": "",
-      "remark": "",
+      "remark": "원단 예정 발송일 5/25, 재 샘플 진행 후 수주샘플 진행으로 2차 품평회 입고",
       "delay_reason": "",
       "fabric_etd": "2026-05-29",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -52232,7 +53537,7 @@ const DASHBOARD = {
       "sourcing": "양태영",
       "vendor": "티피나디아㈜",
       "vendor_en": "TP Nadia Co.,Ltd",
-      "co": "KR",
+      "co": "VN",
       "cn_invoice_rmb": 1065,
       "ttl_pcs": 5,
       "kr_pcs": 1,
@@ -52247,17 +53552,18 @@ const DASHBOARD = {
       "cn_focus_pcs": 1,
       "kr_keep_pcs": 1,
       "cn_total_pcs": 4,
-      "kr_expected": "2026-06-20",
+      "kr_expected": "2026-06-24",
       "kr_actual": null,
       "cn_etd": "2026-06-23",
       "cn_atd": null,
       "cn_rdd": "2026-06-28",
-      "transit_days": 0,
+      "transit_days": 5,
       "courier": "",
-      "remark": "",
+      "remark": "원단 예정 발송일 5/25, 재 샘플 진행 후 수주샘플 진행으로 2차 품평회 입고",
       "delay_reason": "",
       "fabric_etd": "2026-05-29",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -52272,7 +53578,7 @@ const DASHBOARD = {
       "sourcing": "양태영",
       "vendor": "티피나디아㈜",
       "vendor_en": "TP Nadia Co.,Ltd",
-      "co": "KR",
+      "co": "VN",
       "cn_invoice_rmb": 1065,
       "ttl_pcs": 5,
       "kr_pcs": 1,
@@ -52287,17 +53593,18 @@ const DASHBOARD = {
       "cn_focus_pcs": 1,
       "kr_keep_pcs": 1,
       "cn_total_pcs": 4,
-      "kr_expected": "2026-06-20",
+      "kr_expected": "2026-06-24",
       "kr_actual": null,
       "cn_etd": "2026-06-23",
       "cn_atd": null,
       "cn_rdd": "2026-06-28",
-      "transit_days": 0,
+      "transit_days": 5,
       "courier": "",
-      "remark": "",
+      "remark": "원단 예정 발송일 5/25, 재 샘플 진행 후 수주샘플 진행으로 2차 품평회 입고",
       "delay_reason": "",
       "fabric_etd": "2026-05-29",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -52312,7 +53619,7 @@ const DASHBOARD = {
       "sourcing": "양태영",
       "vendor": "티피나디아㈜",
       "vendor_en": "TP Nadia Co.,Ltd",
-      "co": "KR",
+      "co": "VN",
       "cn_invoice_rmb": 1065,
       "ttl_pcs": 5,
       "kr_pcs": 1,
@@ -52327,17 +53634,18 @@ const DASHBOARD = {
       "cn_focus_pcs": 1,
       "kr_keep_pcs": 1,
       "cn_total_pcs": 4,
-      "kr_expected": "2026-06-16",
+      "kr_expected": "2026-06-24",
       "kr_actual": null,
-      "cn_etd": "2026-06-10",
+      "cn_etd": "2026-06-23",
       "cn_atd": null,
-      "cn_rdd": "2026-06-15",
-      "transit_days": 0,
+      "cn_rdd": "2026-06-28",
+      "transit_days": 5,
       "courier": "",
-      "remark": "",
+      "remark": "원단 예정 발송일 5/25, 재 샘플 진행 후 수주샘플 진행으로 2차 품평회 입고",
       "delay_reason": "",
       "fabric_etd": "2026-04-22",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -52378,6 +53686,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-05-29",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -52418,6 +53727,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-05-29",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -52458,6 +53768,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-05-07",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -52498,6 +53809,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-05-29",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -52527,17 +53839,18 @@ const DASHBOARD = {
       "cn_focus_pcs": 0,
       "kr_keep_pcs": 1,
       "cn_total_pcs": 3,
-      "kr_expected": "2026-06-15",
+      "kr_expected": "2026-06-12",
       "kr_actual": null,
       "cn_etd": "2026-06-12",
       "cn_atd": null,
       "cn_rdd": "2026-06-17",
       "transit_days": 0,
       "courier": "",
-      "remark": "",
+      "remark": "* 가봉 코멘트 수령 대기중",
       "delay_reason": "",
       "fabric_etd": "2026-04-23",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -52574,10 +53887,11 @@ const DASHBOARD = {
       "cn_rdd": "2026-06-28",
       "transit_days": 0,
       "courier": "",
-      "remark": "",
+      "remark": "* 가봉 코멘트 수령 대기중",
       "delay_reason": "",
       "fabric_etd": "2026-05-29",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -52607,7 +53921,7 @@ const DASHBOARD = {
       "cn_focus_pcs": 1,
       "kr_keep_pcs": 1,
       "cn_total_pcs": 4,
-      "kr_expected": "2026-06-15",
+      "kr_expected": "2026-06-12",
       "kr_actual": null,
       "cn_etd": "2026-06-12",
       "cn_atd": null,
@@ -52618,6 +53932,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-04-22",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -52647,7 +53962,7 @@ const DASHBOARD = {
       "cn_focus_pcs": 1,
       "kr_keep_pcs": 1,
       "cn_total_pcs": 4,
-      "kr_expected": "2026-06-15",
+      "kr_expected": "2026-06-12",
       "kr_actual": null,
       "cn_etd": "2026-06-12",
       "cn_atd": null,
@@ -52658,6 +53973,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-04-23",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -52694,10 +54010,11 @@ const DASHBOARD = {
       "cn_rdd": "2026-06-14",
       "transit_days": 2,
       "courier": "",
-      "remark": "5/7: The sample fabric has not been received yet, and the color of the sample fabric has not been finally confirmed.",
+      "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-08",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -52727,17 +54044,18 @@ const DASHBOARD = {
       "cn_focus_pcs": 0,
       "kr_keep_pcs": 1,
       "cn_total_pcs": 3,
-      "kr_expected": "2026-06-12",
+      "kr_expected": "2026-06-15",
       "kr_actual": null,
-      "cn_etd": "2026-06-12",
+      "cn_etd": "2026-06-15",
       "cn_atd": null,
-      "cn_rdd": "2026-06-14",
+      "cn_rdd": "2026-06-17",
       "transit_days": 2,
       "courier": "",
-      "remark": "5/7: The sample fabric has not been received yet, and the color of the sample fabric has not been finally confirmed.",
+      "remark": "",
       "delay_reason": "원단 지연",
       "fabric_etd": "2026-05-08",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -52767,17 +54085,18 @@ const DASHBOARD = {
       "cn_focus_pcs": 0,
       "kr_keep_pcs": 1,
       "cn_total_pcs": 3,
-      "kr_expected": "2026-06-12",
+      "kr_expected": "2026-06-15",
       "kr_actual": null,
-      "cn_etd": "2026-06-12",
+      "cn_etd": "2026-06-15",
       "cn_atd": null,
-      "cn_rdd": "2026-06-14",
+      "cn_rdd": "2026-06-17",
       "transit_days": 2,
       "courier": "",
-      "remark": "5/7: The sample fabric has not been received yet, and the color of the sample fabric has not been finally confirmed",
+      "remark": "5/11: The sample fabric has not been received yet, and the color of the sample fabric has not been finally confirmed",
       "delay_reason": "원단 지연",
       "fabric_etd": "2026-05-29",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -52818,6 +54137,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-04-23",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -52858,6 +54178,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-04-24",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -52898,6 +54219,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-05-29",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -52938,6 +54260,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-05-29",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -52978,6 +54301,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-05-08",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -53018,6 +54342,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-05-29",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -53058,6 +54383,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-05-29",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -53098,6 +54424,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-05-07",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -53138,6 +54465,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-05-29",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -53178,6 +54506,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-05-29",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -53218,6 +54547,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-05-07",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -53258,6 +54588,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-04-22",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -53272,7 +54603,7 @@ const DASHBOARD = {
       "sourcing": "양태영",
       "vendor": "티피나디아㈜",
       "vendor_en": "TP Nadia Co.,Ltd",
-      "co": "KR",
+      "co": "VN",
       "cn_invoice_rmb": 1332,
       "ttl_pcs": 6,
       "kr_pcs": 1,
@@ -53287,17 +54618,18 @@ const DASHBOARD = {
       "cn_focus_pcs": 1,
       "kr_keep_pcs": 1,
       "cn_total_pcs": 5,
-      "kr_expected": "2026-06-16",
+      "kr_expected": "2026-06-12",
       "kr_actual": null,
-      "cn_etd": "2026-06-10",
+      "cn_etd": "2026-06-12",
       "cn_atd": null,
-      "cn_rdd": "2026-06-15",
-      "transit_days": 0,
+      "cn_rdd": "2026-06-17",
+      "transit_days": 5,
       "courier": "",
-      "remark": "",
+      "remark": "원단 예정 발송일 5/7, 1차 품평회 입고",
       "delay_reason": "",
       "fabric_etd": "2026-04-28",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -53312,7 +54644,7 @@ const DASHBOARD = {
       "sourcing": "양태영",
       "vendor": "티피나디아㈜",
       "vendor_en": "TP Nadia Co.,Ltd",
-      "co": "KR",
+      "co": "VN",
       "cn_invoice_rmb": 1332,
       "ttl_pcs": 6,
       "kr_pcs": 1,
@@ -53327,17 +54659,18 @@ const DASHBOARD = {
       "cn_focus_pcs": 1,
       "kr_keep_pcs": 1,
       "cn_total_pcs": 5,
-      "kr_expected": "2026-06-20",
+      "kr_expected": "2026-06-24",
       "kr_actual": null,
       "cn_etd": "2026-06-23",
       "cn_atd": null,
       "cn_rdd": "2026-06-28",
-      "transit_days": 0,
+      "transit_days": 5,
       "courier": "",
-      "remark": "원단 입고일 확인 안됨",
+      "remark": "원단 예정 발송일 5/25, 2차 품평회 입고",
       "delay_reason": "",
       "fabric_etd": "2026-05-29",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -53352,7 +54685,7 @@ const DASHBOARD = {
       "sourcing": "양태영",
       "vendor": "티피나디아㈜",
       "vendor_en": "TP Nadia Co.,Ltd",
-      "co": "KR",
+      "co": "VN",
       "cn_invoice_rmb": 1332,
       "ttl_pcs": 6,
       "kr_pcs": 1,
@@ -53367,17 +54700,18 @@ const DASHBOARD = {
       "cn_focus_pcs": 1,
       "kr_keep_pcs": 1,
       "cn_total_pcs": 5,
-      "kr_expected": "2026-06-16",
+      "kr_expected": "2026-06-12",
       "kr_actual": null,
-      "cn_etd": "2026-06-10",
+      "cn_etd": "2026-06-12",
       "cn_atd": null,
-      "cn_rdd": "2026-06-15",
-      "transit_days": 0,
+      "cn_rdd": "2026-06-17",
+      "transit_days": 5,
       "courier": "",
-      "remark": "",
+      "remark": "원단 예정 발송일 5/7, 1차 품평회 입고",
       "delay_reason": "",
       "fabric_etd": "2026-05-29",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -53392,7 +54726,7 @@ const DASHBOARD = {
       "sourcing": "양태영",
       "vendor": "티피나디아㈜",
       "vendor_en": "TP Nadia Co.,Ltd",
-      "co": "KR",
+      "co": "VN",
       "cn_invoice_rmb": 1332,
       "ttl_pcs": 6,
       "kr_pcs": 1,
@@ -53407,17 +54741,18 @@ const DASHBOARD = {
       "cn_focus_pcs": 1,
       "kr_keep_pcs": 1,
       "cn_total_pcs": 5,
-      "kr_expected": "2026-06-16",
+      "kr_expected": "2026-06-12",
       "kr_actual": null,
-      "cn_etd": "2026-06-10",
+      "cn_etd": "2026-06-12",
       "cn_atd": null,
-      "cn_rdd": "2026-06-15",
-      "transit_days": 0,
+      "cn_rdd": "2026-06-17",
+      "transit_days": 5,
       "courier": "",
-      "remark": "",
+      "remark": "원단 예정 발송일 5/7, 1차 품평회 입고",
       "delay_reason": "",
       "fabric_etd": "2026-05-08",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -53447,17 +54782,18 @@ const DASHBOARD = {
       "cn_focus_pcs": 0,
       "kr_keep_pcs": 1,
       "cn_total_pcs": 4,
-      "kr_expected": "2026-06-15",
+      "kr_expected": "2026-06-12",
       "kr_actual": null,
       "cn_etd": "2026-06-12",
       "cn_atd": null,
       "cn_rdd": "2026-06-17",
       "transit_days": 0,
       "courier": "",
-      "remark": "",
+      "remark": "* 가봉 전달 완료 > 코멘트 수령 완료",
       "delay_reason": "",
       "fabric_etd": "2026-04-23",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -53498,6 +54834,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-05-29",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -53538,6 +54875,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-05-29",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -53578,6 +54916,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-05-15",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -53618,6 +54957,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-05-08",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -53658,6 +54998,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-05-08",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -53698,6 +55039,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-04-22",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -53738,6 +55080,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-04-27",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -53778,6 +55121,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-05-29",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -53818,6 +55162,7 @@ const DASHBOARD = {
       "delay_reason": "기타",
       "fabric_etd": "2026-05-29",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -53858,6 +55203,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-05-29",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -53898,6 +55244,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-05-29",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -53938,6 +55285,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-05-29",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -53967,17 +55315,18 @@ const DASHBOARD = {
       "cn_focus_pcs": 0,
       "kr_keep_pcs": 1,
       "cn_total_pcs": 4,
-      "kr_expected": "2026-06-12",
+      "kr_expected": "2026-06-15",
       "kr_actual": null,
-      "cn_etd": "2026-06-12",
+      "cn_etd": "2026-06-15",
       "cn_atd": null,
-      "cn_rdd": "2026-06-14",
+      "cn_rdd": "2026-06-17",
       "transit_days": 2,
       "courier": "",
-      "remark": "5/7: The sample fabric has not been received yet, and the color of the sample fabric has not been finally confirmed",
+      "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-08",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -54007,17 +55356,18 @@ const DASHBOARD = {
       "cn_focus_pcs": 0,
       "kr_keep_pcs": 1,
       "cn_total_pcs": 4,
-      "kr_expected": "2026-06-12",
+      "kr_expected": "2026-06-15",
       "kr_actual": null,
-      "cn_etd": "2026-06-12",
+      "cn_etd": "2026-06-15",
       "cn_atd": null,
-      "cn_rdd": "2026-06-14",
+      "cn_rdd": "2026-06-17",
       "transit_days": 2,
       "courier": "",
-      "remark": "5/7: The sample fabric has not been received yet, and the color of the sample fabric has not been finally confirmed",
+      "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-08",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -54047,17 +55397,18 @@ const DASHBOARD = {
       "cn_focus_pcs": 0,
       "kr_keep_pcs": 1,
       "cn_total_pcs": 3,
-      "kr_expected": "2026-06-12",
+      "kr_expected": "2026-06-15",
       "kr_actual": null,
-      "cn_etd": "2026-06-12",
+      "cn_etd": "2026-06-15",
       "cn_atd": null,
-      "cn_rdd": "2026-06-14",
+      "cn_rdd": "2026-06-17",
       "transit_days": 2,
       "courier": "",
-      "remark": "5/7: The sample fabric has not been received yet, and the color of the sample fabric has not been finally confirmed",
+      "remark": "5/11: The sample fabric has not been received yet, and the color of the sample fabric has not been finally confirmed",
       "delay_reason": "원단 지연",
       "fabric_etd": "2026-05-29",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -54098,6 +55449,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-04-22",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -54138,6 +55490,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-05-29",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -54178,6 +55531,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-05-29",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -54218,6 +55572,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-04-23",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -54258,6 +55613,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-05-08",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -54298,6 +55654,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-04-23",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -54338,6 +55695,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-05-29",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -54378,6 +55736,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-04-23",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -54392,7 +55751,7 @@ const DASHBOARD = {
       "sourcing": "양태영",
       "vendor": "티피나디아㈜",
       "vendor_en": "TP Nadia Co.,Ltd",
-      "co": "KR",
+      "co": "",
       "cn_invoice_rmb": 769,
       "ttl_pcs": 4,
       "kr_pcs": 1,
@@ -54407,17 +55766,18 @@ const DASHBOARD = {
       "cn_focus_pcs": 0,
       "kr_keep_pcs": 1,
       "cn_total_pcs": 3,
-      "kr_expected": null,
+      "kr_expected": "2026-06-30",
       "kr_actual": null,
-      "cn_etd": null,
+      "cn_etd": "2026-06-30",
       "cn_atd": null,
-      "cn_rdd": null,
-      "transit_days": 0,
+      "cn_rdd": "2026-07-05",
+      "transit_days": 2,
       "courier": "",
-      "remark": "Q2 진행건",
+      "remark": "작지 미 수취, 원단 LINE으로 변경 → Q2로 변경",
       "delay_reason": "",
       "fabric_etd": "2026-05-29",
       "is_na": false,
+      "is_drop": false,
       "phase": "2ND TS"
     },
     {
@@ -54432,7 +55792,7 @@ const DASHBOARD = {
       "sourcing": "양태영",
       "vendor": "티피나디아㈜",
       "vendor_en": "TP Nadia Co.,Ltd",
-      "co": "KR",
+      "co": "",
       "cn_invoice_rmb": 769,
       "ttl_pcs": 4,
       "kr_pcs": 1,
@@ -54447,17 +55807,18 @@ const DASHBOARD = {
       "cn_focus_pcs": 0,
       "kr_keep_pcs": 1,
       "cn_total_pcs": 3,
-      "kr_expected": null,
+      "kr_expected": "2026-06-30",
       "kr_actual": null,
-      "cn_etd": null,
+      "cn_etd": "2026-06-30",
       "cn_atd": null,
-      "cn_rdd": null,
-      "transit_days": 0,
+      "cn_rdd": "2026-07-05",
+      "transit_days": 2,
       "courier": "",
-      "remark": "Q2 진행건",
+      "remark": "작지 미 수취, 원단 LINE으로 변경 → Q2로 변경",
       "delay_reason": "",
       "fabric_etd": "2026-05-29",
       "is_na": false,
+      "is_drop": false,
       "phase": "2ND TS"
     },
     {
@@ -54487,17 +55848,18 @@ const DASHBOARD = {
       "cn_focus_pcs": 0,
       "kr_keep_pcs": 1,
       "cn_total_pcs": 4,
-      "kr_expected": "2026-07-06",
+      "kr_expected": "2026-06-25",
       "kr_actual": null,
-      "cn_etd": "2026-07-05",
+      "cn_etd": "2026-06-27",
       "cn_atd": null,
-      "cn_rdd": "2026-07-10",
+      "cn_rdd": "2026-07-02",
       "transit_days": 0,
       "courier": "",
       "remark": "5/12 소재 확정, 샘플감 입고 예정일: 6/18",
       "delay_reason": "",
       "fabric_etd": "2026-05-29",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -54527,17 +55889,18 @@ const DASHBOARD = {
       "cn_focus_pcs": 0,
       "kr_keep_pcs": 1,
       "cn_total_pcs": 4,
-      "kr_expected": "2026-07-06",
+      "kr_expected": "2026-06-25",
       "kr_actual": null,
-      "cn_etd": "2026-07-05",
+      "cn_etd": "2026-06-27",
       "cn_atd": null,
-      "cn_rdd": "2026-07-10",
+      "cn_rdd": "2026-07-02",
       "transit_days": 0,
       "courier": "",
       "remark": "5/12 소재 확정, 샘플감 입고 예정일: 6/18",
       "delay_reason": "",
       "fabric_etd": "2026-05-29",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -54567,17 +55930,18 @@ const DASHBOARD = {
       "cn_focus_pcs": 0,
       "kr_keep_pcs": 1,
       "cn_total_pcs": 4,
-      "kr_expected": "2026-07-06",
+      "kr_expected": "2026-06-25",
       "kr_actual": null,
-      "cn_etd": "2026-07-05",
+      "cn_etd": "2026-06-27",
       "cn_atd": null,
-      "cn_rdd": "2026-07-10",
+      "cn_rdd": "2026-07-02",
       "transit_days": 0,
       "courier": "",
       "remark": "5/12 소재 확정, 샘플감 입고 예정일: 6/18",
       "delay_reason": "",
       "fabric_etd": "2026-05-29",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -54607,17 +55971,18 @@ const DASHBOARD = {
       "cn_focus_pcs": 0,
       "kr_keep_pcs": 1,
       "cn_total_pcs": 4,
-      "kr_expected": "2026-07-06",
+      "kr_expected": "2026-06-15",
       "kr_actual": null,
-      "cn_etd": "2026-07-05",
+      "cn_etd": "2026-06-17",
       "cn_atd": null,
-      "cn_rdd": "2026-07-10",
+      "cn_rdd": "2026-06-22",
       "transit_days": 0,
       "courier": "",
       "remark": "5/12 소재 확정, 샘플감 입고 예정일: 6/9",
       "delay_reason": "",
       "fabric_etd": "2026-05-29",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -54647,17 +56012,18 @@ const DASHBOARD = {
       "cn_focus_pcs": 0,
       "kr_keep_pcs": 1,
       "cn_total_pcs": 4,
-      "kr_expected": "2026-07-06",
+      "kr_expected": "2026-06-15",
       "kr_actual": null,
-      "cn_etd": "2026-07-05",
+      "cn_etd": "2026-06-17",
       "cn_atd": null,
-      "cn_rdd": "2026-07-10",
+      "cn_rdd": "2026-06-22",
       "transit_days": 0,
       "courier": "",
       "remark": "5/12 소재 확정, 샘플감 입고 예정일: 6/9",
       "delay_reason": "",
       "fabric_etd": "2026-05-29",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -54687,17 +56053,18 @@ const DASHBOARD = {
       "cn_focus_pcs": 0,
       "kr_keep_pcs": 1,
       "cn_total_pcs": 4,
-      "kr_expected": "2026-06-19",
+      "kr_expected": "2026-06-22",
       "kr_actual": null,
-      "cn_etd": "2026-06-19",
+      "cn_etd": "2026-06-22",
       "cn_atd": null,
-      "cn_rdd": "2026-06-21",
+      "cn_rdd": "2026-06-24",
       "transit_days": 2,
       "courier": "",
-      "remark": "not yet received the T/P",
+      "remark": "",
       "delay_reason": "원단 지연",
       "fabric_etd": "2026-05-29",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -54727,17 +56094,18 @@ const DASHBOARD = {
       "cn_focus_pcs": 0,
       "kr_keep_pcs": 1,
       "cn_total_pcs": 4,
-      "kr_expected": "2026-06-19",
+      "kr_expected": "2026-06-22",
       "kr_actual": null,
-      "cn_etd": "2026-06-19",
+      "cn_etd": "2026-06-22",
       "cn_atd": null,
-      "cn_rdd": "2026-06-21",
+      "cn_rdd": "2026-06-24",
       "transit_days": 2,
       "courier": "",
-      "remark": "not yet received the T/P",
+      "remark": "",
       "delay_reason": "원단 지연",
       "fabric_etd": "2026-05-29",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -54767,17 +56135,18 @@ const DASHBOARD = {
       "cn_focus_pcs": 0,
       "kr_keep_pcs": 1,
       "cn_total_pcs": 4,
-      "kr_expected": "2026-06-19",
+      "kr_expected": "2026-06-22",
       "kr_actual": null,
-      "cn_etd": "2026-06-19",
+      "cn_etd": "2026-06-22",
       "cn_atd": null,
-      "cn_rdd": "2026-06-21",
+      "cn_rdd": "2026-06-24",
       "transit_days": 2,
       "courier": "",
-      "remark": "not yet received the T/P",
+      "remark": "",
       "delay_reason": "원단 지연",
       "fabric_etd": "2026-05-29",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -54818,6 +56187,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -54858,6 +56228,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -54898,6 +56269,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-05-29",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -54938,6 +56310,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-04-28",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -54978,6 +56351,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-05-29",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -54989,10 +56363,10 @@ const DASHBOARD = {
       "description": "여성 썸머 벌룬 와이드 앵클팬츠",
       "color": "43SAL",
       "designer": "임은서",
-      "sourcing": "양태영",
-      "vendor": "(주)기도산업",
-      "vendor_en": "KIDO INDUSTRIAL CO. LTD.,",
-      "co": "KR",
+      "sourcing": "황려나",
+      "vendor": "HONGYING GARMENT CO., LTD",
+      "vendor_en": "HONGYING GARMENT CO., LTD",
+      "co": "CN",
       "cn_invoice_rmb": 1065,
       "ttl_pcs": 5,
       "kr_pcs": 1,
@@ -55007,17 +56381,18 @@ const DASHBOARD = {
       "cn_focus_pcs": 1,
       "kr_keep_pcs": 1,
       "cn_total_pcs": 4,
-      "kr_expected": "2026-06-12",
+      "kr_expected": "2026-06-15",
       "kr_actual": null,
-      "cn_etd": "2026-06-12",
+      "cn_etd": "2026-06-15",
       "cn_atd": null,
       "cn_rdd": "2026-06-17",
-      "transit_days": 0,
+      "transit_days": 2,
       "courier": "",
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-29",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -55029,10 +56404,10 @@ const DASHBOARD = {
       "description": "여성 썸머 벌룬 와이드 앵클팬츠",
       "color": "50BKS",
       "designer": "임은서",
-      "sourcing": "양태영",
-      "vendor": "(주)기도산업",
-      "vendor_en": "KIDO INDUSTRIAL CO. LTD.,",
-      "co": "KR",
+      "sourcing": "황려나",
+      "vendor": "HONGYING GARMENT CO., LTD",
+      "vendor_en": "HONGYING GARMENT CO., LTD",
+      "co": "CN",
       "cn_invoice_rmb": 1065,
       "ttl_pcs": 5,
       "kr_pcs": 1,
@@ -55051,13 +56426,14 @@ const DASHBOARD = {
       "kr_actual": null,
       "cn_etd": "2026-06-12",
       "cn_atd": null,
-      "cn_rdd": "2026-06-17",
-      "transit_days": 0,
+      "cn_rdd": "2026-06-14",
+      "transit_days": 2,
       "courier": "",
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-04-23",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -55087,17 +56463,18 @@ const DASHBOARD = {
       "cn_focus_pcs": 0,
       "kr_keep_pcs": 1,
       "cn_total_pcs": 3,
-      "kr_expected": "2026-07-06",
+      "kr_expected": "2026-06-18",
       "kr_actual": null,
-      "cn_etd": "2026-07-03",
+      "cn_etd": "2026-06-20",
       "cn_atd": null,
-      "cn_rdd": "2026-07-08",
+      "cn_rdd": "2026-06-25",
       "transit_days": 0,
       "courier": "",
-      "remark": "5/11) 원단 재수배 필요하여 발송일 미정",
+      "remark": "실제 원단 입고 예정일 : 5/30일",
       "delay_reason": "",
       "fabric_etd": "2026-05-29",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -55127,17 +56504,18 @@ const DASHBOARD = {
       "cn_focus_pcs": 0,
       "kr_keep_pcs": 1,
       "cn_total_pcs": 3,
-      "kr_expected": "2026-07-06",
+      "kr_expected": "2026-06-12",
       "kr_actual": null,
-      "cn_etd": "2026-07-03",
+      "cn_etd": "2026-06-10",
       "cn_atd": null,
-      "cn_rdd": "2026-07-08",
+      "cn_rdd": "2026-06-15",
       "transit_days": 0,
       "courier": "",
-      "remark": "5/11) 원단 재수배 필요하여 발송일 미정",
+      "remark": "실제 원단 입고 예정일 : 5/20일",
       "delay_reason": "",
       "fabric_etd": "2026-05-29",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -55167,17 +56545,18 @@ const DASHBOARD = {
       "cn_focus_pcs": 0,
       "kr_keep_pcs": 1,
       "cn_total_pcs": 3,
-      "kr_expected": "2026-07-06",
+      "kr_expected": "2026-06-18",
       "kr_actual": null,
-      "cn_etd": "2026-07-03",
+      "cn_etd": "2026-06-20",
       "cn_atd": null,
-      "cn_rdd": "2026-07-08",
+      "cn_rdd": "2026-06-25",
       "transit_days": 0,
       "courier": "",
-      "remark": "5/11) 원단 재수배 필요하여 발송일 미정",
+      "remark": "실제 원단 입고 예정일 : 5/30일",
       "delay_reason": "",
       "fabric_etd": "2026-05-29",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -55218,6 +56597,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-04-30",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -55258,6 +56638,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-05-29",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -55298,6 +56679,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-05-29",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -55338,6 +56720,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-05-29",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -55378,6 +56761,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-04-20",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -55418,6 +56802,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-05-29",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -55458,6 +56843,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-05-08",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -55498,6 +56884,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-04-20",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -55538,6 +56925,7 @@ const DASHBOARD = {
       "delay_reason": "원단 지연",
       "fabric_etd": "2026-05-15",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -55578,6 +56966,7 @@ const DASHBOARD = {
       "delay_reason": "기타",
       "fabric_etd": "2026-05-29",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -55618,6 +57007,7 @@ const DASHBOARD = {
       "delay_reason": "기타",
       "fabric_etd": "2026-05-29",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -55658,6 +57048,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-04-22",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -55698,6 +57089,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-04-23",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -55738,6 +57130,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-05-29",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -55778,6 +57171,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-05-07",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -55792,7 +57186,7 @@ const DASHBOARD = {
       "sourcing": "양태영",
       "vendor": "티피나디아㈜",
       "vendor_en": "TP Nadia Co.,Ltd",
-      "co": "KR",
+      "co": "VN",
       "cn_invoice_rmb": 1065,
       "ttl_pcs": 5,
       "kr_pcs": 1,
@@ -55807,17 +57201,18 @@ const DASHBOARD = {
       "cn_focus_pcs": 0,
       "kr_keep_pcs": 1,
       "cn_total_pcs": 4,
-      "kr_expected": "2026-06-16",
+      "kr_expected": "2026-06-12",
       "kr_actual": null,
-      "cn_etd": "2026-06-10",
+      "cn_etd": "2026-06-12",
       "cn_atd": null,
-      "cn_rdd": "2026-06-15",
-      "transit_days": 0,
+      "cn_rdd": "2026-06-17",
+      "transit_days": 5,
       "courier": "",
-      "remark": "",
+      "remark": "재 샘플 후 수주 진행, 1차 품평회 입고",
       "delay_reason": "",
       "fabric_etd": "2026-05-12",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -55832,7 +57227,7 @@ const DASHBOARD = {
       "sourcing": "양태영",
       "vendor": "티피나디아㈜",
       "vendor_en": "TP Nadia Co.,Ltd",
-      "co": "KR",
+      "co": "VN",
       "cn_invoice_rmb": 1065,
       "ttl_pcs": 5,
       "kr_pcs": 1,
@@ -55847,17 +57242,18 @@ const DASHBOARD = {
       "cn_focus_pcs": 0,
       "kr_keep_pcs": 1,
       "cn_total_pcs": 4,
-      "kr_expected": "2026-06-20",
+      "kr_expected": "2026-06-24",
       "kr_actual": null,
       "cn_etd": "2026-06-23",
       "cn_atd": null,
       "cn_rdd": "2026-06-28",
-      "transit_days": 0,
+      "transit_days": 5,
       "courier": "",
-      "remark": "",
+      "remark": "재 샘플 후 수주 진행, 2차 품평회 입고",
       "delay_reason": "",
       "fabric_etd": "2026-05-29",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -55872,7 +57268,7 @@ const DASHBOARD = {
       "sourcing": "양태영",
       "vendor": "티피나디아㈜",
       "vendor_en": "TP Nadia Co.,Ltd",
-      "co": "KR",
+      "co": "VN",
       "cn_invoice_rmb": 1065,
       "ttl_pcs": 5,
       "kr_pcs": 1,
@@ -55887,17 +57283,18 @@ const DASHBOARD = {
       "cn_focus_pcs": 0,
       "kr_keep_pcs": 1,
       "cn_total_pcs": 4,
-      "kr_expected": "2026-06-16",
+      "kr_expected": "2026-06-12",
       "kr_actual": null,
-      "cn_etd": "2026-06-10",
+      "cn_etd": "2026-06-12",
       "cn_atd": null,
-      "cn_rdd": "2026-06-15",
-      "transit_days": 0,
+      "cn_rdd": "2026-06-17",
+      "transit_days": 5,
       "courier": "",
-      "remark": "",
+      "remark": "재 샘플 후 수주 진행, 1차 품평회 입고",
       "delay_reason": "",
       "fabric_etd": "2026-04-23",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -55938,6 +57335,7 @@ const DASHBOARD = {
       "delay_reason": "원단 지연",
       "fabric_etd": "2026-04-30",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -55978,6 +57376,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-05-29",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -56018,6 +57417,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-05-29",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -56058,6 +57458,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-04-22",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -56072,7 +57473,7 @@ const DASHBOARD = {
       "sourcing": "양태영",
       "vendor": "티피나디아㈜",
       "vendor_en": "TP Nadia Co.,Ltd",
-      "co": "KR",
+      "co": "VN",
       "cn_invoice_rmb": 665,
       "ttl_pcs": 5,
       "kr_pcs": 1,
@@ -56087,17 +57488,18 @@ const DASHBOARD = {
       "cn_focus_pcs": 1,
       "kr_keep_pcs": 1,
       "cn_total_pcs": 4,
-      "kr_expected": "2026-06-16",
+      "kr_expected": "2026-06-24",
       "kr_actual": null,
-      "cn_etd": "2026-06-10",
+      "cn_etd": "2026-06-23",
       "cn_atd": null,
-      "cn_rdd": "2026-06-15",
-      "transit_days": 0,
+      "cn_rdd": "2026-06-28",
+      "transit_days": 5,
       "courier": "",
-      "remark": "",
+      "remark": "원단 예정 발송일 5/25, 2차 품평회 입고",
       "delay_reason": "",
       "fabric_etd": "2026-04-30",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -56112,7 +57514,7 @@ const DASHBOARD = {
       "sourcing": "양태영",
       "vendor": "티피나디아㈜",
       "vendor_en": "TP Nadia Co.,Ltd",
-      "co": "KR",
+      "co": "VN",
       "cn_invoice_rmb": 665,
       "ttl_pcs": 5,
       "kr_pcs": 1,
@@ -56127,17 +57529,18 @@ const DASHBOARD = {
       "cn_focus_pcs": 1,
       "kr_keep_pcs": 1,
       "cn_total_pcs": 4,
-      "kr_expected": "2026-06-20",
+      "kr_expected": "2026-06-24",
       "kr_actual": null,
       "cn_etd": "2026-06-23",
       "cn_atd": null,
       "cn_rdd": "2026-06-28",
-      "transit_days": 0,
+      "transit_days": 5,
       "courier": "",
-      "remark": "",
+      "remark": "원단 예정 발송일 5/25, 2차 품평회 입고",
       "delay_reason": "",
       "fabric_etd": "2026-05-29",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -56152,7 +57555,7 @@ const DASHBOARD = {
       "sourcing": "양태영",
       "vendor": "티피나디아㈜",
       "vendor_en": "TP Nadia Co.,Ltd",
-      "co": "KR",
+      "co": "VN",
       "cn_invoice_rmb": 665,
       "ttl_pcs": 5,
       "kr_pcs": 1,
@@ -56167,17 +57570,18 @@ const DASHBOARD = {
       "cn_focus_pcs": 1,
       "kr_keep_pcs": 1,
       "cn_total_pcs": 4,
-      "kr_expected": "2026-06-20",
+      "kr_expected": "2026-06-24",
       "kr_actual": null,
       "cn_etd": "2026-06-23",
       "cn_atd": null,
       "cn_rdd": "2026-06-28",
-      "transit_days": 0,
+      "transit_days": 5,
       "courier": "",
-      "remark": "",
+      "remark": "원단 예정 발송일 5/25, 2차 품평회 입고",
       "delay_reason": "",
       "fabric_etd": "2026-05-29",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -56192,7 +57596,7 @@ const DASHBOARD = {
       "sourcing": "양태영",
       "vendor": "티피나디아㈜",
       "vendor_en": "TP Nadia Co.,Ltd",
-      "co": "KR",
+      "co": "VN",
       "cn_invoice_rmb": 665,
       "ttl_pcs": 5,
       "kr_pcs": 1,
@@ -56207,17 +57611,18 @@ const DASHBOARD = {
       "cn_focus_pcs": 1,
       "kr_keep_pcs": 1,
       "cn_total_pcs": 4,
-      "kr_expected": "2026-06-16",
+      "kr_expected": "2026-06-24",
       "kr_actual": null,
-      "cn_etd": "2026-06-10",
+      "cn_etd": "2026-06-23",
       "cn_atd": null,
-      "cn_rdd": "2026-06-15",
-      "transit_days": 0,
+      "cn_rdd": "2026-06-28",
+      "transit_days": 5,
       "courier": "",
-      "remark": "",
+      "remark": "원단 예정 발송일 5/25, 2차 품평회 입고",
       "delay_reason": "",
       "fabric_etd": "2026-04-30",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -56232,7 +57637,7 @@ const DASHBOARD = {
       "sourcing": "양태영",
       "vendor": "티피나디아㈜",
       "vendor_en": "TP Nadia Co.,Ltd",
-      "co": "KR",
+      "co": "VN",
       "cn_invoice_rmb": 499,
       "ttl_pcs": 4,
       "kr_pcs": 1,
@@ -56247,17 +57652,18 @@ const DASHBOARD = {
       "cn_focus_pcs": 0,
       "kr_keep_pcs": 1,
       "cn_total_pcs": 3,
-      "kr_expected": "2026-06-20",
+      "kr_expected": "2026-06-12",
       "kr_actual": null,
-      "cn_etd": "2026-06-23",
+      "cn_etd": "2026-06-12",
       "cn_atd": null,
-      "cn_rdd": "2026-06-28",
-      "transit_days": 0,
+      "cn_rdd": "2026-06-17",
+      "transit_days": 5,
       "courier": "",
-      "remark": "",
+      "remark": "원단 예정 발송일 5/25, 1차 품평회 입고",
       "delay_reason": "",
       "fabric_etd": "2026-05-29",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -56272,7 +57678,7 @@ const DASHBOARD = {
       "sourcing": "양태영",
       "vendor": "티피나디아㈜",
       "vendor_en": "TP Nadia Co.,Ltd",
-      "co": "KR",
+      "co": "VN",
       "cn_invoice_rmb": 499,
       "ttl_pcs": 4,
       "kr_pcs": 1,
@@ -56287,17 +57693,18 @@ const DASHBOARD = {
       "cn_focus_pcs": 0,
       "kr_keep_pcs": 1,
       "cn_total_pcs": 3,
-      "kr_expected": "2026-06-20",
+      "kr_expected": "2026-06-12",
       "kr_actual": null,
-      "cn_etd": "2026-06-23",
+      "cn_etd": "2026-06-12",
       "cn_atd": null,
-      "cn_rdd": "2026-06-28",
-      "transit_days": 0,
+      "cn_rdd": "2026-06-17",
+      "transit_days": 5,
       "courier": "",
-      "remark": "",
+      "remark": "원단 예정 발송일 5/25, 1차 품평회 입고",
       "delay_reason": "",
       "fabric_etd": "2026-05-29",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -56312,7 +57719,7 @@ const DASHBOARD = {
       "sourcing": "양태영",
       "vendor": "티피나디아㈜",
       "vendor_en": "TP Nadia Co.,Ltd",
-      "co": "KR",
+      "co": "VN",
       "cn_invoice_rmb": 499,
       "ttl_pcs": 4,
       "kr_pcs": 1,
@@ -56327,17 +57734,18 @@ const DASHBOARD = {
       "cn_focus_pcs": 0,
       "kr_keep_pcs": 1,
       "cn_total_pcs": 3,
-      "kr_expected": "2026-06-20",
+      "kr_expected": "2026-06-12",
       "kr_actual": null,
-      "cn_etd": "2026-06-23",
+      "cn_etd": "2026-06-12",
       "cn_atd": null,
-      "cn_rdd": "2026-06-28",
-      "transit_days": 0,
+      "cn_rdd": "2026-06-17",
+      "transit_days": 5,
       "courier": "",
-      "remark": "",
+      "remark": "원단 예정 발송일 5/25, 1차 품평회 입고",
       "delay_reason": "",
       "fabric_etd": "2026-05-29",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -56352,7 +57760,7 @@ const DASHBOARD = {
       "sourcing": "양태영",
       "vendor": "티피나디아㈜",
       "vendor_en": "TP Nadia Co.,Ltd",
-      "co": "KR",
+      "co": "VN",
       "cn_invoice_rmb": 499,
       "ttl_pcs": 4,
       "kr_pcs": 1,
@@ -56367,17 +57775,18 @@ const DASHBOARD = {
       "cn_focus_pcs": 0,
       "kr_keep_pcs": 1,
       "cn_total_pcs": 3,
-      "kr_expected": "2026-06-16",
+      "kr_expected": "2026-06-12",
       "kr_actual": null,
-      "cn_etd": "2026-06-10",
+      "cn_etd": "2026-06-12",
       "cn_atd": null,
-      "cn_rdd": "2026-06-15",
-      "transit_days": 0,
+      "cn_rdd": "2026-06-17",
+      "transit_days": 5,
       "courier": "",
-      "remark": "",
+      "remark": "원단 예정 발송일 5/25, 1차 품평회 입고",
       "delay_reason": "",
       "fabric_etd": "2026-04-22",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -56418,6 +57827,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-05-07",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -56458,6 +57868,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-05-29",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -56498,6 +57909,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-05-29",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -56538,6 +57950,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-04-28",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -56578,6 +57991,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-05-07",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -56618,6 +58032,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-05-29",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -56658,6 +58073,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-04-23",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -56698,6 +58114,7 @@ const DASHBOARD = {
       "delay_reason": "기타",
       "fabric_etd": "2026-05-29",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -56738,6 +58155,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-05-07",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -56752,7 +58170,7 @@ const DASHBOARD = {
       "sourcing": "양태영",
       "vendor": "티피나디아㈜",
       "vendor_en": "TP Nadia Co.,Ltd",
-      "co": "KR",
+      "co": "VN",
       "cn_invoice_rmb": 948,
       "ttl_pcs": 6,
       "kr_pcs": 1,
@@ -56767,17 +58185,18 @@ const DASHBOARD = {
       "cn_focus_pcs": 1,
       "kr_keep_pcs": 1,
       "cn_total_pcs": 5,
-      "kr_expected": "2026-06-20",
+      "kr_expected": "2026-06-12",
       "kr_actual": null,
-      "cn_etd": "2026-06-23",
+      "cn_etd": "2026-06-12",
       "cn_atd": null,
-      "cn_rdd": "2026-06-28",
-      "transit_days": 0,
+      "cn_rdd": "2026-06-17",
+      "transit_days": 5,
       "courier": "",
-      "remark": "원단 입고일 확인 안됨",
+      "remark": "원단예상 출고일 5/6, 1차 품평회 입고",
       "delay_reason": "",
       "fabric_etd": "2026-05-15",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -56792,7 +58211,7 @@ const DASHBOARD = {
       "sourcing": "양태영",
       "vendor": "티피나디아㈜",
       "vendor_en": "TP Nadia Co.,Ltd",
-      "co": "KR",
+      "co": "VN",
       "cn_invoice_rmb": 948,
       "ttl_pcs": 6,
       "kr_pcs": 1,
@@ -56807,17 +58226,18 @@ const DASHBOARD = {
       "cn_focus_pcs": 1,
       "kr_keep_pcs": 1,
       "cn_total_pcs": 5,
-      "kr_expected": "2026-06-16",
+      "kr_expected": "2026-06-12",
       "kr_actual": null,
-      "cn_etd": "2026-06-10",
+      "cn_etd": "2026-06-12",
       "cn_atd": null,
-      "cn_rdd": "2026-06-15",
-      "transit_days": 0,
+      "cn_rdd": "2026-06-17",
+      "transit_days": 5,
       "courier": "",
-      "remark": "",
+      "remark": "원단예상 출고일 5/7, 1차 품평회 입고",
       "delay_reason": "",
       "fabric_etd": "2026-05-07",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -56832,7 +58252,7 @@ const DASHBOARD = {
       "sourcing": "양태영",
       "vendor": "티피나디아㈜",
       "vendor_en": "TP Nadia Co.,Ltd",
-      "co": "KR",
+      "co": "VN",
       "cn_invoice_rmb": 948,
       "ttl_pcs": 6,
       "kr_pcs": 1,
@@ -56847,17 +58267,18 @@ const DASHBOARD = {
       "cn_focus_pcs": 1,
       "kr_keep_pcs": 1,
       "cn_total_pcs": 5,
-      "kr_expected": "2026-06-20",
+      "kr_expected": "2026-06-24",
       "kr_actual": null,
       "cn_etd": "2026-06-23",
       "cn_atd": null,
       "cn_rdd": "2026-06-28",
-      "transit_days": 0,
+      "transit_days": 5,
       "courier": "",
-      "remark": "",
+      "remark": "원단예상 출고일 5/28, 2차 품평회 입고",
       "delay_reason": "",
       "fabric_etd": "2026-05-29",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -56872,7 +58293,7 @@ const DASHBOARD = {
       "sourcing": "양태영",
       "vendor": "티피나디아㈜",
       "vendor_en": "TP Nadia Co.,Ltd",
-      "co": "KR",
+      "co": "VN",
       "cn_invoice_rmb": 665,
       "ttl_pcs": 5,
       "kr_pcs": 1,
@@ -56887,17 +58308,18 @@ const DASHBOARD = {
       "cn_focus_pcs": 0,
       "kr_keep_pcs": 1,
       "cn_total_pcs": 4,
-      "kr_expected": "2026-06-20",
+      "kr_expected": "2026-06-12",
       "kr_actual": null,
-      "cn_etd": "2026-06-23",
+      "cn_etd": "2026-06-12",
       "cn_atd": null,
-      "cn_rdd": "2026-06-28",
-      "transit_days": 0,
+      "cn_rdd": "2026-06-17",
+      "transit_days": 5,
       "courier": "",
-      "remark": "",
+      "remark": "1차 품평회 입고",
       "delay_reason": "",
       "fabric_etd": "2026-05-29",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -56912,7 +58334,7 @@ const DASHBOARD = {
       "sourcing": "양태영",
       "vendor": "티피나디아㈜",
       "vendor_en": "TP Nadia Co.,Ltd",
-      "co": "KR",
+      "co": "VN",
       "cn_invoice_rmb": 665,
       "ttl_pcs": 5,
       "kr_pcs": 1,
@@ -56927,17 +58349,18 @@ const DASHBOARD = {
       "cn_focus_pcs": 0,
       "kr_keep_pcs": 1,
       "cn_total_pcs": 4,
-      "kr_expected": "2026-06-20",
+      "kr_expected": "2026-06-12",
       "kr_actual": null,
-      "cn_etd": "2026-06-23",
+      "cn_etd": "2026-06-12",
       "cn_atd": null,
-      "cn_rdd": "2026-06-28",
-      "transit_days": 0,
+      "cn_rdd": "2026-06-17",
+      "transit_days": 5,
       "courier": "",
-      "remark": "",
+      "remark": "1차 품평회 입고",
       "delay_reason": "",
       "fabric_etd": "2026-05-29",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -56952,7 +58375,7 @@ const DASHBOARD = {
       "sourcing": "양태영",
       "vendor": "티피나디아㈜",
       "vendor_en": "TP Nadia Co.,Ltd",
-      "co": "KR",
+      "co": "VN",
       "cn_invoice_rmb": 665,
       "ttl_pcs": 5,
       "kr_pcs": 1,
@@ -56967,17 +58390,18 @@ const DASHBOARD = {
       "cn_focus_pcs": 0,
       "kr_keep_pcs": 1,
       "cn_total_pcs": 4,
-      "kr_expected": "2026-06-20",
+      "kr_expected": "2026-06-12",
       "kr_actual": null,
-      "cn_etd": "2026-06-23",
+      "cn_etd": "2026-06-12",
       "cn_atd": null,
-      "cn_rdd": "2026-06-28",
-      "transit_days": 0,
+      "cn_rdd": "2026-06-17",
+      "transit_days": 5,
       "courier": "",
-      "remark": "",
+      "remark": "1차 품평회 입고",
       "delay_reason": "",
       "fabric_etd": "2026-05-08",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -57018,6 +58442,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-05-29",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -57058,6 +58483,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-05-29",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -57098,6 +58524,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-05-07",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -57134,10 +58561,11 @@ const DASHBOARD = {
       "cn_rdd": "2026-06-17",
       "transit_days": 0,
       "courier": "",
-      "remark": "",
+      "remark": "* 가봉 진행 X",
       "delay_reason": "",
       "fabric_etd": "2026-04-30",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -57178,6 +58606,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-04-23",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -57218,6 +58647,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-04-30",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -57258,6 +58688,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-05-29",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -57298,6 +58729,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-05-29",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -57338,6 +58770,7 @@ const DASHBOARD = {
       "delay_reason": "원단 지연",
       "fabric_etd": "2026-05-08",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -57367,17 +58800,18 @@ const DASHBOARD = {
       "cn_focus_pcs": 1,
       "kr_keep_pcs": 1,
       "cn_total_pcs": 5,
-      "kr_expected": "2026-06-15",
+      "kr_expected": "2026-06-12",
       "kr_actual": null,
       "cn_etd": "2026-06-12",
       "cn_atd": null,
       "cn_rdd": "2026-06-17",
       "transit_days": 0,
       "courier": "",
-      "remark": "",
+      "remark": "* 가봉 진행 X",
       "delay_reason": "",
       "fabric_etd": "2026-04-23",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -57418,6 +58852,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-05-29",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -57458,6 +58893,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-05-29",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -57472,7 +58908,7 @@ const DASHBOARD = {
       "sourcing": "양태영",
       "vendor": "티피나디아㈜",
       "vendor_en": "TP Nadia Co.,Ltd",
-      "co": "KR",
+      "co": "VN",
       "cn_invoice_rmb": 1065,
       "ttl_pcs": 6,
       "kr_pcs": 1,
@@ -57487,17 +58923,18 @@ const DASHBOARD = {
       "cn_focus_pcs": 1,
       "kr_keep_pcs": 1,
       "cn_total_pcs": 5,
-      "kr_expected": "2026-06-20",
+      "kr_expected": "2026-06-12",
       "kr_actual": null,
-      "cn_etd": "2026-06-23",
+      "cn_etd": "2026-06-12",
       "cn_atd": null,
-      "cn_rdd": "2026-06-28",
-      "transit_days": 0,
+      "cn_rdd": "2026-06-17",
+      "transit_days": 5,
       "courier": "",
-      "remark": "",
+      "remark": "1차 품평회 입고",
       "delay_reason": "",
       "fabric_etd": "2026-05-29",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -57512,7 +58949,7 @@ const DASHBOARD = {
       "sourcing": "양태영",
       "vendor": "티피나디아㈜",
       "vendor_en": "TP Nadia Co.,Ltd",
-      "co": "KR",
+      "co": "VN",
       "cn_invoice_rmb": 1065,
       "ttl_pcs": 6,
       "kr_pcs": 1,
@@ -57527,17 +58964,18 @@ const DASHBOARD = {
       "cn_focus_pcs": 1,
       "kr_keep_pcs": 1,
       "cn_total_pcs": 5,
-      "kr_expected": "2026-06-16",
+      "kr_expected": "2026-06-12",
       "kr_actual": null,
-      "cn_etd": "2026-06-10",
+      "cn_etd": "2026-06-12",
       "cn_atd": null,
-      "cn_rdd": "2026-06-15",
-      "transit_days": 0,
+      "cn_rdd": "2026-06-17",
+      "transit_days": 5,
       "courier": "",
-      "remark": "",
+      "remark": "1차 품평회 입고",
       "delay_reason": "",
       "fabric_etd": "2026-05-07",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -57578,6 +59016,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-04-27",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -57618,6 +59057,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-05-29",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -57658,6 +59098,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-05-29",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -57672,7 +59113,7 @@ const DASHBOARD = {
       "sourcing": "양태영",
       "vendor": "티피나디아㈜",
       "vendor_en": "TP Nadia Co.,Ltd",
-      "co": "KR",
+      "co": "VN",
       "cn_invoice_rmb": 852,
       "ttl_pcs": 5,
       "kr_pcs": 1,
@@ -57687,17 +59128,18 @@ const DASHBOARD = {
       "cn_focus_pcs": 0,
       "kr_keep_pcs": 1,
       "cn_total_pcs": 4,
-      "kr_expected": "2026-06-16",
+      "kr_expected": "2026-06-12",
       "kr_actual": null,
-      "cn_etd": "2026-06-10",
+      "cn_etd": "2026-06-12",
       "cn_atd": null,
-      "cn_rdd": "2026-06-15",
-      "transit_days": 0,
+      "cn_rdd": "2026-06-17",
+      "transit_days": 5,
       "courier": "",
-      "remark": "",
+      "remark": "1차 품평회 입고",
       "delay_reason": "",
       "fabric_etd": "2026-04-23",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -57712,7 +59154,7 @@ const DASHBOARD = {
       "sourcing": "양태영",
       "vendor": "티피나디아㈜",
       "vendor_en": "TP Nadia Co.,Ltd",
-      "co": "KR",
+      "co": "VN",
       "cn_invoice_rmb": 852,
       "ttl_pcs": 5,
       "kr_pcs": 1,
@@ -57727,17 +59169,18 @@ const DASHBOARD = {
       "cn_focus_pcs": 0,
       "kr_keep_pcs": 1,
       "cn_total_pcs": 4,
-      "kr_expected": "2026-06-20",
+      "kr_expected": "2026-06-12",
       "kr_actual": null,
-      "cn_etd": "2026-06-23",
+      "cn_etd": "2026-06-12",
       "cn_atd": null,
-      "cn_rdd": "2026-06-28",
-      "transit_days": 0,
+      "cn_rdd": "2026-06-17",
+      "transit_days": 5,
       "courier": "",
-      "remark": "",
+      "remark": "1차 품평회 입고",
       "delay_reason": "",
       "fabric_etd": "2026-05-29",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -57752,7 +59195,7 @@ const DASHBOARD = {
       "sourcing": "양태영",
       "vendor": "티피나디아㈜",
       "vendor_en": "TP Nadia Co.,Ltd",
-      "co": "KR",
+      "co": "VN",
       "cn_invoice_rmb": 852,
       "ttl_pcs": 5,
       "kr_pcs": 1,
@@ -57767,17 +59210,18 @@ const DASHBOARD = {
       "cn_focus_pcs": 0,
       "kr_keep_pcs": 1,
       "cn_total_pcs": 4,
-      "kr_expected": "2026-06-16",
+      "kr_expected": "2026-06-12",
       "kr_actual": null,
-      "cn_etd": "2026-06-10",
+      "cn_etd": "2026-06-12",
       "cn_atd": null,
-      "cn_rdd": "2026-06-15",
-      "transit_days": 0,
+      "cn_rdd": "2026-06-17",
+      "transit_days": 5,
       "courier": "",
-      "remark": "",
+      "remark": "1차 품평회 입고",
       "delay_reason": "",
       "fabric_etd": "2026-05-07",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -57807,17 +59251,18 @@ const DASHBOARD = {
       "cn_focus_pcs": 0,
       "kr_keep_pcs": 1,
       "cn_total_pcs": 4,
-      "kr_expected": "2026-06-24",
+      "kr_expected": "2026-06-12",
       "kr_actual": null,
-      "cn_etd": "2026-06-23",
+      "cn_etd": "2026-06-12",
       "cn_atd": null,
-      "cn_rdd": "2026-06-28",
+      "cn_rdd": "2026-06-17",
       "transit_days": 0,
       "courier": "",
-      "remark": "",
+      "remark": ">5/22 가봉 전달 예정",
       "delay_reason": "",
       "fabric_etd": "2026-05-29",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -57847,17 +59292,18 @@ const DASHBOARD = {
       "cn_focus_pcs": 0,
       "kr_keep_pcs": 1,
       "cn_total_pcs": 4,
-      "kr_expected": "2026-06-24",
+      "kr_expected": "2026-06-12",
       "kr_actual": null,
-      "cn_etd": "2026-06-23",
+      "cn_etd": "2026-06-12",
       "cn_atd": null,
-      "cn_rdd": "2026-06-28",
+      "cn_rdd": "2026-06-17",
       "transit_days": 0,
       "courier": "",
       "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-05-29",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -57887,17 +59333,18 @@ const DASHBOARD = {
       "cn_focus_pcs": 0,
       "kr_keep_pcs": 1,
       "cn_total_pcs": 3,
-      "kr_expected": "2026-06-12",
+      "kr_expected": "2026-06-15",
       "kr_actual": null,
-      "cn_etd": "2026-06-12",
+      "cn_etd": "2026-06-15",
       "cn_atd": null,
-      "cn_rdd": "2026-06-14",
+      "cn_rdd": "2026-06-17",
       "transit_days": 2,
       "courier": "",
-      "remark": "5/7: The sample fabric has not been received yet, and the color of the sample fabric has not been finally confirmed ,Will received on 5/22",
+      "remark": "5/11: The sample fabric has not been received yet, and the color of the sample fabric has not been finally confirmed ,",
       "delay_reason": "원단 지연",
       "fabric_etd": "2026-05-29",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -57938,6 +59385,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-04-23",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -57978,6 +59426,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-05-15",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -58018,6 +59467,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-05-29",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -58058,6 +59508,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-05-08",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -58098,6 +59549,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-04-22",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -58138,6 +59590,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-04-22",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -58178,6 +59631,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-04-30",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -58214,10 +59668,11 @@ const DASHBOARD = {
       "cn_rdd": "2026-06-17",
       "transit_days": 0,
       "courier": "",
-      "remark": "",
+      "remark": "* 2차 오비 목업 전달 예정 (풍산 오비 이밴드 퀄리티 TEST)",
       "delay_reason": "",
       "fabric_etd": "2026-04-28",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -58254,10 +59709,11 @@ const DASHBOARD = {
       "cn_rdd": "2026-06-28",
       "transit_days": 0,
       "courier": "",
-      "remark": "",
+      "remark": "오비 메쉬 밴드 2차 변경중",
       "delay_reason": "",
       "fabric_etd": "2026-05-29",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -58298,6 +59754,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-04-28",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -58334,10 +59791,11 @@ const DASHBOARD = {
       "cn_rdd": "2026-06-28",
       "transit_days": 0,
       "courier": "",
-      "remark": "",
+      "remark": "오비 밴드 생산 기간 3주 소요/ 도안 변경",
       "delay_reason": "",
       "fabric_etd": "2026-05-29",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -58374,10 +59832,11 @@ const DASHBOARD = {
       "cn_rdd": "2026-06-28",
       "transit_days": 0,
       "courier": "",
-      "remark": "",
+      "remark": "오비 밴드 생산 기간 3주 소요",
       "delay_reason": "",
       "fabric_etd": "2026-04-30",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -58418,6 +59877,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-04-24",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -58458,6 +59918,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-05-29",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -58498,6 +59959,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-04-23",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -58538,6 +60000,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-05-29",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -58578,6 +60041,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-05-29",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -58618,6 +60082,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-04-27",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -58632,7 +60097,7 @@ const DASHBOARD = {
       "sourcing": "양태영",
       "vendor": "티피나디아㈜",
       "vendor_en": "TP Nadia Co.,Ltd",
-      "co": "KR",
+      "co": "VN",
       "cn_invoice_rmb": 948,
       "ttl_pcs": 6,
       "kr_pcs": 1,
@@ -58647,17 +60112,18 @@ const DASHBOARD = {
       "cn_focus_pcs": 1,
       "kr_keep_pcs": 1,
       "cn_total_pcs": 5,
-      "kr_expected": "2026-06-20",
+      "kr_expected": "2026-06-24",
       "kr_actual": null,
       "cn_etd": "2026-06-23",
       "cn_atd": null,
       "cn_rdd": "2026-06-28",
-      "transit_days": 0,
+      "transit_days": 5,
       "courier": "",
-      "remark": "",
+      "remark": "원단 발송 예정일 5/25로 2차 품평회 입고",
       "delay_reason": "",
       "fabric_etd": "2026-05-29",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -58672,7 +60138,7 @@ const DASHBOARD = {
       "sourcing": "양태영",
       "vendor": "티피나디아㈜",
       "vendor_en": "TP Nadia Co.,Ltd",
-      "co": "KR",
+      "co": "VN",
       "cn_invoice_rmb": 948,
       "ttl_pcs": 6,
       "kr_pcs": 1,
@@ -58687,17 +60153,18 @@ const DASHBOARD = {
       "cn_focus_pcs": 1,
       "kr_keep_pcs": 1,
       "cn_total_pcs": 5,
-      "kr_expected": "2026-06-20",
+      "kr_expected": "2026-06-24",
       "kr_actual": null,
       "cn_etd": "2026-06-23",
       "cn_atd": null,
       "cn_rdd": "2026-06-28",
-      "transit_days": 0,
+      "transit_days": 5,
       "courier": "",
-      "remark": "",
+      "remark": "원단 발송 예정일 5/25로 2차 품평회 입고",
       "delay_reason": "",
       "fabric_etd": "2026-05-29",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -58712,7 +60179,7 @@ const DASHBOARD = {
       "sourcing": "양태영",
       "vendor": "티피나디아㈜",
       "vendor_en": "TP Nadia Co.,Ltd",
-      "co": "KR",
+      "co": "VN",
       "cn_invoice_rmb": 948,
       "ttl_pcs": 6,
       "kr_pcs": 1,
@@ -58727,17 +60194,18 @@ const DASHBOARD = {
       "cn_focus_pcs": 1,
       "kr_keep_pcs": 1,
       "cn_total_pcs": 5,
-      "kr_expected": "2026-06-20",
+      "kr_expected": "2026-06-12",
       "kr_actual": null,
-      "cn_etd": "2026-06-23",
+      "cn_etd": "2026-06-12",
       "cn_atd": null,
-      "cn_rdd": "2026-06-28",
-      "transit_days": 0,
+      "cn_rdd": "2026-06-17",
+      "transit_days": 5,
       "courier": "",
-      "remark": "",
+      "remark": "원단 발송 예정일 5/7로 1차 품평회 입고",
       "delay_reason": "",
       "fabric_etd": "2026-05-08",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -58752,7 +60220,7 @@ const DASHBOARD = {
       "sourcing": "양태영",
       "vendor": "티피나디아㈜",
       "vendor_en": "TP Nadia Co.,Ltd",
-      "co": "KR",
+      "co": "VN",
       "cn_invoice_rmb": 759,
       "ttl_pcs": 5,
       "kr_pcs": 1,
@@ -58767,17 +60235,18 @@ const DASHBOARD = {
       "cn_focus_pcs": 0,
       "kr_keep_pcs": 1,
       "cn_total_pcs": 4,
-      "kr_expected": "2026-06-20",
+      "kr_expected": "2026-06-12",
       "kr_actual": null,
-      "cn_etd": "2026-06-23",
+      "cn_etd": "2026-06-12",
       "cn_atd": null,
-      "cn_rdd": "2026-06-28",
-      "transit_days": 0,
+      "cn_rdd": "2026-06-17",
+      "transit_days": 5,
       "courier": "",
-      "remark": "",
+      "remark": "원단예상 출고일 5/15, 1차 품평회 입고",
       "delay_reason": "",
       "fabric_etd": "2026-05-29",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -58792,7 +60261,7 @@ const DASHBOARD = {
       "sourcing": "양태영",
       "vendor": "티피나디아㈜",
       "vendor_en": "TP Nadia Co.,Ltd",
-      "co": "KR",
+      "co": "VN",
       "cn_invoice_rmb": 759,
       "ttl_pcs": 5,
       "kr_pcs": 1,
@@ -58807,17 +60276,18 @@ const DASHBOARD = {
       "cn_focus_pcs": 0,
       "kr_keep_pcs": 1,
       "cn_total_pcs": 4,
-      "kr_expected": "2026-06-16",
+      "kr_expected": "2026-06-12",
       "kr_actual": null,
-      "cn_etd": "2026-06-10",
+      "cn_etd": "2026-06-12",
       "cn_atd": null,
-      "cn_rdd": "2026-06-15",
-      "transit_days": 0,
+      "cn_rdd": "2026-06-17",
+      "transit_days": 5,
       "courier": "",
-      "remark": "",
+      "remark": "원단예상 출고일 5/6, 1차 품평회 입고",
       "delay_reason": "",
       "fabric_etd": "2026-04-23",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -58832,7 +60302,7 @@ const DASHBOARD = {
       "sourcing": "양태영",
       "vendor": "티피나디아㈜",
       "vendor_en": "TP Nadia Co.,Ltd",
-      "co": "KR",
+      "co": "",
       "cn_invoice_rmb": 569,
       "ttl_pcs": 4,
       "kr_pcs": 1,
@@ -58847,17 +60317,18 @@ const DASHBOARD = {
       "cn_focus_pcs": 0,
       "kr_keep_pcs": 1,
       "cn_total_pcs": 3,
-      "kr_expected": null,
+      "kr_expected": "2026-06-30",
       "kr_actual": null,
-      "cn_etd": null,
+      "cn_etd": "2026-06-30",
       "cn_atd": null,
-      "cn_rdd": null,
-      "transit_days": 0,
+      "cn_rdd": "2026-07-05",
+      "transit_days": 2,
       "courier": "",
-      "remark": "Q2 진행건",
+      "remark": "작지 미 수취, 원단 LINE으로 변경 → Q2로 변경",
       "delay_reason": "",
       "fabric_etd": "2026-05-29",
       "is_na": false,
+      "is_drop": false,
       "phase": "2ND TS"
     },
     {
@@ -58872,7 +60343,7 @@ const DASHBOARD = {
       "sourcing": "양태영",
       "vendor": "티피나디아㈜",
       "vendor_en": "TP Nadia Co.,Ltd",
-      "co": "KR",
+      "co": "",
       "cn_invoice_rmb": 569,
       "ttl_pcs": 4,
       "kr_pcs": 1,
@@ -58887,17 +60358,18 @@ const DASHBOARD = {
       "cn_focus_pcs": 0,
       "kr_keep_pcs": 1,
       "cn_total_pcs": 3,
-      "kr_expected": null,
+      "kr_expected": "2026-06-30",
       "kr_actual": null,
-      "cn_etd": null,
+      "cn_etd": "2026-06-30",
       "cn_atd": null,
-      "cn_rdd": null,
-      "transit_days": 0,
+      "cn_rdd": "2026-07-05",
+      "transit_days": 2,
       "courier": "",
-      "remark": "Q2 진행건",
+      "remark": "작지 미 수취, 원단 LINE으로 변경 → Q2로 변경",
       "delay_reason": "",
       "fabric_etd": "2026-04-24",
       "is_na": false,
+      "is_drop": false,
       "phase": "2ND TS"
     },
     {
@@ -58938,6 +60410,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-05-29",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -58978,6 +60451,7 @@ const DASHBOARD = {
       "delay_reason": "기타",
       "fabric_etd": "2026-05-29",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -59007,17 +60481,18 @@ const DASHBOARD = {
       "cn_focus_pcs": 1,
       "kr_keep_pcs": 1,
       "cn_total_pcs": 5,
-      "kr_expected": "2026-06-19",
+      "kr_expected": "2026-06-22",
       "kr_actual": null,
-      "cn_etd": "2026-06-19",
+      "cn_etd": "2026-06-22",
       "cn_atd": null,
-      "cn_rdd": "2026-06-21",
+      "cn_rdd": "2026-06-24",
       "transit_days": 2,
       "courier": "",
-      "remark": "not yet received the T/P",
+      "remark": "",
       "delay_reason": "원단 지연",
       "fabric_etd": "2026-05-29",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -59047,17 +60522,18 @@ const DASHBOARD = {
       "cn_focus_pcs": 1,
       "kr_keep_pcs": 1,
       "cn_total_pcs": 5,
-      "kr_expected": "2026-06-19",
+      "kr_expected": "2026-06-22",
       "kr_actual": null,
-      "cn_etd": "2026-06-19",
+      "cn_etd": "2026-06-22",
       "cn_atd": null,
-      "cn_rdd": "2026-06-21",
+      "cn_rdd": "2026-06-24",
       "transit_days": 2,
       "courier": "",
-      "remark": "not yet received the T/P",
+      "remark": "",
       "delay_reason": "원단 지연",
       "fabric_etd": "2026-05-29",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -59087,17 +60563,18 @@ const DASHBOARD = {
       "cn_focus_pcs": 1,
       "kr_keep_pcs": 1,
       "cn_total_pcs": 5,
-      "kr_expected": "2026-06-19",
+      "kr_expected": "2026-06-22",
       "kr_actual": null,
-      "cn_etd": "2026-06-19",
+      "cn_etd": "2026-06-22",
       "cn_atd": null,
-      "cn_rdd": "2026-06-21",
+      "cn_rdd": "2026-06-24",
       "transit_days": 2,
       "courier": "",
-      "remark": "not yet received the T/P",
+      "remark": "",
       "delay_reason": "",
       "fabric_etd": "2026-04-30",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -59127,17 +60604,18 @@ const DASHBOARD = {
       "cn_focus_pcs": 0,
       "kr_keep_pcs": 1,
       "cn_total_pcs": 4,
-      "kr_expected": "2026-06-24",
+      "kr_expected": "2026-06-12",
       "kr_actual": null,
-      "cn_etd": "2026-06-23",
+      "cn_etd": "2026-06-12",
       "cn_atd": null,
-      "cn_rdd": "2026-06-28",
+      "cn_rdd": "2026-06-17",
       "transit_days": 0,
       "courier": "",
-      "remark": "",
+      "remark": "원단 예정 발송일 5/25, 1차 품평회 입고",
       "delay_reason": "",
       "fabric_etd": "2026-05-29",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -59167,17 +60645,18 @@ const DASHBOARD = {
       "cn_focus_pcs": 0,
       "kr_keep_pcs": 1,
       "cn_total_pcs": 4,
-      "kr_expected": "2026-06-24",
+      "kr_expected": "2026-06-12",
       "kr_actual": null,
-      "cn_etd": "2026-06-23",
+      "cn_etd": "2026-06-12",
       "cn_atd": null,
-      "cn_rdd": "2026-06-28",
+      "cn_rdd": "2026-06-17",
       "transit_days": 0,
       "courier": "",
-      "remark": "",
+      "remark": "원단 예정 발송일 5/25, 1차 품평회 입고",
       "delay_reason": "",
       "fabric_etd": "2026-05-29",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -59207,17 +60686,18 @@ const DASHBOARD = {
       "cn_focus_pcs": 0,
       "kr_keep_pcs": 1,
       "cn_total_pcs": 4,
-      "kr_expected": "2026-06-24",
+      "kr_expected": "2026-06-12",
       "kr_actual": null,
-      "cn_etd": "2026-06-23",
+      "cn_etd": "2026-06-12",
       "cn_atd": null,
-      "cn_rdd": "2026-06-28",
+      "cn_rdd": "2026-06-17",
       "transit_days": 0,
       "courier": "",
-      "remark": "작지 미분출, 원단 입고일 확인 안됨",
+      "remark": "원단 예정 발송일 5/25, 1차 품평회 입고",
       "delay_reason": "",
       "fabric_etd": "2026-05-29",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -59247,17 +60727,18 @@ const DASHBOARD = {
       "cn_focus_pcs": 0,
       "kr_keep_pcs": 1,
       "cn_total_pcs": 4,
-      "kr_expected": "2026-06-24",
+      "kr_expected": "2026-06-12",
       "kr_actual": null,
-      "cn_etd": "2026-06-23",
+      "cn_etd": "2026-06-12",
       "cn_atd": null,
-      "cn_rdd": "2026-06-28",
+      "cn_rdd": "2026-06-17",
       "transit_days": 0,
       "courier": "",
-      "remark": "",
+      "remark": "원단 예정 발송일 5/25, 1차 품평회 입고",
       "delay_reason": "",
       "fabric_etd": "2026-05-29",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -59294,10 +60775,11 @@ const DASHBOARD = {
       "cn_rdd": "2026-06-28",
       "transit_days": 0,
       "courier": "",
-      "remark": "작지 미분출, 원단 입고일 확인 안됨",
+      "remark": "2차 품평회 입고",
       "delay_reason": "",
       "fabric_etd": "",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -59334,10 +60816,11 @@ const DASHBOARD = {
       "cn_rdd": "2026-06-28",
       "transit_days": 0,
       "courier": "",
-      "remark": "작지 미분출, 원단 입고일 확인 안됨",
+      "remark": "2차 품평회 입고",
       "delay_reason": "",
       "fabric_etd": "",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -59378,6 +60861,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-05-29",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -59418,6 +60902,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-05-29",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -59458,6 +60943,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-04-24",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -59498,6 +60984,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-04-22",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -59538,6 +61025,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-04-30",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -59578,6 +61066,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-04-24",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -59618,6 +61107,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-05-29",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -59658,6 +61148,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-04-24",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -59698,6 +61189,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-04-27",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -59738,6 +61230,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-04-22",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -59778,6 +61271,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-04-30",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -59818,6 +61312,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-04-23",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -59858,6 +61353,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-04-23",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -59898,6 +61394,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-05-08",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -59938,6 +61435,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-05-29",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -59978,6 +61476,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-05-29",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -60018,6 +61517,7 @@ const DASHBOARD = {
       "delay_reason": "원단 지연",
       "fabric_etd": "2026-04-30",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -60058,6 +61558,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-05-29",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -60098,6 +61599,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-04-22",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -60138,6 +61640,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-04-27",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -60178,6 +61681,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-04-27",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -60192,7 +61696,7 @@ const DASHBOARD = {
       "sourcing": "양태영",
       "vendor": "티피나디아㈜",
       "vendor_en": "TP Nadia Co.,Ltd",
-      "co": "KR",
+      "co": "VN",
       "cn_invoice_rmb": 892,
       "ttl_pcs": 5,
       "kr_pcs": 1,
@@ -60207,17 +61711,18 @@ const DASHBOARD = {
       "cn_focus_pcs": 1,
       "kr_keep_pcs": 1,
       "cn_total_pcs": 4,
-      "kr_expected": "2026-06-16",
+      "kr_expected": "2026-06-24",
       "kr_actual": null,
-      "cn_etd": "2026-06-10",
+      "cn_etd": "2026-06-23",
       "cn_atd": null,
-      "cn_rdd": "2026-06-15",
-      "transit_days": 0,
+      "cn_rdd": "2026-06-28",
+      "transit_days": 5,
       "courier": "",
-      "remark": "",
+      "remark": "원단 예정 발송일 5/25, 신규스타일 가봉 진행으로 2차 품평회 입고",
       "delay_reason": "",
       "fabric_etd": "2026-04-30",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -60232,7 +61737,7 @@ const DASHBOARD = {
       "sourcing": "양태영",
       "vendor": "티피나디아㈜",
       "vendor_en": "TP Nadia Co.,Ltd",
-      "co": "KR",
+      "co": "VN",
       "cn_invoice_rmb": 892,
       "ttl_pcs": 5,
       "kr_pcs": 1,
@@ -60247,17 +61752,18 @@ const DASHBOARD = {
       "cn_focus_pcs": 1,
       "kr_keep_pcs": 1,
       "cn_total_pcs": 4,
-      "kr_expected": "2026-06-20",
+      "kr_expected": "2026-06-24",
       "kr_actual": null,
       "cn_etd": "2026-06-23",
       "cn_atd": null,
       "cn_rdd": "2026-06-28",
-      "transit_days": 0,
+      "transit_days": 5,
       "courier": "",
-      "remark": "",
+      "remark": "원단 예정 발송일 5/25, 신규스타일 가봉 진행으로 2차 품평회 입고",
       "delay_reason": "",
       "fabric_etd": "2026-05-29",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -60272,7 +61778,7 @@ const DASHBOARD = {
       "sourcing": "양태영",
       "vendor": "티피나디아㈜",
       "vendor_en": "TP Nadia Co.,Ltd",
-      "co": "KR",
+      "co": "VN",
       "cn_invoice_rmb": 669,
       "ttl_pcs": 4,
       "kr_pcs": 1,
@@ -60287,17 +61793,18 @@ const DASHBOARD = {
       "cn_focus_pcs": 0,
       "kr_keep_pcs": 1,
       "cn_total_pcs": 3,
-      "kr_expected": "2026-06-16",
+      "kr_expected": "2026-06-24",
       "kr_actual": null,
-      "cn_etd": "2026-06-10",
+      "cn_etd": "2026-06-23",
       "cn_atd": null,
-      "cn_rdd": "2026-06-15",
-      "transit_days": 0,
+      "cn_rdd": "2026-06-28",
+      "transit_days": 5,
       "courier": "",
-      "remark": "",
+      "remark": "원단 예정 발송일 5/25, 신규스타일 가봉 진행으로 2차 품평회 입고",
       "delay_reason": "",
       "fabric_etd": "2026-04-22",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -60338,6 +61845,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-05-29",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -60378,6 +61886,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-05-29",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -60418,6 +61927,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-05-10",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -60458,6 +61968,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-04-28",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -60498,6 +62009,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-04-28",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -60538,6 +62050,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-05-29",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -60578,6 +62091,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-05-07",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -60618,6 +62132,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -60658,6 +62173,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -60698,6 +62214,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-05-29",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -60738,6 +62255,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-05-29",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -60774,10 +62292,11 @@ const DASHBOARD = {
       "cn_rdd": "2026-06-14",
       "transit_days": 2,
       "courier": "",
-      "remark": "4/28: order fabric 5/5:fabric in warehouse",
+      "remark": "4/28: order fabric 5/5:fabric in warehouse;5/19pattern making",
       "delay_reason": "",
       "fabric_etd": "2026-05-20",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -60818,6 +62337,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-05-20",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -60854,10 +62374,11 @@ const DASHBOARD = {
       "cn_rdd": "2026-06-14",
       "transit_days": 2,
       "courier": "",
-      "remark": "4/28: order fabric 5/5:fabric in warehouse",
+      "remark": "5/7request FIT MOCK-UP SMPL, update color code",
       "delay_reason": "",
       "fabric_etd": "2026-05-20",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -60894,10 +62415,11 @@ const DASHBOARD = {
       "cn_rdd": "2026-06-17",
       "transit_days": 2,
       "courier": "",
-      "remark": "4/28: order fabric 4/30:change fabric to QA358D5-55 5/5:re-order fabric",
+      "remark": "4/28: order fabric 4/30:change fabric to QA358D5-55 5/5:re-order fabric,5/8 fabric in warehouse",
       "delay_reason": "",
       "fabric_etd": "2026-05-30",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -60938,6 +62460,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-05-20",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -60974,10 +62497,11 @@ const DASHBOARD = {
       "cn_rdd": "2026-06-17",
       "transit_days": 2,
       "courier": "",
-      "remark": "4/28: order fabric 5/5:fabric in warehouse",
+      "remark": "4/28: order fabric 5/5:fabric in warehouse;5/19pattern making",
       "delay_reason": "",
       "fabric_etd": "",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -61018,6 +62542,7 @@ const DASHBOARD = {
       "delay_reason": "원단 지연",
       "fabric_etd": "",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -61058,6 +62583,7 @@ const DASHBOARD = {
       "delay_reason": "원단 지연",
       "fabric_etd": "2026-05-30",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -61098,6 +62624,7 @@ const DASHBOARD = {
       "delay_reason": "원단 지연",
       "fabric_etd": "2026-05-30",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -61138,6 +62665,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-05-30",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -61178,6 +62706,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-05-30",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -61218,6 +62747,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-05-20",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -61258,6 +62788,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-05-20",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -61294,10 +62825,11 @@ const DASHBOARD = {
       "cn_rdd": "2026-06-14",
       "transit_days": 2,
       "courier": "",
-      "remark": "4/28: order fabric. will be ready on around 5/9",
+      "remark": "5/19 pattern making",
       "delay_reason": "",
       "fabric_etd": "2026-05-20",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -61334,10 +62866,11 @@ const DASHBOARD = {
       "cn_rdd": "2026-06-14",
       "transit_days": 2,
       "courier": "",
-      "remark": "4/27: order fabric, will be ready on around 5/8",
+      "remark": "5/9 updated fabric code,fabric delay to 5/12; 5/19 pattern making",
       "delay_reason": "",
       "fabric_etd": "2026-05-20",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -61378,6 +62911,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -61414,10 +62948,11 @@ const DASHBOARD = {
       "cn_rdd": "2026-06-14",
       "transit_days": 2,
       "courier": "",
-      "remark": "4/28: order fabric 5/5:fabric in warehouse;5/4:NEED FIT MOCK-UP",
+      "remark": "4/28: order fabric 5/5:fabric in warehouse;5/4:NEED FIT MOCK-UP SMPL; updated color code",
       "delay_reason": "",
       "fabric_etd": "2026-05-20",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -61458,6 +62993,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -61498,6 +63034,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-05-20",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -61538,6 +63075,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -61578,6 +63116,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -61618,6 +63157,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-05-20",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -61654,10 +63194,11 @@ const DASHBOARD = {
       "cn_rdd": "2026-06-17",
       "transit_days": 2,
       "courier": "",
-      "remark": "4/28: order fabric 5/5:fabric in warehouse",
+      "remark": "4/28: order fabric 5/5:fabric in warehouse; DS will release AW info. on 5/12",
       "delay_reason": "",
       "fabric_etd": "",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -61687,17 +63228,18 @@ const DASHBOARD = {
       "cn_focus_pcs": 0,
       "kr_keep_pcs": 2,
       "cn_total_pcs": 4,
-      "kr_expected": "2026-08-07",
+      "kr_expected": null,
       "kr_actual": null,
-      "cn_etd": "2026-08-07",
+      "cn_etd": null,
       "cn_atd": null,
-      "cn_rdd": "2026-08-09",
+      "cn_rdd": null,
       "transit_days": 2,
       "courier": "",
-      "remark": "PLM미수취, 2차Q2예정",
+      "remark": "Q2",
       "delay_reason": "",
       "fabric_etd": "2026-05-30",
       "is_na": false,
+      "is_drop": false,
       "phase": "2ND TS"
     },
     {
@@ -61734,10 +63276,11 @@ const DASHBOARD = {
       "cn_rdd": "2026-06-14",
       "transit_days": 2,
       "courier": "",
-      "remark": "4/28: order fabric 4/30:change fabric to QA747D9-95 5/5:re-order fabric",
+      "remark": "4/28: order fabric 4/30:change fabric to QA747D9-95 5/5:re-order fabric,5/7 fabric in warehouse;",
       "delay_reason": "",
       "fabric_etd": "2026-05-20",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -61778,6 +63321,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-05-20",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -61818,6 +63362,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-05-20",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -61858,6 +63403,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-05-20",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -61898,6 +63444,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-05-20",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -61934,10 +63481,11 @@ const DASHBOARD = {
       "cn_rdd": "2026-06-14",
       "transit_days": 2,
       "courier": "",
-      "remark": "4/28: order fabric 5/5:fabric in warehouse; NEED SIDE SEAM MOCK-UP",
+      "remark": "4/28: NEED SIDE SEAM MOCK-UP;5/7 request wasit band mock-up",
       "delay_reason": "",
       "fabric_etd": "2026-05-20",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -61978,6 +63526,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-05-30",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -62018,6 +63567,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-05-20",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -62058,6 +63608,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-05-20",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -62098,6 +63649,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-05-20",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -62134,10 +63686,11 @@ const DASHBOARD = {
       "cn_rdd": "2026-06-14",
       "transit_days": 2,
       "courier": "",
-      "remark": "4/28: order fabric 4/30:change fabric to QA747D9-95 5/5:re-order fabric;NEED FIT MOCK-UP",
+      "remark": "4/28: order fabric 4/30:change fabric to QA747D9-95 5/5:re-order fabric;5/7 fabric in warehouse;;NEED FIT MOCK-UP",
       "delay_reason": "",
       "fabric_etd": "2026-05-20",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -62178,6 +63731,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-05-20",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -62214,10 +63768,11 @@ const DASHBOARD = {
       "cn_rdd": "2026-06-14",
       "transit_days": 2,
       "courier": "",
-      "remark": "4/28: order fabric. will be ready on around 5/9",
+      "remark": "5/19 pattern making",
       "delay_reason": "",
       "fabric_etd": "2026-05-20",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -62258,6 +63813,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-05-20",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -62294,10 +63850,11 @@ const DASHBOARD = {
       "cn_rdd": "2026-06-14",
       "transit_days": 2,
       "courier": "",
-      "remark": "4/28: order fabric,5/5:fabric in warehouse",
+      "remark": "4/28: order fabric,5/5:fabric in warehouse,update color code",
       "delay_reason": "",
       "fabric_etd": "2026-05-20",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -62338,6 +63895,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-05-20",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -62378,6 +63936,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-05-20",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -62414,10 +63973,11 @@ const DASHBOARD = {
       "cn_rdd": "2026-06-14",
       "transit_days": 2,
       "courier": "",
-      "remark": "4/28: order fabric 5/5:fabric in warehouse",
+      "remark": "4/28: order fabric 5/5:fabric in warehouse, 5/6 request FIT MOCK-UP SMPL",
       "delay_reason": "",
       "fabric_etd": "2026-05-20",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -62458,6 +64018,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-05-20",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -62498,6 +64059,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-05-20",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -62538,6 +64100,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -62578,6 +64141,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-05-30",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -62614,10 +64178,11 @@ const DASHBOARD = {
       "cn_rdd": "2026-06-14",
       "transit_days": 2,
       "courier": "",
-      "remark": "4/28: order fabric,5/5:fabric in warehouse",
+      "remark": "4/28: order fabric,5/5:fabric in warehouse; updated color code",
       "delay_reason": "",
       "fabric_etd": "2026-05-20",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -62658,6 +64223,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-05-20",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -62694,10 +64260,11 @@ const DASHBOARD = {
       "cn_rdd": "2026-06-14",
       "transit_days": 2,
       "courier": "",
-      "remark": "4/28: order fabric. will be ready on around 5/9",
+      "remark": "4/28: order fabric. will be ready on around 5/9，5/7 fabric in warehouse; 5/7 request side seam panel mock-up",
       "delay_reason": "",
       "fabric_etd": "2026-05-20",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -62738,6 +64305,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -62778,6 +64346,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-05-20",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -62814,10 +64383,11 @@ const DASHBOARD = {
       "cn_rdd": "2026-06-14",
       "transit_days": 2,
       "courier": "",
-      "remark": "4/28: order fabric 4/30:change fabric to QA358D5-55 5/5:re-order fabric",
+      "remark": "4/28: order fabric 4/30:change fabric to QA358D5-55 5/5:re-order fabric,5/8 fabric in warehouse",
       "delay_reason": "",
       "fabric_etd": "2026-05-30",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -62858,6 +64428,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-05-20",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -62898,6 +64469,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-05-20",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -62934,10 +64506,11 @@ const DASHBOARD = {
       "cn_rdd": "2026-06-14",
       "transit_days": 2,
       "courier": "",
-      "remark": "4/28: order fabric 4/30:change fabric to QA358D5-55 5/5:re-order fabric",
+      "remark": "4/28: order fabric 4/30:change fabric to QA358D5-55 5/5:re-order fabric,5/8 fabric in warehouse",
       "delay_reason": "원단 지연",
       "fabric_etd": "2026-05-30",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -62978,6 +64551,7 @@ const DASHBOARD = {
       "delay_reason": "원단 지연",
       "fabric_etd": "2026-05-30",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -63018,6 +64592,7 @@ const DASHBOARD = {
       "delay_reason": "원단 지연",
       "fabric_etd": "2026-05-30",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -63058,6 +64633,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-05-20",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -63094,10 +64670,11 @@ const DASHBOARD = {
       "cn_rdd": "2026-06-17",
       "transit_days": 2,
       "courier": "",
-      "remark": "4/28: order fabric 5/5:fabric in warehouse",
+      "remark": "4/28: order fabric 5/5:fabric in warehouse;DS will release AW info. on 5/12",
       "delay_reason": "",
       "fabric_etd": "2026-05-30",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -63138,6 +64715,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-05-20",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -63178,6 +64756,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-05-30",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -63207,17 +64786,18 @@ const DASHBOARD = {
       "cn_focus_pcs": 0,
       "kr_keep_pcs": 1,
       "cn_total_pcs": 4,
-      "kr_expected": "2026-08-07",
+      "kr_expected": null,
       "kr_actual": null,
-      "cn_etd": "2026-08-07",
+      "cn_etd": null,
       "cn_atd": null,
-      "cn_rdd": "2026-08-09",
+      "cn_rdd": null,
       "transit_days": 2,
       "courier": "",
-      "remark": "PLM미수취, 2차Q2예정",
+      "remark": "Q2",
       "delay_reason": "",
       "fabric_etd": "2026-05-30",
       "is_na": false,
+      "is_drop": false,
       "phase": "2ND TS"
     },
     {
@@ -63258,6 +64838,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-05-20",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -63298,6 +64879,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-05-20",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -63338,6 +64920,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-05-20",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -63378,6 +64961,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-05-20",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -63418,6 +65002,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-05-20",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -63458,6 +65043,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-05-20",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -63498,6 +65084,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -63538,6 +65125,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-05-20",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     },
     {
@@ -63578,6 +65166,7 @@ const DASHBOARD = {
       "delay_reason": "",
       "fabric_etd": "2026-05-20",
       "is_na": false,
+      "is_drop": false,
       "phase": "MAIN TS"
     }
   ]

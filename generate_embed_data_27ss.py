@@ -4,7 +4,6 @@ sys.stdout.reconfigure(encoding='utf-8')
 import openpyxl
 import json
 import os
-import glob
 import shutil
 from datetime import datetime, date
 from collections import Counter
@@ -12,11 +11,8 @@ from collections import Counter
 # ─── Paths ────────────────────────────────────────────────────────────────────
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 
-# 가장 최근 수정일자의 엑셀 파일 자동 선택 (OneDrive 원본 직접 참조)
-_candidates = glob.glob(r"C:\Users\AD1082\OneDrive - F&F\바탕 화면\(WEAR)27SS TRADE SHOW LIST*.xlsx")
-if not _candidates:
-    raise FileNotFoundError("(WEAR)27SS TRADE SHOW LIST*.xlsx 파일을 찾을 수 없습니다.")
-EXCEL_PATH = max(_candidates, key=os.path.getmtime)
+# ↓ 파일 위치가 바뀌면 이 한 줄만 수정
+EXCEL_PATH = r"C:\Users\AD1082\OneDrive - F&F\F_SO_ MLB 소싱팀 - 27SS\(WEAR)27SS TRADE SHOW LIST _2026.04.27.xlsx"
 print(f"📂 사용 엑셀: {os.path.basename(EXCEL_PATH)}")
 
 OUTPUT_PATH = os.path.join(BASE_DIR, "embed_data.js")
@@ -291,9 +287,10 @@ def main():
         kr_pcs       = safe_int(g('kr_pcs'))
         cn_pcs       = safe_int(g('cn_pcs'))
 
-        # is_na: item is not participating in trade show
-        go_drop = safe_str(g('go_drop')).upper()
+        # is_na / is_drop 판별
+        go_drop = safe_str(g('go_drop')).strip().upper()
         is_na   = go_drop in ('NA', 'N/A')
+        is_drop = go_drop == 'DROP'
 
         record = {
             'sku':            sku,
@@ -333,6 +330,7 @@ def main():
             'delay_reason':   safe_str(g('delay_reason')),
             'fabric_etd':     fmt_fabric_etd(g('fabric_etd')),
             'is_na':          is_na,
+            'is_drop':        is_drop,
             'phase':          normalize_phase(g('phase')),
         }
         all_data.append(record)
@@ -340,20 +338,22 @@ def main():
     wb.close()
 
     # ─── Dashboard summaries ──────────────────────────────────────────────────
-    active           = [d for d in all_data if not d['is_na']]
-    total_sku        = len(all_data)
-    total_styles     = len({d['style_code'] for d in all_data})
-    na_styles        = len({d['style_code'] for d in all_data if d['is_na']})
-    total_pcs        = sum(d['ttl_pcs']       for d in all_data)
-    total_kr_keep    = sum(d['kr_keep_pcs']   for d in all_data)
+    # DROP SKU는 모든 집계에서 제외 (상세 목록 표시용으로 all_data엔 유지)
+    non_drop         = [d for d in all_data if not d['is_drop']]
+    active           = [d for d in non_drop  if not d['is_na']]
+    total_sku        = len(non_drop)
+    total_styles     = len({d['style_code'] for d in non_drop})
+    na_styles        = len({d['style_code'] for d in non_drop if d['is_na']})
+    total_pcs        = sum(d['ttl_pcs']       for d in non_drop)
+    total_kr_keep    = sum(d['kr_keep_pcs']   for d in non_drop)
     total_cn_show    = sum(d['cn_show_pcs']   for d in active)
     total_cn_focus   = sum(d['cn_focus_pcs']  for d in active)
     total_cn_total   = sum(d['cn_total_pcs']  for d in active)
 
     # ─── 입고예정일 (kr_expected) 분포 계산 ──────────────────────────────────
-    # 스타일당 가장 빠른 kr_expected 날짜 사용
+    # 스타일당 가장 빠른 kr_expected 날짜 사용 (DROP 제외)
     style_earliest = {}
-    for d in all_data:
+    for d in non_drop:
         sc = d['style_code']
         if d['kr_expected']:
             if sc not in style_earliest or d['kr_expected'] < style_earliest[sc]:
@@ -405,8 +405,10 @@ def main():
     print("=" * 52)
     print("  ✅ embed_data.js 생성 완료")
     print("=" * 52)
-    print(f"  총 SKU:            {total_sku:,}")
-    print(f"  총 스타일:          {total_styles:,}  (NA={na_styles})")
+    drop_sku_cnt = len(all_data) - len(non_drop)
+    drop_sty_cnt = len({d['style_code'] for d in all_data if d['is_drop']})
+    print(f"  총 SKU:            {total_sku:,}  (DROP 제외 {drop_sku_cnt}개)")
+    print(f"  총 스타일:          {total_styles:,}  (NA={na_styles}  DROP={drop_sty_cnt})")
     print()
     print(f"  kr_keep_pcs  합계: {total_kr_keep:,}")
     print(f"  cn_show_pcs  합계: {total_cn_show:,}")
@@ -418,7 +420,7 @@ def main():
     print(f"  검산 kr_keep+cn_show+cn_focus = {check:,}  {ok}")
     print()
 
-    co_dist = Counter(d['co'] for d in all_data)
+    co_dist = Counter(d['co'] for d in non_drop)
     print("  CO 분포:")
     for key in ('CN', 'VN', 'KR'):
         cnt = co_dist.get(key, 0)
@@ -431,20 +433,20 @@ def main():
         print(f"    (빈값): {empty:,} SKU")
     print()
 
-    phase_dist = Counter(d['phase'] for d in all_data)
+    phase_dist = Counter(d['phase'] for d in non_drop)
     print("  분기 분포:")
     for key in ('MAIN TS', '2ND TS', 'UNKNOWN'):
         cnt = phase_dist.get(key, 0)
         print(f"    {key:<10}: {cnt:>6,} SKU")
     print()
 
-    total_rmb = sum(d['cn_invoice_rmb'] for d in all_data)
+    total_rmb = sum(d['cn_invoice_rmb'] for d in non_drop)
     print(f"  cn_invoice_rmb 총합: {total_rmb:,.0f} RMB")
     print()
 
-    kr_exp  = sum(1 for d in all_data if d['kr_expected'])
-    cn_etd_ = sum(1 for d in all_data if d['cn_etd'])
-    remark_ = sum(1 for d in all_data if d['remark'])
+    kr_exp  = sum(1 for d in non_drop if d['kr_expected'])
+    cn_etd_ = sum(1 for d in non_drop if d['cn_etd'])
+    remark_ = sum(1 for d in non_drop if d['remark'])
     print(f"  kr_expected 채워진 SKU: {kr_exp:,}")
     print(f"  cn_etd      채워진 SKU: {cn_etd_:,}")
     print(f"  remark      채워진 SKU: {remark_:,}")
