@@ -11,21 +11,34 @@ python generate_embed_data_27ss.py
 if errorlevel 1 (
     echo.
     echo [ERROR] Python script failed
-    timeout /t 10
+    pause
     exit /b 1
 )
 echo.
 
-echo [2/3] Pushing changes to GitHub...
-git add .
+echo [2/3] Staging files for GitHub...
+git add embed_data.js "MLB 27SS TRADE SHOW.html" generate_embed_data_27ss.py index.html open_dashboard.bat ss_update.bat .gitignore
+if errorlevel 1 (
+    echo.
+    echo [ERROR] git add failed
+    pause
+    exit /b 1
+)
+
 git diff --cached --quiet
 if errorlevel 1 (
     git commit -m "Auto update dashboard"
+    if errorlevel 1 (
+        echo.
+        echo [ERROR] git commit failed
+        pause
+        exit /b 1
+    )
     git push origin main
     if errorlevel 1 (
         echo.
         echo [WARNING] Git push failed - check authentication or network
-        timeout /t 10
+        pause
         exit /b 1
     )
     echo Git push completed

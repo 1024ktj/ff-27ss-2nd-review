@@ -83,6 +83,7 @@ COL = {
     'sort':           3,
     'class_':         4,
     'item_type':      5,
+    'history':        6,   # G열: 샘플 ADD/변경 이력 (Sample level → History로 헤더 변경됨)
     'style_code':     7,
     'color':          8,
     'description':    9,
@@ -230,6 +231,28 @@ def fmt_fabric_etd(v):
     print(f"  ⚠ fabric_etd 변환 실패: {repr(s)}")
     return ''
 
+def calc_is_late_add(history_str):
+    """LATE ADD: 5/21 이후 추가건 + DCS (CN RDD 7/7 Latest 적용 대상)"""
+    if not history_str:
+        return False
+    s = str(history_str).strip()
+    if not s or s == '0':
+        return False
+    # DCS 포함이면 무조건 True
+    if 'DCS' in s.upper():
+        return True
+    # "M/D ADD" 패턴: "5/21 ADD", "5/27 ADD", "6/2 ADD" 등
+    for m in _re.finditer(r'(\d{1,2})/(\d{1,2})\s+ADD', s, _re.IGNORECASE):
+        month, day = int(m.group(1)), int(m.group(2))
+        if month > 5 or (month == 5 and day >= 21):
+            return True
+    # "품평전ADD(M/D)" 등 괄호 안 날짜 패턴
+    for m in _re.finditer(r'ADD\s*\((\d{1,2})/(\d{1,2})\)', s, _re.IGNORECASE):
+        month, day = int(m.group(1)), int(m.group(2))
+        if month > 5 or (month == 5 and day >= 21):
+            return True
+    return False
+
 def _has_korean(s):
     return any('가' <= c <= '힣' for c in s)
 
@@ -329,6 +352,8 @@ def main():
             'remark':         safe_str(g('remark')),
             'delay_reason':   safe_str(g('delay_reason')),
             'fabric_etd':     fmt_fabric_etd(g('fabric_etd')),
+            'history':        safe_str(g('history')),
+            'is_late_add':    calc_is_late_add(safe_str(g('history'))),
             'is_na':          is_na,
             'is_drop':        is_drop,
             'phase':          normalize_phase(g('phase')),

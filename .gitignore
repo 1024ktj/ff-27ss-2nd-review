@@ -1,6 +1,7 @@
 # 백업 폴더
 _archive/
 backup_0508/
+backup_*/
 
 # 엑셀 작업 임시 파일
 ~$*.xlsx
