@@ -1912,11 +1912,10 @@ function toggleDailySummary(){
     const byDate = {};
     const tbdList = [];
     src.forEach(d => {
-      const baseDate = d.cn_atd || d.cn_etd;
-      if(!baseDate){ tbdList.push(d); return; }
-      const isHandCarry = d.co==='KR' && d.courier && d.courier.toUpperCase().indexOf('HAND')>=0;
-      const transit = isHandCarry ? 0 : (d.transit_days || 0);
-      const rddDate = transit > 0 ? addDays(baseDate, transit) : baseDate;
+      // cn_rdd 직접 사용 (KPI 카드·타임라인과 동일 기준)
+      // 실입고 완료 시 cn_atd 우선, 미완료 시 cn_rdd (약속 도착일)
+      const rddDate = d.cn_atd || d.cn_rdd;
+      if(!rddDate){ tbdList.push(d); return; }
       const isDone = rddDate <= todayStr;
       const key = rddDate + (isDone ? '_done' : '_plan');
       if(!byDate[key]) byDate[key] = {done: isDone, date: rddDate, styles:new Set(), skus:0, pcs:0};
