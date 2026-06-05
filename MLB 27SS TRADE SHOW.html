@@ -1260,20 +1260,21 @@ function buildSchedulePills(){
 
 // ── 타임라인 D-day + 입고예정 배지 ──────────────────────────
 function buildTimelineDday(){
-  // 스타일당 최조기 kr_expected 계산
+  // CN ONLY 탭이면 cn_rdd 기준, KR+CN 탭이면 kr_expected 기준
+  const isCn = document.body.classList.contains('view-cn');
+  const rddField = isCn ? 'cn_rdd' : 'kr_expected';
   const styleEarliest = {};
   AD.forEach(d => {
-    if(d.kr_expected && d.style_code){
-      if(!styleEarliest[d.style_code] || d.kr_expected < styleEarliest[d.style_code])
-        styleEarliest[d.style_code] = d.kr_expected;
+    if(d[rddField] && d.style_code){
+      if(!styleEarliest[d.style_code] || d[rddField] < styleEarliest[d.style_code])
+        styleEarliest[d.style_code] = d[rddField];
     }
   });
   const totalSt = new Set(AD.map(d=>d.style_code).filter(Boolean)).size || 1; // KPI 카드와 동일 분모(전체 스타일)
-  const tbdCnt  = totalSt - Object.keys(styleEarliest).length; // kr_expected 미입력 스타일 수
   // 모집단 필터 기반 TBD (LATE/EX-LATE 탭 연동)
   var _popSrc = (typeof _getPopAD === 'function') ? _getPopAD(AD) : AD;
   var _popEarliest = {};
-  _popSrc.forEach(function(d){ if(d.kr_expected && d.style_code){ if(!_popEarliest[d.style_code]||d.kr_expected<_popEarliest[d.style_code])_popEarliest[d.style_code]=d.kr_expected; }});
+  _popSrc.forEach(function(d){ if(d[rddField] && d.style_code){ if(!_popEarliest[d.style_code]||d[rddField]<_popEarliest[d.style_code])_popEarliest[d.style_code]=d[rddField]; }});
   var _popTotalSt = new Set(_popSrc.map(function(d){return d.style_code;}).filter(Boolean)).size;
   var tbdCntPop = _popTotalSt - Object.keys(_popEarliest).length;
   function arrCnt(limit){ return Object.values(styleEarliest).filter(v=>v<=limit).length; }
@@ -3828,6 +3829,8 @@ function switchView(mode) {
   document.getElementById('item-badge').textContent = mode === 'cn' ? pivotItems.length+' items' : pivotItems.length+'개 ITEM';
   // 상세 테이블 badge/row-cnt 갱신
   _renderDetailPage();
+  // 타임라인 기준 재계산 (CN↔KR 전환 시 cn_rdd ↔ kr_expected 분기)
+  buildTimelineDday();
 }
 
 // ── BY ORIGIN 탭 ────────────────────────────────────────
