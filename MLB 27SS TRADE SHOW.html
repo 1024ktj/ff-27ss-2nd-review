@@ -373,7 +373,10 @@ body.view-cn .vs-btn#btn-view-all { background:#fff; color:var(--muted); }
 .ds-btn:not(:first-child) { border-left:none; }
 .ds-btn.active-kr { background:#e8f5e9; color:#2e7d32; font-weight:700; border-color:#a5d6a7; }
 .ds-btn.active-cn { background:#fce4ec; color:#c62828; font-weight:700; border-color:#ef9a9a; }
-.ds-btn.active-cat { background:#e8eaf6; color:#3949ab; font-weight:700; border-color:#9fa8da; }
+.ds-btn.active-cat      { background:#e8eaf6; color:#3949ab; font-weight:700; border-color:#9fa8da; }
+.ds-btn.active-late-all { background:#e2e8f0; color:#475569; font-weight:700; border-color:#94a3b8; }
+.ds-btn.active-late     { background:#fff7ed; color:#ea580c; font-weight:700; border-color:#fdba74; }
+.ds-btn.active-exlate   { background:#f0fdf4; color:#16a34a; font-weight:700; border-color:#86efac; }
 .ds-chk-label { font-size:11px; color:var(--muted); display:flex; align-items:center; gap:4px; cursor:pointer; user-select:none; }
 .ds-chk-label input { cursor:pointer; }
 .daily-summary-wrap { overflow-x:auto; border-radius:10px; border:1px solid var(--border); flex:1; }
@@ -1487,7 +1490,9 @@ window._renderKrArrivalBar = function() {
     }
   });
   var totalM = new Set(src.map(function(d){ return d.style_code; }).filter(Boolean)).size || 1;
+  var totalSku = src.length;
   function cnt(limit){ return Object.values(styleEarliest).filter(function(v){ return v<=limit; }).length; }
+  function cntSku(limit){ return src.filter(function(d){ return d.kr_expected && d.kr_expected<=limit; }).length; }
   var rows = [
     { label:'6/12 신규 DUE',             limit:'2026-06-12', target:40,  baseColor:'#ef4444' },
     { label:'6/16 2-1차 품평회',         limit:'2026-06-16', target:100, baseColor:'#3b82f6' },
@@ -1512,7 +1517,7 @@ window._renderKrArrivalBar = function() {
         '<span class="arr-row-pct" style="color:'+pctCol+'">'+p+'%</span>'+
       '</div>'+
       '<div class="arr-bar"><div class="arr-fill" style="width:'+Math.min(p,100)+'%;background:'+col+'"></div></div>'+
-      '<div class="arr-sub">'+c+'/'+totalM+' 스타일</div>'+
+      '<div class="arr-sub">'+c+'/'+totalM+' 스타일 · <span style="color:#9ca3af">'+cntSku(row.limit)+'/'+totalSku+' SKU</span></div>'+
     '</div>';
   }).join('');
   wrap.innerHTML = _popTabHtml(pf) + barsHtml;
@@ -1547,7 +1552,9 @@ window._renderCnArrivalBar = function() {
     }
   });
   var total = new Set(src.map(function(d){return d.style_code;}).filter(Boolean)).size || 1;
+  var totalSku = src.length;
   function cnt(limit){ return Object.values(styleRdd).filter(function(v){return v<=limit;}).length; }
+  function cntSku(limit){ return src.filter(function(d){ return d.cn_rdd && d.cn_rdd<=limit; }).length; }
   var rows = [
     {label:'6/12 New DUE',             limit:'2026-06-12', target:40,  baseColor:'#ef4444'},
     {label:'6/16 1st Review',          limit:'2026-06-16', target:100, baseColor:'#3b82f6'},
@@ -1572,7 +1579,7 @@ window._renderCnArrivalBar = function() {
         '<span class="arr-row-pct" style="color:'+pctCol+'">'+p+'%</span>'+
       '</div>'+
       '<div class="arr-bar"><div class="arr-fill" style="width:'+Math.min(p,100)+'%;background:'+col+'"></div></div>'+
-      '<div class="arr-sub">'+c+'/'+total+' Styles</div>'+
+      '<div class="arr-sub">'+c+'/'+total+' Styles · <span style="color:#9ca3af">'+cntSku(row.limit)+'/'+totalSku+' SKU</span></div>'+
     '</div>';
   }).join('');
   wrap.innerHTML = _popTabHtml(pf) + barsHtml;
@@ -1844,10 +1851,12 @@ function toggleDailySummary(){
   const allItemTypes = [...new Set(_AD_ALL.map(d => d.item_type).filter(Boolean))].sort();
 
   // 필터된 소스 데이터 반환 (카테고리 + ITEM) — AD는 현재 분기 필터 반영
-  function getFilteredSrc(cat, itemSet){
+  function getFilteredSrc(cat, itemSet, late){
     let src = AD;
     if(cat !== 'all') src = src.filter(d => d.sort === cat);
     if(itemSet) src = src.filter(d => itemSet.has(d.item_type));
+    if(late === 'late') src = src.filter(d => d.is_late_add);
+    if(late === 'exlate') src = src.filter(d => !d.is_late_add);
     return src;
   }
 
@@ -1865,8 +1874,8 @@ function toggleDailySummary(){
   }
 
   // --- KR 데이터 빌드 ---
-  function buildKrRows(cat, itemSet){
-    const src = getFilteredSrc(cat, itemSet);
+  function buildKrRows(cat, itemSet, late){
+    const src = getFilteredSrc(cat, itemSet, late);
     const {totalModels, totalPcs} = getTotals(src, 'kr_pcs');
     const byDate = {};
     const tbdList = [];
@@ -1906,8 +1915,8 @@ function toggleDailySummary(){
   }
 
   // --- CN 데이터 빌드 ---
-  function buildCnRows(cat, itemSet){
-    const src = getFilteredSrc(cat, itemSet);
+  function buildCnRows(cat, itemSet, late){
+    const src = getFilteredSrc(cat, itemSet, late);
     const {totalModels, totalPcs} = getTotals(src, 'cn_pcs');
     const byDate = {};
     const tbdList = [];
@@ -1952,6 +1961,7 @@ function toggleDailySummary(){
   const dateFilterState = { kr: null, cn: null };
   const catState = { kr: 'all', cn: 'all' };
   const itemState = { kr: new Set(allItemTypes), cn: new Set(allItemTypes) };
+  const lateState = { kr: 'all', cn: 'all' };
 
   function buildBody(side, data){
     let bodyRows = '';
@@ -2046,7 +2056,8 @@ function toggleDailySummary(){
   function rebuildTable(side){
     const cat = catState[side];
     const items = itemState[side];
-    const data = side === 'kr' ? buildKrRows(cat, items) : buildCnRows(cat, items);
+    const late = lateState[side];
+    const data = side === 'kr' ? buildKrRows(cat, items, late) : buildCnRows(cat, items, late);
     const tbl = document.getElementById('ds-tbl-' + side);
     if(!tbl) return;
     tbl.querySelector('tbody').innerHTML = buildBody(side, data);
@@ -2084,6 +2095,11 @@ function toggleDailySummary(){
         <button class="ds-btn ${activeClass}" data-ds-filter="${side}" data-val="all">${bi('전체','All')}</button>
         <button class="ds-btn" data-ds-filter="${side}" data-val="done">${bi('완료만','Done only')}</button>
         <button class="ds-btn" data-ds-filter="${side}" data-val="plan">${bi('예정만','Plan only')}</button>
+      </div>
+      <div class="ds-btn-group">
+        <button class="ds-btn active-late-all" data-ds-late="${side}" data-val="all">ALL</button>
+        <button class="ds-btn" data-ds-late="${side}" data-val="late">LATE</button>
+        <button class="ds-btn" data-ds-late="${side}" data-val="exlate">EX-LATE</button>
       </div>
       <label class="ds-chk-label"><input type="checkbox" id="ds-hide-past-${side}">${bi(' 지난 날짜 숨기기',' Hide past dates')}</label>
     </div>`;
@@ -2168,6 +2184,21 @@ function toggleDailySummary(){
       document.querySelectorAll(`.ds-btn[data-ds-filter="${side}"]`).forEach(b => b.classList.remove(activeClass));
       this.classList.add(activeClass);
       applyFilter(side);
+    });
+  });
+
+  // LATE 필터 버튼 토글
+  document.querySelectorAll('.ds-btn[data-ds-late]').forEach(btn => {
+    btn.addEventListener('click', function(){
+      const side = this.dataset.dsLate;
+      const val = this.dataset.val;
+      const activeClass = val === 'late' ? 'active-late' : val === 'exlate' ? 'active-exlate' : 'active-late-all';
+      document.querySelectorAll(`.ds-btn[data-ds-late="${side}"]`).forEach(b => {
+        b.classList.remove('active-late-all', 'active-late', 'active-exlate');
+      });
+      this.classList.add(activeClass);
+      lateState[side] = val;
+      rebuildTable(side);
     });
   });
 
@@ -4140,6 +4171,8 @@ document.addEventListener('keydown', function(e){ if(e.key==='Escape') closeRema
     var totTbd=new Set(src.filter(function(d){return !d.is_na&&!d.kr_expected;}).map(function(d){return d.style_code;})).size;
     var cf=M2T.find(function(t){return t.k===key;});
     var l=cf.l,dt=cf.dt,tg=cf.tg;
+    var itSkuAll={},itSkuDn={};
+    src.forEach(function(d){if(d.is_na)return;var i=d.item_type||'기타';if(!itSkuAll[i])itSkuAll[i]=0;itSkuAll[i]++;if(d.kr_expected&&d.kr_expected<=dt){if(!itSkuDn[i])itSkuDn[i]=0;itSkuDn[i]++;}});
     var tM=new Set(src.map(function(d){return d.style_code;}).filter(Boolean)).size||1;
     var styleEMap={};
     src.forEach(function(d){if(!d.is_na&&d.kr_expected&&d.style_code){if(!styleEMap[d.style_code]||d.kr_expected<styleEMap[d.style_code])styleEMap[d.style_code]=d.kr_expected;}});
@@ -4164,7 +4197,7 @@ document.addEventListener('keydown', function(e){ if(e.key==='Escape') closeRema
         bdHtml='<span style="background:#fee2e2;color:#991b1b;padding:1px 6px;border-radius:4px;font-size:10px;font-weight:700;white-space:nowrap">🚨 위험</span>';
       }
       var tt=tbd>0?' <span style="color:#9ca3af;font-size:10px">+'+tbd+'TBD</span>':'';
-      var row='<div class="m2ir"><div class="m2ic">'+i+'</div><div class="m2ibt"><div class="m2ibf" style="width:'+Math.min(p,100)+'%;background:'+fc+'"></div></div><div class="m2is">'+p+'% ('+byDt+'/'+dated+'M)'+tt+'</div><div class="m2ib">'+bdHtml+'</div></div>';
+      var row='<div class="m2ir"><div class="m2ic">'+i+'</div><div class="m2ibt"><div class="m2ibf" style="width:'+Math.min(p,100)+'%;background:'+fc+'"></div></div><div class="m2is">'+p+'% ('+byDt+'/'+dated+'M <span style="color:#9ca3af;font-size:10px">· '+(itSkuDn[i]||0)+'/'+(itSkuAll[i]||0)+' SKU</span>)'+tt+'</div><div class="m2ib">'+bdHtml+'</div></div>';
       if(rS[s])rS[s].push(row);
     });
     var tbdR=totTbd>0?'<div style="margin-top:10px;border-top:1px dashed #e5e7eb;padding-top:8px"><div class="m2ir"><div class="m2ic" style="width:72px;color:#9ca3af;font-style:italic;font-size:10px">미정(TBD)</div><div class="m2ibt"><div class="m2ibf" style="width:0;background:#d1d5db"></div></div><div class="m2is" style="color:#9ca3af">'+totTbd+'M 미정</div><div class="m2ib"></div></div></div>':'';
@@ -4185,9 +4218,11 @@ document.addEventListener('keydown', function(e){ if(e.key==='Escape') closeRema
     // 카테고리별 진척률 (pop 필터 반영: src = _getPopAD(AD))
     var cSt={KNIT:new Set(),SWEATER:new Set(),WOVEN:new Set(),DENIM:new Set()};
     var cDn={KNIT:new Set(),SWEATER:new Set(),WOVEN:new Set(),DENIM:new Set()};
-    src.forEach(function(d){if(d.is_na)return;var sc=d.style_code,s=d.sort,g;if(s==='KNIT'||s==='SWEATER')g=s;else if(s==='WOVEN')g='WOVEN';else if(s==='DENIM')g='DENIM';else return;cSt[g].add(sc);if(d.kr_expected&&d.kr_expected<=dt)cDn[g].add(sc);});
+    var cSkuAll={KNIT:0,SWEATER:0,WOVEN:0,DENIM:0};
+    var cSkuDn={KNIT:0,SWEATER:0,WOVEN:0,DENIM:0};
+    src.forEach(function(d){if(d.is_na)return;var sc=d.style_code,s=d.sort,g;if(s==='KNIT'||s==='SWEATER')g=s;else if(s==='WOVEN')g='WOVEN';else if(s==='DENIM')g='DENIM';else return;cSt[g].add(sc);cSkuAll[g]++;if(d.kr_expected&&d.kr_expected<=dt){cDn[g].add(sc);cSkuDn[g]++;}});
     var cPal={KNIT:'#93c5fd',SWEATER:'#7dd3c0',WOVEN:'#c4b5fd',DENIM:'#a5b4fc'};
-    var catRows=['KNIT','SWEATER','WOVEN','DENIM'].map(function(g){var T=cSt[g].size,Dn=cDn[g].size;if(!T)return'';var p=Math.round(Dn/T*100);return'<div style="display:flex;align-items:center;gap:8px;padding:5px 0;border-bottom:1px solid #f3f4f6"><div style="width:60px;font-size:11px;font-weight:700;color:#374151;flex-shrink:0">'+g+'</div><div style="flex:1;background:#f3f4f6;border-radius:4px;height:16px;overflow:hidden"><div style="height:100%;border-radius:4px;width:'+Math.min(p,100)+'%;background:'+cPal[g]+';transition:width 0.3s"></div></div><div style="width:90px;font-size:11px;color:#374151;text-align:right;flex-shrink:0;white-space:nowrap">'+p+'% ('+Dn+'/'+T+'M)</div></div>';}).join('');
+    var catRows=['KNIT','SWEATER','WOVEN','DENIM'].map(function(g){var T=cSt[g].size,Dn=cDn[g].size;if(!T)return'';var p=Math.round(Dn/T*100);return'<div style="display:flex;align-items:center;gap:8px;padding:5px 0;border-bottom:1px solid #f3f4f6"><div style="width:60px;font-size:11px;font-weight:700;color:#374151;flex-shrink:0">'+g+'</div><div style="flex:1;background:#f3f4f6;border-radius:4px;height:16px;overflow:hidden"><div style="height:100%;border-radius:4px;width:'+Math.min(p,100)+'%;background:'+cPal[g]+';transition:width 0.3s"></div></div><div style="font-size:11px;color:#374151;text-align:right;flex-shrink:0;white-space:nowrap">'+p+'% ('+Dn+'/'+T+'M <span style="color:#9ca3af;font-size:10px">· '+cSkuDn[g]+'/'+cSkuAll[g]+' SKU</span>)</div></div>';}).join('');
     var catSec='<div style="background:#f9fafb;border-radius:10px;padding:12px 16px;margin-bottom:14px"><div style="font-size:11px;font-weight:800;color:#374151;margin-bottom:8px">카테고리별 진척률</div>'+catRows+'</div>';
     var popSubtitle={ALL:'ALL '+tM+'M',LATE:'LATE '+tM+'M (TBD '+totTbd+'M 포함)','EX-LATE':'EX-LATE '+tM+'M (TBD '+totTbd+'M 포함)'}[pf]||'';
     document.getElementById('kpi-m2-body').innerHTML=
@@ -4350,6 +4385,8 @@ document.addEventListener('keydown', function(e){ if(e.key==='Escape') closeRema
     var curAD=_getPopAD(AD);
     var cf=CM2T.find(function(t){return t.k===key;});
     var l=cf.l,dt=cf.dt,tg=cf.tg;
+    var cnItSkuAll={},cnItSkuDn={};
+    curAD.forEach(function(d){if(d.is_na)return;var i=d.item_type||'기타';if(!cnItSkuAll[i])cnItSkuAll[i]=0;cnItSkuAll[i]++;if(d.cn_rdd&&d.cn_rdd<=dt){if(!cnItSkuDn[i])cnItSkuDn[i]=0;cnItSkuDn[i]++;}});
 
     // ITEM별 cn_rdd 집계 (r2의 itSt/itAll/itE와 동일 구조)
     var cnItSt={},cnItAll={},cnItE={};
@@ -4396,7 +4433,7 @@ document.addEventListener('keydown', function(e){ if(e.key==='Escape') closeRema
         bdHtml='<span style="background:#fee2e2;color:#991b1b;padding:1px 6px;border-radius:4px;font-size:10px;font-weight:700;white-space:nowrap">🚨 Risk</span>';
       }
       var tt=tbd>0?' <span style="color:#9ca3af;font-size:10px">+'+tbd+'TBD</span>':'';
-      var row='<div class="m2ir"><div class="m2ic">'+i+'</div><div class="m2ibt"><div class="m2ibf" style="width:'+Math.min(p,100)+'%;background:'+fc+'"></div></div><div class="m2is">'+p+'% ('+byDt+'/'+dated+'M)'+tt+'</div><div class="m2ib">'+bdHtml+'</div></div>';
+      var row='<div class="m2ir"><div class="m2ic">'+i+'</div><div class="m2ibt"><div class="m2ibf" style="width:'+Math.min(p,100)+'%;background:'+fc+'"></div></div><div class="m2is">'+p+'% ('+byDt+'/'+dated+'M <span style="color:#9ca3af;font-size:10px">· '+(cnItSkuDn[i]||0)+'/'+(cnItSkuAll[i]||0)+' SKU</span>)'+tt+'</div><div class="m2ib">'+bdHtml+'</div></div>';
       if(rS[s])rS[s].push(row);
     });
 
@@ -4418,9 +4455,11 @@ document.addEventListener('keydown', function(e){ if(e.key==='Escape') closeRema
     // Progress by Category (sort='SWEATER' 직접 처리)
     var cSt2={KNIT:new Set(),SWEATER:new Set(),WOVEN:new Set(),DENIM:new Set()};
     var cDn2={KNIT:new Set(),SWEATER:new Set(),WOVEN:new Set(),DENIM:new Set()};
-    curAD.forEach(function(d){if(d.is_na)return;var sc=d.style_code,s=d.sort,g;if(s==='KNIT'||s==='SWEATER')g=s;else if(s==='WOVEN')g='WOVEN';else if(s==='DENIM')g='DENIM';else return;cSt2[g].add(sc);if(d.cn_rdd&&d.cn_rdd<=dt)cDn2[g].add(sc);});
+    var cSkuAll2={KNIT:0,SWEATER:0,WOVEN:0,DENIM:0};
+    var cSkuDn2={KNIT:0,SWEATER:0,WOVEN:0,DENIM:0};
+    curAD.forEach(function(d){if(d.is_na)return;var sc=d.style_code,s=d.sort,g;if(s==='KNIT'||s==='SWEATER')g=s;else if(s==='WOVEN')g='WOVEN';else if(s==='DENIM')g='DENIM';else return;cSt2[g].add(sc);cSkuAll2[g]++;if(d.cn_rdd&&d.cn_rdd<=dt){cDn2[g].add(sc);cSkuDn2[g]++;}});
     var cPal2={KNIT:'#93c5fd',SWEATER:'#7dd3c0',WOVEN:'#c4b5fd',DENIM:'#a5b4fc'};
-    var catRows2=['KNIT','SWEATER','WOVEN','DENIM'].map(function(g){var T=cSt2[g].size,Dn=cDn2[g].size;if(!T)return'';var p=Math.round(Dn/T*100);return'<div style="display:flex;align-items:center;gap:8px;padding:5px 0;border-bottom:1px solid #f3f4f6"><div style="width:60px;font-size:11px;font-weight:700;color:#374151;flex-shrink:0">'+g+'</div><div style="flex:1;background:#f3f4f6;border-radius:4px;height:16px;overflow:hidden"><div style="height:100%;border-radius:4px;width:'+Math.min(p,100)+'%;background:'+cPal2[g]+';transition:width 0.3s"></div></div><div style="width:90px;font-size:11px;color:#374151;text-align:right;flex-shrink:0;white-space:nowrap">'+p+'% ('+Dn+'/'+T+'M)</div></div>';}).join('');
+    var catRows2=['KNIT','SWEATER','WOVEN','DENIM'].map(function(g){var T=cSt2[g].size,Dn=cDn2[g].size;if(!T)return'';var p=Math.round(Dn/T*100);return'<div style="display:flex;align-items:center;gap:8px;padding:5px 0;border-bottom:1px solid #f3f4f6"><div style="width:60px;font-size:11px;font-weight:700;color:#374151;flex-shrink:0">'+g+'</div><div style="flex:1;background:#f3f4f6;border-radius:4px;height:16px;overflow:hidden"><div style="height:100%;border-radius:4px;width:'+Math.min(p,100)+'%;background:'+cPal2[g]+';transition:width 0.3s"></div></div><div style="font-size:11px;color:#374151;text-align:right;flex-shrink:0;white-space:nowrap">'+p+'% ('+Dn+'/'+T+'M <span style="color:#9ca3af;font-size:10px">· '+cSkuDn2[g]+'/'+cSkuAll2[g]+' SKU</span>)</div></div>';}).join('');
     var catSec2='<div style="background:#f9fafb;border-radius:10px;padding:12px 16px;margin-bottom:14px"><div style="font-size:11px;font-weight:800;color:#374151;margin-bottom:8px">Progress by Category</div>'+catRows2+'</div>';
 
     var cnPopSubtitle={ALL:'ALL '+tM+'M',LATE:'LATE '+tM+'M (TBD '+cnTotTbd+' included)','EX-LATE':'EX-LATE '+tM+'M (TBD '+cnTotTbd+' included)'}[pf]||'';
