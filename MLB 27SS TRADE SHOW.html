@@ -379,11 +379,12 @@ body.view-cn .vs-btn#btn-view-all { background:#fff; color:var(--muted); }
 .ds-btn.active-exlate   { background:#f0fdf4; color:#16a34a; font-weight:700; border-color:#86efac; }
 .ds-chk-label { font-size:11px; color:var(--muted); display:flex; align-items:center; gap:4px; cursor:pointer; user-select:none; }
 .ds-chk-label input { cursor:pointer; }
-.daily-summary-wrap { overflow-x:auto; border-radius:10px; border:1px solid var(--border); flex:1; }
+.daily-summary-wrap { overflow-x:auto; overflow-y:auto; max-height:480px; border-radius:10px; border:1px solid var(--border); flex:1; }
 .daily-summary-tbl { width:100%; border-collapse:collapse; font-size:12px; }
 .daily-summary-tbl th {
   padding:8px 10px; font-weight:700; font-size:11px;
   text-align:center; white-space:nowrap; border:1px solid #edf0fc;
+  position:sticky; top:0; z-index:10;
 }
 .daily-summary-tbl td {
   padding:6px 10px; border:1px solid #edf0fc;
@@ -394,6 +395,7 @@ body.view-cn .vs-btn#btn-view-all { background:#fff; color:var(--muted); }
 .daily-summary-tbl tbody tr.ds-row-planned:hover { background:#f0f4ff; }
 .daily-summary-tbl tbody tr.ds-row-total { background:#e8f5e9; font-weight:700; }
 .daily-summary-tbl tbody tr.ds-row-total:hover { background:#c8e6c9; }
+.daily-summary-tbl tbody tr.ds-row-total td { position:sticky; bottom:0; z-index:9; background:#e8f5e9; }
 .daily-summary-tbl tbody tr.ds-row-tbd { background:#f9fafb; color:#6b7280; font-style:italic; }
 .daily-summary-tbl tbody tr.ds-row-tbd:hover { background:#f0f4ff; }
 .ds-header-kr th { background:#e8f5e9; color:#2e7d32; }
@@ -1937,7 +1939,14 @@ function setDailySumMode(mode, el){
       modelPct: totalModels ? (tbdStyles.size / totalModels * 100).toFixed(1) : '0.0',
       pcsPct:   totalPcs    ? (tbdPcs / totalPcs * 100).toFixed(1) : '0.0'
     };
-    return { rows, totalSku: cumSku + tbdSku, totalPcs, totalModels, tbd };
+    const isActualKr = mode === 'actual';
+    const displayModels   = isActualKr ? cumStyles.size : totalModels;
+    const displaySku      = isActualKr ? cumSku : (cumSku + tbdSku);
+    const displayPcs      = isActualKr ? cumPcs : totalPcs;
+    const displayModelPct = isActualKr ? (totalModels ? (cumStyles.size/totalModels*100).toFixed(1) : '0.0') : '100.0';
+    const displayPcsPct   = isActualKr ? (totalPcs ? (cumPcs/totalPcs*100).toFixed(1) : '0.0') : '100.0';
+    return { rows, totalSku: cumSku + tbdSku, totalPcs, totalModels, tbd,
+             displayModels, displaySku, displayPcs, displayModelPct, displayPcsPct };
   }
 
   // --- CN 데이터 빌드 ---
@@ -1993,7 +2002,14 @@ function setDailySumMode(mode, el){
       modelPct: totalModels ? (tbdStyles.size / totalModels * 100).toFixed(1) : '0.0',
       pcsPct:   totalPcs    ? (tbdPcs / totalPcs * 100).toFixed(1) : '0.0'
     };
-    return { rows, totalSku: cumSku + tbdSku, totalPcs, totalModels, tbd };
+    const isActualCn = mode === 'actual';
+    const displayModels   = isActualCn ? cumStyles.size : totalModels;
+    const displaySku      = isActualCn ? cumSku : (cumSku + tbdSku);
+    const displayPcs      = isActualCn ? cumPcs : totalPcs;
+    const displayModelPct = isActualCn ? (totalModels ? (cumStyles.size/totalModels*100).toFixed(1) : '0.0') : '100.0';
+    const displayPcsPct   = isActualCn ? (totalPcs ? (cumPcs/totalPcs*100).toFixed(1) : '0.0') : '100.0';
+    return { rows, totalSku: cumSku + tbdSku, totalPcs, totalModels, tbd,
+             displayModels, displaySku, displayPcs, displayModelPct, displayPcsPct };
   }
 
   // 상태 저장
@@ -2038,11 +2054,11 @@ function setDailySumMode(mode, el){
       }
       bodyRows += `<tr class="ds-row-total">
         <td colspan="2">${bi('합계','Total')}</td>
-        <td>${data.totalModels}</td>
-        <td>${data.totalSku}</td>
-        <td>${data.totalPcs.toLocaleString()}</td>
-        <td>100.0%</td>
-        <td>100.0%</td>
+        <td>${data.displayModels}</td>
+        <td>${data.displaySku}</td>
+        <td>${data.displayPcs.toLocaleString()}</td>
+        <td>${data.displayModelPct}%</td>
+        <td>${data.displayPcsPct}%</td>
       </tr>`;
     }
     return bodyRows;
