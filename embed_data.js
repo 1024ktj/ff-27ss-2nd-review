@@ -1,4 +1,4 @@
-window.LAST_UPDATED = "2026-07-01 16:04";
+window.LAST_UPDATED = "2026-07-01 16:23";
 const DASHBOARD = {
   "total_sku": 2042,
   "total_styles": 652,
